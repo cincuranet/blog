@@ -8,10 +8,15 @@ layout: default
 </p>
 {% endfor %} 
 
-{% if paginator.previous_page_path %}
-<a href="{{ paginator.previous_page_path }}">Previous</a>
-{% endif %}
 <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% if paginator.previous_page_path %}
+<a href=".{{ paginator.previous_page_path }}">Previous</a>
+{% else %}
+<span>Previous</span>
+{% endif %}
+|
 {% if paginator.next_page_path %}
-<a href="{{ paginator.next_page_path }}">Next</a>
+<a href=".{{ paginator.next_page_path }}">Next</a> 
+{% else %}
+<span>Next</span>
 {% endif %}
