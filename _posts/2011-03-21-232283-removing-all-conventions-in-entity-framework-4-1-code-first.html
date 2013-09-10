@@ -6,9 +6,9 @@ tags:
 category: devel
 layout: post
 ---
-Convention-over-configuration is great, at least for a quick start, in my opinion. But if you're like me and you want everything under your control, you may want to remove all (at least those you can remove via code).
+<p>Convention-over-configuration is great, at least for a quick start, in my opinion. But if you're like me and you want everything under your control, you may want to remove all (at least those you can remove via code).</p>
 
-Because now there's no list available (based on RC version, but very probably it'll be same in RTM) as it was in i.e. CTP5 you need to kind of get all items implementing <code>IConvention</code> interface. And because I want my code work no matter what will be added or removed in next versions, I'm not going to hardcode these. Couple of lines with reflection and we're done.
+<p>Because now there's no list available (based on RC version, but very probably it'll be same in RTM) as it was in i.e. CTP5 you need to kind of get all items implementing <code>IConvention</code> interface. And because I want my code work no matter what will be added or removed in next versions, I'm not going to hardcode these. Couple of lines with reflection and we're done.</p>
 
 <pre class="brush:csharp">
 MethodInfo method;
@@ -22,6 +22,6 @@ foreach (var convention in Assembly.GetCallingAssembly()
 }
 </pre>
 
-I'm simply looking into <code>System.Data.Entity.ModelConfiguration.Conventions</code> namespace, where all the "I-do-the-mapping-for-you" conventions are and also <code>System.Data.Entity.Infrastructure</code> namespace, where the default database creation etc. stuff lives. The code is in overridden <code>OnModelCreating</code> method.
+<p>I'm simply looking into <code>System.Data.Entity.ModelConfiguration.Conventions</code> namespace, where all the "I-do-the-mapping-for-you" conventions are and also <code>System.Data.Entity.Infrastructure</code> namespace, where the default database creation etc. stuff lives. The code is in overridden <code>OnModelCreating</code> method.</p>
 
-Now you can explore what one must do to create proper mapping by hand. :)
+<p>Now you can explore what one must do to create proper mapping by hand. :)</p>

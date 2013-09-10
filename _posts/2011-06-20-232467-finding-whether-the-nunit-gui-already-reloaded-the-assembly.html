@@ -7,8 +7,8 @@ tags:
 category: devel
 layout: post
 ---
-When I'm fixing bugs found by <a href="http://en.wikipedia.org/wiki/Unit_testing">unit tests</a> it's quick process - run test, spot the problem, fix it, build, run again. The problem is, that often, during the build I switch to other window and then to <a href="http://www.nunit.org/">NUnit</a> GUI. And then I don't know whether the assembly with tests was already reloaded (and hence contains the fix) or not. So I often reloaded it again, just to be sure a.k.a wasting time.
+<p>When I'm fixing bugs found by <a href="http://en.wikipedia.org/wiki/Unit_testing">unit tests</a> it's quick process - run test, spot the problem, fix it, build, run again. The problem is, that often, during the build I switch to other window and then to <a href="http://www.nunit.org/">NUnit</a> GUI. And then I don't know whether the assembly with tests was already reloaded (and hence contains the fix) or not. So I often reloaded it again, just to be sure a.k.a wasting time.</p>
 
-But today I found a way to distinguish that. When the tests are done, the progress bar is at 100% (and has some color based on result of the test run). After (automatic) reloading, the progress bar is at 0% (so no color).
+<p>But today I found a way to distinguish that. When the tests are done, the progress bar is at 100% (and has some color based on result of the test run). After (automatic) reloading, the progress bar is at 0% (so no color).</p>
 
-Easy, isn't it?
+<p>Easy, isn't it?</p>

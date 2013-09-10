@@ -10,14 +10,14 @@ tags:
 category: devel
 layout: post
 ---
-Before I used <a href="http://www.instapaper.com">Instapaper</a> I had a 30+ tabs opened in <a href="http://www.opera.com">Opera</a>. And I was used to that, though whoever saw it was asking me how I work in Opera with this amount of tabs. :) But to get the content into <a href="http://www.kindle.com">Kindle</a> to be able to comfortably read it I started using Instapaper. Sadly in recent version of Opera the "Read Later" bookmarklet stopped working (yes, it's reported to Opera). Not good, I'm pushing through it a lot of articles into Instapaper or Kindle respectively.
+<p>Before I used <a href="http://www.instapaper.com">Instapaper</a> I had a 30+ tabs opened in <a href="http://www.opera.com">Opera</a>. And I was used to that, though whoever saw it was asking me how I work in Opera with this amount of tabs. :) But to get the content into <a href="http://www.kindle.com">Kindle</a> to be able to comfortably read it I started using Instapaper. Sadly in recent version of Opera the "Read Later" bookmarklet stopped working (yes, it's reported to Opera). Not good, I'm pushing through it a lot of articles into Instapaper or Kindle respectively.</p>
 
-After some time of adding links manually I decided to look for some API and create "something". Luckily there's a "simple API" available, just adding via HTTP call. Exactly what I need. I dusted down my JavaScript "skills" ;) and created raw and dirty bookmarklet.
+<p>After some time of adding links manually I decided to look for some API and create "something". Luckily there's a "simple API" available, just adding via HTTP call. Exactly what I need. I dusted down my JavaScript "skills" ;) and created raw and dirty bookmarklet.</p>
 
 <pre class="brush:javascript">
 javascript:{ var username = '&lt;your username&gt;'; var password = '&lt;your password&gt;'; window.open('https://www.instapaper.com/api/add?username=' + username + '&amp;password=' + password + '&amp;url=' + encodeURIComponent(window.location.href)); window.close(); }
 </pre>
 
-At the beginning there are two variables to put your username and password. The code does what fits my needs best. Opens new tab issuing request to Instapaper and closing current one (because I'll read it later 8-)). Raw return code is processed with my brain, no fancy popups or anything like that. <code>201</code> means OK; everything else means "check Instapaper".
+<p>At the beginning there are two variables to put your username and password. The code does what fits my needs best. Opens new tab issuing request to Instapaper and closing current one (because I'll read it later 8-)). Raw return code is processed with my brain, no fancy popups or anything like that. <code>201</code> means OK; everything else means "check Instapaper".</p>
 
-Improvements are welcome.
+<p>Improvements are welcome.</p>

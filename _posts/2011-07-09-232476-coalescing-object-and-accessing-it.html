@@ -7,15 +7,15 @@ tags:
 category: devel
 layout: post
 ---
-I was reading Twitter yesterday and spotted a <a href="http://twitter.com/#!/ShawnWildermuth/status/89422296879603713">tweet</a> from <a href="http://wildermuth.com/">Shawn Wildermuth</a> about his pain about using <a href="http://msdn.microsoft.com/en-us/library/ms173224.aspx">coalesce operator (<code>??</code>) in C#</a> and doing immediately something with result. 
+<p>I was reading Twitter yesterday and spotted a <a href="http://twitter.com/#!/ShawnWildermuth/status/89422296879603713">tweet</a> from <a href="http://wildermuth.com/">Shawn Wildermuth</a> about his pain about using <a href="http://msdn.microsoft.com/en-us/library/ms173224.aspx">coalesce operator (<code>??</code>) in C#</a> and doing immediately something with result.</p> 
 
-I had same problem maybe a year back, when I was dealing heavily with <a href="http://www.w3.org/XML/">XML</a> and <a href="http://msdn.microsoft.com/en-us/library/bb387098.aspx">LINQ to XML</a> (but it doesn't matter). I created for myself a little extension method to help me solve writing lines like:
+<p>I had same problem maybe a year back, when I was dealing heavily with <a href="http://www.w3.org/XML/">XML</a> and <a href="http://msdn.microsoft.com/en-us/library/bb387098.aspx">LINQ to XML</a> (but it doesn't matter). I created for myself a little extension method to help me solve writing lines like:</p>
 
 <pre class="brush:csharp">
 Something x = (a == null ? "FooBar" : a.FooBar);
 </pre>
 
-The method:
+<p>The method:</p>
 
 <pre class="brush:csharp">
 public static TResult ObjectCoalesce&lt;T, TResult&gt;(this T o, Func&lt;T, TResult&gt; operation, TResult @default)
@@ -28,10 +28,10 @@ public static TResult ObjectCoalesce&lt;T, TResult&gt;(this T o, Func&lt;T, TRes
 }
 </pre>
 
-And simple usage:
+<p>And simple usage:</p>
 
 <pre class="brush:csharp">
 Something x = a.ObjectCoalesce(y =&gt; y.FooBar, "FooBar");
 </pre>
 
-When it's nested in some calls, it really helped me to make my code shorter. You can also play (I did) with idea of having the <i>default</i> parameter as delegate so it will be evaluated only if needed. In some cases it could make a huge difference (i.e. side-effects).
+<p>When it's nested in some calls, it really helped me to make my code shorter. You can also play (I did) with idea of having the <i>default</i> parameter as delegate so it will be evaluated only if needed. In some cases it could make a huge difference (i.e. side-effects).</p>

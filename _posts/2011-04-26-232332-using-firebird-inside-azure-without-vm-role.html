@@ -8,15 +8,15 @@ tags:
 category: devel
 layout: post
 ---
-Recently I was playing with <a href="http://aws.amazon.com/ec2/">Amazon EC2</a> trying what I could use it for. I was playing with <a href="http://www.firebirdsql.org">Firebird</a> there as well. But in fact you have virtual machine you can use. So using Firebird there wasn't that hard. But I got and idea about <a href="http://www.microsoft.com/windowsazure/">Azure</a>, because it's more platform for applications than computers.
+<p>Recently I was playing with <a href="http://aws.amazon.com/ec2/">Amazon EC2</a> trying what I could use it for. I was playing with <a href="http://www.firebirdsql.org">Firebird</a> there as well. But in fact you have virtual machine you can use. So using Firebird there wasn't that hard. But I got and idea about <a href="http://www.microsoft.com/windowsazure/">Azure</a>, because it's more platform for applications than computers.</p>
 
-Then the <a href="http://msdn.microsoft.com/en-us/gg502178">VM role</a> was introduced and the challenge was somehow not so challenging. But ...
+<p>Then the <a href="http://msdn.microsoft.com/en-us/gg502178">VM role</a> was introduced and the challenge was somehow not so challenging. But ...</p>
 
-Yes, it was still in my mind. My rough idea was abuse <a href="http://www.firebirdsql.org/manual/fbmetasecur-embedded.html">Firebird Embedded</a> and load it inside <a href="http://msdn.microsoft.com/en-us/library/gg432976.aspx">Web or Worker role</a>. Only problem was where to store the database. Sure, the scaling will be compromised, but it's just "try it and see what could be done and let others (not) use it". 8-) The <a href="http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.storageclient.clouddrive.aspx">CloudDrive</a> solved my problems about where to store the database.
+<p>Yes, it was still in my mind. My rough idea was abuse <a href="http://www.firebirdsql.org/manual/fbmetasecur-embedded.html">Firebird Embedded</a> and load it inside <a href="http://msdn.microsoft.com/en-us/library/gg432976.aspx">Web or Worker role</a>. Only problem was where to store the database. Sure, the scaling will be compromised, but it's just "try it and see what could be done and let others (not) use it". 8-) The <a href="http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.storageclient.clouddrive.aspx">CloudDrive</a> solved my problems about where to store the database.</p>
 
-So it was no-brainer to try it.
+<p>So it was no-brainer to try it.</p>
 
-First some helper for CloudDrive use.
+<p>First some helper for CloudDrive use.</p>
 
 <pre class="brush:csharp">
 public class CloudDriveHelper : IDisposable
@@ -66,9 +66,9 @@ public class CloudDriveHelper : IDisposable
 }
 </pre>
 
-I added reference to <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">FirebirdSql.Data.FirebirdClient assembly</a>. I played with Firebird Embedded in package, but putting it to blob storage via CloudDrive would be easier, maybe next time. :) The environment in Azure is x64 (for Web and Worker roles, run by <code>WaWebHost</code> and <code>WaWorkerHost</code> respectively), so don't forget to use proper version. Anyway, then I abused Web role to see some results.
+<p>I added reference to <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">FirebirdSql.Data.FirebirdClient assembly</a>. I played with Firebird Embedded in package, but putting it to blob storage via CloudDrive would be easier, maybe next time. :) The environment in Azure is x64 (for Web and Worker roles, run by <code>WaWebHost</code> and <code>WaWorkerHost</code> respectively), so don't forget to use proper version. Anyway, then I abused Web role to see some results.</p>
 
-Simple controller action.
+<p>Simple controller action.</p>
 
 <pre class="brush:csharp">
 public ActionResult Index()
@@ -87,7 +87,7 @@ public ActionResult Index()
 }
 </pre>
 
-And some methods to do actual work.
+<p>And some methods to do actual work.</p>
 
 <pre class="brush:csharp">
 public static void CreateDatabase(string databasePath)
@@ -127,10 +127,10 @@ public static IEnumerable&lt;Tuple&lt;string, object&gt;&gt; SomeQuery(string da
 }
 </pre>
 
-Well, it did worked OK. Before you think how cool is that I have some bad news. The cloud computing is mainly about scaling and elasticity. With this you have one drive and (have to have) one instance of Firebird working with it - you're not scaling. You can't scale with this solution. So it's more about being concept. However I came with two possible options, that are more realistic. 
+<p>Well, it did worked OK. Before you think how cool is that I have some bad news. The cloud computing is mainly about scaling and elasticity. With this you have one drive and (have to have) one instance of Firebird working with it - you're not scaling. You can't scale with this solution. So it's more about being concept. However I came with two possible options, that are more realistic.</p> 
 
-First is having one special Worker role processing some data and storing it in Firebird database (for whatever reason). The Azure machines are quite powerful and if you have everything there why to setup your own server... And I think this can be worth in some scenarios (apart not being fault tolerant etc.).
+<p>First is having one special Worker role processing some data and storing it in Firebird database (for whatever reason). The Azure machines are quite powerful and if you have everything there why to setup your own server... And I think this can be worth in some scenarios (apart not being fault tolerant etc.).</p>
 
-Other one builds on top of previous solution and abuses <a href="http://www.firebirdsql.org/rlsnotesh/rlsnotes25.html#rnfb25-engine-exttblio">Firebird's external tables</a>. You can load or store data via external tables to blob storage via CloudDrive and (re-)use already written logic in stored procedures (or triggers). Little crazy, I know hence I've not tried it (so maybe it's not doable). But technologies are here to use these on the edge.
+<p>Other one builds on top of previous solution and abuses <a href="http://www.firebirdsql.org/rlsnotesh/rlsnotes25.html#rnfb25-engine-exttblio">Firebird's external tables</a>. You can load or store data via external tables to blob storage via CloudDrive and (re-)use already written logic in stored procedures (or triggers). Little crazy, I know hence I've not tried it (so maybe it's not doable). But technologies are here to use these on the edge.</p>
 
-As I said, the real world usage of all this isn't big, but as a exploration project it was fun. :)
+<p>As I said, the real world usage of all this isn't big, but as a exploration project it was fun. :)</p>

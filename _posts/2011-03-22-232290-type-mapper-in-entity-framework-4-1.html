@@ -6,9 +6,9 @@ tags:
 category: devel
 layout: post
 ---
-Even if you <a href="{% post_url 2011-03-21-232283-removing-all-conventions-in-entity-framework-4-1-code-first %}">remove all conventions</a> when using <a href="http://msdn.microsoft.com/en-us/magazine/gg232765.aspx">Code First</a> you might get errors from Entity Framework about not being able to properly map some items. The reason is <i>type mapper</i>. In RC (and very probably in RTM as well) it's not implemented as convention, hence always kicks in.
+<p>Even if you <a href="{% post_url 2011-03-21-232283-removing-all-conventions-in-entity-framework-4-1-code-first %}">remove all conventions</a> when using <a href="http://msdn.microsoft.com/en-us/magazine/gg232765.aspx">Code First</a> you might get errors from Entity Framework about not being able to properly map some items. The reason is <i>type mapper</i>. In RC (and very probably in RTM as well) it's not implemented as convention, hence always kicks in.</p>
 
-In this case the <code>Ignore</code> method comes into play. For instance I have in my code property:
+<p>In this case the <code>Ignore</code> method comes into play. For instance I have in my code property:</p>
 
 <pre class="brush:csharp">
 public CultureInfo Locale 
@@ -18,7 +18,7 @@ public CultureInfo Locale
 }
 </pre>
 
-and I'm not mapping it at any place. But Entity Framework will still complain about pieces of <code>CultureInfo</code> not being properly mapped. But in <code>EntityTypeConfiguration</code> can make Entity Framework to ignore it. For example:
+<p>and I'm not mapping it at any place. But Entity Framework will still complain about pieces of <code>CultureInfo</code> not being properly mapped. But in <code>EntityTypeConfiguration</code> can make Entity Framework to ignore it. For example:</p>
 
 <pre class="brush:csharp">
 class FooBarConfiguration : EntityTypeConfiguration&lt;FooBar&gt;
@@ -33,4 +33,4 @@ class FooBarConfiguration : EntityTypeConfiguration&lt;FooBar&gt;
 }
 </pre>
 
-At first I was confused, but after quick email exchange with EF team the "issue" was clear.
+<p>At first I was confused, but after quick email exchange with EF team the "issue" was clear.</p>

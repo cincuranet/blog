@@ -7,9 +7,9 @@ tags:
 category: devel
 layout: post
 ---
-I was setting up simple command logging, but keeping in my mind where I increased the indentation to later decrease it back was causing me headache. Also formatting the string I'd like to put out wasn't smooth. 
+<p>I was setting up simple command logging, but keeping in my mind where I increased the indentation to later decrease it back was causing me headache. Also formatting the string I'd like to put out wasn't smooth.</p> 
 
-So I created simple wrapper class implementing <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.aspx">IDisposable</a>, where the disposing will actually decrease the indentation automatically. Only thing you (I) have to use is simple <a href="http://msdn.microsoft.com/en-us/library/yh598w02.aspx">using block</a>. The precooked <code>WriteLine</code> helper method is there just to save me some typing.
+<p>So I created simple wrapper class implementing <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.aspx">IDisposable</a>, where the disposing will actually decrease the indentation automatically. Only thing you (I) have to use is simple <a href="http://msdn.microsoft.com/en-us/library/yh598w02.aspx">using block</a>. The precooked <code>WriteLine</code> helper method is there just to save me some typing.</p>
 
 <pre class="brush:csharp">
 class IndentHolder : IDisposable

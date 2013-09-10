@@ -7,9 +7,9 @@ tags:
 category: devel
 layout: post
 ---
-From time to time I'm dealing with API that's using Expression&lt;Func&lt;TEntity, object&gt;&gt; as parameter, mainly to show property you want to deal with. And that's fine, if you need just the expression itself. But I often create my custom extensions, where I'm somehow working with the property itself or the result. And that's a problem, because I don't know any info about the type, it's just object.
+<p>From time to time I'm dealing with API that's using Expression&lt;Func&lt;TEntity, object&gt;&gt; as parameter, mainly to show property you want to deal with. And that's fine, if you need just the expression itself. But I often create my custom extensions, where I'm somehow working with the property itself or the result. And that's a problem, because I don't know any info about the type, it's just object.</p>
 
-If you try to directly cast the expression, it will not work, of course. First I though, it's going to be a lot of juggle with pieces of expression and reconstructing the final one. But it's pretty easy, see yourself:
+<p>If you try to directly cast the expression, it will not work, of course. First I though, it's going to be a lot of juggle with pieces of expression and reconstructing the final one. But it's pretty easy, see yourself:</p>
 
 <pre class="brush:csharp">
 void FooBar&lt;TEntity, TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEntity, TProperty&gt;&gt; property)
@@ -23,6 +23,6 @@ void FooBar&lt;TEntity, TProperty&gt;(TEntity entity, Expression&lt;Func&lt;TEnt
 }
 </pre>
 
-I'm simply creating new expression based on the original ones' body and parameters. If the <code>TProperty</code>'s type was value type I only do boxing in addition. 
+<p>I'm simply creating new expression based on the original ones' body and parameters. If the <code>TProperty</code>'s type was value type I only do boxing in addition.</p> 
 
-Nothing difficult, right? 
+<p>Nothing difficult, right?</p> 

@@ -7,11 +7,11 @@ tags:
 category: devel
 layout: post
 ---
-From time to time I'm working on some method that returns some collection. Mainly processing some data from input. Often it's really just couple of conditions, get something from there and here and return it. Because I'm composing these methods too, if I return <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx">IEnumerable&lt;T&gt;</a> and later in other method I need to add something (if you're lost, you'll see what I mean in example below), I need to use some variable, like array or list and append (or prepend). Boring.
+<p>From time to time I'm working on some method that returns some collection. Mainly processing some data from input. Often it's really just couple of conditions, get something from there and here and return it. Because I'm composing these methods too, if I return <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx">IEnumerable&lt;T&gt;</a> and later in other method I need to add something (if you're lost, you'll see what I mean in example below), I need to use some variable, like array or list and append (or prepend). Boring.</p>
 
-For a while I was wondering, how slow it will be, if I'll be simply creating new IEnumerable sequences and concatenating these. I was expecting it to be slower, but is it only couple of percents or order of magnitude? Today, when I came to my office, I simply decided to test it.
+<p>For a while I was wondering, how slow it will be, if I'll be simply creating new IEnumerable sequences and concatenating these. I was expecting it to be slower, but is it only couple of percents or order of magnitude? Today, when I came to my office, I simply decided to test it.</p>
 
-The first version looks like
+<p>The first version looks like</p>
 <pre class="brush:csharp">
 static IEnumerable<int> Test1(int[] part1, int[] part2, int[] part3)
 {
@@ -23,7 +23,7 @@ static IEnumerable<int> Test1(int[] part1, int[] part2, int[] part3)
 }
 </pre>
 
-And the other one
+<p>And the other one</p>
 <pre class="brush:csharp">
 static IEnumerable&lt;int&gt; Test2(int[] part1, int[] part2, int[] part3)
 {
@@ -38,11 +38,11 @@ static IEnumerable&lt;int&gt; Test2(int[] part1, int[] part2, int[] part3)
 }
 </pre>
 
-Although it, especially the other one, can be written in different way(s), as a measure I think it's OK. And it's close to how I often process the data.
+<p>Although it, especially the other one, can be written in different way(s), as a measure I think it's OK. And it's close to how I often process the data.</p>
 
-I did couple of runs to eliminate some errors, with "Release" build, without attached debugger. The <code>part1</code> and <code>part3</code> parameters were always the same in size. The <code>part2</code> I was playing with, because the size affects the speed too.
+<p>I did couple of runs to eliminate some errors, with "Release" build, without attached debugger. The <code>part1</code> and <code>part3</code> parameters were always the same in size. The <code>part2</code> I was playing with, because the size affects the speed too.</p>
 
-If the <code>part2</code> size was roughly under 10k items, the speed difference was on the edge error of measurement. From 10k+ to 1M items it's about 25% the <code>Concat</code> approach being slower. Some absolute numbers (averages from 20 runs, "Release" build, without attached debugger) from my laptop:
+<p>If the <code>part2</code> size was roughly under 10k items, the speed difference was on the edge error of measurement. From 10k+ to 1M items it's about 25% the <code>Concat</code> approach being slower. Some absolute numbers (averages from 20 runs, "Release" build, without attached debugger) from my laptop:</p>
 <pre class="brush:plain">
 Size: 1         Time1: 0        Time2: 0        %: 0
 Size: 2         Time1: 0        Time2: 0        %: 0
@@ -60,4 +60,4 @@ Size: 100000    Time1: 11,8     Time2: 3,15     %: 24,7899159663866
 Size: 1000000   Time1: 124,85   Time2: 33,2     %: 26,9609775325187
 </pre>
 
-Conclusion? If the data is relatively small, the path you choose doesn't really matter. For "bigger" collections the imperative approach provides better performance.
+<p>Conclusion? If the data is relatively small, the path you choose doesn't really matter. For "bigger" collections the imperative approach provides better performance.</p>
