@@ -9,7 +9,9 @@
 		{% endif %}
 		<link rel="shortcut icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" /> 
 		<link rel="icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" />
-		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="http://blog.cincura.net/atom.xml" />	
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/atom.xml" />	
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/bw.css" />
 		<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 		<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />  
 		<script type='text/javascript' src='//cdn.jsdelivr.net/jquery/2.0.2/jquery.min.js'></script>
@@ -30,12 +32,23 @@
 </script>
 	</head>
 	<body>
-<h1>{{ site.name }}</h1>
-<h2>{{ site.description }}</h2>
-<hr />
-<a href="{{ site.url }}">Home</a>
-|
-<a href="{{ site.url }}/contact">Contact</a>
-|
-<a href="{{ site.url }}/tags">Tags</a>
-<hr />
+<div id="skiplinks"> <!-- These are the skiplinks found in the top left corner of the page. They increase accessibility for people who are visually impaired. --> 
+  <ul>
+  	<li><a href="#horiz_menu" title="Skip to navigation menu.">Skip to Navigation.</a></li>
+  	<li><a href="#content" title="Skip to content.">Skip to Content.</a></li>
+  </ul>
+</div>
+
+<div id="header">
+  <h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
+  <h2>{{ site.description }}</h2>
+  <p id="cost_line">&nbsp;</p>
+</div>
+
+<div id="horiz_menu">
+  <ul>
+		<li><a href="{{ site.url }}">Home</a></li>
+  	<li><a href="{{ site.url }}/tags">Tags</a></li>
+  	<li><a href="{{ site.url }}/contact">Contact</a></li>
+  </ul>
+</div>

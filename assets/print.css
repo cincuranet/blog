@@ -1,0 +1,6 @@
+/* CSS Document */
+body {background-color:#fff;}
+div#skiplinks,p#cost_line,div#horiz_menu,div#sidebar,div#tertiary_section,div#footer ul {display:none;}
+div#content,div#footer {width: 95%;}
+div#header h1,div#header h2,div#footer {text-align:left; line-height:1em;}
+div#footer {background-color:#fff;}
