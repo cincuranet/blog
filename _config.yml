@@ -3,3 +3,4 @@ description: Taking something that can't be done, and then doing it.
 url: http://blog.cincura.net
 permalink: /:title
 paginate: 20
+paginate_path: page-:num
