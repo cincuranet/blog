@@ -10,14 +10,14 @@ tags:
 category: devel
 layout: post
 ---
-I was doing Entity Framework <a href="http://www.x2develop.com">training</a> roughly two weeks ago and normally I have 99% of people working with <a href="http://www.microsoft.com/sqlserver/">MS SQL</a>. This however I had two guys from some company, where they worked with different databases, as the product they are working on is able to use couple of different databases. What a great setup. Finally I can show how to use <a href="http://msdn.com/ef">Entity Framework</a> with non-MS SQL databases. 
+<p>I was doing Entity Framework <a href="http://www.x2develop.com">training</a> roughly two weeks ago and normally I have 99% of people working with <a href="http://www.microsoft.com/sqlserver/">MS SQL</a>. This however I had two guys from some company, where they worked with different databases, as the product they are working on is able to use couple of different databases. What a great setup. Finally I can show how to use <a href="http://msdn.com/ef">Entity Framework</a> with non-MS SQL databases.</p> 
 
-They were interested particularly in <a href="http://www.oracle.com/us/products/database/index.html">Oracle Database</a>, but I'm not that familiar with the 3rd party providers for Oracle Database so we agreed on using <a href="http://www.firebirdsql.org">Firebird</a>. ;) The code we wanted to try was to connect with same application (without recompile) to two different databases based on connection string (or connection object itself), without mapping hassle etc.
+<p>They were interested particularly in <a href="http://www.oracle.com/us/products/database/index.html">Oracle Database</a>, but I'm not that familiar with the 3rd party providers for Oracle Database so we agreed on using <a href="http://www.firebirdsql.org">Firebird</a>. ;) The code we wanted to try was to connect with same application (without recompile) to two different databases based on connection string (or connection object itself), without mapping hassle etc.</p>
 
-I chose Code First, because it's the mapping itself is more separated from other parts than in EDMX (although the EDMX can be split to CSDL, MSL and SSDL files as well, you'll then need to edit there manually or temporarily create EDMX file back again to use designer easily).
+<p>I chose Code First, because it's the mapping itself is more separated from other parts than in EDMX (although the EDMX can be split to CSDL, MSL and SSDL files as well, you'll then need to edit there manually or temporarily create EDMX file back again to use designer easily).</p>
 
-Let's start with the structure. It's basic Books - Authors example (sorry, names in Czech, but Book = Kniha, Author = Autor).
-Firebird:
+<p>Let's start with the structure. It's basic Books - Authors example (sorry, names in Czech, but Book = Kniha, Author = Autor).</p>
+<p>Firebird:</p>
 <pre class="brush:sql">
 create table Knihy(
   ISBN varchar(20) character set ASCII primary key,
@@ -33,7 +33,7 @@ create table Autori(
 alter table Knihy add foreign key (ID_Autor) references Autori(ID);
 </pre>
 
-MS SQL:
+<p>MS SQL:</p>
 <pre class="brush:sql">
 create table Knihy(
   ISBN varchar(20) primary key,
@@ -49,9 +49,9 @@ create table Autori(
 alter table Knihy add foreign key (ID_Autor) references Autori(ID);
 </pre>
 
-Now the C# code. I'll start with classes, then basic Code First structure and finally the mapping.
+<p>Now the C# code. I'll start with classes, then basic Code First structure and finally the mapping.</p>
 
-Classes:
+<p>Classes:</p>
 <pre class="brush:csharp">
 class Autor
 {
@@ -71,7 +71,7 @@ class Kniha
 }
 </pre>
 
-First interesting point. The <code>DbContext</code> class needs to create proper mapping based on connection object used:
+<p>First interesting point. The <code>DbContext</code> class needs to create proper mapping based on connection object used:</p>
 <pre class="brush:csharp">
 class MyContext : DbContext
 {
@@ -102,9 +102,9 @@ class MyContext : DbContext
 }
 </pre>
 
-Looking at <code>Database.Connection</code> type I switch between two different configurations. So the <code>DbContext</code> itself isn't dealing with the mapping.
+<p>Looking at <code>Database.Connection</code> type I switch between two different configurations. So the <code>DbContext</code> itself isn't dealing with the mapping.</p>
 
-Finally the mapping (second interesting point):
+<p>Finally the mapping (second interesting point):</p>
 <pre class="brush:csharp">
 class MSSQLAutorConfiguration : EntityTypeConfiguration<Autor>
 {
@@ -159,9 +159,9 @@ class FirebirdKnihaConfiguration : EntityTypeConfiguration&lt;Kniha&gt;
 }
 </pre>
 
-For MS SQL I took a chance to save some typing and let conventions to kick in and do some work for me. For Firebird, I had to type a little bit more. What may not be absolutely clear is fact, that the mapping classes (the ones derived from <code>EntityTypeConfiguration&lt;T&gt;</code>) can create hierarchy. It doesn't have to be just one level deep. So if you have i.e. same column names in both databases you can use <code>HasColumnName</code> in some base class and use i.e. just <code>HasColumnType</code> and <code>Map</code> in derived classes used later to configure model builder.
+<p>For MS SQL I took a chance to save some typing and let conventions to kick in and do some work for me. For Firebird, I had to type a little bit more. What may not be absolutely clear is fact, that the mapping classes (the ones derived from <code>EntityTypeConfiguration&lt;T&gt;</code>) can create hierarchy. It doesn't have to be just one level deep. So if you have i.e. same column names in both databases you can use <code>HasColumnName</code> in some base class and use i.e. just <code>HasColumnType</code> and <code>Map</code> in derived classes used later to configure model builder.</p>
 
-And to test it actually works and produces expected queries and so on, simple test code.
+<p>And to test it actually works and produces expected queries and so on, simple test code.</p>
 
 <pre class="brush:csharp">
 static void Main(string[] args)
@@ -183,4 +183,4 @@ static void Test(DbConnection conn)
 }
 </pre>
 
-I hope everything is clear. If you have a question, comments are here for you, I'll try my best to answer. If you'd like to have a training, <a href="/contact">let me know</a>.
+<p>I hope everything is clear. If you have a question, comments are here for you, I'll try my best to answer. If you'd like to have a training, <a href="/contact">let me know</a>.</p>

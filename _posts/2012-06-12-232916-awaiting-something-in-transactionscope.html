@@ -9,11 +9,11 @@ tags:
 category: devel
 layout: post
 ---
-I like asynchronous programming. The <a href="http://msdn.microsoft.com/en-us/library/ms228963.aspx">Asynchronous Programming Model</a> and later <a href="msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">Task</a>s with <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith.aspx">ContinueWith</a> offer great performance especially if no waiting and similar is used.
+<p>I like asynchronous programming. The <a href="http://msdn.microsoft.com/en-us/library/ms228963.aspx">Asynchronous Programming Model</a> and later <a href="msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">Task</a>s with <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith.aspx">ContinueWith</a> offer great performance especially if no waiting and similar is used.</p>
 
-Although the <a href="http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx">async/await</a> makes this very simple for 99% of cases, there's always 1% where you might hit the wall. With callbacks it was little bit obvious, because you wrote the code. Now the compiler is doing the hard work.
+<p>Although the <a href="http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx">async/await</a> makes this very simple for 99% of cases, there's always 1% where you might hit the wall. With callbacks it was little bit obvious, because you wrote the code. Now the compiler is doing the hard work.</p>
 
-If you do something like:
+<p>If you do something like:</p>
 <pre class="brush:csharp">
 lock (SyncRoot)
 {
@@ -21,9 +21,9 @@ lock (SyncRoot)
 }
 </pre>
 
-You'll get nice error from compiler saying <code>The 'await' operator cannot be used in the body of a lock statement</code>. And it really makes sense. The lock will very likely provide wrong results under default rewriting work the compiler is doing (and doing it properly for <a href="http://msdn.microsoft.com/en-us/library/system.threading.monitor.aspx">Monitor</a> class needs a lot of knowledge of what you're trying to achieve. What's not so clear is that with <a href="http://msdn.microsoft.com/en-us/library/system.transactions.transactionscope.aspx">TransactionScope</a> block (or similar construct) you're basically doing same stuff, just probably somewhere else in database.
+<p>You'll get nice error from compiler saying <code>The 'await' operator cannot be used in the body of a lock statement</code>. And it really makes sense. The lock will very likely provide wrong results under default rewriting work the compiler is doing (and doing it properly for <a href="http://msdn.microsoft.com/en-us/library/system.threading.monitor.aspx">Monitor</a> class needs a lot of knowledge of what you're trying to achieve. What's not so clear is that with <a href="http://msdn.microsoft.com/en-us/library/system.transactions.transactionscope.aspx">TransactionScope</a> block (or similar construct) you're basically doing same stuff, just probably somewhere else in database.</p>
 
-So the compiler is completely OK with:
+<p>So the compiler is completely OK with:</p>
 <pre class="brush:csharp">
 using (TransactionScope ts = new TransactionScope())
 {
@@ -31,7 +31,7 @@ using (TransactionScope ts = new TransactionScope())
 }
 </pre>
 
-But that's not what you might had in mind. Consider code like:
+<p>But that's not what you might had in mind. Consider code like:</p>
 <pre class="brush:csharp">
 static void Main(string[] args)
 {
@@ -65,7 +65,7 @@ class Test : IDisposable
 }
 </pre>
 
-The result is correct (and expected, if you look at it closely):
+<p>The result is correct (and expected, if you look at it closely):</p>
 
 <pre class="brush:plain">
 Before
@@ -74,6 +74,6 @@ After
 Dispose
 </pre>
 
-But considering, that the <i>Other stuff</i> <strong>might</strong> have some dependency in data being done in that transaction you <strong>might</strong> get wrong result.
+<p>But considering, that the <i>Other stuff</i> <strong>might</strong> have some dependency in data being done in that transaction you <strong>might</strong> get wrong result.</p>
 
-So it's not always wrong, nor some gotcha in compiler. But think it through before using this construct.
+<p>So it's not always wrong, nor some gotcha in compiler. But think it through before using this construct.</p>

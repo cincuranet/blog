@@ -7,10 +7,10 @@ tags:
 category: devel
 layout: post
 ---
-I was just checking some documentation around <a href="http://msdn.microsoft.com/en-us/library/798axes2(v=vs.110)">System.Threading namespace for .NET 4.5</a> and I found that there's one nice addition to synchronization primitives.
+<p>I was just checking some documentation around <a href="http://msdn.microsoft.com/en-us/library/798axes2(v=vs.110)">System.Threading namespace for .NET 4.5</a> and I found that there's one nice addition to synchronization primitives.</p>
 
-As you might imaging using <a href="http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx">async/await</a> with synchronization primitives isn't particularly good idea, because you can easily make a mistake and end up with code that looks correct but produces completely wrong results. 
+<p>As you might imaging using <a href="http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx">async/await</a> with synchronization primitives isn't particularly good idea, because you can easily make a mistake and end up with code that looks correct but produces completely wrong results.</p> 
 
-But still, for some primitives it might be useful. The BCL team (or whoever is responsible to this part) decided, the <a href="http://msdn.microsoft.com/en-us/library/dd271035(v=vs.110)">SemaphoreSlim</a> is worth it. The method is <a href="http://msdn.microsoft.com/en-us/library/hh462788(v=vs.110).aspx">SemaphoreSlim.WaitAsync</a>.
+<p>But still, for some primitives it might be useful. The BCL team (or whoever is responsible to this part) decided, the <a href="http://msdn.microsoft.com/en-us/library/dd271035(v=vs.110)">SemaphoreSlim</a> is worth it. The method is <a href="http://msdn.microsoft.com/en-us/library/hh462788(v=vs.110).aspx">SemaphoreSlim.WaitAsync</a>.</p>
 
-Nice. This might nicely play with some legacy threading code.
+<p>Nice. This might nicely play with some legacy threading code.</p>

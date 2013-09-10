@@ -10,9 +10,9 @@ tags:
 category: devel
 layout: post
 ---
-In last few days I've seen couple of pieces of code with "executing method every x seconds". And a lot of bad. Not buggy, but superfluously expensive. I'm also here adding a simple loop to run just 10 times.
+<p>In last few days I've seen couple of pieces of code with "executing method every x seconds". And a lot of bad. Not buggy, but superfluously expensive. I'm also here adding a simple loop to run just 10 times.</p>
 
-The first bad one is simply using <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx">Thread</a> and <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.sleep.aspx">Sleep</a> method.
+<p>The first bad one is simply using <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx">Thread</a> and <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.sleep.aspx">Sleep</a> method.</p>
 
 <pre class="brush:csharp">
 void BadOne1()
@@ -29,9 +29,9 @@ void BadOne1()
 }
 </pre>
 
-Problem is the <code>Thread</code> object is very expensive and it's used only fraction of time. The rest is blocked. Simply wasted resources.
+<p>Problem is the <code>Thread</code> object is very expensive and it's used only fraction of time. The rest is blocked. Simply wasted resources.</p>
 
-I've also seen slightly better version.
+<p>I've also seen slightly better version.</p>
 
 <pre class="brush:csharp">
 void BadOne2()
@@ -47,9 +47,9 @@ void BadOne2()
 }
 </pre>
 
-This is really just a little bit better. <code>ThreadPool</code> thread is used, but again, the thread is doing nothing a lot of time. Again wasted resources.
+<p>This is really just a little bit better. <code>ThreadPool</code> thread is used, but again, the thread is doing nothing a lot of time. Again wasted resources.</p>
 
-Better approach is to use <a href="http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx">Timer</a>. This way you're not wasting resources by abusing threads. The callback from <code>Timer</code> is executed when the interval is elapsed (on <code>ThreadPool</code> thread). Rest of the time it's just sits there waiting for next tick.
+<p>Better approach is to use <a href="http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx">Timer</a>. This way you're not wasting resources by abusing threads. The callback from <code>Timer</code> is executed when the interval is elapsed (on <code>ThreadPool</code> thread). Rest of the time it's just sits there waiting for next tick.</p>
 
 <pre class="brush:csharp">
 void GoodOne1()
@@ -69,9 +69,9 @@ void GoodOne1()
 }
 </pre>
 
-Here I'd like to point to <a href="{% post_url 2009-10-29-230984-my-timer-usage-and-references-moral %}">my older post about keeping the reference to <code>Timer</code></a>. 
+<p>Here I'd like to point to <a href="{% post_url 2009-10-29-230984-my-timer-usage-and-references-moral %}">my older post about keeping the reference to <code>Timer</code></a>.</p> 
 
-And also one question that might come. The <code>Timer</code> ticks every interval no matter how long executing the callback took. That might not be what you want. You may want to execute the method with xx seconds delay between (previous examples), not execute the method every xx second (this example). The solution is pretty easy. Initially just schedule one tick and then reschedule it for next interval.
+<p>And also one question that might come. The <code>Timer</code> ticks every interval no matter how long executing the callback took. That might not be what you want. You may want to execute the method with xx seconds delay between (previous examples), not execute the method every xx second (this example). The solution is pretty easy. Initially just schedule one tick and then reschedule it for next interval.</p>
 
 <pre class="brush:csharp">
 void GoodOne2()
@@ -95,7 +95,7 @@ void GoodOne2()
 }
 </pre>
 
-All these are kinda low level. But you can use <a href="http://msdn.microsoft.com/en-us/data/gg577609">Reactive Extensions (Rx)</a> to write it in more succinct way, but internally the core idea is same as with <code>Timer</code>. 
+<p>All these are kinda low level. But you can use <a href="http://msdn.microsoft.com/en-us/data/gg577609">Reactive Extensions (Rx)</a> to write it in more succinct way, but internally the core idea is same as with <code>Timer</code>.</p> 
 
 <pre class="brush:csharp">
 void GoodOne3()
@@ -111,4 +111,4 @@ void GoodOne3()
 }
 </pre>
 
-No matter what approach you'll use, please don't (ab)use threads (manually created or <code>ThreadPool</code> ones). Threads are small little nice sweet creatures that don't deserve to be treated like this. And. Don't forget to cleanup resources (i.e. <code>Timer</code> is <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.aspx"><code>IDisposable</code></a>).
+<p>No matter what approach you'll use, please don't (ab)use threads (manually created or <code>ThreadPool</code> ones). Threads are small little nice sweet creatures that don't deserve to be treated like this. And. Don't forget to cleanup resources (i.e. <code>Timer</code> is <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.aspx"><code>IDisposable</code></a>).</p>

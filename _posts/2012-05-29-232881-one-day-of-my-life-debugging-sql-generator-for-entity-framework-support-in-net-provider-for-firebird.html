@@ -9,11 +9,11 @@ tags:
 category: devel
 layout: post
 ---
-Couple of days back I was hunting some problem in code, that processes and later translates <a href="http://msdn.microsoft.com/en-us/library/bb308959.aspx">LINQ</a> queries preprocessed by <a href="http://msdn.com/ef">Entity Framework</a>. The bottom line is that you are in code, where you have pieces of query, you're rewriting these (even partially) or exchanging/adding new pieces if needed. You don't have whole picture, because pieces are changing and so on. 
+<p>Couple of days back I was hunting some problem in code, that processes and later translates <a href="http://msdn.microsoft.com/en-us/library/bb308959.aspx">LINQ</a> queries preprocessed by <a href="http://msdn.com/ef">Entity Framework</a>. The bottom line is that you are in code, where you have pieces of query, you're rewriting these (even partially) or exchanging/adding new pieces if needed. You don't have whole picture, because pieces are changing and so on.</p> 
 
-So even if you partially know what you are producing, at the end you have to look at final SQL command and see whether it's correct and/or semantically same as previous one, if you applied some changes or optimizations.
+<p>So even if you partially know what you are producing, at the end you have to look at final SQL command and see whether it's correct and/or semantically same as previous one, if you applied some changes or optimizations.</p>
 
-It took my roughly a day to find cause of issue and fix it. During this I created a lot of notes with commands and did a lot comparisons. I am placing these here, thus you can take a look at these and enjoy the feeling with me. If you're interested, you can also check the <a href="http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/NETProvider/source/FirebirdSql/Data/Entity/SqlGenerator.cs?view=markup">SqlGenerator</a> class, where I was working mainly.
+<p>It took my roughly a day to find cause of issue and fix it. During this I created a lot of notes with commands and did a lot comparisons. I am placing these here, thus you can take a look at these and enjoy the feeling with me. If you're interested, you can also check the <a href="http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/NETProvider/source/FirebirdSql/Data/Entity/SqlGenerator.cs?view=markup">SqlGenerator</a> class, where I was working mainly.</p>
 
 <pre class="brush:sql">
 SELECT 

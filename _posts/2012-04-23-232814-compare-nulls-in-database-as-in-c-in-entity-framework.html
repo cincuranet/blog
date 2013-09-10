@@ -10,9 +10,9 @@ tags:
 category: devel
 layout: post
 ---
-Roughly two years ago I blogged about [intlink id=231185]differences in NULLs handling in databases and in (some) programming languages (C# in particular)[/intlink]. But Entity Framework 5 (in .NET 4.5) (<a href="{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}">lost?</a>) comes with handy switch. It's <code><a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx">UseCSharpNullComparisonBehavior</a></code>. What this basically does is ensure when you compare nullable fields to be handled like in C#, aka <code>null == null</code> and not like in SQL where NULL compared to anything is NULL or false when boolean value is needed.
+<p>Roughly two years ago I blogged about [intlink id=231185]differences in NULLs handling in databases and in (some) programming languages (C# in particular)[/intlink]. But Entity Framework 5 (in .NET 4.5) (<a href="{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}">lost?</a>) comes with handy switch. It's <code><a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx">UseCSharpNullComparisonBehavior</a></code>. What this basically does is ensure when you compare nullable fields to be handled like in C#, aka <code>null == null</code> and not like in SQL where NULL compared to anything is NULL or false when boolean value is needed.</p>
 
-Let's have a look at the diffences. Simple code:
+<p>Let's have a look at the diffences. Simple code:</p>
 <pre class="brush:csharp">
 int? i = default(int);
 using (testEntities c = new testEntities())
@@ -27,7 +27,7 @@ using (testovaciEntities c = new testovaciEntities())
 }
 </pre>
 
-The first query creates "magic" SQL:
+<p>The first query creates "magic" SQL:</p>
 
 <pre class="brush:sql">
 SELECT
@@ -38,7 +38,7 @@ FROM [dbo].[DETAIL] AS [Extent1]
 WHERE  NOT ((([Extent1].[ID_MASTER] = @p__linq__0) AND ( NOT ([Extent1].[ID_MASTER] IS NULL OR @p__linq__0 IS NULL))) OR (([Extent1].[ID_MASTER] IS NULL) AND (@p__linq__0 IS NULL)))
 </pre>
 
-While the other expected one:
+<p>While the other expected one:</p>
 
 <pre class="brush:sql">
 SELECT
@@ -49,6 +49,6 @@ FROM [dbo].[DETAIL] AS [Extent1]
 WHERE [Extent1].[ID_MASTER] <> @p__linq__0
 </pre>
 
-What the first one is doing is handling the case where C# null (in parameter) can be compared to database NULL to fix-up the logic.
+<p>What the first one is doing is handling the case where C# null (in parameter) can be compared to database NULL to fix-up the logic.</p>
 
-If you're not familiar with NULLs in database this can be tricky to handle correctly, especially if you have <a href="http://msdn.microsoft.com/en-us/library/f2kd6eb2.aspx">negations</a>, <a href="http://msdn.microsoft.com/en-us/library/bb534754.aspx">All</a>s and <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.any.aspx">Any</a>s nested inside query. Hence setting this property to <code>true</code> can save you hours of debugging and wondering what's going on.
+<p>If you're not familiar with NULLs in database this can be tricky to handle correctly, especially if you have <a href="http://msdn.microsoft.com/en-us/library/f2kd6eb2.aspx">negations</a>, <a href="http://msdn.microsoft.com/en-us/library/bb534754.aspx">All</a>s and <a href="http://msdn.microsoft.com/en-us/library/system.linq.queryable.any.aspx">Any</a>s nested inside query. Hence setting this property to <code>true</code> can save you hours of debugging and wondering what's going on.</p>

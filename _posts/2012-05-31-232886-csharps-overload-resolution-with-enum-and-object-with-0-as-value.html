@@ -7,9 +7,9 @@ tags:
 category: devel
 layout: post
 ---
-Today I faced surprising behavior once again. Completely off guard.
+<p>Today I faced surprising behavior once again. Completely off guard.</p>
 
-Let's have a code:
+<p>Let's have a code:</p>
 
 <pre class="brush:csharp">
 static void Test(string s, object o)
@@ -31,7 +31,7 @@ enum TestEnum
 }
 </pre>
 
-and call it:
+<p>and call it:</p>
 
 <pre class="brush:csharp">
 Test("rrr", 0);
@@ -41,7 +41,7 @@ Test("rrr", -1);
 Test("rrr", 100);
 </pre>
 
-What do you think you'll see? Surprisingly, at least for me, it's:
+<p>What do you think you'll see? Surprisingly, at least for me, it's:</p>
 
 <pre class="brush:plain">
 enum
@@ -51,6 +51,6 @@ object
 object
 </pre>
 
-After searching for a while I found <a href="http://blogs.msdn.com/b/ericlippert/archive/2006/03/29/the-root-of-all-evil-part-two.aspx">Eric Lippert's post about it</a>. Basically there's something we can call <em>magic zero</em> and this can be implicitly converted to any enum (even empty one or one without <code>0</code> value). That's the root cause of this behavior. Of course, when C# compiler sees this value in method call, it selects the more specific overload (the one with <code>TestEnum</code>) over the one with <code>object</code>.
+<p>After searching for a while I found <a href="http://blogs.msdn.com/b/ericlippert/archive/2006/03/29/the-root-of-all-evil-part-two.aspx">Eric Lippert's post about it</a>. Basically there's something we can call <em>magic zero</em> and this can be implicitly converted to any enum (even empty one or one without <code>0</code> value). That's the root cause of this behavior. Of course, when C# compiler sees this value in method call, it selects the more specific overload (the one with <code>TestEnum</code>) over the one with <code>object</code>.</p>
 
-Learning new stuff every day...
+<p>Learning new stuff every day...</p>

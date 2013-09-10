@@ -8,9 +8,9 @@ tags:
 category: devel
 layout: post
 ---
-I have a small morale from today. I was writing some code that was handling searching for items base also on <a href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx">CultureInfo</a>. Because it's a pretty straightforward object, in core of .NET Framework (it's in <code>mscorlib</code>) I was expecting to handle equality using <code>==</code> based on culture itself not the object. And of course, I was wrong. :) 
+<p>I have a small morale from today. I was writing some code that was handling searching for items base also on <a href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.aspx">CultureInfo</a>. Because it's a pretty straightforward object, in core of .NET Framework (it's in <code>mscorlib</code>) I was expecting to handle equality using <code>==</code> based on culture itself not the object. And of course, I was wrong. :)</p> 
 
-The code below should explain it clearly (<code>CurrentUICulture</code> might be different based on your system).
+<p>The code below should explain it clearly (<code>CurrentUICulture</code> might be different based on your system).</p>
 
 <pre class="brush:csharp">
 // false
@@ -19,4 +19,4 @@ System.Threading.Thread.CurrentThread.CurrentUICulture == System.Globalization.C
 System.Threading.Thread.CurrentThread.CurrentUICulture.Equals(System.Globalization.CultureInfo.GetCultureInfo("en-US"));
 </pre>
 
-Yep. Learning something every day.
+<p>Yep. Learning something every day.</p>

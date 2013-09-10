@@ -8,11 +8,11 @@ tags:
 category: devel
 layout: post
 ---
-It's a good practice to include parameter name when throwing <a href="http://msdn.microsoft.com/en-us/library/system.argumentexception.aspx">ArgumentException </a> (or similar). But I hate typing the parameter name as string. It's A) boring and B) dumb, because when you refactor the parameter name you have to manually also change this string.
+<p>It's a good practice to include parameter name when throwing <a href="http://msdn.microsoft.com/en-us/library/system.argumentexception.aspx">ArgumentException </a> (or similar). But I hate typing the parameter name as string. It's A) boring and B) dumb, because when you refactor the parameter name you have to manually also change this string.</p>
 
-But why not let the language constructs help us? 8-) If we capture the parameter as <i>expression</i> we'll be able to use static typing and extract the name from the expression node.
+<p>But why not let the language constructs help us? 8-) If we capture the parameter as <i>expression</i> we'll be able to use static typing and extract the name from the expression node.</p>
 
-Shouldn't be that hard, I thought one afternoon, and here's the result (it really isn't).
+<p>Shouldn't be that hard, I thought one afternoon, and here's the result (it really isn't).</p>
 
 <pre class="brush:csharp">
 static string ArgumentExceptionMessage&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt; argument)
@@ -24,7 +24,7 @@ static string ArgumentExceptionMessage&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt; 
 }
 </pre>
 
-And you can use it (normally you would throw exception in all cases, I just wanted to show the result, hence <code>Console.WriteLine</code>).
+<p>And you can use it (normally you would throw exception in all cases, I just wanted to show the result, hence <code>Console.WriteLine</code>).</p>
 
 <pre class="brush:csharp">
 class Foo
@@ -42,4 +42,4 @@ static void Main(string[] args)
 }
 </pre>
 
-There's never enough precondition checks. And understandable messages/parameters of exceptions is a valued help for developers. You can even wrap it to method returning <code>ArgumentException</code> directly to have more succinct code.
+<p>There's never enough precondition checks. And understandable messages/parameters of exceptions is a valued help for developers. You can even wrap it to method returning <code>ArgumentException</code> directly to have more succinct code.</p>

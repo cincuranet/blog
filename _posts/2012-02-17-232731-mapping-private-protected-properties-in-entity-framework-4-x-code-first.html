@@ -6,11 +6,11 @@ tags:
 category: devel
 layout: post
 ---
-More than a year ago I was blogging about <a href="{% post_url 2010-11-04-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}">how to map private/protected/... properties in Code First CTP4</a> for the time being. Well it a long time and a lot of changed. The code there isn't absolutely up to date with current <a href="http://blogs.msdn.com/b/adonet/archive/2012/02/09/ef-4-3-released.aspx">Entity Framework 4.3</a>. 
+<p>More than a year ago I was blogging about <a href="{% post_url 2010-11-04-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}">how to map private/protected/... properties in Code First CTP4</a> for the time being. Well it a long time and a lot of changed. The code there isn't absolutely up to date with current <a href="http://blogs.msdn.com/b/adonet/archive/2012/02/09/ef-4-3-released.aspx">Entity Framework 4.3</a>.</p> 
 
-Although you can go raw and create the expression tree from i.e. string yourself (<a href="http://nuget.org/packages/Mono.Linq.Expressions">Mono.Linq.Expressions</a> can be quite handy) it's not nice and more importantly it's not strongly typed. If you don't want to use data annotations or couple your configuration classes into entity classes you're still not lost. In the above linked post <a href="//blog.cincura.net/id/232147/#comment-5376">in comments <i>Drew Jones</i></a> came with a nice idea.
+<p>Although you can go raw and create the expression tree from i.e. string yourself (<a href="http://nuget.org/packages/Mono.Linq.Expressions">Mono.Linq.Expressions</a> can be quite handy) it's not nice and more importantly it's not strongly typed. If you don't want to use data annotations or couple your configuration classes into entity classes you're still not lost. In the above linked post <a href="//blog.cincura.net/id/232147/#comment-5376">in comments <i>Drew Jones</i></a> came with a nice idea.</p>
 
-You entity classes will be partial classes and somewhere else you'll create second part of that class with the expressions needed to express the properties. Let's take a look at example (you can adjust access modifiers according to your needs and structure).
+<p>You entity classes will be partial classes and somewhere else you'll create second part of that class with the expressions needed to express the properties. Let's take a look at example (you can adjust access modifiers according to your needs and structure).</p>
 
 <pre class="brush:csharp">
 public partial class FooBar
@@ -29,11 +29,11 @@ public partial class FooBar
 }
 </pre>
 
-And now in mapping you'll just use the expressions.
+<p>And now in mapping you'll just use the expressions.</p>
 
 <pre class="brush:csharp">
 	.Property(FooBar.PropertyAccessExpressions.ID);
 	.Property(FooBar.PropertyAccessExpressions.Something);
 </pre>
 
-Nice isn't it? It's separated (kind of - you can't have entity classes in one assembly and the expressions in other) and it's strongly typed.
+<p>Nice isn't it? It's separated (kind of - you can't have entity classes in one assembly and the expressions in other) and it's strongly typed.</p>
