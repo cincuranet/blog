@@ -1,17 +1,21 @@
 {% include header.html %}
 
 <div id="content">
-	<h3>{{ page.title }}</h3> published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }} 
-	<div>
-		{{ page.content }}
-	</div>
-	
-	<hr />
-	<h4>Comments:</h4>
-	<div>
-		{% include comments.html %}
+	<div id="top_article">
+		<h3>{{ page.title }}</h3>  
+		<p>
+			{{ page.content }}
+		</p>                      
+		<p><small>Published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }}.</small></p>
+	</div>		
+	<div id="top_article">
+		<h4>Comments:</h4>
+		<div>
+			{% include comments.html %}
+		</div>
 	</div>
 </div>
 
+{% include sidebar.html %}
 
 {% include footer.html %}
