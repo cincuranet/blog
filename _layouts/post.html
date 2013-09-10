@@ -1,6 +1,9 @@
 {% include header.html %}
 
-{{ content }}
+<h3>{{ page.title }}</h3> published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }} 
+<div>
+{{ page.content }}
+</div>
 
 <hr />
 Comments:<br />
