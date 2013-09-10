@@ -10,7 +10,7 @@ tags:
 category: devel
 layout: post
 ---
-<p>Roughly two years ago I blogged about [intlink id=231185]differences in NULLs handling in databases and in (some) programming languages (C# in particular)[/intlink]. But Entity Framework 5 (in .NET 4.5) (<a href="{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}">lost?</a>) comes with handy switch. It's <code><a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx">UseCSharpNullComparisonBehavior</a></code>. What this basically does is ensure when you compare nullable fields to be handled like in C#, aka <code>null == null</code> and not like in SQL where NULL compared to anything is NULL or false when boolean value is needed.</p>
+<p>Roughly two years ago I blogged about <a href="{% post_url 2010-01-21-231185-be-careful-with-not-conditions-and-nulls-in-linq-when-querying-databases %}">differences in NULLs handling in databases and in (some) programming languages (C# in particular)</a>. But Entity Framework 5 (in .NET 4.5) (<a href="{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}">lost?</a>) comes with handy switch. It's <code><a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx">UseCSharpNullComparisonBehavior</a></code>. What this basically does is ensure when you compare nullable fields to be handled like in C#, aka <code>null == null</code> and not like in SQL where NULL compared to anything is NULL or false when boolean value is needed.</p>
 
 <p>Let's have a look at the diffences. Simple code:</p>
 <pre class="brush:csharp">

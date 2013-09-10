@@ -10,7 +10,7 @@ Currently latest CTP for Entity Framework, <a href="http://www.microsoft.com/dow
 
 You can create layer that loads objects your application needs, or you think it might need. And then you use only <code>.Local</code> to access that data, still full LINQ support etc. This may help to lower number of queries you're sending to database. The property is of type ObservableCollection&lt;T&gt;, thus the databinding is super easy.
 
-The method isn't something new. In fact it's exposing in a friendly was what's already possible - i.e. [intlink id=231816]Useful Find method on DbSet[/intlink] and <a href="{% post_url 2009-02-22-229047-local-queries-2nd-edition %}">"Local" Queries 2nd edition</a>. It is using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx">ObjectStateManager</a> to find all Unchanged, Added and Modified entities, exactly the ones you're probably interested in.
+The method isn't something new. In fact it's exposing in a friendly was what's already possible - i.e. <a href="{% post_url 2010-07-26-231816-useful-find-method-on-dbset %}">Useful Find method on DbSet</a> and <a href="{% post_url 2009-02-22-229047-local-queries-2nd-edition %}">"Local" Queries 2nd edition</a>. It is using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx">ObjectStateManager</a> to find all Unchanged, Added and Modified entities, exactly the ones you're probably interested in.
 
 Let's see some example:
 
