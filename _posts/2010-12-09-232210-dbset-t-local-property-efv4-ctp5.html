@@ -6,13 +6,13 @@ tags:
 category: devel
 layout: post
 ---
-Currently latest CTP for Entity Framework, <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d">CTP5</a>, contains one new property on DbSet&lt;T&gt;. It's called <code>Local</code> and it's very useful when you wanna work with objects you have already in memory. So it's good for queries without hitting the database, like databinding.
+<p>Currently latest CTP for Entity Framework, <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d">CTP5</a>, contains one new property on DbSet&lt;T&gt;. It's called <code>Local</code> and it's very useful when you wanna work with objects you have already in memory. So it's good for queries without hitting the database, like databinding.</p>
 
-You can create layer that loads objects your application needs, or you think it might need. And then you use only <code>.Local</code> to access that data, still full LINQ support etc. This may help to lower number of queries you're sending to database. The property is of type ObservableCollection&lt;T&gt;, thus the databinding is super easy.
+<p>You can create layer that loads objects your application needs, or you think it might need. And then you use only <code>.Local</code> to access that data, still full LINQ support etc. This may help to lower number of queries you're sending to database. The property is of type ObservableCollection&lt;T&gt;, thus the databinding is super easy.</p>
 
-The method isn't something new. In fact it's exposing in a friendly was what's already possible - i.e. <a href="{% post_url 2010-07-26-231816-useful-find-method-on-dbset %}">Useful Find method on DbSet</a> and <a href="{% post_url 2009-02-22-229047-local-queries-2nd-edition %}">"Local" Queries 2nd edition</a>. It is using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx">ObjectStateManager</a> to find all Unchanged, Added and Modified entities, exactly the ones you're probably interested in.
+<p>The method isn't something new. In fact it's exposing in a friendly was what's already possible - i.e. <a href="{% post_url 2010-07-26-231816-useful-find-method-on-dbset %}">Useful Find method on DbSet</a> and <a href="{% post_url 2009-02-22-229047-local-queries-2nd-edition %}">"Local" Queries 2nd edition</a>. It is using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx">ObjectStateManager</a> to find all Unchanged, Added and Modified entities, exactly the ones you're probably interested in.</p>
 
-Let's see some example:
+<p>Let's see some example:</p>
 
 <pre class="brush:csharp">
 class Program
@@ -60,8 +60,8 @@ class FooBar
 }
 </pre>
 
-All important stuff about behavior is in comments. As you see, it acts as kind of local cache of objects, that are (mostly) reasonable to work with.
+<p>All important stuff about behavior is in comments. As you see, it acts as kind of local cache of objects, that are (mostly) reasonable to work with.</p>
 
-As always, nothing huge, but nice, handy.
+<p>As always, nothing huge, but nice, handy.</p>
 
-PS: Did you noticed, I'm using <a href="http://www.firebirdsql.org/">Firebird</a>? ;)
+<p>PS: Did you noticed, I'm using <a href="http://www.firebirdsql.org/">Firebird</a>? ;)</p>

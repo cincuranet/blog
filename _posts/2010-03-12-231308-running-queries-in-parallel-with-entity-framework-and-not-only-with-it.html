@@ -12,11 +12,11 @@ tags:
 category: devel
 layout: post
 ---
-From time to time I have to run two or more queries that I know will always be two or more - like some first/skip records and also total count. If you write it as two queries and execute, that means two round trips to database. Although it may not matter if the network latency is very small, why not to challenge myself and try to find some workarounds.
+<p>From time to time I have to run two or more queries that I know will always be two or more - like some first/skip records and also total count. If you write it as two queries and execute, that means two round trips to database. Although it may not matter if the network latency is very small, why not to challenge myself and try to find some workarounds.</p>
 
-Sure you can create some stored procedures and get the data back from these, but I was thinking about more LINQ to Entitiesish way. I recalled a way I one time used inside one project. Although it was done in pure SQL, it, as it turned out, works, kind of, for LINQ to Entities as well.
+<p>Sure you can create some stored procedures and get the data back from these, but I was thinking about more LINQ to Entitiesish way. I recalled a way I one time used inside one project. Although it was done in pure SQL, it, as it turned out, works, kind of, for LINQ to Entities as well.</p>
 
-The idea is using "one row table" and put the queries as columns. Let me demonstrate:
+<p>The idea is using "one row table" and put the queries as columns. Let me demonstrate:</p>
 <pre class="brush:sql">
 select
   (select foo, bar from table1 where ...),
@@ -24,17 +24,17 @@ select
 from OneRowTable;
 </pre>
 
-Where the <code>OneRowTable</code> can be specially created table or i.e. for Firebird <code>RDB$DATABASE</code> or for Oracle Database <code>dual</code>. It isn't the nicest SQL (and also challenges optimizer), but works. In columns as queries you can put anything you want as long as it is syntactically correct.
+<p>Where the <code>OneRowTable</code> can be specially created table or i.e. for Firebird <code>RDB$DATABASE</code> or for Oracle Database <code>dual</code>. It isn't the nicest SQL (and also challenges optimizer), but works. In columns as queries you can put anything you want as long as it is syntactically correct.</p>
 
-OK, what about the Entity Framework or LINQ to Entities respectively. I created the "one row table" first:
+<p>OK, what about the Entity Framework or LINQ to Entities respectively. I created the "one row table" first:</p>
 <pre class="brush:sql">
 create table OneRowTable(x bit primary key);
 insert into OneRowTable values (0);
 </pre>
 
-The table needs to have the primary key to be able to import it into entity model, the datatype doesn't matter (I was using MS SQL, hence the <code>bit</code>). 
+<p>The table needs to have the primary key to be able to import it into entity model, the datatype doesn't matter (I was using MS SQL, hence the <code>bit</code>).</p> 
 
-What about the queries? Similar approach:
+<p>What about the queries? Similar approach:</p>
 <pre class="brush:csharp">
 var allinone = context.OneRowTable.Select(_ =&gt; new
 {
@@ -47,9 +47,9 @@ var adata = data.AData;
 var bdata = data.BData;
 </pre>
 
-The <code>a</code> and <code>b</code> are my testing tables. You can check there's only one query executed. Encapsulating this into some method is only piece of cake. 
+<p>The <code>a</code> and <code>b</code> are my testing tables. You can check there's only one query executed. Encapsulating this into some method is only piece of cake.</p> 
 
-And how the query looks like? Well for my MS SQL test:
+<p>And how the query looks like? Well for my MS SQL test:</p>
 <pre class="brush:sql">
 SELECT 
 [UnionAll1].[x] AS [C1], 
@@ -95,6 +95,6 @@ UNION ALL
 ORDER BY [UnionAll1].[x] ASC, [UnionAll1].[C1] ASC
 </pre>
 
-Not exactly the original shape. The translator took another way creating two one row results and using <code>union all</code> to get it into one query. Except this, the query is in general the same (the explicit joins are as result same as the subselects, though little bit more confusing in this case).
+<p>Not exactly the original shape. The translator took another way creating two one row results and using <code>union all</code> to get it into one query. Except this, the query is in general the same (the explicit joins are as result same as the subselects, though little bit more confusing in this case).</p>
 
-Again, this isn't general purpose way of doing it and may result in worse performance than running queries separately and I would recommend using it only after careful testing and on controlled limited set of queries.
+<p>Again, this isn't general purpose way of doing it and may result in worse performance than running queries separately and I would recommend using it only after careful testing and on controlled limited set of queries.</p>

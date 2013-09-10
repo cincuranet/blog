@@ -8,11 +8,11 @@ tags:
 category: devel
 layout: post
 ---
-Last week I was solving problem. The piece of code another code was plugged in was doing some crazy threading stuff inside while the code plugged in used some component that needed some methods (in my case just two) to be called in same thread. Well, that is to make the long story short.
+<p>Last week I was solving problem. The piece of code another code was plugged in was doing some crazy threading stuff inside while the code plugged in used some component that needed some methods (in my case just two) to be called in same thread. Well, that is to make the long story short.</p>
 
-As I couldn't rely on the fact, that the thread calling the first method will be still available when the other one needs to be called I decided to simply steal one thread (in fact <a href="http://msdn.microsoft.com/en-us/library/4yd16hza.aspx">ThreadPool</a> thread) for it a abuse it exclusively. To encapsulate this hack I created this class. 
+<p>As I couldn't rely on the fact, that the thread calling the first method will be still available when the other one needs to be called I decided to simply steal one thread (in fact <a href="http://msdn.microsoft.com/en-us/library/4yd16hza.aspx">ThreadPool</a> thread) for it a abuse it exclusively. To encapsulate this hack I created this class.</p> 
 
-<small>Before you dive into, I have to note, that it is really not a general purpose class and you shouldn't blindly use it - you can easily use it badly and i.e. create unwanted shared state, screw the flow of your program or get wrong results due race conditions, ...</small>
+<p><small>Before you dive into, I have to note, that it is really not a general purpose class and you shouldn't blindly use it - you can easily use it badly and i.e. create unwanted shared state, screw the flow of your program or get wrong results due race conditions, ...</small></p>
 
 <pre class="brush:csharp">
 /// &lt;summary&gt;
@@ -61,6 +61,6 @@ sealed class ThreadMethodRunner : IDisposable
 }
 </pre>
 
-This class allows you to call the <code>Do</code> method with <a href="http://msdn.microsoft.com/en-us/library/system.action.aspx">Action delegate</a> and the method will run the code on the same thread every time (in my case just two times) called. This method blocks as you probably want to keep the behavior of you old code (at least in boundaries of method calls order, not changing some state etc. as mentioned above).
+<p>This class allows you to call the <code>Do</code> method with <a href="http://msdn.microsoft.com/en-us/library/system.action.aspx">Action delegate</a> and the method will run the code on the same thread every time (in my case just two times) called. This method blocks as you probably want to keep the behavior of you old code (at least in boundaries of method calls order, not changing some state etc. as mentioned above).</p>
 
-I don't know if it's worth any other usage than mine, but at least somebody may be inspired.
+<p>I don't know if it's worth any other usage than mine, but at least somebody may be inspired.</p>

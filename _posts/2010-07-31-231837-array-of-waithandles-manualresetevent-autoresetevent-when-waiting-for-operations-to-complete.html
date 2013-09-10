@@ -9,9 +9,9 @@ tags:
 category: devel
 layout: post
 ---
-Often, when you discover the beauty of multithreading and parallelism, you find a need to run some operations in parallel and wait for completion. Fairly common scenario. Although now, with .NET Framework 4, you can write it using <a href="http://msdn.microsoft.com/en-us/library/dd460717.aspx">Task Parallel Library</a>'s <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.parallel.invoke.aspx">Parallel.Invoke</a>, there are scenarios when you need to plug it in into some other methods/parameters, so you'll do it yourself explicitly with threads or better to say <a href="http://msdn.microsoft.com/en-us/library/system.threading.threadpool.aspx">ThreadPool</a>.
+<p>Often, when you discover the beauty of multithreading and parallelism, you find a need to run some operations in parallel and wait for completion. Fairly common scenario. Although now, with .NET Framework 4, you can write it using <a href="http://msdn.microsoft.com/en-us/library/dd460717.aspx">Task Parallel Library</a>'s <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.parallel.invoke.aspx">Parallel.Invoke</a>, there are scenarios when you need to plug it in into some other methods/parameters, so you'll do it yourself explicitly with threads or better to say <a href="http://msdn.microsoft.com/en-us/library/system.threading.threadpool.aspx">ThreadPool</a>.</p>
 
-The method I see from time to time looks basically like this:
+<p>The method I see from time to time looks basically like this:</p>
 
 <pre class="brush:csharp">
 void DoSomethingExample()
@@ -32,9 +32,9 @@ void DoSomethingExample()
 }
 </pre>
 
-Though it's not wrong, except the <a href="http://msdn.microsoft.com/en-us/library/system.threading.manualresetevent.aspx">ManualResetEvent</a>s are not <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.dispose.aspx">Dispose</a>d, it's suboptimal. You're wasting resources creating array of these objects.
+<p>Though it's not wrong, except the <a href="http://msdn.microsoft.com/en-us/library/system.threading.manualresetevent.aspx">ManualResetEvent</a>s are not <a href="http://msdn.microsoft.com/en-us/library/system.idisposable.dispose.aspx">Dispose</a>d, it's suboptimal. You're wasting resources creating array of these objects.</p>
 
-But if you think about it, you can write it better. Better in a way for scaling, performance and memory consumption.
+<p>But if you think about it, you can write it better. Better in a way for scaling, performance and memory consumption.</p>
 
 <pre class="brush:csharp">
 void DoSomethingBetter()
@@ -57,6 +57,6 @@ void DoSomethingBetter()
 }
 </pre>
 
-I'm simply using one synchronization object (and using <code>using</code> statement ;)), because I'm really interested in only when all tasks are done (one stuff), and decrementing the total number of tasks every time one finishes. Using <a href="http://msdn.microsoft.com/en-us/library/system.threading.interlocked.aspx">Interlocked</a> class I'm sure no race condition will occur and I'll get the right results. After it reaches zero I'm signaling I'm done and the method can continue.
+<p>I'm simply using one synchronization object (and using <code>using</code> statement ;)), because I'm really interested in only when all tasks are done (one stuff), and decrementing the total number of tasks every time one finishes. Using <a href="http://msdn.microsoft.com/en-us/library/system.threading.interlocked.aspx">Interlocked</a> class I'm sure no race condition will occur and I'll get the right results. After it reaches zero I'm signaling I'm done and the method can continue.</p>
 
-Fewer resources, atomic operations usage ... better/faster results.
+<p>Fewer resources, atomic operations usage ... better/faster results.</p>

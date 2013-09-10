@@ -8,9 +8,9 @@ tags:
 category: devel
 layout: post
 ---
-<a href="http://twitter.com/cincura_net/status/17243088115">Yesterday I needed</a> to put one element at beginning of the collection I already had. Some kind of <a href="http://msdn.microsoft.com/en-us/library/bb302894.aspx">Concat</a> upside down. :) As you can use the Concat method, it looks weird when you see the code, because two items are actually swapped. So I created a simple extension method to do it for me.
+<p><a href="http://twitter.com/cincura_net/status/17243088115">Yesterday I needed</a> to put one element at beginning of the collection I already had. Some kind of <a href="http://msdn.microsoft.com/en-us/library/bb302894.aspx">Concat</a> upside down. :) As you can use the Concat method, it looks weird when you see the code, because two items are actually swapped. So I created a simple extension method to do it for me.</p>
 
-I started with:
+<p>I started with:</p>
 <pre class="brush:csharp">
 public static IEnumerable&lt;T&gt; Prepend&lt;T&gt;(this IEnumerable&lt;T&gt; source, T item)
 {
@@ -20,7 +20,7 @@ public static IEnumerable&lt;T&gt; Prepend&lt;T&gt;(this IEnumerable&lt;T&gt; so
 }
 </pre>
 
-It's classic <a href="http://en.wikipedia.org/wiki/Imperative_programming">imperative</a> approach, you're expressing how you'll do it. Then I thought: "Hey, why not to use LINQ methods already available.". As you guess, I abused Concat method as I wrote above:
+<p>It's classic <a href="http://en.wikipedia.org/wiki/Imperative_programming">imperative</a> approach, you're expressing how you'll do it. Then I thought: "Hey, why not to use LINQ methods already available.". As you guess, I abused Concat method as I wrote above:</p>
 
 <pre class="brush:csharp">
 public static IEnumerable&lt;T&gt; Prepend&lt;T&gt;(this IEnumerable&lt;T&gt; source, T item)
@@ -29,6 +29,6 @@ public static IEnumerable&lt;T&gt; Prepend&lt;T&gt;(this IEnumerable&lt;T&gt; so
 }
 </pre>
 
-You can easily extend both methods to accept also collection as a second parameter.
+<p>You can easily extend both methods to accept also collection as a second parameter.</p>
 
-If you're more about <a href="http://en.wikipedia.org/wiki/Declarative_programming">declarative</a> programming you'll probably like the other one. But choose whatever fits your brain better.
+<p>If you're more about <a href="http://en.wikipedia.org/wiki/Declarative_programming">declarative</a> programming you'll probably like the other one. But choose whatever fits your brain better.</p>

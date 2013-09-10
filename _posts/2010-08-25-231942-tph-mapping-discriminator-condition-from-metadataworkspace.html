@@ -6,9 +6,9 @@ tags:
 category: devel
 layout: post
 ---
-The <a href="http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataworkspace.aspx">MetadataWorkspace</a> contains a lot of <a href="{% post_url 2009-06-14-230583-metadataworkspace-in-entity-framework %}">useful information</a>. Recently I was facing a challenge to get information about TPH (<a href="http://msdn.microsoft.com/en-us/library/bb738443.aspx">table per hierarchy</a>) inheritance conditions for particular type. Sure, it's in EDMX file and/or in MSL file. So you can parse the XML and get the info. I was on the other hand more interested getting the info from MetadataWorkspace, partially as a good "brain training" 8) side project.
+<p>The <a href="http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataworkspace.aspx">MetadataWorkspace</a> contains a lot of <a href="{% post_url 2009-06-14-230583-metadataworkspace-in-entity-framework %}">useful information</a>. Recently I was facing a challenge to get information about TPH (<a href="http://msdn.microsoft.com/en-us/library/bb738443.aspx">table per hierarchy</a>) inheritance conditions for particular type. Sure, it's in EDMX file and/or in MSL file. So you can parse the XML and get the info. I was on the other hand more interested getting the info from MetadataWorkspace, partially as a good "brain training" 8) side project.</p>
 
-Sadly the information about the mapping is very limited. Most interesting parts are not public, thus you're forced to use <a href="http://en.wikipedia.org/wiki/Reflection_(computer_science)">reflection</a>. So it's a lot back and forth with, in my case, <a href="http://msdn.microsoft.com/en-us/library/cyzbs7s2.aspx">QuickWatch</a> window. It helps a little to be familiar with MSL file structure.
+<p>Sadly the information about the mapping is very limited. Most interesting parts are not public, thus you're forced to use <a href="http://en.wikipedia.org/wiki/Reflection_(computer_science)">reflection</a>. So it's a lot back and forth with, in my case, <a href="http://msdn.microsoft.com/en-us/library/cyzbs7s2.aspx">QuickWatch</a> window. It helps a little to be familiar with MSL file structure.</p>
 
 <pre class="brush:csharp">
 static object GetNonPublicPropertyValue(this object o, string propertyName)
@@ -43,8 +43,8 @@ public static IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; GetMappingCo
 }
 </pre>
 
-<small>Because the code is heavily using reflection and non public members, it's possible it'll not work other/future versions of Entity Framework. I tested it with current version, version 4.</small>
+<p><small>Because the code is heavily using reflection and non public members, it's possible it'll not work other/future versions of Entity Framework. I tested it with current version, version 4.</small></p>
 
-It's written in a compact way. If you want to further dig into partial results, I recommend to split it into <code>foreach</code> loops and do small steps. That's in fact how I started and was incrementally discovering the information available at given level.
+<p>It's written in a compact way. If you want to further dig into partial results, I recommend to split it into <code>foreach</code> loops and do small steps. That's in fact how I started and was incrementally discovering the information available at given level.</p>
 
-As all the data are not public, I'll not describe how and why it is as it is. I did it using trial and error process. :) Maybe there's other/simpler path. Feel free to use comments if you find one.
+<p>As all the data are not public, I'll not describe how and why it is as it is. I did it using trial and error process. :) Maybe there's other/simpler path. Feel free to use comments if you find one.</p>

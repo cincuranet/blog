@@ -5,7 +5,7 @@ tags:
 category: devel
 layout: post
 ---
-Yesterday I was creating extension method for Skip for IQueryable. I needed to accept the nullable integer and if null just skip any processing. Something like this:
+<p>Yesterday I was creating extension method for Skip for IQueryable. I needed to accept the nullable integer and if null just skip any processing. Something like this:</p>
 
 <pre class="brush:csharp">
 static IQueryable&lt;T&gt; Skip&lt;T&gt;(this IQueryable&lt;T&gt; resource, int? count)
@@ -14,9 +14,9 @@ static IQueryable&lt;T&gt; Skip&lt;T&gt;(this IQueryable&lt;T&gt; resource, int?
 }
 </pre>
 
-I thought it will pick the int version from framework, because I'm calling it with int and not int?. And I was wrong, what my colleague uncovered moments later. How to solve it? I was not happy with method rename and I felt there's a way.
+<p>I thought it will pick the int version from framework, because I'm calling it with int and not int?. And I was wrong, what my colleague uncovered moments later. How to solve it? I was not happy with method rename and I felt there's a way.</p>
 
-Actually the solution is pretty easy. The original Skip is just extension method, right? So it's in static class as static method. So I can call it with class definition as non-extension method and this this there will be no ambiguity. Voilà.
+<p>Actually the solution is pretty easy. The original Skip is just extension method, right? So it's in static class as static method. So I can call it with class definition as non-extension method and this this there will be no ambiguity. Voilà.</p>
 
 <pre class="brush:csharp">
 static IQueryable&lt;T&gt; Skip&lt;T&gt;(this IQueryable&lt;T&gt; resource, int? count)

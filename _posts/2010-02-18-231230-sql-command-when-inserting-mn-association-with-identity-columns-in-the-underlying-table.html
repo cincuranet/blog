@@ -8,9 +8,9 @@ tags:
 category: devel
 layout: post
 ---
-Today I uncovered a magic command from Entity Framework v4 when you create M:N association and the underlying table is defined with both columns as identity and you insert there. I don't what's it good for, as this table in fact only stores the two IDs to connect other tables. But somebody may build some logic on identity there, sure.
+<p>Today I uncovered a magic command from Entity Framework v4 when you create M:N association and the underlying table is defined with both columns as identity and you insert there. I don't what's it good for, as this table in fact only stores the two IDs to connect other tables. But somebody may build some logic on identity there, sure.</p>
 
-When I first saw the command, I was completely stunned. I had no idea what's going on there and whether I see there one or more commands. You can have fun too:
+<p>When I first saw the command, I was completely stunned. I had no idea what's going on there and whether I see there one or more commands. You can have fun too:</p>
 
 <pre class="brush:sql">
 declare @generated_keys table([ID_A] int, [ID_B] int)
@@ -22,6 +22,6 @@ from @generated_keys as g join [dbo].[A_B] as t on g.[ID_A] = t.[ID_A] and g.[ID
 where @@ROWCOUNT > 0
 </pre>
 
-As an old school guy I was first looking for semicolons and then later tried to decode it by "parsing" the content. 
+<p>As an old school guy I was first looking for semicolons and then later tried to decode it by "parsing" the content.</p> 
 
-Isn't it nice... :)
+<p>Isn't it nice... :)</p>
