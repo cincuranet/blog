@@ -18,7 +18,6 @@
 		<script type='text/javascript' src='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.pack.js'></script>
 		<link rel='stylesheet' href='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.css' type='text/css' media='all' />
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-113043-8']);
   _gaq.push(['_trackPageview']);
@@ -28,7 +27,18 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
+</script>
+<script>
+  (function() {
+    var cx = '007694131655717350073:dmt3xbq68pq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
 </script>
 	</head>
 	<body>
@@ -52,3 +62,5 @@
   	<li><a href="{{ site.url }}/contact">Contact</a></li>
   </ul>
 </div>
+
+<gcse:searchresults></gcse:searchresults>
