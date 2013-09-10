@@ -82,7 +82,7 @@ img.left{ margin: 3px 10px 3px 3px; float:left;}
 img.right { margin: 3px 3px 3px 10px; float:right;}
 
 /* TABLES */ 
-table {border: 2px solid #999; border-collapse:collapse; width: 90%; margin-left: 3ex; }
+table {border: 2px solid #999; border-collapse:collapse; width: 90%; /*margin-left: 3ex;*/ }
 td {background-color: #fff; padding:3px; border: 1px solid #fff}
 th {text-align:left;border: 1px solid #fff}
 thead th {color:#000; font-size:1.5em; background-color: #eee; padding: 10px 6px}
