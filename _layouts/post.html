@@ -1,12 +1,17 @@
 {% include header.html %}
 
-<h3>{{ page.title }}</h3> published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }} 
-<div>
-{{ page.content }}
+<div id="content">
+	<h3>{{ page.title }}</h3> published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }} 
+	<div>
+		{{ page.content }}
+	</div>
+	
+	<hr />
+	<h4>Comments:</h4>
+	<div>
+		{% include comments.html %}
+	</div>
 </div>
 
-<hr />
-Comments:<br />
-{% include comments.html %}
 
 {% include footer.html %}
