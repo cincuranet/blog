@@ -9,13 +9,13 @@ layout: default
 {% endfor %} 
 
 {% if paginator.previous_page_path %}
-<a href="./{{ paginator.previous_page_path }}">Previous</a>
+<a href=".{{ paginator.previous_page_path }}">Previous</a>
 {% else %}
 <span>Previous</span>
 {% endif %}
 |
 {% if paginator.next_page_path %}
-<a href="./{{ paginator.next_page_path }}">Next</a> 
+<a href=".{{ paginator.next_page_path }}">Next</a> 
 {% else %}
 <span>Next</span>
 {% endif %}
