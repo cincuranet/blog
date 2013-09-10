@@ -44,6 +44,14 @@
 $(document).ready(function(){
   $('a:not(a[href*="blog.cincura.net"]').attr('target', '_blank');
 });
+$(document).ready(function() {
+	$('a[href*="i.blog.cincura.net"]:has(img)').fancybox({
+		openEffect: 'fade',
+		closeEffect: 'fade',
+		nextEffect: 'fade',
+		prevEffect: 'fade'
+	});
+});
 </script>
 	</head>
 	<body>
