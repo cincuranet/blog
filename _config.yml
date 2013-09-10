@@ -2,4 +2,4 @@ name: Jiří {x2} Činčura
 description: Taking something that can't be done, and then doing it.
 url: http://blog.cincura.net
 permalink: /:title
-pagination: 20
+paginate: 20
