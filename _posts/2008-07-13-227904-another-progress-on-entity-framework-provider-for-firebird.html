@@ -1,0 +1,12 @@
+---
+title: "Another progress on Entity Framework provider for Firebird"
+date: 2008-07-13T20:17:00Z
+tags:
+  - .NET
+  - Entity Framework
+  - Firebird
+  - LINQ
+category: devel
+layout: post
+---
+<p>Today, after some days/weeks, I finally created some noticable (= not only internals) progress with Entity Framework provider for Firebird. </p><p>Now, the provider is able to use, map, call, ... stored procedures (and functions [very experimental]). You can select stored procedures from database, map these to some operations in EF, create "function imports" etc. You can see this working on picture: </p><img src="http://i.blog.cincura.net/227904.png" /> <p>I have not tested all available options of calling etc. SPs, so feel free to report any problems with it. Current version can be downloaded from <a href="http://netprovider.cincura.net/" >netprovider.cincura.net (aka weekly builds)</a>. </p><p><small>Also take into account, that current latest stable (old ones too) version of FB has <code>left outer join</code> bug, so all columns in table are marked as primary key(s) (and so must be not null). I'm wondering how this (from my POV) really serious bug can go thru QA tests?!</small> </p><p>Known Issue: When you select "Update Model from Database" in Visual Studio you get error. I'm now working on it. <br />Anyway for testing, I recommend you to use EdmGen (or <a href="{% post_url 2008-07-08-227892-edmgen-on-steroids-edmgen2 %}">EdmGen2</a>), it's faster and more controlled. :) </p><p> </p>

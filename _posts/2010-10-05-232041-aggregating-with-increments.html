@@ -1,0 +1,39 @@
+---
+title: "Aggregating with increments"
+date: 2010-10-05T09:54:56Z
+tags:
+  - .NET
+  - C#
+  - LINQ
+category: devel
+layout: post
+---
+Similarly to <a href="{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}">previous method for Interleaving two IEnumerables</a> I needed one method for doing kind of aggregate, but also to know about the intermediate steps. I could abuse the <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.aggregate.aspx">Aggregate</a> method either directly or indirectly but I'm always more happy with clean solution.
+
+The method is pretty simple (but before I did some rework, it was ugly ;)). It takes, apart from the <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx">IEnumerable</a>, two functions. One for setting up the initial value for the first item and one for getting result for next step.
+
+<pre class="brush:csharp">
+internal static IEnumerable&lt;TResult&gt; IncrementalAggregate&lt;TSource, TResult&gt;(this IEnumerable&lt;TSource&gt; data,
+	Func&lt;TSource, TResult&gt; init,
+	Func&lt;TSource, TResult, TResult&gt; nextResult)
+{
+	bool first = true;
+	TResult intermediate = default(TResult);
+	
+	foreach (var item in data)
+	{
+		if (first)
+		{
+			intermediate = init(item);
+			first = false;
+		}
+		else
+		{
+			intermediate = nextResult(item, intermediate);
+		}
+		yield return intermediate;
+	}
+}
+</pre>
+
+With it you can do i.e. summing the numbers and know what the intermediate sums were. Yes, sounds weird, but you might need it, one day as I did. :)

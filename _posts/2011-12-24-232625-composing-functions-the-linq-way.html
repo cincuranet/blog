@@ -1,0 +1,37 @@
+---
+title: "Composing functions the LINQ way"
+date: 2011-12-24T07:55:18Z
+tags:
+  - .NET
+  - C#
+  - Functional programming
+  - LINQ
+category: devel
+layout: post
+---
+Few days ago I was writing a class, that was simply wrapped for a collection of other classes (with same interface), aggregate class. The class also had few methods, where the logic was simple. Let's say one method <code>M</code>. Other classes having same method as well. This method was simple transformation of data with same output as input. The aggregate class was simply calling <code>M</code> method of first, second, ... of other classes.
+
+I started with something like this:
+<pre class="brush:csharp">
+function T M&lt;T&gt;(T data)
+{
+	T tmp = data;
+	foreach (var c in classes)
+	{
+		tmp = c.M(tmp);
+	}
+	return tmp;	
+}
+</pre>
+
+But then I had some weird wave in my brain and started thinking. I could create collection of functions, like <code>IEnumerable&lt;Func&lt;T, T&gt;&gt;</code> and call methods from this collection. Wait a minute... I can create from this collection of function one aggregate function and call just this one. Crazy? ;) Probably. But it's a nice way to keep my brain running.
+
+It turned out, it's pretty easy with LINQ:
+<pre class="brush:csharp">
+public static Func&lt;T, T&gt; Compose&lt;T&gt;(this IEnumerable&lt;Func&lt;T, T&gt;&gt; source)
+{
+	return source.Aggregate((agg, fn) =&gt; (d =&gt; fn(agg(d))));
+}
+</pre>
+
+I don't think it's any more (less) useful than the <code>foreach</code> with direct method calls, but it's more succinct, more functional and more fun. 8-)

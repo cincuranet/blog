@@ -1,0 +1,12 @@
+---
+title: "IEnumerable<string> result for some methods in System.IO"
+date: 2010-03-06T17:11:35Z
+tags:
+  - .NET
+  - Programming in general
+category: devel
+layout: post
+---
+The .NET Framework 4 includes some nice new methods in <a href="http://msdn.microsoft.com/en-us/library/29kt2zfk(v=VS.100).aspx">System.IO namespace</a>. There's a lot of methods on <a href="http://msdn.microsoft.com/en-us/library/wa70yfe2(v=VS.100).aspx">Directory class</a> etc. returning <code>string[]</code>. That's OK until you try to enumerate directory with thousands of files (for example). Then you're waiting for complete result even is you just need couple of first item. The new EnumerateXxx methods are solving this as these are returning <code>IEnumerable&lt;string&gt;</code> (i.e. <a href="http://msdn.microsoft.com/en-us/library/dd383571(v=VS.100).aspx">EnumerateFiles</a>). 
+
+I'm looking forward to use these in <a href="http://www.ID3renamer.com">ID3 renamer</a> when .NET Framework 4 will be released.

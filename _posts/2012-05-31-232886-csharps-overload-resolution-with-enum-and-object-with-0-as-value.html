@@ -1,0 +1,56 @@
+---
+title: "C#'s overload resolution with enum and object with 0 as value"
+date: 2012-05-31T14:07:44Z
+tags:
+  - .NET
+  - C#
+category: devel
+layout: post
+---
+Today I faced surprising behavior once again. Completely off guard.
+
+Let's have a code:
+
+<pre class="brush:csharp">
+static void Test(string s, object o)
+{
+	Console.WriteLine("object");
+}
+
+static void Test(string s, TestEnum e)
+{
+	Console.WriteLine("enum");
+}
+</pre>
+<pre class="brush:csharp">
+enum TestEnum
+{
+	Zero = 0,
+	One = 1,
+	Two = 2,
+}
+</pre>
+
+and call it:
+
+<pre class="brush:csharp">
+Test("rrr", 0);
+Test("rrr", 1);
+Test("rrr", 2);
+Test("rrr", -1);
+Test("rrr", 100);
+</pre>
+
+What do you think you'll see? Surprisingly, at least for me, it's:
+
+<pre class="brush:plain">
+enum
+object
+object
+object
+object
+</pre>
+
+After searching for a while I found <a href="http://blogs.msdn.com/b/ericlippert/archive/2006/03/29/the-root-of-all-evil-part-two.aspx">Eric Lippert's post about it</a>. Basically there's something we can call <em>magic zero</em> and this can be implicitly converted to any enum (even empty one or one without <code>0</code> value). That's the root cause of this behavior. Of course, when C# compiler sees this value in method call, it selects the more specific overload (the one with <code>TestEnum</code>) over the one with <code>object</code>.
+
+Learning new stuff every day...

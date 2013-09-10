@@ -1,0 +1,127 @@
+---
+title: "Using NuoDB from .NET"
+date: 2012-05-21T17:04:38Z
+tags:
+  - .NET
+  - Databases in general
+  - NewSQL
+  - NoSQL
+  - NuoDB
+category: devel
+layout: post
+---
+In <a href="{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a> I introduced you <a href="http://www.nuodb.com/">NuoDB</a>, the so-called <i>NewSQL</i> database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)
+
+NuoDB has currently JDBC and <a href="http://en.wikipedia.org/wiki/ODBC">ODBC</a> drivers in the box. <a href="http://github.com/nuodb/nuodb-drivers">Other drivers are created by community</a>. There's also <a href="http://github.com/nuodb/nuodb-drivers/tree/master/dotnet">.NET driver</a> being created but it's based on C++ API implementation not a fully managed implementation.
+
+OK, so for now we'll try the ODBC as it's in the box. If you installed NuoDB, the driver was installed to your system already. If you're going to deploy your application you should install it yourself. Whole ODBC is based on <code>DSN</code>s. You create one in advance and application the uses this one, with minimal knowledge advance how to connect to data source etc. Go to Control Panel &gt; Administrative Tools &gt; Data Sources (ODBC) and you can create DSN there. In <a href="http://microsoft.com/net">.NET</a> world we're used to use <i>connection strings</i> to describe our data source, so instead of creating DSN manually, I'll create it in application <sup>[<a href="#ref1">1</a>]</sup>, just for my comfort.
+
+The application is pretty simple, just to try something. Because NuoDB supports standard SQL, you can use constructs you're familiar with, like <code>CREATE TABLE</code> etc.
+
+<pre class="brush:csharp">
+using System;
+using System.Data;
+using System.Data.Odbc;
+using System.Linq;
+
+namespace NuoDB
+{
+	class Program
+	{
+		[System.Runtime.InteropServices.DllImport("ODBCCP32.dll")]
+		static extern bool SQLConfigDataSource(IntPtr parent, int request, string driver, string attributes);
+		
+		static bool HandleDSN(bool remove)
+		{
+			return SQLConfigDataSource(IntPtr.Zero, remove ? /* ODBC_REMOVE_DSN */ 3 : /* ODBC_ADD_DSN */ 1, 
+			     "NuoDB ODBC Driver\0",
+			     "DSN=TestChorusDSN\0UID=admin\0PWD=admin\0Database=TestChorus@localhost\0");
+
+		}
+
+		static void Main(string[] args)
+		{
+			const string Separator = "\t|\t";
+
+			Console.WriteLine("Adding DSN...");
+			HandleDSN(remove: false);
+
+			var csb = new OdbcConnectionStringBuilder();
+			csb.Dsn = "TestChorusDSN";
+			using (var conn = new OdbcConnection(csb.ToString()))
+			{
+				Console.WriteLine("Opening connection...");
+				conn.Open();
+				Console.WriteLine("Starting transaction...");
+				using (var tx = conn.BeginTransaction())
+				{
+					string tableName = string.Format("user.test{0}", DateTime.UtcNow.Ticks);
+					using (var cmd = conn.CreateCommand())
+					{
+						cmd.Transaction = tx;
+						cmd.CommandText = string.Format("create table {0} (id int primary key, foobar string not null)", tableName);
+						Console.WriteLine("Creating table...");
+						cmd.ExecuteNonQuery();
+					}
+					using (var cmd = conn.CreateCommand())
+					{
+						cmd.Transaction = tx;
+						cmd.CommandText = string.Format("insert into {0}(id, foobar) values (?, ?)", tableName);
+						cmd.Prepare();
+						IDbDataParameter parameter;
+						for (var i = 0; i &lt; 10; i++)
+						{
+							cmd.Parameters.Clear();
+
+							parameter = cmd.CreateParameter();
+							parameter.Value = i;
+							cmd.Parameters.Add(parameter);
+							
+							parameter = cmd.CreateParameter();
+							parameter.Value = string.Format("value of {0}", i);
+							cmd.Parameters.Add(parameter);
+
+							Console.WriteLine("Inserting...");
+							cmd.ExecuteNonQuery();
+						}
+					}
+					using (var cmd = conn.CreateCommand())
+					{
+						cmd.Transaction = tx;
+						cmd.CommandText = string.Format("select * from {0}", tableName);
+						Console.WriteLine("Reading data...");
+						using (var reader = cmd.ExecuteReader())
+						{
+							Console.WriteLine(string.Join(Separator, Enumerable.Range(0, reader.FieldCount).Select(x =&gt; reader.GetName(x))));
+							while (reader.Read())
+							{
+								var values = new object[reader.FieldCount];
+								reader.GetValues(values);
+								Console.WriteLine(string.Join(Separator, values));
+							}
+						}
+					}
+					Console.WriteLine("Committing...");
+					tx.Commit();
+				}
+			}
+			
+			Console.WriteLine("Removing DSN...");
+			HandleDSN(remove: true);
+		}
+		
+	}
+}
+</pre>
+
+First I create DSN for my application (using ugly raw method), using same chorus set up like in <a href="{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a>. The driver is called <code>NuoDB ODBC Driver</code>. Then I just specify username (<code>UID</code>), password (<code>PWD</code>) and database (<code>Database</code>) in form <code>&lt;chorus&gt;@&lt;location&gt;</code>, same as if you're using <code>nuosql</code>. This DSN is also removed at the end.
+
+Rest is simple .NET/C# code, same as any other <a href="http://msdn.microsoft.com/en-us/library/e80y5yhx">ADO.NET</a> code. Connection, transaction (if explicitly needed), command(s)... 
+
+I create table (hence DDL and ExecuteNonQuery works fine) with some magic 8-) name. Then some inserts with parameters (hence parameters, Prepare and ExecuteNonQuery with DML works) and finally select (hence basic stuff around ExecuteReader and IDataReader works).
+
+Considering, I can store data in structured form in tables, use SQL and still be able to scale out easily, I think it's neat. What could be even better? Having ADO.NET driver (preferable fully managed) and <a href="//blog.cincura.net/tag/entity-framework">Entity Framework</a> (aka <a href="http://msdn.microsoft.com/en-us/library/bb397926.aspx">LINQ</a>) support. Maybe in the future...
+
+What's next? We'll explore some failure and scaling scenarios.
+
+[<a name="ref1"></a>1]: <a href="http://www.codeproject.com/Articles/7652/Dynamically-adding-DSN-names">http://www.codeproject.com/Articles/7652/Dynamically-adding-DSN-names</a>

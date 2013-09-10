@@ -1,0 +1,30 @@
+---
+title: "FbTransaction changes to support tables locking"
+date: 2010-08-08T17:52:42Z
+tags:
+  - .NET
+  - Firebird
+category: devel
+layout: post
+---
+<a href="http://www.firebirdsql.org">Firebird</a> has a feature allowing you to specify tables you want to lock (read or write and exclusive/protected/shared) when starting transaction. <small>(Note that Firebird still uses <a href="http://en.wikipedia.org/wiki/Multiversion_concurrency_control">MGA/MVCC</a>. This is just a feature to support some scenarios.)</small> We had constants in <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">ADO.NET Provider for Firebird</a> for some time, but using them resulted in wrong parameters being sent to the server and followed by exception. :)
+
+Today I implemented support for this locking (<a href="http://tracker.firebirdsql.org/browse/DNET-338">tracker item</a>, <a href="http://firebird.1100200.n4.nabble.com/Transaction-configuration-with-the-ADO-NET-Data-provider-for-Firebird-td2311603.html">mailing list thread</a>). That means sending proper sequences. The <a href="{% post_url 2008-10-20-228524-timeout-for-wait-transactions-in-firebirdclient %}"><code>FbTransactionOptions</code> class created earlier for timeout support</a> was extended with new property <code>LockTables</code>. You can use to specify table name and lock specification. The lock specification there is in fact only subset of all options you can specify for transaction (same enumeration). You can put there whatever you want other options will be simply ignored.
+
+Small example:
+
+<pre class="brush:csharp">
+conn.BeginTransaction(new FbTransactionOptions() 
+	{ 
+		TransactionBehavior = FbTransactionBehavior.ReadCommitted,  // etc.
+		LockTables = new Dictionary&lt;string, FbTransactionBehavior&gt;
+		{ 
+			{ "TABLE_1", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Shared }, 
+			{ "TABLE_2", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Exclusive } 
+		} 
+	});
+</pre>
+
+Here I'm specifying that for <code>TABLE_1</code> shared (huh :)) write lock will be placed and for <code>TABLE_2</code> exclusive (that sounds better, isn't it?) write lock will be placed. Similarly you can go with <code>LockRead</code>.
+
+Available right now in <a href="http://netprovider.cincura.net">weekly builds</a> and <a href="http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/">SVN</a>.

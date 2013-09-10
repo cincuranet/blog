@@ -1,0 +1,9 @@
+---
+title: "Nullable types - what's faster?"
+date: 2008-10-20T16:00:00Z
+tags:
+  - .NET
+category: devel
+layout: post
+---
+<p>Today I was working with nullable types - <code>short?</code> for my instance. I was wondering what's the fastest way of getting value and also testing whether the value is there. </p><p>1. <code>HasValue</code> vs. <code>!= null</code><br />Well test on my notebook on .NET FW 3.5 in VPC, optimization turned on shows that HasValue is faster. Roughly twice on my configuration. Also the IL code looks different. </p><p>2. Using <code>Foo.Value</code> vs. <code>(short)Foo</code><br />Here I didn't measured any difference. And the code is pretty much same. It's not exhaustive testing (and you know - I believe only in stats I adulterated ;)). </p><p>I did about 10 runs for each test and looked to IL (it's fastest way to prove your idea is wrong or not). </p><p>What about you? Similar results?</p><p> </p>

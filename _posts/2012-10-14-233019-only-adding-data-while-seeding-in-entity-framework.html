@@ -1,0 +1,71 @@
+---
+title: "Only adding data while seeding in Entity Framework"
+date: 2012-10-14T18:17:17Z
+tags:
+  - Entity Framework
+  - Expressions
+category: devel
+layout: post
+---
+I was doing my Entity Framework course this week (<a href="/contact">contact me</a>, if you're interested) and at one point we were in <a href="http://msdn.microsoft.com/en-us/library/cc716791.aspx">Migrations</a> and I was explaining the <a href="http://msdn.microsoft.com/en-us/library/hh829453(v=vs.103).aspx">Seed method</a>. Maybe you know, by default, there's a sample showing handy method <code>AddOrUpdate</code> being available. And I got I question whether there's some method to just "add only". So when the record is already there, nothing will be added. Inserted new otherwise.
+
+First i was trying to align in my brain real world usage for it. Help came from others with simple example. You're seeding initial users for application with some default passwords, real names and something more, but somebody already changed these. So you don't want to update these back to default values. That's the use case for the "add only". 
+
+While it's not hard to write this logic directly into the seeding method, it's good to encapsulate it. The <code>AddOrUpdate</code> has two overloads, one where you specify properties to use for matching and one where you don't and default key(s) are used. I created only the explicit one (it's easier; there's (currently) no one-line-way to get the key(s) for entity).
+
+<pre class="brush:csharp">
+public static void AddOnly&lt;TEntity&gt;(this IDbSet&lt;TEntity&gt; set, Expression&lt;Func&lt;TEntity, object&gt;&gt; identifierExpression, params TEntity[] entities) where TEntity : class
+{
+	var keyProperties = KeyMemberNames(identifierExpression);
+	foreach (var entity in entities)
+	{
+		var parameter = Expression.Parameter(typeof(TEntity));
+		var matchExpression = keyProperties
+			.Select(key =&gt;
+				Expression.Equal(
+					Expression.Property(parameter, key),
+					Expression.Constant(typeof(TEntity).GetProperty(key).GetValue(entity, null))))
+			.Aggregate&lt;BinaryExpression, Expression&gt;(null, (current, predicate) =&gt; (current == null) ? predicate : Expression.AndAlso(current, predicate));
+		var match = set.SingleOrDefault(Expression.Lambda&lt;Func&lt;TEntity, bool&gt;&gt;(matchExpression, new[] { parameter }));
+		if (match == null)
+		{
+			set.Add(entity);
+		}
+	}
+}
+
+static IEnumerable&lt;string&gt; KeyMemberNames&lt;TEntity&gt;(Expression&lt;Func&lt;TEntity, object&gt;&gt; keySelector)
+{
+	var memberExpression = keySelector.Body as MemberExpression;
+	if (memberExpression != null)
+	{
+		return new[] { memberExpression.Member.Name };
+	}
+	var newExpression = keySelector.Body as NewExpression;
+	if (newExpression != null)
+	{
+		return newExpression.Members.Select(x =&gt; x.Name);
+	}
+
+	throw new NotSupportedException();
+}
+</pre>
+
+You can specify the key as only one property as well as composite key.
+
+<pre class="brush:csharp">
+context.People.AddOnly(
+	p => new { p.FullName, p.Id },
+	new Person { FullName = "Andrew Peters" },
+	new Person { FullName = "Brice Lambson" },
+	new Person { FullName = "Rowan Miller" }
+);
+context.People.AddOnly(
+	p => p.FullName,
+	new Person { FullName = "Andrew Peters" },
+	new Person { FullName = "Brice Lambson" },
+	new Person { FullName = "Rowan Miller" }
+);
+</pre>
+
+I promised the students in my course to create method like this and publish it here. I hope they will visit my blog. :)

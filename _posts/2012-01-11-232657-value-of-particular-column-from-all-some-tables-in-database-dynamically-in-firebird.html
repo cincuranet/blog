@@ -1,0 +1,33 @@
+---
+title: "Value of particular column from all (some) tables in database dynamically in Firebird"
+date: 2012-01-11T18:05:42Z
+tags:
+  - Firebird
+  - SQL
+category: devel
+layout: post
+---
+A question came to me last week. It was simple. Given the column I'd like to query all tables in database for this column (with some condition) and get values back. It was on <a href="http://www.firebirdsql.org">Firebird</a> so I jumped into system tables and generated query on the fly in <a href="http://www.firebirdsql.org/file/documentation/reference_manuals/reference_material/html/langrefupd25-execblock.html"><code>execute block</code></a> (aka anonymous <a href="http://en.wikipedia.org/wiki/Stored_procedure">stored procedure</a>).
+
+The idea is simple. First get all table names (views and system tables excluded, but you can also exclude i.e. temporary tables) with this column (to be able to later run the query successfully), then concatenate some strings to build the query (with condition for the column) and finally use <a href="http://www.firebirdsql.org/file/documentation/reference_manuals/reference_material/html/langrefupd25-psql-execstat.html"><code>execute statement</code></a> to run the query. The <code>into</code> clause will fill the variable and <code>suspend</code> will send the result (row) to client.
+
+<pre class="brush:sql">
+execute block
+returns (table_name varchar(100), column_value varchar(100))
+as
+declare variable column_name varchar(100);
+begin
+  column_name = upper('id'); /* put here your column name */
+  for select rdb$relation_name from rdb$relations r
+    where rdb$system_flag = 0 /* no system tables */ and 
+    rdb$view_blr is null /* no views */ and
+    exists(select 1 from rdb$relation_fields rf where rf.rdb$relation_name = r.rdb$relation_name and rf.rdb$field_name = :column_name)
+    into :table_name do
+  begin
+    execute statement 'select cast(' || column_name || ' as varchar(100)) from ' || table_name || ' where /* put your condition here */' into :column_value;
+    suspend;
+  end
+end
+</pre>
+
+As a modification you can also instead of running <i>n</i> queries create one big string with <code>union all</code>-ing all queries and run just this one. You should compare execution plans and speed to see which one performs better. Then you would use <a href="http://www.firebirdsql.org/file/documentation/reference_manuals/reference_material/html/langrefupd25-psql-forexecstatdo.html"><code>for execute statement ... do</code></a> do process results.

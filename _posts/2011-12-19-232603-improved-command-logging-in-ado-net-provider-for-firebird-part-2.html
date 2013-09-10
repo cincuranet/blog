@@ -1,0 +1,28 @@
+---
+title: "Improved command logging in ADO.NET provider for Firebird - part 2"
+date: 2011-12-19T09:29:43Z
+tags:
+  - .NET
+  - Firebird
+  - Logging and Tracing
+category: devel
+layout: post
+---
+<a href="{% post_url 2011-05-19-232387-improved-command-logging-in-ado-net-provider-for-firebird %}">Previous version</a> of <a href="http://www.firebirdsql.org/en/net-provider/">ADO.NET provider for Firebird</a> brought us a support for command tracing. Although it was good, it could be done better. Few interesting scenarios came back to as a valuable feedback and with the old implementation it was hard to do it.
+
+The new one builds on top of <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.tracesource.aspx">TraceSource class</a> allowing you to handle different sources from trace messages easily and independently. The <i>what's</i> logged is same, but now every message is traced through <code>FirebirdSql.Data.FirebirdClient</code> source, hence you can easily i.e. turn it of (and just these messages, without affecting other messages) or send it to i.e. console window. Just a few lines in <code>app.config</code> and you're done.
+
+<pre class="brush:xml">
+&lt;system.diagnostics&gt;
+	&lt;sources&gt;
+		&lt;source name="FirebirdSql.Data.FirebirdClient"&gt;
+			&lt;listeners&gt;
+				&lt;clear /&gt;
+				&lt;add name="console" type="System.Diagnostics.ConsoleTraceListener"/&gt;
+			&lt;/listeners&gt;
+		&lt;/source&gt;
+	&lt;/sources&gt;
+&lt;/system.diagnostics&gt;
+</pre>
+
+The code above sends all messages (commands) from provider to (only) console window. You can use your own listener, of course or turn it off completely, using just the <code>&lt;clear /&gt;</code>.

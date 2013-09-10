@@ -1,0 +1,32 @@
+---
+title: "if, else, return"
+date: 2009-05-14T21:05:00Z
+tags:
+  - C#
+  - Delphi/Object Pascal/Pascal
+  - Programming in general
+category: devel
+layout: post
+---
+<p>Občas vidím ve zdrojácích funkce s konstrukcí: </p>
+<pre class="brush:plain">
+if (&lt;condition&gt;)
+{
+  x = DoSomething(y);
+  return x;
+}
+return z;</pre>
+<p>Což je víceméně to samé jako: </p>
+<pre class="brush:plain">if (&lt;condition&gt;)
+{
+  x = DoSomething(y);
+  return x;
+}
+else
+{
+  return z;
+}
+</pre>
+<p>Osobně používám druhý zápis. Přijde mi o něco přehlednější a explicitnější. Pravděpodobně vliv Delphi/ObjectPascalu. </p>
+
+<p>Je však v těchto zápisech nějaký rozdíl? Nějaký praktický aspekt, který mi uniká? </p>

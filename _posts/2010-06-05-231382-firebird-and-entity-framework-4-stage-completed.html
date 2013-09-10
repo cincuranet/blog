@@ -1,0 +1,21 @@
+---
+title: "Firebird and Entity Framework 4 - stage completed"
+date: 2010-06-05T20:12:53Z
+tags:
+  - .NET
+  - Entity Framework
+  - Entity SQL
+  - Firebird
+  - LINQ
+  - Visual Studio
+category: devel
+layout: post
+---
+The <a href="http://firebirdsql.org/index.php?op=files&id=netprovider">ADO.NET provider for Firebird</a> now fully supports all the new features in <a href="http://msdn.microsoft.com/en-us/data/aa937723.aspx">Entity Framework 4</a>. Simple. If you're eager to test it, grab the <a href="http://netprovider.cincura.net">weekly build</a> and enjoy.
+
+We support the internal improvements as well as the visible changes like i.e. <a href="http://blogs.msdn.com/b/adonet/archive/2009/11/05/model-first-with-the-entity-framework-4.aspx">Model First</a> or <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.createdatabasescript.aspx">CreateDatabaseScript</a> method. The template for creating SQL script is now part of sources and sure will be included in final package as well. I expect to improve it on your feedback and also the model generation from designer is pluggable so you can create custom one and use it there.
+
+To support some new features in SQL generation I had to tweak it little bit and as with every change, there's a change that something goes wrong. Thus I would be more than happy to get some <a href="http://firebirdsql.org/index.php?op=lists#fb-dotnet-provider">feedback</a> either that it works OK or any queries where it fails.
+
+I'm so happy to cross this milestone about two months after final <a href="http://www.microsoft.com/presspass/press/2010/apr10/04-11vs10pr.mspx">Visual Studio 2010, .NET Framework 4 (incl. Entity Framework 4) were released</a>. You can expect the official release after some testing, it's your turn :).
+

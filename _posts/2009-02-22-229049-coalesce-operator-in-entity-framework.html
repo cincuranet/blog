@@ -1,0 +1,12 @@
+---
+title: "Coalesce operator in Entity Framework"
+date: 2009-02-22T14:37:00Z
+tags:
+  - .NET
+  - Entity Framework
+  - Firebird
+  - LINQ
+category: devel
+layout: post
+---
+<p>You may wonder how to use usefull coalesce operator in Entity Framework. If you look to <a class="" href="http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/NETProvider/source/FirebirdSql/Data/Entity/" >some EF provider, i.e. for Firebird</a> ;) you will see, that there's no coalesce related code. So you will end up, probably, with code like <code>x =&gt; (x.BAR != null ? x.BAR : "N/A")</code><code>. </code>And that's fun until you need longer chain of (not) null checks. But as <a class="" href="http://blogs.msdn.com/diego/" >Diego Vega</a> pointed in some forum thread, you can use <code>??</code> operator. And the <code>x =&gt; x.BAR ?? x.BAR ?? x.BAR ?? "N/A"</code> looks, in my opinion, better.</p><p>But you have to be carefull, because in EF internally it's handled same as first case, so using <code>CASE</code>. That means you may hit some query length limits of you database very easily. On the other hand, using it for normal stuff, you probably don't need to care how it's translated inside - important is, that the query is correct.</p>

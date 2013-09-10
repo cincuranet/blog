@@ -1,0 +1,47 @@
+---
+title: "DbGeography and DbGeometry in Entity Framework - what's needed?"
+date: 2012-09-10T07:18:13Z
+tags:
+  - Entity Framework
+  - Firebird
+  - Spatial data
+category: devel
+layout: post
+---
+There seems to be a small confusion about what is needed to be able to use spatial data - exposed as <a href="http://msdn.microsoft.com/en-us/library/system.data.spatial.dbgeography.aspx">DbGeography</a> and <a href="http://msdn.microsoft.com/en-us/library/system.data.spatial.dbgeometry.aspx">DbGeometry</a> types - in <a href="http://msdn.com/ef">Entity Framework</a>.
+
+It very much depends on provider, as expected. Of course you need to have Entity Framework 5 installed (you can get it either from NuGet or it's inside .NET 4.5). You can happily create context, use classes with above mentioned type(s), until you try to execute some query or do some CUD operation. Then it goes into provider's internals and it is responsible to provide some solution. It's interesting that the database doesn't have to support spatial data necessarily. If there will be some convention on the side of provider about translation into i.e. stored procedures/functions you're fine.
+
+So the Entity Framework isn't doing any magic trying to store the spatial data. It simply relies on provider to do it, as with any type like <code>integer</code> or <code>decimal</code> for instance. And how do you know if the provider supports it? Well, very likely it's mirroring what the database supports. I doubt any general purpose ADO.NET provider will do some magic mapping and storing for spatial data if the database doesn't support it.
+
+Example for Firebird (doesn't support spatial data):
+<pre class="brush:csharp">
+class MyContext : DbContext
+{
+	public MyContext()
+		:base(new FbConnection("database=localhost:test.fdb;user=sysdba;password=masterkey;pooling=false"), true)
+	{
+
+	}
+
+	public IDbSet&lt;Person&gt; People { get; set; }
+}
+
+class Person
+{
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public DbGeography Position { get; set; }
+}
+</pre>
+
+<pre class="brush:csharp">
+using (var db = new MyContext())
+{
+	Console.WriteLine(db.People.Where(x =&gt; x.Position.Distance(DbGeography.PointFromText("POINT(1 1)", 4326)) &lt; 100));
+}
+</pre>
+
+Results in throwing <code>NotSupportedException</code> originating in <code>FirebirdSql.Data.FirebirdClient.FbProviderManifest</code>.
+
+Let's intersect somewhere on geoid.

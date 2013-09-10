@@ -1,0 +1,21 @@
+---
+title: "Sortování v generické kolekci anonymní metodou"
+date: 2007-04-18T08:04:00Z
+tags:
+  - .NET
+category: devel
+layout: post
+---
+Když jsem dneska četl <a href="http://blog.vyvojar.cz/dotnet/archive/2007/04/18/224807.aspx">Anonymní metoda pro hledání v generické kolekci</a> vzpomněl jsem si, že jsem podobnou věc dělal u sortování.
+
+<pre class="brush:csharp">
+public void SortByPosition(bool descending)
+{
+  ((List&lt;FbIndexSegment&gt;)this.Items).Sort(delegate(FbIndexSegment item1, FbIndexSegment item2)
+  {
+    return (descending ? -1 : 1) * item1.Position.CompareTo(item2.Position);
+  });
+}
+</pre>
+
+Někde jsem podobné řešení viděl a jen jsem to vydloubal z hlavy a upravil.

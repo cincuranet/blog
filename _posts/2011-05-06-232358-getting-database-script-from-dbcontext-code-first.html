@@ -1,0 +1,22 @@
+---
+title: "Getting database script from DbContext (Code First)"
+date: 2011-05-06T07:22:32Z
+tags:
+  - Entity Framework
+category: devel
+layout: post
+---
+I was <a href="{% post_url 2011-04-20-232308-gopas-teched-2011-me-prednasky %}">speaking at Gopas Teched</a> few days ago and there was a good question from audience about how to get the SQL script the DbContext is using to create database.
+
+I never thought about it as I always create database in ER tool as it provides more features (like triggers, stored procedures etc.). But I remembered I implemented this method in <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">.NET provider for Firebird</a>. So it has to be somewhere.
+
+The method is called <a href="{% post_url 2009-09-19-230810-first-touches-on-code-only-in-ef4 %}">CreateDatabaseScript and it's on ObjectContext</a>. So it was easy to expose it directly from <a href="http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx">DbContext</a>, because it has <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.aspx">ObjectContext</a> under the hood (you can access it via <a href="http://msdn.microsoft.com/en-us/library/system.data.entity.infrastructure.iobjectcontextadapter(v=vs.103).aspx">IObjectContextAdapter</a>).
+
+<pre class="brush:csharp">
+public static string CreateDatabaseScript(this DbContext context)
+{
+	return ((IObjectContextAdapter)context).ObjectContext.CreateDatabaseScript();
+}
+</pre>
+
+Hope the questioner will find this blog post.

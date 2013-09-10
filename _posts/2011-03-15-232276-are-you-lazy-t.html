@@ -1,0 +1,86 @@
+---
+title: "Are you Lazy<T>?"
+date: 2011-03-15T18:28:43Z
+tags:
+  - .NET
+  - C#
+category: devel
+layout: post
+---
+Yesterday I was chatting with <a href="http://rarous.net/">Aleš Roubíček</a> after lunch and he told me he likes the Lazy&lt;T&gt; I put into project we're working right now and that could be worth to write about it.
+
+Well, here it is. The <a href="http://msdn.microsoft.com/en-us/library/dd642331.aspx">Lazy&lt;T&gt; class</a> is new in .NET Framework 4. Using this class is easy. If you don't wnat to create instance of some object until it's really needed this class will help you. And it can deal with multithreading as well.
+
+So the well known code:
+
+<pre class="brush:csharp">
+Foo _foo;
+public Foo Foo
+{
+	get
+	{
+		if (_foo == null)
+			_foo = new Foo();
+		return _foo;
+	}
+}
+</pre>
+
+can be replaced with:
+
+<pre class="brush:csharp">
+Lazy&lt;Foo&gt; _foo = new Lazy&lt;Foo&gt;(() => new Foo());
+public Foo Foo
+{
+	get
+	{
+		return _foo.Value;
+	}
+}
+</pre>
+
+Nothing special, but when the multithreading comes into play, it's more fun. This class has a constructor taking <a href="http://msdn.microsoft.com/en-us/library/system.threading.lazythreadsafetymode.aspx">LazyThreadSafetyMode</a> and you can specify what kind of thread safety you want. 
+
+<ul>
+<li><code>None</code> is obvious.</li>
+<li><code>PublicationOnly</code> means, that the function creating value can be executed by more threads, but only one value will be used.</li>
+<li><code>ExecutionAndPublication</code> ensures that the function creating value is executed only once.</li>
+</ul>
+
+By the way if you don't provide the function, the default constructor will be invoked.
+
+Handy isn't it.
+
+Let's play with it:
+
+<pre class="brush:csharp">
+class Program
+{
+	static void Main(string[] args)
+	{
+		Test(LazyThreadSafetyMode.PublicationOnly); // 2x ctor, True
+		Console.WriteLine("===");
+		Test(LazyThreadSafetyMode.ExecutionAndPublication); // 1x ctor, True
+	}
+
+	static void Test(LazyThreadSafetyMode mode)
+	{
+		Lazy&lt;Foo&gt; _foo1 = new Lazy&lt;Foo&gt;(() =&gt; new Foo(), mode);
+		Foo f1 = null;
+		Foo f2 = null;
+
+		Parallel.Invoke(() =&gt; { f1 = _foo1.Value; }, () =&gt; { f2 = _foo1.Value; });
+		Console.WriteLine("Same: {0}", object.ReferenceEquals(f1, f2));
+	}
+}
+
+class Foo
+{
+	public Foo()
+	{
+		Console.WriteLine("Running Foo's ctor.");
+		Thread.Sleep(2000);
+		Console.WriteLine("About to finish ctor.");
+	}
+}
+</pre>

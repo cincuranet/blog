@@ -1,0 +1,10 @@
+---
+title: "Eager loading cost - another stuff to consider"
+date: 2009-04-04T20:20:00Z
+tags:
+  - Databases in general
+  - Entity Framework
+category: devel
+layout: post
+---
+<p>Julie Lerman made a great post about <a class="" href="http://www.thedatafarm.com/blog/2009/03/30/TheCostOfEagerLoadingInEntityFramework.aspx" >The cost of eager loading in Entity Framework</a>. And everything there is true, in fact if you take <a class="" href="http://blog.cincura.net/contact/" >my Entity Framework training</a>, you will know that with all reasons and you’ll also learn performace improvements you may incorporate into your solution.</p><p>I want to make some small addition to this post. There’s another stuff to think about. That’s the cost of processing query on server.</p><p>You should always consider the cost of parsing, compiling, finding execution plan etc. the query on server as well as fetching the intermediate data (which may cause cleaning up caches etc.). Thus sometimes (and we’re back to balance as Julie said) it’s better to issue couple of smaller (not so complex) queries, rather than one huge query. <br /></p>

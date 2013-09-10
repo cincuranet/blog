@@ -1,0 +1,41 @@
+---
+title: "Do not overdo parallelism and asynchronous"
+date: 2012-11-30T09:08:40Z
+tags:
+  - .NET
+  - Best practice or not?
+  - C#
+  - Multithreading/Parallelism/Asynchronous/Concurrency
+  - Programming in general
+category: devel
+layout: post
+---
+Sometimes it's easy to little bit overdo the need for having everything asynchronous and parallel. Quite often in last few weeks I've seen methods similar to this one.
+<pre class="brush:csharp">Console.WriteLine("Starting");
+Parallel.For(1, 10, async i =&gt;
+{
+	await Task.Delay(200);
+	Console.WriteLine(i);
+});
+Console.WriteLine("Finished");</pre>
+What's the result? For somebody maybe surprisingly:
+<pre class="brush:plain">Starting
+Finished</pre>
+Why? What we see here is a two pieces "process". First the <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.parallel.for.aspx"><code>Parallel.For</code></a>. This methods runs the provided method in parallel (for our discussion it doesn't matter how and what exactly that means) and waits for all methods to complete. The <a href="http://msdn.microsoft.com/en-us/library/bb397687.aspx">lambda expression</a> we're providing is asynchronous. And though the <code>async</code>/<code>await</code> simplified the programming a lot, it's still standing on basic principles around <a href="http://msdn.microsoft.com/en-us/library/dd235608.aspx"><code>Tasks</code></a>. And that's the key for understanding what's wrong. The async lambda is basically (I'm simplifying here) starting a task to do the work and returning that task so you can eventually (a)wait it to complete. But the <code>Parallel.For</code> care about the method (all of them) returning, not (a)waiting tasks (it's actually an <code>Action&lt;int&gt;</code> also known as "async void" hence it has no idea about the task inside). And here you have it.
+
+The question that's left is, how to fix it? :) Probably easiest way is to extract the lambda to method and wait for that task to complete. That will make the method blocking so the <code>Parallel.For</code> is not going to end prematurely.
+<pre class="brush:csharp">static void Main(string[] args)
+{
+	Console.WriteLine("Starting");
+	Parallel.For(1, 10, i =&gt; Action(i).Wait());
+	Console.WriteLine("Finished");
+}
+
+static async Task Action(int i)
+{
+	await Task.Delay(200);
+	Console.WriteLine(i);
+}</pre>
+But wait. That's a little bit crazy, isn't it? We have tasks running asynchronously and we're spinning <code>Parallel.For</code> and waiting??? You can actually run the loop starting the asynchronous methods capturing the returned tasks and then use <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.waitall.aspx"><code>Task.WaitAll</code></a> or if you want to go really deep async ;) you can use <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.whenall.aspx"><code>Task.WhenAll</code></a> and <code>await</code> it.
+
+If you'd like to see something like <code>ForEachAsync</code> (or maybe <code>ForAsync</code>) you can get and inspiration and other interesting notes from <a href="http://blogs.msdn.com/b/pfxteam/archive/2012/03/05/10278165.aspx">this Stephen Toub's blog post</a>.

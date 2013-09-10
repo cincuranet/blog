@@ -1,0 +1,79 @@
+---
+title: "Awaiting something in TransactionScope"
+date: 2012-06-12T12:15:43Z
+tags:
+  - .NET
+  - Best practice or not?
+  - C#
+  - Multithreading/Parallelism/Asynchronous/Concurrency
+category: devel
+layout: post
+---
+I like asynchronous programming. The <a href="http://msdn.microsoft.com/en-us/library/ms228963.aspx">Asynchronous Programming Model</a> and later <a href="msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">Task</a>s with <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith.aspx">ContinueWith</a> offer great performance especially if no waiting and similar is used.
+
+Although the <a href="http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx">async/await</a> makes this very simple for 99% of cases, there's always 1% where you might hit the wall. With callbacks it was little bit obvious, because you wrote the code. Now the compiler is doing the hard work.
+
+If you do something like:
+<pre class="brush:csharp">
+lock (SyncRoot)
+{
+	await FooBar.DoAsync();
+}
+</pre>
+
+You'll get nice error from compiler saying <code>The 'await' operator cannot be used in the body of a lock statement</code>. And it really makes sense. The lock will very likely provide wrong results under default rewriting work the compiler is doing (and doing it properly for <a href="http://msdn.microsoft.com/en-us/library/system.threading.monitor.aspx">Monitor</a> class needs a lot of knowledge of what you're trying to achieve. What's not so clear is that with <a href="http://msdn.microsoft.com/en-us/library/system.transactions.transactionscope.aspx">TransactionScope</a> block (or similar construct) you're basically doing same stuff, just probably somewhere else in database.
+
+So the compiler is completely OK with:
+<pre class="brush:csharp">
+using (TransactionScope ts = new TransactionScope())
+{
+	await FooBar.DoAsync();
+}
+</pre>
+
+But that's not what you might had in mind. Consider code like:
+<pre class="brush:csharp">
+static void Main(string[] args)
+{
+	Test();
+}
+
+static async void Test()
+{
+	Task t = FooAsync();
+	Console.WriteLine("Other stuff");
+	await t;
+}
+
+static async Task FooAsync()
+{
+	using (Test t = new Test())
+	{
+		Console.WriteLine("Before");
+		await Task.Yield();
+		Console.WriteLine("After");
+	}
+}
+</pre>
+<pre class="brush:csharp">
+class Test : IDisposable
+{
+	public void Dispose()
+	{
+		Console.WriteLine("Dispose");
+	}
+}
+</pre>
+
+The result is correct (and expected, if you look at it closely):
+
+<pre class="brush:plain">
+Before
+Other stuff
+After
+Dispose
+</pre>
+
+But considering, that the <i>Other stuff</i> <strong>might</strong> have some dependency in data being done in that transaction you <strong>might</strong> get wrong result.
+
+So it's not always wrong, nor some gotcha in compiler. But think it through before using this construct.

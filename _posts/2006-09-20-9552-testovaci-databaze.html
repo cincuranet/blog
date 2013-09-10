@@ -1,0 +1,9 @@
+---
+title: "Testovací databáze"
+date: 2006-09-20T21:09:00Z
+tags:
+  - Firebird
+category: devel
+layout: post
+---
+<p>Tak&#233; m&#225;te jednu testovac&#237; datab&#225;zi, kde zkou&#353;&#237;te v&#353;echno možn&#233;? M&#225;m jednu takovou pro Firebird. Dneska jsem v&#353;ak narazil na velmi pozoruhodn&#253; limit. Jak poř&#225;d přid&#225;v&#225;m (v r&#225;mci testov&#225;n&#237;) nějak&#233; tabulky, indexy a procedury pojmenov&#225;m je n&#225;zvy jako 'jirka', 'jiri', 'test', 'testik', 'aaa', 'pokus' a podobn&#233; modifikace a je&#353;tě s č&#237;sly. Dnes jsem ale narazil na probl&#233;m, že jsem už nemohl vytvořit tabulku, protože v&#353;echny "dummy" n&#225;zvy jsem už vyčerpal. No trvalo mi pak dobr&#253;ch 5 minut vymyslet nějak&#233; opravdu blb&#233; slovo, kter&#233; bych mohl použ&#237;t. Během tohoto usilovn&#233;ho přem&#253;&#353;len&#237; jsem se taky snažil někter&#233; tabulky smazat, ale narazil jsem na dal&#353;&#237; zaj&#237;mav&#253; poznatek. V t&#233; hromadě objektů v db m&#225;m obrovskou patlaninu vazeb. Jak totiž vytvoř&#237;m nějakou tabulku a potřebuju něco je&#353;tě přireferencovat, hod&#237;m referenci na tabulku 'aaa' a pak tabulka 'pokus3' referencuje 'aaa'. Takto se to děje poř&#225;d a nakonec člověk nemůže nic poř&#225;dně smazat, neboť na tom zase něco z&#225;vis&#237;.</p><p>Vypad&#225; to, že nakonec tu db dropnu a začnu pěkně odznova - ale je bude mi asi po st&#225;vaj&#237;c&#237;m bordelu smutno. :)</p>

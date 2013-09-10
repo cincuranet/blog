@@ -1,0 +1,9 @@
+---
+title: "Čtete streamy?"
+date: 2006-05-09T20:59:00Z
+tags:
+  - .NET
+category: devel
+layout: post
+---
+<p>A čtete je od zač&#225;tku? Pravděpodobně ano. </p><p>To jsem si zase jednou naběhl. Vydloubal jsem ze s&#237;tě data, kter&#225; mi jin&#225; moje aplikace poslala a chtěl jsem je deserializovat a pracovat s nimi d&#225;l. Neust&#225;le jsem ale dost&#225;val v&#253;jimku s t&#237;m, že byl dosažen konec streamu před koncem parsov&#225;n&#237;. A jak mi to teď k večeru nemysl&#237;, začal jsem prapodivně hledat chybu. Nejprve jsem oveřil, že data jsou v&#353;echna - byla. Pak jsem začal laborovat s nějak&#253;mi identifik&#225;tory na konci, abych si byl opravdu jist&#253; (samozřejmě jsem na nic nepřisel). No a nakonec mě musel nakopnout google (viva google). </p><p>Jak jsem totiž zapsal data do streamu pro deserializaci, zapomněl jsem přesunout pozici na zač&#225;tek. :) Ach jo. Deset minut jsem se hrabal v k&#243;du (a samozřejmě jsem ho trochu rozvrtal, takže jsem to musel d&#225;vat zpět) a ona to byla takov&#225;hle prkotina. :)</p><p><br /><font size=1><hr id=null/></font><font face="Courier New">&gt;End of Stream encountered before parsing was completed.&lt;</font> </p><p></p><p></p>
