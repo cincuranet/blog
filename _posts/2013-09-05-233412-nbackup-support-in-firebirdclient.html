@@ -7,11 +7,11 @@ tags:
 category: devel
 layout: post
 ---
-Today I had a little of spare time and I had in my head support for <a href="http://tracker.firebirdsql.org/browse/DNET-224">NBackup via Services API</a> in <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdClient</a> for a long time. Especially since <a href="{% post_url 2013-05-27-233284-windows-azure-web-sites-and-firebird %}">NBackup saved me on Azure Websites</a>.I was guessing it should not take that long to implement it, if you're in a good mood. Surprisingly I was right with my estimate.
+<p>Today I had a little of spare time and I had in my head support for <a href="http://tracker.firebirdsql.org/browse/DNET-224">NBackup via Services API</a> in <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdClient</a> for a long time. Especially since <a href="{% post_url 2013-05-27-233284-windows-azure-web-sites-and-firebird %}">NBackup saved me on Azure Websites</a>.I was guessing it should not take that long to implement it, if you're in a good mood. Surprisingly I was right with my estimate.</p>
 
-So let me introduce to you two new classes you will be able to use in next version. It's <code>FbNBackup</code> and <code>FbNRestore</code> (I'm still validating the naming in my head). You have all the switches and option from command line available ("no database triggers", "direct IO", ...).
+<p>So let me introduce to you two new classes you will be able to use in next version. It's <code>FbNBackup</code> and <code>FbNRestore</code> (I'm still validating the naming in my head). You have all the switches and option from command line available ("no database triggers", "direct IO", ...).</p>
 
-To create a level 0 backup you can just call:
+<p>To create a level 0 backup you can just call:</p>
 
 <pre class="brush:csharp">
 var nbak = new FbNBackup();
@@ -23,9 +23,9 @@ nbak.Options = FbNBackupFlags.NoDatabaseTriggers;
 nbak.Execute();
 </pre>
 
-Changing to <code>nbak.Level = 1;</code> you'll create another level and so on.
+<p>Changing to <code>nbak.Level = 1;</code> you'll create another level and so on.</p>
 
-Restoring is even simpler. You just need your chain of backups and call:
+<p>Restoring is even simpler. You just need your chain of backups and call:</p>
 
 <pre class="brush:csharp">
 var nrest = new FbNRestore();
@@ -35,4 +35,4 @@ nrest.DirectIO = true;
 nrest.Execute();
 </pre>
 
-It's pretty much same API as with regular <code>FbBackup</code> and <code>FbRestore</code>, just with incremental-ish backup flavor. What else you'd like to see in foreseeable future in FirebirdClient?
+<p>It's pretty much same API as with regular <code>FbBackup</code> and <code>FbRestore</code>, just with incremental-ish backup flavor. What else you'd like to see in foreseeable future in FirebirdClient?</p>

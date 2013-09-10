@@ -9,11 +9,11 @@ layout: post
 ---
 <blockquote><a href="{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}">There's a part 2 of this story.</a></blockquote>
 
-The next version of Entity Framework, version 6, has a nice new feature <a href="http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions">Custom Code First Conventions</a>. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up <code>_PK</code>? You can create convention for that and completely remove bunch of <code>HasKey()</code> lines. But that's not what I'm going to talk about, if you want to know more follow the link above.
+<p>The next version of Entity Framework, version 6, has a nice new feature <a href="http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions">Custom Code First Conventions</a>. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up <code>_PK</code>? You can create convention for that and completely remove bunch of <code>HasKey()</code> lines. But that's not what I'm going to talk about, if you want to know more follow the link above.</p>
 
-<a href="http://www.firebirdsql.org">Firebird</a> as other databases adhering to SQL standard in naming and quotations treats unquoted column/table/... as upper case. A lot of ORMs normally quote everything, just to be safe and because it's easier than to hunt all the exceptions and places where it might collide with reserved keywords. I'm doing that too in provider for Entity Framework for Firebird. That means, that if you create some Code First model, the SQL statements will be quoted and using default naming convention - that's, simply speaking, same as property/class/... name. Not good. You have to write a lot of explicit <code>HasColumnName</code>.
+<p><a href="http://www.firebirdsql.org">Firebird</a> as other databases adhering to SQL standard in naming and quotations treats unquoted column/table/... as upper case. A lot of ORMs normally quote everything, just to be safe and because it's easier than to hunt all the exceptions and places where it might collide with reserved keywords. I'm doing that too in provider for Entity Framework for Firebird. That means, that if you create some Code First model, the SQL statements will be quoted and using default naming convention - that's, simply speaking, same as property/class/... name. Not good. You have to write a lot of explicit <code>HasColumnName</code>.</p>
 
-But with custom conventions today, you can save your typing. Let's say, that my naming convention is like this. Property <code>SomeValue</code> goes to column <code>SOME_VALUE</code>. So it's upper case, words separated by underscores. In fact that's very close to what majority of Firebird users use.
+<p>But with custom conventions today, you can save your typing. Let's say, that my naming convention is like this. Property <code>SomeValue</code> goes to column <code>SOME_VALUE</code>. So it's upper case, words separated by underscores. In fact that's very close to what majority of Firebird users use.</p>
 
 <pre class="brush:csharp">
 public static string CreateName(string s)
@@ -22,9 +22,9 @@ public static string CreateName(string s)
 }
 </pre>
 
-Yes, it's a little over-LINQ-ed, but I wanted to try to write it like this. :)
+<p>Yes, it's a little over-LINQ-ed, but I wanted to try to write it like this. :)</p>
 
-The convention itself needs to implement <code>IConfigurationConvention</code> interface with proper mix of two generic parameters. Let's name our columns and tables.
+<p>The convention itself needs to implement <code>IConfigurationConvention</code> interface with proper mix of two generic parameters. Let's name our columns and tables.</p>
 
 <pre class="brush:csharp">
 class FirebirdNamingConvention :
@@ -50,7 +50,7 @@ class FirebirdNamingConvention :
 }
 </pre>
 
-Simple, isn't it? Now we need to just register this convention.
+<p>Simple, isn't it? Now we need to just register this convention.</p>
 
 <pre class="brush:csharp">
 class FirebirdContext : DbContext
@@ -70,9 +70,9 @@ class FirebirdContext : DbContext
 }
 </pre>
 
-I have also included other way to write the conventions, directly in <code>OnModelCreating</code> using so-called lightweight conventions.
+<p>I have also included other way to write the conventions, directly in <code>OnModelCreating</code> using so-called lightweight conventions.</p>
 
-Simple code to test.
+<p>Simple code to test.</p>
 
 <pre class="brush:csharp">
 Database.SetInitializer&lt;FirebirdContext&gt;(null);
@@ -92,7 +92,7 @@ class TestEntity
 }
 </pre>
 
-And the result.
+<p>And the result.</p>
 
 <pre class="brush:sql">
 SELECT
@@ -105,6 +105,6 @@ FROM "TEST_ENTITY" AS "B"
 WHERE 0 = "B"."MY_INTEGER"
 </pre>
 
-Few lines of code and could save you maybe hundreds of lines of code you'd have to write otherwise.
+<p>Few lines of code and could save you maybe hundreds of lines of code you'd have to write otherwise.</p>
 
 <blockquote>Note: This code uses custom build FirebirdClient (with current stable one it will not work), because Entity Framework 6 contains some breaking changes for provider writers. I'm working on it and the test builds will be available soon.</blockquote>
