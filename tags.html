@@ -1,0 +1,14 @@
+---
+layout: default
+title: Tags
+---
+<ul>
+{% for t in site.tags %} 
+  <li>{{ t[0] }}</li>
+  <ul>
+  	{% for p in t[1] %}
+  		<li><a href=".{{ p.url }}">{{ p.title }}</a></li>
+  	{% endfor %}
+  </ul>
+{% endfor %}
+</ul>
