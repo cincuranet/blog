@@ -4,7 +4,7 @@
 	<div class="top_article">
 		<h3>{{ page.title }}</h3>  
 		{{ page.content }}
-		<p><small>Published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }}.</small></p>
+		<p><small>Published on {{ page.date | date: "%-d %b %Y" }} and tagged {{ page.tags | array_to_sentence_string }}.</small></p>
 	</div>		
 	<div class="top_article">
 		<h4>Comments:</h4>
