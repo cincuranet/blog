@@ -25,7 +25,7 @@ public override string ApplicationName
 	set { }
 }
 </pre>
-<p>Next method is <code>public override SettingsPropertyValueCollection GetPropertyValues(SettingsContext context, SettingsPropertyCollection collection)</code>. This method is called when "reading the configurationî. So here we have to implement reading file (or any other storage) and filling the <code>SettingsPropertyValueCollection</code> collection. The first step is preparing the structure:</p>
+<p>Next method is <code>public override SettingsPropertyValueCollection GetPropertyValues(SettingsContext context, SettingsPropertyCollection collection)</code>. This method is called when "reading the configuration‚Äù. So here we have to implement reading file (or any other storage) and filling the <code>SettingsPropertyValueCollection</code> collection. The first step is preparing the structure:</p>
 <pre class="brush:csharp">
 SettingsPropertyValueCollection values = new SettingsPropertyValueCollection();
 foreach (SettingsProperty property in collection)
@@ -68,7 +68,7 @@ using (XmlTextReader tr = new XmlTextReader(this.GetSavingPath))
 }
 return values;
 </pre>
-<p>OK, the method for Ñreading" is done. Continuing with Ñsaving". The method is <code>public override void SetPropertyValues(SettingsContext context, SettingsPropertyValueCollection collection)</code> and it's very similar to reading (in fact does the same in "reverseî order).</p>
+<p>OK, the method for ‚Äûreading" is done. Continuing with ‚Äûsaving". The method is <code>public override void SetPropertyValues(SettingsContext context, SettingsPropertyValueCollection collection)</code> and it's very similar to reading (in fact does the same in "reverse‚Äù order).</p>
 <pre class="brush:csharp">
 using (XmlTextWriter tw = new XmlTextWriter(this.GetSavingPath, Encoding.Unicode))
 {
@@ -88,7 +88,7 @@ using (XmlTextWriter tw = new XmlTextWriter(this.GetSavingPath, Encoding.Unicode
 }
 </pre>
 <p>And that's it. This is very simple sample provider. You can build your own for your specific needs without problem.</p>
-<p>I'm using some helper methods. I hope there's no need to comment it, so I'll provide it Ñas-is".</p>
+<p>I'm using some helper methods. I hope there's no need to comment it, so I'll provide it ‚Äûas-is".</p>
 <pre class="brush:csharp">
 private bool IsUserScoped(SettingsProperty property)
 {
@@ -105,4 +105,4 @@ private string GetSavingPath
 }
 </pre>
 <hr />
-<p><i>Note: This is part of my own provider (to understand some 'ID3 renamer' strings) used in my ID3 renamer application (which is now in Ñto .NET rewriting" phase). :-)</i></p>
+<p><i>Note: This is part of my own provider (to understand some 'ID3 renamer' strings) used in my ID3 renamer application (which is now in ‚Äûto .NET rewriting" phase). :-)</i></p>
