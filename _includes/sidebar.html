@@ -1,12 +1,10 @@
 	<div id="sidebar" class="col last span-4">
 		<div class="section">
 		<h4 class="ver small">Search</h4>
-		<p>
-			Enter the query to search and hit <kbd>enter</kbd>.
-			<form id="searchform" onsubmit="window.open('https://www.google.com/search?q='+this.elements['s'].value+' site:'+'{{ site.url }}'.replace(/^https?:\/\//,''));return false;">
-				<p class="search-field"><input type="text" value="" name="s" id="s"></p>
-			</form>
-		</p>
+		<p>Enter the query to search and hit <kbd>enter</kbd>.</p>
+		<form id="searchform" onsubmit="window.open('https://www.google.com/search?q='+this.elements['s'].value+' site:'+'{{ site.url }}'.replace(/^https?:\/\//,''));return false;">
+			<p class="search-field"><input type="text" value="" name="s" id="s"></p>
+		</form>
 	</div>
 		
 		<div class="section">
