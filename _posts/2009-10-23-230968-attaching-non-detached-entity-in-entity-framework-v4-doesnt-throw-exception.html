@@ -6,7 +6,7 @@ tags:
 category: devel
 layout: post
 ---
-While slowly digging into Beta 2 of EF4 I discovered new nice "feature". In EF1, if you had code like this.
+<p>While slowly digging into Beta 2 of EF4 I discovered new nice "feature". In EF1, if you had code like this.</p>
 
 <pre class="brush:csharp">
 master[] data;
@@ -23,6 +23,6 @@ using (testovaciEntities ent = new testovaciEntities())
 }
 </pre>
 
-It threw <code>InvalidOperationException</code> saying <code>An entity object cannot be referenced by multiple instances of IEntityChangeTracker.</code>. Right but I don't have access to my previous context anymore. This behavior caused me a lot of headache and I created couple of hacks to workaround it. But the good news is that the code above works fine in EF4. 
+<p>It threw <code>InvalidOperationException</code> saying <code>An entity object cannot be referenced by multiple instances of IEntityChangeTracker.</code>. Right but I don't have access to my previous context anymore. This behavior caused me a lot of headache and I created couple of hacks to workaround it. But the good news is that the code above works fine in EF4.</p> 
 
-Neat! Together with other improvements I can get rid of my hacks and sleep well again. ;)
+<p>Neat! Together with other improvements I can get rid of my hacks and sleep well again. ;)</p>

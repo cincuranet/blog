@@ -6,9 +6,9 @@ tags:
 category: devel
 layout: post
 ---
-<a href="http://blog.vyvojar.cz/michal">Michal Bláha</a> asked me, before <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">my session</a> when I stopped in his office, whether it's possible to create associations in Entity Data Model without foreign keys in database, as he's not using FKs, he's enforcing referential integrity in application (yeah, if you're transaction guy like I am, your brain is about to blow).
+<p><a href="http://blog.vyvojar.cz/michal">Michal Bláha</a> asked me, before <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">my session</a> when I stopped in his office, whether it's possible to create associations in Entity Data Model without foreign keys in database, as he's not using FKs, he's enforcing referential integrity in application (yeah, if you're transaction guy like I am, your brain is about to blow).</p>
 
-Well, it's for sure possible. First we define some simple tables:
+<p>Well, it's for sure possible. First we define some simple tables:</p>
 
 <pre class="brush:sql">
 create table test_master(
@@ -23,18 +23,18 @@ create table test_detail(
 );
 </pre>
 
-You see, no FK defined. Then you generate model from database, just next &gt; next &gt; finish style and you end up with:
+<p>You see, no FK defined. Then you generate model from database, just next &gt; next &gt; finish style and you end up with:</p>
 
-<img src="http://i.blog.cincura.net/associations_no_fk_1.png" alt="" />
+<p><img src="http://i.blog.cincura.net/associations_no_fk_1.png" alt="" /></p>
 
-Now the magic begins. :) Just kidding. First delete the <code>id_master</code> column from entity, it has nothing to do in conceptual model. Next create new association (right click in empty space in designer) and create it as 1-*. OK, we're almost there. The last step, is to map the association. It's mapped to <code>test_detail</code>: <code>test_master.id</code> to <code>id_master</code> and <code>test_detail.id</code> to <code>id</code>.
+<p>Now the magic begins. :) Just kidding. First delete the <code>id_master</code> column from entity, it has nothing to do in conceptual model. Next create new association (right click in empty space in designer) and create it as 1-*. OK, we're almost there. The last step, is to map the association. It's mapped to <code>test_detail</code>: <code>test_master.id</code> to <code>id_master</code> and <code>test_detail.id</code> to <code>id</code>.</p>
 
-<img src="http://i.blog.cincura.net/associations_no_fk_2.png" alt="" />
+<p><img src="http://i.blog.cincura.net/associations_no_fk_2.png" alt="" /></p>
 
-Now you can start querying the data across associations.
+<p>Now you can start querying the data across associations.</p>
 
 <pre class="brush:csharp">
 string s = context.test_master.Include("test_details").ToTraceString();
 </pre>
 
-Easily done, isn't it.
+<p>Easily done, isn't it.</p>

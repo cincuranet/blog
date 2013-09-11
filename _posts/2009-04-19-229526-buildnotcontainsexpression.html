@@ -7,7 +7,7 @@ tags:
 category: devel
 layout: post
 ---
-<a href="http://blogs.msdn.com/meek/" >Colin Meek</a> wrote extremely handy method for using it as Contains method we know it's on collections, but not supported in Entity Framework right now (v1/EF3.5). The method is called BuildContainsExpression. Today in MSDN forums I needed this, but negated. Thus I wrote the BuildNotContainsExpression. It's just small change of original Colin's method.
+<p><a href="http://blogs.msdn.com/meek/">Colin Meek</a> wrote extremely handy method for using it as Contains method we know it's on collections, but not supported in Entity Framework right now (v1/EF3.5). The method is called BuildContainsExpression. Today in MSDN forums I needed this, but negated. Thus I wrote the BuildNotContainsExpression. It's just small change of original Colin's method.</p>
 
 <pre class="brush:csharp">
 static Expression&lt;Func&lt;TElement, bool&gt;&gt; BuildNotContainsExpression&lt;TElement, TValue&gt;(Expression&lt;Func&lt;TElement, TValue&gt;&gt; valueSelector, IEnumerable&lt;TValue&gt; values)

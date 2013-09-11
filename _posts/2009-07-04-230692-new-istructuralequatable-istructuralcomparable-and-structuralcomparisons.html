@@ -8,9 +8,9 @@ tags:
 category: devel
 layout: post
 ---
-.NET Framework 4 comes with (among others) with two new interfaces. <a href="http://msdn.microsoft.com/en-us/library/system.collections.istructuralequatable(VS.100).aspx">IStructuralEquatable</a> and <a href="http://msdn.microsoft.com/en-us/library/system.collections.istructuralcomparable(VS.100).aspx">IStructuralComparable</a>. These are implemented (right now in Beta 1) by <a href="http://msdn.microsoft.com/en-us/library/system.array(VS.100).aspx">Array</a> and <a href="http://msdn.microsoft.com/en-us/library/system.tuple(VS.100).aspx">Tuple(s)</a>.
+<p>.NET Framework 4 comes with (among others) with two new interfaces. <a href="http://msdn.microsoft.com/en-us/library/system.collections.istructuralequatable(VS.100).aspx">IStructuralEquatable</a> and <a href="http://msdn.microsoft.com/en-us/library/system.collections.istructuralcomparable(VS.100).aspx">IStructuralComparable</a>. These are implemented (right now in Beta 1) by <a href="http://msdn.microsoft.com/en-us/library/system.array(VS.100).aspx">Array</a> and <a href="http://msdn.microsoft.com/en-us/library/system.tuple(VS.100).aspx">Tuple(s)</a>.</p>
 
-With this new implementations and <a href="http://msdn.microsoft.com/en-us/library/system.collections.structuralcomparisons(VS.100).aspx">StructuralComparisons</a> you can check arrays and tuples for structural equality (or compare these).
+<p>With this new implementations and <a href="http://msdn.microsoft.com/en-us/library/system.collections.structuralcomparisons(VS.100).aspx">StructuralComparisons</a> you can check arrays and tuples for structural equality (or compare these).</p>
 
 <pre class="brush:csharp">
 object[] o1 = new object[] { 1, "2" };
@@ -20,6 +20,6 @@ Console.WriteLine(o1.Equals(o2));
 Console.WriteLine(o1.Equals(o2, StructuralComparisons.StructuralEqualityComparer));
 </pre>
 
-The code above writes first false and then true. The first one is classic "old-school" Equals. Following line is using new structural comparison, thus the true as result. Neat, isn't it?
+<p>The code above writes first false and then true. The first one is classic "old-school" Equals. Following line is using new structural comparison, thus the true as result. Neat, isn't it?</p>
 
-By the way, F# is now using these interfaces too. 
+<p>By the way, F# is now using these interfaces too.</p> 

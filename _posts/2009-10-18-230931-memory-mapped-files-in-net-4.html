@@ -9,13 +9,13 @@ tags:
 category: devel
 layout: post
 ---
-Similarly to my way to <a href="{% post_url 2009-06-09-230550-countdownevent-class %}">CountdownEvent class</a>, I found <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles(VS.100).aspx">MemoryMappedFiles namespace</a>, which is new in .NET 4. It's in System.IO.
+<p>Similarly to my way to <a href="{% post_url 2009-06-09-230550-countdownevent-class %}">CountdownEvent class</a>, I found <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles(VS.100).aspx">MemoryMappedFiles namespace</a>, which is new in .NET 4. It's in System.IO.</p>
 
-If you've done some work in stone ages in C/C++ or maybe ObjectPascal (Delphi) you may remember using these files. I used these for exchanging data between two applications, but the usage is pretty much endless. And now you can benefit from it in .NET directly, without using P/Invoke.
+<p>If you've done some work in stone ages in C/C++ or maybe ObjectPascal (Delphi) you may remember using these files. I used these for exchanging data between two applications, but the usage is pretty much endless. And now you can benefit from it in .NET directly, without using P/Invoke.</p>
 
-To see what's inside, I wrote two simple applications that are reading and writing some data (no synchronization ;)).
+<p>To see what's inside, I wrote two simple applications that are reading and writing some data (no synchronization ;)).</p>
 
-The first one is doing writing and reading:
+<p>The first one is doing writing and reading:</p>
 <pre class="brush:csharp">using (MemoryMappedFile mmf = MemoryMappedFile.CreateOrOpen("TestMemoryMappedFile", 1024 * 1024))
 {
 	using (MemoryMappedViewAccessor accessor = mmf.CreateViewAccessor())
@@ -27,7 +27,7 @@ The first one is doing writing and reading:
 		HelperStuff.ReadData(accessor, 0);
 	}
 }</pre>
-and the second one is just reading:
+<p>and the second one is just reading:</p>
 <pre class="brush:csharp">using (MemoryMappedFile mmf = MemoryMappedFile.CreateOrOpen("TestMemoryMappedFile", 1024 * 1024))
 {
 	using (MemoryMappedViewAccessor accessor = mmf.CreateViewAccessor())
@@ -39,7 +39,7 @@ and the second one is just reading:
 		HelperStuff.ReadData(accessor, 0);
 	}
 }</pre>
-Nothing magical. The reading and writing methods (placed in shared library) are simply creating some dummy data. In my case struct and string, saved as array of bytes.
+<p>Nothing magical. The reading and writing methods (placed in shared library) are simply creating some dummy data. In my case struct and string, saved as array of bytes.</p>
 <pre class="brush:csharp">public static void ReadData(MemoryMappedViewAccessor accessor, int position)
 {
 	SomeData data1;
@@ -71,9 +71,9 @@ public static void WriteData(MemoryMappedViewAccessor accessor, int position)
 
 	accessor.WriteArray&lt;byte&gt;(position, data2, 0, data2.Length);
 }</pre>
-The struct is really dummy:
+<p>The struct is really dummy:</p>
 <pre class="brush:csharp">public struct SomeData
 {
 	public long CurrentDate { get; set; }
 }</pre>
-The reading and writing is little bit limited, as you're in fact dealing with just a bunch of memory, not some structured storage. But if you like working with it directly as stream (or you have some smart wrappers around streams), you can also use method <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewstream(VS.100).aspx">CreateViewStream</a> instead of <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewaccessor(VS.100).aspx">CreateViewAccessor</a> used in my example. These method have some overloads with option to specify also the access rights using <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfileaccess(VS.100).aspx">MemoryMappedFileAccess</a>, so you can i.e. use CopyOnWrite and any write operations will not be seen by other processes.
+<p>The reading and writing is little bit limited, as you're in fact dealing with just a bunch of memory, not some structured storage. But if you like working with it directly as stream (or you have some smart wrappers around streams), you can also use method <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewstream(VS.100).aspx">CreateViewStream</a> instead of <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewaccessor(VS.100).aspx">CreateViewAccessor</a> used in my example. These method have some overloads with option to specify also the access rights using <a href="http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfileaccess(VS.100).aspx">MemoryMappedFileAccess</a>, so you can i.e. use CopyOnWrite and any write operations will not be seen by other processes.</p>

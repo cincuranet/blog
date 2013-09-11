@@ -7,9 +7,9 @@ tags:
 category: devel
 layout: post
 ---
-Today I was writing some code, where I needed create initially empty array. I wondered if the <code>array[0]</code> vs. <code>array[] { }</code> is the same. Alike with the <a href="{% post_url 2007-04-28-224879-concatenating-string-during-compile %}">string concatenation</a>.
+<p>Today I was writing some code, where I needed create initially empty array. I wondered if the <code>array[0]</code> vs. <code>array[] { }</code> is the same. Alike with the <a href="{% post_url 2007-04-28-224879-concatenating-string-during-compile %}">string concatenation</a>.</p>
 
-Without writing further text. Lines:
+<p>Without writing further text. Lines:</p>
 
 <pre class="brush:csharp">
 private static void Test1()
@@ -24,7 +24,7 @@ private static void Test2()
 }
 </pre>
 
-resulted in this IL:
+<p>resulted in this IL:</p>
 <pre class="brush:plain">
 .method private hidebysig static void  Test1() cil managed
 {
@@ -52,4 +52,4 @@ resulted in this IL:
 } // end of method Program::Test2
 </pre>
 
-As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.
+<p>As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.</p>

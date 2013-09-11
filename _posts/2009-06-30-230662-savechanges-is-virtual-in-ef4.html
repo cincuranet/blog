@@ -6,10 +6,10 @@ tags:
 category: devel
 layout: post
 ---
-I don't know whether I just noticed this too late, but the <a href="http://msdn.microsoft.com/en-us/library/dd395500(VS.100).aspx">SaveChanges</a> method in upcoming EF4 is virtual. This is a great small change. 
+<p>I don't know whether I just noticed this too late, but the <a href="http://msdn.microsoft.com/en-us/library/dd395500(VS.100).aspx">SaveChanges</a> method in upcoming EF4 is virtual. This is a great small change.</p> 
 
-You can generate (if you're using T4 templates for generating) your own SaveChanges method and do some work there. Well, before actions can be done using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.savingchanges.aspx">SavingChanges</a> event, i.e. <a href="{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}">validation like in this example</a>. But for after actions, there's no SavedChanges event (neither in EF4). Hence adding some code into this method is very handy. For example logging actions performed is super easy.
+<p>You can generate (if you're using T4 templates for generating) your own SaveChanges method and do some work there. Well, before actions can be done using <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.savingchanges.aspx">SavingChanges</a> event, i.e. <a href="{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}">validation like in this example</a>. But for after actions, there's no SavedChanges event (neither in EF4). Hence adding some code into this method is very handy. For example logging actions performed is super easy.</p>
 
-This small change opens up new ways of thinking about SaveChanges usage.
+<p>This small change opens up new ways of thinking about SaveChanges usage.</p>
 
-The method also have new <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.saveoptions(VS.100).aspx">SaveOptions</a> parameter. As it's enum we can expect adding more options in future versions.
+<p>The method also have new <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.saveoptions(VS.100).aspx">SaveOptions</a> parameter. As it's enum we can expect adding more options in future versions.</p>

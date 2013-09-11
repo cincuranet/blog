@@ -6,15 +6,15 @@ tags:
 category: devel
 layout: post
 ---
-About a month ago there was a question in <a href="http://groups.google.com/group/firebird_cz/">Firebird (CZ) group</a> how to find whether the user is able to use particular role or to get all roles for user.
+<p>About a month ago there was a question in <a href="http://groups.google.com/group/firebird_cz/">Firebird (CZ) group</a> how to find whether the user is able to use particular role or to get all roles for user.</p>
 
-As you probably know, a lot of stuff (almost everything) is in system catalog (system tables). The only problem is to figure out what's the right set of parameters to use. To get all roles with users able to use it, you can use:
+<p>As you probably know, a lot of stuff (almost everything) is in system catalog (system tables). The only problem is to figure out what's the right set of parameters to use. To get all roles with users able to use it, you can use:</p>
 
 <pre class="brush:sql">
 select rdb$relation_name as "Role", rdb$user as "User" from rdb$user_privileges
 where rdb$privilege = 'M' and rdb$user_type = 8 and rdb$object_type = 13;
 </pre>
 
-The <code>rdb$privilege = 'M'</code> is to get all <i>member of</i> privileges, the <code>rdb$user_type = 8</code> is about getting records for <i>users</i> and finally <code>rdb$object_type = 13</code> filters only for <i>roles</i> records.
+<p>The <code>rdb$privilege = 'M'</code> is to get all <i>member of</i> privileges, the <code>rdb$user_type = 8</code> is about getting records for <i>users</i> and finally <code>rdb$object_type = 13</code> filters only for <i>roles</i> records.</p>
 
-The <code>rdb$user_privileges</code> table contains all privileges defined for the database - tables, stored procedures, triggers, roles, ..., but also take into account that current versions of Firebird (&lt;3.0) are storing users (only, not roles) in system wide security database.
+<p>The <code>rdb$user_privileges</code> table contains all privileges defined for the database - tables, stored procedures, triggers, roles, ..., but also take into account that current versions of Firebird (&lt;3.0) are storing users (only, not roles) in system wide security database.</p>

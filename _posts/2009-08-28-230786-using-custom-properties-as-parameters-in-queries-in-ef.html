@@ -9,11 +9,11 @@ tags:
 category: devel
 layout: post
 ---
-Most of the time you're using properties in objects that are also in database. But sometimes you may need to create property in object that's not in database - it's used only in this application or it's there custom logic. Then, if you wanna use it in queries, you're out. You can use only those properties declared in table, obviously.
+<p>Most of the time you're using properties in objects that are also in database. But sometimes you may need to create property in object that's not in database - it's used only in this application or it's there custom logic. Then, if you wanna use it in queries, you're out. You can use only those properties declared in table, obviously.</p>
 
-But there's a solution. First, the property has to be created from some other properties, so you're able to do the same in database. And of course, functions used there needs to be translatable to store language too. This may limit you, but there's nothing you can do about it, except evaluating query on client side.
+<p>But there's a solution. First, the property has to be created from some other properties, so you're able to do the same in database. And of course, functions used there needs to be translatable to store language too. This may limit you, but there's nothing you can do about it, except evaluating query on client side.</p>
 
-Let's have a table like this:
+<p>Let's have a table like this:</p>
 <pre class="brush:sql">
 create table Foo (
   ID int primary key,
@@ -23,7 +23,7 @@ create table Foo (
 );
 </pre>
 
-And you wanna have property IsReadyToShip, in application. So you create:
+<p>And you wanna have property IsReadyToShip, in application. So you create:</p>
 <pre class="brush:csharp">
 public bool IsReadyToShip
 {
@@ -31,17 +31,17 @@ public bool IsReadyToShip
 }
 </pre>
 
-But with this property you're not able to query for all Foos ready to ship. Luckily the solution is pretty easy. First you'll create expression for this:
+<p>But with this property you're not able to query for all Foos ready to ship. Luckily the solution is pretty easy. First you'll create expression for this:</p>
 <pre class=brush:csharp">
 public static Expression&lt;Func&lt;Foo, bool&gt;&gt; IsReadyToShipExpression = f =&gt; f.IsAccepted.HasValue &amp;&amp; f.IsAccepted &amp;&amp; f.IsPaid &amp;&amp; f.IsPacked;
 </pre>
 
-Then you'l prepare static compiled version of this expression, just for performance reasons, you can compile it in getter everytime too:
+<p>Then you'l prepare static compiled version of this expression, just for performance reasons, you can compile it in getter everytime too:</p>
 <pre class="brush:csharp">
 protected static Func&lt;Foo, bool&gt; IsReadyToShipFunc = IsReadyToShipExpression.Compile();
 </pre>
 
-And finally the property:
+<p>And finally the property:</p>
 <pre class="brush:csharp">
 public bool IsReadyToShip
 {
@@ -49,7 +49,7 @@ public bool IsReadyToShip
 }
 </pre>
 
-Right now we have the same result as before - working property. But because we also have the expressions of the property (and incidentally it's translatable to store language ;)), so we can use it for querying. You can use it in an easy way (<code>this</code> is in this case ObjectContext used in Entity Framework):
+<p>Right now we have the same result as before - working property. But because we also have the expressions of the property (and incidentally it's translatable to store language ;)), so we can use it for querying. You can use it in an easy way (<code>this</code> is in this case ObjectContext used in Entity Framework):</p>
 
 <pre class="brush:csharp">
 public IQueryable&lt;Foo&gt; FoosReadyToShip
@@ -58,4 +58,4 @@ public IQueryable&lt;Foo&gt; FoosReadyToShip
 }
 </pre>
 
-Not the shortest way to do it. But if you don't wanna to write the condition again and again (and lower the maintainability) this is a way to do it.
+<p>Not the shortest way to do it. But if you don't wanna to write the condition again and again (and lower the maintainability) this is a way to do it.</p>

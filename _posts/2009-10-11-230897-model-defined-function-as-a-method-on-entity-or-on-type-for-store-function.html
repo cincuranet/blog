@@ -8,14 +8,14 @@ tags:
 category: devel
 layout: post
 ---
-Model Defined functions are <a href="http://blogs.msdn.com/efdesign/archive/2009/01/07/model-defined-functions.aspx">new feature</a> in EFv4. You simply define you function using EDM functions etc. in your model and then you can use it in your queries. With <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.edmfunctionattribute(VS.100).aspx">EdmFunction</a> attribute you can also create stub function to use it in LINQ queries. That's all great, and even itself makes life with Entity Framework easier.
+<p>Model Defined functions are <a href="http://blogs.msdn.com/efdesign/archive/2009/01/07/model-defined-functions.aspx">new feature</a> in EFv4. You simply define you function using EDM functions etc. in your model and then you can use it in your queries. With <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.edmfunctionattribute(VS.100).aspx">EdmFunction</a> attribute you can also create stub function to use it in LINQ queries. That's all great, and even itself makes life with Entity Framework easier.</p>
 
-But if you call it from LINQ (my favourite  way of querying), it's kind of odd. You're writing it as:
+<p>But if you call it from LINQ (my favourite  way of querying), it's kind of odd. You're writing it as:</p>
 <pre class="brush:csharp">
 context.Persons2.Where(p =&gt; GetAge2(p) &lt; 100);
 </pre>
 
-And while I was preparing some demos for my <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">presentation</a>, there was a flash of idea in my head. "What if I define the function stub as extension method?", I thought. Yes like:
+<p>And while I was preparing some demos for my <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">presentation</a>, there was a flash of idea in my head. "What if I define the function stub as extension method?", I thought. Yes like:</p>
 <pre class="brush:csharp">
 [EdmFunction("testovaciModel", "GetAge2")]
 static int GetAge2(this Persons2 p)
@@ -24,14 +24,14 @@ static int GetAge2(this Persons2 p)
 }
 </pre>
 
-This should work, right? It's just sugar and the translation should work without complaining. And it really does. You can now write:
+<p>This should work, right? It's just sugar and the translation should work without complaining. And it really does. You can now write:</p>
 <pre class="brush:csharp">
 context.Persons2.Where(p =&gt; p.GetAge2() &lt; 100)
 </pre>
 
-Sweet! You can still keep these MDF method stubs in one place but use it in more natural syntax.
+<p>Sweet! You can still keep these MDF method stubs in one place but use it in more natural syntax.</p>
 
-And by the way, it works for <a href="http://blogs.msdn.com/efdesign/archive/2008/10/08/edm-and-store-functions-exposed-in-linq.aspx">store functions</a> as well (you're just limited on types).
+<p>And by the way, it works for <a href="http://blogs.msdn.com/efdesign/archive/2008/10/08/edm-and-store-functions-exposed-in-linq.aspx">store functions</a> as well (you're just limited on types).</p>
 <pre class="brush:csharp">
 [EdmFunction("testovaciModel.Store", "GetAge")]
 static int GetAge(this DateTime born)
@@ -43,4 +43,4 @@ static int GetAge(this DateTime born)
 context.Persons2.Where(p =&gt; p.Born.GetAge() &lt; 100)
 </pre>
 
-I'm especially happy for store function exposed to LINQ. I'm using these in a reasonable amount in my databases and being able to filter using the function without wrapping the query into i.e. stored procedure or view is neat.
+<p>I'm especially happy for store function exposed to LINQ. I'm using these in a reasonable amount in my databases and being able to filter using the function without wrapping the query into i.e. stored procedure or view is neat.</p>
