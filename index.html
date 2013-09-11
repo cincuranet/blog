@@ -1,25 +1,39 @@
 ---
 layout: default
 ---
-{% for post in paginator.posts %}
-<div class="top_article">
- 	<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-	{{ post.content }}
+<div class="col last span-6 nudge-2">
+	<h4 class="ver small">Latest Entries</h4>	
 </div>
-{% endfor %} 
+{% for post in paginator.posts %}
+<div class="post">
+	<div class="post-meta col span-2">
+		<ul class="nav">
+			<li>{{ post.date | date: "%-d %b %Y" }}</li>
+			<li>Tags {{ post.tags | array_to_sentence_string }}</li>
+			<!--<li>22 comments</li>-->
+		</ul>
+	</div>
 
-<p id="pager">
-	{% if paginator.previous_page_path %}
-	<a href="{{ site.url }}{{ paginator.previous_page_path }}">Previous</a>
-	{% else %}
-	<span>Previous</span>
-	{% endif %}
-	|
-	[<span>{{ paginator.page }}/{{ paginator.total_pages }}</span>]
-	|
-	{% if paginator.next_page_path %}
-	<a href="{{ site.url }}{{ paginator.next_page_path }}">Next</a> 
-	{% else %}
-	<span>Next</span>
-	{% endif %}
-</p>
+	<div class="post-content span-8 nudge-2">
+		<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+		{{ post.content }}
+	</div>
+</div>
+{% endfor %}
+				
+<ul class="navigation">
+	<li class="left">
+		{% if paginator.previous_page_path %}
+		<a href="{{ site.url }}{{ paginator.previous_page_path }}">Previous</a>
+		{% else %}
+		<span>Previous</span>
+		{% endif %}
+	</li>
+	<li class="right">
+		{% if paginator.next_page_path %}
+		<a href="{{ site.url }}{{ paginator.next_page_path }}">Next</a> 
+		{% else %}
+		<span>Next</span>
+		{% endif %}
+	</li>
+</ul>

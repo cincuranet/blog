@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		{% if page.title != nil %}
-		<title>{{ page.title }} | {{ site.name }}</title>
-		{% else %}
-		<title>{{ site.name }} | {{ site.description }}</title>
-		{% endif %}
-		<link rel="shortcut icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" /> 
-		<link rel="icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" />
-		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.feed_external }}" />	
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/main.css" />
-		<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/bw.css" />
-		<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
-		<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />  
-		<script type='text/javascript' src='//cdn.jsdelivr.net/jquery/2.0.2/jquery.min.js'></script>
-		<script type='text/javascript' src='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.pack.js'></script>
-		<link rel='stylesheet' href='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.css' type='text/css' media='all' />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	{% if page.title != nil %}
+	<title>{{ page.title }} | {{ site.name }}</title>
+	{% else %}
+	<title>{{ site.name }} | {{ site.description }}</title>
+	{% endif %}       
+	<link rel="shortcut icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" /> 
+	<link rel="icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.feed_external }}" />	
+	<link rel="stylesheet" href="{{ site.url }}/assets/style.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="{{ site.url }}/assets/my.css" type="text/css" media="screen" />
+	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
+	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />  
+	<script type='text/javascript' src='//cdn.jsdelivr.net/jquery/2.0.2/jquery.min.js'></script>
+	<script type='text/javascript' src='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.pack.js'></script>
+	<link rel='stylesheet' href='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.css' type='text/css' media='all' />
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-113043-8']);
@@ -53,26 +53,22 @@ $(document).ready(function() {
 	});
 });
 </script>
-	</head>
-	<body>
-<div id="skiplinks"> <!-- These are the skiplinks found in the top left corner of the page. They increase accessibility for people who are visually impaired. --> 
-  <ul>
-  	<li><a href="#horiz_menu" title="Skip to navigation menu.">Skip to Navigation.</a></li>
-  	<li><a href="#content" title="Skip to content.">Skip to Content.</a></li>
-  </ul>
-</div>
+</head>
 
-<div id="header">
-  <h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
-  <h2>{{ site.description }}</h2>
-  <p id="cost_line">&nbsp;</p>
-</div>
+<body>
+<div id="wrapper">
+	<div id="main-nav" class="col span-12">
+		<ul>
+			<li class="page_item"><a href="{{ site.url }}">Home</a></li>
+			<li class="page_item"><a href="{{ site.url }}/tags">Tags</a></li>
+			<li class="page_item"><a href="{{ site.url }}/archive">Archive</a></li>
+			<li class="page_item"><a href="{{ site.url }}/contact">Contact</a></li>
+		</ul>			
+	</div>		
+	
+	<div id="header" class="col last span-12">
+		<h1><a href="{{ site.url }}">{{ site.description }}</a></h1>
+		<h2><span class="low">by</span> {{ site.name }}</h2>
+	</div>
 
-<div id="horiz_menu">
-  <ul>
-		<li><a href="{{ site.url }}">Home</a></li>
-  	<li><a href="{{ site.url }}/tags">Tags</a></li>
-  	<li><a href="{{ site.url }}/archive">Archive</a></li>
-  	<li><a href="{{ site.url }}/contact">Contact</a></li>
-  </ul>
-</div>
+	<hr />

@@ -1,30 +1,32 @@
 {% include header.html %}
 
-<div id="content">
-	<div class="top_article">
-		<h3>{{ page.title }}</h3>  
-		{{ content }}
-		<p><small>Published on {{ page.date | date: "%-d %b %Y" }} and tagged {{ page.tags | array_to_sentence_string }}.</small></p>
-	</div>		
-	<div class="top_article">
-		<h4>Comments:</h4>
-		<div>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'blogcincuranet';
-    var disqus_url = 'http://blog.cincura.net{{ page.url }}/';
-    
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="content" class="col span-8">
+	<div class="col last span-6 nudge-2">
+		<h4 class="ver small">You are reading</h4>	
+	</div>
+	<div class="post">
+		<div class="post-meta col span-2">
+			<ul class="nav">
+				<li>{{ page.date | date: "%-d %b %Y" }}</li>
+				<li>Tgas {{ page.tags | array_to_sentence_string }}</li>
+				<!--<li>22 comments</li>-->
+			</ul>
+		</div>
+			
+		<div class="post-content span-8 nudge-2">
+			<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+{{ content }}
+		</div>
+	</div>
+		
+	<div id="commentary" class="col span-8">
+		<div class="col last span-6 nudge-2">
+			<h4 class="ver small">Comments for this entry</h4>	
 		</div>
 	</div>
 </div>
+
+<hr />
 
 {% include sidebar.html %}
 
