@@ -3,9 +3,7 @@
 <div id="content">
 	<div id="top_article">
 		<h3>{{ page.title }}</h3>  
-		<p>
-			{{ page.content }}
-		</p>                      
+		{{ page.content }}
 		<p><small>Published at {{ page.date | date: "%Y-%m-%d" }} and tagged {{ page.tags | array_to_sentence_string }}.</small></p>
 	</div>		
 	<div id="top_article">
