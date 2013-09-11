@@ -10,6 +10,7 @@ div#sidebar {float:right; width: 24%;}
 div#secondary_article_1 {float:left; width: 48%;}
 div#tertiary_section {clear:both;}
 div#footer {clear:both;}
+p#pager {text-align: center;}
 
 /* Header Formatting */
 div#header h1 {text-align:center; font-size: 4em; font-weight:bold; letter-spacing: -1px; line-height: 2em; text-transform:uppercase;}

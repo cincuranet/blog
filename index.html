@@ -8,7 +8,7 @@ layout: default
 </div>
 {% endfor %} 
 
-<p>
+<p id="pager">
 	{% if paginator.previous_page_path %}
 	<a href="{{ site.url }}{{ paginator.previous_page_path }}">Previous</a>
 	{% else %}
