@@ -1,6 +1,6 @@
 /* The main CSS Document */
 
-body {font-size: 76%; font-family: 'Courier New', serif; margin:0 auto; width: 95%;}
+body {font-size: 76%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; margin:0 auto; width: 95%;}
 h1,h2,h3,h4,h5,h6,p, ul  {margin:0;} /* strips all the default margins */
 p {padding: 5px 0;}
 a:link, a:visited {color:#000; text-decoration:none; border-bottom: 1px dotted #666; font-weight:bold;}
@@ -74,7 +74,7 @@ div#skiplinks ul li a:link, div#skiplinks ul li a:visited { color: rgb(226,226,2
 
 /* General formatting */
 acronym {border-bottom: 1px dashed #666; cursor:help; }
-code {padding: 4px;}
+code {padding: 1px; font-size: 110%;}
 h4 {font-size: 1.2em;}
 h5 {font-size: 1.1em;}
 h6 {font-size: 1em; font-weight:bold; font-style:italic;}
