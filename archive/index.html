@@ -7,7 +7,7 @@ title: Archive
 	<ul>
 	{% for post in site.posts %}
 	    {% unless post.next %}
-		    {% if forloop.first == false %}</ul></li>{% endif %}
+		    {% unless forloop.first %}</ul></li>{% endunless %}
 				<li>
 					<h4>{{ post.date | date: "%Y" }}</h4>
 					<ul>
@@ -15,14 +15,14 @@ title: Archive
 	      {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
 	      {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
 	      {% if year != nyear %}
-	        {% if forloop.first == false %}</ul></li>{% endif %}
+	        {% unless forloop.first %}</ul></li>{% endunless %}
 					<li>
 						<h4>{{ post.date | date: "%Y" }}</h4>
 						<ul>
 	      {% endif %}
 	    {% endunless %}
 	    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
-	    {% if forloop.last == true %}
+	    {% if forloop.last %}
 	    	</ul></li>
 	    {% endif %}
   {% endfor %}
