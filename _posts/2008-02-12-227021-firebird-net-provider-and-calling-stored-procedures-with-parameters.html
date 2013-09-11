@@ -7,9 +7,9 @@ tags:
 category: devel
 layout: post
 ---
-<p>Firebird .NET provider has ability to create parameterized queries. Both named and unnamed parameters are supported. Everything works as you expect with select, insert, delete or update commands. The tricky part comes with stored procedures. Unlike MS SQL, that has direct support for named parameters, in provider, we’re parsing parameter names and we’re sending it to server “in right order”, so developer doesn’t need to know, that internally parameters were send unnamed.
+<p>Firebird .NET provider has ability to create parameterized queries. Both named and unnamed parameters are supported. Everything works as you expect with select, insert, delete or update commands. The tricky part comes with stored procedures. Unlike MS SQL, that has direct support for named parameters, in provider, we're parsing parameter names and we're sending it to server "in right order”, so developer doesn't need to know, that internally parameters were send unnamed.
 </p>
-<p>But with stored procedure you (developer) expect, that creating named parameter with same name as parameter in stored procedure, the parameter will be sent to right SP’s parameter. Let see this example. First we create simple procedure:
+<p>But with stored procedure you (developer) expect, that creating named parameter with same name as parameter in stored procedure, the parameter will be sent to right SP's parameter. Let see this example. First we create simple procedure:
 </p>
 <pre class="brush:sql">
 SET TERM ^ ;
@@ -43,9 +43,9 @@ using (FbConnection conn = new FbConnection(@"data source=localhost;initial cata
     }
 }
 </pre>
-<p>When you run it, you got -5 on the output. What’s wrong? Well, as I stated above, Firebird has no support for named parameters and provider isn’t aware of name of parameters in stored procedure, in fact you can name it whatever you want, because only thing that matter is the order of parameters.
+<p>When you run it, you got -5 on the output. What's wrong? Well, as I stated above, Firebird has no support for named parameters and provider isn't aware of name of parameters in stored procedure, in fact you can name it whatever you want, because only thing that matter is the order of parameters.
 </p>
-<p>Solution? Well it’s pretty easy. Use "select &lt;column&gt; from &lt;stored procedure&gt;" or "execute procedure &lt;stored procedure&gt;" instead of defining CommandType as StoredProcedure (internally is this handled in same way). The fragment could look like:
+<p>Solution? Well it's pretty easy. Use "select &lt;column&gt; from &lt;stored procedure&gt;" or "execute procedure &lt;stored procedure&gt;" instead of defining CommandType as StoredProcedure (internally is this handled in same way). The fragment could look like:
 </p>
 <pre class="brush:csharp">
 cmd.CommandText = "select * from TestSP(@a, @b);";

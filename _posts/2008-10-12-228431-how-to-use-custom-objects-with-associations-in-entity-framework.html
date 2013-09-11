@@ -10,11 +10,11 @@ tags:
 category: devel
 layout: post
 ---
-<p>Today I had some time and I spent it playing with associations mapping on custom objects. Adding new objects is easy. It’s what you already know. The only one new part is work with associations and navigation properties. But as always when you stuck you can generate dummy EDMX file and look at the result. :-)</p>
+<p>Today I had some time and I spent it playing with associations mapping on custom objects. Adding new objects is easy. It's what you already know. The only one new part is work with associations and navigation properties. But as always when you stuck you can generate dummy EDMX file and look at the result. :-)</p>
 
-<p>You can start from scratch and create all classes and so on as in previous article. But I’ll start where I ended, it’s little bit faster.</p>
+<p>You can start from scratch and create all classes and so on as in previous article. But I'll start where I ended, it's little bit faster.</p>
 
-<p>First thing you have to create is new class, related to our <code>Product</code> class. I’ll create <code>ProductSize</code> class that will hold info about the size of product (don’t try to find something useful on this, it’s just a simple example). The class will contain only ID and Size property. You can take inspiration from previous article, it’s almost same. What you have to add is an <code>IEntityWithRelationships</code> interface implementation to both classes. It’s same for both. This interface forces you to implement <code>RelationshipManager</code> member.</p>
+<p>First thing you have to create is new class, related to our <code>Product</code> class. I'll create <code>ProductSize</code> class that will hold info about the size of product (don't try to find something useful on this, it's just a simple example). The class will contain only ID and Size property. You can take inspiration from previous article, it's almost same. What you have to add is an <code>IEntityWithRelationships</code> interface implementation to both classes. It's same for both. This interface forces you to implement <code>RelationshipManager</code> member.</p>
 
 <pre class="brush:csharp">
 RelationshipManager IEntityWithRelationships.RelationshipManager
@@ -45,7 +45,7 @@ RelationshipManager IEntityWithRelationships.RelationshipManager
 [EdmRelationshipNavigationProperty("CustomClasses_EDM", "FK_Products_ProductSizes", "ProductSizes")]
 </pre>
 
-<p>Let’s do the getter. You have to get <code>RelationshipManager</code> and use <code>GetRelatedReference</code> method. For my Products &rArr; ProductSizes direction you should end up with:</p>
+<p>Let's do the getter. You have to get <code>RelationshipManager</code> and use <code>GetRelatedReference</code> method. For my Products &rArr; ProductSizes direction you should end up with:</p>
 
 <pre class="brush:csharp">
 get
@@ -56,7 +56,7 @@ get
 }
 </pre>
 
-<p>For other direction use the <code>GetRelatedCollection</code> method and no <code>Value</code> is used. The setter for Products &rArr; ProductSizes direction is just about assigning <code>value</code> to <code>Value</code>. For ProductSizes &rArr; Products it’s little bit different. You have to use <code>InitializeRelatedCollection</code> method to set new value.</p>
+<p>For other direction use the <code>GetRelatedCollection</code> method and no <code>Value</code> is used. The setter for Products &rArr; ProductSizes direction is just about assigning <code>value</code> to <code>Value</code>. For ProductSizes &rArr; Products it's little bit different. You have to use <code>InitializeRelatedCollection</code> method to set new value.</p>
 
 <pre class="brush:csharp">
 ((IEntityWithRelationships)(this)).
@@ -64,7 +64,7 @@ get
   InitializeRelatedCollection&lt;Product&gt;("CustomClasses_EDM.FK_Products_ProductSizes", "Products", value);
 </pre>
 
-<p>And maybe it’s good idea to check for <code>null</code>s, because it’s not allowed to put it there (again, just fine-tuning).</p>
+<p>And maybe it's good idea to check for <code>null</code>s, because it's not allowed to put it there (again, just fine-tuning).</p>
 
 <p>Now when you try to run the code like:</p>
 
@@ -94,9 +94,9 @@ foreach (Product p in q)
 }
 </pre>
 
-<p>Using custom objects and associations with Entity Framework isn’t hard too. You generate three files from database, change it (which is maybe the hardest part – to match database to your objects) and small changes in objects. And you’re done.</p>
+<p>Using custom objects and associations with Entity Framework isn't hard too. You generate three files from database, change it (which is maybe the hardest part – to match database to your objects) and small changes in objects. And you're done.</p>
 
-<p>Yet again, with POCO and persistence ignorance it will much easier. But it isn’t impossible now.</p>
+<p>Yet again, with POCO and persistence ignorance it will much easier. But it isn't impossible now.</p>
 
 <p>See also: <a href="{% post_url 2008-10-11-228430-how-to-map-your-custom-objects-in-entity-framework %}">How to map your custom objects in Entity Framework</a></p>
 
