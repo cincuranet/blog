@@ -15,11 +15,11 @@ layout: default
 	<span>Previous</span>
 	{% endif %}
 	|
+	[<span>{{ paginator.page }}/{{ paginator.total_pages }}</span>]
+	|
 	{% if paginator.next_page_path %}
 	<a href="{{ site.url }}{{ paginator.next_page_path }}">Next</a> 
 	{% else %}
 	<span>Next</span>
 	{% endif %}
-	|
-	[<span>{{ paginator.page }}/{{ paginator.total_pages }}</span>]
 </p>
