@@ -6,3 +6,4 @@ permalink: /:title
 paginate: 20
 paginate_path: page-:num
 feed_posts: 20
+feed_external: http://feeds.feedburner.com/blog_cincura_net 
