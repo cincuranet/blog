@@ -20,5 +20,5 @@ layout: default
 	{% else %}
 	<span>Next</span>
 	{% endif %}
-	(<span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>)
+	[<span>{{ paginator.page }}/{{ paginator.total_pages }}</span>]
 </p>
