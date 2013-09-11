@@ -15,8 +15,8 @@ layout: post
 cd "$(ProjectDir)"
 "$(SolutionDir)EdmGen2.exe" /ViewGen cs "$(ProjectDir)BigModel.edmx"
 </pre>
-First row presets working directory to current project’s directory, because EdmGen2 doesn’t allows you to specify the name of output file (but you can change this, because sources are available). Next we’ll simply call EmdGen2 with <code>/ViewGen</code> parameter and specify language and path to EDMX file. After first compilation we’ve got file named <code>&lt;model name&gt;.GeneratedViews.&lt;language&gt;</code>. Finally just add this file into your project and compile again.
-</p><p>If you’ll run the application, you might notice nice surprise – it’s faster. With my model the time has been shortened to 2 seconds. And of course, this depends on your model, but not bad for a simple smart calling of tool without any additional work. If you’re interested in overall cost of various processes in Entity Framework, read [1] or [2], maybe [3]. </p>
+<p>First row presets working directory to current project’s directory, because EdmGen2 doesn’t allows you to specify the name of output file (but you can change this, because sources are available). Next we’ll simply call EmdGen2 with <code>/ViewGen</code> parameter and specify language and path to EDMX file. After first compilation we’ve got file named <code>&lt;model name&gt;.GeneratedViews.&lt;language&gt;</code>. Finally just add this file into your project and compile again.</p>
+<p>If you’ll run the application, you might notice nice surprise – it’s faster. With my model the time has been shortened to 2 seconds. And of course, this depends on your model, but not bad for a simple smart calling of tool without any additional work. If you’re interested in overall cost of various processes in Entity Framework, read [1] or [2], maybe [3]. </p>
 
 <hr />
 
