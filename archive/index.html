@@ -6,7 +6,25 @@ title: Archive
 	<h3>Archive</h3>
 	<ul>
 	{% for post in site.posts %}
-	  <li><h4><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h4></li>
-	{% endfor %}
+	    {% unless post.next %}
+		    {% if forloop.first == false %}</ul></li>{% endif %}
+				<li>
+					<h4>{{ post.date | date: "%Y" }}</h4>
+					<ul>
+	    {% else %}
+	      {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+	      {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
+	      {% if year != nyear %}
+	        {% if forloop.first == false %}</ul></li>{% endif %}
+					<li>
+						<h4>{{ post.date | date: "%Y" }}</h4>
+						<ul>
+	      {% endif %}
+	    {% endunless %}
+	    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+	    {% if forloop.last == true %}
+	    	</ul></li>
+	    {% endif %}
+  {% endfor %}
 	</ul>
 </div>
