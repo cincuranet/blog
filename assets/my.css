@@ -9,3 +9,7 @@ div.x2src code, div.x2src div, div.x2src a  {
 #searchform {
 	padding-left: 8px !important;
 }
+
+.nav li {
+	word-wrap: break-word;
+}
