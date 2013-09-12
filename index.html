@@ -10,7 +10,7 @@ layout: default
 		<ul class="nav">
 			<li>{{ post.date | date: "%-d %b %Y" }}</li>
 			<li>Tags: {{ post.tags | array_to_sentence_string }}</li>
-			<li><a href="{{ site.disqus_base_url }}{{ post.url }}#discus_thread">View Comments</a></li>
+			<li><a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></li>
 		</ul>
 	</div>
 
