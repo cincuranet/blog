@@ -10,7 +10,7 @@ layout: default
 		<ul class="nav">
 			<li>{{ post.date | date: "%-d %b %Y" }}</li>
 			<li>Tags: {{ post.tags | array_to_sentence_string }}</li>
-			<!--<li>22 comments</li>-->
+			<li><a href="{{ site.disqus_base_url }}{{ post.url }}#discus_thread">View Comments</a></li>
 		</ul>
 	</div>
 
@@ -37,3 +37,14 @@ layout: default
 		{% endif %}
 	</li>
 </ul>
+
+<script type="text/javascript">
+var disqus_shortname = 'blogcincuranet';
+
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
