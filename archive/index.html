@@ -3,20 +3,8 @@ layout: page
 title: Archive
 ---
 <h3>Archive</h3>
-{% for post in site.posts %}
-    {% unless post.next %}
-	    {% unless forloop.first %}</ul>{% endunless %}
-			<h4>{{ post.date | date: "%Y" }}</h4>
-			<ul>
-    {% else %}
-      {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: "%Y" }}{% endcapture %}
-      {% if year != nyear %}
-        {% unless forloop.first %}</ul>{% endunless %}
-				<h4>{{ post.date | date: "%Y" }}</h4>
-				<ul>
-      {% endif %}
-    {% endunless %}
-    <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %b %Y" }})</li>
-    {% if forloop.last %}</ul>{% endif %}
-{% endfor %}
+<ul>
+	{% for post in site.posts %}
+	<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %b %Y" }})</li>
+	{% endfor %}
+</ul>
