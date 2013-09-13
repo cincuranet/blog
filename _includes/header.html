@@ -9,25 +9,37 @@
 	{% endif %}       
 	<link rel="shortcut icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" /> 
 	<link rel="icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" />
+
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.feed_external }}" />	
+
 	<link rel="stylesheet" href="{{ site.url }}/assets/style.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" href="{{ site.url }}/assets/tweaks.css" type="text/css" media="screen" />
+
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />  
-	<script type='text/javascript' src='//cdn.jsdelivr.net/jquery/2.0.2/jquery.min.js'></script>
-	<script type='text/javascript' src='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.pack.js'></script>
-	<link rel='stylesheet' href='//cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.css' type='text/css' media='all' />
-	<script type="text/javascript" src="{{ site.url }}/assets/my.js"></script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-113043-8']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	<script type='text/javascript' src='http://cdn.jsdelivr.net/jquery/2.0.2/jquery.min.js'></script>
+
+	<script type='text/javascript' src='http://cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.pack.js'></script>
+	<link rel='stylesheet' href='http://cdn.jsdelivr.net/fancybox/2.1.4/jquery.fancybox.css' type='text/css' media='all' />
+
+	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shCore.js"></script>
+	<script type="text/javascript" src="http://alexgorbatchev.com/pub/sh/3.0.83/scripts/shAutoloader.js"></script>
+	<link rel="stylesheet" href="http://alexgorbatchev.com/pub/sh/3.0.83/styles/shCore.css" type="text/css" />
+	<link rel="stylesheet" href="http://alexgorbatchev.com/pub/sh/3.0.83/styles/shThemeDefault.css" type="text/css" />
+
+	<script type="text/javascript" src="{{ site.url }}/assets/my.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-113043-8']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
 </head>
 
