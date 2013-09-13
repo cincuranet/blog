@@ -28,7 +28,7 @@ function initSearch() {
 	$('#search').keypress(function(e){
 		if (e.which == 13) {
 			e.preventDefault();
-			window.open('https://www.google.com/search?q='+$(e.target).val()+' site:{{ site.url }}'.replace('/^https?:\/\//',''));
+			window.open('https://www.google.com/search?q='+$(e.target).val()+' site:{{ site.url }}'.replace(/^https?:\/\//,''));
 		}
 	});
 }
