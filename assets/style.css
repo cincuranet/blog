@@ -379,7 +379,7 @@ textarea {
 
 #sidebar .section input {
 	width: 15.8em;
-	margin: 0 0 1em 0;
+	margin: 0 8px 1em 8px;
 	padding: 6px 6px 6px 23px;
 	border: 1px solid #ccc;
 	background: transparent url(bg-search.gif) no-repeat 7px center;
