@@ -3,14 +3,14 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	{% if page.title != nil %}
-	<title>{{ page.title }} | {{ site.name | replace: '/','' | replace: '\','' }}</title>
+	<title>{{ page.title }} | {% include site_name_text.html %}</title>
 	{% else %}
-	<title>{{ site.name | replace: '/','' | replace: '\','' }} | {{ site.description | replace: '/','' | replace: '\','' }}</title>
+	<title>{% include site_name_text.html %} | {% include site_description_text.html %}</title>
 	{% endif %}       
 	<link rel="shortcut icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" /> 
 	<link rel="icon" href="//i.blog.cincura.net/favicon.ico" type="image/x-icon" />
 
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.feed_external }}" />	
+	<link rel="alternate" type="application/rss+xml" title="{% include site_name_text.html %}" href="{{ site.feed_external }}" />	
 
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />  
@@ -54,8 +54,8 @@ _gaq.push(['_trackPageview']);
 	</div>		
 	
 	<div id="header" class="col last span-12">
-		<h1><a href="{{ site.url }}">{{ site.description | replace: '/','<span class="low">' | replace: '\','</span>' }}</a></h1>
-		<h2><span class="low">by</span> {{ site.name | replace: '/','<span class="low">' | replace: '\','</span>' }}</h2>
+		<h1><a href="{{ site.url }}">{% include site_description_format.html %}</a></h1>
+		<h2><span class="low">by</span> {% include site_name_format.html %}</h2>
 	</div>
 
 	<hr />
