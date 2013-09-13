@@ -1,7 +1,7 @@
 {% include header.html %}
 
-<div id="content" class="col span-8">
-	<div class="col last span-6 nudge-2">
+<div id="content" class="col span-12">
+	<div class="col last span-10 nudge-2">
 		<h4 class="ver small">You are reading</h4>	
 	</div>
 	<div class="post">
@@ -13,14 +13,14 @@
 			</ul>
 		</div>
 			
-		<div class="post-content span-8 nudge-2">
+		<div class="post-content-full span-10 nudge-2">
 			<h3>{{ page.title }}</h3>
 {{ content }}
 		</div>
 	</div>
 		
-	<div id="commentary" class="col span-8">
-		<div class="col last span-6 nudge-2">
+	<div id="commentary" class="col span-10">
+		<div class="col last span-10 nudge-2">
 			<h4 class="ver small">Comments for this entry</h4>	
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 		<div class="col span-2 align-right">
 			&nbsp;
 		</div>
-		<div class="col last span-6">
+		<div class="col last span-10">
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -55,7 +55,5 @@ var disqus_url = '{{ site.disqus_base_url }}{{ page.url }}';
 </div>
 
 <hr />
-
-{% include sidebar.html %}
 
 {% include footer.html %}
