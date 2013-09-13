@@ -6,11 +6,11 @@ title: Tags
 {% for t in site.tags %} 
 <div class="collapsable">
 	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
-	<ul class="collapsable-item">
+	<p class="collapsable-item">
 		{% for p in t[1] %}
-			<li><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></li>
+		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br />
 		{% endfor %}
-	</ul>
+	</p>
 	<br />
 </div>
 {% endfor %}
