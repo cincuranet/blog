@@ -22,6 +22,15 @@ function initCollapsable() {
 	$('.collapsable .collapsable-item').hide();
 }
 
+function initSearch() {
+	$('#search').keypress(function(e){
+		if (e.which == 13) {
+			e.preventDefault();
+			window.open('https://www.google.com/search?q='+$(e.target).val()+' site:'+'{{ site.url }}'.replace('/^https?:\/\//',''));
+		}
+	});
+}
+
 function initSyntaxHighlighting() {
 	SyntaxHighlighter.defaults['tab-size'] = 2;
 	SyntaxHighlighter.defaults['class-name'] = 'x2src';
@@ -60,5 +69,6 @@ $(document).ready(function() {
 	initLinks();
 	initImageBox();
 	initCollapsable();
+	initSearch();
 	initSyntaxHighlighting();
 });
