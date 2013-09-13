@@ -1,15 +1,4 @@
-/*
-	Theme Name: Modern Clix
-	Them URI: http://www.rodrigogalindez.com
-	Description: A minimal, grid based, elastic theme. Wordpress 2.7 ready.
-	Version: 1
-	Media: Screen
-	Version: Tue 6, Jan 2008
-	Author: Rodrigo Galindez
-	Author URI: http://www.rodrigogalindez.com
-	Tags: minimal, grid, elastic
-*/
-
+/* from v1 */
 /* ----------------------------------------------- [ * ] */
 
 @import url(grid-900.css);
@@ -170,6 +159,7 @@ ul.nav {
 	font-size: 1.2em;
 	line-height: 1.6;
 	border-bottom: 1px dotted #bbb;
+	word-wrap: break-word;
 }
 
 .nav li.last {
@@ -207,8 +197,12 @@ ul.navlinks {
 	clear: both;
 }
 
-.post-content p, .post-content h5, .post-content code {
+.post-content-small p, .post-content-small h5, .post-content-small code {
 	width: 35.7em;
+}
+
+.post-content-full p, .post-content-full h5, .post-content-full code {
+	width: 61em;
 }
 
 .post-content h3 {
@@ -462,30 +456,9 @@ textarea {
 }
 
 #footnotes .rss {
-	margin-left: 8px;
+	margin-left: 0px;
 	padding-left: 16px;
 	background: transparent url(feed-icon.gif) no-repeat center left;
-}
-
-/* ------------------------------------------ [ Flickr ] */
-
-#flickr_badge_wrapper {
-	margin-left: -1.2em;
-	overflow: hidden;
-}
-
-.flickr_badge_image {
-	margin: 0 0 1.2em 1.2em;
-	float: left;
-}
-
-.flickr_badge_image img { 
-	width: 64px;
-	height: 64px;
-}
-
-.flickr_badge_image a {
-	display: block;
 }
 
 /* --------------------------------- [ General Classes ] */
@@ -619,176 +592,11 @@ textarea {
 	background: #000;
 }
 */
-/* Banner */
 
-#banner {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background-color: rgba(0, 0, 0, .8);
-	z-index: 2;
+#searchform {
+	padding-left: 8px;
 }
 
-#banner p {
-	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	text-align: center;
-	color: #fff;
-}
-
-#banner a {
-	color: #46AFFF;
-}
-
-/* Theme Switcher */
-
-#theme-nav-wrapper {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	background-color: rgba(0, 0, 0, .8);
-}
-
-#theme-nav {
-	width: 960px;
-	margin: 0 auto;
-	padding: 8px 0;
-	overflow: hidden;
-}
-
-#theme-switcher {
-	width: 70%;
-	float: left;
-}
-
-#theme-switcher p {
-	margin: 0 5px 0 0;
-	padding: 5px 0;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-	font-size: 1.1em;
-	line-height: normal;
-	color: #fff;
-	float: left;
-}
-
-#themes {
-	float: left;
-}
-
-#themes ul {
-	position: absolute;
-	list-style-type: none;
-}
-
-#themes li {
-	display: none;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-	font-size: 1.1em;
-}
-
-#themes li.active {
-	display: block;
-}
-
-#themes li a {
-	display: block;
-	width: 200px;
-	padding: 5px 10px;
-	font-weight: normal;
-	background-color: #eee;
-	border: 0 none;
-	overflow: hidden;
-	color: #333;
-}
-
-#themes li.active a {
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-}
-
-#themes ul:hover li {
-	display: block;
-}
-
-#themes ul:hover li.active a {
-	border-radius: 3px 3px 0 0;
-	-webkit-border-top-left-radius: 3px;
-	-webkit-border-top-right-radius: 3px;
-	-webkit-border-bottom-left-radius: 0;
-	-webkit-border-bottom-right-radius: 0;
-	-moz-border-radius: 3px 3px 0 0;
-}
-
-#themes li:last-child a {
-	border-radius: 0 0 3px 3px;
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-top-right-radius: 0;
-	-webkit-border-bottom-left-radius: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	-moz-border-radius: 0 0 3px 3px;
-}
-
-#themes li a:hover {
-	background-color: #fff;
-}
-
-#themes span.name {
-	float: left;
-}
-
-#themes span.price {
-	padding-right: 15px;
-	color: #777;
-	float: right;
-}
-
-#themes li.active span.price {
-	background: transparent url(bg-select.png) no-repeat right center;
-}
-
-#theme-options {
-	width: 30%;
-	text-align: right;
-	float: right;
-}
-
-#theme-options a.button {
-	display: inline-block;
-	margin-right: 3px;
-	padding: 5px 10px;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-	font-size: 1.1em;
-	font-weight: normal;
-	background: transparent url(bg-button.png) repeat-x 0 50%;
-	background-color: #8dbe24;
-	color: #fff !important;
-	border-radius: 15px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	box-shadow: 0 1px 2px #333;
-	-webkit-box-shadow: 0 1px 2px #333;
-	-moz-box-shadow: 0 1px 2px #333;
-	-webkit-transition: all .2s linear;
-	border: 0 none;
-}
-
-#theme-options a.button:hover {
-	background-color: #5b7e0e;
-}
-
-#theme-options a.button:active {
-	background-color: #364a09;
-}
-
-#help-tooltip {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-	font-size: 1.1em;
-	border-bottom: 1px dotted #666;
-	color: #fff;
-	cursor: pointer;
+div.x2src code, div.x2src div, div.x2src a  {
+	font-size: 12px !important;
 }
