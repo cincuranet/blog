@@ -17,6 +17,9 @@ layout: nil
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.url }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
+   <author>
+   	<name>{% include site_name_text.html %}</name>
+   </author>
  </entry>
  {% endfor %}
  
