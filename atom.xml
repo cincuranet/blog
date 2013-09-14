@@ -2,25 +2,23 @@
 layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>{% include site_name_text.html %}</title>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}/</id>
+<feed xmlns="http://www.w3.org/2005/Atom"> 
+	<title>{% include site_name_text.html %}</title>
+	<link href="{{ site.url }}/atom.xml" rel="self"/>
+	<link href="{{ site.url }}"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>          
+	<author>
+		<name>{% include site_name_text.html %}</name>
+	</author>
+	<id>{{ site.url }}/</id>
 
- {% for post in site.posts limit: site.feed_posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.url }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
-   <author>
-   	<name>{% include site_name_text.html %}</name>
-   </author>
- </entry>
- {% endfor %}
- 
+	{% for post in site.posts limit: site.feed_posts %}
+	<entry>
+		<title>{{ post.title }}</title>
+		<link href="{{ site.url }}{{ post.url }}"/>
+		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<id>{{ site.url }}{{ post.url }}</id>
+		<content type="html">{{ post.content | xml_escape }}</content>
+	</entry>
+	{% endfor %}
 </feed>
