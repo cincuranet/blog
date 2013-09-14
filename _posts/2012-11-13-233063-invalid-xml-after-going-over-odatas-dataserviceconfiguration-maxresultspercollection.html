@@ -3,7 +3,7 @@ title: "Invalid XML after going over OData's DataServiceConfiguration.MaxResults
 date: 2012-11-13T09:46:10Z
 tags:
   - OData/Data Services (Astoria)
-category: devel
+category: none
 layout: post
 ---
 <p>You can configure OData service so it itself limits (hard limit) to number of items it will ever return - <a href="http://msdn.microsoft.com/en-us/library/system.data.services.dataserviceconfiguration.maxresultspercollection.aspx">DataServiceConfiguration.MaxResultsPerCollection</a>. This limit is not the same as one that gives you URI with token added where you can ask for more. This is hard limit, which, if you go over it, produces error. Sadly the error in <code>&lt;m:error&gt;</code> is inside invalid XML. The XML is missing closing tag.</p>

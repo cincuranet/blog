@@ -7,7 +7,7 @@ tags:
   - Best practice or not?
   - Cloud
   - Lessons learned
-category: devel
+category: none
 layout: post
 ---
 <p>Every entity in <a href="http://www.windowsazure.com/en-us/home/tour/storage/">Azure Table Storage</a> has <code>PartitionKey</code>, <code>RowKey</code> and <code>Timestamp</code> property. <code>PartitionKey</code> gives the "bucket" where the entity will be stored (entities in one partition can be on more machines, though). And the <code>RowKey</code> is simply the key of that row. Queries where you're matching both keys are fast. Matches inside partition (you know <code>PartitionKey</code> but only part (or none) of <code>RowKey</code>) are slower. Cross partition matches even slower. You get the idea. But what about the <code>Timestamp</code>?</p>

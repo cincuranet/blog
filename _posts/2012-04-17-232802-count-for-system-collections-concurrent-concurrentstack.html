@@ -5,7 +5,7 @@ tags:
   - .NET
   - Best practice or not?
   - Multithreading/Parallelism/Asynchronous/Concurrency
-category: devel
+category: none
 layout: post
 ---
 <p>Collections in <a href="http://msdn.microsoft.com/en-us/library/dd287108.aspx"><code>System.Collections.Concurrent</code></a> namespace are optimized for access from more (basically) threads. That means no stupid "one-lock-for-everything" approach. Actually these are <a href="http://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom">lock free</a>.</p>

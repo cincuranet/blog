@@ -3,7 +3,7 @@ title: "...DataAdapter.Fill(dataSet...)"
 date: 2005-09-03T16:58:00Z
 tags:
   - .NET
-category: devel
+category: none
 layout: post
 ---
 <p>Tak jsem si dneska opět kr&#225;sně naběhl. Připravil jsem si v&#353;e pro připojen&#237; k Firebirdu a začal jsem ps&#225;t takov&#233; ty kravinky pro buttony (na testov&#225;n&#237;). Přidal jsem si tam:</p><p><font face="Courier New" size=2>fbConnection1.Open();</font></p><p><font face="Courier New" size=2>fbDataAdapter1.Fill(dataSet1);</font></p><p>a začal testovat. Kompilace - OK, bež&#237;me. Kliknu na tlač&#237;tko a ono nic. He, kde je chyba. Hmm, asi něco s dataSetem. Cel&#233; v&#353;e projdu, nic podezřel&#233;ho. No nic, zkus&#237;m to znovu. Zase nic. Několikr&#225;t jsem to cel&#233; pro&#353;el a st&#225;le nic. Hmmm. Umm. Zoufalstv&#237;. No nic, udělal jsem si tam vlastn&#237; DataTable a zkou&#353;&#237;m. dataGridView poř&#225;d nereaguje. Je&#353;tě vět&#353;&#237; zoufalstv&#237;, kop&#237;ruji star&#353;&#237; (funguj&#237;c&#237;) k&#243;d. Uprav&#237;m p&#225;r stringů a hle. Kompilace, jedem, nic. Ummm. Tak to už snad může b&#225;t jen Firebird .NET Data Provider. St&#225;hl jsem 2.0 Alpha. Zd&#225; se mi divn&#233;, že takov&#225;to z&#225;kladn&#237; věc by nefungovala. Jdu do kuchyně a hle. Po cestě me to napadlo. M&#225;m pr&#225;zdnou datab&#225;zi. Jasn&#253;, proto v gridu nic nebylo. Provizorně z konzole zap&#237;&#353;u dummy data do DB a jedem. Wow, je to tam. ;)</p><p>Co z toho plyne? Až zase nebude něco fungovat, rad&#353;i nejdř&#237;ve kontrolovat, jestli tam ma vůbec něco b&#253;t, než to dvě hodiny ladit. :)<font size=2></font></p>

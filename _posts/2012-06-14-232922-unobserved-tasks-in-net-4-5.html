@@ -4,7 +4,7 @@ date: 2012-06-14T10:45:17Z
 tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-category: devel
+category: none
 layout: post
 ---
 <p>When the <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">Task</a> and other related were introduced, there was behavior that informed you that you are possible doing something wrong. Yes, I'm talking about the exception being thrown from finalizer thread when your task completed as <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskstatus.aspx">Faulted</a> because of unhandled exception. I think this is absolutely correct behavior. If something as bas as unhandled exception happened I should take care of it no matter what. Because else I might corrupt some data or ... what's worse than corrupt data? ;)</p>

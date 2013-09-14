@@ -4,7 +4,7 @@ date: 2009-10-11T16:27:33Z
 tags:
   - Entity Framework
   - Multithreading/Parallelism/Asynchronous/Concurrency
-category: devel
+category: none
 layout: post
 ---
 <p>From time to time I get a question about using ObjectContext from more than one thread. Because Entity Framework sits on top of ADO.NET, it's obvious, it cannot be thread safe. So if you need to use <code>n</code> threads, use <code>m</code> (where <code>m&gt;=n</code>) ObjectContexts. That's the easy way. But what if you really need to share ObjectContext between threads?</p>

@@ -4,7 +4,7 @@ date: 2008-02-12T09:33:00Z
 tags:
   - .NET
   - Firebird
-category: devel
+category: none
 layout: post
 ---
 <p>Firebird .NET provider has ability to create parameterized queries. Both named and unnamed parameters are supported. Everything works as you expect with select, insert, delete or update commands. The tricky part comes with stored procedures. Unlike MS SQL, that has direct support for named parameters, in provider, we're parsing parameter names and we're sending it to server "in right order”, so developer doesn't need to know, that internally parameters were send unnamed.

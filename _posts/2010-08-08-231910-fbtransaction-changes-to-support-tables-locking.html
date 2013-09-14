@@ -4,7 +4,7 @@ date: 2010-08-08T17:52:42Z
 tags:
   - .NET
   - Firebird
-category: devel
+category: none
 layout: post
 ---
 <p><a href="http://www.firebirdsql.org">Firebird</a> has a feature allowing you to specify tables you want to lock (read or write and exclusive/protected/shared) when starting transaction. <small>(Note that Firebird still uses <a href="http://en.wikipedia.org/wiki/Multiversion_concurrency_control">MGA/MVCC</a>. This is just a feature to support some scenarios.)</small> We had constants in <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">ADO.NET Provider for Firebird</a> for some time, but using them resulted in wrong parameters being sent to the server and followed by exception. :)</p>

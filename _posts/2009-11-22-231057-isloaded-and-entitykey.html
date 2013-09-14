@@ -3,7 +3,7 @@ title: "IsLoaded and EntityKey"
 date: 2009-11-22T21:25:20Z
 tags:
   - Entity Framework
-category: devel
+category: none
 layout: post
 ---
 <p>Today I discovered behavior of Entity Framework that is completely logic, but may surprise you, as it surprised me. Simply consider two entities with 1-N relationship. If you're loading the "N-entity", you know, whether the "1-part" is in database, because the foreign key column has some value or is null. If it's null and you'll check the <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.relatedend.isloaded.aspx">IsLoaded</a> property of <a href="http://msdn.microsoft.com/en-us/library/bb297956.aspx">EntityReference&lt;T&gt;</a> it will say true, even you didn't call <a href="http://msdn.microsoft.com/en-us/library/bb896351.aspx">Load</a> method. And it's correct and smart, because you know that the value will be null (because of the null foreign key column).</p>

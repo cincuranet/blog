@@ -4,7 +4,7 @@ date: 2006-06-17T08:04:00Z
 tags:
   - .NET
   - Windows
-category: devel
+category: none
 layout: post
 ---
 <p>Today I was looking for user application data path (<font face="Courier New" size=2>Application.UserAppDataPath</font>) but without creating the <font face="Courier New" size=2>Base PathCompanyNameProductNameProductVersion</font> structure. I was really confused with this, but suddenly I found the solution. <font size=2>(ok, you're right, I should use google prior to surfing in documentation :))</font> The <font face="Courier New" size=2>Environment.SpecialFolder</font> enumeration and <font face="Courier New" size=2>Environment.GetFolderPath</font> - it's so easy.</p><p>So the result is: <br /><span style="FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'">Environment</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'">.GetFolderPath(<span style="COLOR: teal">Environment</span>.<span style="COLOR: teal">SpecialFolder</span>.ApplicationData)<br /></span><br />or maybe better for you:<br /><span style="FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'">Environment</span><span style="FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'">.GetFolderPath(<span style="COLOR: teal">Environment</span>.<span style="COLOR: teal">SpecialFolder</span>.ApplicationData)+<span style="COLOR: teal">Path</span>.DirectorySeparatorChar</span></p>
