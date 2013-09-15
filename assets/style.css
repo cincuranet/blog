@@ -143,11 +143,6 @@ kbd {
 
 /* ------------------------------------------ [ Content ] */
 
-#content {
-	padding-top: 1em;
-	overflow: hidden;
-}
-
 ul.nav {
 	margin: 0 0 2em 0;
 	list-style-type: none;
