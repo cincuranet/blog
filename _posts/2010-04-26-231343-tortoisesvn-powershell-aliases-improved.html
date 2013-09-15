@@ -9,7 +9,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Some time ago <a href="{% post_url 2010-02-23-231239-managing-tortoisesvn-commit-and-update-from-command-line-and-creating-powershell-alias %}">I wrote about creating PowerShell aliases for commit and update for TortoiseSVN</a>. But I needed little bit more flexibility with path so I added a parameter with default to <code>.</code>.</p>
+<p>Some time ago <a href="{{ site.url }}{% post_url 2010-02-23-231239-managing-tortoisesvn-commit-and-update-from-command-line-and-creating-powershell-alias %}">I wrote about creating PowerShell aliases for commit and update for TortoiseSVN</a>. But I needed little bit more flexibility with path so I added a parameter with default to <code>.</code>.</p>
 
 <pre class="brush:powershell">
  function fn_update($path = ".") {tortoiseproc /command:update /path:$path}

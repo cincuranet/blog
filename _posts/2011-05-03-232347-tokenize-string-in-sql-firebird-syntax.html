@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Few days ago I wrote <a href="{% post_url 2011-04-25-232323-some-thoughts-on-denormalization %}">"Some thoughts on denormalization" post</a>. Though concatenating data to one string is easy with there introduced function, splitting it back could be harder. I left it as exercise, but I feel, to make it complete, it's good to show one possible implementation.</p>
+<p>Few days ago I wrote <a href="{{ site.url }}{% post_url 2011-04-25-232323-some-thoughts-on-denormalization %}">"Some thoughts on denormalization" post</a>. Though concatenating data to one string is easy with there introduced function, splitting it back could be harder. I left it as exercise, but I feel, to make it complete, it's good to show one possible implementation.</p>
 
 <p>Here's one I came with today (using <a href="http://www.firebirdsql.org">Firebird</a> syntax, however it's almost pure <a href="http://en.wikipedia.org/wiki/SQL">SQL</a>), quickly. It's something I created from start to finish in one row and sure for some cases it could be optimized.</p>
 
@@ -53,6 +53,6 @@ union all
 select * from Tokenize('ab,cd,e,,', ',');
 </pre>
 
-<p>What it is not handling is some form of quoting in case there's a token inside the element. Mainly because its intended purpose is to tokenize strings you can control (<a href="{% post_url 2011-04-25-232323-some-thoughts-on-denormalization %}">see the previous post</a>) and because it will slow down the execution.</p>
+<p>What it is not handling is some form of quoting in case there's a token inside the element. Mainly because its intended purpose is to tokenize strings you can control (<a href="{{ site.url }}{% post_url 2011-04-25-232323-some-thoughts-on-denormalization %}">see the previous post</a>) and because it will slow down the execution.</p>
 
 <p>Feel free to improve it etc. (either post link to your solution or post the code in comments).</p>

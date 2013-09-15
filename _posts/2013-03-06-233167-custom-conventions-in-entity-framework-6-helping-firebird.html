@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-<blockquote><a href="{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}">There's a part 2 of this story.</a></blockquote>
+<blockquote><a href="{{ site.url }}{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}">There's a part 2 of this story.</a></blockquote>
 
 <p>The next version of Entity Framework, version 6, has a nice new feature <a href="http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions">Custom Code First Conventions</a>. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up <code>_PK</code>? You can create convention for that and completely remove bunch of <code>HasKey()</code> lines. But that's not what I'm going to talk about, if you want to know more follow the link above.</p>
 

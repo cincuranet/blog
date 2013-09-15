@@ -80,7 +80,7 @@ foreach (Product p in q)
 }
 </pre>
 
-<p>You got exception. Yeah, lazy loading. You have to use, for example (<a href="{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">Entity Framework Include with Func</a>):</p>
+<p>You got exception. Yeah, lazy loading. You have to use, for example (<a href="{{ site.url }}{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">Entity Framework Include with Func</a>):</p>
 
 <pre class="brush:csharp">
 var q = from p in ctx.Products.Include("ProductSize")
@@ -98,6 +98,6 @@ foreach (Product p in q)
 
 <p>Yet again, with POCO and persistence ignorance it will much easier. But it isn't impossible now.</p>
 
-<p>See also: <a href="{% post_url 2008-10-11-228430-how-to-map-your-custom-objects-in-entity-framework %}">How to map your custom objects in Entity Framework</a></p>
+<p>See also: <a href="{{ site.url }}{% post_url 2008-10-11-228430-how-to-map-your-custom-objects-in-entity-framework %}">How to map your custom objects in Entity Framework</a></p>
 
 <p><i>Published on <a href="http://dbsvet.cz/">Databazovy Svet</a></i></p>

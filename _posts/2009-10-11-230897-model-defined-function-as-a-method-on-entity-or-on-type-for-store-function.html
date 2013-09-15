@@ -15,7 +15,7 @@ layout: post
 context.Persons2.Where(p =&gt; GetAge2(p) &lt; 100);
 </pre>
 
-<p>And while I was preparing some demos for my <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">presentation</a>, there was a flash of idea in my head. "What if I define the function stub as extension method?", I thought. Yes like:</p>
+<p>And while I was preparing some demos for my <a href="{{ site.url }}{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">presentation</a>, there was a flash of idea in my head. "What if I define the function stub as extension method?", I thought. Yes like:</p>
 <pre class="brush:csharp">
 [EdmFunction("testovaciModel", "GetAge2")]
 static int GetAge2(this Persons2 p)

@@ -10,7 +10,7 @@ tags:
 category: none
 layout: post
 ---
-<p>In <a href="{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a> I introduced you <a href="http://www.nuodb.com/">NuoDB</a>, the so-called <i>NewSQL</i> database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)</p>
+<p>In <a href="{{ site.url }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a> I introduced you <a href="http://www.nuodb.com/">NuoDB</a>, the so-called <i>NewSQL</i> database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)</p>
 
 <p>NuoDB has currently JDBC and <a href="http://en.wikipedia.org/wiki/ODBC">ODBC</a> drivers in the box. <a href="http://github.com/nuodb/nuodb-drivers">Other drivers are created by community</a>. There's also <a href="http://github.com/nuodb/nuodb-drivers/tree/master/dotnet">.NET driver</a> being created but it's based on C++ API implementation not a fully managed implementation.</p>
 
@@ -114,7 +114,7 @@ namespace NuoDB
 }
 </pre>
 
-<p>First I create DSN for my application (using ugly raw method), using same chorus set up like in <a href="{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a>. The driver is called <code>NuoDB ODBC Driver</code>. Then I just specify username (<code>UID</code>), password (<code>PWD</code>) and database (<code>Database</code>) in form <code>&lt;chorus&gt;@&lt;location&gt;</code>, same as if you're using <code>nuosql</code>. This DSN is also removed at the end.</p>
+<p>First I create DSN for my application (using ugly raw method), using same chorus set up like in <a href="{{ site.url }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a>. The driver is called <code>NuoDB ODBC Driver</code>. Then I just specify username (<code>UID</code>), password (<code>PWD</code>) and database (<code>Database</code>) in form <code>&lt;chorus&gt;@&lt;location&gt;</code>, same as if you're using <code>nuosql</code>. This DSN is also removed at the end.</p>
 
 <p>Rest is simple .NET/C# code, same as any other <a href="http://msdn.microsoft.com/en-us/library/e80y5yhx">ADO.NET</a> code. Connection, transaction (if explicitly needed), command(s)...</p> 
 

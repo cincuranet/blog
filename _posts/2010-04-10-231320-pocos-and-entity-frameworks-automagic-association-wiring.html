@@ -6,9 +6,9 @@ tags:
 category: none
 layout: post
 ---
-<p>Entity Framework has a nice ability to wire up associations on both ends when the related entities come into context. This feature is handy and you can use it to simulate some scenarios, like <a href="{% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}">this</a>. But we're on EFv4 time, everybody is using POCO. ;)</p> 
+<p>Entity Framework has a nice ability to wire up associations on both ends when the related entities come into context. This feature is handy and you can use it to simulate some scenarios, like <a href="{{ site.url }}{% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}">this</a>. But we're on EFv4 time, everybody is using POCO. ;)</p> 
 
-<p>In last project I used POCO too, just to make myself more familiar with the way how it works in EFv4 and to face some challenges. Last week I was designing some flow, and I needed to have some related objects in memory too. I immediately jumped into <a href="http://msdn.microsoft.com/en-us/library/bb738708.aspx">Include method</a> (actually I used <a href="{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">this</a> improved version). But later I couldn't help but wonder would the automagic association wiring with (pure) POCOs?</p>
+<p>In last project I used POCO too, just to make myself more familiar with the way how it works in EFv4 and to face some challenges. Last week I was designing some flow, and I needed to have some related objects in memory too. I immediately jumped into <a href="http://msdn.microsoft.com/en-us/library/bb738708.aspx">Include method</a> (actually I used <a href="{{ site.url }}{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">this</a> improved version). But later I couldn't help but wonder would the automagic association wiring with (pure) POCOs?</p>
 
 <p>I created simple <code>master-detail</code> scenario and created these POCO classes (note I'm not going to use proxies).</p>
 

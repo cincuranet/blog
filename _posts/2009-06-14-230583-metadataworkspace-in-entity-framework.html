@@ -37,7 +37,7 @@ foreach (EdmFunction function in functions.Where(f =&gt; (bool)f.MetadataPropert
 </pre>
 <p>Gives you all of these functions. If you remove the condition you'll get all functions, including stored procedures of user defined functions. Wanna parameters of these functions? No problem, it's there. Just check <a href="http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.edmfunction.parameters.aspx" >Parameters property</a>.</p>
 
-<p>And that's only the SSpace. The conceptual part of model is described there too. To see how much is the model interconnected (i.e. to consider <a href="{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}">pregenerating views</a>) simply run:</p>
+<p>And that's only the SSpace. The conceptual part of model is described there too. To see how much is the model interconnected (i.e. to consider <a href="{{ site.url }}{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}">pregenerating views</a>) simply run:</p>
 <pre class="brush:csharp">
 var entities = mw.GetItems&lt;EntityType&gt;(DataSpace.CSpace);
 foreach (var entity in entities)

@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Similarly to <a href="{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}">previous method for Interleaving two IEnumerables</a> I needed one method for doing kind of aggregate, but also to know about the intermediate steps. I could abuse the <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.aggregate.aspx">Aggregate</a> method either directly or indirectly but I'm always more happy with clean solution.</p>
+<p>Similarly to <a href="{{ site.url }}{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}">previous method for Interleaving two IEnumerables</a> I needed one method for doing kind of aggregate, but also to know about the intermediate steps. I could abuse the <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.aggregate.aspx">Aggregate</a> method either directly or indirectly but I'm always more happy with clean solution.</p>
 
 <p>The method is pretty simple (but before I did some rework, it was ugly ;)). It takes, apart from the <a href="http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx">IEnumerable</a>, two functions. One for setting up the initial value for the first item and one for getting result for next step.</p>
 

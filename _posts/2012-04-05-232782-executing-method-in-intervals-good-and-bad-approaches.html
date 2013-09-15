@@ -69,7 +69,7 @@ void GoodOne1()
 }
 </pre>
 
-<p>Here I'd like to point to <a href="{% post_url 2009-10-29-230984-my-timer-usage-and-references-moral %}">my older post about keeping the reference to <code>Timer</code></a>.</p> 
+<p>Here I'd like to point to <a href="{{ site.url }}{% post_url 2009-10-29-230984-my-timer-usage-and-references-moral %}">my older post about keeping the reference to <code>Timer</code></a>.</p> 
 
 <p>And also one question that might come. The <code>Timer</code> ticks every interval no matter how long executing the callback took. That might not be what you want. You may want to execute the method with xx seconds delay between (previous examples), not execute the method every xx second (this example). The solution is pretty easy. Initially just schedule one tick and then reschedule it for next interval.</p>
 

@@ -9,6 +9,6 @@ layout: post
 ---
 <p>I was punch directly to my face right now. Everytime I'm doing some ADO.NET Data Services (Astoria) speak I'm showing simple models, with almost no modifications. And everything works great. But I found, right now, that if you have entity in your model with property access getter or setter setted to anything except public, the service will not work. Grrr.</p>
 
-<p>I understand that hiding setter causes the updates or inserts to stop working. But why the getter? If I limit my entity set to i.e. <a href="http://msdn.microsoft.com/en-us/library/system.data.services.entitysetrights.aspx">AllRead</a>, then the querying should just work. Hmm, it's probably related to <a href="{% post_url 2009-07-02-230674-select-method-kind-of-in-ado-net-data-services-to-exclude-big-blob-fields %}">missing select support</a> (in 3.5SP1 as well as 4.0).</p>
+<p>I understand that hiding setter causes the updates or inserts to stop working. But why the getter? If I limit my entity set to i.e. <a href="http://msdn.microsoft.com/en-us/library/system.data.services.entitysetrights.aspx">AllRead</a>, then the querying should just work. Hmm, it's probably related to <a href="{{ site.url }}{% post_url 2009-07-02-230674-select-method-kind-of-in-ado-net-data-services-to-exclude-big-blob-fields %}">missing select support</a> (in 3.5SP1 as well as 4.0).</p>
 
 <p>Anyway it was really "interesting" ;) to find this out.</p>

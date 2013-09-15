@@ -13,7 +13,7 @@ layout: post
 
 <p>You might be right. But you feel it's not correct. It's bad. It's not for future extending of application (and we all know it'll happen 8-)). Today I realized I can have all from both worlds - good design and quick development.</p>
 
-<p>Design it normalized, because it's what you should do. But then you can create a simple view where you use some kind of "LIST" function (i.e. <a href="http://www.firebirdsql.org">Firebird</a> has exactly that named one). This view will create you denormalized form of data. With a small help from triggers you can also update that view hence underlying data (<a href="{% post_url 2011-05-03-232347-tokenize-string-in-sql-firebird-syntax %}">left as an exercise for reader</a>).</p>
+<p>Design it normalized, because it's what you should do. But then you can create a simple view where you use some kind of "LIST" function (i.e. <a href="http://www.firebirdsql.org">Firebird</a> has exactly that named one). This view will create you denormalized form of data. With a small help from triggers you can also update that view hence underlying data (<a href="{{ site.url }}{% post_url 2011-05-03-232347-tokenize-string-in-sql-firebird-syntax %}">left as an exercise for reader</a>).</p>
 
 <pre class="brush:sql">
 select list(r, ',') from

@@ -10,7 +10,7 @@ layout: post
 ---
 <p>I had this idea on my list for a couple of months and I was always postponing it, because it's stupid. But you know. Exploring the unexplored ways, that's what I like to do :).</p>
 
-<p>But during (or after, I don't remember) <a href="{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">my presentation about Entity Framework</a> there was a question about accessing the data provided by EF from Silverlight. Sure, doing it directly isn't a good idea and in fact this is the reason why Astoria, eh, ADO.NET Data Services is here. But is this really stupid? Can it work?</p>
+<p>But during (or after, I don't remember) <a href="{{ site.url }}{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}">my presentation about Entity Framework</a> there was a question about accessing the data provided by EF from Silverlight. Sure, doing it directly isn't a good idea and in fact this is the reason why Astoria, eh, ADO.NET Data Services is here. But is this really stupid? Can it work?</p>
 
 <p>Nope. Not at all. I tried to build FirebirdClient in a Silverlight environment and I failed. I expected to fail after some attempts with modifications and using only subset of features like i.e for Compact Framework, but this was really fast. Silverlight is only subset of .NET Framework. And one crucial part is not there, it's System.Data stuff and without it you can drop major part of any ADO.NET provider's code.</p>
 

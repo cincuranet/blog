@@ -9,7 +9,7 @@ layout: post
 ---
 <p><a href="http://blogs.msdn.com/dsimmons/archive/2009/02/21/local-queries.aspx">Danny Simmons posted</a> small helper method for runnning queries against local cache (in ObjectContext). Many of you are probably using similar method. But I don't like to have to specify entity set as a string. That's a first step for refactoring problems. :)</p>
 
-<p>Thus I created little bit different version, using same trick as Matthieu Mezil with <a href="{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">Include</a>.</p>
+<p>Thus I created little bit different version, using same trick as Matthieu Mezil with <a href="{{ site.url }}{% post_url 2008-07-29-228036-entity-framework-include-with-func %}">Include</a>.</p>
 <pre class="brush:csharp">
 public static IEnumerable&lt;TEntity&gt; Local&lt;TEntity, TObjectContext&gt;(this ObjectContext context, Expression&lt;Func&lt;TObjectContext, ObjectQuery&lt;TEntity&gt;&gt;&gt; entitySet) where TEntity : class
 {
