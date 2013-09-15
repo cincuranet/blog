@@ -197,10 +197,6 @@ ul.navlinks {
 	clear: both;
 }
 
-.post-content-small p, .post-content-small h5, .post-content-small code {
-	width: 35.7em;
-}
-
 .post-content-full p, .post-content-full h5, .post-content-full code {
 	width: 61em;
 }
@@ -361,6 +357,7 @@ textarea {
 /* ----------------------------------------- [ Sidebar ] */
 
 #sidebar {
+	border-top: 1px solid #333;
 	margin: 0;
 	padding: 1em 0 0 0;
 	overflow: hidden;
@@ -375,16 +372,6 @@ textarea {
 #sidebar p {
 	font-size: 1.1em;
 	color: #111;
-}
-
-#sidebar .section input {
-	width: 15.8em;
-	margin: 0 8px 1em 8px;
-	padding: 6px 6px 6px 23px;
-	border: 1px solid #ccc;
-	background: transparent url(bg-search.gif) no-repeat 7px center;
-	font-size: 1.1em;
-	float: left;
 }
 
 #sidebar ul.nav {
@@ -403,24 +390,8 @@ textarea {
 	border-bottom: 0;
 }
 
-.section {
-	margin: 0 0 1em 0;
-	clear: both;
+#sidebar .col {
 	overflow: hidden;
-}
-
-.section .col {
-	overflow: hidden;
-}
-
-#content .section {
-	margin: 0 0 2em 0;
-	padding: 1em 0 0 0;
-	border-top: 1px dotted #bbb;
-}
-
-#content .first {
-	border: 0;
 }
 
 .submit {
@@ -439,6 +410,8 @@ textarea {
 
 .navigation li {
 	font-size: 1.2em;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 /* --------------------------------------- [ Footnotes ] */
@@ -558,8 +531,15 @@ textarea {
 	float: left;
 }
 
-.search-field {
-	padding: 0;
+input.search-field {
+	background: transparent url(bg-search.gif) no-repeat 7px center;
+	padding: 0 0 0 23px;
+	height: 24px;
+	font-size: 1.1em;
+}
+
+p.search-field {
+	padding-right: 16px;
 }
 
 /* Use for full width images (596px) */

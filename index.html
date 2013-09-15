@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="col last span-6 nudge-2">
+<div class="col last span-10 nudge-2">
 	<h4 class="ver small">Latest Entries</h4>	
 </div>
 {% for post in paginator.posts %}
@@ -14,7 +14,7 @@ layout: default
 		</ul>
 	</div>
 
-	<div class="post-content-small span-6 nudge-2">
+	<div class="post-content-full span-10 nudge-2">
 		<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 		{{ post.content }}
 	</div>
