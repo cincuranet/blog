@@ -396,20 +396,6 @@ textarea {
 	border: 0;
 }
 
-.navigation {
-	margin: 0 0 1em 0;
-	padding: 1em 0 0 0;
-	list-style-type: none;
-	overflow: hidden;
-	clear: both;
-}
-
-.navigation li {
-	font-size: 1.2em;
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
 /* --------------------------------------- [ Footnotes ] */
 
 #footnotes {

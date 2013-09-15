@@ -4,7 +4,7 @@ layout: default
 <div class="col last span-10 nudge-2">
 	<h4 class="ver small">Latest Entries</h4>	
 </div>
-{% for post in paginator.posts %}
+{% for post in site.posts limit: site.site_posts %}
 <div class="post">
 	<div class="post-meta col span-2">
 		<ul class="nav">
@@ -20,23 +20,10 @@ layout: default
 	</div>
 </div>
 {% endfor %}
-				
-<ul class="navigation">
-	<li class="left">
-		{% if paginator.previous_page_path %}
-		<a href="{{ site.url }}{{ paginator.previous_page_path }}">Previous</a>
-		{% else %}
-		<span>Previous</span>
-		{% endif %}
-	</li>
-	<li class="right">
-		{% if paginator.next_page_path %}
-		<a href="{{ site.url }}{{ paginator.next_page_path }}">Next</a> 
-		{% else %}
-		<span>Next</span>
-		{% endif %}
-	</li>
-</ul>
+
+<div class="col last span-12">
+&nbsp;
+</div>
 
 <script type="text/javascript">
 var disqus_shortname = 'blogcincuranet';
