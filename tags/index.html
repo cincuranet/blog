@@ -4,7 +4,7 @@ title: Tags
 ---
 <h3>Tags</h3>
 {% for t in site.tags %} 
-<div class="collapsable">
+<div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
 	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
 	<p class="collapsable-item">
 		{% for p in t[1] %}
@@ -14,3 +14,20 @@ title: Tags
 	<br />
 </div>
 {% endfor %}
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var items = $('.collapsable[data-sort-key]');
+		var anchor = items.first().parent();
+		items = items.sort(function(x, y) {
+			var xData = $(x).data('sort-key');
+			var yData = $(y).data('sort-key');
+			return xData.localeCompare(yData);
+		});
+		items.each(function(i, e) {
+			e = $(e);
+			console.log(e.data('sort-key'));
+			anchor.append(e);
+		});
+	});
+</script>
