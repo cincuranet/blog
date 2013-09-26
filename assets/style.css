@@ -218,10 +218,6 @@ ul.navlinks {
 	padding: 0;
 }
 
-.post-content blockquote ul {
-	width: 30em;
-}
-
 .post-content dl {
 	margin: 0 0 1em 0;
 	padding-left: 8px;
@@ -242,10 +238,13 @@ ul.navlinks {
 }
 
 .post-content ul, .post-content ol {
-	width: 44.8em;
-	margin-left: -12px;
+	padding-left: 8px;
 	padding-right: 8px;
 	list-style-type: none;
+}
+
+.post-content ol {
+	padding-left: 24px;
 }
 
 .post-content li {
@@ -253,17 +252,7 @@ ul.navlinks {
 	padding-left: 20px;
 	font-size: 1.2em;
 	line-height: 1.6;
-	background: transparent url(bullet.gif) no-repeat left 2px;
-}
-
-.post-content ol {
-	margin-left: 8px !important;
-}
-
-.post-content ol li {
-	padding-left: 0;
-	list-style-type: decimal;
-	background: none;
+	background: transparent url(bullet.gif) no-repeat left 2px top 4px;
 }
 
 .post-content code {
