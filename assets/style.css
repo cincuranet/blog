@@ -210,13 +210,12 @@ ul.navlinks {
 }
 
 .post-content blockquote {
-	margin: 0 3.2em 0 3.2em;
+	margin: 0 3.2em 1em 3.2em;
+	padding: 8px;
+	border: 1px dotted #bbb;
+	line-height: 1.6;
 }
 
-.post-content blockquote p {
-	width: 30em;
-	padding: 0;
-}
 
 .post-content dl {
 	margin: 0 0 1em 0;
