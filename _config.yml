@@ -4,6 +4,7 @@ url: http://blog.cincura.net
 #url: file:///C:/Users/Jiri/Documents/www/cincura.net/blog/src/_site
 permalink: /:title/
 timezone: Etc/UTC
+excerpt_separator: <!-- excerpt -->
 site_posts: 20
 feed_posts: 20
 feed_external: http://feeds.feedburner.com/blog_cincura_net

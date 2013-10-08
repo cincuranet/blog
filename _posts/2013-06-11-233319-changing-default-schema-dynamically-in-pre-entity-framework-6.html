@@ -7,7 +7,7 @@ category: none
 layout: post
 ---
 <p>If you're using 3<sup>rd</sup> party database where <code>dbo</code> is not the default you might hit the wall with default conventions. Why? Because even if you didn't configured the schema by calling <a href="http://msdn.microsoft.com/en-us/library/gg679488(v=vs.103).aspx"><code>EntityTypeConfiguration.ToTable</code></a> overload it will result in <code>dbo</code>. It's simply hard-coded there. Entity Framework 6 solves this by adding <code>DbModelBuilder.HasDefaultSchema</code> property. Or you can write your own convention. In time of writing the version 6 is in beta stage, hence probably not something you should use in production. But there's still a way.</p>
-
+<!-- excerpt -->
 <p>If there's an overload where I can specify the schema explicitly I can call it, right? But that's a lot of work. Especially is you're relying heavily on "conventions". But the heavy work can be done by machine right? Because a lot of APIs we need to dive in is not public and (also partly because of generics) we need to dive into reflection. Not good for readability. But, ..., could be worse. ;)</p>
 
 <pre class="brush:csharp">

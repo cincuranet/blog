@@ -8,7 +8,7 @@ category: none
 layout: post
 ---
 <p>Because on the server where the application is running I'm unable to do backup using regular <code>gbak</code> tool, I turned my attention to <code>nbackup</code>. In fact I'm doing just file copy and using <code>alter database begin backup</code>/<code>alter database end backup</code> (<a href="http://www.firebirdsql.org/manual/nbackup-lock-unlock.html">more info</a>). But doing the backup is only part of the story. You have also know you know how to restore it and whether you can restore it (aka whether the backup is not corrupted).</p>
-
+<!-- excerpt -->
 <p>If you have done backup using process described above and you have the file, you can't just start using it. You need to "restore it", which means changing a flag inside the database file. This is where the <code>nbackup</code>'s <code>-F</code> switch comes to play. But no matter what I was doing, I was getting:</p> 
 
 <pre class="brush:plain">

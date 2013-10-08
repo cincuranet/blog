@@ -9,7 +9,7 @@ category: none
 layout: post
 ---
 <p>My mind today was in weird shape (again). I blame Friday. What that means is, that I came with weird pieces of code, that are fun to just write. Brain training. :)</p>
-
+<!-- excerpt -->
 <p>The set up was simple. I had a <code><a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">Task</a></code> that was returning <code>bool</code>; <code>true</code> if succeeded, <code>false</code> otherwise. Because the code was interacting with 3<sup>rd</sup> party system it was desired to retry if the call didn't succeeded.</p> 
 
 <p>Looking at it in front of me I realized I'll be probably able to (ab)use the <code><a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith.aspx">ContinueWith</a></code> method and recursion. When I wrote it I realized there's a room for refactoring. And then I realized I might create and extension method from it. Already half way in hell. :)</p>

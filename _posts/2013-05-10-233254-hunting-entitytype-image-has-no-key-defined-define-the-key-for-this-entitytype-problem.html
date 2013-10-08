@@ -8,7 +8,7 @@ category: none
 layout: post
 ---
 <p>Few weeks back I was <a href="http://www.x2develop.com">hired</a> to debug the above mentioned problem. The application was using <a href="http://msdn.com/ef">Entity Framework 5</a> and <a href="http://www.firebirdsql.org">Firebird</a> as a database. The message says clearly what's wrong. How hard can it be to fix the problem, right? I was thinking the same. And how wrong I was.</p>
-
+<!-- excerpt -->
 <p>After receiving the sources and quickly extracting the bare metal with error I started looking for <code>Image</code> type. And there it was. The class had <code>Id</code> property, so the key was kind of there. The default convention should be able to find. Let's look at configuration, if there's something suspicious. And even better, the <a href="http://msdn.microsoft.com/en-us/library/gg671266(v=vs.103).aspx"><code>HasKey</code></a> call is there. OK, maybe there's some magic in <a href="http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext.onmodelcreating(v=vs.103).aspx"><code>OnModelCreating</code></a>. Nope. Everything as expected.</p>
 
 <p>By the way, the exact error was:</p>
