@@ -7,9 +7,9 @@ tags:
 category: none
 layout: post
 ---
-<p>Sometimes I'm coding a simple task – start an operation at a given time. Some kind of scheduler in inside application. No, I'm not going to cry over <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx"><code>Thread</code></a> and <a href="http://msdn.microsoft.com/en-us/library/274eh01d.aspx"><code>Thread.Sleep</code></a> abuse. I'm over it. :)</p> 
-
-<p>It's <a href="http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx"><code>Timer</code></a> usage. That's of course way better than above mentioned abuse. But let's say you want to run the operation every day at 14:00 (that's 2PM for some ;)). The code is often like this (or close to it).</p>
+<p>Sometimes I'm coding a simple task – start an operation at a given time. Some kind of scheduler in inside application. No, I'm not going to cry over <a href="http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx"><code>Thread</code></a> and <a href="http://msdn.microsoft.com/en-us/library/274eh01d.aspx"><code>Thread.Sleep</code></a> abuse. I'm over it. :) It's <a href="http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx"><code>Timer</code></a> usage.</p> 
+<!-- excerpt -->
+<p>That's of course way better than above mentioned abuse. But let's say you want to run the operation every day at 14:00 (that's 2PM for some ;)). The code is often like this (or close to it).</p>
 
 <pre class="brush:csharp">
 var timer = new Timer(_ =&gt; 
