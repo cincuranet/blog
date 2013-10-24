@@ -74,7 +74,7 @@ static class DailyHourMinuteTimerHelper
 		return timer;
 	}
 
-  static TimeSpan ComputeDueTime(Func&lt;DateTimeOffset&gt; nowFactory, int hour, int minute)
+	static TimeSpan ComputeDueTime(Func&lt;DateTimeOffset&gt; nowFactory, int hour, int minute)
 	{
 		return ComputeNext(nowFactory(), hour, minute) - nowFactory();
 	}
