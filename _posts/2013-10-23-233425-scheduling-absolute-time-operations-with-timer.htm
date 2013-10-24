@@ -74,16 +74,15 @@ static class DailyHourMinuteTimerHelper
 		return timer;
 	}
 
-	static TimeSpan ComputeDueTime(Func&lt;DateTimeOffset&gt; nowFactory, int hour, int minute)
+  static TimeSpan ComputeDueTime(Func&lt;DateTimeOffset&gt; nowFactory, int hour, int minute)
 	{
-		var now = nowFactory();
-		return ComputeNext(now, hour, minute) - now;
+		return ComputeNext(nowFactory(), hour, minute) - nowFactory();
 	}
 
 	static DateTimeOffset ComputeNext(DateTimeOffset now, int hour, int minute)
 	{
 		var next = new DateTimeOffset(now.Year, now.Month, now.Day, hour, minute, 0, now.Offset);
-		if (next &lt; new DateTimeOffset(now.Year, now.Month, now.Day, now.Hour, now.Minute, 0, now.Offset))
+		if (next &lt;= new DateTimeOffset(now.Year, now.Month, now.Day, now.Hour, now.Minute, 0, now.Offset))
 			next = next.AddDays(1);
 		return next;
 	}
