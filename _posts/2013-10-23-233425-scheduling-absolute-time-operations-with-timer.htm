@@ -77,7 +77,7 @@ static class DailyHourMinuteTimerHelper
 	static TimeSpan FixTimer(TimeSpan timeSpan)
 	{
 		// on these long intervals the Timer drifts a little (don't know why) (surprisingly it's seems to be always sooner time)
-		// but because I'm on minute precision I don't care a ;second
+		// but because I'm on a minute precision I don't care a second
 		// to be on safe side
 		return timeSpan.Add(TimeSpan.FromSeconds(1));
 	}
