@@ -271,6 +271,10 @@ ul.navlinks {
 	float: right;
 }
 
+.post-content img {
+	padding-bottom: 2em;
+}
+
 /* -------------------------------------- [ Commentary ] */
 
 #commentary {
