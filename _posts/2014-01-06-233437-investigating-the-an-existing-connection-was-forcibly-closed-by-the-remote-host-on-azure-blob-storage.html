@@ -17,4 +17,4 @@ layout: post
 
 <p>I know there are some throttling policies on every Azure service (and I experienced it a lot on SQL Azure), but as far as I remember there was always something about it in exception. I was getting only simple <a href="http://msdn.microsoft.com/en-us/library/system.io.ioexception(v=vs.110).aspx"><code>IOException</code></a> wrapped in <a href="http://msdn.microsoft.com/en-us/library/microsoft.windowsazure.storage.storageexception.aspx"><code>StorageException</code></a> (nothing was there if you'd like to ask ;)). Thus I'm not sure it was that.</p> 
 
-<p>But using smaller blocks hence having the connections opened only for shorter time span and using less connections solved it. If you're experiencing the same issue, you can try that. It might help. Or now. :)</p>
+<p>But using smaller blocks hence having the connections opened only for shorter time span and using less connections solved it. If you're experiencing the same issue, you can try that. It might help. Or not. :)</p>
