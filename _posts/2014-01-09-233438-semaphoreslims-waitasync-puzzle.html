@@ -62,7 +62,7 @@ static void Main(string[] args)
 
 <p>What do you think will be written out? Think about it for a while. Solution is just below.</p>
 
-<p><br /><br /><br /><br /><br /></p>
+<p>.<br />.<br />.<br />.<br />.<br />.</p>
 
 <p>OK. Here's the wrong solution (I started with this too and found it surprising (because I was not thinking carefully)). The enumerations starts; <code>0</code> is yielded; I'm asynchronously waiting for a semaphore, which will be satisfied immediately, so the <code>Task</code> is "returned", rest is continuation; next item starts; semaphore will be released. And so on. Thus I'll see on a console (the order after <code>Yielding: XXX</code> will be "random"):</p>
 
