@@ -7,5 +7,5 @@ timezone: Etc/UTC
 excerpt_separator: <!-- excerpt -->
 site_posts: 20
 feed_posts: 20
-feed_external: http://feeds.feedburner.com/blog_cincura_net
+feed: atom.xml
 disqus_base_url: http://blog.cincura.net
