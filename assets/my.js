@@ -1,11 +1,11 @@
 ---
 ---
 function initLinks() {
-	$('a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
+	$('div.post a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
 }
 
 function initImageBox() {
-	$('a[href*="i.blog.cincura.net"]:has(img)').fancybox({
+	$('div.post a[href*="i.blog.cincura.net"]:has(img)').fancybox({
 		openEffect: 'fade',
 		closeEffect: 'fade',
 		nextEffect: 'fade',
