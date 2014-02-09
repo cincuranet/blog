@@ -2,19 +2,6 @@
 layout: page
 title: Tags
 ---
-<h3>Tags</h3>
-{% for t in site.tags %} 
-<div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
-	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
-	<p class="collapsable-item">
-		{% for p in t[1] %}
-		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br />
-		{% endfor %}
-	</p>
-	<br />
-</div>
-{% endfor %}
-
 <script type="text/javascript">
 	$(document).ready(function() {
 		var items = $('.collapsable[data-sort-key]');
@@ -31,3 +18,16 @@ title: Tags
 		});
 	});
 </script>
+
+<h3>Tags</h3>
+{% for t in site.tags %}
+<div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
+	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
+	<p class="collapsable-item">
+		{% for p in t[1] %}
+		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br />
+		{% endfor %}
+	</p>
+	<br />
+</div>
+{% endfor %}
