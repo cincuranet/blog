@@ -1,7 +1,7 @@
 ---
 layout: nil
 ---
-{% for page in site.pages | sort %}{% unless page.url contains "assets" %}{{ site.url }}{{ page.url | remove: "index.html" }}{% endunless %}
+{% for page in site.pages | sort: 'url' %}{% unless page.url contains "assets" %}{{ site.url }}{{ page.url | remove: "index.html" }}{% endunless %}
 {% endfor %}
 {% for post in site.posts %}{{ site.url }}{{ post.url }}
 {% endfor %}
