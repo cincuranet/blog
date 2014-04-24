@@ -31,4 +31,4 @@ public static async Task&lt;IEnumerable&lt;T&gt;&gt; FindPredicateAsync&lt;T&gt;
 }
 </pre>
 
-<p>The method first checks "local" source, if there's nothing - either the record(s) are really not in memory yet or the predicate doesn't match anything (2<sup>ns</sup> item is important to keep in mind) - it hits the database. For convenience I also included asynchronous version of the same method.</p>
+<p>The method first checks "local" source, if there's nothing - either the record(s) are really not in memory yet or the predicate doesn't match anything (2<sup>nd</sup> item is important to keep in mind) - it hits the database. For convenience I also included asynchronous version of the same method.</p>
