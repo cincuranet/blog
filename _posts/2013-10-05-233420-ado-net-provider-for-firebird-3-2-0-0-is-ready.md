@@ -19,7 +19,7 @@ There's a new version of FirebirdClient waiting for you. Numbered 3.2.0.0. You c
 
 <!-- excerpt -->
 
-All changes can be found [in tracker][5]. Most notable. Now we have [support for NBackup][6] and "integrated security" works also on 64bit systems (fix contributed by Nathan Fox). 
+All changes can be found [in tracker][5]. Most notable. Now we have [support for NBackup][6] and "integrated security" works also on 64bit systems (fix contributed by Nathan Fox).
 
 Enjoy.
 

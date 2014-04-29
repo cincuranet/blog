@@ -12,7 +12,7 @@ layout: post
 
 <p>The Model First goes the other way. You start with blank designer surface and at some time generate the SQL script to create database based on what's on the surface. Of course you can use POCOs here as well. The model is stored in XML file, same as in Database First scenario.</p>
 
-<p>But what the Code First does? Focusing only on important differences, it only allows you to save model as code (in any language being able to produce <a href="http://en.wikipedia.org/wiki/Common_Intermediate_Language">MSIL</a>). Really. The only difference is the model representation, to be precise the mapping and kind of <a href="http://msdn.microsoft.com/en-us/library/bb399559.aspx">SSDL</a>.</p> 
+<p>But what the Code First does? Focusing only on important differences, it only allows you to save model as code (in any language being able to produce <a href="http://en.wikipedia.org/wiki/Common_Intermediate_Language">MSIL</a>). Really. The only difference is the model representation, to be precise the mapping and kind of <a href="http://msdn.microsoft.com/en-us/library/bb399559.aspx">SSDL</a>.</p>
 
 <p>There's no explicit conceptual part. You already have it. It is the objects you created - either generated or manually written both POCOs or derived from <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.entityobject.aspx">EntityObject</a> class. The mapping and also the store model is described with your code. <a href="http://msdn.microsoft.com/en-us/library/gg696117(v=vs.103).aspx">EntityTypeConfiguration</a>, <a href="http://msdn.microsoft.com/en-us/library/gg696149(v=vs.103).aspx">ComplexTypeConfiguration</a> etc. classes directly or indirectly written. Also part of mapping could be inferred if you're using <a href="http://msdn.microsoft.com/en-us/library/system.data.entity.modelconfiguration.conventions.iconvention(v=vs.103).aspx">conventions</a>. And ultimately you can point this to an existing database or let the Entity Framework <a href="{{ site.url }}{% post_url 2011-05-06-232358-getting-database-script-from-dbcontext-code-first %}">create it for you (or the SQL script)</a>. That's w</p>hen the database initializers (and providers) come to play.
 
@@ -26,5 +26,3 @@ New database &amp; XML &rArr; Model First
 </p>
 
 <p>See. So I think it's more 2x2 options (and Code First being able to do two tasks) and we might call it: Code Database First, Code Model First, EDMX Database First and EDMX Model First or Database First with Code, Model First with Code, Database First with EDMX and Model First with EDMX. :)</p>
-
-

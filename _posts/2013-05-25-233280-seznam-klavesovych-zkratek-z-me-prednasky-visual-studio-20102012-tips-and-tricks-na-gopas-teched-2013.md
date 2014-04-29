@@ -35,7 +35,7 @@ Ctrl-Alt-Space
 Ctrl-Z
 Ctrl-ů (Ctrl-;)
 F7
-Ctrl-, 
+Ctrl-,
 Ctrl-E-C/Ctrl-E-U
 Ctrl-E-D
 Tab
@@ -43,7 +43,7 @@ Ctrl-Up/Ctrl-Down
 Alt
 Ctrl-Shift-Up/Ctrl-Shift-Down
 Ctrl-) (Ctrl-], Ctrl-})
-Ctrl-Shift-) 
+Ctrl-Shift-)
 F8/Shift-F8
 Ctrl-C
 Ctrl-X
@@ -57,7 +57,7 @@ Ctrl-F, F3, Ctrl-H, Ctrl-I/Ctrl-Shift-I
 
 Debugging:
 <pre class="brush:plain">
-F10, F11, Shift-F11, Shift-F5  
+F10, F11, Shift-F11, Shift-F5
 Ctrl-F10
 Ctrl-Shift-F5
 F9

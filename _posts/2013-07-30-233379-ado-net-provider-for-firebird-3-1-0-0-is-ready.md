@@ -19,7 +19,7 @@ With [yesterday's sources move][1] I have another good news. The version 3.1.0.0
 
 <!-- excerpt -->
 
-This version fixes few issues from previous version and adds some new features. For example sweep and error logging support to TraceAPI, support in installer for x64 systems, bunch of fixes in current Entity Framework support as well as initial support for Entity Framework 6 (download package with "EF6" in name). 
+This version fixes few issues from previous version and adds some new features. For example sweep and error logging support to TraceAPI, support in installer for x64 systems, bunch of fixes in current Entity Framework support as well as initial support for Entity Framework 6 (download package with "EF6" in name).
 
 Entity Framework 6 is not currently released as RTM (thus there might be changes). Everything from infrastructure point of view should work, currently only full async stack is missing (for whole ADO.NET) and "Migrations" SQL generator.
 

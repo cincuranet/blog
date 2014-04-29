@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-I know priorities in parallel or multithreaded programming are not a best idea. At least we should try to avoid these as long as it's possible. And a locking or synchronization into the mix and you have a recipe for possible deadlocks. We don't like deadlocks. Users don't like deadlocks. But I had no choice today. 
+I know priorities in parallel or multithreaded programming are not a best idea. At least we should try to avoid these as long as it's possible. And a locking or synchronization into the mix and you have a recipe for possible deadlocks. We don't like deadlocks. Users don't like deadlocks. But I had no choice today.
 
 <!-- excerpt -->
 

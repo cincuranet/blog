@@ -14,6 +14,6 @@ But ~2k is still a few minutes to go. And that got me thinking. In every book or
 
 You need to keep walking as there are other people finishing after you and blocking the finish line is not a friendly act to do. Then you need to likely get your medal and maybe some space blanket. And you're still walking. Slowly, maybe cramping a little, but moving and moving needs energy. After that you probably find a tent with some water and fruits (or simply food) and you go to return the chip and find your clothes (or finish line drop bag). Still moving. Finally you find your family or friends. Maybe you go directly home or into hotel. Anyway you still need, say, one hour worth of energy left (OK, you get some calories in as there's often something in a finisher bag or in some water/food tent after finish line, but it takes time to digest these).
 
-So. Unless you're and elite runner you cannot really finish with nothing left, isn't it? 8-) 
+So. Unless you're and elite runner you cannot really finish with nothing left, isn't it? 8-)
 
 [1]: http://www.vienna-marathon.com/

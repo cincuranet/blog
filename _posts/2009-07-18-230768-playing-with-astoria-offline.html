@@ -10,7 +10,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Astoria so called offline has been released while ago. But until now I have no time and yen for playing with it. When I first heard about offline support for Astoria I was thinking, hmm that's going to be cool and though that it will be build inside the client itself, with an option to store this information and do offline work when no connection is available - something like "we suppose the connection is mostly available, hence this is only for the few cases when not".</p> 
+<p>Astoria so called offline has been released while ago. But until now I have no time and yen for playing with it. When I first heard about offline support for Astoria I was thinking, hmm that's going to be cool and though that it will be build inside the client itself, with an option to store this information and do offline work when no connection is available - something like "we suppose the connection is mostly available, hence this is only for the few cases when not".</p>
 
 <p>But not. Astoria offline (at least the <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=479F2216-E6F2-486F-80C9-2CFADE5082C1&displaylang=en">preview</a> is based on, of course, regular Astoria and Entity Framework and then Sync Framework.So finally it works like this. You're doing queries using Entity Framework (local model) and local SQLCE database and if you need to get fresh data and/or push data back, you simply synchronize this source, using Sync Framework, with the webservice. That's a little bit different from what I was expecting. :)</p>
 
@@ -28,7 +28,7 @@ alter table sync_detail add foreign key (id_master) references sync_master(id);
 (config as IDataServiceConfiguration2).AllowSynchronization = true;
 </pre>
 
-<p>That's all. The service works as classic Astoria (I still get not used to ADO.NET Data Service name). Now the fun stuff comes. You can add any type of application to use the Astoria offline. I started with simple console application, to introduce as less as possible external screwing inputs.</p> 
+<p>That's all. The service works as classic Astoria (I still get not used to ADO.NET Data Service name). Now the fun stuff comes. You can add any type of application to use the Astoria offline. I started with simple console application, to introduce as less as possible external screwing inputs.</p>
 
 <p>First problem you may encounter is not working "auto setup" for offline work. I did dozen of apps and didn't find reliable way to make it work always. Close to this I was with these steps (but still not 100%):</p>
 
@@ -42,7 +42,7 @@ alter table sync_detail add foreign key (id_master) references sync_master(id);
 <p>Now when you add service reference to you project the additional process kicks in (should) and generates local SQLCE database, the model and some classes. When I was able to make this work, every time I reached the <code>Adding new database file to project...</code> step I get error message:</p>
 
 <pre class="brush:plain">
-An error occurred while processing the local data file: 
+An error occurred while processing the local data file:
 
 Exception has been thrown by the target of an invocation.
 </pre>

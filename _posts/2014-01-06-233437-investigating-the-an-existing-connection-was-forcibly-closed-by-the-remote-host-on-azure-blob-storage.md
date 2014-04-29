@@ -17,7 +17,7 @@ Because it was happening "sometimes" and I had no clue, I implemented simple ret
 
 Initially I was uploading blocks of 2MB in size. Doing about ten in parallel. Uploading that took little bit under a two minutes. Nothing interesting. At least I thought. By a coincidence I changed the block to 512KB and used only four connections. As it turned out that solved my problem with remote host (Azure) forcibly closing my connection.
 
-I know there are some throttling policies on every Azure service (and I experienced it a lot on SQL Azure), but as far as I remember there was always something about it in exception. I was getting only simple [`IOException`][2] wrapped in [`StorageException`][3] (nothing was there if you'd like to ask ;)). Thus I'm not sure it was that. 
+I know there are some throttling policies on every Azure service (and I experienced it a lot on SQL Azure), but as far as I remember there was always something about it in exception. I was getting only simple [`IOException`][2] wrapped in [`StorageException`][3] (nothing was there if you'd like to ask ;)). Thus I'm not sure it was that.
 
 But using smaller blocks hence having the connections opened only for shorter time span and using less connections solved it. If you're experiencing the same issue, you can try that. It might help. Or not. :)
 

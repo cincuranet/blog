@@ -20,7 +20,7 @@ dbContextInstance.TransactionFactory = connection => (connection as MyDbConnecti
 
 Of course, you might say: "And who is going to commit/rollback it?". You might opt-in for default behavior - no error = commit, rollback else. Or handle it manually in some `OnCommit`/`OnRollback` events (or factory again to make it more enterprise-ish 8-)).
 
-Anyway I don't want to discuss all the details of actual implementation or how it aligns to current state. Just a opinion and high level overview of my thoughts. 
+Anyway I don't want to discuss all the details of actual implementation or how it aligns to current state. Just a opinion and high level overview of my thoughts.
 
 If you might have questions or need some examples or motivations, let me know in comments. I have handful of these.
 

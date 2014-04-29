@@ -14,7 +14,7 @@ I recently moved about one TB from [AWS S3][1] to [Azure Storage][2]. Nothing sp
 
 <!-- excerpt -->
 
-Because this is network-IO bound process I didn't needed beefy machine with bunch of CPUs and plenty of RAM. I decided to spin up "Extra Small" [VM in Azure][3] datacenter ([West Europe][4] in my case). In my view it's easier on Azure. This VM has the network bandwidth limited to 5Mbps, as I learned later. Surprisingly the limitation is applied even when you connect to the same Azure datacenter (frankly even the same availability group). That caught me little off guard. 
+Because this is network-IO bound process I didn't needed beefy machine with bunch of CPUs and plenty of RAM. I decided to spin up "Extra Small" [VM in Azure][3] datacenter ([West Europe][4] in my case). In my view it's easier on Azure. This VM has the network bandwidth limited to 5Mbps, as I learned later. Surprisingly the limitation is applied even when you connect to the same Azure datacenter (frankly even the same availability group). That caught me little off guard.
 
 I didn't wanted to wait that long and I switched to "Small" VM instance where the bandwidth is (according to documentation) 100Mbps. But I was able to hit between 300Mbps to 500Mbps reading from AWS S3 and about 100Mbps to 200Mbps writing to Azure Blob Storage. Maybe when there's enough bandwidth available the limiting is not applied.
 

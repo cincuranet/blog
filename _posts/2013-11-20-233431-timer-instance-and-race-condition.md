@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-I'm spending now a lot of time working with [`Timer`][1] object. It's a class with such a simple surface, but there's still a lot to learn. How it works internally, the scheduling, ... This time I learned, luckily not the hard way, just by studying, about interesting race condition, I never though about. 
+I'm spending now a lot of time working with [`Timer`][1] object. It's a class with such a simple surface, but there's still a lot to learn. How it works internally, the scheduling, ... This time I learned, luckily not the hard way, just by studying, about interesting race condition, I never though about.
 
 <!-- excerpt -->
 
@@ -24,7 +24,7 @@ timer = new Timer(_ =&gt;
 }, null, TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 </pre>
 
-Looks good, right? Compiles. Runs fine. Or ... You probably know there's a catch. Else the blog post would not mention race condition. It runs fine in 99,99999% cases (100% for me so far ;)). The problem is, that the `timer.Change` call could happen _before_ the assignment on `L2`. Who would have thought that. :)  
+Looks good, right? Compiles. Runs fine. Or ... You probably know there's a catch. Else the blog post would not mention race condition. It runs fine in 99,99999% cases (100% for me so far ;)). The problem is, that the `timer.Change` call could happen _before_ the assignment on `L2`. Who would have thought that. :)
 
 When I first saw it on Jeffrey Richter's screen it was so clear to me. So easy. But honestly, I never thought about it.
 
@@ -38,7 +38,7 @@ timer = new Timer(_ =&gt;
 	//...
 	timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 }, null, Timeout.InfiniteTimeSpan, Timeout.InfiniteTimeSpan);
-timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan); 
+timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 </pre>
 
  Never mind. Every day I learn something new, is a good day.

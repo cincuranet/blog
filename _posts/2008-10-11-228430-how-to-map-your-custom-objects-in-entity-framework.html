@@ -22,19 +22,19 @@ public class Product
   private int _id;
   private string _name;
   private int _price;
-  
+
   public int ID
   {
     get { return _id; }
     set { _id = value; }
   }
-  
+
   public string Name
   {
     get { return _name; }
     set { _name = value; }
   }
-  
+
   public int Price
   {
     get { return _price; }
@@ -63,9 +63,9 @@ set
 {
   if (_changeTracker != null)
     _changeTracker.EntityMemberChanging("Name");
-  
+
   _name = value;
-  
+
   if (_changeTracker != null)
     _changeTracker.EntityMemberChanged("Name");
 }

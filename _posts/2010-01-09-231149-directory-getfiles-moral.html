@@ -11,8 +11,6 @@ layout: post
 
 <p>After some debugging I found, that the ordering of files from network share is different than from local drive. If you look to documentation you see:</p>
 <blockquote>The order of the returned file names is not guaranteed; use the Sort() method if a specific sort order is required.</blockquote>
-<p>Ahh, there's your problem. :) Sadly enough, the ordering from local drive looks stable and it's based on filename as expected. Thus in a lot of cases you'll not smell that something may go wrong. But on non local drives (for me my NAS) you'll hit this immediately.</p> 
+<p>Ahh, there's your problem. :) Sadly enough, the ordering from local drive looks stable and it's based on filename as expected. Thus in a lot of cases you'll not smell that something may go wrong. But on non local drives (for me my NAS) you'll hit this immediately.</p>
 
 <p>Never mind, could be worse (my first shot was some bug in my "MP3File" class and that will be really bad, as it could break users' files). This can be fixed easily.</p>
-
-

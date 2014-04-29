@@ -21,7 +21,7 @@ tortoiseproc /command:commit /path:.
 tortoiseproc /command:update /path:.
 </pre>
 
-<p>For a while I was happy with it. But typing it everytime or looking into history (I wish cmd/PS had Ctrl+R as bash has) was not perfect for me. So I started looking for a way to create alias in PowerShell. Some kind of alias. PowerShell, sure, has something like this, I thought. And it has - <code>Set-Alias</code>. Though, limited. If you try to create alias to command with hardcoded parameters, ...</p> 
+<p>For a while I was happy with it. But typing it everytime or looking into history (I wish cmd/PS had Ctrl+R as bash has) was not perfect for me. So I started looking for a way to create alias in PowerShell. Some kind of alias. PowerShell, sure, has something like this, I thought. And it has - <code>Set-Alias</code>. Though, limited. If you try to create alias to command with hardcoded parameters, ...</p>
 <pre class="brush:powershell">
 set-alias commit "tortoiseproc /command:commit /path:."
 </pre>
@@ -33,5 +33,5 @@ set-alias commit "tortoiseproc /command:commit /path:."
 set-alias update fn_update
 set-alias commit fn_commit
 function fn_update {tortoiseproc /command:update /path:.}
-function fn_commit {tortoiseproc /command:commit /path:.} 
+function fn_commit {tortoiseproc /command:commit /path:.}
 </pre>

@@ -21,7 +21,7 @@ So first thing first. I suppose you have nothing related to [ADO.NET provider fo
 install-package EntityFramework
 </pre>
 
-Then install provider. Here you need to be careful and install the "EF6 version" as the provider model was changed in Entity Framework 6. It's called `FirebirdSql.Data.FirebirdClient-EF6`.    
+Then install provider. Here you need to be careful and install the "EF6 version" as the provider model was changed in Entity Framework 6. It's called `FirebirdSql.Data.FirebirdClient-EF6`.
 
 <pre class="brush:plain">
 install-package FirebirdSql.Data.FirebirdClient-EF6

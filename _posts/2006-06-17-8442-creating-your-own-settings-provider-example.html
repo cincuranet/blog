@@ -8,7 +8,7 @@ category: none
 layout: post
 ---
 <p>Sometimes you'll need to create settings provider, which allows you to save configuration into specific format and/or specific place. In FW are some basic providers, but creating your own isn't difficult.</p>
-<p>This example shows (easy) way how to build simple provider, which save data into the specified file in xml.</p> 
+<p>This example shows (easy) way how to build simple provider, which save data into the specified file in xml.</p>
 <p>Note: Our provider will save only user scope settings (the default behavior of standard providers) but it&#8217;s not necessary.</p>
 <p>So, create new class and implement abstract class <code>SettingsProvider</code>. The first method we'll care about is <code>public override void Initialize(string name, NameValueCollection config)</code>. For this method we&#8217;ll provide only calling the parent.</p>
 <pre class="brush:csharp">

@@ -7,14 +7,14 @@ tags:
 category: none
 layout: post
 ---
-Sometimes I'm coding a simple task – start an operation at a given time. Some kind of scheduler in inside application. No, I'm not going to cry over [`Thread`][1] and [`Thread.Sleep`][2] abuse. I'm over it. :) It's [`Timer`][3] usage. 
+Sometimes I'm coding a simple task – start an operation at a given time. Some kind of scheduler in inside application. No, I'm not going to cry over [`Thread`][1] and [`Thread.Sleep`][2] abuse. I'm over it. :) It's [`Timer`][3] usage.
 
 <!-- excerpt -->
 
 That's of course way better than above mentioned abuse. But let's say you want to run the operation every day at 14:00 (that's 2PM for some ;)). The code is often like this (or close to it).
 
 <pre class="brush:csharp">
-var timer = new Timer(_ =&gt; 
+var timer = new Timer(_ =&gt;
 {
 	var now = DateTimeOffset.UtcNow; // or maybe in your local time
 	if (now.Hour == 14 &amp;&amp; now.Minute == 0)
@@ -75,7 +75,7 @@ static class DailyHourMinuteTimerHelper
 		}, state, FixTimer(ComputeDueTime(nowFactory, hour, minute)), Timeout.InfiniteTimeSpan);
 		return timer;
 	}
-	
+
 	static TimeSpan FixTimer(TimeSpan timeSpan)
 	{
 		// on these long intervals the Timer drifts a little (probably because time corrections when synchronized from NTP)

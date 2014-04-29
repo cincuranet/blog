@@ -10,7 +10,7 @@ category: none
 layout: post
 ---
 Mixing IO-bound and CPU-bound operations in a single chunk of code isn't always a base idea. Like computing hashes/checksums. You read the data from storage and you compute the hash. When all bytes are read, you're done. Of course you can do it as a producer-consumer with a ring buffer, but mixing IO-bound and CPU-bound here is damn straightforward.
- 
+
 If you look at [`SHA1Managed` class][1] you'll find [`ComputeHash`][2] method. Sadly it's synchronous. Thus if you'll point it to a huge file (i.e. `FileStream`) on a slow media you'll be wasting resources while waiting for the result. But given the reading from stream is basically the only IO operation here it shouldn't be hard to make it asynchronous. I thought.
 
 <!-- excerpt -->

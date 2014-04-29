@@ -12,7 +12,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Scott Guthrie recently posted article about <a href="http://weblogs.asp.net/scottgu/archive/2010/06/30/new-embedded-database-support-with-asp-net.aspx">New Embedded Database Support with ASP.NET</a>. This made me think about other options, <a href="http://www.firebirdsql.org">Firebird</a> in particular, and advantages and disadvantages. What I'm going to do is to very shortly introduce <a href="http://www.firebirdsql.org/manual/fbmetasecur-embedded.html">Firebird Embedded</a> here and then compare it with features Scott wrote in his article.</p> 
+<p>Scott Guthrie recently posted article about <a href="http://weblogs.asp.net/scottgu/archive/2010/06/30/new-embedded-database-support-with-asp-net.aspx">New Embedded Database Support with ASP.NET</a>. This made me think about other options, <a href="http://www.firebirdsql.org">Firebird</a> in particular, and advantages and disadvantages. What I'm going to do is to very shortly introduce <a href="http://www.firebirdsql.org/manual/fbmetasecur-embedded.html">Firebird Embedded</a> here and then compare it with features Scott wrote in his article.</p>
 
 <p>Firebird Embedded, shortly, is Firebird database server in one DLL. No need to install etc., just load this DLL and use it. To be precise, there are some other DLLs, i.e. to support national charsets, but it's still in under 10MB all. The database itself is built from same sources as "full" server and it's not limited in any way.</p>
 
@@ -29,4 +29,3 @@ layout: post
 <p><i> Easy Migration to SQL Server </i> - ahh, my favorite point. The Firebird Project has of course whopping number of tools to support migration from Embedded to "full". The most used is … nothing. The databases are fully compatible and you can switch servers without any other tools, migration, conversion, … Just place it where you want it and connect to it, either with "full" or Embedded Firebird. And to switch your application? Again nothing. Same ADO.NET provider, just change connection string, if needed. Mostly you'll add server IP address and maybe different path and manually switch server type, if you want. Really the migration is so simple. It is one minute task and thanks to same tool set, no matter what you version your targeting during development, your application will work with the other as well without any additional effort.</p>
 
 <p>You like Firebird Embedded? I do, a lot. SQL Server Compact Edition 4 looks promising, but Firebird has something to offer as well. And recall, it's based on same sources as "full" Firebird, very mature codebase, examined with tons of installations.</p>
-

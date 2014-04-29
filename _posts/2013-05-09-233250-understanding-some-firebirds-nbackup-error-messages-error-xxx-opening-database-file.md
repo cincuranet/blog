@@ -11,7 +11,7 @@ Because on the server where the application is running I'm unable to do backup u
 
 <!-- excerpt -->
 
-If you have done backup using process described above and you have the file, you can't just start using it. You need to "restore it", which means changing a flag inside the database file. This is where the `nbackup`'s `-F` switch comes to play. But no matter what I was doing, I was getting: 
+If you have done backup using process described above and you have the file, you can't just start using it. You need to "restore it", which means changing a flag inside the database file. This is where the `nbackup`'s `-F` switch comes to play. But no matter what I was doing, I was getting:
 
 <pre class="brush:plain">
 Failure: Error (5) opening database file: &lt;some&gt;.fdb

@@ -18,7 +18,7 @@ insert into NullTest values (1, 0);
 insert into NullTest values (2, null);
 </pre>
 
-<p>If you now try to query this table via LINQ (i.e. LINQ to Entities) you may get surprising results.</p> 
+<p>If you now try to query this table via LINQ (i.e. LINQ to Entities) you may get surprising results.</p>
 
 <pre class="brush:csharp">
 foreach (var item in ent.NullTests.Where(x => x.b != true))
@@ -32,7 +32,7 @@ foreach (var item in ent.NullTests.AsEnumerable().Where(x => x.b != true))
 }
 </pre>
 
-<p>If you run this code, you'll get different results.</p> 
+<p>If you run this code, you'll get different results.</p>
 
 <pre class="brush:plain">
 ID: 1    B: False

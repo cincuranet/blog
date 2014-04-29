@@ -8,7 +8,7 @@ layout: post
 ---
 <p>Shortly: Very.</p>
 
-<p>I hate the idea of instead of triggers and I made a couple of blog posts several times. And even worse is the implementation behavior on MS SQL. And the cascade constraints are bad too.</p> 
+<p>I hate the idea of instead of triggers and I made a couple of blog posts several times. And even worse is the implementation behavior on MS SQL. And the cascade constraints are bad too.</p>
 
 <p>Let's suppose this simple definition.</p>
 
@@ -29,7 +29,7 @@ begin
 end
 </pre>
 
-<p>You get an nice error: <code>Cannot create INSTEAD OF DELETE or INSTEAD OF UPDATE TRIGGER 'tr_test' on table 'detail'. This is  because the table has a FOREIGN KEY with cascading DELETE or UPDATE.</code>. What the hell??? :o Why?</p> 
+<p>You get an nice error: <code>Cannot create INSTEAD OF DELETE or INSTEAD OF UPDATE TRIGGER 'tr_test' on table 'detail'. This is  because the table has a FOREIGN KEY with cascading DELETE or UPDATE.</code>. What the hell??? :o Why?</p>
 
 <p>Again I got a direct proof, that in this area the MS SQL is wrong, very wrong. I would be willing to accept the limitation when I'll be doing there some <code>master</code> table manipulation (yes, as I said, cascade constraints are bad too). But this? I can hardly believe my eyes. The trigger is almost empty. Or am I missing someting on backround that limits this to work?</p>
 

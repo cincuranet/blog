@@ -11,4 +11,3 @@ layout: post
 <p>Fun today. I was trying to use <code>FirebirdClientFactory</code> from <a href="http://www.firebirdsql.org/en/net-provider">FirebirdClient</a> installed in GAC. Because it was used globally I was not editing <code>app.config</code>/<code>web.config</code> but <code>machine.config</code>. I went to <code>Framework</code> etc. directory and modified <code>machine.config</code>. And ... and it still wasn't working. Fast forward, I spent maybe an hour trying to figure out what's wrong. I was hopeless. Everything seemed fine. Randomly cd-ing through directories and thinking what I'm missing, I realized I didn't modified <code>machine.config</code> in <code>Framework64</code>. Stupid mistake.</p>
 
 <p>Sure after I corrected myself everything started working. Hope my story will save you time.</p>
-

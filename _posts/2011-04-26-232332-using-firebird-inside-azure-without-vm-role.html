@@ -22,7 +22,7 @@ layout: post
 public class CloudDriveHelper : IDisposable
 {
 	CloudDrive _drive;
-	
+
 	public string DriveLetter { get; private set; }
 
 	public CloudDriveHelper(CloudStorageAccount storageAccount, string name, int cacheSize = 0, int driveSize = 1024)
@@ -127,7 +127,7 @@ public static IEnumerable&lt;Tuple&lt;string, object&gt;&gt; SomeQuery(string da
 }
 </pre>
 
-<p>Well, it did worked OK. Before you think how cool is that I have some bad news. The cloud computing is mainly about scaling and elasticity. With this you have one drive and (have to have) one instance of Firebird working with it - you're not scaling. You can't scale with this solution. So it's more about being concept. However I came with two possible options, that are more realistic.</p> 
+<p>Well, it did worked OK. Before you think how cool is that I have some bad news. The cloud computing is mainly about scaling and elasticity. With this you have one drive and (have to have) one instance of Firebird working with it - you're not scaling. You can't scale with this solution. So it's more about being concept. However I came with two possible options, that are more realistic.</p>
 
 <p>First is having one special Worker role processing some data and storing it in Firebird database (for whatever reason). The Azure machines are quite powerful and if you have everything there why to setup your own server... And I think this can be worth in some scenarios (apart not being fault tolerant etc.).</p>
 

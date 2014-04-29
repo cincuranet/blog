@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Almost four years ago I wrote an article <a href="{{ site.url }}{% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}">Load with filtering or limiting</a>. You might want to do same stuff with <a href="http://msdn.microsoft.com/en-us/library/bb738708.aspx"><code>Include</code></a> method. It's not directly supported in this method but you can do it with anonymous object easily. There's only one catch, it's the anonymous object. That means, if you need the entities you need to manually select these out on <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx"><code>IEnumerable&lt;T&gt;</code></a> (doing it on query isn't going to work because <a href="http://msdn.microsoft.com/en-us/data/aa937723">Entity Framework</a> will (correctly) figure out you're not using the pieces of anonymous object and will change the generated query appropriately).</p> 
+<p>Almost four years ago I wrote an article <a href="{{ site.url }}{% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}">Load with filtering or limiting</a>. You might want to do same stuff with <a href="http://msdn.microsoft.com/en-us/library/bb738708.aspx"><code>Include</code></a> method. It's not directly supported in this method but you can do it with anonymous object easily. There's only one catch, it's the anonymous object. That means, if you need the entities you need to manually select these out on <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx"><code>IEnumerable&lt;T&gt;</code></a> (doing it on query isn't going to work because <a href="http://msdn.microsoft.com/en-us/data/aa937723">Entity Framework</a> will (correctly) figure out you're not using the pieces of anonymous object and will change the generated query appropriately).</p>
 
 <p>Small example:</p>
 <pre class="brush:csharp">
@@ -63,7 +63,7 @@ public static IEnumerable&lt;TMain&gt; Include2&lt;TMain, TOther&gt;(this IQuery
 }
 </pre>
 
-<p>The method is doing little bit of magic with expressions and anonymous type to do what you would normally write by hand. It returns <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx"><code>IEnumerable&lt;T&gt;</code></a> because the object needs to be unwrapped locally so you can't add additional pieces into query. I'm using <code>ParameterRebinder</code> from <a href="http://blogs.msdn.com/b/meek/archive/2008/05/02/linq-to-entities-combining-predicates.aspx">Colin Meek's post</a> to properly rewire parameters. Same functionality can be also found in <a href="http://nuget.org/packages/Mono.Linq.Expressions">Mono.Linq.Expressions</a>.</p> 
+<p>The method is doing little bit of magic with expressions and anonymous type to do what you would normally write by hand. It returns <a href="http://msdn.microsoft.com/en-us/library/9eekhta0.aspx"><code>IEnumerable&lt;T&gt;</code></a> because the object needs to be unwrapped locally so you can't add additional pieces into query. I'm using <code>ParameterRebinder</code> from <a href="http://blogs.msdn.com/b/meek/archive/2008/05/02/linq-to-entities-combining-predicates.aspx">Colin Meek's post</a> to properly rewire parameters. Same functionality can be also found in <a href="http://nuget.org/packages/Mono.Linq.Expressions">Mono.Linq.Expressions</a>.</p>
 
 <p>From input parameters types (yeah, <i>the power of static typing [<a href="http://en.wikipedia.org/wiki/Anders_Hejlsberg">Anders Hejlsberg</a>]</i>) you can see how to use it:</p>
 

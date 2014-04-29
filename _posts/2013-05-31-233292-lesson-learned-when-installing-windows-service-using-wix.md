@@ -9,7 +9,7 @@ tags:
 category: none
 layout: post
 ---
-As I was creating, few months back, some Windows service I also created `MSI` installer, using [WiX][1], for it. Pretty straightforward – bunch of files in one `Component` plus `ServiceInstall` and `ServiceControl`. Then as the service started to gain some features I had referenced some assemblies. So I had to always update the installer script to include new files. This turned out to be main problem, because I forgot it quite a few times. So I decided to script it. 
+As I was creating, few months back, some Windows service I also created `MSI` installer, using [WiX][1], for it. Pretty straightforward – bunch of files in one `Component` plus `ServiceInstall` and `ServiceControl`. Then as the service started to gain some features I had referenced some assemblies. So I had to always update the installer script to include new files. This turned out to be main problem, because I forgot it quite a few times. So I decided to script it.
 
 <!-- excerpt -->
 

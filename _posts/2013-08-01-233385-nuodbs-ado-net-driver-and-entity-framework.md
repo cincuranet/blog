@@ -27,7 +27,7 @@ If you want to go further I recommend heading the download page and getting the 
 
 I'll first create a simple application that accesses the data in NuoDB's standard Hockey database. I'll be using Code First, because then you can see all the code and you don't have to fiddle with creating EDMX file etc.
 
-Some basic structures: 
+Some basic structures:
 
 <pre class="brush:csharp">
 class HockeyContext : DbContext
@@ -66,7 +66,7 @@ class Hockey
 I'm here overriding the OnModelCreating to specify the mapping to the database (and even explicitly setting the information about the key, though the default convention would match it). If you've ever used Entity Framework and Code First this should be familiar to you.
 
 Now some code to actually do something:
- 
+
 <pre class="brush:csharp">
 using (var ctx = new HockeyContext())
 {
@@ -97,7 +97,7 @@ using (var ctx = new HockeyContext())
 </pre>
 
 This code issues few queries to the database using some orderings, projections and filters. The last batch of code also prints the query being executed to the console, so you can see it and compare it with what you might write. The query looks like:
- 
+
 <pre class="brush:sql">
 SELECT
 "Extent1"."NAME" AS "NAME"

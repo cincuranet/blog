@@ -37,14 +37,14 @@ namespace port_listen
   class ClientWorking
   {
     private Stream ClientStream;
-    private TcpClient Client; 
-    
+    private TcpClient Client;
+
     public ClientWorking(TcpClient Client)
     {
       this.Client = Client;
       ClientStream = Client.GetStream();
     }
-  
+
     public void DoSomethingWithClient()
     {
       StreamWriter sw = new StreamWriter(ClientStream);

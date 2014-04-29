@@ -23,14 +23,14 @@ using (FbConnection conn = new FbConnection(connectionStringBuilder.ToString()))
 
   using (FbCommand cmd = conn.CreateCommand())
   {
-    // working with GUID  
+    // working with GUID
     cmd.CommandText = "insert into GUID_test values (@guid)";
-    
+
     // classic way, works good
     cmd.Parameters.Add("@guid", FbDbType.Char, 16).Value = Guid.NewGuid().ToByteArray();
     // another way, maybe better readability, but same result
     cmd.Parameters.Add("@guid", FbDbType.Guid).Value = Guid.NewGuid();
-    
+
     cmd.ExecuteNonQuery();
   }
 

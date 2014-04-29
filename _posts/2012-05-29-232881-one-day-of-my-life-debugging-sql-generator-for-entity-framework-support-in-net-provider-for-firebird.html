@@ -9,16 +9,16 @@ tags:
 category: none
 layout: post
 ---
-<p>Couple of days back I was hunting some problem in code, that processes and later translates <a href="http://msdn.microsoft.com/en-us/library/bb308959.aspx">LINQ</a> queries preprocessed by <a href="http://msdn.com/ef">Entity Framework</a>. The bottom line is that you are in code, where you have pieces of query, you're rewriting these (even partially) or exchanging/adding new pieces if needed. You don't have whole picture, because pieces are changing and so on.</p> 
+<p>Couple of days back I was hunting some problem in code, that processes and later translates <a href="http://msdn.microsoft.com/en-us/library/bb308959.aspx">LINQ</a> queries preprocessed by <a href="http://msdn.com/ef">Entity Framework</a>. The bottom line is that you are in code, where you have pieces of query, you're rewriting these (even partially) or exchanging/adding new pieces if needed. You don't have whole picture, because pieces are changing and so on.</p>
 
 <p>So even if you partially know what you are producing, at the end you have to look at final SQL command and see whether it's correct and/or semantically same as previous one, if you applied some changes or optimizations.</p>
 
 <p>It took my roughly a day to find cause of issue and fix it. During this I created a lot of notes with commands and did a lot comparisons. I am placing these here, thus you can take a look at these and enjoy the feeling with me. If you're interested, you can also check the <a href="http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/NETProvider/source/FirebirdSql/Data/Entity/SqlGenerator.cs?view=markup">SqlGenerator</a> class, where I was working mainly.</p>
 
 <pre class="brush:sql">
-SELECT 
-"Skip1"."Limit1"."id_memo" AS "id_memo", 
-"Skip1"."Limit1"."id_text_grup" AS "id_text_grup", 
+SELECT
+"Skip1"."Limit1"."id_memo" AS "id_memo",
+"Skip1"."Limit1"."id_text_grup" AS "id_text_grup",
 "Skip1"."Extent2"."nom_grup" AS "nom_grup"
 FROM ( SELECT SKIP (0) "Limit1"."id_memo" AS "id_memo", "Limit1"."id_text_grup" AS "id_text_grup1", "Extent2"."id_text_grup" AS "id_text_grup2", "Extent2"."nom_grup" AS "nom_grup"
 	FROM   (SELECT FIRST (45) "Extent1"."id_memo" AS "id_memo", "Extent1"."id_text_grup" AS "id_text_grup"
@@ -30,9 +30,9 @@ FROM ( SELECT SKIP (0) "Limit1"."id_memo" AS "id_memo", "Limit1"."id_text_grup" 
 </pre>
 
 <pre class="brush:sql">
-SELECT SKIP (0) 
-"Limit1"."id_memo" AS "id_memo", 
-"Limit1"."id_text_grup" AS "id_text_grup", 
+SELECT SKIP (0)
+"Limit1"."id_memo" AS "id_memo",
+"Limit1"."id_text_grup" AS "id_text_grup",
 "Extent2"."nom_grup" AS "nom_grup"
 FROM   (SELECT FIRST (45) "Extent1"."id_memo" AS "id_memo", "Extent1"."id_text_grup" AS "id_text_grup"
 	FROM "memos" AS "Extent1"
@@ -41,9 +41,9 @@ LEFT OUTER JOIN "texts_grups" AS "Extent2" ON "Limit1"."id_text_grup" = "Extent2
 </pre>
 
 <pre class="brush:sql">
-SELECT SKIP (0) 
-"Limit1"."id_memo" AS "id_memo", 
-"Limit1"."id_text_grup" AS "id_text_grup", 
+SELECT SKIP (0)
+"Limit1"."id_memo" AS "id_memo",
+"Limit1"."id_text_grup" AS "id_text_grup",
 "Extent2"."nom_grup" AS "nom_grup"
 FROM   (SELECT FIRST (45) "Extent1"."id_memo" AS "id_memo", "Extent1"."id_text_grup" AS "id_text_grup"
 	FROM "memos" AS "Extent1"
@@ -52,9 +52,9 @@ LEFT OUTER JOIN "texts_grups" AS "Extent2" ON "Limit1"."id_text_grup" = "Extent2
 </pre>
 
 <pre class="brush:sql">
-SELECT SKIP (0) 
-"Limit1"."id_memo" AS "id_memo", 
-"Limit1"."id_text_grup" AS "id_text_grup", 
+SELECT SKIP (0)
+"Limit1"."id_memo" AS "id_memo",
+"Limit1"."id_text_grup" AS "id_text_grup",
 "Extent2"."nom_grup" AS "nom_grup"
 FROM   (SELECT FIRST (45) "Extent1"."id_memo" AS "id_memo", "Extent1"."id_text_grup" AS "id_text_grup"
 	FROM "memos" AS "Extent1"
@@ -64,9 +64,9 @@ ORDER BY "Limit1"."id_memo" ASC
 </pre>
 
 <pre class="brush:sql">
-SELECT SKIP (0) 
-"D"."id_memo" AS "id_memo", 
-"D"."id_text_grup" AS "id_text_grup", 
+SELECT SKIP (0)
+"D"."id_memo" AS "id_memo",
+"D"."id_text_grup" AS "id_text_grup",
 "E"."nom_grup" AS "nom_grup"
 FROM   (SELECT FIRST (45) "C"."id_memo" AS "id_memo", "C"."id_text_grup" AS "id_text_grup"
 	FROM "memos" AS "C"
@@ -89,15 +89,15 @@ SELECT SKIP (0) "D"."id_memo" AS "id_memo", "D"."id_text_grup" AS "id_text_grup"
 
 <pre class="brush:sql">
 SELECT
-"H"."id_memo_data" AS "id_memo_data", 
-"H"."id_memo" AS "id_memo", 
-"H"."id_idioma" AS "id_idioma", 
+"H"."id_memo_data" AS "id_memo_data",
+"H"."id_memo" AS "id_memo",
+"H"."id_idioma" AS "id_idioma",
 "H"."text" AS "text"
-FROM   (SELECT SKIP (3) 
-	"C"."id_memo" AS "id_memo", 
-	(SELECT 
+FROM   (SELECT SKIP (3)
+	"C"."id_memo" AS "id_memo",
+	(SELECT
 		COUNT("D"."A1") AS "A1"
-		FROM ( SELECT 
+		FROM ( SELECT
 			1 AS "A1"
 			FROM "memos_data" AS "E"
 			WHERE "C"."id_memo" = "E"."id_memo"
@@ -109,16 +109,16 @@ INNER JOIN "memos_data" AS "H" ON "G"."id_memo" = "H"."id_memo"
 
 <pre class="brush:sql">
 SELECT
-"H"."id_memo_data" AS "id_memo_data", 
-"H"."id_memo" AS "id_memo", 
-"H"."id_idioma" AS "id_idioma", 
+"H"."id_memo_data" AS "id_memo_data",
+"H"."id_memo" AS "id_memo",
+"H"."id_idioma" AS "id_idioma",
 "H"."text" AS "text"
 FROM   (SELECT SKIP (3) "B"."id_memo" AS "id_memo", "B"."C1" AS "C1"
-	FROM ( SELECT 
-		"C"."id_memo" AS "id_memo", 
-		(SELECT 
+	FROM ( SELECT
+		"C"."id_memo" AS "id_memo",
+		(SELECT
 			COUNT("D"."A1") AS "A1"
-			FROM ( SELECT 
+			FROM ( SELECT
 				1 AS "A1"
 				FROM "memos_data" AS "E"
 				WHERE "C"."id_memo" = "E"."id_memo"
@@ -130,17 +130,17 @@ INNER JOIN "memos_data" AS "H" ON "G"."id_memo" = "H"."id_memo"
 </pre>
 
 <pre class="brush:sql">
-SELECT 
-"H"."id_memo_data" AS "id_memo_data", 
-"H"."id_memo" AS "id_memo", 
-"H"."id_idioma" AS "id_idioma", 
+SELECT
+"H"."id_memo_data" AS "id_memo_data",
+"H"."id_memo" AS "id_memo",
+"H"."id_idioma" AS "id_idioma",
 "H"."text" AS "text"
 FROM   (SELECT SKIP (3) "skip"."id_memo" AS "id_memo", "skip"."C1" AS "C1"
-	FROM ( SELECT 
-		"C"."id_memo" AS "id_memo", 
-		(SELECT 
+	FROM ( SELECT
+		"C"."id_memo" AS "id_memo",
+		(SELECT
 			COUNT("D"."A1") AS "A1"
-			FROM ( SELECT 
+			FROM ( SELECT
 				1 AS "A1"
 				FROM "memos_data" AS "E"
 				WHERE "C"."id_memo" = "E"."id_memo"

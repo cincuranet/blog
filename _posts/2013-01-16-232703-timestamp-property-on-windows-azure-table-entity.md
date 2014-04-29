@@ -14,7 +14,7 @@ Every entity in [Azure Table Storage][1] has `PartitionKey`, `RowKey` and `Times
 
 <!-- excerpt -->
 
-The `Timestamp` property is maintained by server and it's the time the entity was last modified. Simple as it is. Because the property is always there, I thought it would be good to actually use it. But it's not. This property is not being "indexed" (not even slightly :)) or anything like that. That means any query including condition on it will be as slow as table scan (or any other property condition). And that's something very _very_ slow, especially if you have dozens of partitions with millions of records and you're doing range condition (not mentioning the limit on one batch for result). 
+The `Timestamp` property is maintained by server and it's the time the entity was last modified. Simple as it is. Because the property is always there, I thought it would be good to actually use it. But it's not. This property is not being "indexed" (not even slightly :)) or anything like that. That means any query including condition on it will be as slow as table scan (or any other property condition). And that's something very _very_ slow, especially if you have dozens of partitions with millions of records and you're doing range condition (not mentioning the limit on one batch for result).
 
 And I learned that by my experience. :) Because the [secondary indices are not here yet][2], the only option, if you're doing really a lot of queries based on date&time/last modified to (ab)use `RowKey` (or build and maintain secondary index yourself).
 

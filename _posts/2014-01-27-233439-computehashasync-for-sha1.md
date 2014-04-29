@@ -9,7 +9,7 @@ tags:
 category: none
 layout: post
 ---
-[Previously I blogged about creating asynchronous ComputeHash method but for SHA1Managed][1]. But what if you want to use best implementation your platform has and you're using [`SHA1.Create`][2]? Well then you need to use what's available in public space for you. 
+[Previously I blogged about creating asynchronous ComputeHash method but for SHA1Managed][1]. But what if you want to use best implementation your platform has and you're using [`SHA1.Create`][2]? Well then you need to use what's available in public space for you.
 
 <!-- excerpt -->
 

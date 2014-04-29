@@ -13,7 +13,7 @@ When the [Entity Framework][1] was first introduced it came with (basically) two
 
 <!-- excerpt -->
 
-Recently Entity Framework added support for spatial data (and enums, ...). All examples I've ever seen around spatial data and Entity Framework were using LINQ (obviously). Only few weeks ago I realized how the querying should work with Entity SQL. As it turned out spatial data are not first class citizen in Entity SQL world. There's no [literal][5] for i.e. point. But canonical functions are here to save you. There's a [bunch of these spatial data related][6]. What we're looking for though is `GeometryFromText`/`GeographyFromText`. With these you can [construct][7] `Geometry`/`Geography` datatype from [well-known text (WKT)][8] and use it in query. 
+Recently Entity Framework added support for spatial data (and enums, ...). All examples I've ever seen around spatial data and Entity Framework were using LINQ (obviously). Only few weeks ago I realized how the querying should work with Entity SQL. As it turned out spatial data are not first class citizen in Entity SQL world. There's no [literal][5] for i.e. point. But canonical functions are here to save you. There's a [bunch of these spatial data related][6]. What we're looking for though is `GeometryFromText`/`GeographyFromText`. With these you can [construct][7] `Geometry`/`Geography` datatype from [well-known text (WKT)][8] and use it in query.
 
 I've never used Entity SQL query in any real-world application I created. I'm too afraid of typos etc. But I did a lot of magic with expression trees. :) Wondering what percentage of people using Entity Framework is using Entity SQL and whether there are some scenarios that are crazy hard in LINQ...
 

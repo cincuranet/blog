@@ -8,6 +8,6 @@ layout: post
 ---
 <p><a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d">Entity Framework v4 CTP5</a> added some new nice features since <a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=4e094902-aeff-4ee2-a12d-5881d4b0dd3e">CTP4</a>, for example the <a href="{{ site.url }}{% post_url 2010-12-09-232210-dbset-t-local-property-efv4-ctp5 %}">DbSet&lt;T&gt;.Local property I was blogging about</a> or <a href="http://blogs.msdn.com/b/adonet/archive/2010/12/15/ef-feature-ctp5-validation.aspx">Validation</a>. But, sadly, there's something missing, mainly due to huge refactoring.</p>
 
-<p>I hit the wall with one in particular. It's entity splitting together with TPH inheritance. If you try to map it, you'll get <code>Entity splitting cannot be specified for type '&lt;entity type&gt;' since it is part of an inheritance hierarchy.</code>. Bummer. So one of the projects I'm working on now, is stuck in CTP4. :)</p> 
+<p>I hit the wall with one in particular. It's entity splitting together with TPH inheritance. If you try to map it, you'll get <code>Entity splitting cannot be specified for type '&lt;entity type&gt;' since it is part of an inheritance hierarchy.</code>. Bummer. So one of the projects I'm working on now, is stuck in CTP4. :)</p>
 
 <p>On the other hand, the good news (from reliable source ;)) is, that in RTM this will be working fine.</p>

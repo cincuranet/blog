@@ -11,7 +11,7 @@ I was today trying to add new package source to be used. It's a private feed fro
 
 <!-- excerpt -->
 
-In this file you can add few elements and have another package source added. 
+In this file you can add few elements and have another package source added.
 
 <pre class="brush:xml">
 	&lt;packageSources&gt;
@@ -22,6 +22,6 @@ In this file you can add few elements and have another package source added.
 	&lt;/activePackageSource&gt;
 </pre>
 
-And it works with everything in Visual Studio. Not only in _Package Manager Console_. The VS settings contains the new feed, the _Manage NuGet Packages_ works with it too. 
+And it works with everything in Visual Studio. Not only in _Package Manager Console_. The VS settings contains the new feed, the _Manage NuGet Packages_ works with it too.
 
 Sweet. Well designed, NuGet.

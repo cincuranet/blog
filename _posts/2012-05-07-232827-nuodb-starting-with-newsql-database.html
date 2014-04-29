@@ -23,7 +23,7 @@ layout: post
 &gt;start bin\nuodb.exe --chorus TestChorus --password TestPwd --archive "C:\Users\Jiri\Desktop\NuoDBStorage" <i>--initialize</i>
 </pre>
 
-<p>The first command starts broker. Second starts transaction node in <code>TestChorus</code> with initial user/pwd <code>admin</code>/<code>admin</code>. And last command starts archive node, the data will be stored in <code>C:\Users\Jiri\Desktop\NuoDBStorage</code> directory. The <code>--initialize</code> switch is used only first time, to, well, initialize the storage itself. That's it, minimal set up to start playing with NuoDB. Now we can connect to it and start playing with SQL.</p> 
+<p>The first command starts broker. Second starts transaction node in <code>TestChorus</code> with initial user/pwd <code>admin</code>/<code>admin</code>. And last command starts archive node, the data will be stored in <code>C:\Users\Jiri\Desktop\NuoDBStorage</code> directory. The <code>--initialize</code> switch is used only first time, to, well, initialize the storage itself. That's it, minimal set up to start playing with NuoDB. Now we can connect to it and start playing with SQL.</p>
 
 <pre class="brush:plain">
 &gt;bin\nuosql.exe TestChorus@localhost --user admin --password admin
@@ -45,4 +45,3 @@ SQL&gt;
 </pre>
 
 <p>Easy, right? So <a href="https://www.nuodb.com/download.php">get grab it</a> and play with it. Next time we'll try some failure scenarios and we'll explore how to connect from .NET and some other environments. Feel free to ask if you're interested in something.</p>
-

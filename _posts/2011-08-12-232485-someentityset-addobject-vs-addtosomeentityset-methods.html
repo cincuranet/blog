@@ -6,7 +6,7 @@ tags:
 category: none
 layout: post
 ---
-<p>Is it better to call <code>ObjectContext.SomeEntitySet.AddObject()</code> or <code>ObjectContext.AddToSomeEntitySet()</code>? Short answer is: It doesn't matter.</p> 
+<p>Is it better to call <code>ObjectContext.SomeEntitySet.AddObject()</code> or <code>ObjectContext.AddToSomeEntitySet()</code>? Short answer is: It doesn't matter.</p>
 
 <p>Long answer. The AddToSomeEntitySet method calls <code>base.AddObject("SomeEntitySet", someEntitySet);</code>, you can see it from generated code. The other method calls <code>base.Context.AddObject(this.FullyQualifiedEntitySetName, entity);</code>. Hence it's almost the same. Only difference is in <code>FullyQualifiedEntitySetName</code> property that is used. So it <i>might</i> be little bit slower, but I think it's unmesurable difference. Also take into account other parts of your application, honestly, where you're probably wasting more time.  8-)</p>
 

@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-Today I spotted [`#efhelp`][1] [question on Twitter][2] about using [`Find`][3] method but with predicate. 
+Today I spotted [`#efhelp`][1] [question on Twitter][2] about using [`Find`][3] method but with predicate.
 
 <!-- excerpt -->
 

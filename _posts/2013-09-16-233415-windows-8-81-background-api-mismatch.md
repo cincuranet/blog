@@ -12,7 +12,7 @@ While digging into some background stuff in WinRT I found some mismatch in API. 
 
 <!-- excerpt -->
 
-The first background operations is dealing with uploads and downloads. When you want to list all (in this case) background operations, you can call [`BackgroundDownloader.GetCurrentDownloadsAsync()`][1]. This method returns `IAsyncOperation&lt;IReadOnlyList&gt;`. Aka it's asynchronous and it's a method. 
+The first background operations is dealing with uploads and downloads. When you want to list all (in this case) background operations, you can call [`BackgroundDownloader.GetCurrentDownloadsAsync()`][1]. This method returns `IAsyncOperation&lt;IReadOnlyList&gt;`. Aka it's asynchronous and it's a method.
 
 The other one is dealing with background tasks. And when you want to all background tasks, you can call [`BackgroundTaskRegistration.AllTasks`][2]. This method returns simple `IReadOnlyDictionary&lt;Guid, IBackgroundTaskRegistration&gt;`. Aka it's synchronous and it's a property.
 

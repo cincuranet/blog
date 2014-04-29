@@ -19,7 +19,7 @@ declare variable column_name varchar(100);
 begin
   column_name = upper('id'); /* put here your column name */
   for select rdb$relation_name from rdb$relations r
-    where rdb$system_flag = 0 /* no system tables */ and 
+    where rdb$system_flag = 0 /* no system tables */ and
     rdb$view_blr is null /* no views */ and
     exists(select 1 from rdb$relation_fields rf where rf.rdb$relation_name = r.rdb$relation_name and rf.rdb$field_name = :column_name)
     into :table_name do

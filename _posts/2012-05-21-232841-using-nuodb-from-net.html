@@ -30,10 +30,10 @@ namespace NuoDB
 	{
 		[System.Runtime.InteropServices.DllImport("ODBCCP32.dll")]
 		static extern bool SQLConfigDataSource(IntPtr parent, int request, string driver, string attributes);
-		
+
 		static bool HandleDSN(bool remove)
 		{
-			return SQLConfigDataSource(IntPtr.Zero, remove ? /* ODBC_REMOVE_DSN */ 3 : /* ODBC_ADD_DSN */ 1, 
+			return SQLConfigDataSource(IntPtr.Zero, remove ? /* ODBC_REMOVE_DSN */ 3 : /* ODBC_ADD_DSN */ 1,
 			     "NuoDB ODBC Driver\0",
 			     "DSN=TestChorusDSN\0UID=admin\0PWD=admin\0Database=TestChorus@localhost\0");
 
@@ -76,7 +76,7 @@ namespace NuoDB
 							parameter = cmd.CreateParameter();
 							parameter.Value = i;
 							cmd.Parameters.Add(parameter);
-							
+
 							parameter = cmd.CreateParameter();
 							parameter.Value = string.Format("value of {0}", i);
 							cmd.Parameters.Add(parameter);
@@ -105,18 +105,18 @@ namespace NuoDB
 					tx.Commit();
 				}
 			}
-			
+
 			Console.WriteLine("Removing DSN...");
 			HandleDSN(remove: true);
 		}
-		
+
 	}
 }
 </pre>
 
 <p>First I create DSN for my application (using ugly raw method), using same chorus set up like in <a href="{{ site.url }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}">previous post</a>. The driver is called <code>NuoDB ODBC Driver</code>. Then I just specify username (<code>UID</code>), password (<code>PWD</code>) and database (<code>Database</code>) in form <code>&lt;chorus&gt;@&lt;location&gt;</code>, same as if you're using <code>nuosql</code>. This DSN is also removed at the end.</p>
 
-<p>Rest is simple .NET/C# code, same as any other <a href="http://msdn.microsoft.com/en-us/library/e80y5yhx">ADO.NET</a> code. Connection, transaction (if explicitly needed), command(s)...</p> 
+<p>Rest is simple .NET/C# code, same as any other <a href="http://msdn.microsoft.com/en-us/library/e80y5yhx">ADO.NET</a> code. Connection, transaction (if explicitly needed), command(s)...</p>
 
 <p>I create table (hence DDL and ExecuteNonQuery works fine) with some magic 8-) name. Then some inserts with parameters (hence parameters, Prepare and ExecuteNonQuery with DML works) and finally select (hence basic stuff around ExecuteReader and IDataReader works).</p>
 

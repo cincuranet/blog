@@ -19,7 +19,7 @@ My preparation took about two hours. And of course I wanted to do everything wit
 *	Wait. :)
 *	In admin panel you can see number of items in mailbox for selected user. As the DNS records start propagating you'll emails coming to new mailbox (and you'll also see your old mailbox being silent). Give it a more time, just to be sure majority has new DNS records (this may be up to few days, based on your TTL and real refresh rate of other DNS servers).
 *	Export current mailbox(es) to PST. Close Outlook.
-*	Activate "data import" in admin panel. This will give you FTP account where to upload the PST(s). 
+*	Activate "data import" in admin panel. This will give you FTP account where to upload the PST(s).
 *	Upload PST(s).
 *	Refresh the page mentioned in 7.
 *	Check the matching of filenames and users, correct if needed and start import. This will probably take a while. You could probably do it with Outlook as well, copying all items to new location, but I thought this could be faster.

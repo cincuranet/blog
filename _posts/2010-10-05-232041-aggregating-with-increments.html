@@ -19,7 +19,7 @@ internal static IEnumerable&lt;TResult&gt; IncrementalAggregate&lt;TSource, TRes
 {
 	bool first = true;
 	TResult intermediate = default(TResult);
-	
+
 	foreach (var item in data)
 	{
 		if (first)

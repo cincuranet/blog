@@ -10,16 +10,16 @@ layout: post
 <p>Uchovávám si logy z různých skriptů, které automaticky spouštím pro pozdější prozkoumání. Ale řešil jsem, jak jednoduše zajistit zápis do logu (občas někde něco člověk zapomene) a případně jeho potlačení. Nakonec jsem vymyslel jednoduché řešení:</p>
 
 <pre class="brush:plain">
-@echo off 
+@echo off
 
 if "%1" NEQ "CALL" (
 call %0 CALL > batak.log
 goto finito
-) else ( 
+) else (
 
  rem prikazy ...
-goto finito 
-) 
+goto finito
+)
 
 :FINITO
 </pre>

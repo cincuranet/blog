@@ -47,16 +47,16 @@ select range.d, coalesce(sum(data.i), 0) from
 	union all
 	select current_date+3, 2 from rdb$database
 ) data
-right outer join 
+right outer join
 (
-	with recursive padding as 
+	with recursive padding as
 	(
 		select current_date as d from rdb$database
 		union all
 		select dateadd(day, 1, d) from padding where d &lt; dateadd(month, 1, current_date)
 	)
 	select * from padding
-) range 
+) range
 on (data.d = range.d)
 group by range.d
 </pre>
@@ -68,7 +68,7 @@ group by range.d
 <p>If you want to directly control the number of elements in sequence, simply use some counter.</p>
 
 <pre class="brush:sql">
-with recursive padding as 
+with recursive padding as
 (
 	select current_date as d, 0 as cnt from rdb$database
 	union all

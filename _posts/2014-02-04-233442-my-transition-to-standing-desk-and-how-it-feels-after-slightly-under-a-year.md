@@ -19,7 +19,7 @@ And from that point on I'm not sitting. The transition was easy for me, but your
 
 Now when I'm not in my office and I have to sit, I hate it. It's so unnatural (now 8-)). I have to take few times per hour walking breaks. Or I look for places where I can stand. Looks weird first, but as you explain to the people they get it.
 
-I'm glad I gave it a try. 
+I'm glad I gave it a try.
 
 In case you're you'd like to know what desk I bought, it's [Hobis MS 1400][1] ([English][2]).
 

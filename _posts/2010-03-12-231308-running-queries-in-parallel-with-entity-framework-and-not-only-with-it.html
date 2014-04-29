@@ -32,7 +32,7 @@ create table OneRowTable(x bit primary key);
 insert into OneRowTable values (0);
 </pre>
 
-<p>The table needs to have the primary key to be able to import it into entity model, the datatype doesn't matter (I was using MS SQL, hence the <code>bit</code>).</p> 
+<p>The table needs to have the primary key to be able to import it into entity model, the datatype doesn't matter (I was using MS SQL, hence the <code>bit</code>).</p>
 
 <p>What about the queries? Similar approach:</p>
 <pre class="brush:csharp">
@@ -47,47 +47,47 @@ var adata = data.AData;
 var bdata = data.BData;
 </pre>
 
-<p>The <code>a</code> and <code>b</code> are my testing tables. You can check there's only one query executed. Encapsulating this into some method is only piece of cake.</p> 
+<p>The <code>a</code> and <code>b</code> are my testing tables. You can check there's only one query executed. Encapsulating this into some method is only piece of cake.</p>
 
 <p>And how the query looks like? Well for my MS SQL test:</p>
 <pre class="brush:sql">
-SELECT 
-[UnionAll1].[x] AS [C1], 
-[UnionAll1].[C2] AS [C2], 
-[UnionAll1].[C1] AS [C3], 
-[UnionAll1].[id] AS [C4], 
-[UnionAll1].[id1] AS [C5], 
-[UnionAll1].[C3] AS [C6], 
-[UnionAll1].[C4] AS [C7], 
-[UnionAll1].[C5] AS [C8], 
+SELECT
+[UnionAll1].[x] AS [C1],
+[UnionAll1].[C2] AS [C2],
+[UnionAll1].[C1] AS [C3],
+[UnionAll1].[id] AS [C4],
+[UnionAll1].[id1] AS [C5],
+[UnionAll1].[C3] AS [C6],
+[UnionAll1].[C4] AS [C7],
+[UnionAll1].[C5] AS [C8],
 [UnionAll1].[C6] AS [C9]
-FROM  (SELECT 
-	[Project1].[C2] AS [C1], 
-	[Extent1].[x] AS [x], 
-	1 AS [C2], 
-	[Project1].[id] AS [id], 
-	[Project1].[id] AS [id1], 
-	[Project1].[C1] AS [C3], 
-	CAST(NULL AS int) AS [C4], 
-	CAST(NULL AS int) AS [C5], 
+FROM  (SELECT
+	[Project1].[C2] AS [C1],
+	[Extent1].[x] AS [x],
+	1 AS [C2],
+	[Project1].[id] AS [id],
+	[Project1].[id] AS [id1],
+	[Project1].[C1] AS [C3],
+	CAST(NULL AS int) AS [C4],
+	CAST(NULL AS int) AS [C5],
 	CAST(NULL AS varchar(1)) AS [C6]
 	FROM  [dbo].[OneRowTable] AS [Extent1]
-	LEFT OUTER JOIN  (SELECT 
-		[Extent2].[id] AS [id], 
-		[Extent2].[id] * 2 AS [C1], 
+	LEFT OUTER JOIN  (SELECT
+		[Extent2].[id] AS [id],
+		[Extent2].[id] * 2 AS [C1],
 		1 AS [C2]
 		FROM [dbo].[a] AS [Extent2]
 		WHERE ([Extent2].[x] IS NOT NULL) AND ([Extent2].[x] &gt; 10) ) AS [Project1] ON 1 = 1
 UNION ALL
-	SELECT 
-	2 AS [C1], 
-	[Extent3].[x] AS [x], 
-	[Extent4].[id] AS [id], 
-	CAST(NULL AS int) AS [C2], 
-	CAST(NULL AS int) AS [C3], 
-	CAST(NULL AS int) AS [C4], 
-	[Extent4].[id] AS [id1], 
-	[Extent4].[id] AS [id2], 
+	SELECT
+	2 AS [C1],
+	[Extent3].[x] AS [x],
+	[Extent4].[id] AS [id],
+	CAST(NULL AS int) AS [C2],
+	CAST(NULL AS int) AS [C3],
+	CAST(NULL AS int) AS [C4],
+	[Extent4].[id] AS [id1],
+	[Extent4].[id] AS [id2],
 	[Extent4].[y] AS [y]
 	FROM  [dbo].[OneRowTable] AS [Extent3]
 	CROSS JOIN [dbo].[b] AS [Extent4]

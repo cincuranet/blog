@@ -15,7 +15,7 @@ NuoDB recently released preview of stored procedures in version 1.2. You can rea
 
 <!-- excerpt -->
 
-First is variable declaration. Although you can do the standard way where you specify the variable name and type, you can also skip the type. Then there will be no checks, forgot about type inference. 
+First is variable declaration. Although you can do the standard way where you specify the variable name and type, you can also skip the type. Then there will be no checks, forgot about type inference.
 
 <pre class="brush:sql">
 var v1;

@@ -32,6 +32,6 @@ new Test(1, 2);
 new Test(1, 2, 3);
 </pre>
 
-<p>If you see the code in the context you probably spot the problem easily. The second row will not call the <code>params</code> but the other constructor.</p> 
+<p>If you see the code in the context you probably spot the problem easily. The second row will not call the <code>params</code> but the other constructor.</p>
 
 <p>Which is "cool" until you're doing some refactoring and you (as I did) add new constructor with <code>params</code> and everything starts behaving unexpectedly. Maybe this text will help somebody to realize this faster than I did. :D</p>

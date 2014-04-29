@@ -10,13 +10,13 @@ layout: post
 ---
 <p>Last week I was solving problem. The piece of code another code was plugged in was doing some crazy threading stuff inside while the code plugged in used some component that needed some methods (in my case just two) to be called in same thread. Well, that is to make the long story short.</p>
 
-<p>As I couldn't rely on the fact, that the thread calling the first method will be still available when the other one needs to be called I decided to simply steal one thread (in fact <a href="http://msdn.microsoft.com/en-us/library/4yd16hza.aspx">ThreadPool</a> thread) for it a abuse it exclusively. To encapsulate this hack I created this class.</p> 
+<p>As I couldn't rely on the fact, that the thread calling the first method will be still available when the other one needs to be called I decided to simply steal one thread (in fact <a href="http://msdn.microsoft.com/en-us/library/4yd16hza.aspx">ThreadPool</a> thread) for it a abuse it exclusively. To encapsulate this hack I created this class.</p>
 
 <p><small>Before you dive into, I have to note, that it is really not a general purpose class and you shouldn't blindly use it - you can easily use it badly and i.e. create unwanted shared state, screw the flow of your program or get wrong results due race conditions, ...</small></p>
 
 <pre class="brush:csharp">
 /// &lt;summary&gt;
-/// This is NOT a general purpose class. 
+/// This is NOT a general purpose class.
 /// Use with care.
 /// &lt;/summary&gt;
 sealed class ThreadMethodRunner : IDisposable

@@ -14,14 +14,14 @@ layout: post
 <p>Small example:</p>
 
 <pre class="brush:csharp">
-conn.BeginTransaction(new FbTransactionOptions() 
-	{ 
+conn.BeginTransaction(new FbTransactionOptions()
+	{
 		TransactionBehavior = FbTransactionBehavior.ReadCommitted,  // etc.
 		LockTables = new Dictionary&lt;string, FbTransactionBehavior&gt;
-		{ 
-			{ "TABLE_1", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Shared }, 
-			{ "TABLE_2", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Exclusive } 
-		} 
+		{
+			{ "TABLE_1", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Shared },
+			{ "TABLE_2", FbTransactionBehavior.LockWrite | FbTransactionBehavior.Exclusive }
+		}
 	});
 </pre>
 

@@ -12,7 +12,7 @@ layout: post
 
 <p>Let's model some kind of simple library and try to use there couple of Entity Framework's features. And to make things worse, try to do it with <a href="http://www.firebirdsql.org/index.php?op=files&id=netprovider">ADO.NET provider for Firebird</a>.</p>
 
-<p>Good news is I succeeded. My database structure was my first and non-touchable object (to be honest the first was the idea what to create and how to represent it in database) together with the idea of objects.</p> 
+<p>Good news is I succeeded. My database structure was my first and non-touchable object (to be honest the first was the idea what to create and how to represent it in database) together with the idea of objects.</p>
 
 <p>Here's the script for <a href="http://www.firebirdsql.org/">Firebird</a> database (<a href="{{ site.url }}{% post_url 2010-06-05-231382-firebird-and-entity-framework-4-stage-completed %}">Did you noticed we're fully Entity Framework 4 compatible?</a>). <small>See the quoted column names? Yes, not nice, but later in mapping in C# it looks nicer. ;) And I mixed the mapping with one for MS SQL Server (see below).</small></p>
 
@@ -134,7 +134,7 @@ public class Name
 #endregion
 </pre>
 
-<p>As you see I'm using pure <a href="http://en.wikipedia.org/wiki/Plain_Old_CLR_Object">POCO</a>s.</p> 
+<p>As you see I'm using pure <a href="http://en.wikipedia.org/wiki/Plain_Old_CLR_Object">POCO</a>s.</p>
 
 <p>So far we haven't touched any Entity Framework related stuff. So it's time to create our context and all <a href="http://en.wikipedia.org/wiki/Data_access_layer">DAL</a> related stuff. Mine is very simple and exposes only few properties and methods, just to keep it simple and focus on the aim.</p>
 
@@ -182,7 +182,7 @@ public class DoNothingWithMyDatabase&lt;TContext&gt; : IDatabaseInitializer&lt;T
 }
 </pre>
 
-<p>Pretty simple, isn't it. I'm using new stripped down objects DbContext (&larr; <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.aspx">ObjectContext</a>) and IDbSet/DbSet (&larr; <a href="http://msdn.microsoft.com/en-us/library/dd642094.aspx">IObjectSet</a>/<a href="http://msdn.microsoft.com/en-us/library/dd412719.aspx">ObjectSet</a>).</p> 
+<p>Pretty simple, isn't it. I'm using new stripped down objects DbContext (&larr; <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.aspx">ObjectContext</a>) and IDbSet/DbSet (&larr; <a href="http://msdn.microsoft.com/en-us/library/dd642094.aspx">IObjectSet</a>/<a href="http://msdn.microsoft.com/en-us/library/dd412719.aspx">ObjectSet</a>).</p>
 
 <p>You may also notice, I've created object which implements <code>IDatabaseInitializer</code>. That's because, by default, Entity Framework will try to create database for you and check whether your database matches model (<code>CreateDatabaseOnlyIfNotExists</code>). <i>I</i>'m controlling my database. You have to add somewhere into your application before doing anything with the context call to <code>SetInitializer</code>:</p>
 
@@ -269,7 +269,7 @@ class TranslatorConfiguration : EntityConfiguration&lt;Translator&gt;
 #if FB
 			.Map("TRANSLATORS_LANGUAGES",
 #else
-			.Map("Translators_Languages", 
+			.Map("Translators_Languages",
 #endif
 				(t, l) =&gt; new
 				{

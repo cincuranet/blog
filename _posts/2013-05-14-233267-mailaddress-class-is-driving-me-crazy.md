@@ -23,14 +23,14 @@ Console.WriteLine("GetHashCode1:\t{0}", mail1.GetHashCode());
 Console.WriteLine("GetHashCode2:\t{0}", mail2.GetHashCode());
 </pre>
 
-What do you think the output be? Drum roll please... 
+What do you think the output be? Drum roll please...
 
 <pre class="brush:plain">
 Equals?:        True
 Equals?:        True
 GetHashCode1:   582340455
 GetHashCode2:   1045083261
-</pre> 
+</pre>
 
 Why the hell somebody did the work overriding the [`Equals`][2] and not providing the implementation of [`GetHashCode`][3] that aligns with that?
 

@@ -56,7 +56,7 @@ namespace FooBar
         SqlGeography g = SqlGeography.STGeomFromWKB(new SqlBytes(bytes), 4326);
         return new LatLong { Lat = g.Lat.Value, Long = g.Long.Value };
       }
-  
+
       public byte[] ToSqlBytes()
       {
         return SqlGeography.Point(this.Lat, this.Long, 4326).STAsBinary().Buffer;
@@ -79,7 +79,7 @@ public LatLong Location
 }
 </pre>
 
-<p>This creates almost seamless support for other developers when using spatial data in Entity Framework – inserting, updating, deleting all works without notice from others (if you're not looking into internal implementation).</p> 
+<p>This creates almost seamless support for other developers when using spatial data in Entity Framework – inserting, updating, deleting all works without notice from others (if you're not looking into internal implementation).</p>
 
 <p>There are only two problems, both solvable.</p>
 
@@ -98,7 +98,7 @@ begin
 end
 </pre>
 
-<p>And</p> 
+<p>And</p>
 
 <pre class="brush:csharp">
 [EdmFunction("model.Store", "Distance")]
@@ -108,7 +108,7 @@ internal static int Distance(this byte[] location1, byte[] location2)
 }
 </pre>
 
-<p>Sure, when calling this function for a big resultsets it may be a performance bottleneck <small>(I recommend doing there as much work as possible, even at the price of more functions doing similar stuff, to not create a deep function calls.)</small>, but with additional filters it works well.</p> 
+<p>Sure, when calling this function for a big resultsets it may be a performance bottleneck <small>(I recommend doing there as much work as possible, even at the price of more functions doing similar stuff, to not create a deep function calls.)</small>, but with additional filters it works well.</p>
 
 <pre class="brush:csharp">
 protected IQueryable&lt;Something&gt; SomethingInDistance(LatLong point, int distance)
@@ -121,4 +121,3 @@ protected IQueryable&lt;Something&gt; SomethingInDistance(LatLong point, int dis
 <p>Another way could be to create a view (if you know the parameters in advance) and do explicit join (table/entityset &lt;&gt; view/entityset) in EF. Or do the filtering on client (if reasonably small). And I'm sure I'll find other ways how to get the data you want back, simply choose what fits your needs best.</p>
 
 <p>Although it may look like a lot of work, it isn't. In fact you're pretty fast (there's a high level of reusability) if you know what to do (and after one implementation you will).</p>
-

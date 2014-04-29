@@ -23,7 +23,7 @@ RelationshipManager IEntityWithRelationships.RelationshipManager
   {
     if (_relationships == null)
       _relationships = RelationshipManager.Create(this);
-    
+
     return _relationships;
   }
 }
@@ -71,7 +71,7 @@ get
 <pre class="brush:csharp">
 var q = from p in ctx.Products
          where p.ID &lt; 200
-         select p; 
+         select p;
 
 foreach (Product p in q)
 {

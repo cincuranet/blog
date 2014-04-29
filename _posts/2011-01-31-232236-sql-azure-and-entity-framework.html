@@ -198,7 +198,7 @@ using (Model1Container ctx = new Model1Container())
 	a2.LastLoggedIn = DateTime.Now;
 	ctx.Authors.AddObject(a1);
 	ctx.Authors.AddObject(a2);
-				
+
 	ctx.SaveChanges();
 	Debug.Assert(a1.ID != default(int));
 	Debug.Assert(a2.ID != default(int));
@@ -219,13 +219,13 @@ using (Model1Container ctx = new Model1Container())
 <p>Surprise. Nothing bloodthirsty. 8-) It works as expected. Two authors are created. You can check that by querying the table or by looking at database size at <a href="http://sql.azure.com">sql.azure.com</a>. The query itself is standard T-SQL query you can run on MS SQL Server as well, nothing magic.</p>
 
 <pre class="brush:sql">
-SELECT 
-[Extent1].[ID] AS [ID], 
-[Extent2].[Heading] AS [Heading], 
+SELECT
+[Extent1].[ID] AS [ID],
+[Extent2].[Heading] AS [Heading],
 [Extent2].[Created] AS [Created]
 FROM  [dbo].[Authors] AS [Extent1]
 INNER JOIN [dbo].[BlogPosts] AS [Extent2] ON [Extent1].[ID] = [Extent2].[Author_ID]
-WHERE (N'Cincura' = [Extent1].[Name_LastName]) AND ( EXISTS (SELECT 
+WHERE (N'Cincura' = [Extent1].[Name_LastName]) AND ( EXISTS (SELECT
 	1 AS [C1]
 	FROM  [dbo].[BlogPostTag] AS [Extent3]
 	INNER JOIN [dbo].[Tags] AS [Extent4] ON [Extent4].[ID] = [Extent3].[Tags_ID]

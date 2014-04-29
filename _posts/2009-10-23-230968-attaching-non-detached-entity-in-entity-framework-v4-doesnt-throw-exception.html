@@ -23,6 +23,6 @@ using (testovaciEntities ent = new testovaciEntities())
 }
 </pre>
 
-<p>It threw <code>InvalidOperationException</code> saying <code>An entity object cannot be referenced by multiple instances of IEntityChangeTracker.</code>. Right but I don't have access to my previous context anymore. This behavior caused me a lot of headache and I created couple of hacks to workaround it. But the good news is that the code above works fine in EF4.</p> 
+<p>It threw <code>InvalidOperationException</code> saying <code>An entity object cannot be referenced by multiple instances of IEntityChangeTracker.</code>. Right but I don't have access to my previous context anymore. This behavior caused me a lot of headache and I created couple of hacks to workaround it. But the good news is that the code above works fine in EF4.</p>
 
 <p>Neat! Together with other improvements I can get rid of my hacks and sleep well again. ;)</p>

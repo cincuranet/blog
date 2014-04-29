@@ -19,7 +19,7 @@ Today is your lucky day because the version 4.0.0.0 of FirebirdClient is waiting
 
 <!-- excerpt -->
 
-All changes can be found [in tracker][5]. The major version number has changed and it's indeed a big change. [Bug was found in connection pooling][6] (though visible probably only in some specific conditions because nobody noticed until me now) that resulted in from the ground up rework. That's the only change included. I believe the new connection pooling has cleaner code and offers more performace. Also because of this we decided to drop .NET 3.5 support and offer only 4.0 and higher. You can still use the older version until you're ready to migrate. 
+All changes can be found [in tracker][5]. The major version number has changed and it's indeed a big change. [Bug was found in connection pooling][6] (though visible probably only in some specific conditions because nobody noticed until me now) that resulted in from the ground up rework. That's the only change included. I believe the new connection pooling has cleaner code and offers more performace. Also because of this we decided to drop .NET 3.5 support and offer only 4.0 and higher. You can still use the older version until you're ready to migrate.
 
 The work for this bug fix was fully supported by [SMS-Timing][7]. Big thanks to them.
 
