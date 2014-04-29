@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-I'm now working a lot with emails and email addresses. Loading, parsing and so on. Because of that I'm also using a <a href="http://msdn.microsoft.com/en-us/library/yh392kbs.aspx">`MailAddress`</a> class a lot. And I hate it. The class, even simple, makes me want to scream.
+I'm now working a lot with emails and email addresses. Loading, parsing and so on. Because of that I'm also using a [`MailAddress`][1] class a lot. And I hate it. The class, even simple, makes me want to scream.
 
 <!-- excerpt -->
 
@@ -32,6 +32,10 @@ GetHashCode1:   582340455
 GetHashCode2:   1045083261
 </pre> 
 
-Why the hell somebody did the work overriding the <a href="http://msdn.microsoft.com/en-us/library/bsc2ak47.aspx">`Equals`</a> and not providing the implementation of <a href="http://msdn.microsoft.com/en-us/library/system.object.gethashcode.aspx">`GetHashCode`</a> that aligns with that?
+Why the hell somebody did the work overriding the [`Equals`][2] and not providing the implementation of [`GetHashCode`][3] that aligns with that?
 
 I think it's time to implement my own. 8-)
+
+[1]: http://msdn.microsoft.com/en-us/library/yh392kbs.aspx
+[2]: http://msdn.microsoft.com/en-us/library/bsc2ak47.aspx
+[3]: http://msdn.microsoft.com/en-us/library/system.object.gethashcode.aspx

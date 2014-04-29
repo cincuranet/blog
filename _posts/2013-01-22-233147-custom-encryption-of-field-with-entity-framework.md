@@ -8,11 +8,11 @@ tags:
 category: none
 layout: post
 ---
-Yesterday there was a good question on Twitter with `<a href="{{ site.url }}{% post_url 2011-11-11-232567-improved-efhelp-hashtag-cooperation-with-efhelp %}">#efhelp</a>` hashtag. The core is about using <a href="http://msdn.com/ef">Entity Framework</a> to store entities, that store the properties encrypted somehow. So it's custom encryption on client side (not on server). Of course, I could take Entity Framework sources and modify some file, but I wanted to do it with official release. The assumption I'm working with is that the entity itself knows how to encrypt and decrypt data (another valid approach might be that the `<a href="http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx">DbContext</a>` does that). 
+Yesterday there was a good question on Twitter with `[#efhelp][1]` hashtag. The core is about using [Entity Framework][2] to store entities, that store the properties encrypted somehow. So it's custom encryption on client side (not on server). Of course, I could take Entity Framework sources and modify some file, but I wanted to do it with official release. The assumption I'm working with is that the entity itself knows how to encrypt and decrypt data (another valid approach might be that the `[DbContext][3]` does that). 
 
 <!-- excerpt -->
 
-The problem is, that the entity itself doesn't know when it's providing data to EF's code (and hence it should be encrypted) and when to "normal" code (unencrypted). But we can kind of get this info (except looking at stack trace, which might be very slow). I <a href="{{ site.url }}{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}">used similar approach as I did few years back with validation</a>, before it was added directly to EF's API.
+The problem is, that the entity itself doesn't know when it's providing data to EF's code (and hence it should be encrypted) and when to "normal" code (unencrypted). But we can kind of get this info (except looking at stack trace, which might be very slow). I [used similar approach as I did few years back with validation][4], before it was added directly to EF's API.
 
 Here's the code:
 
@@ -132,3 +132,8 @@ Let's start with `SaveChanges` method. This method looks, before doing any savin
 What about reading. Here we don't have a directly one place where this happens. So I used another trick that's often used. Because what's the problem here? We need to distinguish between user code storing some values (this data should be encrypted) and EF's infrastructure storing values while materializing entities (this data is already encrypted). So the trick is to us some kind of flag or marker to recognize whether the data is encrypted or not (again my implementation is way too dumb, just proof of concept). If so, store it as is, it'll decrypted in `getter`. Else encrypt. 
 
 Nothing magical, right? :) Feel free to comment and/or improve.
+
+[1]: {{ site.url }}{% post_url 2011-11-11-232567-improved-efhelp-hashtag-cooperation-with-efhelp %}
+[2]: http://msdn.com/ef
+[3]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx
+[4]: {{ site.url }}{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}

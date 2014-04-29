@@ -6,7 +6,7 @@ tags:
 category: none
 layout: post
 ---
-Years ago I wrote post <a href="{{ site.url }}{% post_url 2008-10-20-228522-nullable-types-whats-faster %}">Nullable types - what's faster?</a> at that time on .NET FW 3.5. Today I came across post <a href="http://www.dotnetportal.cz/blogy/3/Tomas-Herceg/1965/Hratky-s-Nullable-typy">Hrátky s Nullable typy</a> which is related to my old post. That made me thinking about the test again and how it's the state today.
+Years ago I wrote post [Nullable types - what's faster?][1] at that time on .NET FW 3.5. Today I came across post [Hrátky s Nullable typy][2] which is related to my old post. That made me thinking about the test again and how it's the state today.
 
 <!-- excerpt -->
 
@@ -20,4 +20,7 @@ No difference in time (all times in a margin of error) and also the IL code is s
 
 I don't know whether the C# 5.0 compiler now generates new (better) code or the old results were skewed because of some other influence (i.e. running on different machine (VPC actually)). But it probably doesn't matter. Important is the code is same and you don't have to think how to write it (although it's a micro-optimization, probably premature). Write what you like more. :)
 
-If you have different results use comments and tell us (with some details about environment). 
+If you have different results use comments and tell us (with some details about environment).
+
+[1]: {{ site.url }}{% post_url 2008-10-20-228522-nullable-types-whats-faster %}
+[2]: http://www.dotnetportal.cz/blogy/3/Tomas-Herceg/1965/Hratky-s-Nullable-typy

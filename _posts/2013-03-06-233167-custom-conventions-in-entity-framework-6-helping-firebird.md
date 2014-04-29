@@ -7,13 +7,13 @@ tags:
 category: none
 layout: post
 ---
-<blockquote><a href="{{ site.url }}{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}">There's a part 2 of this story.</a></blockquote>
+<blockquote>[There's a part 2 of this story.][1]</blockquote>
 
-The next version of Entity Framework, version 6, has a nice new feature <a href="http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions">Custom Code First Conventions</a>. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up `_PK`? You can create convention for that and completely remove bunch of `HasKey()` lines. But that's not what I'm going to talk about, if you want to know more follow the link above.
+The next version of Entity Framework, version 6, has a nice new feature [Custom Code First Conventions][2]. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up `_PK`? You can create convention for that and completely remove bunch of `HasKey()` lines. But that's not what I'm going to talk about, if you want to know more follow the link above.
 
 <!-- excerpt -->
 
-<a href="http://www.firebirdsql.org">Firebird</a> as other databases adhering to SQL standard in naming and quotations treats unquoted column/table/... as upper case. A lot of ORMs normally quote everything, just to be safe and because it's easier than to hunt all the exceptions and places where it might collide with reserved keywords. I'm doing that too in provider for Entity Framework for Firebird. That means, that if you create some Code First model, the SQL statements will be quoted and using default naming convention - that's, simply speaking, same as property/class/... name. Not good. You have to write a lot of explicit `HasColumnName`.
+[Firebird][3] as other databases adhering to SQL standard in naming and quotations treats unquoted column/table/... as upper case. A lot of ORMs normally quote everything, just to be safe and because it's easier than to hunt all the exceptions and places where it might collide with reserved keywords. I'm doing that too in provider for Entity Framework for Firebird. That means, that if you create some Code First model, the SQL statements will be quoted and using default naming convention - that's, simply speaking, same as property/class/... name. Not good. You have to write a lot of explicit `HasColumnName`.
 
 But with custom conventions today, you can save your typing. Let's say, that my naming convention is like this. Property `SomeValue` goes to column `SOME_VALUE`. So it's upper case, words separated by underscores. In fact that's very close to what majority of Firebird users use.
 
@@ -110,3 +110,7 @@ WHERE 0 = "B"."MY_INTEGER"
 Few lines of code and could save you maybe hundreds of lines of code you'd have to write otherwise.
 
 <blockquote>Note: This code uses custom build FirebirdClient (with current stable one it will not work), because Entity Framework 6 contains some breaking changes for provider writers. I'm working on it and the test builds will be available soon.</blockquote>
+
+[1]: {{ site.url }}{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}
+[2]: http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions
+[3]: http://www.firebirdsql.org

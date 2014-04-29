@@ -8,13 +8,16 @@ category: none
 layout: post
 ---
 <blockquote>
-<a href="{{ site.url }}{% post_url 2013-10-05-233419-log4net-nuget-package-updated-without-some-goodies %}">Follow-up post.</a> 
+[Follow-up post.][1] 
 </blockquote>
 
-I just pushed new version (1.2.12) of <a href="http://www.nuget.org/packages/log4net">log4net NuGet package</a>. Except - as expected - updated binaries this package also adds bit better integration with NuGet and into project installation. 
+I just pushed new version (1.2.12) of [log4net NuGet package][2]. Except - as expected - updated binaries this package also adds bit better integration with NuGet and into project installation. 
 
 <!-- excerpt -->
 
 Now it adds default configuration into your `app.config`/`web.config` and also decorates the assembly with `XmlConfigurator` attribute with more or less default values (in a separate file, so you can easily remove it).
 
 Feedback is welcome.
+
+[1]: {{ site.url }}{% post_url 2013-10-05-233419-log4net-nuget-package-updated-without-some-goodies %}
+[2]: http://www.nuget.org/packages/log4net

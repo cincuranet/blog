@@ -11,7 +11,7 @@ tags:
 category: none
 layout: post
 ---
-NuoDB recently released preview of stored procedures in version 1.2. You can read more in <a href="http://dev.nuodb.com/techblog/nuodb-1-dot-2-sql-stored-procedures">this blog post</a>. As I was going though it I found some "syntax pieces" interesting. Kind of "modern", so it's not that `x` decades old SQL.
+NuoDB recently released preview of stored procedures in version 1.2. You can read more in [this blog post][1]. As I was going though it I found some "syntax pieces" interesting. Kind of "modern", so it's not that `x` decades old SQL.
 
 <!-- excerpt -->
 
@@ -64,3 +64,5 @@ end_for
 Pretty sweet. You saved yourself a lot of typing (that honestly isn't needed as the engine can infer these information).
 
 I have to say, somebody was thinking when designing this. There's still room for improvement – I don't like the `end_for`, for example; I think `begin ... end` is better (though in Bash I consider i.e. `if ... fi` pretty readable) – but it's still preview. What do you think?
+
+[1]: http://dev.nuodb.com/techblog/nuodb-1-dot-2-sql-stored-procedures

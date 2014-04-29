@@ -15,7 +15,7 @@ tags:
 category: none
 layout: post
 ---
-I recently started working on <a href="http://www.nuodb.com/devcenter/">NuoDB's .NET driver</a> to improve it and especially to introduce Entity Framework support. I was playing with NuoDB before, even from .NET, but <a href="{{ site.url }}{% post_url 2012-05-21-232841-using-nuodb-from-net %}">using only ODBC that was available at that time</a>. Currently good pure .NET driver is available and now it has even full <a href="http://msdn.com/ef">Entity Framework</a> support.
+I recently started working on [NuoDB's .NET driver][1] to improve it and especially to introduce Entity Framework support. I was playing with NuoDB before, even from .NET, but [using only ODBC that was available at that time][2]. Currently good pure .NET driver is available and now it has even full [Entity Framework][3] support.
 
 <!-- excerpt -->
 
@@ -172,4 +172,9 @@ Of course if you'd provide some more mapping details in OnModelCreating the scri
 
 I hope you enjoyed this quick overview of NuoDB's Entity Framework support and you'll grab the bytes and play with it.
 
-<blockquote>Written for <a href="http://www.nuodb.com/techblog/2013/08/01/nuodb-dotnet-driver-offers-entity-framework-support/">NuoDB's Techblog</a>.</blockquote>
+<blockquote>Written for [NuoDB's Techblog][4].</blockquote>
+
+[1]: http://www.nuodb.com/devcenter/
+[2]: {{ site.url }}{% post_url 2012-05-21-232841-using-nuodb-from-net %}
+[3]: http://msdn.com/ef
+[4]: http://www.nuodb.com/techblog/2013/08/01/nuodb-dotnet-driver-offers-entity-framework-support/

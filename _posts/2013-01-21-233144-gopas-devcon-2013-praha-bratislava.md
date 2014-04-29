@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-Velmi jednoduše. Středa 23. ledna 2013 v Praze. A repete v Bratislavě čtvrtek 31. 1. 2013. <a href="http://gopas.cz/News/Vyvojari-zbystrete!-GOPAS-DevCon-2013-je-tady!.aspx">Více info</a>.
+Velmi jednoduše. Středa 23. ledna 2013 v Praze. A repete v Bratislavě čtvrtek 31. 1. 2013. [Více info][1].
 
 <!-- excerpt -->
 
@@ -17,6 +17,7 @@ Moje přednáška na téma _Entity Framework 5, 6 a dále - využijte nové mož
 
 Budu se na vás těšit.
 
-_<a href="http://static.ow.ly/docs/ef_10Mo.pdf">Prezentace</a>_
+_[Prezentace][2]_
 
-
+[1]: http://gopas.cz/News/Vyvojari-zbystrete!-GOPAS-DevCon-2013-je-tady!.aspx
+[2]: http://static.ow.ly/docs/ef_10Mo.pdf

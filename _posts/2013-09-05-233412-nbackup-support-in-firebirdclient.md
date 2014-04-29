@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-Today I had a little of spare time and I had in my head support for <a href="http://tracker.firebirdsql.org/browse/DNET-224">NBackup via Services API</a> in <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdClient</a> for a long time. Especially since <a href="{{ site.url }}{% post_url 2013-05-27-233284-windows-azure-web-sites-and-firebird %}">NBackup saved me on Azure Websites</a>.I was guessing it should not take that long to implement it, if you're in a good mood. Surprisingly I was right with my estimate.
+Today I had a little of spare time and I had in my head support for [NBackup via Services API][1] in [FirebirdClient][2] for a long time. Especially since [NBackup saved me on Azure Websites][3].I was guessing it should not take that long to implement it, if you're in a good mood. Surprisingly I was right with my estimate.
 
 <!-- excerpt -->
 
@@ -38,3 +38,7 @@ nrest.Execute();
 </pre>
 
 It's pretty much same API as with regular `FbBackup` and `FbRestore`, just with incremental-ish backup flavor. What else you'd like to see in foreseeable future in FirebirdClient?
+
+[1]: http://tracker.firebirdsql.org/browse/DNET-224
+[2]: http://www.firebirdsql.org/en/net-provider/
+[3]: {{ site.url }}{% post_url 2013-05-27-233284-windows-azure-web-sites-and-firebird %}

@@ -8,11 +8,11 @@ tags:
 category: none
 layout: post
 ---
-Yesterday I was doing my <a href="http://www.x2develop.com/">parallel-threading-async-locking course</a> and at one time we discussed (unplanned) <a href="http://en.wikipedia.org/wiki/Thread-local_storage">Thread Local Storage (TLS)</a> with one participant. To make a long story short they needed to know when processing of some item in <a href="http://msdn.microsoft.com/en-us/library/System.Threading.ThreadPool.aspx">`ThreadPool`</a> completed. The default implementation of `ThreadPool` doesn't have such event, but luckily we can create such one. I sketched this in under five minutes and I think it might be worth for others.
+Yesterday I was doing my [parallel-threading-async-locking course][1] and at one time we discussed (unplanned) [Thread Local Storage (TLS)][2] with one participant. To make a long story short they needed to know when processing of some item in [`ThreadPool`][3] completed. The default implementation of `ThreadPool` doesn't have such event, but luckily we can create such one. I sketched this in under five minutes and I think it might be worth for others.
 
 <!-- excerpt -->
 
-It's just a proof of concept. But you can change it for you specific usage. If you dive deep (enough) you'll more or less end up with <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx">`Task`</a> object. :)
+It's just a proof of concept. But you can change it for you specific usage. If you dive deep (enough) you'll more or less end up with [`Task`][4] object. :)
 
 <pre class="brush:csharp">
 class MyThreadPool
@@ -41,3 +41,8 @@ class MyThreadPool
 	}
 }
 </pre>
+
+[1]: http://www.x2develop.com/
+[2]: http://en.wikipedia.org/wiki/Thread-local_storage
+[3]: http://msdn.microsoft.com/en-us/library/System.Threading.ThreadPool.aspx
+[4]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx

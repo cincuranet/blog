@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-Few years back I wrote a similar post <a href="{{ site.url }}{% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}">Making names of entities (or any identifiers) in Entity Framework model "code and developer friendly" (= not uppercase)</a>, but as the time goes, it's now little bit outdated. But yesterday <a href="http://www.thedatafarm.org">Julie Lerman</a>, while trying to find solution for one particular question, dug it out. As I was also then introduced to problem the solution there was indeed a good way to go. But to use it, it needed to be updated for current version of Entity Framework (version 5 in time of writing).
+Few years back I wrote a similar post [Making names of entities (or any identifiers) in Entity Framework model "code and developer friendly" (= not uppercase)][1], but as the time goes, it's now little bit outdated. But yesterday [Julie Lerman][2], while trying to find solution for one particular question, dug it out. As I was also then introduced to problem the solution there was indeed a good way to go. But to use it, it needed to be updated for current version of Entity Framework (version 5 in time of writing).
 
 <!-- excerpt -->
 
@@ -101,3 +101,6 @@ When you (re)generate your EDMX file, you can unleash this code (I think simple 
 Of course you can go further and change also names on i.e. navigational properties and so on. In fact in original post in comments you can find inspiration for it.
 
 Enjoy.
+
+[1]: {{ site.url }}{% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}
+[2]: http://www.thedatafarm.org

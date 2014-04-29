@@ -8,11 +8,11 @@ tags:
 category: none
 layout: post
 ---
-I'm spending now a lot of time working with <a href="http://msdn.microsoft.com/en-us/library/system.threading.timer(v=vs.110).aspx">`Timer`</a> object. It's a class with such a simple surface, but there's still a lot to learn. How it works internally, the scheduling, ... This time I learned, luckily not the hard way, just by studying, about interesting race condition, I never though about. 
+I'm spending now a lot of time working with [`Timer`][1] object. It's a class with such a simple surface, but there's still a lot to learn. How it works internally, the scheduling, ... This time I learned, luckily not the hard way, just by studying, about interesting race condition, I never though about. 
 
 <!-- excerpt -->
 
-Let's imagine you want to schedule operation every 10 seconds and the execution time does not count into interval. You will use the "kicking" trick (I blogged about it little <a href="{{ site.url }}{% post_url 2013-10-23-233425-scheduling-absolute-time-operations-with-timer %}">here</a> and <a href="{{ site.url }}{% post_url 2012-04-05-232782-executing-method-in-intervals-good-and-bad-approaches %}">here</a>):
+Let's imagine you want to schedule operation every 10 seconds and the execution time does not count into interval. You will use the "kicking" trick (I blogged about it little [here][2] and [here][3]):
 
 <pre class="brush:csharp">
 var timer = default(Timer);
@@ -43,4 +43,8 @@ timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 
  Never mind. Every day I learn something new, is a good day.
 
-And what about you? Do you do the "safe" assignment or assign directly? 
+And what about you? Do you do the "safe" assignment or assign directly?
+
+[1]: http://msdn.microsoft.com/en-us/library/system.threading.timer(v=vs.110).aspx
+[2]: {{ site.url }}{% post_url 2013-10-23-233425-scheduling-absolute-time-operations-with-timer %}
+[3]: {{ site.url }}{% post_url 2012-04-05-232782-executing-method-in-intervals-good-and-bad-approaches %}

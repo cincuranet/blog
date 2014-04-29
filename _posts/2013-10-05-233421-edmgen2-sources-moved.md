@@ -8,6 +8,10 @@ tags:
 category: none
 layout: post
 ---
-Today I decided to move <a href="{{ site.url }}{% post_url 2013-06-03-233311-edmgen2-for-net-4-5-and-entity-framework-5 %}">updated EdmGen2</a> sources from <a href="https://bitbucket.org/">BitBucket</a> to <a href="https://github.com/cincuranet/EdmGen2">GitHub</a>. I'm still absolutely happy with BitBucket for my private projects, but for OSS GitHub is de facto standard and EdmGen2 might be more visible there.
+Today I decided to move [updated EdmGen2][1] sources from [BitBucket][2] to [GitHub][3]. I'm still absolutely happy with BitBucket for my private projects, but for OSS GitHub is de facto standard and EdmGen2 might be more visible there.
 
 Feel free to contribute, issue pull requests, ...
+
+[1]: {{ site.url }}{% post_url 2013-06-03-233311-edmgen2-for-net-4-5-and-entity-framework-5 %}
+[2]: https://bitbucket.org/
+[3]: https://github.com/cincuranet/EdmGen2

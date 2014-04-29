@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-Some time during last week I came across <a href="https://twitter.com/peterritchie/status/396693697577775106">this tweet</a> from <a href="https://twitter.com/peterritchie">Peter Ritchie</a>.
+Some time during last week I came across [this tweet][1] from [Peter Ritchie][2].
 
 <blockquote class="twitter-tweet"><p>Better granularity with <a href="https://twitter.com/WindowsUpdate">@WindowsUpdate</a> would be great, e.g. to be able to say auto install Defender Definition updates while choose others</p>&mdash; Peter Ritchie (@peterritchie) <a href="https://twitter.com/peterritchie/statuses/396693697577775106">November 2, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -80,4 +80,9 @@ static void Log(string format, params object[] args)
 }
 </pre>
 
-Of course, it needs to run with `Administrator` privileges so the <a href="https://github.com/cincuranet/WindowsDefenderWUAutomatic/blob/master/src/WindowsDefenderWUAutomatic/app.manifest">`app.manifest`</a> is added to the project. You can find <a href="https://github.com/cincuranet/WindowsDefenderWUAutomatic">complete code on my GitHub</a>. Feel free to contribute. 
+Of course, it needs to run with `Administrator` privileges so the [`app.manifest`][3] is added to the project. You can find [complete code on my GitHub][4]. Feel free to contribute.
+
+[1]: https://twitter.com/peterritchie/status/396693697577775106
+[2]: https://twitter.com/peterritchie
+[3]: https://github.com/cincuranet/WindowsDefenderWUAutomatic/blob/master/src/WindowsDefenderWUAutomatic/app.manifest
+[4]: https://github.com/cincuranet/WindowsDefenderWUAutomatic

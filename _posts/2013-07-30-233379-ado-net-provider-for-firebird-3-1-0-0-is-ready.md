@@ -15,7 +15,7 @@ tags:
 category: none
 layout: post
 ---
-With <a href="{{ site.url }}{% post_url 2013-07-29-233371-firebirds-ado-net-provider-sources-has-a-new-home %}">yesterday's sources move</a> I have another good news. The version 3.1.0.0 of ADO.NET provider for Firebird is ready for your download!
+With [yesterday's sources move][1] I have another good news. The version 3.1.0.0 of ADO.NET provider for Firebird is ready for your download!
 
 <!-- excerpt -->
 
@@ -23,8 +23,14 @@ This version fixes few issues from previous version and adds some new features. 
 
 Entity Framework 6 is not currently released as RTM (thus there might be changes). Everything from infrastructure point of view should work, currently only full async stack is missing (for whole ADO.NET) and "Migrations" SQL generator.
 
-Description of all changes is available in <a href="http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10491">tracker</a>.
+Description of all changes is available in [tracker][2].
 
-You can get the bits from <a href="http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/">NuGet</a> (recommended) or from <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdSQL.org site</a> (or <a href="http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.1.0/">directly</a>).
+You can get the bits from [NuGet][3] (recommended) or from [FirebirdSQL.org site][4] (or [directly][5]).
 
 Enjoy.
+
+[1]: {{ site.url }}{% post_url 2013-07-29-233371-firebirds-ado-net-provider-sources-has-a-new-home %}
+[2]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10491
+[3]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
+[4]: http://www.firebirdsql.org/en/net-provider/
+[5]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.1.0/

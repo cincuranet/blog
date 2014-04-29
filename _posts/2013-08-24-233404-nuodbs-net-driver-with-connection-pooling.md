@@ -64,4 +64,6 @@ Of course your mileage may and will vary. But on my machines and in my network i
 
 If you're eager to try it, you can now grab the latest release of driver.
 
-<blockquote>Written for <a href="http://dev.nuodb.com/techblog/connection-pooling-net-and-nuodb">NuoDB's Techblog</a>.</blockquote>
+<blockquote>Written for [NuoDB's Techblog][1].</blockquote>
+
+[1]: http://dev.nuodb.com/techblog/connection-pooling-net-and-nuodb

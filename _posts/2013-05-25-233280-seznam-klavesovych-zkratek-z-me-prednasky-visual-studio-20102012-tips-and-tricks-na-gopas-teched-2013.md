@@ -6,7 +6,7 @@ tags:
 category: none
 layout: post
 ---
-Na <a href="{{ site.url }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}">letošním Gopas TechEdu</a> jsem měl kromě standardních technických přednášek i jednu oddychovou, netechnickou. Konkrétně "Visual Studio 2010/2012 tips and tricks". Což byl její pracovní název, ale probublal až na oficiální. No a tato přednáška neměla moc slajdů. Zato jsem prošel plno zajímavých - podle mě - klávesových zkratek, které ovládají běžné funkce Visual Studia (možná proto jsou již předdefinované). Prezentace z této, i ostatních, přednášek budou dostupné na <a href="http://www.teched.cz">oficiálním webu</a>. Nicméně byla by škoda vás ochudit o všechny ty klávesové zkratky, které jsem prošel (nepředpokládám, že by si je někdo všechny zapisoval).
+Na [letošním Gopas TechEdu][1] jsem měl kromě standardních technických přednášek i jednu oddychovou, netechnickou. Konkrétně "Visual Studio 2010/2012 tips and tricks". Což byl její pracovní název, ale probublal až na oficiální. No a tato přednáška neměla moc slajdů. Zato jsem prošel plno zajímavých - podle mě - klávesových zkratek, které ovládají běžné funkce Visual Studia (možná proto jsou již předdefinované). Prezentace z této, i ostatních, přednášek budou dostupné na [oficiálním webu][2]. Nicméně byla by škoda vás ochudit o všechny ty klávesové zkratky, které jsem prošel (nepředpokládám, že by si je někdo všechny zapisoval).
 
 <!-- excerpt -->
 
@@ -67,4 +67,5 @@ Shift-Alt-F11
 &gt;
 </pre>
 
-
+[1]: {{ site.url }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}
+[2]: http://www.teched.cz

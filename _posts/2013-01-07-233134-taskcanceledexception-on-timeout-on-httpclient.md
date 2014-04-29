@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-.NET Framework has a nice new class for all sort of <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> stuff called <a href="http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx">`HttpClient`</a> (interesting the name wasn't taken before :)). And because it's I/O related it has also bunch on `XxxAsync` methods to nicely fit into C# 5's `async`/`await`.
+.NET Framework has a nice new class for all sort of [HTTP][1] stuff called [`HttpClient`][2] (interesting the name wasn't taken before :)). And because it's I/O related it has also bunch on `XxxAsync` methods to nicely fit into C# 5's `async`/`await`.
 
 <!-- excerpt -->
 
@@ -33,7 +33,7 @@ catch (TimeoutException)
 }
 </pre>
 
-If you try to run it, you'll get unhandled exception, <a href="http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskcanceledexception.aspx">`TaskCanceledException`</a> to be precise. Yep, the timeout is not propagated as <a href="http://msdn.microsoft.com/en-us/library/system.timeoutexception.aspx">`TimeoutException`</a>, but as `TaskCanceledException`. It caught me off guard a little bit. The documentation for <a href="http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.timeout.aspx">`Timeout` property</a> touches <a href="http://msdn.microsoft.com/en-us/library/system.threading.cancellationtokensource.aspx">`CancellationTokenSource`</a> and you can feel the steer to `TaskCanceledException`. But, still, could be mentioned explicitly, will not be that surprising. Or maybe my thinking was skewed.
+If you try to run it, you'll get unhandled exception, [`TaskCanceledException`][3] to be precise. Yep, the timeout is not propagated as [`TimeoutException`][4], but as `TaskCanceledException`. It caught me off guard a little bit. The documentation for [`Timeout` property][5] touches [`CancellationTokenSource`][6] and you can feel the steer to `TaskCanceledException`. But, still, could be mentioned explicitly, will not be that surprising. Or maybe my thinking was skewed.
 
 This code then works correctly.
 
@@ -60,3 +60,10 @@ catch (TaskCanceledException)
 	Console.WriteLine("TaskCanceledException");
 }
 </pre>
+
+[1]: http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+[2]: http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx
+[3]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.taskcanceledexception.aspx
+[4]: http://msdn.microsoft.com/en-us/library/system.timeoutexception.aspx
+[5]: http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.timeout.aspx
+[6]: http://msdn.microsoft.com/en-us/library/system.threading.cancellationtokensource.aspx

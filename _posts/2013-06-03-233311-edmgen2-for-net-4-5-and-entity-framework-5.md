@@ -8,10 +8,20 @@ tags:
 category: none
 layout: post
 ---
-I don't know whether somebody remembers or even uses EdmGen2. I hope it does. Anyway I was doing my <a href="http://www.x2develop.com">Entity Framework course</a> last week and demoing <a href="{{ site.url }}{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}">pre-generating views</a> to speed up the startup. Here the EdmGen2 tool comes handy because it's able to work with `EDMX` file directly. You don't have to split it into `SSDL`, `CSDL` and `MSL` to use the standard EdmGen tool. Because I was working in Visual Studio 2012 by default I was working with <a href="http://msdn.com/ef">Entity Framework 5</a> and <a href="http://microsoft.com/net">.NET 4.5</a>. Model from this version(s) doesn't work with old EdmGen2. I checked the <a href="http://archive.msdn.microsoft.com/EdmGen2">original site</a> and sure, the last version (in time of writing) is from 2010. 
+I don't know whether somebody remembers or even uses EdmGen2. I hope it does. Anyway I was doing my [Entity Framework course][1] last week and demoing [pre-generating views][2] to speed up the startup. Here the EdmGen2 tool comes handy because it's able to work with `EDMX` file directly. You don't have to split it into `SSDL`, `CSDL` and `MSL` to use the standard EdmGen tool. Because I was working in Visual Studio 2012 by default I was working with [Entity Framework 5][3] and [.NET 4.5][4]. Model from this version(s) doesn't work with old EdmGen2. I checked the [original site][5] and sure, the last version (in time of writing) is from 2010. 
 
 <!-- excerpt -->
 
-So I grabbed the sources and did changes to work with Entity Framework 5 and on .NET 4.5. Also improved few pieces in code to handle another version(s) properly. Because the original site seems to be dead and the sources are directly downloadable (you're not downloading binary), I imported there into <a href="https://bitbucket.org/cincura_net/edmgen2">repository</a> under my <a href="https://bitbucket.org/">BitBucket</a> account. You can find all the changes in <a href="https://bitbucket.org/cincura_net/edmgen2">EdmGen2 repository</a>. If you download the code, open in Visual Studio 2012 and compile, you'll get working binary ready to be used on .NET 4.5 with Entity Framework from v1 through v4 to v5. :)
+So I grabbed the sources and did changes to work with Entity Framework 5 and on .NET 4.5. Also improved few pieces in code to handle another version(s) properly. Because the original site seems to be dead and the sources are directly downloadable (you're not downloading binary), I imported there into [repository][6] under my [BitBucket][7] account. You can find all the changes in [EdmGen2 repository][8]. If you download the code, open in Visual Studio 2012 and compile, you'll get working binary ready to be used on .NET 4.5 with Entity Framework from v1 through v4 to v5. :)
 
-If you're using this tool, please, drop a line in comments. Maybe it could be merged with <a href="http://entityframework.codeplex.com">Entity Framework sources</a> and be maintained directly by team. Or at least I'll know it's worth to update it to support Entity Framework 6 (by the way view generation speed was improved in Entity Framework 6).
+If you're using this tool, please, drop a line in comments. Maybe it could be merged with [Entity Framework sources][9] and be maintained directly by team. Or at least I'll know it's worth to update it to support Entity Framework 6 (by the way view generation speed was improved in Entity Framework 6).
+
+[1]: http://www.x2develop.com
+[2]: {{ site.url }}{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}
+[3]: http://msdn.com/ef
+[4]: http://microsoft.com/net
+[5]: http://archive.msdn.microsoft.com/EdmGen2
+[6]: https://bitbucket.org/cincura_net/edmgen2
+[7]: https://bitbucket.org/
+[8]: https://bitbucket.org/cincura_net/edmgen2
+[9]: http://entityframework.codeplex.com

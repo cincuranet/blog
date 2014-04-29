@@ -11,11 +11,11 @@ tags:
 category: none
 layout: post
 ---
-Looks like a lot of people is trying <a href="http://msdn.com/ef">Entity Framework 6</a> together with <a href="http://www.firebirdsql.org">Firebird</a>. I like it. And though it's not a difficult or tricky task, if you're not familiar with Entity Framework's 6 changes you might be caught off guard.
+Looks like a lot of people is trying [Entity Framework 6][1] together with [Firebird][2]. I like it. And though it's not a difficult or tricky task, if you're not familiar with Entity Framework's 6 changes you might be caught off guard.
 
 <!-- excerpt -->
 
-So first thing first. I suppose you have nothing related to <a href="www.firebirdsql.org/en/net-provider/">ADO.NET provider for Firebird</a> installed (and you don't have to). So install Entity Framework package.
+So first thing first. I suppose you have nothing related to [ADO.NET provider for Firebird][3] installed (and you don't have to). So install Entity Framework package.
 
 <pre class="brush:plain">
 install-package EntityFramework
@@ -102,8 +102,13 @@ class MONDatabase
 }
 </pre>
 
-If you want, you can download it as a complete solution <a href="https://github.com/cincuranet/EF6_Firebird">here</a>.
+If you want, you can download it as a complete solution [here][4].
 
 You might want to use the Entity Framework's designer for instance and use DDEX in which case you need to install some other parts, but the core concept is the same. Once you understand these few steps (try changing or not doing something to see what goes wrong) you should have no problems doing it.
 
 As I said, nothing difficult, isn't it?
+
+[1]: http://msdn.com/ef
+[2]: http://www.firebirdsql.org
+[3]: www.firebirdsql.org/en/net-provider/
+[4]: https://github.com/cincuranet/EF6_Firebird

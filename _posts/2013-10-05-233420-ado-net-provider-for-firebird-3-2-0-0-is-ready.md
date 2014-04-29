@@ -15,10 +15,17 @@ tags:
 category: none
 layout: post
 ---
-There's a new version of FirebirdClient waiting for you. Numbered 3.2.0.0. You can get the bits from <a href="http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/">NuGet</a> (<a href="http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient-EF6/">EF6-ready version</a>) or from <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdSQL.org site</a> (or <a href="http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.2.0/">directly</a>).
+There's a new version of FirebirdClient waiting for you. Numbered 3.2.0.0. You can get the bits from [NuGet][1] ([EF6-ready version][2]) or from [FirebirdSQL.org site][3] (or [directly][4]).
 
 <!-- excerpt -->
 
-All changes can be found <a href="http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10571&styleName=Text&projectId=10003&Create=Create">in tracker</a>. Most notable. Now we have <a href="{{ site.url }}{% post_url 2013-09-05-233412-nbackup-support-in-firebirdclient %}">support for NBackup</a> and "integrated security" works also on 64bit systems (fix contributed by Nathan Fox). 
+All changes can be found [in tracker][5]. Most notable. Now we have [support for NBackup][6] and "integrated security" works also on 64bit systems (fix contributed by Nathan Fox). 
 
 Enjoy.
+
+[1]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
+[2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient-EF6/
+[3]: http://www.firebirdsql.org/en/net-provider/
+[4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.2.0/
+[5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10571&styleName=Text&projectId=10003&Create=Create
+[6]: {{ site.url }}{% post_url 2013-09-05-233412-nbackup-support-in-firebirdclient %}

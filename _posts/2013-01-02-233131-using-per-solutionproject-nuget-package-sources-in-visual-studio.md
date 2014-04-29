@@ -25,4 +25,3 @@ In this file you can add few elements and have another package source added.
 And it works with everything in Visual Studio. Not only in _Package Manager Console_. The VS settings contains the new feed, the _Manage NuGet Packages_ works with it too. 
 
 Sweet. Well designed, NuGet.
-

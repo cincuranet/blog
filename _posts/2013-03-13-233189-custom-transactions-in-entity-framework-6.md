@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-<a href="http://entityframework.codeplex.com/wikipage?title=Improved%20Transaction%20Support">Entity Framework 6 will come with a nice feature of being able to use custom transactions</a>. You can either manually start new one with some isolation level (in fact this was possible even before, just little bit more code) or - and this is really nice, because I had questions about this (and did some custom hacks in Firebird's provider) couple of times. So I like it. And I like it also because finally the transactions are (at least in my eyes) of same importance as connections (where the support was good before).
+[Entity Framework 6 will come with a nice feature of being able to use custom transactions][1]. You can either manually start new one with some isolation level (in fact this was possible even before, just little bit more code) or - and this is really nice, because I had questions about this (and did some custom hacks in Firebird's provider) couple of times. So I like it. And I like it also because finally the transactions are (at least in my eyes) of same importance as connections (where the support was good before).
 
 <!-- excerpt -->
 
@@ -23,3 +23,5 @@ Of course, you might say: "And who is going to commit/rollback it?". You might o
 Anyway I don't want to discuss all the details of actual implementation or how it aligns to current state. Just a opinion and high level overview of my thoughts. 
 
 If you might have questions or need some examples or motivations, let me know in comments. I have handful of these.
+
+[1]: http://entityframework.codeplex.com/wikipage?title=Improved%20Transaction%20Support
