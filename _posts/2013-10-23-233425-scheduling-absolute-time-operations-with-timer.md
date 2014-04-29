@@ -46,7 +46,7 @@ timer = new Timer(o =&gt;
 I just need to first declare the variable because I'll use it in the lambda/delegate. Then I simply compute the interval (`TimeSpan`) between "now" and the date/time the operation should happen. With that I have a `Timer` instance that will tick just once. But at the end (you can to it even as a first step) I'll "kick" it forward and I'm done.<br />
 <small>[It's similar trick as if you'd like to take into account how long the method's execution took.][5]</small>
 
-And that's it. I created a simple helper for it, so you can just grab it and use it. Or change for different intervals (not daily). I also created one overload for `async` methods, because else the behavior would not be correct ([`TimerCallback`][6] is basically `Action&lt;object&gt;` and hence void returning method aka you cannot `await` it).
+And that's it. I created a simple helper for it, so you can just grab it and use it. Or change for different intervals (not daily). I also created one overload for `async` methods, because else the behavior would not be correct ([`TimerCallback`][6] is basically `Action<object>` and hence void returning method aka you cannot `await` it).
 
 
 Also if you're using Rx (Reactive Extensions) you can use [this overload][7] ([with `IScheduler`][8]) of `[Observable.Timer][9]` to do the same (maybe using more succinct code).

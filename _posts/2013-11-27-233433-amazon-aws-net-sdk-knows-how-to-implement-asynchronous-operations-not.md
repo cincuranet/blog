@@ -20,7 +20,7 @@ As I started changing the methods and removing explicit callbacks I started also
 
 <a href="http://i.blog.cincura.net/aws_sdk_executeasync.png"><img src="http://i.blog.cincura.net/thumbs/aws_sdk_executeasync.png" /></a>
 
-Who the hell was implementing that? It's starting a new task (that's ultimately going to be executed somewhere, very likely [`ThreadPool`][6]) and then spinning a new [`Thread`][7] followed by immediate blocking (calling [`Join`][8]). The method being called is blocking as well, because the signature is `Func&lt;T&gt;`. That's like a nightmare. Creating threads, blocking, :o :\.
+Who the hell was implementing that? It's starting a new task (that's ultimately going to be executed somewhere, very likely [`ThreadPool`][6]) and then spinning a new [`Thread`][7] followed by immediate blocking (calling [`Join`][8]). The method being called is blocking as well, because the signature is `Func<T>`. That's like a nightmare. Creating threads, blocking, :o :\.
 
 Given [Amazon AWS][9] is one of, let's say, top 3 players in cloud today I would expect the code to have at least "some" quality. To be honest, I was playing even for a while with the idea of implementing it properly, at least in S3 I use. But then I realized that with my limited _free_ time I would rather spend it on [ID3 renamer][10] or [FirebirdSql.Data.FirebirdClient][11] (or [NuoDb.Data.Client][12]).
 

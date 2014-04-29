@@ -11,7 +11,7 @@ Few days ago I wrote a post "[Custom conventions in Entity Framework 6 helping F
 
 <!-- excerpt -->
 
-Anyway for properties to work you have to implement `IDbConvention&lt;EdmProperty&gt;` and for table `IDbConvention&lt;EntityType&gt;` (not `EntitySet`, you need to be able to see whether somebody set the table name already or not which for me is easier from `EntityType` type). Don't ask me how I found this. A lot of trial and error. And actually a lot of memories from around 2010 and Entity Framework v1 ([link][4], [link][5] (anybody here ever explored [MetadataProperties][6]?)) :).
+Anyway for properties to work you have to implement `IDbConvention<EdmProperty>` and for table `IDbConvention<EntityType>` (not `EntitySet`, you need to be able to see whether somebody set the table name already or not which for me is easier from `EntityType` type). Don't ask me how I found this. A lot of trial and error. And actually a lot of memories from around 2010 and Entity Framework v1 ([link][4], [link][5] (anybody here ever explored [MetadataProperties][6]?)) :).
 
 <pre class="brush:csharp">
 class FirebirdFriendlyModelConvention : IDbConvention&lt;EdmProperty&gt;, IDbConvention&lt;EntityType&gt;
