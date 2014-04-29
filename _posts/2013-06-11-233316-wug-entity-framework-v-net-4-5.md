@@ -1,0 +1,19 @@
+---
+title: "WUG: Entity Framework v .NET 4.5"
+date: 2013-06-11T06:00:39Z
+tags:
+  - Announcements &amp; Invitations
+  - Entity Framework
+  - Presentations &amp; Speaking
+category: none
+layout: post
+---
+Pokud vás zajímá co nového v <a href="http://msdn.com/ef">Entity Frameworku</a> 5 a také 6, přijďte se podívat na <a href="http://www.wug.cz">WUG</a> v Praze na téma <a href="http://wug.cz/praha/akce/591-Entity-Framework-v-NET-4-5">Entity Framework v .NET 4.5</a>.
+
+<!-- excerpt -->
+
+Zaměřím se na ne tak běžné věci, např.: detailní popisy mapováni v Code First, transakce, EF Power Tools apod.
+
+<a href="http://wug.cz/praha/akce/591-Entity-Framework-v-NET-4-5">Link na registraci.</a>
+
+_<a href="http://i.blog.cincura.net/wug-ef5-6.pdf">Slajdy</a> a <a href="http://i.blog.cincura.net/ConsoleApplication2.7z">zdrojáky</a>_

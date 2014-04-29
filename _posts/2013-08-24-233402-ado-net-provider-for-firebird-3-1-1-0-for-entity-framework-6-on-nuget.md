@@ -1,0 +1,25 @@
+---
+title: "ADO.NET provider for Firebird 3.1.1.0 for Entity Framework 6 on NuGet"
+date: 2013-08-24T09:16:21Z
+tags:
+  - .NET
+  - Announcements &amp; Invitations
+  - C#
+  - Databases in general
+  - Entity Framework
+  - Entity SQL
+  - Firebird
+  - LINQ
+  - NuGet
+  - SQL
+  - Visual Studio
+category: none
+layout: post
+---
+Few days ago the <a href="http://entityframework.codeplex.com/wikipage?title=specs">Entity Framework 6</a> jumped into RC stage. <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdClient </a>has already support for Entity Framework 6, but I was waiting for some "significant" (as RC ;)) stage to start pushing it more except for publishing the build on <a href="http://www.firebirdsql.org/en/net-provider/">FirebirdSQL.org site</a>.
+
+<!-- excerpt -->
+
+Thus without further talking let me introduce <a href="http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient-EF6">FirebirdSql.Data.FirebirdClient-EF6</a>. It's the same version as <a href="http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient">FirebirdSql.Data.FirebirdClient</a> except build for Entity Framework 6 (though no dependency on <a href="http://www.nuget.org/packages/EntityFramework">EntityFramework</a> package is there - you'll be able to use it without it).
+
+Enjoy. And report any issues you find.
