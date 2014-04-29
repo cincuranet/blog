@@ -6,4 +6,8 @@ tags:
 category: none
 layout: post
 ---
-<p>V C# je zaj&#237;mav&#253; oper&#225;tor. Jedn&#225; se o '??'. Každ&#253; asi zn&#225; (nebo aspoň sly&#353;el o) '?:', ale co '??'. </p><p>Oper&#225;tor ?? může pomoci při použ&#237;v&#225;n&#237; nullable typů. Často totiž potřebujete do jin&#233; proměnn&#233; přiřadit buď hodnotu nebo vlastn&#237; "chybovou". Samozřejmě v&#353;e lze o&#353;etřit pomoc&#237; <font face="Courier New">if</font>u (jako vždy), ale proč si věc neusnadnit.</p><p><font face="Courier New">int? x = null;<br />int y = x ?? -1;</font></p><p>Tato kontrukce n&#225;m zajist&#237;, že pokud je x ne<font face="Courier New">null</font>ov&#233;, bude do y přiřazena jeho hodnota. Jinak bude přiřazeno '-1'. Dobr&#233;, že? ;-)</p><p>Pozn.: '??' funguje samozřejmě i s referenčn&#237;mi typy.</p>
+<p>V C# je zaj&#237;mav&#253; oper&#225;tor. Jedn&#225; se o '??'. Každ&#253; asi zn&#225; (nebo aspoň sly&#353;el o) '?:', ale co '??'.</p>
+<p>Oper&#225;tor ?? může pomoci při použ&#237;v&#225;n&#237; nullable typů. Často totiž potřebujete do jin&#233; proměnn&#233; přiřadit buď hodnotu nebo vlastn&#237; "chybovou". Samozřejmě v&#353;e lze o&#353;etřit pomoc&#237; <font face="Courier New">if</font>u (jako vždy), ale proč si věc neusnadnit.</p>
+<p><font face="Courier New">int? x = null;<br />int y = x ?? -1;</font></p>
+<p>Tato kontrukce n&#225;m zajist&#237;, že pokud je x ne<font face="Courier New">null</font>ov&#233;, bude do y přiřazena jeho hodnota. Jinak bude přiřazeno '-1'. Dobr&#233;, že? ;-)</p>
+<p>Pozn.: '??' funguje samozřejmě i s referenčn&#237;mi typy.</p>

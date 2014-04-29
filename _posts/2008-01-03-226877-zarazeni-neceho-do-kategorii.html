@@ -7,4 +7,6 @@ tags:
 category: none
 layout: post
 ---
-<p>Dneska jsem se dostal opět k velmi vtipnému řešení problému v relační databázi (to jsem to hezky napsal, ale ve skutečnosti jde o prasácky vyrobenou tabulku(y) vyústivší v prasácké selecty).</p><p>No schválně. Jak budete řešit přiřazení položky do kategorií? Ano, například jednoduchá tabulka <em>(id_item, id_kategorie)</em>. Ale to je řešení běžné... Vskutku vtipné řešení, je přidat k položce sloupec, který obsahuje znakem, např. '|', oddělené hodnoty. Pak máte velmi výkonný select 'SELECT * FROM tabulka WHERE (kategorie LIKE '%|12345|%') ORDER BY id' (nad "select *" se již nepozastavuji).</p><p>No to si pak užijeme legrace s sql serverem, že? ;)</p><p> </p>
+<p>Dneska jsem se dostal opět k velmi vtipnému řešení problému v relační databázi (to jsem to hezky napsal, ale ve skutečnosti jde o prasácky vyrobenou tabulku(y) vyústivší v prasácké selecty).</p>
+<p>No schválně. Jak budete řešit přiřazení položky do kategorií? Ano, například jednoduchá tabulka <em>(id_item, id_kategorie)</em>. Ale to je řešení běžné... Vskutku vtipné řešení, je přidat k položce sloupec, který obsahuje znakem, např. '|', oddělené hodnoty. Pak máte velmi výkonný select 'SELECT * FROM tabulka WHERE (kategorie LIKE '%|12345|%') ORDER BY id' (nad "select *" se již nepozastavuji).</p>
+<p>No to si pak užijeme legrace s sql serverem, že? ;)</p>

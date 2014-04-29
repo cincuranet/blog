@@ -38,4 +38,4 @@ class Program
 </pre>
 <p>As I said, the work is similar to work with array of ManualResetEvent, just packed into nicer cake. In fact, if you start ILDasm and look into the code you'll see, that's implemented very similarly. It's using <a href="http://msdn.microsoft.com/en-us/library/system.threading.manualreseteventslim(VS.100).aspx">ManualResetEventSlim</a> (also new in .NET 4) internally to signal and smart work with <a href="http://msdn.microsoft.com/en-us/library/system.threading.interlocked.aspx">Interlocked class</a> do decrement (or increment) the number of signals received.</p>
 
-<p>Do you like the class too?</p></pre>
+<p>Do you like the class too?</p>
