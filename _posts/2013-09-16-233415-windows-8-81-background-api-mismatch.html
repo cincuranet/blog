@@ -9,7 +9,9 @@ category: none
 layout: post
 ---
 <p>While digging into some background stuff in WinRT I found some mismatch in API. It's not something that's completely different. Both APIs deal with some background operations, both having same prefix "Background" (although in different namespace). Have a look yourself.</p>
+
 <!-- excerpt -->
+
 <p>The first background operations is dealing with uploads and downloads. When you want to list all (in this case) background operations, you can call <a href="http://msdn.microsoft.com/en-US/library/windows/apps/br207128"><code>BackgroundDownloader.GetCurrentDownloadsAsync()</code></a>. This method returns <code>IAsyncOperation&lt;IReadOnlyList&gt;</code>. Aka it's asynchronous and it's a method.</p> 
 
 <p>The other one is dealing with background tasks. And when you want to all background tasks, you can call <a href="http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.backgroundtaskregistration.alltasks.aspx"><code>BackgroundTaskRegistration.AllTasks</code></a>. This method returns simple <code>IReadOnlyDictionary&lt;Guid, IBackgroundTaskRegistration&gt;</code>. Aka it's synchronous and it's a property.</p>

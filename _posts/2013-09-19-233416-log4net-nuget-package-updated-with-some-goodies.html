@@ -11,7 +11,9 @@ layout: post
 <a href="{{ site.url }}{% post_url 2013-10-05-233419-log4net-nuget-package-updated-without-some-goodies %}">Follow-up post.</a> 
 </blockquote>
 <p>I just pushed new version (1.2.12) of <a href="http://www.nuget.org/packages/log4net">log4net NuGet package</a>. Except - as expected - updated binaries this package also adds bit better integration with NuGet and into project installation.</p> 
+
 <!-- excerpt -->
+
 <p>Now it adds default configuration into your <code>app.config</code>/<code>web.config</code> and also decorates the assembly with <code>XmlConfigurator</code> attribute with more or less default values (in a separate file, so you can easily remove it).</p>
 
 <p>Feedback is welcome.</p>
