@@ -18,7 +18,7 @@ I first tried charging Garmin while it was running (recording). That was easy. I
 
 Next step was to find a way how to perform the charging while running. I bought myself a $2 "Emerency USB Charger" on [eBay][1]. It's basically casing for two AA batteries with USB port. You can plug whatever you want and charge it. It has enough juice to start charging my iPhone 5, by the way. It looks like this:
 
-<img src="http://i.blog.cincura.net/usb-aa-charger.jpg" />
+![USB AA Charger](http://i.blog.cincura.net/usb-aa-charger.jpg)
 
 So I had the juice in a compact packaging. Now I needed to somehow put it into work while running.
 
