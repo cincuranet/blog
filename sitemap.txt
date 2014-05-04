@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout:
 ---
 {% for page in site.pages | sort: 'url' %}{% unless page.url contains "assets" %}{{ site.url }}{{ page.url | remove: "index.html" }}{% endunless %}
 {% endfor %}
