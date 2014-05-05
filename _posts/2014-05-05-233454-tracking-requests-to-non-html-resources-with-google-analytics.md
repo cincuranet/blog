@@ -11,7 +11,7 @@ I wanted to ditch the PAD file on [ID3 renamer's][1] website. It was maybe cool 
 
 <!-- excerpt -->
 
-First I thought I will add some logging into the method that generates this file (yep, it's generated on request ;)) and later process the data. But that looked like unnecessary work especially because the site uses [Google Analytics][2] anyway. Only problem was how to push data to Google Analytics if the result is plain XML file and not an HTML page. 
+First I thought I will add some logging into the method that generates this file (yep, it's generated on request, I'm not writing it manually ;)) and later process the data. But that looked like unnecessary work especially because the site uses [Google Analytics][2] anyway. Only problem was how to push data to Google Analytics if the result is plain XML file and not an HTML page. 
 
 Some API must be there, was my feeling. And indeed it is. Some googling and [Measurement Protocol Developer Guide][4] or [Measurement Protocol Parameter Reference][3] respectively was what I needed. Simple `HTTP POST` endpoint to where you push URL encoded parameters. Sweet!
 
