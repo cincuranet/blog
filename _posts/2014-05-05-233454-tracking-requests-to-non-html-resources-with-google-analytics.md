@@ -9,7 +9,7 @@ layout: post
 ---
 I wanted to ditch the PAD file on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use. 
 
-<!-- !excerpt -->
+<!-- excerpt -->
 
 First I thought I will add some logging into the method that generates this file (yep, it's generated on request ;)) and later process the data. But that looked like unnecessary work especially because the site uses [Google Analytics][2] anyway. Only problem was how to push data to Google Analytics if the result is plain XML file and not an HTML page. 
 
