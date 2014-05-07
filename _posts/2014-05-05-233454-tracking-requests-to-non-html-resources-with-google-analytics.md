@@ -18,11 +18,11 @@ Some API must be there, was my feeling. And indeed it is. Some googling and [Mea
 I quickly made a stupidly straightforward code to do what I needed. I only used parameters looking interesting for me, to at least, if lucky, little recognize the caller. In the document above you might find a lot of other parameters (even `hit type`s).
 
 <pre class="brush:csharp">
-static async Task<bool> SendPageviewRequestAsync(bool interactive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+static async Task&lt;bool&gt; SendPageviewRequestAsync(bool isNonInteractive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
 {
 	using (var client = new HttpClient())
 	{
-		using (var content = CreateContent(interactive, trackingId, documentLocation, usersIpAddress, userAgent, documentReferrer, clientId))
+		using (var content = CreateContent(isNonInteractive, trackingId, documentLocation, usersIpAddress, userAgent, documentReferrer, clientId))
 		{
 			try
 			{
@@ -39,13 +39,13 @@ static async Task<bool> SendPageviewRequestAsync(bool interactive, string tracki
 	}
 }
 
-static FormUrlEncodedContent CreateContent(bool interactive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+static FormUrlEncodedContent CreateContent(bool isNonInteractive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
 {
-	return new FormUrlEncodedContent(new Dictionary<string, string>()
-	{
+	return new FormUrlEncodedContent(new Dictionary&lt;string, string&gt;()
+	{ 
 		{ "v", "1" },
 		{ "t", "pageview" },
-		{ "ni", interactive ? "0" : "1" },
+		{ "ni", isNonInteractive ? "1" : "0" },
 		{ "tid", trackingId },
 		{ "cid", (clientId ?? Guid.NewGuid()).ToString() },
 		{ "dl", documentLocation },
