@@ -18,41 +18,42 @@ Some API must be there, was my feeling. And indeed it is. Some googling and [Mea
 I quickly made a stupidly straightforward code to do what I needed. I only used parameters looking interesting for me, to at least, if lucky, little recognize the caller. In the document above you might find a lot of other parameters (even `hit type`s).
 
 <pre class="brush:csharp">
-	static async Task&lt;bool&gt; SendPageviewRequestAsync(string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+static async Task<bool> SendPageviewRequestAsync(bool interactive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+{
+	using (var client = new HttpClient())
 	{
-		using (var client = new HttpClient())
+		using (var content = CreateContent(interactive, trackingId, documentLocation, usersIpAddress, userAgent, documentReferrer, clientId))
 		{
-			using (var content = CreateContent(trackingId, documentLocation, usersIpAddress, userAgent, documentReferrer, clientId))
+			try
 			{
-				try
+				using (var responseMessage = await client.PostAsync("http://www.google-analytics.com/collect", content).ConfigureAwait(false))
 				{
-					using (var responseMessage = await client.PostAsync("http://www.google-analytics.com/collect", content).ConfigureAwait(false))
-					{
-						return responseMessage.IsSuccessStatusCode;
-					}
+					return responseMessage.IsSuccessStatusCode;
 				}
-				catch
-				{
-					return false;
-				}
+			}
+			catch
+			{
+				return false;
 			}
 		}
 	}
+}
 
-	static FormUrlEncodedContent CreateContent(string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+static FormUrlEncodedContent CreateContent(bool interactive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
+{
+	return new FormUrlEncodedContent(new Dictionary<string, string>()
 	{
-		return new FormUrlEncodedContent(new Dictionary&lt;string, string&gt;() 
-		{ 
-			{ "v", "1" },
-			{ "t", "pageview" },
-			{ "tid", trackingId },
-			{ "cid", (clientId ?? Guid.NewGuid()).ToString() },
-			{ "dl", documentLocation },
-			{ "uip", usersIpAddress },
-			{ "au", userAgent },
-			{ "dr", documentReferrer },
-		});
-	}
+		{ "v", "1" },
+		{ "t", "pageview" },
+		{ "ni", interactive ? "0" : "1" },
+		{ "tid", trackingId },
+		{ "cid", (clientId ?? Guid.NewGuid()).ToString() },
+		{ "dl", documentLocation },
+		{ "uip", usersIpAddress },
+		{ "au", userAgent },
+		{ "dr", documentReferrer },
+	});
+}
 </pre>
 
 Getting the information from HTTP request is left for you as an exercise. ;) 
