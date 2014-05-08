@@ -1,5 +1,5 @@
 ---
-title: "Better cached completed Task"
+title: "Better \"cached completed Task\""
 date: 2014-05-08T07:17:00Z
 tags:
   - C#
@@ -14,7 +14,7 @@ Sometimes the libraries are pure hacks, which is good for learning too. Sometime
 
 <!-- excerpt -->
 
-What I often see is creating a "precomputed already completed" task. In any reasonable sized program you have paths that are kind of lucky - you can return immediately, you already know the result etc. Often it's called _fast path_. This means you're likely not spinning up tasks to compute the result but you just signal that it's already there. And instead of returning task that immediately completes you return one that's already completed and you're reusing it all over the place. This has benefit of always not creating new object and hence putting less stress on garbage collector.  Given that you're trying to have the result faster and thus you're likely parallelizing the algorithm why waste time creating garbage objects, right?
+What I often see is creating a "precomputed already completed" `Task`. In any reasonable sized program you have paths that are kind of lucky - you can return immediately, you already know the result etc. Often it's called _fast path_. This means you're likely not spinning up tasks to compute the result but you just signal that it's already there. And instead of returning task that immediately completes you return one that's already completed and you're reusing it all over the place. This has benefit of always not creating new object and hence putting less stress on garbage collector.  Given that you're trying to have the result faster and thus you're likely parallelizing the algorithm why waste time creating garbage objects, right?
 
 The code might look like this.   
 
@@ -44,7 +44,7 @@ else if (millisecondsDelay == 0)
 }  
 </pre>
 
-Thus if you need somewhere this "cached already completed" task you can simply return `Task.Delay(0)` and the outcome will be se as with your hand-made `TaskEx.CompletedTask`. 
+Thus if you need somewhere this "cached already completed" `Task` you can simply return `Task.Delay(0)` and the outcome will be se as with your hand-made `TaskEx.CompletedTask`. 
 
 Both ways are valid and correct. The `Task.Delay(0)` is just there waiting for you, and even probably `ngen`ed.
 
