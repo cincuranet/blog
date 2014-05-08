@@ -34,7 +34,7 @@ public static class TaskEx
 
 Nothing special. And it's correct! Nothing wrong with that. But you can squeeze a little bit more from that.
 
-Task Parallel Library already has such object, because it's using it internally quite often. But it's sadly internal. Luckily you can get access to it. And I'm not talking _reflection_, that would be way too slow. Because TPL contains some _fast path_ optimizations itself we can take advantage of that. Such simple one is `[Task.Delay(0)][2]`. If you're delaying by `0` milliseconds why bother to even delay? The code has simple branch to accomodate this.
+Task Parallel Library already has such object, because it's using it internally quite often. But it's sadly internal. Luckily you can get access to it. And I'm not talking _reflection_, that would be way too slow. Because TPL contains some _fast path_ optimizations itself we can take advantage of that. Such simple one is [`Task.Delay(0)`][2]. If you're delaying by `0` milliseconds why bother to even delay? The code has simple branch to accomodate this.
 
 <pre class="brush:csharp">
 else if (millisecondsDelay == 0)
