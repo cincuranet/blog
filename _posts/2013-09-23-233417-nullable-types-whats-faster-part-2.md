@@ -12,10 +12,10 @@ Years ago I wrote post [Nullable types - what's faster?][1] at that time on .NET
 
 So I redid the test. This time on .NET FW 4.5 and directly on Intel Core i7 on my laptop not in VPC. Again build with full optimizations turned on and debugger not attached. I also instead of using `short?` used `int?` because I think it's datatype that we, developers, use most often. I did couple of runs (about 100) removing some values that were obviously off and I also checked the generated IL, because that's pretty closely estimates what's actually going on.
 
-1. `HasValue` vs. `!= null`<br />
+1. `HasValue` vs. `!= null`  
 No difference in time (all times in a margin of error) and also the IL code is same.
 
-2. `Foo.Value` vs. `(int)Foo`<br />
+2. `Foo.Value` vs. `(int)Foo`  
 No difference in time (all times in a margin of error) and also the IL code is same.
 
 I don't know whether the C# 5.0 compiler now generates new (better) code or the old results were skewed because of some other influence (i.e. running on different machine (VPC actually)). But it probably doesn't matter. Important is the code is same and you don't have to think how to write it (although it's a micro-optimization, probably premature). Write what you like more. :)
