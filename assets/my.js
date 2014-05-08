@@ -36,6 +36,7 @@ function initSearch() {
 function initSyntaxHighlighting() {
 	SyntaxHighlighter.defaults['tab-size'] = 2;
 	SyntaxHighlighter.defaults['class-name'] = 'x2src';
+	SyntaxHighlighter.defaults['toolbar'] = false;
 	SyntaxHighlighter.autoloader(
 		['applescript'										,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushAppleScript.js'],
 		['actionscript3','as3'						,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushAS3.js'],
