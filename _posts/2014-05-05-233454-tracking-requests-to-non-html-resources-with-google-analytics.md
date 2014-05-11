@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-I wanted to ditch the PAD file on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use. 
+I wanted to ditch the [PAD file][5] on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use. 
 
 <!-- excerpt -->
 
@@ -64,3 +64,4 @@ Use it, change it - as you wish.
 [2]: http://www.google.com/analytics/
 [3]: https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters
 [4]: https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide
+[5]: http://en.wikipedia.org/wiki/Portable_Application_Description
