@@ -50,7 +50,7 @@ static FormUrlEncodedContent CreateContent(bool isNonInteractive, string trackin
 		{ "cid", (clientId ?? Guid.NewGuid()).ToString() },
 		{ "dl", documentLocation },
 		{ "uip", usersIpAddress },
-		{ "au", userAgent },
+		{ "ua", userAgent },
 		{ "dr", documentReferrer },
 	});
 }
