@@ -3,8 +3,8 @@ title: "WUG: Asynchronní a paralelní programování v .NETu"
 date: 2014-05-13T11:08:00Z
 tags:
   - Announcements &amp; Invitations 
-	- Presentations &amp; Speaking
-	- Multithreading/Parallelism/Asynchronous/Concurrency
+  - Presentations &amp; Speaking
+  - Multithreading/Parallelism/Asynchronous/Concurrency
 category: none
 layout: post
 ---
