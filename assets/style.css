@@ -386,21 +386,21 @@ textarea {
 	border: 0;
 }
 
-/* --------------------------------------- [ Footnotes ] */
+/* --------------------------------------- [ Footer ] */
 
-#footnotes {
+footer {
 	border-top: 1px solid #333;
 	padding: 1em 0 0 0;
 	overflow: hidden;
 	clear: both;
 }
 
-#footnotes p {
+footer p {
 	margin-bottom: .2em;
 	font-size: 1.1em;
 }
 
-#footnotes .rss {
+footer .rss {
 	margin-left: 0px;
 	padding-left: 16px;
 	background: transparent url(feed-icon.gif) no-repeat center left;
