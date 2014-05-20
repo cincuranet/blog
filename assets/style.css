@@ -193,11 +193,11 @@ ul.navlinks {
 	clear: both;
 }
 
-.post-content p, .post-content h5, .post-content code {
+article p, article h5, article code {
 	width: 61em;
 }
 
-.post-content h5 {
+article h5 {
 	margin-top: 2.5em;
 	margin-bottom: .5em;
 	padding-left: 8px;
@@ -205,7 +205,7 @@ ul.navlinks {
 	text-transform: uppercase;
 }
 
-.post-content blockquote {
+article blockquote {
 	margin: 0 3.2em 1em 3.2em;
 	padding: 8px;
 	border: 1px dotted #bbb;
@@ -213,36 +213,36 @@ ul.navlinks {
 }
 
 
-.post-content dl {
+article dl {
 	margin: 0 0 1em 0;
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 1.2em;
 }
 
-.post-content dt {
+article dt {
 	margin: 0 0 .5em 0;
 	font-weight: bold;
 	font-size: 1em;
 }
 
-.post-content dd {
+article dd {
 	width: 30em;
 	margin: 0 0 1em 2em;
 	line-height: 1.6;
 }
 
-.post-content ul, .post-content ol {
+article ul, article ol {
 	padding-left: 8px;
 	padding-right: 8px;
 	list-style-type: none;
 }
 
-.post-content ol {
+article ol {
 	padding-left: 24px;
 }
 
-.post-content li {
+article li {
 	margin: 0 0 1em 0;
 	padding-left: 20px;
 	font-size: 1.2em;
@@ -250,12 +250,12 @@ ul.navlinks {
 	background: transparent url(bullet.gif) no-repeat left 2px top 4px;
 }
 
-.post-content code {
+article code {
 	font-family: "Monaco", "Courier New", fixed;
 	font-size: .9em;
 }
 
-.post-content pre {
+article pre {
 	margin: 2em 0 2em 0;
 	padding: 2em;
 	font-size: 1.2em;
@@ -263,15 +263,15 @@ ul.navlinks {
 	overflow: auto;
 }
 
-.post-content pre code {
+article pre code {
 	color: #222;
 }
 
-.post-content .quote-author {
+article .quote-author {
 	float: right;
 }
 
-.post-content img {
+article img {
 	padding-bottom: 2em;
 	padding-left: 16px;
 	padding-right: 16px;
