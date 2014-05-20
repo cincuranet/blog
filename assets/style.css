@@ -100,21 +100,21 @@ kbd {
 
 /* ---------------------------------------- [ Main Nav ] */
 
-#main-nav {
+nav {
 	padding: 0 0 .5em 0;
 	overflow: hidden;
 }
 
-#main-nav ul {
+nav ul {
 	list-style-type: none;
 }
 
-#main-nav li.page_item {
+nav li.page_item {
 	margin-right: 2.2em;
 	float: left;
 }
 
-#main-nav li a {
+nav li a {
 	font-size: 1.2em;
 	line-height: 1.6;
 	padding-left: 8px;
