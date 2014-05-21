@@ -12,7 +12,7 @@ After [my presentation this week on WUG][1] I got an interesting question. How t
 
 <!-- excerpt -->
 
-And indeed it's not difficult. The original question used [`ReverseGeocodeQuery`][5] class, but because I don't have Windows Phone SDK etc. installed I went to good old [`SmtpClient`][6]. :) I first tried to write some generic wrapper that would work no matter what class you're using, but it turned out to be kind of not nice method to call - at least for me. Too much clutter.
+And indeed it's not difficult. The original question used [`ReverseGeocodeQuery`][5] class, but because I don't have Windows Phone SDK etc. installed I went to good old [`SmtpClient`][6] (just to make sure, `SmtpClient` _does_ support TAP from .NET 4.5). :) I first tried to write some generic wrapper that would work no matter what class you're using, but it turned out to be kind of not nice method to call - at least for me. Too much clutter.
 
 Anyway here's now to wrap `SmtpClient`'s EAP into TAP.
 
