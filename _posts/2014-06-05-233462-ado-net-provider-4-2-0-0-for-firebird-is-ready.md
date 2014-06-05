@@ -23,14 +23,13 @@ In `FirebirdSql.Data.Services` you can find two new classes called `FbStreamingB
 
 This feature was sponsored by [SMS-Timing][9] as they allowed me to implement it during my work hours. Also thanks to Ivan Arabadzhiev who helped me to test this.  
 
-You can get the bits from [NuGet][1] ([EF6-ready version][2]) or from [FirebirdSQL.org site][3] (or [directly][4]).
+You can get the bits from [NuGet][1] ([EF6-ready version][2]) (also [FirebirdSQL.org site][3]).
 
 All changes can be found [in tracker][5].
 
 [1]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient-EF6/
 [3]: http://www.firebirdsql.org/en/net-provider/
-[4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/4.2.0/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?projectId=10003&styleName=Text&version=10587
 [6]: http://tracker.firebirdsql.org/browse/CORE-2666
 [7]: http://msdn.microsoft.com/en-us/library/vstudio/system.io.filestream
