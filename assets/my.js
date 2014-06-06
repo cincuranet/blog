@@ -55,6 +55,7 @@ function initSyntaxHighlighting() {
 		['perl','pl'											,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushPerl.js'],
 		['php'														,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushPhp.js'],
 		['text','plain'										,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushPlain.js'],
+		['ps','powershell'								,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushPowerShell.js'],
 		['py','python'										,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushPython.js'],
 		['ruby','rails','ror','rb'				,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushRuby.js'],
 		['sass','scss'										,'{{ site.url }}/assets/syntaxhighlighter/scripts/shBrushSass.js'],
