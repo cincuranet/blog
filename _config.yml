@@ -9,4 +9,4 @@ site_posts: 20
 feed_posts: 20
 feed: atom.xml
 disqus_base_url: http://blog.cincura.net
-markdown: kramdown
+markdown: redcarpet
