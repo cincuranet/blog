@@ -10,3 +10,6 @@ feed_posts: 20
 feed: atom.xml
 disqus_base_url: http://blog.cincura.net
 markdown: rdiscount
+rdiscount:
+  extensions:
+    - smart   
