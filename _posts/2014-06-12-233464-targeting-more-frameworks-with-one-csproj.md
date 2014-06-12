@@ -1,5 +1,5 @@
 ---
-title: "Targetting more frameworks with on csproj"
+title: "Targeting more frameworks with on csproj"
 date: 2014-06-12T08:01:00Z
 tags:
   - .NET
@@ -47,7 +47,7 @@ So how it's done. The target framework is specified in `TargetFrameworkVersion` 
 
 When I'm not sure what should go into `TargetFrameworkVersion` and `TargetFrameworkProfile` I just copy the values from fresh project. ;)
 
-Obvious trick. Hope it helps you to lower the amount of "manual labor" you need to do when targetting multiple frameworks.
+Obvious trick. Hope it helps you to lower the amount of "manual labor" you need to do when targeting multiple frameworks.
 
 [1]: http://www.firebirdsql.org/en/net-provider/
 [2]: http://msdn.com/ef
