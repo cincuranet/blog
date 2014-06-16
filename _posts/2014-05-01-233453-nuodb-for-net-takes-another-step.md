@@ -8,12 +8,6 @@ tags:
 category: none
 layout: post
 ---
-<blockquote>
-Read the article on <a href="http://dev.nuodb.com/techblog/nuodb-net-takes-another-step">NuoDB's TechBlog</a>.<br />
-<small>Full text will appear here later.</small>
-</blockquote>
-
-<div style="display:none">
 We will soon be releasing NuoDB 2.0.4 and this release will include support for the latest ADO.NET provider. As the ADO.NET world evolves, especially the Entity Framework (EF), we here at NuoDB are not standing by but are moving the driver forward as well.
 
 <!-- !excerpt -->
@@ -27,10 +21,12 @@ Some of you might remember that somewhere around September of last year we took 
 So why wouldn't we test our ADO.NET driver again in conjunction with nopCommerce 3.30? We had the same question in our head but you don't have to. If you check [our repository with nopCommerce's port][5] you will be able to download nopCommerce 3.30 working with NuoDB. Done. In fact we were quite happy with current status of our driver because all the work involved was adding NuoDB 2.0.4 database support to nopCommerce and no other changes were needed in the driver. And most of nopCommerce's code was untouched (read: no hacks ;)).
 
 We encourage you to try our new ADO.NET driver (feedback is welcome). And also if you want to see it in action in a non-trivial application we recommend giving a [nopCommerce][5] try.
-</div>
+
+<blockquote>Written for [NuoDB's Techblog][6].</blockquote>
 
 [1]: https://entityframework.codeplex.com/wikipage?title=specs
 [2]: https://www.nuget.org/packages/EntityFramework.NuoDb/
 [3]: http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-1
 [4]: http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-2
 [5]: https://github.com/nuodb/nopCommerce
+[6]: http://dev.nuodb.com/techblog/connection-pooling-net-and-nuodb
