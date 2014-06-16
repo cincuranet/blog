@@ -22,7 +22,7 @@ So why wouldn't we test our ADO.NET driver again in conjunction with nopCommerce
 
 We encourage you to try our new ADO.NET driver (feedback is welcome). And also if you want to see it in action in a non-trivial application we recommend giving a [nopCommerce][5] try.
 
-<blockquote>Written for [NuoDB's Techblog][6].</blockquote>
+> Written for [NuoDB's Techblog][6].
 
 [1]: https://entityframework.codeplex.com/wikipage?title=specs
 [2]: https://www.nuget.org/packages/EntityFramework.NuoDb/
