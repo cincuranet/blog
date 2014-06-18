@@ -172,7 +172,7 @@ Of course if you'd provide some more mapping details in OnModelCreating the scri
 
 I hope you enjoyed this quick overview of NuoDB's Entity Framework support and you'll grab the bytes and play with it.
 
-<blockquote>Written for [NuoDB's Techblog][4].</blockquote>
+> Written for [NuoDB's Techblog][4].
 
 [1]: http://www.nuodb.com/devcenter/
 [2]: {{ site.url }}{% post_url 2012-05-21-232841-using-nuodb-from-net %}

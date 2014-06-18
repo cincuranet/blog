@@ -7,9 +7,7 @@ tags:
 category: none
 layout: post
 ---
-<blockquote>
-[Follow-up post.][1]
-</blockquote>
+> [Follow-up post.][1]
 
 I just pushed new version (1.2.12) of [log4net NuGet package][2]. Except - as expected - updated binaries this package also adds bit better integration with NuGet and into project installation.
 
