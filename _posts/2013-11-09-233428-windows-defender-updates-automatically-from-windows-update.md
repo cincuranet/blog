@@ -10,8 +10,8 @@ layout: post
 ---
 Some time during last week I came across [this tweet][1] from [Peter Ritchie][2].
 
-<blockquote class="twitter-tweet"><p>Better granularity with <a href="https://twitter.com/WindowsUpdate">@WindowsUpdate</a> would be great, e.g. to be able to say auto install Defender Definition updates while choose others</p>&mdash; Peter Ritchie (@peterritchie) <a href="https://twitter.com/peterritchie/statuses/396693697577775106">November 2, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Better granularity with @WindowsUpdate would be great, e.g. to be able to say auto install Defender Definition updates while choose others  
+&mdash; Peter Ritchie (@peterritchie) [November 2, 2013](https://twitter.com/peterritchie/statuses/396693697577775106)
 
 I had and have exactly same feeling.
 
