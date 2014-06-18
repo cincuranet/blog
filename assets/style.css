@@ -212,6 +212,9 @@ article blockquote {
 	line-height: 1.6;
 }
 
+article blockquote p {
+	margin-bottom: 0;
+}
 
 article dl {
 	margin: 0 0 1em 0;
