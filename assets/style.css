@@ -214,6 +214,7 @@ article blockquote {
 
 article blockquote p {
 	margin-bottom: 0;
+	width: inherit;
 }
 
 article dl {
