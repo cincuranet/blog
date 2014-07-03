@@ -6,9 +6,9 @@ tags:
 category: none
 layout: post
 ---
-I was showing today on my [Entity Framework][3] [course][4] some tips and one of them was how to delete entity when you only have a key without fetching it first. Kind of small optimization. And then my brain started to think whether I can do it completely dynamically – just having the type of entity and values of key properties.
+I was showing today on my [Entity Framework][3] [course][4] some tips and one of them was how to delete entity when you only have a key without fetching it first. Kind of small optimization. And then my brain started to think whether I can do it completely dynamically â€“ just having the type of entity and values of key properties.
 
-I "knew" I can do it. It was just a question of how deep I’ll have to dig. Surprisingly it’s not that bad.
+I "knew" I can do it. It was just a question of how deep I'll have to dig. Surprisingly it's not that bad.
 
 <!-- excerpt -->
 
