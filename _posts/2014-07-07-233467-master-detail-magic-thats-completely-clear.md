@@ -6,7 +6,7 @@ tags:
 category: none
 layout: post
 ---
-Last week participant on my [Entity Framework course][1] created a code that looked like it should not work, but it worked. And I had, initially trouble explaining why. After I dug deep, almost running out of bullets, I finally saw it clearly. It made complete sense as computers follow steps _exactly_. Let's have a look. 
+Last week participant on my [Entity Framework course][1] created a code that looked like it should not work, but it worked. And I had initially trouble explaining why. After I dug deep, almost running out of bullets :-), I finally saw it clearly. It made complete sense as computers follow steps _exactly_. Let's have a look. 
 
 <!-- excerpt -->
 
