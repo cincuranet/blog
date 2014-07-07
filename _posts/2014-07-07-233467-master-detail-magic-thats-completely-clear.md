@@ -63,7 +63,7 @@ using (var ctx = new MyContext())
 
 In case you missed it. The `master` and `detail` are not connected whatsoever. I'm not setting `MasterId` nor `Master` property (neither touching `Details` property, which is `null` anyway). Shouldn't the `SaveChanges` call fail? If you already tried the code, you know it didn't failed. But why?
 
-Well after the cloud of smoke from frustration in works settles and you start tearing it apart piece by piece, it's pretty obvious. The two entites are actually connected. The `master.Id` is `0`, because that's the default value for `int`. Same for `detail.MasterId`. Makes complete sense, right? And so when you save it, [Entity Framework][2] figures it needs to save `Master` entity first, get the `Id` and then continue with `Detail` entity, that is now with updated `MasterId` because of previous step.
+Well, after the cloud of smoke from frustration in works settles and you start tearing it apart piece by piece, it's pretty obvious. The two entites are actually connected. The `master.Id` is `0`, because that's the default value for `int`. Same for `detail.MasterId`. Makes complete sense, right? And so when you save it, [Entity Framework][2] figures it needs to save `Master` entity first, get the `Id` and then continue with `Detail` entity, that is now with updated `MasterId` because of previous step.
 
 And there you go. Completely clear, only once you do it really step by step. Still on a first sight bit counterintuitive.
 
