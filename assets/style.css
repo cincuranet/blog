@@ -90,11 +90,13 @@ kbd {
 
 table {      
 	margin-bottom: 1em;
-	padding-left: 8px;
-	padding-right: 8px;
 	font-size: 1.2em;
 	line-height: 1.6;
-	border-style: none none none none; 
+}
+
+td {
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 /* ----------------------------------------- [ Wrapper ] */
