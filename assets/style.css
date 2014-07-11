@@ -88,6 +88,10 @@ kbd {
 	text-transform: uppercase;
 }
 
+table {
+	border-style: none none none none;
+}
+
 /* ----------------------------------------- [ Wrapper ] */
 
 #wrapper {
