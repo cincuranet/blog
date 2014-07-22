@@ -12,6 +12,6 @@ layout: post
 
 <p>I opened a debugger, started the service locally and went for some candy. Because the data should be refreshed by default every two minutes, when I came back I realized, that the refresh procedure was not run, because there was a breakpoint, but no hit. So I started looking for some info in documentation, when suddenly the note followed by recalling the knowledge came in:</p>
 
-<blockquote>As long as you are using a Timer, you must keep a reference to it. As with any managed object, a Timer is subject to garbage collection when there are no references to it. The fact that a Timer is still active does not prevent it from being collected.</blockquote>
+<blockquote><p>As long as you are using a Timer, you must keep a reference to it. As with any managed object, a Timer is subject to garbage collection when there are no references to it. The fact that a Timer is still active does not prevent it from being collected.</p></blockquote>
 
 <p>Yep, I was creating the instance but I was not holding a reference to it, so in under the refresh interval it was garbage collected. : Shame on me. But. We learn by mistakes.</p>

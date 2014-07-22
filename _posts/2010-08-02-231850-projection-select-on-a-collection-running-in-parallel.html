@@ -8,7 +8,7 @@ tags:
 category: none
 layout: post
 ---
-<blockquote><a href="{{ site.url }}{% post_url 2010-08-04-231892-projection-select-on-a-collection-running-in-parallel-with-exceptions-handling %}">Here's updated version of the method.</a></blockquote>
+<blockquote><p><a href="{{ site.url }}{% post_url 2010-08-04-231892-projection-select-on-a-collection-running-in-parallel-with-exceptions-handling %}">Here's updated version of the method.</a></p></blockquote>
 
 <p>I have here another not-general-purpose-parallel/multihtreaded-method. :) To make a long story short I needed do some transformation on collection's elements, aka projection. Unfortunately the method I was plugging in was doing some network requests, in fact couple of requests. Sequentially, blocking processing until the response came back. I know a proper way will be to turn these requests into asynchronous, unluckily this was part of bigger architecture I could not change.  I didn't want to use <a href="http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.asparallel.aspx">AsParallel</a> method as I expected a need for more control maybe sometime later. So I solved it abusing <a href="http://msdn.microsoft.com/en-us/library/system.threading.threadpool.aspx">ThreadPool</a> threads. Bad for scheduler and memory, as I'll be wasting threads and resources, blocking, until reply is sent by server, but very easy for me. I told you, abusing. ;)</p>
 

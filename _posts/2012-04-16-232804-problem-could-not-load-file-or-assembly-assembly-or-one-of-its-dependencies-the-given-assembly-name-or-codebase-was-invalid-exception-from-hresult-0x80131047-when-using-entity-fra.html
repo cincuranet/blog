@@ -8,7 +8,7 @@ layout: post
 ---
 <p>When you use <code>migrate.exe</code> from <a href="http://nuget.org/packages/entityframework">Entity Framework</a>'s Migrations (in time of writing <a href="http://nuget.org/packages/EntityFramework/4.3.1">4.3.1</a>) you might get the error saying:</p>
 
-<blockquote>Could not load file or assembly '&lt;assembly&gt;' or one of its dependencies. The given assembly name or codebase was invalid. (Exception from HRESULT: 0x80131047)</blockquote>
+<blockquote><p>Could not load file or assembly '&lt;assembly&gt;' or one of its dependencies. The given assembly name or codebase was invalid. (Exception from HRESULT: 0x80131047)</p></blockquote>
 
 <p>That's nice, but nothing special, right? The reason is simple and as lot of magic execution errors it is current/working directory related. To fix it, simply explicitly specify path (relative works) to your assembly using <code>StartUpDirectory</code> parameter. And there's another one gotcha. This parameter works only with <code>:</code>. Let me explain.</p>
 
