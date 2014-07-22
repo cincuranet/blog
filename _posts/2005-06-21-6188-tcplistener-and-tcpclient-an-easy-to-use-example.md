@@ -6,11 +6,9 @@ tags:
 category: none
 layout: post
 ---
-<blockquote>
-<a href="{{ site.url }}{% post_url 2014-07-22-233470-tcplistener-and-tcpclient-an-easy-to-use-example %}">Follow up post available.</a>
-</blockquote>
+> [Follow up post available.][1]
 
-<p>During the weekend I needed some tool: Have to be able to listen on some port and to do something "useful". First I was trying to use sockets. But I've found useful classes: <code>TcpListener</code> and <code>TcpClient</code>. It was exactly what I was looking for. Here you can "taste" the example.</p>
+During the weekend I needed some tool: Have to be able to listen on some port and to do something "useful". First I was trying to use sockets. But I've found useful classes: `TcpListener` and `TcpClient`. It was exactly what I was looking for. Here you can "taste" the example.
 
 <pre class="brush:csharp">
 using System;
@@ -72,3 +70,5 @@ namespace port_listen
   }
 }
 </pre>
+
+[1]: {{ site.url }}{% post_url 2014-07-22-233470-tcplistener-and-tcpclient-an-easy-to-use-example %}
