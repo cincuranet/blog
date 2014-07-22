@@ -10,6 +10,8 @@ Back in 2005 I wrote a blogpost [TcpListener and TcpClient (an easy-to-use examp
 
 Given the code was written 9 years ago, when my skills were 9 years younger and when the world around us was slightly different, different tools etc. I decided to give it a little facelift. Kind of 2014 edition.
 
+<!-- excerpt -->
+
 <pre class="brush:csharp">
 class Program
 {
