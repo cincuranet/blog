@@ -228,29 +228,12 @@ article blockquote p {
 	width: inherit;
 }
 
-article dl {
-	margin: 0 0 1em 0;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-size: 1.2em;
-}
-
-article dt {
-	margin: 0 0 .5em 0;
-	font-weight: bold;
-	font-size: 1em;
-}
-
-article dd {
-	width: 30em;
-	margin: 0 0 1em 2em;
-	line-height: 1.6;
-}
-
 article ul, article ol {
 	padding-left: 8px;
 	padding-right: 8px;
 	list-style-type: none;
+}
+article > ul, article > ol {
 	margin-bottom: 1em;
 }
 
