@@ -247,6 +247,9 @@ article li {
 	line-height: 1.6;
 	background: transparent url(bullet.gif) no-repeat left 2px top 4px;
 }
+article li li {
+	font-size: 1em;
+}
 
 article code {
 	font-family: "Monaco", "Courier New", fixed;
