@@ -23,7 +23,7 @@ The "events" are having still the same public interface but the internals are gr
 
 The Entity Framework 6 support has now been split into separate `EntityFramework.Firebird` assembly and into new namespaces (`FirebirdSql.Data.EntityFramework6`), mostly to help with cases where you're not using Code First, but EDMX. It's because DDEX needs to load the provider as well and hence you likely have the `FirebirdSql.Data.FirebirdClient` in GAC the type collisions were _almost_ inevitable. But take a note that `FirebirdSql.Data.FirebirdClient` versions used in project (i.e. from NuGet) and in GAC _must match_ (sadly this is limitation because of how current Entity Framework tooling works). I'll update the [example][6] after a while.
 
-You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][1] and [EntityFramework.Firebird][2].
+You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][1] and [EntityFramework.Firebird][2] (or from [firebirdsql.org][3]).
 
 High level overview of changes can be found in [tracker][4].
 
