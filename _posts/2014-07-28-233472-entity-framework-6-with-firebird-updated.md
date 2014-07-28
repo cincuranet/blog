@@ -31,7 +31,7 @@ Now the EDMX. I suppose you have [DDEX provider for Firebird][3] installed and w
 
 And that's it. I would say making EDMX work needs same amount of work as Code First, but it's more about checking stuff than changing.
 
-If you'd like to see the both methods in action, check the [`EF6_Firebird` repository][4]. Code First "just works". For EDMX you need to make sure your DDEX is installed and working.
+If you'd like to see the both methods in action, check the [`EF6_Firebird` repository][4]. Code First "just works". For EDMX you need to make sure your DDEX provider for Firebird is installed and working.
 
 [1]: {{ site.url }}{% post_url 2014-07-28-233471-ado-net-provider-4-5-0-0-for-firebird-is-ready %}
 [2]: http://msdn.com/ef
