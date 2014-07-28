@@ -11,6 +11,8 @@ tags:
 category: none
 layout: post
 ---
+> This post is outdated. Read the [updated version][5].
+
 Looks like a lot of people is trying [Entity Framework 6][1] together with [Firebird][2]. I like it. And though it's not a difficult or tricky task, if you're not familiar with Entity Framework's 6 changes you might be caught off guard.
 
 <!-- excerpt -->
@@ -112,3 +114,4 @@ As I said, nothing difficult, isn't it?
 [2]: http://www.firebirdsql.org
 [3]: www.firebirdsql.org/en/net-provider/
 [4]: https://github.com/cincuranet/EF6_Firebird
+[5]: {{ site.url }}{% post_url 2014-07-28-233472-entity-framework-6-with-firebird-updated %}
