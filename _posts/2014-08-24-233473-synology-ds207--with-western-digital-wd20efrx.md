@@ -4,6 +4,7 @@ date: 2014-08-24T18:41:00Z
 tags:
   - Synology
   - Network Attached Storage (NAS)
+  - Western Digital
 category: none
 layout: post
 ---
