@@ -18,4 +18,4 @@ Hope it helps.
 
 [1]: https://www.synology.com/en-global/
 [2]: http://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1
-[3]: http://www.wdc.com/global/products/specs/?driveID=1086&language=1
+[3]: http://wdc.com/global/products/specs/?driveID=1086&language=1
