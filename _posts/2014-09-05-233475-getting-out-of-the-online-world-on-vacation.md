@@ -10,7 +10,7 @@ layout: post
 ---
 After I [wrote the earlier piece][1], I realized there's maybe another option. And then after thinking about it I realized it's not that black and white either.
 
-<!-- exceprt -->
+<!-- excerpt -->
 
 So you don't want to be bothered by work emails, IMs etc. during you vacation? And the plan is to go somewhere where the hotel has no Wi-Fi available. I think that's a great idea. Until it isn't. I don't know about you but I rely on some basic information from Internet daily. Even on vacation. Checking weather is pretty simple once you're online, right? What about some maps? Sure it's not as good as dedicated hiking map especially if you're in i.e. mountains, but it's good to have a basic orientation. And the list goes on.
 
