@@ -65,7 +65,7 @@ Sadly. You cannot change the default behavior on i.e. assembly level. Or for a w
 
 #### Solution
 
-Visual Studio is not going to help you with some magic squiggles. It does not know whether you want to continue on current context or not. But the hope is not lost. When the [Roslyn][7] got support for `await` I started small project that would help me keep my code in check. I call it [ConfigureAwaitChecker][8]. It's open source and I'm happy to accept contributions.
+Visual Studio is not going to help you with some magic squiggles. It does not know whether you want to continue on current context or not. But the hope is not lost. When the [Roslyn][7] got support for `await` I started small project that would help me keep my code in check. I call it [ConfigureAwaitChecker][8]. It's open source and _I'm happy to accept contributions_.
 
 Currently it's a library and simple console app that surfaces the results (plus PowerShell script `Check-Dir.ps1` to call the app on bunch of files). But as the Roslyn offers now also diagnostics API to plug into Visual Studio it might evolve that way as well.
 
