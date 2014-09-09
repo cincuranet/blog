@@ -29,7 +29,7 @@ But often when you're not writing UI code and you're writing some library code y
 
 #### `ConfigureAwait` madness
 
-When `async`/`await` was created they were aware of the above fact. The default implementation takes the safe path. But when you want your library play A game you need to help it a little. Enter the world of `ConfigureAwait` calls. This method takes one `bool` parameter called `continueOnCapturedContext`. With it you can set how the infrastructure will behave in respect to continuations queueing. When you put `true` there it's like the method is not there and the default behavior is used. But when you use `false` the continuation will run on whatever available thread pool thread. Why it matters? Sometimes you have method that contains multiple asynchronous calls and your method exposes the whole wrap. Example?
+When `async`/`await` was created they were aware of the above fact. The default implementation takes the safe path. But when you want your library play A game you need to help it a little. Enter the world of [`ConfigureAwait`][6] calls. This method takes one `bool` parameter called `continueOnCapturedContext`. With it you can set how the infrastructure will behave in respect to continuations queueing. When you put `true` there it's like the method is not there and the default behavior is used. But when you use `false` the continuation will run on whatever available thread pool thread. Why it matters? Sometimes you have method that contains multiple asynchronous calls and your method exposes the whole wrap. Example?
 
 <pre class="brush:csharp">
 Task MoveDataAsync(Stream from, Stream to)
