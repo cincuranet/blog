@@ -19,7 +19,7 @@ Release often. So here we are. Version 4.5.1.0 of [ADO.NET provider for Firebird
 
 <!-- excerpt -->
 
-This is just a small release with [contributions][2] on GitHub and so-called `ProviderManifestToken` resolving improvements. High level overview of changes can be found in [tracker][5].
+This is just a small release with [contributions on GitHub][2] and so-called `ProviderManifestToken` resolving improvements (database does not need to exist). High level overview of changes can be found in [tracker][5].
 
 You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][3] and [EntityFramework.Firebird][4] (or from [firebirdsql.org][1]).
   
