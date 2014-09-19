@@ -5,6 +5,7 @@ tags:
   - PowerShell
   - Exif
   - .NET
+  - Photos
 category: none
 layout: post
 ---
