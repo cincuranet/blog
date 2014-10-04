@@ -5,7 +5,7 @@ function initLinks() {
 }
 
 function initImageBox() {
-	$('div.post a[href*="blog.cincura.net"]:has(img)').fancybox({
+	$('div.post a[href*="blog.cincura.net/i/"]:has(img)').fancybox({
 		openEffect: 'fade',
 		closeEffect: 'fade',
 		nextEffect: 'fade',
