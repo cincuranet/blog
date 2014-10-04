@@ -25,11 +25,11 @@ create table test_detail(
 
 <p>You see, no FK defined. Then you generate model from database, just next &gt; next &gt; finish style and you end up with:</p>
 
-<p><img src="{{ site.url }}/i/associations_no_fk_1.png" alt="" /></p>
+<p><img src="{{ site.url }}/i/230963/associations_no_fk_1.png" alt="" /></p>
 
 <p>Now the magic begins. :) Just kidding. First delete the <code>id_master</code> column from entity, it has nothing to do in conceptual model. Next create new association (right click in empty space in designer) and create it as 1-*. OK, we're almost there. The last step, is to map the association. It's mapped to <code>test_detail</code>: <code>test_master.id</code> to <code>id_master</code> and <code>test_detail.id</code> to <code>id</code>.</p>
 
-<p><img src="{{ site.url }}/i/associations_no_fk_2.png" alt="" /></p>
+<p><img src="{{ site.url }}/i/230963/associations_no_fk_2.png" alt="" /></p>
 
 <p>Now you can start querying the data across associations.</p>
 

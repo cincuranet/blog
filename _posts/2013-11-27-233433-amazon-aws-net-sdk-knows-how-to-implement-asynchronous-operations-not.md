@@ -18,7 +18,7 @@ Little bit worried about some breaking changes, but anyway I decided to update. 
 
 As I started changing the methods and removing explicit callbacks I started also small testing to see how it performs. What a (bad) surprise I saw, when the results and resource usage was not what I would expect from nice fully (given a lot of it is actual HTTP calls to AWS) asynchronous code. It was time to dive into code. :) After walking through code a little I started to see crazy stuff. Like crazy. Let's say you want to upload some file to S3, without too much hassle. There's a [`TransferUtility`][3] class and part of it is visible [here][4]. If you'll jump to [ExecuteAsync method][5], which is suspicious anyway, you find this <small>(you can click on link before to see the code directly or on image below)</small>:
 
-[![AWS SDK ExecuteAsync]({{ site.url }}/i/thumbs/aws_sdk_executeasync.png)]({{ site.url }}/i/aws_sdk_executeasync.png)
+[![AWS SDK ExecuteAsync]({{ site.url }}/i/233433/aws_sdk_executeasync_thumb.png)]({{ site.url }}/i/233433/aws_sdk_executeasync.png)
 
 Who the hell was implementing that? It's starting a new task (that's ultimately going to be executed somewhere, very likely [`ThreadPool`][6]) and then spinning a new [`Thread`][7] followed by immediate blocking (calling [`Join`][8]). The method being called is blocking as well, because the signature is `Func<T>`. That's like a nightmare. Creating threads, blocking, :o :/.
 
