@@ -8,8 +8,8 @@
 	{% else %}
 	<title>{% include site_name_text.html %} | {% include site_description_text.html %}</title>
 	{% endif %}       
-	<link rel="shortcut icon" href="http://i.blog.cincura.net/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="http://i.blog.cincura.net/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
 
 	<link rel="alternate" type="application/atom+xml" title="{% include site_name_text.html %}" href="{{ site.url }}/{{ site.feed }}" />	
 
