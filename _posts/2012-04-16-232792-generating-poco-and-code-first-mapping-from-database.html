@@ -13,7 +13,7 @@ layout: post
 
 <p>Luckily now there's a tool for that, that does all in one step. <a href="http://visualstudiogallery.msdn.microsoft.com/72a60b14-1581-4b9b-89f2-846072eff19d">EF Power Tools (currently Beta 2)</a>. When you right-click on project, you'll get <i>Entity Framework</i> menu with <i>Reverse Engineer Code First</i>.</p>
 
-<p><img src="http://i.blog.cincura.net/ef_power_tools_b2.png" /></p>
+<p><img src="{{ site.url }}/i/ef_power_tools_b2.png" /></p>
 
 <p>This will query the database similar as when using EDMX and spit out entity classes and (complete) mapping (using Fluent API). You can even customize the template being used for generating code. It's just T4. Only difference is, that you can't select subset of tables. It will always create code from whole database (which can be problem for huge legacy databases). And you don't have any progress while process is running. But it's still beta. :) On the other hand, you can run it multiple times, it will overwrite the original files, so you'll get fresh mapping, which can be quite handy, and entities (sure you're using VCS to merge your changes back).</p>
 

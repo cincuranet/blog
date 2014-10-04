@@ -11,11 +11,11 @@ layout: post
 
 <p>First you need to focus you <a href="http://msdn.microsoft.com/en-us/library/ee382830.aspx">Entity Set</a> (not <a href="http://msdn.microsoft.com/en-us/library/ee382837.aspx">Entity Type</a>) in <a href="http://msdn.microsoft.com/en-us/library/bb738483.aspx">Model Browser</a> window.</p>
 
-<p><img src="http://i.blog.cincura.net/CustomLogicEntitySet1.png" /></p>
+<p><img src="{{ site.url }}/i/CustomLogicEntitySet1.png" /></p>
 
 <p>Here set the access modifier to i.e. <code>private</code> or (<code>internal</code>/<code>protected</code>) and rename it to something else, so it'll not interfere with original name of property we're going to create. I often use <code>X</code> prefix (especially for properties on entities).</p>
 
-<p><img src="http://i.blog.cincura.net/CustomLogicEntitySet2.png" /></p>
+<p><img src="{{ site.url }}/i/CustomLogicEntitySet2.png" /></p>
 
 <p>Now it's pretty easy to create some logic. Here I simply added filtering to always only fetch entities younger than 10 days from now.</p>
 

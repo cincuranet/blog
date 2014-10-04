@@ -17,7 +17,7 @@ layout: post
 
 <p>Have a look at this picture (yeah, test machine is Windows XP 8-)).</p>
 
-<p><a href="http://i.blog.cincura.net/nuodb_console.png"><img src="http://i.blog.cincura.net/thumbs/nuodb_console.jpg" /></a></p>
+<p><a href="{{ site.url }}/i/nuodb_console.png"><img src="{{ site.url }}/i/thumbs/nuodb_console.jpg" /></a></p>
 
 <p>You can see there's one broker running on my 'test' machine. There are two choruses, with bunch of nodes. In this picture everything is on same machine, but in real environment you would probably have it across more machine. In '<code>test</code>' chorus is one archive node being started (the grayed one), currently not 100% ready and in '<code>test2</code>' chorus there is on the other hand some problem with one transaction node. For any problem you can check the log to see what's wrong. From the same interface, using wizard, add nodes. Better than typing the commands again and again.</p>
 
@@ -27,8 +27,8 @@ layout: post
 
 <p>And if I'm talking about playing, there's also one program, that's great for playing and seeing what's going on. In <code>samples\flights</code> you can find application that allows you to put load to your setup. The bottom line is that you can play with number of clients (threads), also percent of updates and reconnect timeout. On the other hand in console you can try adding and removing nodes and see the system throughput. Whether it scales properly or whether you have some bottleneck there.</p>
 
-<p><a href="http://i.blog.cincura.net/nuodb_flights1.png"><img src="http://i.blog.cincura.net/thumbs/nuodb_flights1.jpg" /></a></p>
-<p><a href="http://i.blog.cincura.net/nuodb_flights2.png"><img src="http://i.blog.cincura.net/thumbs/nuodb_flights2.jpg" /></a></p>
+<p><a href="{{ site.url }}/i/nuodb_flights1.png"><img src="{{ site.url }}/i/thumbs/nuodb_flights1.jpg" /></a></p>
+<p><a href="{{ site.url }}/i/nuodb_flights2.png"><img src="{{ site.url }}/i/thumbs/nuodb_flights2.jpg" /></a></p>
 
 <p>Wanna have more computing power? Add more machines with transaction nodes. Wanna be sure your data are safe in case of storage failure? Add more archive nodes. Also take into account, that each archive node holds complete data, not only some slices. So you should have enough free space available.</p>
 
