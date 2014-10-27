@@ -7,9 +7,9 @@ tags:
 category: none
 layout: post
 ---
-When I'm teaching my ["parallel-threading-asynchronous-locking-synchronization" course][1] I discuss the [`lock` statement][2] a lot. Not only because it's probably most widely used "lock", but also because it's pretty easy to fall into a trap if you don't know what's going on behind the scenes and around you.
+When I'm teaching my ["parallel-threading-asynchronous-locking-synchronization" course][1] I discuss the [`lock` statement][2] a lot. Not only because it's probably the most widely used "lock", but also because it's pretty easy to fall into a trap if you don't know what's going on behind the scenes and around you.
 
-Anyway. I often show how the `lock` is translated into `try`-`finally` block and that it does not come for free. And among other things I'm trying to get into brains of the people I'm teaching is that you should spent as less time as possible inside `lock` as possible (of course, with some exceptions) - less contention equals less waiting hence more resources used for real work.
+Anyway. I often show how the `lock` is translated into `try`-`finally` block and that it does not come for free. And among other things I'm trying to get into the brains of the people I'm teaching is that you should spent as less time as possible inside `lock` (of course, with some exceptions) - less contention equals less waiting hence more resources used for real work.
 
 <!-- excerpt -->
 
@@ -97,7 +97,7 @@ Is there a change in results now? Yes, a bit. Again the 32bit first. Now it was 
 
 Now you might think that few percent difference on a μs operation is not important. Sure. But also take into account that when you start writing some locking or synchronization you want it to be fast. To utilize all resources you have available for getting the result. That means (not only) getting in and out the lock as fast as you can. 
 
-As usual the decision os on you. 
+As usual the decision is on you.
 
 [1]: http://www.x2develop.com
 [2]: http://msdn.microsoft.com/en-us/library/c5kehkcz.aspx
