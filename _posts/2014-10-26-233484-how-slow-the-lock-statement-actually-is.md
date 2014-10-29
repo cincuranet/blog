@@ -99,8 +99,11 @@ Now you might think that few percent difference on a μs operation is not import
 
 As usual the decision is on you.
 
+> [Part 2 of this story.][6]
+
 [1]: http://www.x2develop.com
 [2]: http://msdn.microsoft.com/en-us/library/c5kehkcz.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.monitor.enter(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.monitor.exit(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/dd289498(v=vs.110).aspx
+[6]: {{ site.url }}{% post_url 2014-10-29-233485-how-slow-the-lock-statement-actually-is-part-2 %}
