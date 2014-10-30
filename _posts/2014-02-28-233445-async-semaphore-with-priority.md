@@ -100,8 +100,11 @@ What might be surprising for you is that I'm spinning new `Task` in `Release` me
 
 Enjoy. Improvements are welcome.
 
+> [The story continues.][6]
+
 [1]: http://en.wikipedia.org/wiki/Semaphore_(programming)
 [2]: http://social.msdn.microsoft.com/Search/en-US?query=%22Building%20Async%20Coordination%20Primitives%22&beta=0&rn=.NET+Parallel+Programming&rq=site:blogs.msdn.com/b/pfxteam/&ac=4
 [3]: http://blogs.msdn.com/b/pfxteam/archive/2012/02/12/10266983.aspx
 [4]: http://msdn.microsoft.com/en-us/library/hh462723(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx
+[6]: {{ site.url }}{% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}
