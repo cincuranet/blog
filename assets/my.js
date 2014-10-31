@@ -13,17 +13,6 @@ function initImageBox() {
 	});
 }
 
-function initCollapsable() {
-	$('.collapsable .collapsable-header').each(function(i,e){
-		e = $(e);
-		e.click(function(){
-			e.parent().children('.collapsable-item').slideToggle();
-		});
-		e.css('cursor', 'pointer');
-	});
-	$('.collapsable .collapsable-item').hide();
-}
-
 function initSearch() {
 	$('#search').keypress(function(e){
 		if (e.which == 13) {
@@ -72,7 +61,6 @@ function initSyntaxHighlighting() {
 $(document).ready(function() {
 	initLinks();
 	initImageBox();
-	initCollapsable();
 	initSearch();
 	initSyntaxHighlighting();
 });

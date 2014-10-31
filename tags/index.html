@@ -15,6 +15,15 @@ title: Tags
 			e = $(e);
 			anchor.append(e);
 		});
+
+		$('.collapsable .collapsable-header').each(function(i,e){
+			e = $(e);
+			e.click(function(){
+				e.parent().children('.collapsable-item').slideToggle();
+			});
+			e.css('cursor', 'pointer');
+		});
+		$('.collapsable .collapsable-item').hide();
 	});
 </script>
 
