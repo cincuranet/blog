@@ -27,7 +27,7 @@ Of course we might argue what's worse or what's more likely. I believe in deadlo
 
 This one is only partially true as I proved to myself in [previous post][1]. The `finally` block is not cheap. The CLR guarantees a lot of stuff for `finally` blocks - like that it's always executed (except when you unplug your computer from the wall socket :D). And all the guarantees come with price.
 
-I proved that in 32bit builds. Much less in 64 bit, though.
+I proved that in 32bit builds. Much less in 64bit, though.
 
 Given that you often use multithreaded parallel algorithm to make your code run faster, you care about how long the lock is held. Contention, starving, trashing, ... All this matters when you care about performance. I agree on premature optimization. But I also don't want to waste resources by writing code that might have been better from the start.
 
