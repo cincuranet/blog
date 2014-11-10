@@ -1,6 +1,6 @@
 ---
 title: "ADO.NET provider 4.5.2.0 for Firebird is ready"
-date: 2014-09-10T05:15:00Z
+date: 2014-11-10T17:55:00Z
 tags:
   - .NET
   - Announcements &amp; Invitations
