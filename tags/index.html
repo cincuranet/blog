@@ -33,7 +33,7 @@ title: Tags
 	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
 	<p class="collapsable-item">
 		{% for p in t[1] %}
-		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a><br />
+		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %b %Y" }})<br />
 		{% endfor %}
 	</p>
 	<br />
