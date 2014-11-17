@@ -12,7 +12,7 @@ But that was pre-EF6 era and some API changed. In fact it's now even way easier 
 
 <!-- excerpt -->
 
-Let's do just simple "upper-casing" convention. Given I need to handle all columns and tables, even the ones generated, I need to use so-called store conventions. These operate on the model in S-Space. The interface I'm going to use is [`IStoreModelConvention`][3]. This interface needs type parameter to describe on what element we're going to operate. I'll start with [`EdmProperty`][4]. This class represents column in S-Space. (Also I believe there's a way from [`EntityType`][5]. But why to make it harder.) Whoever implements `IStoreModelConvention` interface must implement single method `void Apply(T item, DbModel model)`. No problem.
+Let's do just simple "upper-casing" convention. Given I need to handle all columns and tables, even the ones generated, I need to use so-called store model conventions. These operate on the model in S-Space. The interface I'm going to use is [`IStoreModelConvention`][3]. This interface needs type parameter to describe on what element we're going to operate. I'll start with [`EdmProperty`][4]. This class represents column in S-Space. (Also I believe there's a way from [`EntityType`][5]. But why to make it harder.) Whoever implements `IStoreModelConvention` interface must implement single method `void Apply(T item, DbModel model)`. No problem.
 
 <pre class="brush:csharp">
 public void Apply(EdmProperty item, DbModel model)
