@@ -6,7 +6,7 @@ tags:
 category: none
 layout: post
 ---
-Before Entity Framework 6 was finalized I wrote posts ([[1]][1] and [[2]][2]) showing how with the help of conventions you can save yourself some tedious typing for databases follwing strictly SQL standard in respect to upper case and (not)quoting (see previous posts for details).
+Before Entity Framework 6 was finalized I wrote posts ([[1]][1] and [[2]][2]) showing how with the help of conventions you can save yourself some tedious typing for databases following strictly SQL standard in respect to upper case and (not)quoting (see previous posts for details).
 
 But that was pre-EF6 era and some API changed. In fact it's now even way easier to do that.
 
