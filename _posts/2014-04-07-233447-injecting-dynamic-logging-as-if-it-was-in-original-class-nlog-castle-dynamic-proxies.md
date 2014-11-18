@@ -58,8 +58,11 @@ Once you register these in your `IWindsorInstaller` you can apply these to your 
 
 Few lines of code and the work is done.
 
+> [Improved implementation that handles `async` methods as well.][6]
+
 [1]: http://www.asp.net/web-api
 [2]: http://docs.castleproject.org/Windsor.MainPage.ashx
 [3]: http://nlog-project.org/
 [4]: http://en.wikipedia.org/wiki/Aspect-oriented_programming
 [5]: http://docs.castleproject.org/Windsor.Registering-Interceptors-ProxyOptions.ashx
+[6]: {{ site.url }}{% post_url 2014-11-18-233489-injecting-logging-into-asynchronous-methods %}
