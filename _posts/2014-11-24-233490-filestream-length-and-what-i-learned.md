@@ -4,6 +4,7 @@ date: 2014-11-24T05:43:00Z
 tags:
   - .NET
   - Azure
+  - Performance
 category: none
 layout: post
 ---
