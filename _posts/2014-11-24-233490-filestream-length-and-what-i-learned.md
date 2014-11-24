@@ -7,7 +7,7 @@ tags:
 category: none
 layout: post
 ---
-I'm writing a tool that has, at the core, only one task. Upload file or files to the Azure blob as fast and as efficiently as possible. Nothing special overall. The devil is in details. As usual.
+I'm writing a tool that has, at the core, only one task. Upload file or files to the [Azure blob][7] as fast and as efficiently as possible. Nothing special overall. The devil is in details. As usual.
 
 <!-- excerpt -->
 
@@ -23,3 +23,4 @@ Although the `FileStream.Length` property behavior is completely clear I haven't
 [4]: http://msdn.microsoft.com/en-us/library/system.io.ioexception%28v=vs.110%29.aspx
 [5]: {{ site.url }}{% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}
 [6]: http://referencesource.microsoft.com/mscorlib/system/io/filestream.cs.html#fa88edfdb51ed91c
+[7]: http://azure.microsoft.com/en-us/services/storage/
