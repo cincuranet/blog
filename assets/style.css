@@ -242,7 +242,7 @@ article li {
 	line-height: 1.6;
 	background: transparent url(bullet.gif) no-repeat left 2px top 4px;
 }
-article li li {
+article li li, article li p {
 	font-size: 1em;
 }
 
