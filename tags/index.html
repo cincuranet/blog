@@ -21,7 +21,6 @@ title: Tags
 			e.click(function(){
 				e.parent().children('.collapsable-item').slideToggle();
 			});
-			e.css('cursor', 'pointer');
 		});
 		$('.collapsable .collapsable-item').hide();
 	});
@@ -30,7 +29,7 @@ title: Tags
 <h3>Tags</h3>
 {% for t in site.tags %}
 <div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
-	<h4 class="collapsable-header">{{ t[0] }} ({{ t[1] | size }})</h4>
+	<h4 class="collapsable-header"><a href="#" name="{{ t[0] | upcase }}">{{ t[0] }} ({{ t[1] | size }})</a></h4>
 	<p class="collapsable-item">
 		{% for p in t[1] %}
 		<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %b %Y" }})<br />
