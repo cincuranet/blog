@@ -13,7 +13,7 @@ So I started some small research for some web frameworks. Given I'm a newbie I w
 
 <!-- excerpt -->
 
-After some playing locally and on my Raspberry Pi I wanted to do some "real" (don't miss the quotes) stuff. [Azure][2] or [Azure Websites][3] to be precise was my target. Mostly because all my fun Python projects are using [Azure Storage][4] for something.
+After some playing locally and on my Raspberry Pi I wanted to do some "real" (don't miss the quotes ;)) stuff. [Azure][2] or [Azure Websites][3] to be precise was my target. Mostly because all my fun Python projects are using [Azure Storage][4] for something.
 
 Again some research and learning (I love how steep the learning curve is for something completely new for me). Going through documentation on Azure I spotted something I knew I saw in CherryPy's documentation - WSGI. Apparently you can [create WSGI compatible application from CherryPy application][5] in just single line of code. Awesome. Azure seemes to be [doing something with it][6] as well so let's jump in.
 
