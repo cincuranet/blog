@@ -19,4 +19,4 @@ Enjoy, download, contribute.
 [1]: http://www.firebirdsql.org/en/net-provider/
 [2]: https://sourceforge.net/p/firebird/NETProvider/ci/master/tree/
 [3]: https://github.com
-[4]: https://github.com/cincuranet/NETProvider
+[4]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient

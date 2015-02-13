@@ -36,6 +36,6 @@ And I also moved storage for this application to [Azure][13]. :) So far no nasty
 [8]: http://msdn.microsoft.com/en-us/library/system.threading.thread.join(v=vs.110).aspx
 [9]: http://aws.amazon.com/
 [10]: http://www.id3renamer.com
-[11]: https://github.com/cincuranet/NETProvider
+[11]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient
 [12]: https://github.com/nuodb/nuodb-dotnet
 [13]: http://www.windowsazure.com/

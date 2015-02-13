@@ -24,7 +24,7 @@ This is just a small release with [contributions on GitHub][2] and so-called `Pr
 You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][3] and [EntityFramework.Firebird][4] (or from [firebirdsql.org][1]).
   
 [1]: http://www.firebirdsql.org/en/net-provider/       
-[2]: https://github.com/cincuranet/NETProvider/pulls?q=is%3Apr+is%3Aclosed
+[2]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/pulls?q=is%3Apr+is%3Aclosed
 [3]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [4]: http://www.nuget.org/packages/EntityFramework.Firebird/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?projectId=10003&styleName=Text&version=10620
