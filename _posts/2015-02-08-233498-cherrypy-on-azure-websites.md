@@ -33,7 +33,15 @@ if __name__ == '__main__':
 	httpd.serve_forever()
 </pre> 
 
-The hostname/IP and port doesn't matter for Azure (at least it works with whatever (valid) combination for me). The whole is [`app.py`][13] in [my repository][7].
+The whole is [`app.py`][13] in [my repository][7].
+
+The file is named `app.py` because in `web.config` there's `WSGI_ALT_VIRTUALENV_HANDLER` key defining where to look for WSGI application. That's also why the variable is named `wsgi_app`.
+
+<pre class="brush:xml">
+&lt;add key="WSGI_ALT_VIRTUALENV_HANDLER" value="app.wsgi_app" /&gt;
+</pre>
+
+The part inside the `__main__` `if` doesn't matter for Azure. It's just to be able to start application from command line or something like that.
 
 Done. Now if you wait a few seconds for deployment to happen and head to your URL you'll the application running. On Azure Websites. No problem.
 
