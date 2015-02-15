@@ -57,7 +57,7 @@ gci *.jpg | foreach {
 		Write-Host '{ No ''Date Taken'' in Exif }' -ForegroundColor Cyan	
 		return
 	}
-	$newName = $date.ToString('yyyy-MM-dd hh.mm.ss') + '.jpg'
+	$newName = $date.ToString('yyyy-MM-dd HH.mm.ss') + '.jpg'
 	$newName = (Join-Path $_.DirectoryName $newName)
 	Write-Host $newName -ForegroundColor Cyan
 	mv $_ $newName
