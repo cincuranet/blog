@@ -66,9 +66,9 @@ layout: nil
     </style>
     <script src="http://blog.cincura.net/assets/jquery/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-      $(document).ready(HideOlderArticles);
+      $(document).ready(hideOlderArticles);
       
-      function HideOlderArticles() {
+      function hideOlderArticles() {
         var MaxArticles = 20;
         var articles = $('#articles tr:not(:first-child.more)');
         articles.each(function(index, item) { if (index > MaxArticles) $(item).remove(); });
