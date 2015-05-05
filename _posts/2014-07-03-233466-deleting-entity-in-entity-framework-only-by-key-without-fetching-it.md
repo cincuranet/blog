@@ -12,7 +12,7 @@ I "knew" I can do it. It was just a question of how deep I'll have to dig. Surpr
 
 <!-- excerpt -->
 
-But first thing first. When you want to delete entity, you have to have the instance of it and then you can the [`Remove`][1] method on [`DbSet`][2]. If you don't have the instance, fetching it seems to be waste of resource given you want to delete it immediately, right? Truth is Entity Framework needs only the key(s) to delete the entity, nothing more (and possibly fields used for concurrency check - I'll ignore there in following lines).
+But first thing first. When you want to delete entity, you have to have the instance of it and then you can the [`Remove`][1] method on [`DbSet`][2]. If you don't have the instance, fetching it seems to be waste of resource given you want to delete it immediately, right? Truth is Entity Framework needs only the key(s) to delete the entity, nothing more (and possibly fields used for concurrency check - I'll ignore these in following lines).
 
 So what you can, in fact, do is trick Entity Framework thinking it has the instance but providing only the stub. Here's the example.
 
