@@ -4,4 +4,4 @@ layout:
 User-agent: *
 Disallow: 
 
-Sitemap: {{ site.url }}/sitemap.txt
+Sitemap: {{ site.url }}/{{ site.sitemap }}
