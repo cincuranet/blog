@@ -4,6 +4,7 @@ date: 2014-10-25T08:26:00Z
 tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
+redirect_from: /id/233483
 category: none
 layout: post
 ---

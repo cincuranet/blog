@@ -5,6 +5,7 @@ tags:
   - NuoDB
   - Entity Framework
   - LINQ
+redirect_from: /id/233453
 category: none
 layout: post
 ---

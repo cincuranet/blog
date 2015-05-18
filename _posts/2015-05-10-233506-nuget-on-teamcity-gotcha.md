@@ -4,6 +4,7 @@ date: 2015-05-10T11:40:00Z
 tags:
   - TeamCity
   - Continuous Integration
+redirect_from: /id/233506
 category: none
 layout: post
 ---

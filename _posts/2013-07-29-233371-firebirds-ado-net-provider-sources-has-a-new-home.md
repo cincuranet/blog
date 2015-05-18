@@ -5,6 +5,7 @@ tags:
   - Firebird
   - Git
   - Subversion
+redirect_from: /id/233371
 category: none
 layout: post
 ---

@@ -3,6 +3,7 @@ title: "Programming for 35+ years in production"
 date: 2013-09-13T6:45:00Z
 tags:
   - Programming in general
+redirect_from: /id/233413
 category: none
 layout: post
 ---

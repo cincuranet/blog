@@ -3,6 +3,7 @@ title: "Seznam klávesových zkratek z mé přednášky \"Visual Studio 2010/201
 date: 2013-05-25T09:15:34Z
 tags:
   - Presentations &amp; Speaking
+redirect_from: /id/233280
 category: none
 layout: post
 ---

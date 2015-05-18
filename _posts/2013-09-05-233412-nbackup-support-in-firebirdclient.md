@@ -4,6 +4,7 @@ date: 2013-09-05T14:56:37Z
 tags:
   - .NET
   - Firebird
+redirect_from: /id/233412
 category: none
 layout: post
 ---

@@ -4,6 +4,7 @@ date: 2014-04-24T12:38:00Z
 tags:
   - .NET
   - C#
+redirect_from: /id/233452
 category: none
 layout: post
 ---

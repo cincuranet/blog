@@ -5,6 +5,7 @@ tags:
   - .NET
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
+redirect_from: /id/233231
 category: none
 layout: post
 ---

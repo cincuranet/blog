@@ -3,6 +3,7 @@ title: "After you recovered from disaster how are you going to \"unleash\" your 
 date: 2014-06-03T06:09:00Z
 tags:
   - Disaster recovery
+redirect_from: /id/233461
 category: none
 layout: post
 ---

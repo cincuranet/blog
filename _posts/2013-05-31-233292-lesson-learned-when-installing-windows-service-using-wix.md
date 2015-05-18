@@ -6,6 +6,7 @@ tags:
   - PowerShell
   - Windows
   - WiX
+redirect_from: /id/233292
 category: none
 layout: post
 ---

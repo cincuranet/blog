@@ -5,6 +5,7 @@ tags:
   - Announcements &amp; Invitations
   - Entity Framework
   - Presentations &amp; Speaking
+redirect_from: /id/233424
 category: none
 layout: post
 ---

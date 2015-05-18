@@ -4,6 +4,7 @@ date: 2013-05-10T07:53:24Z
 tags:
   - Entity Framework
   - Firebird
+redirect_from: /id/233254
 category: none
 layout: post
 ---

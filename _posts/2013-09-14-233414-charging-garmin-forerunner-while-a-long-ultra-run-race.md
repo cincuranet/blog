@@ -5,6 +5,7 @@ tags:
   - Garmin
   - Running
   - GPS
+redirect_from: /id/233414
 category: none
 layout: post
 ---

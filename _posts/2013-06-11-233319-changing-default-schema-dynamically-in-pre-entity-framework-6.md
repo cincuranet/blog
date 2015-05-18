@@ -3,6 +3,7 @@ title: "Changing default schema dynamically in pre-Entity Framework 6 "
 date: 2013-06-11T12:03:40Z
 tags:
   - Entity Framework
+redirect_from: /id/233319
 category: none
 layout: post
 ---

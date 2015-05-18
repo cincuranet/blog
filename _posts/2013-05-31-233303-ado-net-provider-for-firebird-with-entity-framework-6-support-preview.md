@@ -5,6 +5,7 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
+redirect_from: /id/233303
 category: none
 layout: post
 ---

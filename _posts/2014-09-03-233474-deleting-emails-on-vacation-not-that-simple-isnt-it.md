@@ -4,6 +4,7 @@ date: 2014-09-03T13:33:00Z
 tags:
   - Email
   - Life
+redirect_from: /id/233474
 category: none
 layout: post
 ---

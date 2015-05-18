@@ -5,6 +5,7 @@ tags:
   - .NET
   - Entity Framework
   - Visual Studio
+redirect_from: /id/233202
 category: none
 layout: post
 ---

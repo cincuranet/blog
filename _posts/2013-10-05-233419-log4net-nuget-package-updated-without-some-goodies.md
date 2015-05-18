@@ -4,6 +4,7 @@ date: 2013-10-05T08:03:00Z
 tags:
   - Logging &amp; Tracing
   - NuGet
+redirect_from: /id/233419
 category: none
 layout: post
 ---

@@ -4,6 +4,7 @@ date: 2015-02-08T17:45:00Z
 tags:
   - Python
   - Azure
+redirect_from: /id/233498
 category: none
 layout: post
 ---

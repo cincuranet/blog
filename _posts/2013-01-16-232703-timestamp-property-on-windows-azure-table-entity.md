@@ -7,6 +7,7 @@ tags:
   - Best practice or not?
   - Cloud
   - Lessons learned
+redirect_from: /id/232703
 category: none
 layout: post
 ---

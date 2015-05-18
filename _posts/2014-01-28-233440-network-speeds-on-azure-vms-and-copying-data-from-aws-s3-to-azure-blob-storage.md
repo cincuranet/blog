@@ -7,6 +7,7 @@ tags:
   - Azure Storage
   - Cloud
   - Storage &amp; Backup
+redirect_from: /id/233440
 category: none
 layout: post
 ---

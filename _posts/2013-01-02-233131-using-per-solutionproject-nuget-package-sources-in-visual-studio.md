@@ -4,6 +4,7 @@ date: 2013-01-02T10:00:47Z
 tags:
   - NuGet
   - Visual Studio
+redirect_from: /id/233131
 category: none
 layout: post
 ---

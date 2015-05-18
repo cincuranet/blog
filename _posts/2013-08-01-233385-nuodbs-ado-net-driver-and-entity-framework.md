@@ -12,6 +12,7 @@ tags:
   - NuoDB
   - SQL
   - Visual Studio
+redirect_from: /id/233385
 category: none
 layout: post
 ---

@@ -7,6 +7,7 @@ tags:
   - Cloud
   - Lessons learned
   - Storage &amp; Backup
+redirect_from: /id/233436
 category: none
 layout: post
 ---

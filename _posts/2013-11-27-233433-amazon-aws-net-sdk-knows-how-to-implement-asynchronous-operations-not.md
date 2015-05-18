@@ -7,6 +7,7 @@ tags:
   - Storage &amp; Backup
   - Amazon AWS
   - Cloud
+redirect_from: /id/233433
 category: none
 layout: post
 ---

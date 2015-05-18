@@ -3,6 +3,7 @@ title: "DbUpdateConcurrencyException \"client wins\" and \"store wins\" resoluti
 date: 2014-07-11T09:33:00Z
 tags:
   - Entity Framework
+redirect_from: /id/233469
 category: none
 layout: post
 ---

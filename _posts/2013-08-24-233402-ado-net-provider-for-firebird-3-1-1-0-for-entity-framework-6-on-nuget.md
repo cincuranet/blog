@@ -13,6 +13,7 @@ tags:
   - NuGet
   - SQL
   - Visual Studio
+redirect_from: /id/233402
 category: none
 layout: post
 ---

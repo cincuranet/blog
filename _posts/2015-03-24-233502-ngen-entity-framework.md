@@ -3,6 +3,7 @@ title: "NGen Entity Framework"
 date: 2015-03-24T13:19:00Z
 tags:
   - Entity Framework
+redirect_from: /id/233502
 category: none
 layout: post
 ---

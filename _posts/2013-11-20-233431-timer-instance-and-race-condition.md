@@ -5,6 +5,7 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Best practice or not?
   - Lessons learned
+redirect_from: /id/233431
 category: none
 layout: post
 ---

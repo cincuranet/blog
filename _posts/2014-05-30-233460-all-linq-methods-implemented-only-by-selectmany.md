@@ -6,6 +6,7 @@ tags:
   - .NET
   - C#
   - Monad
+redirect_from: /id/233460
 category: none
 layout: post
 ---

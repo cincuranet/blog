@@ -6,6 +6,7 @@ tags:
   - Exif
   - .NET
   - Photos
+redirect_from: /id/233463
 category: none
 layout: post
 ---

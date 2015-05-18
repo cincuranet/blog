@@ -5,6 +5,7 @@ tags:
   - .NET
   - C#
   - Lessons learned
+redirect_from: /id/233164
 category: none
 layout: post
 ---
