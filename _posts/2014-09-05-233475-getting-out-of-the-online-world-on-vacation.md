@@ -5,7 +5,7 @@ tags:
   - Email
   - Life
   - Running
-redirect_from: /id/233475
+redirect_from: /id/233475/
 category: none
 layout: post
 ---

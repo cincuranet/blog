@@ -6,7 +6,7 @@ tags:
   - Announcements &amp; Invitations
   - Databases in general
   - Firebird
-redirect_from: /id/233441
+redirect_from: /id/233441/
 category: none
 layout: post
 ---

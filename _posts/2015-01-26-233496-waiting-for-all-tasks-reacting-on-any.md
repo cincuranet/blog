@@ -3,7 +3,7 @@ title: "Waiting for all tasks, reacting on any"
 date: 2015-01-26T07:06:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233496
+redirect_from: /id/233496/
 category: none
 layout: post
 ---

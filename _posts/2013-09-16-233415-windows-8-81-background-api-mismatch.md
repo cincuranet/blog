@@ -5,7 +5,7 @@ tags:
   - Windows
   - .NET
   - WinRT
-redirect_from: /id/233415
+redirect_from: /id/233415/
 category: none
 layout: post
 ---

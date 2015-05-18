@@ -5,7 +5,7 @@ tags:
   - .NET
   - Azure
   - Performance
-redirect_from: /id/233490
+redirect_from: /id/233490/
 category: none
 layout: post
 ---

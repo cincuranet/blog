@@ -8,7 +8,7 @@ tags:
   - Firebird
   - LINQ
   - .NET
-redirect_from: /id/233472
+redirect_from: /id/233472/
 category: none
 layout: post
 ---

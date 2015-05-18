@@ -4,7 +4,7 @@ date: 2014-02-07T08:14:00Z
 tags:
   - Running
   - Life
-redirect_from: /id/233444
+redirect_from: /id/233444/
 category: none
 layout: post
 ---

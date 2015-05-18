@@ -3,7 +3,7 @@ title: "String.Format \"args\" and Console.WriteLine \"arg\""
 date: 2013-11-20T14:27:00Z
 tags:
   - .NET
-redirect_from: /id/233432
+redirect_from: /id/233432/
 category: none
 layout: post
 ---

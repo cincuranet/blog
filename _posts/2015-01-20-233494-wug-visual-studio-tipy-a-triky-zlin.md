@@ -6,7 +6,7 @@ tags:
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard
-redirect_from: /id/233494
+redirect_from: /id/233494/
 category: none
 layout: post
 ---

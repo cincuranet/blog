@@ -5,7 +5,7 @@ tags:
   - .NET
   - Logging &amp; Tracing
   - Aspect Oriented Programming (AOP)
-redirect_from: /id/233489
+redirect_from: /id/233489/
 category: none
 layout: post
 ---

@@ -5,7 +5,7 @@ tags:
   - C#
   - Lessons learned
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233134
+redirect_from: /id/233134/
 category: none
 layout: post
 ---

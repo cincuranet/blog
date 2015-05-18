@@ -5,7 +5,7 @@ tags:
   - Synology
   - Network Attached Storage (NAS)
   - Western Digital
-redirect_from: /id/233473
+redirect_from: /id/233473/
 category: none
 layout: post
 ---

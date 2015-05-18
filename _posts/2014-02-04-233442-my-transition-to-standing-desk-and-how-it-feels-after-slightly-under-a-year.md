@@ -4,7 +4,7 @@ date: 2014-02-04T08:50:00Z
 tags:
   - Life
   - Standing desk
-redirect_from: /id/233442
+redirect_from: /id/233442/
 category: none
 layout: post
 ---

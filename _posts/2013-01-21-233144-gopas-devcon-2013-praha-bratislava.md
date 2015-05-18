@@ -5,7 +5,7 @@ tags:
   - Announcements &amp; Invitations
   - Conferences
   - Presentations &amp; Speaking
-redirect_from: /id/233144
+redirect_from: /id/233144/
 category: none
 layout: post
 ---

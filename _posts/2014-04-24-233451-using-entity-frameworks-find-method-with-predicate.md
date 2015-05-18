@@ -4,7 +4,7 @@ date: 2014-04-24T05:21:00Z
 tags:
   - Entity Framework
   - LINQ
-redirect_from: /id/233451
+redirect_from: /id/233451/
 category: none
 layout: post
 ---

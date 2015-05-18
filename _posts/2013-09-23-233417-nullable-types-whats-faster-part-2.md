@@ -3,7 +3,7 @@ title: "Nullable types - what's faster? - part 2"
 date: 2013-09-23T12:07:00Z
 tags:
   - .NET
-redirect_from: /id/233417
+redirect_from: /id/233417/
 category: none
 layout: post
 ---

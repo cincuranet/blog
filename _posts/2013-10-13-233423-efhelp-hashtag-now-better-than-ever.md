@@ -4,7 +4,7 @@ date: 2013-10-13T16:56:00Z
 tags:
   - Entity Framework
   - Twitter
-redirect_from: /id/233423
+redirect_from: /id/233423/
 category: none
 layout: post
 ---

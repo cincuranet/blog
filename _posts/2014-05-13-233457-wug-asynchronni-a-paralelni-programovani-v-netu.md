@@ -5,7 +5,7 @@ tags:
   - Announcements &amp; Invitations 
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233457
+redirect_from: /id/233457/
 category: none
 layout: post
 ---

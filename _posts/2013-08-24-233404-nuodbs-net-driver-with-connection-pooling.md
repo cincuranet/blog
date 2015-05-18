@@ -7,7 +7,7 @@ tags:
   - NewSQL
   - NoSQL
   - NuoDB
-redirect_from: /id/233404
+redirect_from: /id/233404/
 category: none
 layout: post
 ---

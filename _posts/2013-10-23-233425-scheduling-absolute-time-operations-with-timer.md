@@ -4,7 +4,7 @@ date: 2013-10-23T08:03:00Z
 tags:
   - Reactive Extensions (Rx)
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233425
+redirect_from: /id/233425/
 category: none
 layout: post
 ---

@@ -7,7 +7,7 @@ tags:
   - Cloud
   - Firebird
   - Storage &amp; Backup
-redirect_from: /id/233284
+redirect_from: /id/233284/
 category: none
 layout: post
 ---

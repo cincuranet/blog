@@ -4,7 +4,7 @@ date: 2013-03-13T14:58:05Z
 tags:
   - Databases in general
   - Entity Framework
-redirect_from: /id/233189
+redirect_from: /id/233189/
 category: none
 layout: post
 ---

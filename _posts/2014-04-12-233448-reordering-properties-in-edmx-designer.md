@@ -4,7 +4,7 @@ date: 2014-04-12T07:56:00Z
 tags:
   - Entity Framework
   - Visual Studio
-redirect_from: /id/233448
+redirect_from: /id/233448/
 category: none
 layout: post
 ---

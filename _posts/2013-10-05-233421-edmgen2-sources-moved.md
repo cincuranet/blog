@@ -5,7 +5,7 @@ tags:
   - .NET
   - C#
   - Entity Framework
-redirect_from: /id/233421
+redirect_from: /id/233421/
 category: none
 layout: post
 ---

@@ -4,7 +4,7 @@ date: 2014-06-12T08:01:00Z
 tags:
   - .NET
   - Visual Studio
-redirect_from: /id/233464
+redirect_from: /id/233464/
 category: none
 layout: post
 ---

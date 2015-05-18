@@ -6,7 +6,7 @@ tags:
   - Wi-Fi
   - Network
   - OpenELEC
-redirect_from: /id/233491
+redirect_from: /id/233491/
 category: none
 layout: post
 ---

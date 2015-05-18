@@ -6,7 +6,7 @@ tags:
   - Entity SQL
   - LINQ
   - Spatial data
-redirect_from: /id/233239
+redirect_from: /id/233239/
 category: none
 layout: post
 ---

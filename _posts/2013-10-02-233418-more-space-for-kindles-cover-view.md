@@ -3,7 +3,7 @@ title: "More space for Kindle's \"Cover View\""
 date: 2013-10-02T11:50:00Z
 tags:
   - Amazon Kindle
-redirect_from: /id/233418
+redirect_from: /id/233418/
 category: none
 layout: post
 ---

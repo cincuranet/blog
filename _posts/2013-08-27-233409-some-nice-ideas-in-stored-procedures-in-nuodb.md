@@ -8,7 +8,7 @@ tags:
   - NuoDB
   - Programming in general
   - SQL
-redirect_from: /id/233409
+redirect_from: /id/233409/
 category: none
 layout: post
 ---

@@ -3,7 +3,7 @@ title: "Thinking about pacing"
 date: 2014-04-15T05:17:00Z
 tags:
   - Running
-redirect_from: /id/233449
+redirect_from: /id/233449/
 category: none
 layout: post
 ---

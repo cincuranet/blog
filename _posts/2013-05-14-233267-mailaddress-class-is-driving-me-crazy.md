@@ -5,7 +5,7 @@ tags:
   - .NET
   - Best practice or not?
   - Email
-redirect_from: /id/233267
+redirect_from: /id/233267/
 category: none
 layout: post
 ---
