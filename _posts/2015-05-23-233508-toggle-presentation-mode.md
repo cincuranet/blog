@@ -12,6 +12,8 @@ When I'm teaching my courses I'm of course in Presentation Mode. I keep all my a
 
 But turning it on and off means a lot of clicks. And that's slow. As a developer I keep my hands on keyboard. Little bit of searching and you'll find out two commands: `presentationsettings /start` and `presentationsettings /stop`. That's better. But you have to distinguish about the two actions. There's no toggle. And that is (or actually was) frustrating for me.
 
+<!-- excerpt -->
+
 I decided to make myself a little tool to do the toggle. First I needed to check whether I'm in Presentation Mode or not (and hence whether I'll be turning it off or on). That's what the [`SHQueryUserNotificationState`][1] function does. P/Invoke to save me. Next is just calling the `PresentationSettings.exe` with proper switch. And done.
 
 Here's the interesting part of the application. The `Interop` class contains just the definitions for P/Invoke.
