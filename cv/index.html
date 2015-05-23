@@ -3,313 +3,312 @@ layout: nil
 ---
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="robots" content="all,follow" />
-    <title>Curriculum Vitae – Mgr. Jiri Cincura</title>
-    <style type="text/css">
-    /* <![CDATA[ */
-      body {
-        font-family: Cambria;
-        font-size: 12pt;
-        padding: 12pt;
-        margin: 20pt 20pt 20pt 20pt;
-      }
-      h1, h2, h3 {
-        font-family: Cambria;
-      }
-      h1 {
-        text-align: center;
-        font-size: 20pt
-      }
-      h2 {
-        font-weight: bold;
-        font-size: 16pt;
-        padding-top: 12pt;
-        margin-bottom: 0pt;
-      }
-      h3 {
-        margin-bottom: 0pt;
-      }
-      ul {
-        list-style-type: square;
-        margin-top: 6pt;
-      }
-      ul ul {
-        list-style-type: disc;
-        margin-top: 0;
-      }
-      ul ul ul {
-        list-style-type: circle;
-      }
-      hr {
-        color: black;
-        height: 2px;
-        width: 80%;
-      }
-      table.skills {
-        border: 1px black solid;
-        border-top: 0;
-      }
-      td.skills {
-        border-collapse: collapse;
-        border-top: 1px black solid;
-      }
-      td > small {
-        font-size: 10pt;
-        padding-left: 20pt;
-      }
-      .more {
-        font-style: italic;
-      }
-    /* ]]> */
-    </style>
-    <script src="http://blog.cincura.net/assets/jquery/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        compactLongTable(20, "articles");
-        compactLongTable(20, "conferences");
-      });
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="all,follow" />
+		<title>Curriculum Vitae – Mgr. Jiri Cincura</title>
+		<style type="text/css">
+		/* <![CDATA[ */
+			body {
+				font-family: Cambria;
+				font-size: 12pt;
+				padding: 12pt;
+				margin: 20pt 20pt 20pt 20pt;
+			}
+			h1, h2, h3 {
+				font-family: Cambria;
+			}
+			h1 {
+				text-align: center;
+				font-size: 20pt
+			}
+			h2 {
+				font-weight: bold;
+				font-size: 16pt;
+				padding-top: 12pt;
+				margin-bottom: 0pt;
+			}
+			h3 {
+				margin-bottom: 0pt;
+			}
+			ul {
+				list-style-type: square;
+				margin-top: 6pt;
+			}
+			ul ul {
+				list-style-type: disc;
+				margin-top: 0;
+			}
+			ul ul ul {
+				list-style-type: circle;
+			}
+			hr {
+				color: black;
+				height: 2px;
+				width: 80%;
+			}
+			table.skills {
+				border: 1px black solid;
+				border-top: 0;
+			}
+			td.skills {
+				border-collapse: collapse;
+				border-top: 1px black solid;
+			}
+			td > small {
+				font-size: 10pt;
+				padding-left: 20pt;
+			}
+			.more {
+				font-style: italic;
+			}
+		/* ]]> */
+		</style>
+		<script src="http://blog.cincura.net/assets/jquery/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				compactLongTable(20, "articles");
+				compactLongTable(20, "conferences");
+			});
 
-      function compactLongTable(maxItems, tableName) {
-        var items = $('#' + tableName + ' tr:not(:first-child.more)');
-        items.each(function(index, item) {
-          if (index > maxItems)
-            $(item).remove();
-        });
-        var itemsLeft = items.length - maxItems;
-        $('#' + tableName).append('<tr><td colspan="99" class="more">and ' + itemsLeft + ' more ...</td></tr>');
-      }
-    </script>
+			function compactLongTable(maxItems, tableName) {
+				var items = $('#' + tableName + ' tr:not(:first-child.more)');
+				items.each(function(index, item) {
+					if (index > maxItems)
+						$(item).remove();
+				});
+				var itemsLeft = items.length - maxItems;
+				$('#' + tableName).append('<tr><td colspan="99" class="more">and ' + itemsLeft + ' more ...</td></tr>');
+			}
+		</script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-113043-8', 'cincura.net');
-  ga('send', 'pageview');
-
+ga('create', 'UA-113043-8', 'cincura.net');
+ga('send', 'pageview');
 </script>
-  </head>
-  <body>
-    <h1>Curriculum Vitae – Mgr. Jiri Cincura</h1>
-    <h2>Basic data:</h2>
-    <table>
-      <tr>
-        <td>Name:</td><td>&nbsp;</td><td>Jiri Cincura</td>
-      </tr>
-      <tr>
-        <td>Date of birth:</td><td>&nbsp;</td><td>March 5<sup>th</sup> 1983</td>
-      </tr>
-      <tr>
-        <td>Email:</td><td>&nbsp;</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
-      </tr>
-      <tr>
-        <td>Phone:</td><td>&nbsp;</td><td>+420 777 643 692</td>
-      </tr>
-      <tr>
-        <td>Marital status:</td><td>&nbsp;</td><td>single, 0 children</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Education:</h2>
-    <table>
-      <tr>
-        <td>2005 – 2008:</td><td>&nbsp;</td><td>Faculty of Informatics (degree conferred: Mgr.), Masaryk University</td>
-      </tr><tr><td colspan="3"><small>(course: Applied Informatics specializing in Computer Systems, Master's degree programme)</small></td></tr>
-      <tr>
-        <td>2002 – 2005:</td><td>&nbsp;</td><td>Faculty of Informatics (degree conferred: Bc.), Masaryk University</td>
-      </tr><tr><td colspan="3"><small>(course: Applied Informatics, Bachelor's degree programme)</small></td></tr>
-      <tr>
-        <td>1997 – 2002:</td><td>&nbsp;</td><td>grammar school Pierra de Coubertina, Tabor</td>
-      </tr><tr><td colspan="3"><small>(school-leaving exam: mathematics, physics, Czech language, German language)</small></td></tr>
-    </table>
-    <h3>Another education, courses, certificates:</h3>
-    <ul>
-        <li>English exam <small>(corresponding to B2 level)</small></li>
-        <li>driving licence A, B</li>
-        <li>Microsoft Certified Professional
+	</head>
+	<body>
+		<h1>Curriculum Vitae – Mgr. Jiri Cincura</h1>
+		<h2>Basic data:</h2>
+		<table>
+			<tr>
+				<td>Name:</td><td>&nbsp;</td><td>Jiri Cincura</td>
+			</tr>
+			<tr>
+				<td>Date of birth:</td><td>&nbsp;</td><td>March 5<sup>th</sup> 1983</td>
+			</tr>
+			<tr>
+				<td>Email:</td><td>&nbsp;</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
+			</tr>
+			<tr>
+				<td>Phone:</td><td>&nbsp;</td><td>+420 777 643 692</td>
+			</tr>
+			<tr>
+				<td>Marital status:</td><td>&nbsp;</td><td>single, 0 children</td>
+			</tr>
+		</table>
+		<hr />
+		<h2>Education:</h2>
+		<table>
+			<tr>
+				<td>2005 – 2008:</td><td>&nbsp;</td><td>Faculty of Informatics (degree conferred: Mgr.), Masaryk University</td>
+			</tr><tr><td colspan="3"><small>(course: Applied Informatics specializing in Computer Systems, Master's degree programme)</small></td></tr>
+			<tr>
+				<td>2002 – 2005:</td><td>&nbsp;</td><td>Faculty of Informatics (degree conferred: Bc.), Masaryk University</td>
+			</tr><tr><td colspan="3"><small>(course: Applied Informatics, Bachelor's degree programme)</small></td></tr>
+			<tr>
+				<td>1997 – 2002:</td><td>&nbsp;</td><td>grammar school Pierra de Coubertina, Tabor</td>
+			</tr><tr><td colspan="3"><small>(school-leaving exam: mathematics, physics, Czech language, German language)</small></td></tr>
+		</table>
+		<h3>Another education, courses, certificates:</h3>
+		<ul>
+				<li>English exam <small>(corresponding to B2 level)</small></li>
+				<li>driving licence A, B</li>
+				<li>Microsoft Certified Professional
 					<ul>
 						<li>PRO: Designing and Developing Windows Azure Applications (70-583)</li>
 						<li>TS: Microsoft .NET Framework - Application Development Foundation (70-536)</li>
 					</ul>
 				</li>
-        <li>2006 – 2008: Microsoft Student Consultant/Microsoft Student Partner</li>
-        <li>Red Cross - first aid certified sanitarist</li>
-        <li>H.P.I. - H.E.A.T Program Instructor level 4</li>
-        <li>H.E.A.T Spoteee Presenter</li>
-        <li>Power Yoga instructor (MŠMT ČR (MEYS) certified)</li>
-        <li>Power Yoga advanced Vinyasa training</li>
-        <li>high level experiences from line of (mechanical) engineering/locksmithery</li>
-        <li>photography (2004 – 2005) <small>(2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)</small></li>
-        <li>Fitbox Instructor Advanced</li>
-    </ul>
-    <hr />
-    <h2>Skills:</h2>
-    <table width="100%" class="skills" cellspacing="0" cellpadding="2">
-      <tr>
-        <td class="skills">.NET Framework/C#</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(multithreaded-programming, ADO.NET, Entity Framework, WinForms, ASP.NET MVC, PocketPC/Windows Mobile (Compact Framework), Windows Azure)</small></td></tr>
-      <tr>
-        <td class="skills">Delphi (Object Pascal)/Pascal</td>
-        <td class="skills">high</td>
-        <td class="skills">not using</td>
-      </tr><tr><td colspan="3"><small>(multithreaded-programming, DLL/BPL, CLX, networking (TCP/IP), XML, Win32 API)</small></td></tr>
-      <tr>
-        <td class="skills">relational (SQL) databases - Firebird (InterBase)</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(development, deployment, administration, internals)</small></td></tr>
-      <tr>
-        <td class="skills">relational (SQL) databases - MS SQL</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(development, basic administration)</small></td></tr>
-      <tr>
-        <td class="skills">relational (SQL) databases - Oracle</td>
-        <td class="skills">average</td>
-        <td class="skills">occasionally using</td>
-      </tr><tr><td colspan="3"><small>(development)</small></td></tr>
-      <tr>
-        <td class="skills">relational (SQL) databases - MySQL</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(development)</small></td></tr>
-      <tr>
-        <td class="skills">unit testing, TDD, Continuous Integration/Continuous Delivery</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(NUnit, MSTest, Moq, TeamCity, DI/IoC)</small></td></tr>
-      <tr>
-        <td class="skills">cloud services &amp; programming</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(Windows Azure platform, Amazon AWS platform, AppHarbor)</small></td></tr>
-      <tr>
-        <td class="skills">"newSQL" databases</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(NuoDB)</small></td></tr>
-      <tr>
-        <td class="skills">document (noSQL) databases</td>
-        <td class="skills">basic</td>
-        <td class="skills">occasionally using</td>
-      </tr><tr><td colspan="3"><small>(RavenDB)</small></td></tr>
-      <tr>
-        <td class="skills">Win32 API</td>
-        <td class="skills">basic</td>
-        <td class="skills">occasionally using</td>
-      </tr>
-      <tr>
-        <td class="skills">PHP</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr>
-      <tr>
-        <td class="skills">PowerShell</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr>
-      <tr>
-        <td class="skills">XML/XSLT</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr>
-      <tr>
-        <td class="skills">(X)HTML/CSS/AJAX</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(web administration and web creating)</small></td></tr>
-      <tr>
-        <td class="skills">JavaScript</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(web, AJAX)</small></td></tr>
-      <tr>
-        <td class="skills">Windows Server administration</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(Windows Server 2003/2008/2012, Active Directory)</small></td></tr>
-      <tr>
-        <td class="skills">Windows (Client) administration</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr>
-      <tr>
-        <td class="skills">UNIX/Linux administration, shell programming</td>
-        <td class="skills">average</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(server maintenance, bash programming)</small></td></tr>
-      <tr>
-        <td class="skills">Java</td>
-        <td class="skills">basic</td>
-        <td class="skills">occasionally using</td>
-      </tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-      <tr>
-        <td class="skills">VB.NET</td>
-        <td class="skills">basic</td>
-        <td class="skills">occasionally using</td>
-      </tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-      <tr>
-        <td class="skills">C/C++</td>
-        <td class="skills">basic</td>
-        <td class="skills">need to refresh</td>
-      </tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-      <tr>
-        <td class="skills">Source control (Subversion, Git)</td>
-        <td class="skills">high</td>
-        <td class="skills">using</td>
-      </tr><tr><td colspan="3"><small>(also maintaining and installing Subversion server)</small></td></tr>
-    </table>
-    <hr />
-    <h2>Professional career (contracts):</h2>
-    <ul>
-    	<li>
+				<li>2006 – 2008: Microsoft Student Consultant/Microsoft Student Partner</li>
+				<li>Red Cross - first aid certified sanitarist</li>
+				<li>H.P.I. - H.E.A.T Program Instructor level 4</li>
+				<li>H.E.A.T Spoteee Presenter</li>
+				<li>Power Yoga instructor (MŠMT ČR (MEYS) certified)</li>
+				<li>Power Yoga advanced Vinyasa training</li>
+				<li>high level experiences from line of (mechanical) engineering/locksmithery</li>
+				<li>photography (2004 – 2005) <small>(2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)</small></li>
+				<li>Fitbox Instructor Advanced</li>
+		</ul>
+		<hr />
+		<h2>Skills:</h2>
+		<table width="100%" class="skills" cellspacing="0" cellpadding="2">
+			<tr>
+				<td class="skills">.NET Framework/C#</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(multithreaded-programming, ADO.NET, Entity Framework, WinForms, ASP.NET MVC, PocketPC/Windows Mobile (Compact Framework), Windows Azure)</small></td></tr>
+			<tr>
+				<td class="skills">Delphi (Object Pascal)/Pascal</td>
+				<td class="skills">high</td>
+				<td class="skills">not using</td>
+			</tr><tr><td colspan="3"><small>(multithreaded-programming, DLL/BPL, CLX, networking (TCP/IP), XML, Win32 API)</small></td></tr>
+			<tr>
+				<td class="skills">relational (SQL) databases - Firebird (InterBase)</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(development, deployment, administration, internals)</small></td></tr>
+			<tr>
+				<td class="skills">relational (SQL) databases - MS SQL</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(development, basic administration)</small></td></tr>
+			<tr>
+				<td class="skills">relational (SQL) databases - Oracle</td>
+				<td class="skills">average</td>
+				<td class="skills">occasionally using</td>
+			</tr><tr><td colspan="3"><small>(development)</small></td></tr>
+			<tr>
+				<td class="skills">relational (SQL) databases - MySQL</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(development)</small></td></tr>
+			<tr>
+				<td class="skills">unit testing, TDD, Continuous Integration/Continuous Delivery</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(NUnit, MSTest, Moq, TeamCity, DI/IoC)</small></td></tr>
+			<tr>
+				<td class="skills">cloud services &amp; programming</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(Windows Azure platform, Amazon AWS platform, AppHarbor)</small></td></tr>
+			<tr>
+				<td class="skills">"newSQL" databases</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(NuoDB)</small></td></tr>
+			<tr>
+				<td class="skills">document (noSQL) databases</td>
+				<td class="skills">basic</td>
+				<td class="skills">occasionally using</td>
+			</tr><tr><td colspan="3"><small>(RavenDB)</small></td></tr>
+			<tr>
+				<td class="skills">Win32 API</td>
+				<td class="skills">basic</td>
+				<td class="skills">occasionally using</td>
+			</tr>
+			<tr>
+				<td class="skills">PHP</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr>
+			<tr>
+				<td class="skills">PowerShell</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr>
+			<tr>
+				<td class="skills">XML/XSLT</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr>
+			<tr>
+				<td class="skills">(X)HTML/CSS/AJAX</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(web administration and web creating)</small></td></tr>
+			<tr>
+				<td class="skills">JavaScript</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(web, AJAX)</small></td></tr>
+			<tr>
+				<td class="skills">Windows Server administration</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(Windows Server 2003/2008/2012, Active Directory)</small></td></tr>
+			<tr>
+				<td class="skills">Windows (Client) administration</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr>
+			<tr>
+				<td class="skills">UNIX/Linux administration, shell programming</td>
+				<td class="skills">average</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(server maintenance, bash programming)</small></td></tr>
+			<tr>
+				<td class="skills">Java</td>
+				<td class="skills">basic</td>
+				<td class="skills">occasionally using</td>
+			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
+			<tr>
+				<td class="skills">VB.NET</td>
+				<td class="skills">basic</td>
+				<td class="skills">occasionally using</td>
+			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
+			<tr>
+				<td class="skills">C/C++</td>
+				<td class="skills">basic</td>
+				<td class="skills">need to refresh</td>
+			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
+			<tr>
+				<td class="skills">Source control (Subversion, Git)</td>
+				<td class="skills">high</td>
+				<td class="skills">using</td>
+			</tr><tr><td colspan="3"><small>(also maintaining and installing Subversion server)</small></td></tr>
+		</table>
+		<hr />
+		<h2>Professional career (contracts):</h2>
+		<ul>
+			<li>
 				<h3>Ongoing:</h3>
 				<ul>
 					<li>
-		        04/2012 - present: solution and database architect, developer for SMS-Timing (Belgium)
-		        <ul>
-		          <li>Firebird, LLBLGen Pro, Entity Framework, ASP.NET MVC, Azure, C#, .NET</li>
-		        </ul>
-		      </li>
-		      <li>
-		        09/2009 - present: trainer for Gopas, a.s.
-		        <ul>
-		          <li>advanced trainings about Entity Framework</li>
-		          <li>advanced trainings about multithreaded and parallel programming</li>
-		          <li>advanced trainings about cloud and Windows Azure</li>
-		        </ul>
-		      </li>
-		      <li>
-		        2009 - present: database architect, developer for Devmasters s.r.o. - external
-		        <ul>
-		          <li>see 2007 - 2009: database architect, developer for Devmasters s.r.o.</li>
-		        </ul>
-		      </li>
-		      <li>
-		        2006 - present: Firebird ADO.NET Data Provider developer for <a href="http://www.firebirdsql.org/">Firebird database engine</a>.
-		        <ul>
-		          <li>from 2008 team lead for project</li>
-		          <li>native ADO.NET data provider for Firebird database for .NET Framework</li>
-		          <li>Entity Framework support</li>
-		          <li>open-source project</li>
-		        </ul>
-		      </li>
-		      <li>
-		        2005 - present: Journalist for <a href="http://www.dbsvet.cz/">AVRE Publishing.cz</a> (issuing local magazine focused to databases).
-		      </li>
+						04/2012 - present: solution and database architect, developer for SMS-Timing (Belgium)
+						<ul>
+							<li>Firebird, LLBLGen Pro, Entity Framework, ASP.NET MVC, Azure, C#, .NET</li>
+						</ul>
+					</li>
 					<li>
-		        2004 - present: Freelancer - developer, consultant
-		      </li>
+						09/2009 - present: trainer for Gopas, a.s.
+						<ul>
+							<li>advanced trainings about Entity Framework</li>
+							<li>advanced trainings about multithreaded and parallel programming</li>
+							<li>advanced trainings about cloud and Windows Azure</li>
+						</ul>
+					</li>
+					<li>
+						2009 - present: database architect, developer for Devmasters s.r.o. - external
+						<ul>
+							<li>see 2007 - 2009: database architect, developer for Devmasters s.r.o.</li>
+						</ul>
+					</li>
+					<li>
+						2006 - present: Firebird ADO.NET Data Provider developer for <a href="http://www.firebirdsql.org/">Firebird database engine</a>.
+						<ul>
+							<li>from 2008 team lead for project</li>
+							<li>native ADO.NET data provider for Firebird database for .NET Framework</li>
+							<li>Entity Framework support</li>
+							<li>open-source project</li>
+						</ul>
+					</li>
+					<li>
+						2005 - present: Journalist for <a href="http://www.dbsvet.cz/">AVRE Publishing.cz</a> (issuing local magazine focused to databases).
+					</li>
+					<li>
+						2004 - present: Freelancer - developer, consultant
+					</li>
 				</ul>
 			</li>
-    	<li>
+			<li>
 				<h3>Past:</h3>
-	    	<ul>
+				<ul>
 					<li>
 						07/2014 - 07/2014: NuoDB, Inc
 						<ul>
@@ -325,430 +324,430 @@ layout: nil
 						</ul>
 					</li>
 					<li>
-		        06/2013 - 07/2013: NuoDB, Inc
-		        <ul>
-		          <li>Creating support for Entity Framework (v4, v5) in NuoDB's ADO.NET driver. Helping to improve NuoDB's ADO.NET driver ADO.NET compliance. Porting nopCommerce to NuoDB.</li>
-		          <li>C#, .NET, ADO.NET, Entity Framework</li>
-		        </ul>
-		      </li>
-		      <li>
-		        11/2010 - 04/2012: database architect, business layer developer for Nexum Trilog
-		        <ul>
-		          <li>
-		            Projects:
-		            <ul>
-		              <li><a href="http://www.webmium.com">Webmium</a> - Azure platforms usage, developing and maintaining Azure SQL databases, developing business layer, ASP.NET MVC</li>
-		            </ul>
-		          </li>
-		          <li>Webmium won Microsoft's Azure Contest (2012) "Tvoje firma, Tvoje šance na úspěch"</li>
-		          <li>Azure (SQL, Tables, Queues, Blob Storage, Worker Roles), MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET</li>
-		        </ul>
-		      </li>
-		      <li>
-		        03/2009 - 10/2010: co-founder at Whitelements, database architect, business layer developer
-		        <ul>
-		          <li>
-		            Projects:
-		            <ul>
-		              <li><a href="http://www.honzovahypoteka.cz">www.honzovahypoteka.cz</a></li>
-		              <li><a href="http://www.adexpres.com">www.adexpres.com</a></li>
-		              <li><a href="http://www.wikireality.cz">www.wikireality.cz</a></li>
-		            </ul>
-		          </li>
-		          <li>MS SQL Server, Entity Framework, T-SQL, C#, .NET</li>
-		        </ul>
-		      </li>
-		      <li>
-		        2008 - 2012: consultant for SMS-Timing, GOnline, B&amp;MI (Belgium)
-		        <ul>
-		          <li>Firebird, C#, ADO.NET consultancy</li>
-		        </ul>
-		      </li>
-		      <li>
-		        2007 - 02/2009: database architect, developer for Devmasters s.r.o..
-		        <ul>
-		          <li>creating databases on mainly MS SQL Server (also Oracle)</li>
-		          <li>creating data access layers and business layers</li>
-		          <li>
-		            Projects:
-		            <ul>
-		              <li>Windows Mobile client for <a href="http://ontheroad.to">OnTheRoad</a> project</li>
-		              <li>T-Mobile CZ, Vodafone CZ, Telefonica O2 CZ, GTS Novera CZ, Ceske Radiokomunikace CZ - <a href="http://www.premiumservices.cz">PremiumServices.cz</a>: system for administering numbers for premium sms and audiotex services</li>
-		              <li>T-Mobile CZ - OpenNumbers: system for managing numbers (opening, closing, approving, managing document for numbers)</li>
-		              <li>DatabaseUpgrader - tool (assembly) for maintaining database upgrades from code</li>
-		            </ul>
-		          </li>
-		        </ul>
-		      </li>
-		      <li>
-		        2004 - 07/2012: Helpdesk operator, <a href="http://www.pipni.cz/">PIPNI s.r.o.</a> (webhosting company).
-		      </li>
-	    	</ul>
-	    </li>
+						06/2013 - 07/2013: NuoDB, Inc
+						<ul>
+							<li>Creating support for Entity Framework (v4, v5) in NuoDB's ADO.NET driver. Helping to improve NuoDB's ADO.NET driver ADO.NET compliance. Porting nopCommerce to NuoDB.</li>
+							<li>C#, .NET, ADO.NET, Entity Framework</li>
+						</ul>
+					</li>
+					<li>
+						11/2010 - 04/2012: database architect, business layer developer for Nexum Trilog
+						<ul>
+							<li>
+								Projects:
+								<ul>
+									<li><a href="http://www.webmium.com">Webmium</a> - Azure platforms usage, developing and maintaining Azure SQL databases, developing business layer, ASP.NET MVC</li>
+								</ul>
+							</li>
+							<li>Webmium won Microsoft's Azure Contest (2012) "Tvoje firma, Tvoje šance na úspěch"</li>
+							<li>Azure (SQL, Tables, Queues, Blob Storage, Worker Roles), MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET</li>
+						</ul>
+					</li>
+					<li>
+						03/2009 - 10/2010: co-founder at Whitelements, database architect, business layer developer
+						<ul>
+							<li>
+								Projects:
+								<ul>
+									<li><a href="http://www.honzovahypoteka.cz">www.honzovahypoteka.cz</a></li>
+									<li><a href="http://www.adexpres.com">www.adexpres.com</a></li>
+									<li><a href="http://www.wikireality.cz">www.wikireality.cz</a></li>
+								</ul>
+							</li>
+							<li>MS SQL Server, Entity Framework, T-SQL, C#, .NET</li>
+						</ul>
+					</li>
+					<li>
+						2008 - 2012: consultant for SMS-Timing, GOnline, B&amp;MI (Belgium)
+						<ul>
+							<li>Firebird, C#, ADO.NET consultancy</li>
+						</ul>
+					</li>
+					<li>
+						2007 - 02/2009: database architect, developer for Devmasters s.r.o..
+						<ul>
+							<li>creating databases on mainly MS SQL Server (also Oracle)</li>
+							<li>creating data access layers and business layers</li>
+							<li>
+								Projects:
+								<ul>
+									<li>Windows Mobile client for <a href="http://ontheroad.to">OnTheRoad</a> project</li>
+									<li>T-Mobile CZ, Vodafone CZ, Telefonica O2 CZ, GTS Novera CZ, Ceske Radiokomunikace CZ - <a href="http://www.premiumservices.cz">PremiumServices.cz</a>: system for administering numbers for premium sms and audiotex services</li>
+									<li>T-Mobile CZ - OpenNumbers: system for managing numbers (opening, closing, approving, managing document for numbers)</li>
+									<li>DatabaseUpgrader - tool (assembly) for maintaining database upgrades from code</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						2004 - 07/2012: Helpdesk operator, <a href="http://www.pipni.cz/">PIPNI s.r.o.</a> (webhosting company).
+					</li>
+				</ul>
+			</li>
 		</ul>
-    <hr />
-    <h2>Languages:</h2>
-    <ul>
-      <li>Czech: native speaker</li>
-      <li>English: fluent speaking, writing <small>(+ exam corresponding to B2 level)</small></li>
-      <li>German: average, need to refresh (especially IT terminology)</li>
-    </ul>
-    <hr />
-    <h2>References:</h2>
-    <ul>
-      <li>Ing. Marek Kocan (<a href="mailto:marek@kocan.cz">marek@kocan.cz</a>)</li>
-      <li>Ing. Martin Šigut (<a href="mailto:msigut@gmail.com">msigut@gmail.com</a>)</li>
-      <li>Alexander Muylaert-Gelein (<a href="mailto:alexander@gonline.be">alexander@gonline.be</a>)</li>
-    </ul>
-    <hr />
-    <h2>Publications, Articles:</h2>
-    <table id="articles">
-      <tr><td colspan="99" class="more">blogging on <a href="http://blog.cincura.net">blog.cincura.net</a></td></tr>
-      <tr><td>Technical Reviewer of Book (in English) [01/2015]:</td><td>&nbsp;</td><td><a href="https://www.packtpub.com/web-development/wix-cookbook">WiX Cookbook</a></td></tr>
-      <tr><td>NuoDB's Techblog (in English) [30. 4. 2014]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nuodb-net-takes-another-step">NuoDB for .NET takes another step</a></td></tr>
-      <tr><td>NuoDB's Techblog (in English) [17. 9. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-2">nopCommerce with NuoDB – Part 2</a></td></tr>
-      <tr><td>NuoDB's Techblog (in English) [5. 9. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-1">nopCommerce with NuoDB – Part 1</a></td></tr>
-      <tr><td>NuoDB's Techblog (in English) [22. 8. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/connection-pooling-net-and-nuodb">Connection Pooling with .Net and NuoDB</a></td></tr>
-      <tr><td>NuoDB's Techblog (in English) [1. 8. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nuodb-net-driver-offers-entity-framework-support">NuoDB .NET Driver Offers Entity Framework Support</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [19. 7. 2012]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/667-intersystems-symposium-2012.aspx">Symposium InterSystems 2012</a></td></tr>
-      <tr><td>Technical Reviewer of Book (in English) [05/2012]:</td><td>&nbsp;</td><td><a href="http://www.packtpub.com/entity-framework-4-1-experts-test-driven-development-architecture-cookbook/book">Entity Framework 4.1: Expert's Cookbook</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [1. 8. 2011]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/662-intersystems-symposium-2011.aspx">Symposium InterSystems 2011</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [27. 7. 2010]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2010072701">Symposium InterSystems 2010</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [7. 1. 2010]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2010010701">MS SQL 2008 – prostorová data počtvrté</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [1. 12. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009120101">MS SQL 2008 – prostorová data potřetí</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [21. 10. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009102101">MS SQL 2008 – prostorová data podruhé</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12. 10. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009101201">MS SQL 2008 – prostorová data poprvé</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [7. 9. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/646-novinky-v-c-4-a-net-frameworku-4-0-lepsi-spoluprace-s-com-svetem.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Lepší spolupráce s COM světem</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [31. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/645-novinky-v-c-4-a-net-frameworku-4-0-dalsi-vylepseni-pro-multivlaknove-programovani.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Další vylepšení pro multivláknové programování</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [24. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/644-novinky-v-c-4-a-net-frameworku-4-0-fine-grained-paralelizmus.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Fine-grained paralelizmus</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [3. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/643-novinky-v-c-4-a-net-frameworku-4-0-code-contracts.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Code Contracts</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [27. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/642-novinky-v-c-4-a-net-frameworku-4-0-pojmenovane-a-volitelne-parametry.aspx">Novinky v C# 4 a .NET Frameworku 4.0: pojmenované a volitelné parametry</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [20. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/640-novinky-v-c-4-a-net-frameworku-4-0-klicove-slovo-dynamic.aspx">Novinky v C# 4 a .NET Frameworku 4.0: klíčové slovo dynamic</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [13. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/639-novinky-v-c-4-a-net-frameworku-4-0-kovariance-a-kontravariance.aspx">Novinky v C# 4 a .NET Frameworku 4.0: kovariance a kontravariance</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [15. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009071501">Jaký byl DevCon 2009?</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [7. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/637-novinky-v-c-4-a-net-frameworku-4-0-tuple.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Tuple</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [29. 6. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009062902">SQL 2008 potvrzuje svoje kvality?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [18. 6. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009061801">Jak to vidí Volker Schmeisser?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [14. 5. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009051401">TechEd 2009</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [5. 5. 2009]:</td><td>&nbsp;</td><td>Novinky ve Firebirdu 2.5 [<a href="http://www.dbsvet.cz/view.php?cisloclanku=2009050501">part 1</a>, <a href="http://www.dbsvet.cz/view.php?cisloclanku=2009050601">part 2</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [14. 4. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009041401">Přizastavte svou databázi</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 4. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009040302">Database Workbench 3.3</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [13. 3. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/631-sablony-t4.aspx">Šablony T4</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [26. 1. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/630-nepovinne-parametry-v-c-4-0-pouzivat-opatrne.aspx">Nepovinné parametry v C# 4.0 – používat opatrně</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [19. 1. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009011901">Černá rybka od CodeGearu</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [15. 12. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/627-zrychlete-svuj-model-z-entity-frameworku.aspx">Zrychlete svůj model z Entity Frameworku</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [28. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008112802">MySQL 5.1.30</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [18. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008111803">GUID nebo int jako PK na MSSQL?</a></td></tr>
-      <tr><td>dbsvet.cz (in English) [4. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008110403">How to use custom objects with associations in Entity Framework</a> [<a href="http://blog.cincura.net/id/228431">other place</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [20. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008102202">Novinka od Upscene</a></td></tr>
-      <tr><td>dbsvet.cz (in English) [7. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008100701">How to map your custom objects in Entity Framework</a> [<a href="http://blog.cincura.net/id/228430">other place</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [6. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008100602">Firebird Conference 2008</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [18. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/614-ado-net-data-services-6-poskytovani-dat-bez-entity-frameworku.aspx">ADO.NET Data Services (6) – Poskytování dat bez Entity Frameworku</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [16. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/613-ms-sql-server-2008-table-value-parameters-tvp.aspx">MS SQL Server 2008: Table Value Parameters (TVP)</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [11. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/612-ado-net-data-services-5-zabezpeceni-a-modifikace-dotazu.aspx">ADO.NET Data Services (5) – Zabezpečení a modifikace dotazů</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008090301">SQL Server DevCon 2008</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [20. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008082001">Nikdy si nemůžete být jisti svoji pozicí</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008081201">Map&amp;Reduce – jak to dělá Google?</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [11. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/606-ado-net-data-services-4-prace-s-daty-v-kodu.aspx">ADO.NET Data Services (4) – Práce s daty v kódu</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [5. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008080501">Budoucnost virtualizace? Mnohem komplexnější!</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [4. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/605-ado-net-data-services-3-zmeny-dat.aspx">ADO.NET Data Services (3) – Změny dat</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [1. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008080101">Má smysl maďarská notace?</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [28. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/604-ado-net-data-services-2-pokrocile-moznosti-nejen-dotazovani.aspx">ADO.NET Data Services (2) – Pokročilé možnosti (nejen) dotazování</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [21. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/603-ado-net-data-services-1-dotazovani.aspx">ADO.NET Data Services (1) - Dotazování</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [8. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/601-entity-framework-vs-linq-to-sql.aspx">Entity Framework vs. LINQ to SQL</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [16. 6. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/599-lazy-eager-explicit-loading-o-co-jde.aspx">Lazy, eager, explicit loading – o co jde?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 6. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008060201">Virtualizace a zase virtualizace!</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [26. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008052601">Spuštění programu během akce v databázi</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008051201">Rozvrhy a transakce</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [5. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008050502">Dědičnost v relačních databázích</a> [<a href="http://www.vyvojar.cz/Articles/594-dedicnost-v-relacnich-databazich.aspx">vyvojar.cz</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [18. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008041801">Sun zavírá MySQL!?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [8. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040801">Co používá Student Agency?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040302">Launch nových MS produktů – ožije MS-DOS?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040301">SQL injection a co s tím?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040202">Novinky ve Firebirdu 2.1</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [1. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/591-deferred-loading-a-linq-to-sql.aspx">Deferred loading a LINQ to SQL</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [26. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008032602">10 milionů pro EnterpriseDB</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [19. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008031901">Dmitri Kouzmenko</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [13. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008031303">Nové produkty od MS</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [5. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008030501">Databáze na YouTube</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [25. 2. 2008]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (3) [<a href="http://www.vyvojar.cz/Articles/586-microsoft-sync-framework-synchronizace-databazi-3.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/147/Default.aspx">netstudent.cz</a>]</td></tr>
-      <tr><td>dbsvet.cz (in English) [6. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008020602">Firebird .NET and SP with parameters</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [4. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/585-windows-server-2008-dokoncen.aspx">Windows Server 2008: Dokončen!</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [1. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/584-microsoft-chce-koupit-yahoo-44-6-miliard-dolaru.aspx">Microsoft chce koupit Yahoo!: 44,6 miliard dolarů</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [17. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/582-zdrojove-texty-net-frameworku-jsou-dostupne.aspx">Zdrojové texty .NET Frameworku jsou dostupné</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [16. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008011603">Sun kupuje MySQL</a> [<a href="http://vyvojar.cz/Articles/580-sun-kupuje-mysql.aspx">vyvojar.cz</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [16. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008011601">Databáze v IBM IDC</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [7. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008010702">Database Workbench 3</a></td></tr>
-      <tr><td>vyvojar.cz/netstudent.cz (in Czech) [4. 1. 2008]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (2) [<a href="http://www.vyvojar.cz/Articles/578-microsoft-sync-framework-synchronizace-databazi-2.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/137/Default.aspx">netstudent.cz</a>]</td></tr>
-      <tr><td>vyvojar.cz/netstudent.cz (in Czech) [21. 12. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (1) [<a href="http://www.vyvojar.cz/Articles/573-microsoft-sync-framework-synchronizace-databazi-1.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/134/Default.aspx">netstudent.cz</a>]</td></tr>
-      <tr><td>vyvojar.cz (in Czech) [14. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/547-transactionscope-damska-volenka.aspx">TransactionScope, dámská volenka</a></td></tr>
-      <tr><td>vyvojar.cz/netstudent.cz (in Czech) [13. 12. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace souborů [<a href="http://www.vyvojar.cz/Articles/564-microsoft-sync-framework-synchronizace-souboru.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/127/Default.aspx">netstudent.cz</a>]</td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12.12.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007121201">Seminář Firebird a FastReport – jaký byl?</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [10. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/546-transactionscope-rande-o-ctvrte.aspx">TransactionScope, rande o čtvrté</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [7. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/545-transactionscope-seznamte-se.aspx">TransactionScope, seznamte se</a></td></tr>
-      <tr><td>vyvojar.cz/netstudent.cz (in Czech) [30. 11. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Úvod [<a href="http://www.vyvojar.cz/Articles/557-microsoft-sync-framework-uvod.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/123/Microsoft-Sync-Framework--vod.aspx">netstudent.cz</a>]</td></tr>
-      <tr><td>netstudent.cz (in Czech) [21. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/114/TransactionScope-dmsk-volenka.aspx">TransactionScope, dámská volenka</a></td></tr>
-      <tr><td>netstudent.cz (in Czech) [11. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/108/TransactionScope-rande-o-tvrt.aspx">TransactionScope, rande o čtvrté</a></td></tr>
-      <tr><td>netstudent.cz (in Czech) [1. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/104/NET-a-Firebird-Embedded.aspx">.NET a Firebird Embedded</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [15.10.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007101504">Jaký byl DM2007?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12.10.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007101201">Hypotrachelion</a></td></tr>
-      <tr><td>netstudent.cz (in Czech) [14. 10. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/94/TransactionScope-seznamte-se.aspx">TransactionScope, seznamte se</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [26. 9. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007092601">Instalace Firebirdu snadno a rychle</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [5. 9. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007090501">Správná databáze 2007 Edition</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [16. 8. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007081602">MySQL končí s open-source?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [28. 2. 2007 - 16. 8. 2007]:</td><td>&nbsp;</td><td>Series about Oracle Database 10g Express Edition [<a href="http://dbsvet.cz/view.php?cisloclanku=2007022801">Part 1</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007030701">Part 2</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007032101">Part 3</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007041501">Part 4</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007042602">Part 5</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007050702">Part 6</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007052101">Part 7</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007061401">Part 8</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007070301">Part 9</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007070901">Part 10</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007072601">Part 11</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007081601">Part 12</a>]</td></tr>
-      <tr><td>vyvojar.cz (in Czech) [9. 8. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/523-edice-firebirdu.aspx">Edice Firebirdu</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 7. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007070302">Jak přišel Blob na svět?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 7. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007070203">Zálohujte nově</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [10. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/articles/471-fulltextove-hledani-na-firebirdu.aspx">Fulltextové hledání na Firebirdu</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [7. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007050704">Jak jsou databáze zranitelné? Hodně!</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007050201">Cizí klíče bez cizích klíčů</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [18. 4. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007041801">Osobnosti Firebirdu počtvrté – Ivan Přenosil</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [10. 4. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007041001">RFID v brněnské praxi</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [17. 3. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007031701">Osobnosti Firebirdu potřetí – Pavel Císař</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [5. 2. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/453-ddex-rozhranni-a-instalace-firebird-ddex-provideru-do-visual-studia.aspx">DDEX rozhranní a instalace Firebird DDEX provideru do Visual Studia</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [29. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007012902">Osobnosti Firebirdu podruhé – Dmitry Yemanov</a></td></tr>
-      <tr><td>vyvojar.cz (in Czech) [16. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/446-firebird-embedded-a-net.aspx">Firebird Embedded a .NET</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [16. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007011601">Nalaďte si stránku ve Firebirdu</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [4. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007010401">Osobnosti Firebirdu poprvé – Vlad Horsun</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [7. 12. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006120701">Zařaďte dvojku v bezpečnosti...</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [20. 11. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006112001">Firebird 2.0 je tu!</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [4. 10. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006100402">Novinka ve druhém Firebirdu – expression indexy</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [13. 9. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006091301">Falcon aneb záchrana pro MySQL?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [28. 8. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006082801">Na ostří nože aneb UDF či SP ve Firebirdu?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [12. 7. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006071201">Opět – Oracle nebo Microsoft? Microsoft!</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [27. 6. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006062701">Jak si stojí Firebird?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 6. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006060201">25. jednohubka – Problém s referencemi u Firebirdu</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [27. 4. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006042701">A co na to Ann?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [3. 4. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006040301">Jak na dynamické dotazy ve Firebirdu?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [6. 3. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006030601">Jaká je ta správná databáze?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [20. 2. 2006, co-operation with Pavel Cisar]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006022001">Jim Starkey končí!</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [25. 1. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006012501">Hlavní změny ve Firebirdu 1.5.3</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [2. 1. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006010203">Vystřelte si z databáze</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [19. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005121901">Jak na ankety ve Firebirdu potřetí</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [13. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005121301">19. jednohubka – Proč Firebird/IB používají názvy gdsXXX?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [6. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005120602">Jak se liší Super Server a Classic?</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [16. 11. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005111601">Třetí mezinárodní Firebird konference</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [7. 11. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005110701">Jak na ankety ve Firebirdu podruhé</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [22. 10. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005102201">Jak na ankety ve Firebirdu poprvé</a></td></tr>
-      <tr><td>dbsvet.cz (in Czech) [31. 08. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005083101">Jak k Firebirdu z .NET?</a></td></tr>
-    </table>
-    <hr />
-    <h2>Speaker on conferences and other events:</h2>
-    <table id="conferences">
-      <tr>
-        <td>Talk @ Windows User Group (February 17, 2015)</td><td>&nbsp;</td><td>Visual Studio keyboard tips and tricks<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (January 22, 2015)</td><td>&nbsp;</td><td>Visual Studio keyboard tips and tricks<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2014 - Praha (November 29-30, 2014)</td><td>&nbsp;</td><td>[1] Code First from the ground up<br />[2] Continuous Integration and Continuous Delivery<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Faculty of Informatics Masaryk University (November 28, 2014)</td><td>&nbsp;</td><td>Continuous Delivery<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Faculty of Informatics Masaryk University (November 14, 2014)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>International Firebird Conference (October 24-25, 2014 in Prague, Czech Republic)</td><td>&nbsp;</td><td>[1] What happened in .NET provider in the last year<br /><br />[2] Using Firebird on Microsoft Azure<br />(in English)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2014 - Brno (October 18-19, 2014)</td><td>&nbsp;</td><td>[1] Code First from the ground up<br />[2] Continuous Integration and Continuous Delivery<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (October 13, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (July 3, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Gopas TechEd 2014 (May 20-23, 2014)</td><td>&nbsp;</td><td>[1] C# 6 and Roslyn<br />[2] Entity Framework 6.1<br />[3] Visual Studio 2010/2012/2013 tips and tricks<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (May 19, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>ShowIT (February 13, 2014)</td><td>&nbsp;</td><td>Entity Framework 6<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Firebird 2013 Tour (November 25, 2013)</td><td>&nbsp;</td><td>Transactions management in .NET driver<br />(in English and Czech)</td>
-      </tr>
-      <tr>
-        <td>Faculty of Informatics Masaryk University (November 15, 2013)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2013 - Praha (November 2-3, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework 6<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (October 24, 2013)</td><td>&nbsp;</td><td>Entity Framework 6<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2013 - Brno (October 12-13, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework 6<br />[3] Visual Studio 2012/2010 tips and tricks<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (June 17, 2013)</td><td>&nbsp;</td><td>Entity Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Gopas TechEd 2013 (May 21-24, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework futures (Entity Framework 6)<br />[3] Visual Studio 2012/2010 tips and tricks<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Faculty of Informatics Masaryk University (November 30, 2012)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>10<sup>th</sup> International Firebird Conference (November 26-27, 2012 in Luxembourg, Luxembourg)</td><td>&nbsp;</td><td>What's New In ADO.NET Provider for Firebird<br />Getting started with Firebird from .NET<br />(in English)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (June 12, 2012)</td><td>&nbsp;</td><td>Azure (talking about real world experience)<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Gopas TechEd 2012 (April 23-26, 2012)</td><td>&nbsp;</td><td>Two sessions:<br />[1] async/await and asynchronous programming in Visual Studio 11/.NET 4.5/C# 5<br />[2] Entity Framework futures (Entity Framework 5)<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Microsoft ČR (April 17, 2012)</td><td>&nbsp;</td><td>Entity Framework 4.3 - Migrations<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2011 (November 26, 2011)</td><td>&nbsp;</td><td>Firebird vs SQL Server CE<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>9<sup>th</sup> International Firebird Conference (November 25-26, 2011 in Luxembourg, Luxembourg)</td><td>&nbsp;</td><td>What is new in .NET provider (trace support, cancellation and more)<br />(in English)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (November 7, 2011)</td><td>&nbsp;</td><td>Entity Framework 4.1/4.2+<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (July 25, 2011)</td><td>&nbsp;</td><td>Entity Framework 4.1<br />(in Czech)</td>
-      </tr>
-      <tr>
-      	<td>Gopas TechEd 2011 (May 2-5, 2011)</td><td>&nbsp;</td><td>Two sessions:<br />[1] Task Parallel Library<br />[2] Entity Framework 4.1 (Code First)<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Prague PostgreSQL Developers Day 2011 (February 10, 2011)</td><td>&nbsp;</td><td>"Firebird" session to introduce it to PostgreSQL users<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2010 (November 27, 2010)</td><td>&nbsp;</td><td>OData and Open Data Protocol<br />(in Czech)</td>
-      </tr>
-    	<tr>
+		<hr />
+		<h2>Languages:</h2>
+		<ul>
+			<li>Czech: native speaker</li>
+			<li>English: fluent speaking, writing <small>(+ exam corresponding to B2 level)</small></li>
+			<li>German: average, need to refresh (especially IT terminology)</li>
+		</ul>
+		<hr />
+		<h2>References:</h2>
+		<ul>
+			<li>Ing. Marek Kocan (<a href="mailto:marek@kocan.cz">marek@kocan.cz</a>)</li>
+			<li>Ing. Martin Šigut (<a href="mailto:msigut@gmail.com">msigut@gmail.com</a>)</li>
+			<li>Alexander Muylaert-Gelein (<a href="mailto:alexander@gonline.be">alexander@gonline.be</a>)</li>
+		</ul>
+		<hr />
+		<h2>Publications, Articles:</h2>
+		<table id="articles">
+			<tr><td colspan="99" class="more">blogging on <a href="http://blog.cincura.net">blog.cincura.net</a></td></tr>
+			<tr><td>Technical Reviewer of Book (in English) [01/2015]:</td><td>&nbsp;</td><td><a href="https://www.packtpub.com/web-development/wix-cookbook">WiX Cookbook</a></td></tr>
+			<tr><td>NuoDB's Techblog (in English) [30. 4. 2014]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nuodb-net-takes-another-step">NuoDB for .NET takes another step</a></td></tr>
+			<tr><td>NuoDB's Techblog (in English) [17. 9. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-2">nopCommerce with NuoDB – Part 2</a></td></tr>
+			<tr><td>NuoDB's Techblog (in English) [5. 9. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-1">nopCommerce with NuoDB – Part 1</a></td></tr>
+			<tr><td>NuoDB's Techblog (in English) [22. 8. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/connection-pooling-net-and-nuodb">Connection Pooling with .Net and NuoDB</a></td></tr>
+			<tr><td>NuoDB's Techblog (in English) [1. 8. 2013]:</td><td>&nbsp;</td><td><a href="http://dev.nuodb.com/techblog/nuodb-net-driver-offers-entity-framework-support">NuoDB .NET Driver Offers Entity Framework Support</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [19. 7. 2012]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/667-intersystems-symposium-2012.aspx">Symposium InterSystems 2012</a></td></tr>
+			<tr><td>Technical Reviewer of Book (in English) [05/2012]:</td><td>&nbsp;</td><td><a href="http://www.packtpub.com/entity-framework-4-1-experts-test-driven-development-architecture-cookbook/book">Entity Framework 4.1: Expert's Cookbook</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [1. 8. 2011]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/662-intersystems-symposium-2011.aspx">Symposium InterSystems 2011</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [27. 7. 2010]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2010072701">Symposium InterSystems 2010</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [7. 1. 2010]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2010010701">MS SQL 2008 – prostorová data počtvrté</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [1. 12. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009120101">MS SQL 2008 – prostorová data potřetí</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [21. 10. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009102101">MS SQL 2008 – prostorová data podruhé</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12. 10. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009101201">MS SQL 2008 – prostorová data poprvé</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [7. 9. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/646-novinky-v-c-4-a-net-frameworku-4-0-lepsi-spoluprace-s-com-svetem.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Lepší spolupráce s COM světem</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [31. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/645-novinky-v-c-4-a-net-frameworku-4-0-dalsi-vylepseni-pro-multivlaknove-programovani.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Další vylepšení pro multivláknové programování</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [24. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/644-novinky-v-c-4-a-net-frameworku-4-0-fine-grained-paralelizmus.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Fine-grained paralelizmus</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [3. 8. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/643-novinky-v-c-4-a-net-frameworku-4-0-code-contracts.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Code Contracts</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [27. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/642-novinky-v-c-4-a-net-frameworku-4-0-pojmenovane-a-volitelne-parametry.aspx">Novinky v C# 4 a .NET Frameworku 4.0: pojmenované a volitelné parametry</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [20. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/640-novinky-v-c-4-a-net-frameworku-4-0-klicove-slovo-dynamic.aspx">Novinky v C# 4 a .NET Frameworku 4.0: klíčové slovo dynamic</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [13. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/639-novinky-v-c-4-a-net-frameworku-4-0-kovariance-a-kontravariance.aspx">Novinky v C# 4 a .NET Frameworku 4.0: kovariance a kontravariance</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [15. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009071501">Jaký byl DevCon 2009?</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [7. 7. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/637-novinky-v-c-4-a-net-frameworku-4-0-tuple.aspx">Novinky v C# 4 a .NET Frameworku 4.0: Tuple</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [29. 6. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009062902">SQL 2008 potvrzuje svoje kvality?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [18. 6. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009061801">Jak to vidí Volker Schmeisser?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [14. 5. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009051401">TechEd 2009</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [5. 5. 2009]:</td><td>&nbsp;</td><td>Novinky ve Firebirdu 2.5 [<a href="http://www.dbsvet.cz/view.php?cisloclanku=2009050501">part 1</a>, <a href="http://www.dbsvet.cz/view.php?cisloclanku=2009050601">part 2</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [14. 4. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009041401">Přizastavte svou databázi</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 4. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009040302">Database Workbench 3.3</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [13. 3. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/631-sablony-t4.aspx">Šablony T4</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [26. 1. 2009]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/630-nepovinne-parametry-v-c-4-0-pouzivat-opatrne.aspx">Nepovinné parametry v C# 4.0 – používat opatrně</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [19. 1. 2009]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2009011901">Černá rybka od CodeGearu</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [15. 12. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/627-zrychlete-svuj-model-z-entity-frameworku.aspx">Zrychlete svůj model z Entity Frameworku</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [28. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008112802">MySQL 5.1.30</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [18. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008111803">GUID nebo int jako PK na MSSQL?</a></td></tr>
+			<tr><td>dbsvet.cz (in English) [4. 11. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008110403">How to use custom objects with associations in Entity Framework</a> [<a href="http://blog.cincura.net/id/228431">other place</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [20. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008102202">Novinka od Upscene</a></td></tr>
+			<tr><td>dbsvet.cz (in English) [7. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008100701">How to map your custom objects in Entity Framework</a> [<a href="http://blog.cincura.net/id/228430">other place</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [6. 10. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008100602">Firebird Conference 2008</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [18. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/614-ado-net-data-services-6-poskytovani-dat-bez-entity-frameworku.aspx">ADO.NET Data Services (6) – Poskytování dat bez Entity Frameworku</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [16. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/613-ms-sql-server-2008-table-value-parameters-tvp.aspx">MS SQL Server 2008: Table Value Parameters (TVP)</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [11. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/612-ado-net-data-services-5-zabezpeceni-a-modifikace-dotazu.aspx">ADO.NET Data Services (5) – Zabezpečení a modifikace dotazů</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 9. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008090301">SQL Server DevCon 2008</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [20. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008082001">Nikdy si nemůžete být jisti svoji pozicí</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008081201">Map&amp;Reduce – jak to dělá Google?</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [11. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/606-ado-net-data-services-4-prace-s-daty-v-kodu.aspx">ADO.NET Data Services (4) – Práce s daty v kódu</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [5. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008080501">Budoucnost virtualizace? Mnohem komplexnější!</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [4. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/605-ado-net-data-services-3-zmeny-dat.aspx">ADO.NET Data Services (3) – Změny dat</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [1. 8. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008080101">Má smysl maďarská notace?</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [28. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/604-ado-net-data-services-2-pokrocile-moznosti-nejen-dotazovani.aspx">ADO.NET Data Services (2) – Pokročilé možnosti (nejen) dotazování</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [21. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/603-ado-net-data-services-1-dotazovani.aspx">ADO.NET Data Services (1) - Dotazování</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [8. 7. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/601-entity-framework-vs-linq-to-sql.aspx">Entity Framework vs. LINQ to SQL</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [16. 6. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/599-lazy-eager-explicit-loading-o-co-jde.aspx">Lazy, eager, explicit loading – o co jde?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 6. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008060201">Virtualizace a zase virtualizace!</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [26. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008052601">Spuštění programu během akce v databázi</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008051201">Rozvrhy a transakce</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [5. 5. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008050502">Dědičnost v relačních databázích</a> [<a href="http://www.vyvojar.cz/Articles/594-dedicnost-v-relacnich-databazich.aspx">vyvojar.cz</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [18. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008041801">Sun zavírá MySQL!?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [8. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040801">Co používá Student Agency?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040302">Launch nových MS produktů – ožije MS-DOS?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040301">SQL injection a co s tím?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008040202">Novinky ve Firebirdu 2.1</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [1. 4. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/591-deferred-loading-a-linq-to-sql.aspx">Deferred loading a LINQ to SQL</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [26. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008032602">10 milionů pro EnterpriseDB</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [19. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008031901">Dmitri Kouzmenko</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [13. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008031303">Nové produkty od MS</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [5. 3. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008030501">Databáze na YouTube</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [25. 2. 2008]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (3) [<a href="http://www.vyvojar.cz/Articles/586-microsoft-sync-framework-synchronizace-databazi-3.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/147/Default.aspx">netstudent.cz</a>]</td></tr>
+			<tr><td>dbsvet.cz (in English) [6. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008020602">Firebird .NET and SP with parameters</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [4. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/585-windows-server-2008-dokoncen.aspx">Windows Server 2008: Dokončen!</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [1. 2. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/584-microsoft-chce-koupit-yahoo-44-6-miliard-dolaru.aspx">Microsoft chce koupit Yahoo!: 44,6 miliard dolarů</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [17. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/582-zdrojove-texty-net-frameworku-jsou-dostupne.aspx">Zdrojové texty .NET Frameworku jsou dostupné</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [16. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008011603">Sun kupuje MySQL</a> [<a href="http://vyvojar.cz/Articles/580-sun-kupuje-mysql.aspx">vyvojar.cz</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [16. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008011601">Databáze v IBM IDC</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [7. 1. 2008]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2008010702">Database Workbench 3</a></td></tr>
+			<tr><td>vyvojar.cz/netstudent.cz (in Czech) [4. 1. 2008]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (2) [<a href="http://www.vyvojar.cz/Articles/578-microsoft-sync-framework-synchronizace-databazi-2.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/137/Default.aspx">netstudent.cz</a>]</td></tr>
+			<tr><td>vyvojar.cz/netstudent.cz (in Czech) [21. 12. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace databází (1) [<a href="http://www.vyvojar.cz/Articles/573-microsoft-sync-framework-synchronizace-databazi-1.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/134/Default.aspx">netstudent.cz</a>]</td></tr>
+			<tr><td>vyvojar.cz (in Czech) [14. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/547-transactionscope-damska-volenka.aspx">TransactionScope, dámská volenka</a></td></tr>
+			<tr><td>vyvojar.cz/netstudent.cz (in Czech) [13. 12. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Synchronizace souborů [<a href="http://www.vyvojar.cz/Articles/564-microsoft-sync-framework-synchronizace-souboru.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/127/Default.aspx">netstudent.cz</a>]</td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12.12.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007121201">Seminář Firebird a FastReport – jaký byl?</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [10. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/546-transactionscope-rande-o-ctvrte.aspx">TransactionScope, rande o čtvrté</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [7. 12. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/545-transactionscope-seznamte-se.aspx">TransactionScope, seznamte se</a></td></tr>
+			<tr><td>vyvojar.cz/netstudent.cz (in Czech) [30. 11. 2007]:</td><td>&nbsp;</td><td>Microsoft Sync Framework - Úvod [<a href="http://www.vyvojar.cz/Articles/557-microsoft-sync-framework-uvod.aspx">vyvojar.cz</a>, <a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/123/Microsoft-Sync-Framework--vod.aspx">netstudent.cz</a>]</td></tr>
+			<tr><td>netstudent.cz (in Czech) [21. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/114/TransactionScope-dmsk-volenka.aspx">TransactionScope, dámská volenka</a></td></tr>
+			<tr><td>netstudent.cz (in Czech) [11. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/108/TransactionScope-rande-o-tvrt.aspx">TransactionScope, rande o čtvrté</a></td></tr>
+			<tr><td>netstudent.cz (in Czech) [1. 11. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/104/NET-a-Firebird-Embedded.aspx">.NET a Firebird Embedded</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [15.10.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007101504">Jaký byl DM2007?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12.10.2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007101201">Hypotrachelion</a></td></tr>
+			<tr><td>netstudent.cz (in Czech) [14. 10. 2007]:</td><td>&nbsp;</td><td><a href="http://www.netstudent.cz/Články/tabid/56/articleType/ArticleView/articleId/94/TransactionScope-seznamte-se.aspx">TransactionScope, seznamte se</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [26. 9. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007092601">Instalace Firebirdu snadno a rychle</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [5. 9. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007090501">Správná databáze 2007 Edition</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [16. 8. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007081602">MySQL končí s open-source?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [28. 2. 2007 - 16. 8. 2007]:</td><td>&nbsp;</td><td>Series about Oracle Database 10g Express Edition [<a href="http://dbsvet.cz/view.php?cisloclanku=2007022801">Part 1</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007030701">Part 2</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007032101">Part 3</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007041501">Part 4</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007042602">Part 5</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007050702">Part 6</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007052101">Part 7</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007061401">Part 8</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007070301">Part 9</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007070901">Part 10</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007072601">Part 11</a>, <a href="http://dbsvet.cz/view.php?cisloclanku=2007081601">Part 12</a>]</td></tr>
+			<tr><td>vyvojar.cz (in Czech) [9. 8. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/523-edice-firebirdu.aspx">Edice Firebirdu</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 7. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007070302">Jak přišel Blob na svět?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 7. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007070203">Zálohujte nově</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [10. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/articles/471-fulltextove-hledani-na-firebirdu.aspx">Fulltextové hledání na Firebirdu</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [7. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007050704">Jak jsou databáze zranitelné? Hodně!</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 5. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007050201">Cizí klíče bez cizích klíčů</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [18. 4. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007041801">Osobnosti Firebirdu počtvrté – Ivan Přenosil</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [10. 4. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007041001">RFID v brněnské praxi</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [17. 3. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007031701">Osobnosti Firebirdu potřetí – Pavel Císař</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [5. 2. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/453-ddex-rozhranni-a-instalace-firebird-ddex-provideru-do-visual-studia.aspx">DDEX rozhranní a instalace Firebird DDEX provideru do Visual Studia</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [29. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007012902">Osobnosti Firebirdu podruhé – Dmitry Yemanov</a></td></tr>
+			<tr><td>vyvojar.cz (in Czech) [16. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.vyvojar.cz/Articles/446-firebird-embedded-a-net.aspx">Firebird Embedded a .NET</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [16. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007011601">Nalaďte si stránku ve Firebirdu</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [4. 1. 2007]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2007010401">Osobnosti Firebirdu poprvé – Vlad Horsun</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [7. 12. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006120701">Zařaďte dvojku v bezpečnosti...</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [20. 11. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006112001">Firebird 2.0 je tu!</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [4. 10. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006100402">Novinka ve druhém Firebirdu – expression indexy</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [13. 9. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006091301">Falcon aneb záchrana pro MySQL?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [28. 8. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006082801">Na ostří nože aneb UDF či SP ve Firebirdu?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [12. 7. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006071201">Opět – Oracle nebo Microsoft? Microsoft!</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [27. 6. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006062701">Jak si stojí Firebird?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 6. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006060201">25. jednohubka – Problém s referencemi u Firebirdu</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [27. 4. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006042701">A co na to Ann?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [3. 4. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006040301">Jak na dynamické dotazy ve Firebirdu?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [6. 3. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006030601">Jaká je ta správná databáze?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [20. 2. 2006, co-operation with Pavel Cisar]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006022001">Jim Starkey končí!</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [25. 1. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006012501">Hlavní změny ve Firebirdu 1.5.3</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [2. 1. 2006]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2006010203">Vystřelte si z databáze</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [19. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005121901">Jak na ankety ve Firebirdu potřetí</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [13. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005121301">19. jednohubka – Proč Firebird/IB používají názvy gdsXXX?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [6. 12. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005120602">Jak se liší Super Server a Classic?</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [16. 11. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005111601">Třetí mezinárodní Firebird konference</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [7. 11. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005110701">Jak na ankety ve Firebirdu podruhé</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [22. 10. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005102201">Jak na ankety ve Firebirdu poprvé</a></td></tr>
+			<tr><td>dbsvet.cz (in Czech) [31. 08. 2005]:</td><td>&nbsp;</td><td><a href="http://www.dbsvet.cz/view.php?cisloclanku=2005083101">Jak k Firebirdu z .NET?</a></td></tr>
+		</table>
+		<hr />
+		<h2>Speaker on conferences and other events:</h2>
+		<table id="conferences">
+			<tr>
+				<td>Talk @ Windows User Group (February 17, 2015)</td><td>&nbsp;</td><td>Visual Studio keyboard tips and tricks<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (January 22, 2015)</td><td>&nbsp;</td><td>Visual Studio keyboard tips and tricks<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2014 - Praha (November 29-30, 2014)</td><td>&nbsp;</td><td>[1] Code First from the ground up<br />[2] Continuous Integration and Continuous Delivery<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Faculty of Informatics Masaryk University (November 28, 2014)</td><td>&nbsp;</td><td>Continuous Delivery<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Faculty of Informatics Masaryk University (November 14, 2014)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>International Firebird Conference (October 24-25, 2014 in Prague, Czech Republic)</td><td>&nbsp;</td><td>[1] What happened in .NET provider in the last year<br /><br />[2] Using Firebird on Microsoft Azure<br />(in English)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2014 - Brno (October 18-19, 2014)</td><td>&nbsp;</td><td>[1] Code First from the ground up<br />[2] Continuous Integration and Continuous Delivery<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (October 13, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (July 3, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Gopas TechEd 2014 (May 20-23, 2014)</td><td>&nbsp;</td><td>[1] C# 6 and Roslyn<br />[2] Entity Framework 6.1<br />[3] Visual Studio 2010/2012/2013 tips and tricks<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (May 19, 2014)</td><td>&nbsp;</td><td>Asynchronous and parallel programming in .NET<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>ShowIT (February 13, 2014)</td><td>&nbsp;</td><td>Entity Framework 6<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Firebird 2013 Tour (November 25, 2013)</td><td>&nbsp;</td><td>Transactions management in .NET driver<br />(in English and Czech)</td>
+			</tr>
+			<tr>
+				<td>Faculty of Informatics Masaryk University (November 15, 2013)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2013 - Praha (November 2-3, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework 6<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (October 24, 2013)</td><td>&nbsp;</td><td>Entity Framework 6<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2013 - Brno (October 12-13, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework 6<br />[3] Visual Studio 2012/2010 tips and tricks<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (June 17, 2013)</td><td>&nbsp;</td><td>Entity Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Gopas TechEd 2013 (May 21-24, 2013)</td><td>&nbsp;</td><td>[1] async/await and asynchronous programming gotchas<br />[2] Entity Framework futures (Entity Framework 6)<br />[3] Visual Studio 2012/2010 tips and tricks<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Faculty of Informatics Masaryk University (November 30, 2012)</td><td>&nbsp;</td><td>Parallel, asynchronous and multithreaded applications<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>10<sup>th</sup> International Firebird Conference (November 26-27, 2012 in Luxembourg, Luxembourg)</td><td>&nbsp;</td><td>What's New In ADO.NET Provider for Firebird<br />Getting started with Firebird from .NET<br />(in English)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (June 12, 2012)</td><td>&nbsp;</td><td>Azure (talking about real world experience)<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Gopas TechEd 2012 (April 23-26, 2012)</td><td>&nbsp;</td><td>Two sessions:<br />[1] async/await and asynchronous programming in Visual Studio 11/.NET 4.5/C# 5<br />[2] Entity Framework futures (Entity Framework 5)<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Microsoft ČR (April 17, 2012)</td><td>&nbsp;</td><td>Entity Framework 4.3 - Migrations<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2011 (November 26, 2011)</td><td>&nbsp;</td><td>Firebird vs SQL Server CE<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>9<sup>th</sup> International Firebird Conference (November 25-26, 2011 in Luxembourg, Luxembourg)</td><td>&nbsp;</td><td>What is new in .NET provider (trace support, cancellation and more)<br />(in English)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (November 7, 2011)</td><td>&nbsp;</td><td>Entity Framework 4.1/4.2+<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (July 25, 2011)</td><td>&nbsp;</td><td>Entity Framework 4.1<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Gopas TechEd 2011 (May 2-5, 2011)</td><td>&nbsp;</td><td>Two sessions:<br />[1] Task Parallel Library<br />[2] Entity Framework 4.1 (Code First)<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Prague PostgreSQL Developers Day 2011 (February 10, 2011)</td><td>&nbsp;</td><td>"Firebird" session to introduce it to PostgreSQL users<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2010 (November 27, 2010)</td><td>&nbsp;</td><td>OData and Open Data Protocol<br />(in Czech)</td>
+			</tr>
+			<tr>
 				<td>8<sup>th</sup> International Firebird Conference (November 11-13, 2010 in Bremen, Germany)</td><td>&nbsp;</td><td>Three sessions, focused on Firebird with ADO.NET and OData<br />(in English)</td>
 			</tr>
-      <tr>
-        <td>Talk @ Windows User Group (October 26, 2010)</td><td>&nbsp;</td><td>MS Sync Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (September 21, 2010)</td><td>&nbsp;</td><td>Open Data Protocol (OData)<br />(in Czech)</td>
-      </tr>
-      <tr>
-      	<td>Gopas TechEd 2010 (April 26-29, 2010)</td><td>&nbsp;</td><td>Three sessions:<br />[1] Task Parallel Library<br />[2] Entity Framework 4<br />[3] ADO.NET with Firebird<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2009 (November 28, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework v4<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>7<sup>th</sup> International Firebird Conference (November 19-21, 2009 in München, Germany)</td><td>&nbsp;</td><td>Three sessions:<br />[1] Firebird with ADO.NET<br />[2] Entity Framework<br />[3] PocketPC development<br />(in English)</td>
-      </tr>
-      <tr>
-        <td>Developer Evenings @ Charles University in Prague, Faculty of Mathematics and Physic (November 3, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Windows User Group (October 20, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Talk @ Microsoft ČR (October 13, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Developer Evenings @ Charles University in Prague, Faculty of Mathematics and Physics (April 20, 2009)</td><td>&nbsp;</td><td>MS Sync Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>MS Fest 2008 (November 30, 2008)</td><td>&nbsp;</td><td>LINQ + Entity Framework<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>Firebird Developers' Day 2008 (October 16, 2008)</td><td>&nbsp;</td><td>[1] (keynote) Speaking about Firebird next future.<br />[2] Session about Entity Framework and using it with Firebird thru FirebirdClient.<br />Also co-organizer of this conference.<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>6<sup>th</sup> International Firebird Conference (September 25-27, 2008 in Bergamo, Italy)</td><td>&nbsp;</td><td>Two sessions. Both focused on Firebird and .NET (ADO.NET).<br />[1] Developing Firebird apps for PocketPC/Smartphone clients<br />[2] Using embedded Firebird with .NET<br />(in English)</td>
-      </tr>
-      <tr>
-        <td>Firebird Developers' Day (November 1, 2007)</td><td>&nbsp;</td><td>[1] (keynote) Speaking about Firebird next future.<br />[2] Session about Firebird and using it in .NET.<br />Also co-organizer of this conference.<br />(in Czech)</td>
-      </tr>
-      <tr>
-        <td>5<sup>th</sup> International Firebird Conference (October 18-20, 2007 in Hamburg, Germany)</td><td>&nbsp;</td><td>Two sessions. Both about Firebird ADO.NET Data Provider. Evening "code camp".<br />(in English)</td>
-      </tr>
-      <tr>
-         <td>Academic Developer Days (December 8, 2006)</td><td>&nbsp;</td><td>Working with data on .NET platform – ADO.NET<br />(in Czech)</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Trainings given:</h2>
+			<tr>
+				<td>Talk @ Windows User Group (October 26, 2010)</td><td>&nbsp;</td><td>MS Sync Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (September 21, 2010)</td><td>&nbsp;</td><td>Open Data Protocol (OData)<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Gopas TechEd 2010 (April 26-29, 2010)</td><td>&nbsp;</td><td>Three sessions:<br />[1] Task Parallel Library<br />[2] Entity Framework 4<br />[3] ADO.NET with Firebird<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2009 (November 28, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework v4<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>7<sup>th</sup> International Firebird Conference (November 19-21, 2009 in München, Germany)</td><td>&nbsp;</td><td>Three sessions:<br />[1] Firebird with ADO.NET<br />[2] Entity Framework<br />[3] PocketPC development<br />(in English)</td>
+			</tr>
+			<tr>
+				<td>Developer Evenings @ Charles University in Prague, Faculty of Mathematics and Physic (November 3, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Windows User Group (October 20, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Talk @ Microsoft ČR (October 13, 2009)</td><td>&nbsp;</td><td>ADO.NET Entity Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Developer Evenings @ Charles University in Prague, Faculty of Mathematics and Physics (April 20, 2009)</td><td>&nbsp;</td><td>MS Sync Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>MS Fest 2008 (November 30, 2008)</td><td>&nbsp;</td><td>LINQ + Entity Framework<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>Firebird Developers' Day 2008 (October 16, 2008)</td><td>&nbsp;</td><td>[1] (keynote) Speaking about Firebird next future.<br />[2] Session about Entity Framework and using it with Firebird thru FirebirdClient.<br />Also co-organizer of this conference.<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>6<sup>th</sup> International Firebird Conference (September 25-27, 2008 in Bergamo, Italy)</td><td>&nbsp;</td><td>Two sessions. Both focused on Firebird and .NET (ADO.NET).<br />[1] Developing Firebird apps for PocketPC/Smartphone clients<br />[2] Using embedded Firebird with .NET<br />(in English)</td>
+			</tr>
+			<tr>
+				<td>Firebird Developers' Day (November 1, 2007)</td><td>&nbsp;</td><td>[1] (keynote) Speaking about Firebird next future.<br />[2] Session about Firebird and using it in .NET.<br />Also co-organizer of this conference.<br />(in Czech)</td>
+			</tr>
+			<tr>
+				<td>5<sup>th</sup> International Firebird Conference (October 18-20, 2007 in Hamburg, Germany)</td><td>&nbsp;</td><td>Two sessions. Both about Firebird ADO.NET Data Provider. Evening "code camp".<br />(in English)</td>
+			</tr>
+			<tr>
+				 <td>Academic Developer Days (December 8, 2006)</td><td>&nbsp;</td><td>Working with data on .NET platform – ADO.NET<br />(in Czech)</td>
+			</tr>
+		</table>
+		<hr />
+		<h2>Trainings given:</h2>
 		<div><small>(standard Gopas trainings excluded)</small></div>
-    <table>
-    	<tr>
-        <td>01/2015:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): Firebird</td>
-    	</tr>
-    	<tr>
-        <td>05/2014:</td><td>&nbsp;</td><td>For LUXART, s.r.o. (Czech Republic): Firebird</td>
-    	</tr>
-    	<tr>
-        <td>01-02/2014:</td><td>&nbsp;</td><td>For ASD Software, s.r.o. (Czech Republic): Parallel programming, Entity Framework</td>
-    	</tr>
-    	<tr>
-        <td>01/2014:</td><td>&nbsp;</td><td>For ACP Traductera, a.s. (Czech Republic): Firebird</td>
-    	</tr>
-    	<tr>
-        <td>06/2013:</td><td>&nbsp;</td><td>For Inel Holding, a.s. (Czech Republic): Firebird</td>
-    	</tr>
-      <tr>
-        <td>05/2013:</td><td>&nbsp;</td><td>For AXA Česká republika, s.r.o. (Czech Republic): Entity Framework</td>
-      </tr>
-      <tr>
-        <td>03/2012:</td><td>&nbsp;</td><td>For AXA Česká republika, s.r.o. (Czech Republic): Firebird</td>
-      </tr>
-      <tr>
-        <td>07/2011:</td><td>&nbsp;</td><td>For SoLOGtion GmbH (Germany): ADO.NET and ADO.NET (incl. Entity Framework) with Firebird</td>
-      </tr>
-      <tr>
-        <td>06/2011:</td><td>&nbsp;</td><td>For ICZ, a.s. (Slovakia): Entity Framework</td>
-      </tr>
-      <tr>
-        <td>07/2010:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): Firebird</td>
-      </tr>
-      <tr>
-        <td>06/2010:</td><td>&nbsp;</td><td>For Softip, a.s. (Slovakia): Entity Framework 4</td>
-      </tr>
-      <tr>
-        <td>06/2009:</td><td>&nbsp;</td><td>For INISOFT, s.r.o. (Czech Republic): 5 days training .NET (moving from Delphi) - "complete start up guide", databases in .NET, Entity Framework, ...</td>
-      </tr>
-      <tr>
-        <td>03/2009:</td><td>&nbsp;</td><td>For Martin Tláskal (Czech Republic): Firebird and ASP.NET</td>
-      </tr>
-      <tr>
-        <td>03/2009:</td><td>&nbsp;</td><td>For PeopleWare (Belgium): 4 days training on Entity Framework</td>
-      </tr>
-      <tr>
-        <td>02/2009:</td><td>&nbsp;</td><td>For SMS-Timing (Belgium): 4 days training on Entity Framework</td>
-      </tr>
-      <tr>
-        <td>11/2008:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): ADO.NET and Firebird</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Pedagogical activities:</h2>
-    <table>
-      <tr>
-        <td>2009:</td><td>&nbsp;</td><td>leading Microsoft IT Academy lectures - advanced class focused on working with data (ADO.NET, LINQ, EF, parallel/multithreaded programming) (FELD CVUT (CSP) Prague)</td>
-      </tr>
-      <tr>
-        <td>2008:</td><td>&nbsp;</td><td>leading lecture about accessing data(bases) in .NET - guide for ADO.NET, Entity Framework, LINQ to SQL, Data Services, Sync Framework, etc. for TRIPOD project (CVUT Prague)</td>
-      </tr>
-      <tr>
-        <td>2007:</td><td>&nbsp;</td><td>leading some lectures about advanced .NET technologies at Faculty Informatics, MU (Selected Topics on CLI Technologies [PV179], MSP)</td>
-      </tr>
-      <tr>
-        <td>2006:</td><td>&nbsp;</td><td>leading workshops about .NET at Faculty Informatics, MU (MSC/MSP projects)</td>
-      </tr>
-      <tr>
-        <td>2004:</td><td>&nbsp;</td><td>leading workshops about Delphi for OpenYourMind project</td>
-      </tr>
-    </table>
-  </body>
+		<table>
+			<tr>
+				<td>01/2015:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): Firebird</td>
+			</tr>
+			<tr>
+				<td>05/2014:</td><td>&nbsp;</td><td>For LUXART, s.r.o. (Czech Republic): Firebird</td>
+			</tr>
+			<tr>
+				<td>01-02/2014:</td><td>&nbsp;</td><td>For ASD Software, s.r.o. (Czech Republic): Parallel programming, Entity Framework</td>
+			</tr>
+			<tr>
+				<td>01/2014:</td><td>&nbsp;</td><td>For ACP Traductera, a.s. (Czech Republic): Firebird</td>
+			</tr>
+			<tr>
+				<td>06/2013:</td><td>&nbsp;</td><td>For Inel Holding, a.s. (Czech Republic): Firebird</td>
+			</tr>
+			<tr>
+				<td>05/2013:</td><td>&nbsp;</td><td>For AXA Česká republika, s.r.o. (Czech Republic): Entity Framework</td>
+			</tr>
+			<tr>
+				<td>03/2012:</td><td>&nbsp;</td><td>For AXA Česká republika, s.r.o. (Czech Republic): Firebird</td>
+			</tr>
+			<tr>
+				<td>07/2011:</td><td>&nbsp;</td><td>For SoLOGtion GmbH (Germany): ADO.NET and ADO.NET (incl. Entity Framework) with Firebird</td>
+			</tr>
+			<tr>
+				<td>06/2011:</td><td>&nbsp;</td><td>For ICZ, a.s. (Slovakia): Entity Framework</td>
+			</tr>
+			<tr>
+				<td>07/2010:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): Firebird</td>
+			</tr>
+			<tr>
+				<td>06/2010:</td><td>&nbsp;</td><td>For Softip, a.s. (Slovakia): Entity Framework 4</td>
+			</tr>
+			<tr>
+				<td>06/2009:</td><td>&nbsp;</td><td>For INISOFT, s.r.o. (Czech Republic): 5 days training .NET (moving from Delphi) - "complete start up guide", databases in .NET, Entity Framework, ...</td>
+			</tr>
+			<tr>
+				<td>03/2009:</td><td>&nbsp;</td><td>For Martin Tláskal (Czech Republic): Firebird and ASP.NET</td>
+			</tr>
+			<tr>
+				<td>03/2009:</td><td>&nbsp;</td><td>For PeopleWare (Belgium): 4 days training on Entity Framework</td>
+			</tr>
+			<tr>
+				<td>02/2009:</td><td>&nbsp;</td><td>For SMS-Timing (Belgium): 4 days training on Entity Framework</td>
+			</tr>
+			<tr>
+				<td>11/2008:</td><td>&nbsp;</td><td>For Kros, a.s. (Slovakia): ADO.NET and Firebird</td>
+			</tr>
+		</table>
+		<hr />
+		<h2>Pedagogical activities:</h2>
+		<table>
+			<tr>
+				<td>2009:</td><td>&nbsp;</td><td>leading Microsoft IT Academy lectures - advanced class focused on working with data (ADO.NET, LINQ, EF, parallel/multithreaded programming) (FELD CVUT (CSP) Prague)</td>
+			</tr>
+			<tr>
+				<td>2008:</td><td>&nbsp;</td><td>leading lecture about accessing data(bases) in .NET - guide for ADO.NET, Entity Framework, LINQ to SQL, Data Services, Sync Framework, etc. for TRIPOD project (CVUT Prague)</td>
+			</tr>
+			<tr>
+				<td>2007:</td><td>&nbsp;</td><td>leading some lectures about advanced .NET technologies at Faculty Informatics, MU (Selected Topics on CLI Technologies [PV179], MSP)</td>
+			</tr>
+			<tr>
+				<td>2006:</td><td>&nbsp;</td><td>leading workshops about .NET at Faculty Informatics, MU (MSC/MSP projects)</td>
+			</tr>
+			<tr>
+				<td>2004:</td><td>&nbsp;</td><td>leading workshops about Delphi for OpenYourMind project</td>
+			</tr>
+		</table>
+	</body>
 </html>
