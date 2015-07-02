@@ -12,7 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-redirect_from: /id/233510/
+redirect_from: /id/233511/
 category: none
 layout: post
 ---
