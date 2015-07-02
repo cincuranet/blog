@@ -55,6 +55,6 @@ var result = NullableTrue()
 		: true);
 </pre>
 
-Maybe it's time to read some basics.
+Maybe it's time to read some basics. :-)
 
 [1]: https://msdn.microsoft.com/en-us/library/ms173224.aspx
