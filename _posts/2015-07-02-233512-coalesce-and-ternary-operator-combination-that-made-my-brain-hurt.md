@@ -4,6 +4,7 @@ date: 2015-07-02T13:52:00Z
 tags:
   - .NET
   - C#
+  - Best practice or not?
 redirect_from: /id/233512/
 category: none
 layout: post
