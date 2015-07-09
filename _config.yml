@@ -10,8 +10,8 @@ feed_posts: 20
 feed: atom.xml
 sitemap: sitemap.xml
 disqus_base_url: http://blog.cincura.net
-markdown: rdiscount
-rdiscount:
+markdown: redcarpet
+redcarpet:
   extensions:
     - smart
 gems:
