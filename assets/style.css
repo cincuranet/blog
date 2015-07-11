@@ -94,6 +94,14 @@ td {
 	padding-right: 8px;
 }
 
+input, textarea {
+	width: 94%;
+	padding: 8px;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.2em;
+	border: 1px solid #111;
+}
+
 /* ----------------------------------------- [ Wrapper ] */
 
 #wrapper {
@@ -104,7 +112,7 @@ td {
 	overflow: hidden;
 }
 
-/* ---------------------------------------- [ Main Nav ] */
+/* ---------------------------------------- [ Navigation ] */
 
 nav {
 	padding-bottom: .5em;
@@ -256,7 +264,7 @@ article img {
 	padding-right: 16px;
 }
 
-/* -------------------------------------- [ Commentary ] */
+/* -------------------------------------- [ Comments ] */
 
 .comment {
 	margin-bottom: 3em;
@@ -269,26 +277,6 @@ article img {
 #disqus_thread {
 	padding-left: 8px;
 	padding-right: 8px;
-}
-
-label {
-	display: block;
-	padding-top: 7px;
-	font-size: 1.2em;
-	line-height: 1.6;
-	font-weight: bold;
-}
-
-input, textarea {
-	width: 94%;
-	padding: 8px;
-	font-family: Arial, Verdana, sans-serif;
-	font-size: 1.2em;
-	border: 1px solid #111;
-}
-
-textarea {
-	height: 10em;
 }
 
 /* ----------------------------------------- [ Aside ] */
@@ -364,14 +352,10 @@ footer .rss {
 	line-height: 1.6;
 }
 
-/* If you want a text in ALL CAPS */
-
 .ver {
 	text-transform: uppercase;
 	color: #000;
 }
-
-/* For by-lines */
 
 .low {
 	font-family: Palatino, Georgia, "Times New Roman", sans-serif;
@@ -381,8 +365,6 @@ footer .rss {
 	color: #666;
 }
 
-/* A nice ampersand */
-
 .amp {
 	font-family: Baskerville, Georgia, "Times New Roman", sans-serif;
 	font-style: italic;
@@ -390,61 +372,7 @@ footer .rss {
 	color: #666;
 }
 
-/* For image captions */
-
-.tooltip {
-	display: block;
-	padding-top: 8px;
-	font-size: .9em;
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-.align-right {
-	display: block;
-	text-align: right;
-}
-
-.align-center {
-	display: block;
-	text-align: center;
-}
-
-.both {
-	clear: both;
-}
-
-.nudged {
-	margin-right: 8px;
-}
-
-.nudged-left {
-	padding-left: 8px;
-}
-
-.nudge-bottom {
-	margin-bottom: 1.5em;
-}
-
-.last-field, .first-post {
-	border: 0;
-}
-
-.title-not {
-	width: 33px;
-	height: 25px;
-	margin: 0 6px 0 0;
-	display: block;
-	text-indent: -1000em;
-	background: transparent url(not.gif) no-repeat top left;
-	float: left;
-}
+/* --------------------------------- [ Search ] */
 
 input.search-field {
 	background: transparent url(bg-search.gif) no-repeat 7px center;
