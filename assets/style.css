@@ -274,6 +274,8 @@ article img {
 
 div.comment {
 	border-top: 1px solid #111;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 .comment dt {
