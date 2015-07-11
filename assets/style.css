@@ -155,12 +155,12 @@ main {
 	overflow: hidden;
 }
 
-ul.nav {
+ul.meta {
 	margin: 0 0 2em 0;
 	list-style-type: none;
 }
 
-.nav li {
+ul.meta li {
 	margin: 0;
 	padding: .4em 8px .5em 8px;
 	font-size: 1.2em;
@@ -169,7 +169,7 @@ ul.nav {
 	word-wrap: break-word;
 }
 
-.nav li.last {
+ul.meta li.last {
 	border-bottom: 0;
 }
 
@@ -297,22 +297,6 @@ aside h4 {
 aside p {
 	font-size: 1.1em;
 	color: #111;
-}
-
-aside ul.nav {
-	margin: 0 0 2em 0;
-	list-style-type: none;
-}
-
-aside .nav li {
-	padding: .4em 8px .5em 8px;
-	font-size: 1.1em;
-	line-height: 1.6;
-	border-bottom: 1px dotted #666;
-}
-
-aside .nav li.last {
-	border-bottom: 0;
 }
 
 aside .col {
