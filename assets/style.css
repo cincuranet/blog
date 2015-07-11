@@ -115,12 +115,9 @@ nav ul {
 	list-style-type: none;
 }
 
-nav li.page_item {
+nav li {
 	margin-right: 2.2em;
 	float: left;
-}
-
-nav li a {
 	font-size: 1.2em;
 	line-height: 1.6;
 	padding-left: 8px;
