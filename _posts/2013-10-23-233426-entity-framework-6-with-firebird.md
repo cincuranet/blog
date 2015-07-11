@@ -20,13 +20,13 @@ Looks like a lot of people is trying [Entity Framework 6][1] together with [Fire
 
 So first thing first. I suppose you have nothing related to [ADO.NET provider for Firebird][3] installed (and you don't have to). So install Entity Framework package.
 
-```plain
+```text
 install-package EntityFramework
 ```
 
 Then install provider. Here you need to be careful and install the "EF6 version" as the provider model was changed in Entity Framework 6. It's called `FirebirdSql.Data.FirebirdClient-EF6`.
 
-```plain
+```text
 install-package FirebirdSql.Data.FirebirdClient-EF6
 ```
 

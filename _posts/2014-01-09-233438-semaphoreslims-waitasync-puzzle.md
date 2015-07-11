@@ -79,7 +79,7 @@ What do you think will be written out? Think about it for a while. Solution is j
 
 OK. Here's the wrong solution (I started with this too and found it surprising (because I was not thinking carefully)). The enumerations starts; `0` is yielded; I'm asynchronously waiting for a semaphore, which will be satisfied immediately, so the `Task` is "returned", rest is continuation; next item starts; semaphore will be released. And so on. Thus I'll see on a console (the order after `Yielding: XXX` will be "random"):
 
-```plain
+```text
 Yielding: 0
 Yielding: 1
 Yielding: 2
@@ -104,7 +104,7 @@ Yielding: 9
 
 But what will actually see is:
 
-```plain
+```text
 Yielding: 0
 Yielding: 1
 0

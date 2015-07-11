@@ -26,7 +26,7 @@ Console.WriteLine("GetHashCode2:\t{0}", mail2.GetHashCode());
 
 What do you think the output be? Drum roll please...
 
-```plain
+```text
 Equals?:        True
 Equals?:        True
 GetHashCode1:   582340455

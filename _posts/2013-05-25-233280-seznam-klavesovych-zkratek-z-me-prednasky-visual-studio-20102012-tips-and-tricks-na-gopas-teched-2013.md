@@ -13,7 +13,7 @@ Na [letošním Gopas TechEdu][1] jsem měl kromě standardních technických př
 
 Původně jsem myslel, že je sem dám i s popisem. Aby to bylo úplně bez práce. Ale pak jsem si to rozmyslel. :) Dám sem pouze seznam a kdo chce, může vyzkoušet a zjistit co dělá. Většina z nich není destruktivní a funguje přímo v editoru. Ty pro debuggování jsou označené. Komentáře jsou případně otevřené (i proto, že některé věci byly "ukazovací" a nejsou o klávesové zkratce), kdyby se někdo chtěl zeptat. Rád vysvětlím.
 
-```plain
+```text
 Win-<number>
 Win-Alt-<number>
 Win-Shift-<number>
@@ -58,7 +58,7 @@ Ctrl-F, F3, Ctrl-H, Ctrl-I/Ctrl-Shift-I
 
 Debugging:
 
-```plain
+```text
 F10, F11, Shift-F11, Shift-F5
 Ctrl-F10
 Ctrl-Shift-F5

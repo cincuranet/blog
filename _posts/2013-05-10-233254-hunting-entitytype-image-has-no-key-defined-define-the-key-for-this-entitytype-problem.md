@@ -15,7 +15,7 @@ Few weeks back I was [hired][1] to debug the above mentioned problem. The applic
 After receiving the sources and quickly extracting the bare metal with error I started looking for `Image` type. And there it was. The class had `Id` property, so the key was kind of there. The default convention should be able to find. Let's look at configuration, if there's something suspicious. And even better, the [`HasKey`][4] call is there. OK, maybe there's some magic in [`OnModelCreating`][5]. Nope. Everything as expected.
 
 By the way, the exact error was:
-```plain
+```text
 ModelValidationException: One or more validation errors were detected during model generation:
 
 	System.Data.Entity.Edm.EdmEntityType: : EntityType 'Image' has no key defined. Define the key for this EntityType.
