@@ -264,6 +264,18 @@ article pre code {
 	color: #222;
 }
 
+article pre .line-numbers {
+  float: left;
+  margin: 0 1em 0 -1em;
+  border-right: 1px solid;
+  text-align: right;
+}
+
+article pre .line-numbers span {
+  display: block;
+  padding: 0 .5em 0 1em;
+}
+
 article .quote-author {
 	float: right;
 }
@@ -510,34 +522,3 @@ input.search-field {
 p.search-field {
 	padding-right: 16px;
 }
-
-/* Use for full width images (596px) */
-
-.full-image {
-	margin-left: -15.2em;
-}
-
-/* Centering for older posts */ 
-
-.centered {
-	display: block;
-	margin: 0 auto;
-}
-
-/*.button {
-	display: block;
-	padding: 8px;
-	background: #222;
-	color: #fff;
-	font-size: .9em;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	text-align: center;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-}
-
-.button:hover {
-	background: #000;
-}
-*/
