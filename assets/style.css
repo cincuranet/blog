@@ -253,10 +253,11 @@ article code {
 
 article pre {
 	margin: 2em 0 2em 0;
-	padding: 2em;
+	padding: 1em 0 1em 3em;
 	font-size: 1.2em;
-	background: #eee;
 	overflow: auto;
+	border-bottom: 1px dotted #bbb;
+	border-top: 1px dotted #bbb;
 }
 
 article pre code {
