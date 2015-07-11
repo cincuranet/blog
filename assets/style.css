@@ -253,10 +253,6 @@ article pre .line-numbers span {
   padding: 0 .5em 0 1em;
 }
 
-article .quote-author {
-	float: right;
-}
-
 article img {
 	padding-bottom: 2em;
 	padding-left: 16px;
