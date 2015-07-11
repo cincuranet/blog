@@ -1,4 +1,4 @@
-* {		
+* {
 	margin: 0;
 	padding: 0;
 }
@@ -87,7 +87,7 @@ kbd {
 	text-transform: uppercase;
 }
 
-table {      
+table {
 	margin-bottom: 1em;
 	font-size: 1.2em;
 	line-height: 1.6;
@@ -270,21 +270,12 @@ article img {
 	padding: 1em 0 0 0;
 	clear: both;
 	overflow: hidden;
-}
-
-div.comment {
 	border-top: 1px solid #111;
 }
 
-div.comment > div {
+#disqus_thread {
 	padding-left: 8px;
 	padding-right: 8px;
-}
-
-.comment dt {
-	margin: 0 0 .5em 0;
-	font-size: 1.2em;
-	line-height: 1.6;
 }
 
 label {
