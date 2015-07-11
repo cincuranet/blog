@@ -145,7 +145,7 @@ header h1 a, header h2 {
 
 /* ------------------------------------------ [ Content ] */
 
-#content {
+main {
 	padding-top: 1em;
 	overflow: hidden;
 }
