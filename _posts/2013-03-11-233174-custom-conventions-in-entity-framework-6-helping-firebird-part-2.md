@@ -16,12 +16,12 @@ Few days ago I wrote a post "[Custom conventions in Entity Framework 6 helping F
 
 Anyway for properties to work you have to implement `IDbConvention<EdmProperty>` and for table `IDbConvention<EntityType>` (not `EntitySet`, you need to be able to see whether somebody set the table name already or not which for me is easier from `EntityType` type). Don't ask me how I found this. A lot of trial and error. And actually a lot of memories from around 2010 and Entity Framework v1 ([link][4], [link][5] (anybody here ever explored [MetadataProperties][6]?)) :).
 
-<pre class="brush:csharp">
-class FirebirdFriendlyModelConvention : IDbConvention&lt;EdmProperty&gt;, IDbConvention&lt;EntityType&gt;
+```csharp
+class FirebirdFriendlyModelConvention : IDbConvention<EdmProperty>, IDbConvention<EntityType>
 {
 	public void Apply(EdmProperty dbDataModelItem, EdmModel model)
 	{
-		var preferredName = (string)dbDataModelItem.Annotations.First(x =&gt; x.Name == "PreferredName").Value;
+		var preferredName = (string)dbDataModelItem.Annotations.First(x => x.Name == "PreferredName").Value;
 		if (preferredName == dbDataModelItem.Name)
 			dbDataModelItem.Name = FirebirdNamingConvention.CreateName(dbDataModelItem.Name);
 	}
@@ -33,9 +33,9 @@ class FirebirdFriendlyModelConvention : IDbConvention&lt;EdmProperty&gt;, IDbCon
 		return entityType;
 	}
 
-	string GetTableName(ICollection&lt;DataModelAnnotation&gt; anotations)
+	string GetTableName(ICollection<DataModelAnnotation> anotations)
 	{
-		var anotation = anotations.FirstOrDefault(x =&gt; x.Name == "TableName");
+		var anotation = anotations.FirstOrDefault(x => x.Name == "TableName");
 		if (anotation == null)
 			return null;
 		return (string)anotation.Value;
@@ -43,7 +43,7 @@ class FirebirdFriendlyModelConvention : IDbConvention&lt;EdmProperty&gt;, IDbCon
 
 	public void Apply(EntityType dbDataModelItem, EdmModel model)
 	{
-		var entitySet = model.Containers.First().EntitySets.SingleOrDefault(e =&gt; e.ElementType == GetRootType(dbDataModelItem));
+		var entitySet = model.Containers.First().EntitySets.SingleOrDefault(e => e.ElementType == GetRootType(dbDataModelItem));
 		var tableName = GetTableName(dbDataModelItem.Annotations);
 		if (tableName == null)
 		{
@@ -52,7 +52,7 @@ class FirebirdFriendlyModelConvention : IDbConvention&lt;EdmProperty&gt;, IDbCon
 		}
 	}
 }
-</pre>
+```
 
 As you can see it's not magic, if you know where to look at. Because the `Table` property is currently (alpha 3) not public I was forced to use reflection. [There's the related work item.][7]
 

@@ -40,21 +40,21 @@ Basically I call first method `NullableTrue` and if the result is not null I exp
 
 When you try to execute the code, the result will be `False` printed. Nothing magical, just plain old operator precedence. Stuff you learn basically as a first thing in math or programming. Still, as I nicely indented my code I confused myself with the different order. 8-) This code is actually evaluated like this.
 
-<pre class="brush:csharp">
+```csharp
 var result = (NullableTrue()
 	?? False())
 		? false
 		: true;
-</pre>
+```
 
 You should have seen my confusion with return values and trying every trick I know to crack it. Of course once I realized my mistake and adding braces on appropriate places everything started working.
 
-<pre class="brush:csharp">
+```csharp
 var result = NullableTrue()
 	?? (False()
 		? false
 		: true);
-</pre>
+```
 
 Maybe it's time to read some basics. :-)
 

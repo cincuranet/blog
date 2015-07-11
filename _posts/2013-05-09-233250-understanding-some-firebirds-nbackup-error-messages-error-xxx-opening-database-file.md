@@ -14,15 +14,15 @@ Because on the server where the application is running I'm unable to do backup u
 
 If you have done backup using process described above and you have the file, you can't just start using it. You need to "restore it", which means changing a flag inside the database file. This is where the `nbackup`'s `-F` switch comes to play. But no matter what I was doing, I was getting:
 
-<pre class="brush:plain">
-Failure: Error (5) opening database file: &lt;some&gt;.fdb
-</pre>
+```plain
+Failure: Error (5) opening database file: <some>.fdb
+```
 
 This error message is, well, completely utterly useless. While waiting for reply from [firebird-support list][2] I played with [Process Monitor][3] (of course) to see what's wrong. But I haven't seen any disk activity with errors. Changing paths, trying invalid paths (this produced just error 3), running 32bit version of `nbackup`, using one from Firebird 2.1, ... And nothing. Then I decided to have a look into the ultimate documentation aka sources. It was not difficult to find piece of code:
 
-<pre class="brush:cpp">
+```cpp
 b_error::raise(uSvc, "Error (%d) opening database file: %s", GetLastError(), dbname.c_str());
-</pre>
+```
 
 Great [`GetLastError`][4]. Time to jump into [System Error Codes][5]. And in no time I know it's `ERROR_ACCESS_DENIED`. That's a progress. Quick check of permissions and yes; the user I was running under had no permission to write to the file. Quickly changing that and everything was working fine.
 

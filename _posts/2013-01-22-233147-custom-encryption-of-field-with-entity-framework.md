@@ -17,21 +17,21 @@ The problem is, that the entity itself doesn't know when it's providing data to 
 
 Here's the code:
 
-<pre class="brush:csharp">
+```csharp
 class MyContext : DbContext
 {
 	public MyContext()
 		: base(@"server=(localdb)\mssql;integrated security=true;database=test;")
 	{ }
 
-	public IDbSet&lt;SuperSecured&gt; SuperSecured { get; set; }
+	public IDbSet<SuperSecured> SuperSecured { get; set; }
 
 	public override int SaveChanges()
 	{
 		var secured = this.ChangeTracker.Entries()
-			.Where(x =&gt; x.State == EntityState.Added || x.State == EntityState.Modified)
-			.Where(x =&gt; x.Entity is ISecured)
-			.Select(x =&gt; x.Entity as ISecured)
+			.Where(x => x.State == EntityState.Added || x.State == EntityState.Modified)
+			.Where(x => x.Entity is ISecured)
+			.Select(x => x.Entity as ISecured)
 			.ToArray();
 		foreach (var item in secured)
 		{
@@ -112,9 +112,9 @@ class SuperSecured : ISecured
 		_locked = false;
 	}
 }
-</pre>
+```
 
-<pre class="brush:csharp">
+```csharp
 using (var ctx = new MyContext())
 {
 	if (ctx.Database.Exists())
@@ -122,9 +122,9 @@ using (var ctx = new MyContext())
 	ctx.Database.Create();
 	ctx.SuperSecured.Add(new SuperSecured() { Name = "Testing", TopSecret = "This is not a palindrome ;)" });
 	ctx.SaveChanges();
-	ctx.SuperSecured.ToList().ForEach(x =&gt; Console.WriteLine("{0}|{1}", x.Name, x.TopSecret));
+	ctx.SuperSecured.ToList().ForEach(x => Console.WriteLine("{0}|{1}", x.Name, x.TopSecret));
 }
-</pre>
+```
 
 First a note. The "encryption" here isn't smart even a little. It's just to be there. Do not even think about using it. ;) So how it works?
 

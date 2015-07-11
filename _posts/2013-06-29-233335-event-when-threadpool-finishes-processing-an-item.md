@@ -15,14 +15,14 @@ Yesterday I was doing my [parallel-threading-async-locking course][1] and at one
 
 It's just a proof of concept. But you can change it for you specific usage. If you dive deep (enough) you'll more or less end up with [`Task`][4] object. :)
 
-<pre class="brush:csharp">
+```csharp
 class MyThreadPool
 {
 	public static event EventHandler OperationCompleted;
 
 	public static void QueueUserWorkItem(WaitCallback operation, object state)
 	{
-		ThreadPool.QueueUserWorkItem(o =&gt;
+		ThreadPool.QueueUserWorkItem(o =>
 			{
 				try
 				{
@@ -41,7 +41,7 @@ class MyThreadPool
 			OperationCompleted(null, EventArgs.Empty);
 	}
 }
-</pre>
+```
 
 [1]: http://www.x2develop.com/
 [2]: http://en.wikipedia.org/wiki/Thread-local_storage

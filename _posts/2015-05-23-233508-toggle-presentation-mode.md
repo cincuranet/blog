@@ -18,7 +18,7 @@ I decided to make myself a little tool to do the toggle. First I needed to check
 
 Here's the interesting part of the application. The `Interop` class contains just the definitions for P/Invoke.
 
-<pre class="brush:csharp">
+```csharp
 static void Main(string[] args)
 {
 	var state = SHQueryUserNotificationState();
@@ -67,7 +67,7 @@ static void ShowProblem(string text)
 {
 	MessageBox.Show(text, string.Empty, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 }
-</pre>
+```
 
 If you'd like to have the complete code you can find it in [this repository][2] (feel free to contribute). It's a Windows application without any window. It just toggles and that's it.
 

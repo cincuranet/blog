@@ -16,36 +16,36 @@ I knew I wanted something on "one line", without all the noise around. Also in c
 
 First I needed to somehow capture the Try-Get method, which has `out` parameter. That's not going to work directly with [`Func<T>`][2]. Time for custom delegate. Ahh. Haven't written these for months.
 
-<pre class="brush:csharp">
-public delegate bool TryGetFunc&lt;TKey, TResult&gt;(TKey key, out TResult result);
-</pre>
+```csharp
+public delegate bool TryGetFunc<TKey, TResult>(TKey key, out TResult result);
+```
 
 Then I was playing with different shapes how to pass the Try-Get into my extension method. Obviously this is my personal preference and you might want to tweak it a little. The method itself is simple. It just does what you're doing manually - declare the `out`, `if`, return result or some default value depending on the `if`.
 
-<pre class="brush:csharp">
-public static TResult TryGet&lt;T, TKey, TResult&gt;(this T @object, Func&lt;T, TryGetFunc&lt;TKey, TResult&gt;&gt; tryGet, TKey key, Func&lt;TResult&gt; defaultValue = null)
+```csharp
+public static TResult TryGet<T, TKey, TResult>(this T @object, Func<T, TryGetFunc<TKey, TResult>> tryGet, TKey key, Func<TResult> defaultValue = null)
 {
 	var result = default(TResult);
 	return tryGet(@object)(key, out result)
 		? result
 		: defaultValue != null ? defaultValue() : default(TResult);
 }
-</pre>
+```
 
 You can then call it for example on a dictionary:
 
-<pre class="brush:csharp">
-dictionary.TryGet(x =&gt; x.TryGetValue, key, () =&gt; "FooBar");
-</pre>
+```csharp
+dictionary.TryGet(x => x.TryGetValue, key, () => "FooBar");
+```
 
 Which roughly corresponds to:
 
-<pre class="brush:csharp">
+```csharp
 var result = default(string);
 return dictionary.TryGetValue(key, out result)
 	? result
 	: "FooBar";
-</pre>
+```
 
 I know doesn't look like that much simplification. But if you're deep in some expression, one simple call makes you code flow much nicer (instead of "polluting" ;) it with variable etc.). Maybe I'll write similar helper for static methods like [`int.TryParse`][3].
 

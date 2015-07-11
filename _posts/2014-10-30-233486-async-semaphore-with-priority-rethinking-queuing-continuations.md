@@ -15,15 +15,15 @@ When [I wrote the AsyncPrioritySemaphore few months ago][1] I quickly found how 
 
 Let me quickly recap. The original `Release` method looked like this.
 
-<pre class="brush:csharp">
+```csharp
 public void Release()
 {
-	TaskCompletionSource&lt;object&gt; toRelease = null;
+	TaskCompletionSource<object> toRelease = null;
 	lock (_syncRoot)
 	{
-		if (_waitersHigh.Count &gt; 0)
+		if (_waitersHigh.Count > 0)
 			toRelease = _waitersHigh.Dequeue();
-		else if (_waitersNormal.Count &gt; 0)
+		else if (_waitersNormal.Count > 0)
 			toRelease = _waitersNormal.Dequeue();
 		else
 			++_currentCount;
@@ -31,10 +31,10 @@ public void Release()
 	if (toRelease != null)
 	{
 		// separate task to avoid stack overflow on continuations
-		Task.Factory.StartNew(o =&gt; (o as TaskCompletionSource&lt;object&gt;).SetResult(null), toRelease, TaskCreationOptions.HideScheduler).Wait();
+		Task.Factory.StartNew(o => (o as TaskCompletionSource<object>).SetResult(null), toRelease, TaskCreationOptions.HideScheduler).Wait();
 	}
 }
-</pre>
+```
 
 As the comment says I'm calling the [`SetResult` method][2] using a `Task` to avoid stack overflows. The `SetResult` call the continuations synchronously, hence if you have a deep chain of methods waiting on the semaphore you'll run out of stack. 
 
@@ -42,15 +42,15 @@ I'm also calling [`Wait`][3] on the `Task`. My original reasoning was that I wan
 
 Recently I was improviny my knowledge about `async`/`await` internals and threading/locking internals and decided to re-evaluate my original reasoning. After some testing I decided to change the method.
 
-<pre class="brush:csharp">
+```csharp
 public void Release()
 {
-	TaskCompletionSource&lt;object&gt; toRelease = null;
+	TaskCompletionSource<object> toRelease = null;
 	lock (_syncRoot)
 	{
-		if (_waitersHigh.Count &gt; 0)
+		if (_waitersHigh.Count > 0)
 			toRelease = _waitersHigh.Dequeue();
-		else if (_waitersNormal.Count &gt; 0)
+		else if (_waitersNormal.Count > 0)
 			toRelease = _waitersNormal.Dequeue();
 		else
 			++_currentCount;
@@ -58,10 +58,10 @@ public void Release()
 	if (toRelease != null)
 	{
 		// break the stack to avoid stack overflow on continuations
-		ThreadPool.QueueUserWorkItem(o =&gt; (o as TaskCompletionSource&lt;object&gt;).SetResult(null), toRelease);
+		ThreadPool.QueueUserWorkItem(o => (o as TaskCompletionSource<object>).SetResult(null), toRelease);
 	}
 }
-</pre>
+```
 
 I ditched waiting and also used [`ThreadPool` class][4] directly. Why no longer the waiting? As you release the lock you want others to continue running (if there are resources) and yourself as well. Releasing the semaphore should just open the gate(s) and off you go. Waiting for others to complete doesn't make sense. Also as I learned how the exceptions from continuations are be handled, I realized the `Wait` is not needed. I don't loose them.
 

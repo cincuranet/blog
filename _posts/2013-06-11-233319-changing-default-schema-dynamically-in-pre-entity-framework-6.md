@@ -13,7 +13,7 @@ If you're using 3<sup>rd</sup> party database where `dbo` is not the default you
 
 If there's an overload where I can specify the schema explicitly I can call it, right? But that's a lot of work. Especially is you're relying heavily on "conventions". But the heavy work can be done by machine right? Because a lot of APIs we need to dive in is not public and (also partly because of generics) we need to dive into reflection. Not good for readability. But, ..., could be worse. ;)
 
-<pre class="brush:csharp">
+```csharp
 static class SchemaRewriteHelper
 {
 	const BindingFlags RewriteSchemaBindingFlags = BindingFlags.Instance | BindingFlags.NonPublic;
@@ -62,7 +62,7 @@ static class SchemaRewriteHelper
 		configuration.GetType().GetMethod("ToTable", new[] { typeof(string), typeof(string) }).Invoke(configuration, new[] { name, schema });
 	}
 }
-</pre>
+```
 
 You can pass the `DbModelBuilder` into the `RewriteSchema` method in [`OnModelCreating`][2] and let the magic happen. Because usual the [`EntityTypeConfiguration`][3] is not used internally I'm hacking slightly different objects. But the idea is the same. Get all mapped entities, get the schema name and table name. And call `ToTable` with defined schema if it was previously `null`. Also do it for tables used for `M:N` associations. With `M:N` associations there's a small glitch. These are probably configured even more dynamically and hence if not configured explicitly the schema will not be rewritten, because at this stage I was not able to spot where I can find it for rewriting (I because my case contained explicit `M:N` configuration I was not too eager to dig deeper 8-)).
 

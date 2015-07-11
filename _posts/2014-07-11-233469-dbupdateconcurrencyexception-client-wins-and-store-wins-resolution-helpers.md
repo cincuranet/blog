@@ -13,7 +13,7 @@ Whenever I'm dealing with [`DbUpdateConcurrencyException`][1] I don't what is "c
 
 In the old days of [`ObjectContext`][2] and [`OptimisticConcurrencyException`][3] it was easy. All you've had to do was use [`RefreshMode`][4] and "refresh". But that's past. The `DbUpdateConcurrencyException` era is here I can't do anything about it. Except I actually can (if I skip the idea of beign stubborn and using `ObjectContext`). I can write myself helpers. :o)
 
-<pre class="brush:csharp">
+```csharp
 static class DbUpdateConcurrencyExceptionExtensions
 {
 	public static void ClientWins(this DbUpdateConcurrencyException exception)
@@ -40,7 +40,7 @@ static class DbUpdateConcurrencyExceptionExtensions
 		return entry.ReloadAsync();
 	}
 }
-</pre>
+```
 
 Now as I wrote the implementation, basically twice, I think I've learned it enough that I don't need these anymore. :) Maybe it will help others while looking for these strategies.
 

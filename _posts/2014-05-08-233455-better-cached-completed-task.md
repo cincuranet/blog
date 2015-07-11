@@ -19,31 +19,31 @@ What I often see is creating a "precomputed already completed" `Task`. In any re
 
 The code might look like this.   
 
-<pre class="brush:csharp">
+```csharp
 public static class TaskEx
 {
 	public static Task CompletedTask { get; private set; }
 
 	static TaskEx()
 	{
-		var tcs = new TaskCompletionSource&lt;object&gt;();
+		var tcs = new TaskCompletionSource<object>();
 		tcs.SetResult(null);
 		CompletedTask = tcs.Task;
 	}
 }
-</pre>
+```
 
 Nothing special. And it's correct! Nothing wrong with that. But you can squeeze a little bit more from that.
 
 Task Parallel Library already has such object, because it's using it internally quite often. But it's sadly internal. Luckily you can get access to it. And I'm not talking _reflection_, that would be way too slow. Because TPL contains some _fast path_ optimizations itself we can take advantage of that. Such simple one is [`Task.Delay(0)`][2]. If you're delaying by `0` milliseconds why bother to even delay? The code has simple branch to accomodate this.
 
-<pre class="brush:csharp">
+```csharp
 else if (millisecondsDelay == 0)
 {
     // return a Task created as already-RanToCompletion
     return Task.CompletedTask;
 }  
-</pre>
+```
 
 Thus if you need somewhere this "cached already completed" `Task` you can simply return `Task.Delay(0)` and the outcome will be se as with your hand-made `TaskEx.CompletedTask`. 
 

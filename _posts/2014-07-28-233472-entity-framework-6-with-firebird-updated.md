@@ -18,13 +18,13 @@ With [today's release of .NET provider for Firebird][1] the [Entity Framework][2
 
 Let's start with Code First. First you need to install `EntityFramework.Firebird` package. This package will install all the related dependencies and modifies `[app|web].config` for Entity Framework + Firebird love. It's good to run `update-package` to get latest versions of packages. You're ready to start coding. Almost. Depending on your system setup you might not have a `DbProviderFactories` record in your (mostly) `machine.config`. That's easy to fix. Just add following lines into your `[app|web].config` (you can also add `remove` element if you want to have it on both places or you're not sure). 
 
-<pre class="brush:xml">
-&lt;system.data&gt;
-  &lt;DbProviderFactories&gt;
-      &lt;add name="FirebirdClient Data Provider" invariant="FirebirdSql.Data.FirebirdClient" description=".NET Framework Data Provider for Firebird" type="FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient"/&gt;
-  &lt;/DbProviderFactories&gt;
-&lt;/system.data&gt; 
-</pre>
+```xml
+<system.data>
+  <DbProviderFactories>
+      <add name="FirebirdClient Data Provider" invariant="FirebirdSql.Data.FirebirdClient" description=".NET Framework Data Provider for Firebird" type="FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient"/>
+  </DbProviderFactories>
+</system.data> 
+```
 
 That's it. Nothing scary, right?
 

@@ -14,24 +14,24 @@ Sometimes I'm coding a simple task – start an operation at a given time. Some 
 
 That's of course way better than above mentioned abuse. But let's say you want to run the operation every day at 14:00 (that's 2PM for some ;)). The code is often like this (or close to it).
 
-<pre class="brush:csharp">
-var timer = new Timer(_ =&gt;
+```csharp
+var timer = new Timer(_ =>
 {
 	var now = DateTimeOffset.UtcNow; // or maybe in your local time
-	if (now.Hour == 14 &amp;&amp; now.Minute == 0)
+	if (now.Hour == 14 && now.Minute == 0)
 	{
 		// ...
 	}
 }, null, TimeSpan.Zero, TimeSpan.FromMinute(1));
-</pre>
+```
 
 Pretty simple, right? It's even not wrong. Ticking every minute will probably have small impact on the system (thread pool) and very often it will run almost no code. But it can be done better.
 
 When you're starting the ticking you can compute when the next tick should be, right? Same as when you finish (or start) the operation. You just need to reschedule. The rescheduling might be tricky, but you actually can move the `Timer` forward (I often refer to this on my courses as "kick" or "kicking the timer" using [`Change`][4] method. Whenever you want. It's something that might not be immediately obvious. Let's see the code.
 
-<pre class="brush:csharp">
+```csharp
 var timer = default(Timer);
-timer = new Timer(o =&gt;
+timer = new Timer(o =>
 {
 	try
 	{
@@ -42,7 +42,7 @@ timer = new Timer(o =&gt;
 		timer.Change(ComputeNext(), Timeout.InfiniteTimeSpan);
 	}
 }, null, ComputeNext(), Timeout.InfiniteTimeSpan);
-</pre>
+```
 
 I just need to first declare the variable because I'll use it in the lambda/delegate. Then I simply compute the interval (`TimeSpan`) between "now" and the date/time the operation should happen. With that I have a `Timer` instance that will tick just once. But at the end (you can to it even as a first step) I'll "kick" it forward and I'm done.  
 <small>[It's similar trick as if you'd like to take into account how long the method's execution took.][5]</small>
@@ -52,18 +52,18 @@ And that's it. I created a simple helper for it, so you can just grab it and use
 
 Also if you're using Rx (Reactive Extensions) you can use [this overload][7] ([with `IScheduler`][8]) of `[Observable.Timer][9]` to do the same (maybe using more succinct code).
 
-<pre class="brush:csharp">
+```csharp
 static class DailyHourMinuteTimerHelper
 {
-	public static Timer Create(int hour, int minute, Func&lt;DateTimeOffset&gt; nowFactory, TimerCallback callback, object state)
+	public static Timer Create(int hour, int minute, Func<DateTimeOffset> nowFactory, TimerCallback callback, object state)
 	{
-		return Create(hour, minute, nowFactory, o =&gt; { callback(o); return Task.FromResult&lt;object&gt;(null); }, state);
+		return Create(hour, minute, nowFactory, o => { callback(o); return Task.FromResult<object>(null); }, state);
 	}
 
-	public static Timer Create(int hour, int minute, Func&lt;DateTimeOffset&gt; nowFactory, Func&lt;object, Task&gt; callback, object state)
+	public static Timer Create(int hour, int minute, Func<DateTimeOffset> nowFactory, Func<object, Task> callback, object state)
 	{
 		var timer = default(Timer);
-		timer = new Timer(async o =&gt;
+		timer = new Timer(async o =>
 		{
 			try
 			{
@@ -84,7 +84,7 @@ static class DailyHourMinuteTimerHelper
 		return timeSpan.Add(TimeSpan.FromSeconds(1));
 	}
 
-	static TimeSpan ComputeDueTime(Func&lt;DateTimeOffset&gt; nowFactory, int hour, int minute)
+	static TimeSpan ComputeDueTime(Func<DateTimeOffset> nowFactory, int hour, int minute)
 	{
 		return ComputeNext(nowFactory(), hour, minute) - nowFactory();
 	}
@@ -92,12 +92,12 @@ static class DailyHourMinuteTimerHelper
 	static DateTimeOffset ComputeNext(DateTimeOffset now, int hour, int minute)
 	{
 		var next = new DateTimeOffset(now.Year, now.Month, now.Day, hour, minute, 0, now.Offset);
-		if (next &lt;= new DateTimeOffset(now.Year, now.Month, now.Day, now.Hour, now.Minute, 0, now.Offset))
+		if (next <= new DateTimeOffset(now.Year, now.Month, now.Day, now.Hour, now.Minute, 0, now.Offset))
 			next = next.AddDays(1);
 		return next;
 	}
 }
-</pre>
+```
 
 [1]: http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx
 [2]: http://msdn.microsoft.com/en-us/library/274eh01d.aspx

@@ -13,7 +13,7 @@ Last week participant on my [Entity Framework course][1] created a code that loo
 
 It's a pretty simple master-detail scenario. Here's the setup.
 
-<pre class="brush:csharp">
+```csharp
 [DbConfigurationType(typeof(MyContextConfiguration))]
 class MyContext : DbContext
 {
@@ -21,15 +21,15 @@ class MyContext : DbContext
 		: base(new SqlConnection(@"Data Source=(localdb)\mssql;Initial Catalog=test;Integrated Security=True"), true)
 	{ }
 
-	public DbSet&lt;Master&gt; Masters { get; set; }
-	public DbSet&lt;Detail&gt; Details { get; set; }
+	public DbSet<Master> Masters { get; set; }
+	public DbSet<Detail> Details { get; set; }
 }
 
 class MyContextConfiguration : DbConfiguration
 {
 	public MyContextConfiguration()
 	{
-		SetDatabaseInitializer(new DropCreateDatabaseAlways&lt;MyContext&gt;());
+		SetDatabaseInitializer(new DropCreateDatabaseAlways<MyContext>());
 	}
 }
 
@@ -37,7 +37,7 @@ class Master
 {
 	public int Id { get; set; }
 	public int FooBar { get; set; }
-	public ICollection&lt;Detail&gt; Details { get; set; }
+	public ICollection<Detail> Details { get; set; }
 }
 
 class Detail
@@ -47,11 +47,11 @@ class Detail
 	public int MasterId { get; set; }
 	public Master Master { get; set; }
 }
-</pre>
+```
 
 And now imagine this code.
 
-<pre class="brush:csharp">
+```csharp
 using (var ctx = new MyContext())
 {
 	var detail = new Detail() { FooBarBaz = 1234 };
@@ -60,7 +60,7 @@ using (var ctx = new MyContext())
 	ctx.Masters.Add(master);
 	ctx.SaveChanges();
 }
-</pre>
+```
 
 In case you missed it. The `master` and `detail` are not connected whatsoever. I'm not setting `MasterId` nor `Master` property (neither touching `Details` property, which is `null` anyway). Shouldn't the `SaveChanges` call fail? If you already tried the code, you know it didn't failed. But why?
 

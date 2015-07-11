@@ -13,7 +13,7 @@ Given the code was written 9 years ago, when my skills were 9 years younger and 
 
 <!-- excerpt -->
 
-<pre class="brush:csharp">
+```csharp
 class Program
 {
 	public static void Main(string[] args)
@@ -72,7 +72,7 @@ class ClientWorking
 		}
 		finally
 		{
-			if (_ownsClient &amp;&amp; _client != null)
+			if (_ownsClient && _client != null)
 			{
 				(_client as IDisposable).Dispose();
 				_client = null;
@@ -86,7 +86,7 @@ static class TaskExtensions
 	[MethodImpl(MethodImplOptions.AggressiveInlining)]
 	public static void NoWarning(this Task t) { }
 }
-</pre>
+```
 
 It's really nothing special. I just replaced the thread with asynchronous calls. Not that it was not available in 2005. But I had no idea that creating thread is a stupid waste of resources. And programming with [APM][2] was (and still is) touch bit harder that "normal" sequential code (that's where the `async`/`await` comes handy). The rest is just some small cleanups and so on.
 

@@ -18,33 +18,33 @@ But the `csproj` file is much more than what Visual Studio can set up. And it's 
 
 So how it's done. The target framework is specified in `TargetFrameworkVersion` element and optionally there's `TargetFrameworkProfile` in case there's some profile (like .NET 4.0 Client). You wrap these into `PropertyGroup` matching your configuration and you're done. Below is a sample comfiguration building under `Release_40` for .NET 4.0 Client and `Release_45` for .NET 4.5.  
 
-<pre class="brush:xml">
-&lt;PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_40|AnyCPU'"&gt;
-	&lt;OutputPath&gt;bin\Release_40\&lt;/OutputPath&gt;
-	&lt;DefineConstants&gt;TRACE;NET_40&lt;/DefineConstants&gt;
-	&lt;Optimize&gt;true&lt;/Optimize&gt;
-	&lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
-	&lt;PlatformTarget&gt;AnyCPU&lt;/PlatformTarget&gt;
-	&lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
-	&lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
-	&lt;Prefer32Bit&gt;false&lt;/Prefer32Bit&gt;
-	&lt;TargetFrameworkVersion&gt;v4.0&lt;/TargetFrameworkVersion&gt;
-	&lt;TargetFrameworkProfile&gt;Client&lt;/TargetFrameworkProfile&gt;
-&lt;/PropertyGroup&gt;
-&lt;PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_45|AnyCPU'"&gt;
-	&lt;OutputPath&gt;bin\Release_45\&lt;/OutputPath&gt;
-	&lt;DefineConstants&gt;TRACE;NET_45&lt;/DefineConstants&gt;
-	&lt;Optimize&gt;true&lt;/Optimize&gt;
-	&lt;DebugType&gt;pdbonly&lt;/DebugType&gt;
-	&lt;PlatformTarget&gt;AnyCPU&lt;/PlatformTarget&gt;
-	&lt;ErrorReport&gt;prompt&lt;/ErrorReport&gt;
-	&lt;CodeAnalysisRuleSet&gt;AllRules.ruleset&lt;/CodeAnalysisRuleSet&gt;
-	&lt;Prefer32Bit&gt;false&lt;/Prefer32Bit&gt;
-	&lt;TargetFrameworkVersion&gt;v4.5&lt;/TargetFrameworkVersion&gt;
-	&lt;TargetFrameworkProfile&gt;
-	&lt;/TargetFrameworkProfile&gt;
-&lt;/PropertyGroup&gt;
-</pre> 
+```xml
+<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_40|AnyCPU'">
+	<OutputPath>bin\Release_40\</OutputPath>
+	<DefineConstants>TRACE;NET_40</DefineConstants>
+	<Optimize>true</Optimize>
+	<DebugType>pdbonly</DebugType>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+	<ErrorReport>prompt</ErrorReport>
+	<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+	<Prefer32Bit>false</Prefer32Bit>
+	<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+	<TargetFrameworkProfile>Client</TargetFrameworkProfile>
+</PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_45|AnyCPU'">
+	<OutputPath>bin\Release_45\</OutputPath>
+	<DefineConstants>TRACE;NET_45</DefineConstants>
+	<Optimize>true</Optimize>
+	<DebugType>pdbonly</DebugType>
+	<PlatformTarget>AnyCPU</PlatformTarget>
+	<ErrorReport>prompt</ErrorReport>
+	<CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+	<Prefer32Bit>false</Prefer32Bit>
+	<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+	<TargetFrameworkProfile>
+	</TargetFrameworkProfile>
+</PropertyGroup>
+``` 
 
 When I'm not sure what should go into `TargetFrameworkVersion` and `TargetFrameworkProfile` I just copy the values from fresh project. ;)
 

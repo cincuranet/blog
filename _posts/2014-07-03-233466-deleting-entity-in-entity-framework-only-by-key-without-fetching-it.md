@@ -17,40 +17,40 @@ But first thing first. When you want to delete entity, you have to have the inst
 
 So what you can, in fact, do is trick Entity Framework thinking it has the instance but providing only the stub. Here's the example.
 
-<pre class="brush:csharp">
-public static void RemoveUsingStub1&lt;TEntity&gt;(this IDbSet&lt;TEntity&gt; dbSet, TEntity stub) where TEntity : class
+```csharp
+public static void RemoveUsingStub1<TEntity>(this IDbSet<TEntity> dbSet, TEntity stub) where TEntity : class
 {
 	dbSet.Attach(stub);
 	dbSet.Remove(stub);
 }
-</pre>  
+```  
 
 If you rather like to trick "change tracker", you can.
 
-<pre class="brush:csharp">
-public static void RemoveUsingStub2&lt;TEntity&gt;(this DbContext dbContext, TEntity stub) where TEntity : class
+```csharp
+public static void RemoveUsingStub2<TEntity>(this DbContext dbContext, TEntity stub) where TEntity : class
 {
 	dbContext.Entry(stub).State = EntityState.Deleted;
 }
-</pre>
+```
 
 The result is the same. But these methods are forcing you to create the entity and set the key(s). The caller needs to know how this works. Can I do better? Can I just ask for keys and type and that's it? Here's the final version. It's defined for [`DbContext`][5] because I need it to get the keys. It's possible to define if for `DbSet` but then you need to use [reflection][6] to get the `DbContext` and this might change in the future, so I rather took the safer path.
 
-<pre class="brush:csharp">
-public static void RemoveUsingStub3&lt;TEntity&gt;(this DbContext dbContext, params object[] entityKeys) where TEntity : class, new()
+```csharp
+public static void RemoveUsingStub3<TEntity>(this DbContext dbContext, params object[] entityKeys) where TEntity : class, new()
 {
 	var oc = (dbContext as IObjectContextAdapter).ObjectContext;
 	var stub = new TEntity();
-	var keys = oc.CreateObjectSet&lt;TEntity&gt;().EntitySet.ElementType.KeyMembers.Select(x =&gt; x.Name);
-	var keyProperties = keys.Select(k =&gt; typeof(TEntity).GetProperty(k));
-	foreach (var item in keyProperties.Zip(entityKeys, (pi, value) =&gt; new { Property = pi, Value = value }))
+	var keys = oc.CreateObjectSet<TEntity>().EntitySet.ElementType.KeyMembers.Select(x => x.Name);
+	var keyProperties = keys.Select(k => typeof(TEntity).GetProperty(k));
+	foreach (var item in keyProperties.Zip(entityKeys, (pi, value) => new { Property = pi, Value = value }))
 	{
 		item.Property.SetValue(stub, item.Value);
 	}
-	dbContext.Set&lt;TEntity&gt;().Attach(stub);
-	dbContext.Set&lt;TEntity&gt;().Remove(stub);
+	dbContext.Set<TEntity>().Attach(stub);
+	dbContext.Set<TEntity>().Remove(stub);
 }
-</pre>  	
+```  	
 
 The code firsts gets the key names for given entity and then sets the values on that properties to a values received in 2<sup>nd</sup> parameter. Finally it uses the same approach as the first method to [`Attach`][7] and `Remove` the stub. Of course using the approach from second method is possible as well.
 

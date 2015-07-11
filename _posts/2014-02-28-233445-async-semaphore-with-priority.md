@@ -17,7 +17,7 @@ Yes, I needed priorities. Or at least some ordering. Given the operations I was 
 
 I just needed to add some priorities (in my case just two, but it can be extended to any number, even using unlimited/dynamic). If you look at the original implementation you'll realize it's not difficult. You just need to add more queues for different priorities. Then dequeue based on priorities.
 
-<pre class="brush:csharp">
+```csharp
 sealed class AsyncPrioritySemaphore : IDisposable
 {
 	public enum Priority
@@ -26,20 +26,20 @@ sealed class AsyncPrioritySemaphore : IDisposable
 		Normal,
 	}
 
-	readonly static Task CompletedTask = Task.FromResult&lt;object&gt;(null);
+	readonly static Task CompletedTask = Task.FromResult<object>(null);
 	readonly object _syncRoot;
-	readonly Queue&lt;TaskCompletionSource&lt;object&gt;&gt; _waitersHigh;
-	readonly Queue&lt;TaskCompletionSource&lt;object&gt;&gt; _waitersNormal;
+	readonly Queue<TaskCompletionSource<object>> _waitersHigh;
+	readonly Queue<TaskCompletionSource<object>> _waitersNormal;
 	int _currentCount;
 
 	public AsyncPrioritySemaphore(int initialCount)
 	{
-		if (initialCount &lt; 0)
+		if (initialCount < 0)
 			throw new ArgumentOutOfRangeException("initialCount");
 
 		_syncRoot = new object();
-		_waitersHigh = new Queue&lt;TaskCompletionSource&lt;object&gt;&gt;();
-		_waitersNormal = new Queue&lt;TaskCompletionSource&lt;object&gt;&gt;();
+		_waitersHigh = new Queue<TaskCompletionSource<object>>();
+		_waitersNormal = new Queue<TaskCompletionSource<object>>();
 		_currentCount = initialCount;
 	}
 
@@ -47,15 +47,15 @@ sealed class AsyncPrioritySemaphore : IDisposable
 	{
 		lock (_syncRoot)
 		{
-			if (_currentCount &gt; 0)
+			if (_currentCount > 0)
 			{
 				--_currentCount;
 				return CompletedTask;
 			}
 			else
 			{
-				var waiter = new TaskCompletionSource&lt;object&gt;();
-				var waiters = default(Queue&lt;TaskCompletionSource&lt;object&gt;&gt;);
+				var waiter = new TaskCompletionSource<object>();
+				var waiters = default(Queue<TaskCompletionSource<object>>);
 				switch (priority)
 				{
 					case Priority.High:
@@ -75,12 +75,12 @@ sealed class AsyncPrioritySemaphore : IDisposable
 
 	public void Release()
 	{
-		TaskCompletionSource&lt;object&gt; toRelease = null;
+		TaskCompletionSource<object> toRelease = null;
 		lock (_syncRoot)
 		{
-			if (_waitersHigh.Count &gt; 0)
+			if (_waitersHigh.Count > 0)
 				toRelease = _waitersHigh.Dequeue();
-			else if (_waitersNormal.Count &gt; 0)
+			else if (_waitersNormal.Count > 0)
 				toRelease = _waitersNormal.Dequeue();
 			else
 				++_currentCount;
@@ -88,14 +88,14 @@ sealed class AsyncPrioritySemaphore : IDisposable
 		if (toRelease != null)
 		{
 			// separate task to avoid stack overflow on continuations
-			Task.Factory.StartNew(o =&gt; (o as TaskCompletionSource&lt;object&gt;).SetResult(null), toRelease, TaskCreationOptions.HideScheduler).Wait();
+			Task.Factory.StartNew(o => (o as TaskCompletionSource<object>).SetResult(null), toRelease, TaskCreationOptions.HideScheduler).Wait();
 		}
 	}
 
 	public void Dispose()
 	{ } // convenience to support easy switching from other primitives
 }
-</pre>
+```
 
 What might be surprising for you is that I'm spinning new `Task` in `Release` method. The [`SetResult`][5] method causes the continuations to be executed. But it's executed as part of `SetResult`'s call. Synchronously. After testing the semaphore (either the `AsyncSemaphore` or mine `AsyncPrioritySemaphore`) under high load you would quickly find (as I did) that you end up with very deep stacks eventually running out of space and ending with stack overflow. So it's a little bit waste of resources, but it's better than failing, in my opinion. :)
 

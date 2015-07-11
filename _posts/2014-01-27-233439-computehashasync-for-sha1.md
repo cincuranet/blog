@@ -16,8 +16,8 @@ layout: post
 
 It's not that difficult how it might look like. You just need to work with [`TransformBlock`][3] and at the end with [`TransformFinalBlock`][4].
 
-<pre class="brush:csharp">
-public static async Task&lt;byte[]&gt; ComputeHashAsync(this SHA1 sha1, Stream inputStream)
+```csharp
+public static async Task<byte[]> ComputeHashAsync(this SHA1 sha1, Stream inputStream)
 {
 	const int BufferSize = 4096;
 
@@ -37,7 +37,7 @@ public static async Task&lt;byte[]&gt; ComputeHashAsync(this SHA1 sha1, Stream i
 	}
 	return sha1.Hash;
 }
-</pre>
+```
 
 Because the `TransformBlock` and `TransformFinalBlock` methods are actually defined on [`HashAlgorithm`][5] this might work for any derived class like i.e. [`MD5`][6]. But I haven't tested it. Other classes might need also "special" calls before or after.
 

@@ -14,14 +14,14 @@ I was today trying to add new package source to be used. It's a private feed fro
 
 In this file you can add few elements and have another package source added.
 
-<pre class="brush:xml">
-	&lt;packageSources&gt;
-		&lt;add key="FooBar package source" value="http://nuget.foobar.com/feed/" /&gt;
-	&lt;/packageSources&gt;
-	&lt;activePackageSource&gt;
-		&lt;add key="FooBar package source" value="http://nuget.foobar.com/feed/" /&gt;
-	&lt;/activePackageSource&gt;
-</pre>
+```xml
+	<packageSources>
+		<add key="FooBar package source" value="http://nuget.foobar.com/feed/" />
+	</packageSources>
+	<activePackageSource>
+		<add key="FooBar package source" value="http://nuget.foobar.com/feed/" />
+	</activePackageSource>
+```
 
 And it works with everything in Visual Studio. Not only in _Package Manager Console_. The VS settings contains the new feed, the _Manage NuGet Packages_ works with it too.
 

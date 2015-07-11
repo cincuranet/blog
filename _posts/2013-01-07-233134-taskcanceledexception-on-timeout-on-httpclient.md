@@ -15,7 +15,7 @@ layout: post
 
 So you might write code similar to this, based on experience based on previous "network" classes.
 
-<pre class="brush:csharp">
+```csharp
 var client = new HttpClient();
 client.Timeout = TimeSpan.FromMilliseconds(200); //adjust based on your network
 try
@@ -32,13 +32,13 @@ catch (TimeoutException)
 	// handle somehow
 	Console.WriteLine("TimeoutException");
 }
-</pre>
+```
 
 If you try to run it, you'll get unhandled exception, [`TaskCanceledException`][3] to be precise. Yep, the timeout is not propagated as [`TimeoutException`][4], but as `TaskCanceledException`. It caught me off guard a little bit. The documentation for [`Timeout` property][5] touches [`CancellationTokenSource`][6] and you can feel the steer to `TaskCanceledException`. But, still, could be mentioned explicitly, will not be that surprising. Or maybe my thinking was skewed.
 
 This code then works correctly.
 
-<pre class="brush:csharp">
+```csharp
 var client = new HttpClient();
 client.Timeout = TimeSpan.FromMilliseconds(200);
 try
@@ -60,7 +60,7 @@ catch (TaskCanceledException)
 	// handle somehow
 	Console.WriteLine("TaskCanceledException");
 }
-</pre>
+```
 
 [1]: http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 [2]: http://msdn.microsoft.com/en-us/library/system.net.http.httpclient.aspx

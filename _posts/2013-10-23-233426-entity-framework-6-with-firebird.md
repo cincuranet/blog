@@ -20,55 +20,55 @@ Looks like a lot of people is trying [Entity Framework 6][1] together with [Fire
 
 So first thing first. I suppose you have nothing related to [ADO.NET provider for Firebird][3] installed (and you don't have to). So install Entity Framework package.
 
-<pre class="brush:plain">
+```plain
 install-package EntityFramework
-</pre>
+```
 
 Then install provider. Here you need to be careful and install the "EF6 version" as the provider model was changed in Entity Framework 6. It's called `FirebirdSql.Data.FirebirdClient-EF6`.
 
-<pre class="brush:plain">
+```plain
 install-package FirebirdSql.Data.FirebirdClient-EF6
-</pre>
+```
 
 Now you need to tell Entity Framework to know about `FirebirdClient`. You need to add record into `DbProviderFactories`. This references `FirebirdSql.Data.FirebirdClient.FirebirdClientFactory`. And then you need to register the provider `entityFramework` section in `providers`. This references `FirebirdSql.Data.FirebirdClient.FbProviderServices`. The standard config file with these changes made follows.
 
-<pre class="brush:xml">
-&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;configuration&gt;
-	&lt;configSections&gt;
-		&lt;!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 --&gt;
-		&lt;section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/&gt;
-	&lt;/configSections&gt;
-	&lt;startup&gt;
-		&lt;supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/&gt;
-	&lt;/startup&gt;
-	&lt;system.data&gt;
-		&lt;DbProviderFactories&gt;
-			&lt;add name="FirebirdClient Data Provider" invariant="FirebirdSql.Data.FirebirdClient" description=".NET Framework Data Provider for Firebird" type="FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient"/&gt;
-		&lt;/DbProviderFactories&gt;
-	&lt;/system.data&gt;
-	&lt;entityFramework&gt;
-		&lt;defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework"&gt;
-			&lt;parameters&gt;
-				&lt;parameter value="v11.0"/&gt;
-			&lt;/parameters&gt;
-		&lt;/defaultConnectionFactory&gt;
-		&lt;providers&gt;
-			&lt;provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer"/&gt;
-			&lt;provider invariantName="FirebirdSql.Data.FirebirdClient" type="FirebirdSql.Data.FirebirdClient.FbProviderServices, FirebirdSql.Data.FirebirdClient"/&gt;
-		&lt;/providers&gt;
-	&lt;/entityFramework&gt;
-&lt;/configuration&gt;
-</pre>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+		<section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false"/>
+	</configSections>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.1"/>
+	</startup>
+	<system.data>
+		<DbProviderFactories>
+			<add name="FirebirdClient Data Provider" invariant="FirebirdSql.Data.FirebirdClient" description=".NET Framework Data Provider for Firebird" type="FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient"/>
+		</DbProviderFactories>
+	</system.data>
+	<entityFramework>
+		<defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+			<parameters>
+				<parameter value="v11.0"/>
+			</parameters>
+		</defaultConnectionFactory>
+		<providers>
+			<provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer"/>
+			<provider invariantName="FirebirdSql.Data.FirebirdClient" type="FirebirdSql.Data.FirebirdClient.FbProviderServices, FirebirdSql.Data.FirebirdClient"/>
+		</providers>
+	</entityFramework>
+</configuration>
+```
 
 And you're done. To quickly test it, create an empty database and try this code (you might need to change the connection string).
 
-<pre class="brush:csharp">
+```csharp
 class Program
 {
 	static void Main(string[] args)
 	{
-		Database.SetInitializer&lt;MyContext&gt;(null);
+		Database.SetInitializer<MyContext>(null);
 		using (var ctx = new MyContext())
 		{
 			var data = ctx.MONDatabase.First();
@@ -88,14 +88,14 @@ class MyContext : DbContext
 	{
 		base.OnModelCreating(modelBuilder);
 
-		var monDatabaseConfiguration = modelBuilder.Entity&lt;MONDatabase&gt;();
-		monDatabaseConfiguration.HasKey(x =&gt; x.DatabaseName);
-		monDatabaseConfiguration.Property(x =&gt; x.DatabaseName).HasColumnName("MON$DATABASE_NAME");
-		monDatabaseConfiguration.Property(x =&gt; x.CreationDate).HasColumnName("MON$CREATION_DATE");
+		var monDatabaseConfiguration = modelBuilder.Entity<MONDatabase>();
+		monDatabaseConfiguration.HasKey(x => x.DatabaseName);
+		monDatabaseConfiguration.Property(x => x.DatabaseName).HasColumnName("MON$DATABASE_NAME");
+		monDatabaseConfiguration.Property(x => x.CreationDate).HasColumnName("MON$CREATION_DATE");
 		monDatabaseConfiguration.ToTable("MON$DATABASE");
 	}
 
-	public DbSet&lt;MONDatabase&gt; MONDatabase { get; set; }
+	public DbSet<MONDatabase> MONDatabase { get; set; }
 }
 
 class MONDatabase
@@ -103,7 +103,7 @@ class MONDatabase
 	public string DatabaseName { get; set; }
 	public DateTime CreationDate { get; set; }
 }
-</pre>
+```
 
 If you want, you can download it as a complete solution [here][4].
 

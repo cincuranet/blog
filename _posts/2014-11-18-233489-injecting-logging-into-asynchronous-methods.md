@@ -17,14 +17,14 @@ The `async` methods is stopped and resumed as the asynchronous action run when u
 
 To make it work I changed the implementation a bit.
 
-<pre class="brush:csharp">
+```csharp
 public class AfterInvocationLoggingAspect : LoggingAspectBase
 {
 	protected override void LoggingIntercept(Logger log, IInvocation invocation)
 	{
 		invocation.Proceed();
 		var returnType = invocation.Method.ReturnType;
-		if (IsAsyncMethod(invocation.Method) &amp;&amp; typeof(Task).IsAssignableFrom(returnType))
+		if (IsAsyncMethod(invocation.Method) && typeof(Task).IsAssignableFrom(returnType))
 		{
 			invocation.ReturnValue = InterceptAsync((dynamic)invocation.ReturnValue, log, invocation);
 		}
@@ -39,7 +39,7 @@ public class AfterInvocationLoggingAspect : LoggingAspectBase
 		await task.ConfigureAwait(false);
 		LogCalled(log, invocation);
 	}
-	static async Task&lt;T&gt; InterceptAsync&lt;T&gt;(Task&lt;T&gt; task, Logger log, IInvocation invocation)
+	static async Task<T> InterceptAsync<T>(Task<T> task, Logger log, IInvocation invocation)
 	{
 		var result = await task.ConfigureAwait(false);
 		LogCalled(log, invocation);
@@ -53,10 +53,10 @@ public class AfterInvocationLoggingAspect : LoggingAspectBase
 
 	static bool IsAsyncMethod(MethodInfo methodInfo)
 	{
-		return methodInfo.GetCustomAttribute&lt;AsyncStateMachineAttribute&gt;() != null;
+		return methodInfo.GetCustomAttribute<AsyncStateMachineAttribute>() != null;
 	}
 }
-</pre>
+```
 
 I first need to decide whether the method being intercepted is `async`. There's no definitive way I'm aware of. But I take lucky guess on two facts. The method returns [`Task`][2] (or derived) type and has [`AsyncStateMachineAttribute` attribute][3]. Unless somebody fiddles with the resulting IL in a wierd way this will work on 99% cases.
 

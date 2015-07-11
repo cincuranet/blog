@@ -18,26 +18,26 @@ If you look at [`SHA1Managed` class][1] you'll find [`ComputeHash`][2] method. S
 
 I dug into the `ComputeHash` method and it's pretty simple. The IO operation that happens in loop can be easily transformed to asynchronous one and hence having whole method `ComputeHash` asynchronous. Welcome `ComputeHashAsync` for `SHA1Managed`.
 
-<pre class="brush:csharp">
-public async Task&lt;byte[]&gt; ComputeHashAsync(Stream inputStream)
+```csharp
+public async Task<byte[]> ComputeHashAsync(Stream inputStream)
 {
     byte[] array = new byte[4096];
     int num;
     do
     {
         num = await inputStream.ReadAsync(array, 0, 4096).ConfigureAwait(false);
-        if (num &gt; 0)
+        if (num > 0)
         {
             this.HashCore(array, 0, num);
         }
     }
-    while (num &gt; 0);
+    while (num > 0);
     this.HashValue = this.HashFinal();
     byte[] result = (byte[])this.HashValue.Clone();
     this.Initialize();
     return result;
 }
-</pre>
+```
 
 It's what the `ComputeHash` is doing only using `ReadAsync` on a stream.
 

@@ -24,7 +24,7 @@ So what do you need. First you need [`ptvs_virtualenv_proxy.py`][9] and [`web.co
 
 Almost there. Now just put your `*.py` etc. files there and in main initialize the WSGI handler for Azure. Something like:
 
-<pre class="brush:python">
+```python
 wsgi_app = cherrypy.Application(Hello(), '/')
 
 if __name__ == '__main__':
@@ -32,15 +32,15 @@ if __name__ == '__main__':
 
 	httpd = make_server('', 6600, wsgi_app)
 	httpd.serve_forever()
-</pre> 
+``` 
 
 The whole is [`app.py`][13] in [my repository][7].
 
 The file is named `app.py` because in `web.config` there's `WSGI_ALT_VIRTUALENV_HANDLER` key defining where to look for WSGI application. That's also why the variable is named `wsgi_app`.
 
-<pre class="brush:xml">
-&lt;add key="WSGI_ALT_VIRTUALENV_HANDLER" value="app.wsgi_app" /&gt;
-</pre>
+```xml
+<add key="WSGI_ALT_VIRTUALENV_HANDLER" value="app.wsgi_app" />
+```
 
 The part inside the `__main__` `if` doesn't matter for Azure. It's just to be able to start application from command line or something like that.
 

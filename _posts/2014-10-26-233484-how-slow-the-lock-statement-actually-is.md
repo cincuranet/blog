@@ -18,7 +18,7 @@ I kind of know the `finally` block isn't cheap. But how much? Does it really mak
 
 I created a simple test code.
 
-<pre class="brush:csharp">
+```csharp
 class Program
 {
 	static object SyncRoot = new object();
@@ -36,14 +36,14 @@ class Program
 		MonitorTest();
 
 		sw = Stopwatch.StartNew();
-		for (long i = 0; i &lt; TestsCount; i++)
+		for (long i = 0; i < TestsCount; i++)
 		{
 			LockTest();
 		}
 		lockElapsed = sw.Elapsed;
 
 		sw = Stopwatch.StartNew();
-		for (long i = 0; i &lt; TestsCount; i++)
+		for (long i = 0; i < TestsCount; i++)
 		{
 			MonitorTest();
 		}
@@ -73,15 +73,15 @@ class Program
 		Monitor.Exit(SyncRoot);
 	}
 }
-</pre>
+```
 
 Really nothing special (I hope I haven't overlooked something important). I get some stopwatch to measure the time, warm up the methods and start running in a loop. I did few test runs (discarding numbers that were very off) without debugger attached and (of course) with optimizations turned on. I also tried how the 32bit vs 64bit ("Prefer 32-bit" checkbox) affects the result.
 
-So what's the numbers? As expected using the [`Monitor.Enter`][3] and [`Monitor.Exit`][4] is faster than using `lock` statement. I saw numbers between 15&nbsp;% and 17&nbsp;%. With "Prefer 32-bit" turned on. Surprisingly with "Prefer 32-bit" turned off (and on a 64bit OS) the difference was only about between &lt;1&nbsp;% and 3&nbsp;%. Pretty interesting.
+So what's the numbers? As expected using the [`Monitor.Enter`][3] and [`Monitor.Exit`][4] is faster than using `lock` statement. I saw numbers between 15&nbsp;% and 17&nbsp;%. With "Prefer 32-bit" turned on. Surprisingly with "Prefer 32-bit" turned off (and on a 64bit OS) the difference was only about between <1&nbsp;% and 3&nbsp;%. Pretty interesting.
 
 There's one catch, though. The `lock` statement translation is not what I wrote in `MonitorTest` method (among the `try`-`finally`). It actually uses the [`Monitor.Enter` overload with the `ref bool lockTaken` parameter][5]. So the method would rather be.
 
-<pre class="brush:csharp">
+```csharp
 static void MonitorTest()
 {
 	var lockTaken = false;
@@ -92,7 +92,7 @@ static void MonitorTest()
 	if (lockTaken)
 		Monitor.Exit(SyncRoot);
 }
-</pre>
+```
 
 Is there a change in results now? Yes, a bit. Again the 32bit first. Now it was between about 17&nbsp;% and 18&nbsp;%. But the 64bit was between 0&nbsp;% (few times the `lock` was even faster, though it was on a measurement error boundary) and 2&nbsp;%.
 

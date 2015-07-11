@@ -23,22 +23,22 @@ The pool itself is global. That means no matter where you open or close the conn
 
 Although the theory says is should be faster it doesn't mean it really is. I'm a developer, I need numbers. I created a simple test code, it tries to execute one command 20 times, something that an average action in application might fire and does that six times, just to get a nice average. Here's the code:
 
-<pre class="brush:csharp">
+```csharp
 class Program
 {
 	const string ConnectionString = "Server=192.168.195.128;Database=test;User=t;Password=t;Pooling=True";
 
 	static void Main(string[] args)
 	{
-		Console.WriteLine(TimeSpan.FromMilliseconds(Test().Average(x =&gt; x.TotalMilliseconds)));
+		Console.WriteLine(TimeSpan.FromMilliseconds(Test().Average(x => x.TotalMilliseconds)));
 	}
 
-	static IEnumerable&lt;TimeSpan&gt; Test()
+	static IEnumerable<TimeSpan> Test()
 	{
-		for (int i = 0; i &lt; 6; i++)
+		for (int i = 0; i < 6; i++)
 		{
 			var stopwatch = Stopwatch.StartNew();
-			for (int j = 0; j &lt; 20; j++)
+			for (int j = 0; j < 20; j++)
 			{
 				using (var connection = new NuoDbConnection(ConnectionString))
 				{
@@ -59,7 +59,7 @@ class Program
 		}
 	}
 }
-</pre>
+```
 
 Of course your mileage may and will vary. But on my machines and in my network it took 8.54s with connection pooling and 17.21s without connection pooling on average. That's around half of the time with connection pooling turned on! Good, isn't it?
 

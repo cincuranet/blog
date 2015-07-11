@@ -13,10 +13,10 @@ Na [letošním Gopas TechEdu][1] jsem měl kromě standardních technických př
 
 Původně jsem myslel, že je sem dám i s popisem. Aby to bylo úplně bez práce. Ale pak jsem si to rozmyslel. :) Dám sem pouze seznam a kdo chce, může vyzkoušet a zjistit co dělá. Většina z nich není destruktivní a funguje přímo v editoru. Ty pro debuggování jsou označené. Komentáře jsou případně otevřené (i proto, že některé věci byly "ukazovací" a nejsou o klávesové zkratce), kdyby se někdo chtěl zeptat. Rád vysvětlím.
 
-<pre class="brush:plain">
-Win-&lt;number&gt;
-Win-Alt-&lt;number&gt;
-Win-Shift-&lt;number&gt;
+```plain
+Win-<number>
+Win-Alt-<number>
+Win-Shift-<number>
 Ctrl-Alt-Down
 Ctrl-dblclick
 Ctrl-Q
@@ -54,11 +54,11 @@ Ctrl-K-X
 Tab-Tab
 Ctrl-K-S
 Ctrl-F, F3, Ctrl-H, Ctrl-I/Ctrl-Shift-I
-</pre>
+```
 
 Debugging:
 
-<pre class="brush:plain">
+```plain
 F10, F11, Shift-F11, Shift-F5
 Ctrl-F10
 Ctrl-Shift-F5
@@ -66,8 +66,8 @@ F9
 Ctrl-S
 Ctrl-Shift-F10
 Shift-Alt-F11
-&gt;
-</pre>
+>
+```
 
 [1]: {{ site.url }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}
 [2]: http://www.teched.cz

@@ -24,15 +24,15 @@ I know. Majority of users are simply going to do either "keep my PC updated" or 
 
 After some quick search I found the API. And created a simple C# application that you can run once a day of after log in or ... It checks for all updates, filters only "Defender updates" (though using lame string compare, so it might brake if the name changes), downloads and installs these. With some simple logging and exit statuses.
 
-<pre class="brush:csharp">
+```csharp
 static int Main(string[] args)
 {
 	var session = new UpdateSession();
 	var searcher = session.CreateUpdateSearcher();
 	Log("Searching...");
 	var searchResult = searcher.Search("IsInstalled=0 And IsHidden=0");
-	var defenderUpdates = searchResult.Updates.Cast&lt;IUpdate&gt;()
-		.Where(u =&gt; u.Title.IndexOf("Definition Update for Windows Defender", StringComparison.Ordinal) &gt;= 0)
+	var defenderUpdates = searchResult.Updates.Cast<IUpdate>()
+		.Where(u => u.Title.IndexOf("Definition Update for Windows Defender", StringComparison.Ordinal) >= 0)
 		.ToArray();
 	if (defenderUpdates.Any())
 	{
@@ -79,7 +79,7 @@ static void Log(string format, params object[] args)
 {
 	Log(string.Format(format, args));
 }
-</pre>
+```
 
 Of course, it needs to run with `Administrator` privileges so the [`app.manifest`][3] is added to the project. You can find [complete code on my GitHub][4]. Feel free to contribute.
 

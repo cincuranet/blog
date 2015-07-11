@@ -15,27 +15,27 @@ While I was digging into some locking I discovered interesting behavior. It beha
 
 Suppose we have a simple method that generates us few numbers and as a side effect prints these.
 
-<pre class="brush:csharp">
-static IEnumerable&lt;int&gt; D()
+```csharp
+static IEnumerable<int> D()
 {
-	for (int i = 0; i &lt; 10; i++)
+	for (int i = 0; i < 10; i++)
 	{
 		Console.WriteLine("Yielding: {0}", i);
 		yield return i;
 	}
 }
-</pre>
+```
 
 Let's have a task to process these numbers. Because you have limited resources you only want to process `N` at a time (in this case `N` can be whatever number less than number of elements `D` yields, but `1` or `2` is good to make it simple). But you don't want to block (i.e. interleaving operations as it progresses further). Something like this.
 
-<pre class="brush:csharp">
+```csharp
 static async Task Process(SemaphoreSlim sem, int x)
 {
 	await sem.WaitAsync().ConfigureAwait(false);
 
 	// simulate some CPU-work for roughly a 500ms
 	var end = DateTime.UtcNow.AddMilliseconds(500);
-	while (end &gt; DateTime.UtcNow)
+	while (end > DateTime.UtcNow)
 		Thread.SpinWait(9999999);
 
 	// simulate some IO-work for roughly a 500ms
@@ -45,11 +45,11 @@ static async Task Process(SemaphoreSlim sem, int x)
 
 	sem.Release();
 }
-</pre>
+```
 
 And you start it completely.
 
-<pre class="brush:csharp">
+```csharp
 static void Main(string[] args)
 {
 	using (var sem = new SemaphoreSlim(2, 2))
@@ -61,7 +61,7 @@ static void Main(string[] args)
 		Task.WaitAll(tasks);
 	}
 }
-</pre>
+```
 
 What do you think will be written out? Think about it for a while. Solution is just below.
 
@@ -79,7 +79,7 @@ What do you think will be written out? Think about it for a while. Solution is j
 
 OK. Here's the wrong solution (I started with this too and found it surprising (because I was not thinking carefully)). The enumerations starts; `0` is yielded; I'm asynchronously waiting for a semaphore, which will be satisfied immediately, so the `Task` is "returned", rest is continuation; next item starts; semaphore will be released. And so on. Thus I'll see on a console (the order after `Yielding: XXX` will be "random"):
 
-<pre class="brush:plain">
+```plain
 Yielding: 0
 Yielding: 1
 Yielding: 2
@@ -100,11 +100,11 @@ Yielding: 9
 7
 8
 9
-</pre>
+```
 
 But what will actually see is:
 
-<pre class="brush:plain">
+```plain
 Yielding: 0
 Yielding: 1
 0
@@ -125,7 +125,7 @@ Yielding: 8
 Yielding: 9
 8
 9
-</pre>
+```
 
 As it turns out the previous "reverse engineering" of what happens has a small flaw. What actually happens is slightly different. The enumeration starts; `0` is yielded; I'm asynchronously waiting for a semaphore, which will be satisfied immediately, hence the code will continue synchronously (there's no need to start all the machinery with continuations); I'll "compute" for 500ms; I'll "non-blockingly wait" for 500ms, rest is (really) continuation; next item starts; semaphore will be released. And so on.
 
@@ -133,7 +133,7 @@ To be honest it took me a while before I realized the flaw in my thinking. I com
 
 Anyway if you'd like to force (efficiently) creation of continuation you can use [`Task.Yield` method][1].
 
-<pre class="brush:csharp">
+```csharp
 static void Main(string[] args)
 {
 	using (var sem = new SemaphoreSlim(2, 2))
@@ -146,7 +146,7 @@ static void Main(string[] args)
 		Task.WaitAll(tasks);
 	}
 }
-</pre>
+```
 
 _So how you scored?_
 

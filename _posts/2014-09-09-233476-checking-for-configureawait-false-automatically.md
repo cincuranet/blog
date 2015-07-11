@@ -18,11 +18,11 @@ layout: post
 
 Let's talk for a while what `async`/`await` or actually just the `await` and compiler are doing. I'm going to simplify a bit, but the concept stays. When the compiler finds `await` it makes whatever follows so-called [_continuation_][3]. Once the code that followed `await` is done the continuation is queued for execution. That way the method (and ultimately the whole chain) never blocks. But where should the continuation run? Take a look at sample code. 
 
-<pre class="brush:csharp">
+```csharp
 var data = ComputeSomeData();
 var result = await SendDataAsync(data);
 ProcessResult(result);
-</pre>  
+```  
 
 This code looks familiar. It looks like it's sequential, although it's not. This familiarity allows for easy writing and more importantly reading of the code. Big win (compared to i.e. [APM][4]). But in sequential code the `ProcessResult` would run for sure on same thread as the previous lines. But now as the continuations is queued whatever thread is available (from "some" thread pool) might run it. That would create havoc in UI as you would likely try manipulate with UI elements. Yes, some threads are born as better breed. Welcome UI thread. But because in computed science we love abstractions and threads are implementation detail in .NET we have [`SynchronizationContext`][5]. In fact the `SynchronizationContext` is not tight to thread. It's higher level concept. But we can pretend, to not make it more difficult, it's wrapper around UI thread (if you want you can look at `AspNetSynchronizationContext`). In .NET the continuation is queued into the _Current_ `SynchronizationContext`. That way the code behaves as much as closely as sequential code.
 
@@ -32,7 +32,7 @@ But often when you're not writing UI code and you're writing some library code y
 
 When `async`/`await` was created they were aware of the above fact. The default implementation takes the safe path. But when you want your library play A game you need to help it a little. Enter the world of [`ConfigureAwait`][6] calls. This method takes one `bool` parameter called `continueOnCapturedContext`. With it you can set how the infrastructure will behave in respect to continuations queueing. When you put `true` there it's like the method is not there and the default behavior is used. But when you use `false` the continuation will run on whatever available thread pool thread. Why it matters? Sometimes you have method that contains multiple asynchronous calls and your method exposes the whole wrap. Example?
 
-<pre class="brush:csharp">
+```csharp
 Task MoveDataAsync(Stream from, Stream to)
 {
 	while (!IsEOF(from))
@@ -42,13 +42,13 @@ Task MoveDataAsync(Stream from, Stream to)
 		await WriteDataAsync(to);
 	}
 }
-</pre>
+```
 
 When this method is called from UI the `DoSomethingWithData` will be processed by UI thread (simplifying the `SynchronizationContext` magic). Even if it's not - and shouldn't be - necessary. The code would run fine. But just not as fast as it could. A vs A- game.
 
 Solution is easy. Use `ConfigureAwait(false)`.
 
-<pre class="brush:csharp">
+```csharp
 Task MoveDataAsync(Stream from, Stream to)
 {
 	while (!IsEOF(from))
@@ -58,7 +58,7 @@ Task MoveDataAsync(Stream from, Stream to)
 		await WriteDataAsync(to).ConfigureAwait(false);
 	}
 }
-</pre> 
+``` 
 
 And you're fine. 
 
@@ -76,10 +76,10 @@ First it really needs to be `ConfigureAwait(false)`. Having `ConfigureAwait(Func
 
 Second. It really checks for `await` together with `ConfigureAwait(false)`. But you can do for example this.
 
-<pre class="brush:csharp">
+```csharp
 var awaitMe = await FooAsync().ConfigureAwait(false);
 var result = await awaitMe;
-</pre>
+```
 
 And it's fine and correct as well. Again. It's something I might try to tackle in future versions.
 

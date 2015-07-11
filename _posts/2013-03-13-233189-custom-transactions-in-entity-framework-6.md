@@ -14,10 +14,10 @@ layout: post
 
 There's one thing, I think, that will make it even better. Something like "transaction factory". The motivation behind is, that you often need to have a specific set up for the transactions and use it always (with maybe few exceptions). The `UseTransaction` method seems to have one drawback: you need to access the connection (that means either from context or from other place where you stored it) and start the transaction. Later commit or rollback it. You can do it easily for `SaveChanges`/`SaveChangesAsync`. But for queries? You'll need to create and use your own plumbing/infrastructure throughout the code. But adding some point, where you can plug in (and also though resolver/configuration), might make it very easy.
 
-<pre class="brush:csharp">
-// i.e. Func&lt;DbConnection, DbTransaction&gt;
+```csharp
+// i.e. Func<DbConnection, DbTransaction>
 dbContextInstance.TransactionFactory = connection => (connection as MyDbConnection).BeginTransaction(/* some crazy setup */);  // MyDbConnection is the actual store connection
-</pre>
+```
 
 Of course, you might say: "And who is going to commit/rollback it?". You might opt-in for default behavior - no error = commit, rollback else. Or handle it manually in some `OnCommit`/`OnRollback` events (or factory again to make it more enterprise-ish 8-)).
 

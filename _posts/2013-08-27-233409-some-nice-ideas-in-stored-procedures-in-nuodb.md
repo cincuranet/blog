@@ -18,49 +18,49 @@ NuoDB recently released preview of stored procedures in version 1.2. You can rea
 
 First is variable declaration. Although you can do the standard way where you specify the variable name and type, you can also skip the type. Then there will be no checks, forgot about type inference.
 
-<pre class="brush:sql">
+```sql
 var v1;
 var v2;
-</pre>
+```
 
 But that doesn't matter. Often I use variables just to store values from select or insert and use it in another command. Here I don't care about types (as much as I like static typing). It's just to shuffle value between commands. And this brings me also to the other nice "syntax piece".
 
 You know the time when you need to fetch some value(s) from select and use these. You'll basically end up with something like:
 
-<pre class="brush:sql">
+```sql
 declare v1 int;
 declare v2 int;
 select col1, col2 from table into :v1, :v2;
-</pre>
+```
 
 But the syntax:
 
-<pre class="brush:sql">
+```sql
 var v1;
 var v2;
 v1, v2 = select col1, col2 from table;
-</pre>
+```
 
 looks better to me. The variables are on left, values or expressions on right. Even the SQL assigns values to variables in this pattern. Only columns from selects, values from inserts etc. are traditionally "messed up". Nice touch. But I know, somebody may say it's not SQL-ish. :)
 
 With selects and variables is also related "pattern" I do (and I think you do too) often:
 
-<pre class="brush:sql">
+```sql
 declare v1 int;
 declare v2 int;
 for select col1, col2 from table into :v1, :v2 do
 begin
 	-- i.e. update using v1 and v2
 end
-</pre>
+```
 
 And I hate it. If I have a select with a lot of columns I have to declare a lot of variables. Just to use these in `for ... begin ... end`. And have to declare types (see first point 8-)). Boring. But in NuoDB you can write:
 
-<pre class="brush:sql">
+```sql
 for select col1, col2 from table
 	-- col1 and col2 are directly accessible similarly to v1 and v2
 end_for
-</pre>
+```
 
 Pretty sweet. You saved yourself a lot of typing (that honestly isn't needed as the engine can infer these information).
 

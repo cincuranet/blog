@@ -17,14 +17,14 @@ And indeed it's not difficult. The original question used [`ReverseGeocodeQuery`
 
 Anyway here's now to wrap `SmtpClient`'s EAP into TAP.
 
-<pre class="brush:csharp">
+```csharp
 using (var client = new SmtpClient())
 {
-	var tcs = new TaskCompletionSource&lt;object&gt;();
+	var tcs = new TaskCompletionSource<object>();
 	var handler = default(SendCompletedEventHandler);
-	handler = new SendCompletedEventHandler((sender, eventArgs) =&gt;
+	handler = new SendCompletedEventHandler((sender, eventArgs) =>
 	{
-		var tcsLocal = (TaskCompletionSource&lt;object&gt;)eventArgs.UserState;
+		var tcsLocal = (TaskCompletionSource<object>)eventArgs.UserState;
 		try
 		{
 			if (eventArgs.Error != null)
@@ -51,26 +51,26 @@ using (var client = new SmtpClient())
 	await tcs.Task;
 	// ...
 }
-</pre>
+```
 
 I'll walk through the code. First I create the `TaskCompletionSource<object>` (`object` because `SmtpClient` does not return any value and `object` minimal "object" to put something into the generic parameter) and then I create handler to "finish" the operation. If there's and error, I'll call [`SetException`][7] with appropriate exception from the property and I'm done. If not, I'll check whether the operation was cancelled and if so I'll call [`SetCanceled`][8]. If there was no error nor cancellation I'm ready to [`SetResult`][9] (in this case I simply set `null`, because I don't have anything better). And that's it. You're done.
 
 As I said above I initially thought about creating some wrapper. I wrote one, but I don't like how it turned out. I feel kind of there's too much noise - generic parameters, factories to create some type (because there's not a common base type); and also calling isn't looking nice. Below is the code anyway. 8-) Maybe some reader will find a nicer way to wrap it into C# language.
 
-<pre class="brush:csharp">
-static Task WrapEapToTap&lt;TObject, TEventHandler, TEventArgs, TResult&gt;(TObject obj,
-	Func&lt;TEventArgs, TResult&gt; resultSelector,
-	Action&lt;TObject, object&gt; eapAction,
-	Action&lt;TObject, TEventHandler&gt; addEventHandler,
-	Action&lt;TObject, TEventHandler&gt; removeEventHandler,
-	Func&lt;Action&lt;object, TEventArgs&gt;, TEventHandler&gt; eventHandlerFactory)
+```csharp
+static Task WrapEapToTap<TObject, TEventHandler, TEventArgs, TResult>(TObject obj,
+	Func<TEventArgs, TResult> resultSelector,
+	Action<TObject, object> eapAction,
+	Action<TObject, TEventHandler> addEventHandler,
+	Action<TObject, TEventHandler> removeEventHandler,
+	Func<Action<object, TEventArgs>, TEventHandler> eventHandlerFactory)
 	where TEventArgs : AsyncCompletedEventArgs
 {
-	var tcs = new TaskCompletionSource&lt;object&gt;();
+	var tcs = new TaskCompletionSource<object>();
 	var handler = default(TEventHandler);
-	handler = eventHandlerFactory((sender, eventArgs) =&gt;
+	handler = eventHandlerFactory((sender, eventArgs) =>
 	{
-		var tcsLocal = (TaskCompletionSource&lt;object&gt;)eventArgs.UserState;
+		var tcsLocal = (TaskCompletionSource<object>)eventArgs.UserState;
 		try
 		{
 			if (eventArgs.Error != null)
@@ -95,23 +95,23 @@ static Task WrapEapToTap&lt;TObject, TEventHandler, TEventArgs, TResult&gt;(TObj
 	eapAction(obj, tcs);
 	return tcs.Task;
 }
-</pre> 
+``` 
 
 If you'd like to use this method to wrap the `SmtpClient` example it looks like this.
 
-<pre class="brush:csharp">
+```csharp
 using (var client = new SmtpClient())
 {
-	await WrapEapToTap&lt;SmtpClient, SendCompletedEventHandler, AsyncCompletedEventArgs, object&gt;(
+	await WrapEapToTap<SmtpClient, SendCompletedEventHandler, AsyncCompletedEventArgs, object>(
 		client,
-		eventArgs =&gt; null,
-		(c, o) =&gt; client.SendAsync(new MailMessage("foo@example.com", "bar@example.com", "Subject", "Body"), o),
-		(c, handler) =&gt; client.SendCompleted += handler,
-		(c, handler) =&gt; client.SendCompleted -= handler,
-		handler =&gt; new SendCompletedEventHandler(handler));
+		eventArgs => null,
+		(c, o) => client.SendAsync(new MailMessage("foo@example.com", "bar@example.com", "Subject", "Body"), o),
+		(c, handler) => client.SendCompleted += handler,
+		(c, handler) => client.SendCompleted -= handler,
+		handler => new SendCompletedEventHandler(handler));
 	// ...
 }
-</pre>
+```
 
 Anyway I believe you should first try wrapping [asynchronous programming model (APM)][10] (that's the one with `BeginXxx` and `EndXxx` methods) using `FromAsync` method. This model is kind of less hacky and closer to the metal. And any good component should have first and foremost APM and maybe EAP. 
 

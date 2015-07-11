@@ -19,7 +19,7 @@ NLog has `LogManager.GetLogger` with which you can create any named logger so I 
 
 I created `LoggingAspectBase` class where I have `void LoggingIntercept(Logger log, IInvocation invocation)` method where I get not only the `IInvocation` but also the `Logger`.
 
-<pre class="brush:csharp">
+```csharp
 public abstract class LoggingAspectBase : IInterceptor
 {
 	public void Intercept(IInvocation invocation)
@@ -29,11 +29,11 @@ public abstract class LoggingAspectBase : IInterceptor
 
 	protected abstract void LoggingIntercept(Logger log, IInvocation invocation);
 }
-</pre>
+```
 
 Then I created two _aspects_ <small>([aspect-oriented programming][4])</small> - one for logging before the invocation happens and one after. Because of my skeleton code and naming the method name was enough for me. But you can also dump out arguments etc.
 
-<pre class="brush:csharp">
+```csharp
 public class BeforeInvocationLoggingAspect : LoggingAspectBase
 {
 	protected override void LoggingIntercept(Logger log, IInvocation invocation)
@@ -42,9 +42,9 @@ public class BeforeInvocationLoggingAspect : LoggingAspectBase
 		invocation.Proceed();
 	}
 }
-</pre>
+```
 
-<pre class="brush:csharp">
+```csharp
 public class AfterInvocationLoggingAspect : LoggingAspectBase
 {
 	protected override void LoggingIntercept(Logger log, IInvocation invocation)
@@ -53,7 +53,7 @@ public class AfterInvocationLoggingAspect : LoggingAspectBase
 		log.Info("Called [{0}].", invocation.Method.Name);
 	}
 }
-</pre>
+```
 
 Once you register these in your `IWindsorInstaller` you can apply these to your classes calling [`Interceptors`][5] method in your registration.
 

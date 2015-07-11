@@ -18,18 +18,18 @@ Long story. The `async` keyword is there only to help compatibility and compiler
 
 But because C# 5 added the new [`await` keyword][2] it might collide with your previous code. Looks like theory? Let me show you some code.
 
-<pre class="brush:csharp">
-static Task&lt;int&gt; Test()
+```csharp
+static Task<int> Test()
 {
 	return await (Task.FromResult(6));
 }
 
-static Task&lt;int&gt; await(Task t)
+static Task<int> await(Task t)
 {
 	Console.WriteLine("No async, huh? ;)");
 	return Task.FromResult(-1);
 }
-</pre>
+```
 
 This is perfectly valid C# 4 code, isn't it? Yes, naming the method `await` does not match generally used formatting, but who cares? 
 
@@ -37,12 +37,12 @@ Now imagine C# 5 with just `await` keyword. Compiling this code would result in 
 
 Once you add the `async` keyword it changes.
 
-<pre class="brush:csharp">
-static async Task&lt;int&gt; Test()
+```csharp
+static async Task<int> Test()
 {
 	return await (Task.FromResult(6));
 }
-</pre>
+```
 
 See the change? The `async` keyword. Now _you_ actually changed the code and you are aware of behavior change (or you should be).
 

@@ -20,7 +20,7 @@ Luckily the [`System.Drawing`][2] has basic support for reading Exif data and it
 
 After that it was quick to put it together, return [`DateTime`][6] object instead of [`string`][7] and add some error handling. Here's the script.
 
-<pre class="brush:powershell">
+```powershell
 param([string]$file)
 
 function GetTakenData($image) {
@@ -46,13 +46,13 @@ try {
 finally {
 	$image.Dispose()
 }
-</pre>
+```
 
 I saved that into `exif-datetaken.ps1` and when I need rename files in folder I use this simple script. It adds simple output so I know what's going on.
 
-<pre class="brush:powershell">
+```powershell
 gci *.jpg | foreach {
-	Write-Host "$_`t-&gt;`t" -ForegroundColor Cyan -NoNewLine 
+	Write-Host "$_`t->`t" -ForegroundColor Cyan -NoNewLine 
 	$date = (.\exif-datetaken.ps1 $_.FullName)
 	if ($date -eq $null) {
 		Write-Host '{ No ''Date Taken'' in Exif }' -ForegroundColor Cyan	
@@ -63,7 +63,7 @@ gci *.jpg | foreach {
 	Write-Host $newName -ForegroundColor Cyan
 	mv $_ $newName
 }
-</pre> 
+``` 
 
 My prefered format for files is `yyyy-MM-dd hh.mm.ss` but you can change it easily, if you want.
 

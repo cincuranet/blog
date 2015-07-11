@@ -13,17 +13,17 @@ I called my method `WhenAllOnAny` for lack of better ideas. The method ended up 
  
 <!-- excerpt -->
  
-<pre class="brush:csharp">
-public static async Task WhenAllOnAny(Task[] tasks, Action&lt;Task&gt; onAny)
+```csharp
+public static async Task WhenAllOnAny(Task[] tasks, Action<Task> onAny)
 {
-	while (tasks.Length &gt; 0)
+	while (tasks.Length > 0)
 	{
 		var task = await Task.WhenAny(tasks).ConfigureAwait(false);
-		tasks = tasks.Where(t =&gt; t != task).ToArray();
+		tasks = tasks.Where(t => t != task).ToArray();
 		onAny(task);
 	}
 }
-</pre>
+```
 
 I looked like a good mental training initially, but at the end it's pretty boring. Disappointed.
 

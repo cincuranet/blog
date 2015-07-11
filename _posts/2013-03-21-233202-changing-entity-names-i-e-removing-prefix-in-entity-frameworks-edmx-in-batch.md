@@ -15,7 +15,7 @@ Few years back I wrote a similar post [Making names of entities (or any identifi
 
 So here it is. Slightly refactored. Because the question was originally interested in stripping some prefix (`tbl` to be precise) the code is doing exactly that. But if you want different prefix be stripped, just change the `PREFIX` constant. Of if you want something more change the `transformation` function completely (ideally should be idempotent).
 
-<pre class="brush:csharp">
+```csharp
 static void TransformEDMXEntities(string inputFile, string outputFile)
 {
 	XDocument xdoc = XDocument.Load(inputFile);
@@ -27,12 +27,12 @@ static void TransformEDMXEntities(string inputFile, string outputFile)
 	XElement msl = xdoc.Descendants(XName.Get("Mapping", MSLNamespace)).First();
 	XElement designerDiagram = xdoc.Descendants(XName.Get("Designer", DesignerNamespace)).First();
 
-	Func&lt;string, string&gt; transformation = (string input) =&gt;
+	Func<string, string> transformation = (string input) =>
 	{
 		const string PREFIX = "tbl";
 		Regex re = new Regex(string.Format(@"{0}(\w+)", Regex.Escape(PREFIX)), RegexOptions.None);
 		return re.Replace(input, new MatchEvaluator(
-			(Match m) =&gt;
+			(Match m) =>
 			{
 				return m.Groups[1].Value;
 			}));
@@ -48,7 +48,7 @@ static void TransformEDMXEntities(string inputFile, string outputFile)
 	}
 }
 
-static void TransformDesigner(string DesignerNamespace, XElement designerDiagram, Func&lt;string, string&gt; transformation)
+static void TransformDesigner(string DesignerNamespace, XElement designerDiagram, Func<string, string> transformation)
 {
 	foreach (var item in designerDiagram.Elements(XName.Get("EntityTypeShape", DesignerNamespace)))
 	{
@@ -56,7 +56,7 @@ static void TransformDesigner(string DesignerNamespace, XElement designerDiagram
 	}
 }
 
-static void TransformMSL(string MSLNamespace, XElement msl, Func&lt;string, string&gt; transformation)
+static void TransformMSL(string MSLNamespace, XElement msl, Func<string, string> transformation)
 {
 	foreach (var entitySetMapping in msl.Element(XName.Get("EntityContainerMapping", MSLNamespace)).Elements(XName.Get("EntitySetMapping", MSLNamespace)))
 	{
@@ -68,7 +68,7 @@ static void TransformMSL(string MSLNamespace, XElement msl, Func&lt;string, stri
 	}
 }
 
-static void TransformCSDL(string CSDLNamespace, XElement csdl, Func&lt;string, string&gt; transformation)
+static void TransformCSDL(string CSDLNamespace, XElement csdl, Func<string, string> transformation)
 {
 	foreach (var entitySet in csdl.Element(XName.Get("EntityContainer", CSDLNamespace)).Elements(XName.Get("EntitySet", CSDLNamespace)))
 	{
@@ -95,7 +95,7 @@ static void TransformCSDL(string CSDLNamespace, XElement csdl, Func&lt;string, s
 		}
 	}
 }
-</pre>
+```
 
 When you (re)generate your EDMX file, you can unleash this code (I think simple console app will be best for it), do the transformation and reopen the file in Visual Studio. If the transformation is idempotent you're ready to go, else you'll need to do some manual merging with previous version.
 

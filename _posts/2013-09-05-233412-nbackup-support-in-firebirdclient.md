@@ -16,7 +16,7 @@ So let me introduce to you two new classes you will be able to use in next versi
 
 To create a level 0 backup you can just call:
 
-<pre class="brush:csharp">
+```csharp
 var nbak = new FbNBackup();
 nbak.ConnectionString = "..."
 nbak.Level = 0;
@@ -24,19 +24,19 @@ nbak.BackupFile = "database.fnbk0"
 nbak.DirectIO = true;
 nbak.Options = FbNBackupFlags.NoDatabaseTriggers;
 nbak.Execute();
-</pre>
+```
 
 Changing to `nbak.Level = 1;` you'll create another level and so on.
 
 Restoring is even simpler. You just need your chain of backups and call:
 
-<pre class="brush:csharp">
+```csharp
 var nrest = new FbNRestore();
 nrest.ConnectionString = "..."
 nrest.BackupFiles = new[] { "database.fnbk0", "database.fnbk1" };
 nrest.DirectIO = true;
 nrest.Execute();
-</pre>
+```
 
 It's pretty much same API as with regular `FbBackup` and `FbRestore`, just with incremental-ish backup flavor. What else you'd like to see in foreseeable future in FirebirdClient?
 

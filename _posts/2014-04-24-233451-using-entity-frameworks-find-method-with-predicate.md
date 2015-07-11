@@ -16,8 +16,8 @@ The `Find` method is smart. It first checks whether the record with given key(s)
 
 But thanks to [`Local` property on `DbSet`][5] it's not that difficult to create similar behavior.
 
-<pre class="brush:csharp">
-public static IEnumerable&lt;T&gt; FindPredicate&lt;T&gt;(this DbSet&lt;T&gt; dbSet, Expression&lt;Func&lt;T, bool&gt;&gt; predicate) where T : class
+```csharp
+public static IEnumerable<T> FindPredicate<T>(this DbSet<T> dbSet, Expression<Func<T, bool>> predicate) where T : class
 {
 	var local = dbSet.Local.Where(predicate.Compile());
 	return local.Any()
@@ -25,14 +25,14 @@ public static IEnumerable&lt;T&gt; FindPredicate&lt;T&gt;(this DbSet&lt;T&gt; db
 		: dbSet.Where(predicate).ToArray();
 }
 
-public static async Task&lt;IEnumerable&lt;T&gt;&gt; FindPredicateAsync&lt;T&gt;(this DbSet&lt;T&gt; dbSet, Expression&lt;Func&lt;T, bool&gt;&gt; predicate) where T : class
+public static async Task<IEnumerable<T>> FindPredicateAsync<T>(this DbSet<T> dbSet, Expression<Func<T, bool>> predicate) where T : class
 {
 	var local = dbSet.Local.Where(predicate.Compile());
 	return local.Any()
 		? local
 		: await dbSet.Where(predicate).ToArrayAsync().ConfigureAwait(false);
 }
-</pre>
+```
 
 The method first checks "local" source, if there's nothing - either the record(s) are really not in memory yet or the predicate doesn't match anything (2<sup>nd</sup> item is important to keep in mind) - it hits the database. For convenience I also included asynchronous version of the same method.
 

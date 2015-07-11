@@ -15,9 +15,9 @@ Couple of years back I wrote a C# that was splitting response from server to lin
 
 The code I wrote was basically this.
 
-<pre class="brush:csharp">
+```csharp
 response.Split(new[] { "\r", "\n", "\r\n" }, StringSplitOptions.None);
-</pre>
+```
 
 And it was working fine. Until yesterday. The server part of the solution was moved to new machine and new language. And now it started returning the exact same string, except for new lines. Now the line endings were `\r\n`, standard on Windows. Without too much thinking you immediately realize, the code above still works, but splits "too much".
 
