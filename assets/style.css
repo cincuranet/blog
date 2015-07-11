@@ -171,7 +171,7 @@ ul.nav {
 /* -------------------------------------------- [ Post ] */
 
 .post {
-	padding: 0 0 2em 0;
+	padding-bottom: 2em;
 	overflow: hidden;
 	clear: both;
 }
@@ -262,8 +262,8 @@ article img {
 /* -------------------------------------- [ Commentary ] */
 
 .comment {
-	margin: 0 0 3em 0;
-	padding: 1em 0 0 0;
+	margin-bottom: 3em;
+	padding-top: 1em;
 	clear: both;
 	overflow: hidden;
 	border-top: 1px solid #111;
