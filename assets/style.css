@@ -180,6 +180,10 @@ ul.nav {
 	clear: both;
 }
 
+.post-list {
+	border-top: 1px dotted #bbb;
+}
+
 article p, article h5, article code {
 	width: 61em;
 }
