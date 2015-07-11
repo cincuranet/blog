@@ -17,7 +17,9 @@ function initSearch() {
 	$('#search').keypress(function(e){
 		if (e.which == 13) {
 			e.preventDefault();
-			window.open('https://www.google.com/search?q='+$(e.target).val()+' site:'+'{{ site.url }}'.replace(/^https?:\/\//,''));
+			var query = $(e.target).val();
+			var site = '{{ site.url }}';
+			window.open('https://www.google.com/search?q=' + query + ' site:' + site.replace(/^https?:\/\//,''));
 		}
 	});
 }
