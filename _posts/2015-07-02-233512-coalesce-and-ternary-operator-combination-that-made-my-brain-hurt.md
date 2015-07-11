@@ -15,7 +15,7 @@ Often I like exploring all the nuances in languages and what you can do chaining
 
 Pretty simple code. Here's the simplified version (I know it looks weird, but I wanted to remove all noise to make it easy to go through).
 
-<pre class="brush:csharp">
+```csharp
 static void Main(string[] args)
 {
 	var result = NullableTrue()
@@ -34,7 +34,7 @@ static bool False()
 {
 	return false;
 }
-</pre>
+```
 
 Basically I call first method `NullableTrue` and if the result is not null I expect the value to be returned. The [coalesce operator][1] should take care of that, right? Hence with the values I'm returning the value printed should be `True`. Or...
 
