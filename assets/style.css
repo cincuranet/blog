@@ -30,6 +30,10 @@ h1 {
 	line-height: .95em;
 }
 
+h1 a:hover {
+	color: #000;
+}
+
 h2 {
 	margin-bottom: 1em;
 	font-size: 1.8em;
