@@ -168,28 +168,6 @@ ul.nav {
 	border-bottom: 0;
 }
 
-ul.navlinks {
-	position: absolute;
-	top: 36.4em;
-	list-style-type: none;
-	overflow: hidden;
-}
-
-.navlinks li {
-	font-size: 1.2em;
-	line-height: 1.6;
-}
-
-.navlinks li a {
-	display: block;
-	padding: .4em 8px .5em 8px;
-}
-
-.navlinks li a:hover {
-	background: #000;
-	color: #fff;
-}
-
 /* -------------------------------------------- [ Post ] */
 
 .post {
