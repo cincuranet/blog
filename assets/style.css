@@ -182,6 +182,7 @@ ul.nav {
 
 .post-list {
 	border-top: 1px dotted #bbb;
+	padding-top: 1em;
 }
 
 article p, article h5, article code {
