@@ -111,7 +111,7 @@ td {
 /* ---------------------------------------- [ Main Nav ] */
 
 nav {
-	padding: 0 0 .5em 0;
+	padding-bottom: .5em;
 	overflow: hidden;
 }
 
@@ -175,8 +175,7 @@ ul.nav {
 /* -------------------------------------------- [ Post ] */
 
 .post {
-	padding: 1em 0 2em 0;
-	border-top: 1px dotted #bbb;
+	padding: 0 0 2em 0;
 	overflow: hidden;
 	clear: both;
 }
@@ -344,7 +343,7 @@ aside .col {
 
 footer {
 	border-top: 1px solid #333;
-	padding: 1em 0 0 0;
+	padding-top: 1em;
 	overflow: hidden;
 	clear: both;
 }
