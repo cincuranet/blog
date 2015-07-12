@@ -11,7 +11,7 @@ layout: post
 
 During the weekend I needed some tool: Have to be able to listen on some port and to do something "useful". First I was trying to use sockets. But I've found useful classes: `TcpListener` and `TcpClient`. It was exactly what I was looking for. Here you can "taste" the example.
 
-<pre class="brush:csharp">
+```csharp
 using System;
 using System.Net.Sockets;
 using System.Net;
@@ -70,6 +70,6 @@ namespace port_listen
     }
   }
 }
-</pre>
+```
 
 [1]: {{ site.url }}{% post_url 2014-07-22-233470-tcplistener-and-tcpclient-an-easy-to-use-example %}
