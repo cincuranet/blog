@@ -253,11 +253,14 @@ article img {
   border-top: 1px dotted #666;
   text-align: right;
   font-style: italic;
+  float: right;
 }
 
 .post .meta > p {
   padding-top: 1em;
-	margin-bottom: 0;
+  margin-bottom: 0;
+  width: 29.2em;
+  float: right;
 }
 
 /* -------------------------------------- [ Comments ] */
