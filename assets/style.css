@@ -192,6 +192,10 @@ main {
   padding-top: 0;
 }
 
+.post-list .meta > p {
+  padding-top: 0;
+}
+
 article h5 {
 	margin-top: 2.5em;
 	margin-bottom: .5em;
