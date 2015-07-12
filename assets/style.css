@@ -163,16 +163,33 @@ main {
 	clear: both;
 }
 
+.post .meta {
+  border-top: 1px dotted #666;
+  text-align: right;
+  font-style: italic;
+  float: right;
+}
+
+.post .meta > p {
+  padding-top: 1em;
+  margin-bottom: 0;
+  width: 29.2em;
+  float: right;
+}
+
 .post-list {
 	border-top: 1px dotted #666;
 	padding-top: 1em;
 }
+
 .post-list:first-of-type {
 	border-top-width: 0;
 	padding-top: 0;
 }
+
 .post-list .meta {
   border-top-width: 0;
+  padding-top: 0;
 }
 
 article h5 {
@@ -247,20 +264,6 @@ article img {
 	padding-bottom: 2em;
 	padding-left: 16px;
 	padding-right: 16px;
-}
-
-.post .meta {
-  border-top: 1px dotted #666;
-  text-align: right;
-  font-style: italic;
-  float: right;
-}
-
-.post .meta > p {
-  padding-top: 1em;
-  margin-bottom: 0;
-  width: 29.2em;
-  float: right;
 }
 
 /* -------------------------------------- [ Comments ] */
