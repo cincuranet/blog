@@ -7,8 +7,9 @@ redirect_from: /id/6333/
 category: none
 layout: post
 ---
-<p>Here's easy function for creating icon from string. I'm using it for traybar icon and for showing some usefull information on my notebook, i.e. the battery life in minutes.</p>
-<pre class="brush:csharp">
+Here's easy function for creating icon from string. I'm using it for traybar icon and for showing some usefull information on my notebook, i.e. the battery life in minutes.
+
+```csharp
 private static System.Drawing.Icon DrawIcon(string IconMessage)
 {
 	Icon result = null;
@@ -30,4 +31,4 @@ private static System.Drawing.Icon DrawIcon(string IconMessage)
 	}
 	return result;
 }
-</pre>
+```
