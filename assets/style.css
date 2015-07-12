@@ -164,17 +164,17 @@ main {
 }
 
 .post .meta {
-  border-top: 1px dotted #666;
-  text-align: right;
-  font-style: italic;
-  float: right;
+	border-top: 1px dotted #666;
+	text-align: right;
+	font-style: italic;
+	float: right;
 }
 
 .post .meta > p {
-  padding-top: 1em;
-  margin-bottom: 0;
-  width: 29.2em;
-  float: right;
+	padding-top: 1em;
+	margin-bottom: 0;
+	width: 29.2em;
+	float: right;
 }
 
 .post-list {
@@ -188,12 +188,12 @@ main {
 }
 
 .post-list .meta {
-  border-top-width: 0;
-  padding-top: 0;
+	border-top-width: 0;
+	padding-top: 0;
 }
 
 .post-list .meta > p {
-  padding-top: 0;
+	padding-top: 0;
 }
 
 article h5 {
@@ -253,15 +253,15 @@ article pre {
 }
 
 article pre .line-numbers {
-  float: left;
-  margin: 0 1em 0 -1em;
-  border-right: 1px solid;
-  text-align: right;
+	float: left;
+	margin: 0 1em 0 -1em;
+	border-right: 1px solid;
+	text-align: right;
 }
 
 article pre .line-numbers span {
-  display: block;
-  padding: 0 .5em 0 1em;
+	display: block;
+	padding: 0 .5em 0 1em;
 }
 
 article img {
