@@ -3,17 +3,14 @@ layout: default
 ---
 {% for post in site.posts limit: site.site_posts %}
 <div class="post post-list">
-	<div class="col span-2">
-		<ul class="meta">
-			<li>Tags: {{ post.tags | array_to_sentence_string }}</li>
-		</ul>
-	</div>
-
-	<article class="span-10 nudge-2">
-		<h3 title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+	<article class="col last span-12">
+		<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 		{{ post.excerpt }}
 		<p><a href="{{ site.url }}{{ post.url }}">Continue reading...</a>&nbsp;|&nbsp;<a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></p>
 	</article>
+	<div class="col last span-12 meta">
+		<p>Published <span title="{{ page.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</span> in {{ post.tags | array_to_sentence_string }}.</p>
+	</div>
 </div>
 {% endfor %}
 
