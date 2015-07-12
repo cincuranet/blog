@@ -186,6 +186,10 @@ ul.meta li.last {
 	padding-top: 1em;
 }
 
+.post-list:first-of-type {
+	border-top-width: 0;
+}
+
 article h5 {
 	margin-top: 2.5em;
 	margin-bottom: .5em;
