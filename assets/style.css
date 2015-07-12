@@ -309,6 +309,9 @@ aside p {
 
 aside .col {
 	overflow: hidden;
+	width: 29.2em;
+	margin-right: 1.2em;
+	float: left;
 }
 
 /* --------------------------------------- [ Footer ] */
