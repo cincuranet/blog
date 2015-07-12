@@ -137,6 +137,7 @@ header {
 	border-top: 1px solid #111;
 	border-bottom: 1px solid #111;
 	overflow: hidden;
+	width: 100%
 }
 
 header h1 {
@@ -325,6 +326,7 @@ footer {
 	padding-top: 1em;
 	overflow: hidden;
 	clear: both;
+	width: 100%
 }
 
 footer p {
