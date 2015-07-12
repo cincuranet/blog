@@ -10,14 +10,13 @@ layout: default
 		<ul class="meta">
 			<li title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</li>
 			<li>Tags: {{ post.tags | array_to_sentence_string }}</li>
-			<li><a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></li>
 		</ul>
 	</div>
 
 	<article class="span-10 nudge-2">
 		<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 		{{ post.excerpt }}
-		<p><a href="{{ site.url }}{{ post.url }}">Continue reading...</a></p>
+		<p><a href="{{ site.url }}{{ post.url }}">Continue reading...</a>&nbsp;|&nbsp;<a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></p>
 	</article>
 </div>
 {% endfor %}
