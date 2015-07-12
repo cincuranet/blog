@@ -167,10 +167,12 @@ main {
 	border-top: 1px dotted #666;
 	padding-top: 1em;
 }
-
 .post-list:first-of-type {
 	border-top-width: 0;
 	padding-top: 0;
+}
+.post-list .meta {
+  border-top-width: 0;
 }
 
 article h5 {
