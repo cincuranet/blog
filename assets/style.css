@@ -188,6 +188,7 @@ ul.meta li.last {
 
 .post-list:first-of-type {
 	border-top-width: 0;
+	padding-top: 0;
 }
 
 article h5 {
