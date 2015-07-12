@@ -167,6 +167,7 @@ main {
 	text-align: right;
 	font-style: italic;
 	float: right;
+	width: 100%
 }
 
 .post .meta > p, .post .links > p {
