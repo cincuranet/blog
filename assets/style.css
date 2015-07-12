@@ -170,9 +170,12 @@ main {
 	float: right;
 }
 
+.post .meta > p, .post .links > p {
+	margin-bottom: 0;
+}
+
 .post .meta > p {
 	padding-top: 8px;
-	margin-bottom: 0;
 	width: 29.2em;
 	float: right;
 }
