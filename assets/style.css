@@ -264,6 +264,17 @@ article img {
 	padding-right: 16px;
 }
 
+.post .meta {
+  border-top: 1px dotted #666;
+  text-align: right;
+  font-style: italic;
+}
+
+.post .meta > p {
+  padding-top: 1em;
+	margin-bottom: 0;
+}
+
 /* -------------------------------------- [ Comments ] */
 
 .comment {
