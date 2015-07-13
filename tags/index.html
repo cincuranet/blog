@@ -38,7 +38,7 @@ title: Tags
 		<br />
 		<span class="collapsable-item">
 			{% for p in t[1] %}
-			<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %b %Y" }})<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a> ({{ p.date | date: "%-d %b %Y" }})<br />
 			{% endfor %}
 		</span>
 	</p>
