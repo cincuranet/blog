@@ -7,8 +7,9 @@ redirect_from: /id/7036/
 category: none
 layout: post
 ---
-<p>Nedávno se v diskuzi objevil dotaz, jak překlopit datum a čas na string, a zároveň část uříznout (konec - setiny, vteřiny, atp.). Vzpomněl jsem si na trik Ivana Přenosila s přiřazením a vyjímkou. Stačilo tedy napsat proceduru:</p>
-<pre class="brush:sql">
+Nedávno se v diskuzi objevil dotaz, jak překlopit datum a čas na string, a zároveň část uříznout (konec - setiny, vteřiny, atp.). Vzpomněl jsem si na trik Ivana Přenosila s přiřazením a vyjímkou. Stačilo tedy napsat proceduru:
+
+```sql
 SET TERM ^ ;
 CREATE PROCEDURE TRUNCDATE (DATETIME VARCHAR(24))
 RETURNS (RESULT VARCHAR(16))
@@ -19,8 +20,10 @@ BEGIN
   WHEN ANY DO EXIT; --catch error
 END^
 SET TERM ; ^
-</pre>
-<p>A bylo po problému. takto můžu ořezat co se mi zachce a jak se mi zachce. Stačí vyzkoušet:</p>
-<pre class="brush:sql">
+```
+
+A bylo po problému. takto můžu ořezat co se mi zachce a jak se mi zachce. Stačí vyzkoušet:
+
+```sql
 execute procedure TruncDate(current_timestamp);
-</pre>
+```
