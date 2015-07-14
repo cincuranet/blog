@@ -297,7 +297,7 @@ aside p {
 
 aside .col {
 	overflow: hidden;
-	width: 26em;
+	width: calc((100% - 16px - 16px) / 3);
 	margin-right: 16px;
 	float: left;
 }
