@@ -8,11 +8,11 @@ redirect_from: /id/7968/
 category: none
 layout: post
 ---
-<p>Well, after <a href="{{ site.url }}{% post_url 2006-04-18-7953-creating-firebird-database-programatically-delphi %}">Creating Firebird database programatically (Delphi)</a> post I'm bringing the example "How to create FB database programatically from .NET?".</p>
+Well, after [Creating Firebird database programatically (Delphi)][1] post I'm bringing the example "How to create FB database programatically from .NET?".
 
-<p>The solution is easy too. :) You can just use (and also extend) this simple function. It uses the Firebird ADO.NET Data Provider.</p>
+The solution is easy too. :) You can just use (and also extend) this simple function. It uses the Firebird ADO.NET Data Provider.
 
-<pre class="brush:csharp">
+```csharp
 static void CreateFBDatabase(string host, string fileName, string user, string password, int pageSize, bool forcedWrites, bool overwrite)
 {
 	FbConnectionStringBuilder csb = new FbConnectionStringBuilder();
@@ -22,4 +22,6 @@ static void CreateFBDatabase(string host, string fileName, string user, string p
 	csb.Password = password;
 	FbConnection.CreateDatabase(csb.ConnectionString, pageSize, forcedWrites, overwrite);
 }
-</pre>
+```
+
+[1]: {{ site.url }}{% post_url 2006-04-18-7953-creating-firebird-database-programatically-delphi %}
