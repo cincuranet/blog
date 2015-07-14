@@ -258,16 +258,13 @@ article pre {
 	border-top: 1px dotted #666;
 }
 
-article pre .line-numbers {
-	float: left;
-	margin: 0 1em 0 -1em;
-	border-right: 1px solid;
+article .line-number { 
+	display: inline-block;
+	padding-right: 8px; 
+	margin-right: 8px;  
+	border-right: 1px solid #000;    
+	width: 24px;
 	text-align: right;
-}
-
-article pre .line-numbers span {
-	display: block;
-	padding: 0 .5em 0 1em;
 }
 
 article img {

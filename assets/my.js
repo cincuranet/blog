@@ -9,13 +9,13 @@ function initLineNumbers() {
 		e = $(e);
 		var lines = e.html().split(/\n/);
 		var length = lines.length;
-		var spans = '';
+		var newLines = [];
 		for (var i = 0; i < length; i++) {
 			if ((i == 0 || i == length - 1) && lines[i] == '')
 				continue;
-			spans += '<span>' + (i + 1) + '</span>';
+			newLines.push('<span class="line-number">' + (newLines.length + 1) + '</span>' + lines[i]);
 		}
-		e.prepend('<span class="line-numbers">' + spans + '</span>');
+		e.html(newLines.join('\n'));
 	});
 }
 
