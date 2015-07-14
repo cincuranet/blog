@@ -164,8 +164,15 @@ main {
 
 .post {
 	padding-bottom: 1em;
+	padding-top: 1em;
+	border-top: 1px dotted #666;
 	overflow: hidden;
 	clear: both;
+}
+
+.post:first-of-type {
+	border-top: 0;
+	padding-top: 0;
 }
 
 .post p.links {
@@ -177,16 +184,6 @@ main {
 	margin-top: -2.2em;
 	font-style: italic;
 	font-size: .9rem;
-}
-
-.post-list {
-	border-top: 1px dotted #666;
-	padding-top: 1em;
-}
-
-.post-list:first-of-type {
-	border-top: 0;
-	padding-top: 0;
 }
 
 article h5 {
@@ -242,11 +239,11 @@ article pre {
 	border-top: 1px dotted #666;
 }
 
-article .line-number { 
+article .line-number {
 	display: inline-block;
-	padding-right: 8px; 
-	margin-right: 8px;  
-	border-right: 1px solid #000;    
+	padding-right: 8px;
+	margin-right: 8px;
+	border-right: 1px solid #000;
 	width: 24px;
 	text-align: right;
 }

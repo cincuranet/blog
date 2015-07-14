@@ -2,7 +2,7 @@
 layout: default
 ---
 {% for post in site.posts limit: site.site_posts %}
-<div class="post post-list">
+<div class="post">
 	<article>
 		<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
 		<p class="meta">Published <span title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</span> in {{ post.tags | array_to_sentence_string }}</p>
