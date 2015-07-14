@@ -7,5 +7,5 @@ redirect_from: /id/7097/
 category: none
 layout: post
 ---
-<p>Because DEC 25 == OCT 31.</p>
-<p>:D</p>
+Because DEC 25 == OCT 31.
+:D
