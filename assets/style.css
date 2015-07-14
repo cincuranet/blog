@@ -160,9 +160,9 @@ main {
 	display: block; /* because of IE */
 }
 
-/* -------------------------------------------- [ Post ] */
+/* -------------------------------------------- [ Article ] */
 
-.post {
+article {
 	padding-bottom: 1em;
 	padding-top: 1em;
 	border-top: 1px dotted #666;
@@ -170,16 +170,16 @@ main {
 	clear: both;
 }
 
-.post:first-of-type {
+article:first-of-type {
 	border-top: 0;
 	padding-top: 0;
 }
 
-.post p.links {
+article p.links {
 	margin-bottom: .5em;
 }
 
-.post p.meta {
+article p.meta {
 	padding-top: 8px;
 	margin-top: -2.2em;
 	font-style: italic;

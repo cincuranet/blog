@@ -1,7 +1,7 @@
 ---
 ---
 function initLinks() {
-	$('div.post a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
+	$('article a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
 }
 
 function initLineNumbers() {
@@ -20,7 +20,7 @@ function initLineNumbers() {
 }
 
 function initImageBox() {
-	$('div.post a[href*="blog.cincura.net/i/"]:has(img)').attr('rel', 'gallery').fancybox({
+	$('article a[href*="blog.cincura.net/i/"]:has(img)').attr('rel', 'gallery').fancybox({
 		openEffect: 'fade',
 		closeEffect: 'fade',
 		nextEffect: 'fade',
