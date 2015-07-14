@@ -82,7 +82,7 @@ a:hover {
 
 kbd {
 	font-family: "Monaco", "Courier New", fixed;
-	font-size: 0.8rem;
+	font-size: 8rem;
 	text-transform: uppercase;
 }
 
@@ -306,7 +306,7 @@ aside h4 {
 }
 
 aside p {
-	font-size: 0.9rem;
+	font-size: .9rem;
 	color: #111;
 }
 
@@ -333,7 +333,7 @@ footer {
 
 footer p {
 	margin-bottom: .2em;
-	font-size: 0.9rem;
+	font-size: .9rem;
 }
 
 footer .rss {
@@ -345,7 +345,7 @@ footer .rss {
 /* --------------------------------- [ General Classes ] */
 
 .small {
-	font-size: 0.8rem;
+	font-size: .8rem;
 	line-height: 1.6;
 }
 
@@ -375,7 +375,7 @@ input.search-field {
 	background: transparent url(bg-search.gif) no-repeat 7px center;
 	padding: 0 0 0 23px;
 	height: 24px;
-	font-size: 0.9rem;
+	font-size: .9rem;
 }
 
 p.search-field {
