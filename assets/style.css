@@ -182,7 +182,7 @@ main {
 
 .post .meta > p {
 	padding-top: 8px;
-	width: 29.2em;
+	width: 26em;
 	float: right;
 }
 
@@ -312,8 +312,8 @@ aside p {
 
 aside .col {
 	overflow: hidden;
-	width: 29.2em;
-	margin-right: 1.2em;
+	width: 26em;
+	margin-right: 16px;
 	float: left;
 }
 
