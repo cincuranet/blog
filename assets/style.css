@@ -251,7 +251,7 @@ article code {
 
 article pre {
 	margin: 2em 0 2em 0;
-	padding: 1em 0 1em 3em;
+	padding: 1em 0 1em 1em;
 	font-size: 1rem;
 	overflow: auto;
 	border-bottom: 1px dotted #666;
