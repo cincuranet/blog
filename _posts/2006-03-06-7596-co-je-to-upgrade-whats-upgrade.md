@@ -7,4 +7,4 @@ redirect_from: /id/7596/
 category: none
 layout: post
 ---
-<p>Nahrazování starých chyb novými! // Replacing the old bugs with new ones!</p>
+Nahrazování starých chyb novými! // Replacing the old bugs with new ones!
