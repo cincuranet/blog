@@ -184,7 +184,7 @@ article:first-of-type {
 }
 
 article p.links {
-	margin-bottom: .5em;
+	margin-bottom: 0em;
 }
 
 article p.meta {
