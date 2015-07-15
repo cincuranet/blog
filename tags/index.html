@@ -33,7 +33,7 @@ title: Tags
 </script>
 
 <h3>Tags</h3>
-{% for t in site.tags %}
+{% for t in site.tags | sort %}
 <div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
 	<p>
 		<span class="collapsable-header"><a href="#{{ t[0] | upcase }}" name="{{ t[0] | upcase }}">{{ t[0] }} ({{ t[1] | size }})</a></span>

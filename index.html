@@ -4,7 +4,7 @@ layout: default
 {% for post in site.posts limit: site.site_posts %}
 <article>
 	<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-	<p class="meta">Published <span title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</span> in {{ post.tags | array_to_sentence_string }}</p>
+	<p class="meta">Published <span title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</span> in {{ post.tags | sort | array_to_sentence_string }}</p>
 	{{ post.excerpt }}
 	<p class="links"><a href="{{ site.url }}{{ post.url }}">Continue reading...</a>&nbsp;|&nbsp;<a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></p>
 </article>
