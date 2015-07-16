@@ -7,10 +7,10 @@ title: Tags
 </script>
 
 <h3>Tags</h3>
-{% for t in site.tags | sort %}
-<div class="collapsable" data-sort-key="{{ t[0] | upcase }}">
+{% for t in site.tags %}
+<div class="collapsable" data-sort-key="{{ t[0] | downcase | escape }}">
 	<p>
-		<span class="collapsable-header"><a href="#{{ t[0] | upcase }}" name="{{ t[0] | upcase }}">{{ t[0] }} ({{ t[1] | size }})</a></span>
+		<span class="collapsable-header"><a href="#{{ t[0] | downcase | escape }}" name="{{ t[0] | downcase | escape }}">{{ t[0] }} ({{ t[1] | size }})</a></span>
 		<br />
 		<span class="collapsable-item">
 			{% for p in t[1] %}
