@@ -77,7 +77,7 @@ var blog = (function() {
 	}
 
 	function showArticleNicely() {
-		if (document.referrer.test(/blog\.cincura\.net/)) {
+		if (/blog\.cincura\.net/.test(document.referrer)) {
 			$(document).scrollTop($('article').offset().top);
 		}
 	}
