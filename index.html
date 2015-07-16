@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<script type="text/javascript">
+	$(document).ready(blog.initPostsListPage);
+</script>
 {% for post in site.posts limit: site.site_posts %}
 <article>
 	<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -9,14 +12,3 @@ layout: default
 	<p class="links"><a href="{{ site.url }}{{ post.url }}">Continue reading...</a>&nbsp;|&nbsp;<a href="{{ site.disqus_base_url }}{{ post.url }}#disqus_thread">View Comments</a></p>
 </article>
 {% endfor %}
-
-<script type="text/javascript">
-var disqus_shortname = 'blogcincuranet';
-
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
