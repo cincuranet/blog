@@ -4,7 +4,7 @@ var blog = (function() {
 	function initLinks() {
 		$('article a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
 	}
-	
+
 	function initLineNumbers() {
 		$('div.highlight pre code').each(function(i, e) {
 			e = $(e);
@@ -19,7 +19,7 @@ var blog = (function() {
 			e.html(newLines.join('\n'));
 		});
 	}
-	
+
 	function initImageBox() {
 		$('article a[href*="blog.cincura.net/i/"]:has(img)').attr('rel', 'gallery').fancybox({
 			openEffect: 'fade',
@@ -28,7 +28,7 @@ var blog = (function() {
 			prevEffect: 'fade'
 		});
 	}
-	
+
 	function initSearch() {
 		$('#search').keypress(function(e) {
 			if (e.which == 13) {
@@ -40,9 +40,19 @@ var blog = (function() {
 		});
 	}
 
+	function initGA() {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-113043-8', 'cincura.net');
+		ga('send', 'pageview');
+	}
+
 	function tagsFolding() {
 		$('.collapsable .collapsable-item').hide();
-	
+
 		var items = $('.collapsable[data-sort-key]');
 		var anchor = items.first().parent();
 		items = items.sort(function(x, y) {
@@ -54,31 +64,32 @@ var blog = (function() {
 			e = $(e);
 			anchor.append(e);
 		});
-	
+
 		$('.collapsable .collapsable-header').each(function(i,e) {
 			e = $(e);
 			e.click(function() {
 				e.parent().children('.collapsable-item').slideToggle();
 			});
 		});
-	
+
 		var hash = window.location.hash.substring(1);
 		if (hash) {
 			$('a[name="' + hash + '"]').parent().click();
 		}
-	}	
-	
+	}
+
 	return {
 		initGeneral: function() {
 			initLinks();
 			initLineNumbers();
 			initImageBox();
 			initSearch();
+			initGA();
 		},
 		initTagsPage: function() {
 			tagsFolding();
 		},
 		initPostPage: function() {
-		}	
+		}
 	};
 })();
