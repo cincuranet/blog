@@ -84,9 +84,9 @@ var blog = (function() {
 		}
 	}
 
-	function initFullDisqus() {
+	function initFullDisqus(postUrl) {
 		var disqus_shortname = '{{ site.disqus_shortname }}';
-		var disqus_url = '{{ site.disqus_base_url }}{{ page.url }}';
+		var disqus_url = '{{ site.disqus_base_url }}' + postUrl;
 
 		(function() {
 		    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -117,9 +117,9 @@ var blog = (function() {
 		initTagsPage: function() {
 			tagsFolding();
 		},
-		initPostPage: function() {
+		initPostPage: function(postUrl) {
 			showArticleNicely();
-			initFullDisqus();
+			initFullDisqus(postUrl);
 		},
 		initPostsListPage: function() {
 			initDisqusCounts();

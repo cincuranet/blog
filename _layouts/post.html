@@ -1,7 +1,7 @@
 {% include header.html %}
 
 <script type="text/javascript">
-	$(document).ready(blog.initPostPage);
+	$(document).ready(function() { blog.initPostPage('{{page.url}}'); });
 </script>
 <main>
 	<article>
