@@ -1,3 +1,5 @@
+---
+---
 var blog = (function() {
 	function initLinks() {
 		$('article a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
