@@ -1,35 +1,9 @@
 ---
-layout: page
+layout: default
 title: Tags
 ---
 <script type="text/javascript">
-	$(document).ready(function() {
-		$('.collapsable .collapsable-item').hide();
-
-		var items = $('.collapsable[data-sort-key]');
-		var anchor = items.first().parent();
-		items = items.sort(function(x, y) {
-			var xData = $(x).data('sort-key');
-			var yData = $(y).data('sort-key');
-			return xData.localeCompare(yData);
-		});
-		items.each(function(i, e) {
-			e = $(e);
-			anchor.append(e);
-		});
-
-		$('.collapsable .collapsable-header').each(function(i,e) {
-			e = $(e);
-			e.click(function() {
-				e.parent().children('.collapsable-item').slideToggle();
-			});
-		});
-
-		var hash = window.location.hash.substring(1);
-		if (hash) {
-			$('a[name="' + hash + '"]').parent().click();
-		}
-	});
+	$(document).ready(blog.initTagsPage);
 </script>
 
 <h3>Tags</h3>
