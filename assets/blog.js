@@ -85,7 +85,7 @@ var blog = (function() {
 	}
 
 	function initFullDisqus() {
-		var disqus_shortname = 'blogcincuranet';
+		var disqus_shortname = '{{ site.disqus_shortname }}';
 		var disqus_url = '{{ site.disqus_base_url }}{{ page.url }}';
 
 		(function() {
@@ -96,7 +96,7 @@ var blog = (function() {
 	}
 
 	function initDisqusCounts() {
-		var disqus_shortname = 'blogcincuranet';
+		var disqus_shortname = '{{ site.disqus_shortname }}';
 
 		(function () {
 		    var s = document.createElement('script'); s.async = true;

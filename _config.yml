@@ -9,6 +9,7 @@ site_posts: 20
 feed_posts: 20
 feed: atom.xml
 sitemap: sitemap.xml
+disqus_shortname: blogcincuranet
 disqus_base_url: http://blog.cincura.net
 markdown: redcarpet
 redcarpet:
