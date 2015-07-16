@@ -120,7 +120,7 @@ var blog = (function() {
 		initPostPage: function() {
 			showArticleNicely();
 			initFullDisqus();
-		}
+		},
 		initPostsListPage: function() {
 			initDisqusCounts();
 		}
