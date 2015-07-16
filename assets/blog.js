@@ -76,6 +76,12 @@ var blog = (function() {
 		}
 	}
 
+	function showArticleNicely() {
+		if (document.referrer.test(/blog\.cincura\.net/)) {
+			$(document).scrollTop($('article').offset().top);
+		}
+	}
+
 	return {
 		initGeneral: function() {
 			initLinks();
@@ -88,6 +94,7 @@ var blog = (function() {
 			tagsFolding();
 		},
 		initPostPage: function() {
+			showArticleNicely();
 		}
 	};
 })();
