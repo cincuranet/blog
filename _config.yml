@@ -1,7 +1,7 @@
 name: Jiří /{x2}\ Činčura
 description: Taking something that /can't\ be done, and then /doing it\.
 url: http://blog.cincura.net
-#url: file:///C:/Users/Jiri/Documents/www/cincura.net/blog/src/_site
+#url: file:///C:/Users/Jiri/Documents/www/blog.cincura.net/blog/src/_site
 permalink: /:title/
 timezone: UTC
 excerpt_separator: <!-- excerpt -->
