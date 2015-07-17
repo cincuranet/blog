@@ -5,6 +5,10 @@ var blog = (function() {
 		$('article a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
 	}
 
+	function initImageTitles() {
+		$('article img[alt]').attr('title', function() { return $(this).attr('alt'); });
+	}
+
 	function initLineNumbers() {
 		$('div.highlight pre code').each(function(i, e) {
 			e = $(e);
@@ -105,6 +109,7 @@ var blog = (function() {
 	return {
 		initGeneral: function() {
 			initLinks();
+			initImageTitles();
 			initLineNumbers();
 			initImageBox();
 			initSearch();
