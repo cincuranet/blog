@@ -9,7 +9,7 @@ redirect_from: /id/233001/
 category: none
 layout: post
 ---
-There seems to be a small confusion about what is needed to be able to use spatial data - exposed as [DbGeography][1] and [DbGeometry][2] types - in [Entity Framework][3].
+There seems to be a small confusion about what is needed to be able to use spatial data - exposed as [`DbGeography`][1] and [`DbGeometry`][2] types - in [Entity Framework][3].
 
 It very much depends on provider, as expected. Of course you need to have Entity Framework 5 installed (you can get it either from NuGet or it's inside .NET 4.5). You can happily create context, use classes with above mentioned type(s), until you try to execute some query or do some CUD operation. Then it goes into provider's internals and it is responsible to provide some solution. It's interesting that the database doesn't have to support spatial data necessarily. If there will be some convention on the side of provider about translation into i.e. stored procedures/functions you're fine.
 
