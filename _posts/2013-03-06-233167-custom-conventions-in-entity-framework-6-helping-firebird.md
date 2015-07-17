@@ -85,6 +85,7 @@ using (var ctx = new FirebirdContext())
 	Console.WriteLine(ctx.TestEntities.Where(x => x.MyInteger == 0).ToString());
 }
 ```
+
 ```csharp
 class TestEntity
 {

@@ -70,7 +70,7 @@ class Test : IDisposable
 
 The result is correct (and expected, if you look at it closely):
 
-```
+```text
 Before
 Other stuff
 After
