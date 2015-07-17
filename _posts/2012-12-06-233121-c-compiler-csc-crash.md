@@ -22,7 +22,7 @@ Well, let's try some basic healing steps. Restarting Visual Studio (2012); no lu
 
 Looking at the detailed build log I found (among tens of other errors below):
 
-```plain
+```text
 CSC : error CS0583: Internal Compiler Error (0xc0000005 at address 00FE7AFB): likely culprit is 'BIND'
 ```
 
