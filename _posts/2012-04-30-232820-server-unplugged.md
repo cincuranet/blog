@@ -13,7 +13,7 @@ Upgrading, configuring, compiling all these services... What a great memories.
 
 You served well all these years (8?).
 
-```plain
+```text
 root@<removed>:~# shutdown now
 Broadcast message from root (pts/0) (Mon Apr 30 08:29:38 2012):
 The system is going down to maintenance mode NOW!
