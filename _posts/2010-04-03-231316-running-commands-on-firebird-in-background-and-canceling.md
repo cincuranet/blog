@@ -49,7 +49,7 @@ end";
 
 and you'll get the result (even though the loop in fact never ends):
 
-```plain
+```text
 Canceling
 operation was cancelled
 ```
