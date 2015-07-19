@@ -12,4 +12,6 @@ redirect_from: /id/230948/
 category: none
 layout: post
 ---
-<p>Nice list at <a href="http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx">http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx</a>.</p>
+Nice list at [http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx][1].
+
+[1]: http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx
