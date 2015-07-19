@@ -8,11 +8,11 @@ redirect_from: /id/230715/
 category: none
 layout: post
 ---
-<p>Today I was writing some code, where I needed create initially empty array. I wondered if the <code>array[0]</code> vs. <code>array[] { }</code> is the same. Alike with the <a href="{{ site.url }}{% post_url 2007-04-28-224879-concatenating-string-during-compile %}">string concatenation</a>.</p>
+Today I was writing some code, where I needed create initially empty array. I wondered if the `array[0]` vs. `array[] { }` is the same. Alike with the [string concatenation][1].
 
-<p>Without writing further text. Lines:</p>
+Without writing further text. Lines:
 
-<pre class="brush:csharp">
+```csharp
 private static void Test1()
 {
 	string[] s1 = new string[0];
@@ -23,10 +23,11 @@ private static void Test2()
 	string[] s2 = new string[] { };
 	Console.WriteLine(s2);
 }
-</pre>
+```
 
-<p>resulted in this IL:</p>
-<pre class="brush:plain">
+resulted in this IL:
+
+```text
 .method private hidebysig static void  Test1() cil managed
 {
   // Code size       14 (0xe)
@@ -51,6 +52,8 @@ private static void Test2()
   IL_0008:  call       void [mscorlib]System.Console::WriteLine(object)
   IL_000d:  ret
 } // end of method Program::Test2
-</pre>
+```
 
-<p>As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.</p>
+As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.
+
+[1]: {{ site.url }}{% post_url 2007-04-28-224879-concatenating-string-during-compile %}
