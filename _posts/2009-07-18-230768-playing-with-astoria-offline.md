@@ -40,7 +40,7 @@ First problem you may encounter is not working "auto setup" for offline work. I 
 
 Now when you add service reference to you project the additional process kicks in (should) and generates local SQLCE database, the model and some classes. When I was able to make this work, every time I reached the `Adding new database file to project...` step I get error message:
 
-```plain
+```text
 An error occurred while processing the local data file:
 Exception has been thrown by the target of an invocation.
 ```
