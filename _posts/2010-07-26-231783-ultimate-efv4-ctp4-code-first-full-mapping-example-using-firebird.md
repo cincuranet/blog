@@ -161,7 +161,7 @@ public class DoNothingWithMyDatabase<TContext> : IDatabaseInitializer<TContext>
 }
 ```
 
-Pretty simple, isn't it. I'm using new stripped down objects DbContext (ã [ObjectContext][10]) and IDbSet/DbSet (ã [IObjectSet][11]/[ObjectSet][12]).
+Pretty simple, isn't it. I'm using new stripped down objects DbContext (‚Üê [ObjectContext][10]) and IDbSet/DbSet (‚Üê [IObjectSet][11]/[ObjectSet][12]).
 
 You may also notice, I've created object which implements `IDatabaseInitializer`. That's because, by default, Entity Framework will try to create database for you and check whether your database matches model (`CreateDatabaseOnlyIfNotExists`). _I_'m controlling my database. You have to add somewhere into your application before doing anything with the context call to `SetInitializer`:
 
