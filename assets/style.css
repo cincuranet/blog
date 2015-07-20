@@ -4,7 +4,7 @@
 }
 
 html {
-	font-family: Helvetica, "Lucida Grande", sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 }
 
 kbd {
-	font-family: "Monaco", "Courier New", fixed;
+	font-family: Consolas, 'Lucida Console', monospace;
 	font-size: .8rem;
 	text-transform: uppercase;
 }
@@ -100,7 +100,7 @@ td {
 input, textarea {
 	width: 94%;
 	padding: 8px;
-	font-family: Arial, Verdana, sans-serif;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 1rem;
 	border: 1px solid #666;
 }
@@ -233,7 +233,7 @@ article li {
 }
 
 article code {
-	font-family: "Monaco", "Courier New", fixed;
+	font-family: Consolas, 'Lucida Console', monospace;
 }
 
 article pre {
@@ -339,7 +339,7 @@ footer .rss {
 }
 
 .low {
-	font-family: Palatino, Georgia, "Times New Roman", sans-serif;
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	font-style: italic;
 	font-weight: normal;
 	text-transform: lowercase;
