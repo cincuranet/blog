@@ -237,12 +237,12 @@ article code {
 }
 
 article pre {
-	margin: 1em 0 1em 0;
-	padding: 1em 0 1em 1em;
+	margin: 1em 8px 1em 8px;
+	padding: 1em .5em 1em .5em;
 	font-size: 1rem;
 	overflow: auto;
-	border-bottom: 1px dotted #666;
-	border-top: 1px dotted #666;
+	background-color: #eeeef2;
+	border-radius: .5em;
 }
 
 article .line-number {
