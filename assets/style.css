@@ -237,8 +237,8 @@ article code {
 }
 
 article pre {
-	margin: 1em 8px 1em 8px;
-	padding: 1em .5em 1em .5em;
+	margin: 0 1em 1em 1em;
+	padding: 8px;
 	font-size: 1rem;
 	overflow: auto;
 	background-color: #EEEEF2;
