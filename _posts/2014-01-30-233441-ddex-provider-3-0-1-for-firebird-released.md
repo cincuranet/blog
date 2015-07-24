@@ -6,6 +6,7 @@ tags:
   - Announcements &amp; Invitations
   - Databases in general
   - Firebird
+  - Visual Studio
 redirect_from: /id/233441/
 category: none
 layout: post
