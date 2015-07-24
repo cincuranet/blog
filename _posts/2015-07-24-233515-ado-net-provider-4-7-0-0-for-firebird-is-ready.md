@@ -16,7 +16,7 @@ redirect_from: /id/233515/
 category: none
 layout: post
 ---
-New 4.7.0.0 version of [ADO.NET provider for Firebird][1] is ready for download. This time I worked on stability improvements. A lot. Huge thanks for all people reporting issues. Some even with test cases and bug analysis: 👍.
+New 4.7.0.0 version of [ADO.NET provider for Firebird][1] is ready for download. This time I worked on stability improvements. A lot. Huge thanks for all people reporting issues. Some even with test cases and bug analysis - sweet!
 
 <!-- excerpt -->
 
