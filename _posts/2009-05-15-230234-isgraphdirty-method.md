@@ -8,64 +8,23 @@ redirect_from: /id/230234/
 category: none
 layout: post
 ---
-<p>Probably one of the first methods you've seen/wrote while playing with Entity Framework is IsDirty method. It's a great example how to use <a href="http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx" >ObjectStateManager</a>. While <a href="http://www.x2develop.com/" >doing consultancy work</a> I was asked to create method IsGraphDirty. Handy if you have i.e. some editing form with couple of related entities like Order and OrderLines. </p>
+Probably one of the first methods you've seen/wrote while playing with Entity Framework is IsDirty method. It's a great example how to use [ObjectStateManager][1]. While [doing consultancy work][2] I was asked to create method IsGraphDirty. Handy if you have i.e. some editing form with couple of related entities like Order and OrderLines. 
 
-<p>The problem itself can be divided into three parts. First you'll check the entity itself, of course. Then all the related enties and finally all the associations. Why the associations? </p>
+The problem itself can be divided into three parts. First you'll check the entity itself, of course. Then all the related enties and finally all the associations. Why the associations? 
 
-<p>The associations are first class citizens in EF. And when you i.e. assign one OrderLine to different Order, then the association is changed (in fact added and deleted), not the OrderLine (in database the OrderLine will be changed, but you're not thinking in behavior of store). </p>
+The associations are first class citizens in EF. And when you i.e. assign one OrderLine to different Order, then the association is changed (in fact added and deleted), not the OrderLine (in database the OrderLine will be changed, but you're not thinking in behavior of store). 
 
-<p>The method below is using exactly this way. When first dirty element is found, false is returned. Method is storing already checked entities in a collection to avoid spinning in a circle. </p>
-<pre class="brush:csharp">
-private static IEnumerable&lt;ObjectStateEntry&gt; GetObjectStateEntries(this ObjectStateManager osm)
+The method below is using exactly this way. When first dirty element is found, false is returned. Method is storing already checked entities in a collection to avoid spinning in a circle. 
+
+```csharp
+private static IEnumerable<ObjectStateEntry> GetObjectStateEntries(this ObjectStateManager osm)
 {
     return osm.GetObjectStateEntries(EntityState.Added | EntityState.Deleted | EntityState.Modified | EntityState.Unchanged);
 }
-
 private static bool IsModifiedEntityModified(this ObjectStateManager osm, EntityObject entity)
 {
     if (entity.EntityState != EntityState.Modified)
         throw new ArgumentException("Entity isn't modified.");
-
-    ObjectStateEntry ost = osm.GetObjectStateEntry(entity);
-    for (int i = 0; i &lt; ost.OriginalValues.FieldCount; i++)
-    {
-        object original = ost.OriginalValues.GetValue(i);
-        object current = ost.CurrentValues.GetValue(i);
-        if (!original.Equals(current))
-            return true;
-    }
-    return false;
-}
-
-public static bool IsDirty(this ObjectContext context, EntityObject entity)
-{
-    return
-        (entity.EntityState == EntityState.Added)
-        ||
-        (entity.EntityState == EntityState.Deleted)
-        ||
-        (entity.EntityState == EntityState.Modified &amp;&amp; context.ObjectStateManager.IsModifiedEntityModified(entity));
-}
-
-public static bool IsDirty(this EntityObject entity, ObjectContext context)
-{
-    return context.IsDirty(entity);
-}
-</pre>
-<p>One of the improvements that's left, is to save also the associations checked, to avoid checking it twice and thus (maybe) finish sooner. Another may be to rewrite it without recursion.</p>
-
-<p>I'm using there couple of other helper methods.</p>
-<pre class="brush:csharp">
-private static IEnumerable&lt;ObjectStateEntry&gt; GetObjectStateEntries(this ObjectStateManager osm)
-{
-    return osm.GetObjectStateEntries(EntityState.Added | EntityState.Deleted | EntityState.Modified | EntityState.Unchanged);
-}
-
-private static bool IsModifiedEntityModified(this ObjectStateManager osm, EntityObject entity)
-{
-    if (entity.EntityState != EntityState.Modified)
-        throw new ArgumentException("Entity isn't modified.");
-
     ObjectStateEntry ost = osm.GetObjectStateEntry(entity);
     for (int i = 0; i < ost.OriginalValues.FieldCount; i++)
     {
@@ -76,7 +35,6 @@ private static bool IsModifiedEntityModified(this ObjectStateManager osm, Entity
     }
     return false;
 }
-
 public static bool IsDirty(this ObjectContext context, EntityObject entity)
 {
     return
@@ -84,26 +42,63 @@ public static bool IsDirty(this ObjectContext context, EntityObject entity)
         ||
         (entity.EntityState == EntityState.Deleted)
         ||
-        (entity.EntityState == EntityState.Modified &amp;&amp; context.ObjectStateManager.IsModifiedEntityModified(entity));
+        (entity.EntityState == EntityState.Modified && context.ObjectStateManager.IsModifiedEntityModified(entity));
 }
-
 public static bool IsDirty(this EntityObject entity, ObjectContext context)
 {
     return context.IsDirty(entity);
 }
-</pre>
-<p>The IsModifiedEntityModified method is checking whether the entity has been "really" modified. I.e. you can change some values and then change it back. The entity is marked as modified, but you may not to consider it as modified (depends on you needs). Anyway you can remove it form IsDirty and the code will work fine.</p>
+```
 
-<p>The last couple of methods are extension methods taken from <a href="http://blogs.msdn.com/dsimmons/archive/2008/01/17/ef-extension-methods-extravaganza-part-ii-relationship-entry-irelatedend.aspx" >Danny Simmons's post</a> with handy methods, just to make my life easier.</p>
-</pre><pre class="brush:csharp">
+One of the improvements that's left, is to save also the associations checked, to avoid checking it twice and thus (maybe) finish sooner. Another may be to rewrite it without recursion.
+
+I'm using there couple of other helper methods.
+
+```csharp
+private static IEnumerable<ObjectStateEntry> GetObjectStateEntries(this ObjectStateManager osm)
+{
+    return osm.GetObjectStateEntries(EntityState.Added | EntityState.Deleted | EntityState.Modified | EntityState.Unchanged);
+}
+private static bool IsModifiedEntityModified(this ObjectStateManager osm, EntityObject entity)
+{
+    if (entity.EntityState != EntityState.Modified)
+        throw new ArgumentException("Entity isn't modified.");
+    ObjectStateEntry ost = osm.GetObjectStateEntry(entity);
+    for (int i = 0; i < ost.OriginalValues.FieldCount; i++)
+    {
+        object original = ost.OriginalValues.GetValue(i);
+        object current = ost.CurrentValues.GetValue(i);
+        if (!original.Equals(current))
+            return true;
+    }
+    return false;
+}
+public static bool IsDirty(this ObjectContext context, EntityObject entity)
+{
+    return
+        (entity.EntityState == EntityState.Added)
+        ||
+        (entity.EntityState == EntityState.Deleted)
+        ||
+        (entity.EntityState == EntityState.Modified && context.ObjectStateManager.IsModifiedEntityModified(entity));
+}
+public static bool IsDirty(this EntityObject entity, ObjectContext context)
+{
+    return context.IsDirty(entity);
+}
+```
+
+The IsModifiedEntityModified method is checking whether the entity has been "really" modified. I.e. you can change some values and then change it back. The entity is marked as modified, but you may not to consider it as modified (depends on you needs). Anyway you can remove it form IsDirty and the code will work fine.
+
+The last couple of methods are extension methods taken from [Danny Simmons's post][3] with handy methods, just to make my life easier.
+
+```csharp
 private static bool IsRelationshipForKey(this ObjectStateEntry entry, EntityKey key)
 {
     if (!entry.IsRelationship)
         throw new ArgumentException("Entry isn't for relationship.");
-
     return ((EntityKey)entry.UsableValues()[0] == key) || ((EntityKey)entry.UsableValues()[1] == key);
 }
-
 private static IExtendedDataRecord UsableValues(this ObjectStateEntry entry)
 {
     switch (entry.State)
@@ -119,7 +114,6 @@ private static IExtendedDataRecord UsableValues(this ObjectStateEntry entry)
             throw new InvalidOperationException("This entity state should not exist.");
     }
 }
-
 private static EntityKey OtherEndKey(this ObjectStateEntry relationshipEntry, EntityKey thisEndKey)
 {
     if ((EntityKey)relationshipEntry.UsableValues()[0] == thisEndKey)
@@ -135,4 +129,8 @@ private static EntityKey OtherEndKey(this ObjectStateEntry relationshipEntry, En
         throw new InvalidOperationException("Neither end of the relationship contains the passed in key.");
     }
 }
-</pre>
+```
+
+[1]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx
+[2]: http://www.x2develop.com/
+[3]: http://blogs.msdn.com/dsimmons/archive/2008/01/17/ef-extension-methods-extravaganza-part-ii-relationship-entry-irelatedend.aspx
