@@ -19,11 +19,7 @@ cd "$(ProjectDir)"
 
 First row presets working directory to current project's directory, because EdmGen2 doesn't allows you to specify the name of output file (but you can change this, because sources are available). Next we'll simply call EmdGen2 with `/ViewGen` parameter and specify language and path to EDMX file. After first compilation we've got file named `<model name>.GeneratedViews.<language>`. Finally just add this file into your project and compile again.
 
-If you'll run the application, you might notice nice surprise – it's faster. With my model the time has been shortened to 2 seconds. And of course, this depends on your model, but not bad for a simple smart calling of tool without any additional work. If you're interested in overall cost of various processes in Entity Framework, read [1] or [2], maybe [3]. 
-
-* [1] [http://blogs.msdn.com/adonet/archive/2008/02/04/exploring-the-performance-of-the-ado-net-entity-framework-part-1.aspx][2]
-* [2] [http://blogs.msdn.com/adonet/archive/2008/02/11/exploring-the-performance-of-the-ado-net-entity-framework-part-2.aspx][3]
-* [3] [http://blogs.msdn.com/adonet/archive/2008/03/27/ado-net-entity-framework-performance-comparison.aspx][4]
+If you'll run the application, you might notice nice surprise – it's faster. With my model the time has been shortened to 2 seconds. And of course, this depends on your model, but not bad for a simple smart calling of tool without any additional work. If you're interested in overall cost of various processes in Entity Framework, read [this][2] or [this][3], maybe [this][4]. 
 
 <small>Originally written for [vyvojar.cz][5].</small>
 
