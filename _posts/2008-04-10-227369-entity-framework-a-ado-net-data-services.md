@@ -12,4 +12,4 @@ redirect_from: /id/227369/
 category: none
 layout: post
 ---
-<p>Tak a je to. Entity Framework a ADO.NET Data Services budou součástí SP1 pro VS2008 a .NET 3.5. Paráda. Doufám, že do té doby dokončím i podporu pro Entity Framework v ADO.NET provideru pro Firebird.</p>
+Tak a je to. Entity Framework a ADO.NET Data Services budou součástí SP1 pro VS2008 a .NET 3.5. Paráda. Doufám, že do té doby dokončím i podporu pro Entity Framework v ADO.NET provideru pro Firebird.
