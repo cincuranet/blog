@@ -19,7 +19,7 @@ s = "rrr" +
 
 in Main method. I used ILDasm tool from SDK to convince myself that it's true:
 
-```plain
+```text
 .method private hidebysig static void Main(string[] args) cil managed
 {
 .entrypoint
