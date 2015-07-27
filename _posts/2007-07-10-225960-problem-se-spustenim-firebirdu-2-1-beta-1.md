@@ -1,5 +1,5 @@
 ---
-title: "Problém se spuštění Firebirdu 2.1 Beta 1"
+title: "Problém se spuštěním Firebirdu 2.1 Beta 1"
 date: 2007-07-10T18:16:00Z
 tags:
   - Firebird
