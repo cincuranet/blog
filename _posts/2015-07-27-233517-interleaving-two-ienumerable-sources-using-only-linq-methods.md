@@ -1,6 +1,6 @@
 ---
 title: "Interleaving two IEnumerable sources using only LINQ methods"
-date: 2015-07-27T07:59:00Z
+date: 2015-07-27T17:59:00Z
 tags:
   - .NET
   - C#
