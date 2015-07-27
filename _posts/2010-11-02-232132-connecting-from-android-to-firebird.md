@@ -15,7 +15,9 @@ Remember the [challenge I did][1] some time ago with [.NET provider for Firebird
 
 Again it's a pretty challenge for the whole MonoDroid stack, as the provider uses a lot of various pieces from .NET Framework. And taking into account, the MonoDroid is still in previews phase I wasn't sure I'll be able to succeed. However I did. With some tweaking, and I kind of remembered the important places from [last attempt][5], so it was faster, I was able to make it work easily.
 
-[![image]({{ site.url }}/i/232132/android_firebird_thumb.jpg)<br />Application connected to Firebird server and showing server version and data from `MON$DABATASE`][6]
+Application connected to Firebird server and showing server version and data from `MON$DABATASE`:
+
+[![image]({{ site.url }}/i/232132/android_firebird_thumb.jpg)][6]
 
 Cool, isn't it? Taking into account, that the [Windows Phone 7][7] (because everything there is based on [Silverlight][8]) doesn't contain pieces from [ADO.NET][9], it's nice that [Mono][10] isn't crippling the objects available.
 

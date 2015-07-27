@@ -285,9 +285,7 @@ class NameConfiguration : ComplexTypeConfiguration<Name>
 
 I don't know whether it's worth to describe the lines. Should be understandable if you know how the entities and database look like. Just maybe small notice. Besides Complex Types we used two most common inheritance mapping scenarions - TPH aka Table Per Hierarchy for Books and TPT aka Table Per Type for Authors (there's also TPC (Table Per Concrete Type)). However if you have questions feel free to use comments, if I'll know answer I'll be happy to reply.
 
-And finally some really simple application to test the result:<br />
-
-<small>If you define `#define FB` it'll use Firebird database else [MS SQL Server][14].</small>
+And finally some really simple application to test the result <small>(If you define `#define FB` it'll use Firebird database else [MS SQL Server][14].)</small>:
 
 ```csharp
 Database.SetInitializer(new DoNothingWithMyDatabase<LibraryContext>());

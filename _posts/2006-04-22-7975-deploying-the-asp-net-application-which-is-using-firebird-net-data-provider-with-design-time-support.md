@@ -14,7 +14,7 @@ If you just use FirebirdClient "in code", you can just place the dll into the Bi
 
 First check, whether you have FirebirdSql.Data.FirebirdClient.dll in your Bin directory and if you have setted the reference to it. :)
 
-Next open your web.config and add the record of <DbProviderFactories>. It's similar to [adding design time support into VS][1]. <br />The record should be like this (example of mine; be sure have right setted the 'type' attribute):
+Next open your web.config and add the record of <DbProviderFactories>. It's similar to [adding design time support into VS][1]. The record should be like this:
 
 ```xml
 <configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">
