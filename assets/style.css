@@ -265,14 +265,15 @@ article img {
 .comment {
 	margin-bottom: 3em;
 	padding-top: 1em;
+	padding-left: 8px;
+	padding-right: 8px;
 	clear: both;
 	overflow: hidden;
 	border-top: 1px solid #111;
 }
 
 #disqus_thread {
-	padding-left: 8px;
-	padding-right: 8px;
+	min-height: 325px;
 }
 
 /* ----------------------------------------- [ Aside ] */
