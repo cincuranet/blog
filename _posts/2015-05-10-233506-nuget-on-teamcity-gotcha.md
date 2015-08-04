@@ -12,7 +12,7 @@ I was moving our build server to new hardware and as I was checking whether ever
 
 <!-- excerpt -->
 
-The NuGet, by definition, contains all packages ever published. Because you don't know who might be using it (and might need to re-download it). But with NuGet packages published by TeamCity from builds is artifact as any other. And when the history of build configuration is [cleaned up][3] depending on your settings also the packages are effectively removed from the feed. 
+The NuGet, by definition, contains all packages ever published. Because you don't know who might be using it (and might need to re-download it). But NuGet packages published by TeamCity from builds are artifacts as any other. And when the history of build configuration is [cleaned up][3] depending on your settings also the packages are effectively removed from the feed. 
 
 Then when you have a project that is using that "old" version you might have trouble building (I suppose you're not putting packages into VCS, of course) it. Luckily with TeamCity being, likely, your own build server you might be able to use some newer version (never a bad idea to use up-to-date binaries) or resolve some incompatibilities.
 
