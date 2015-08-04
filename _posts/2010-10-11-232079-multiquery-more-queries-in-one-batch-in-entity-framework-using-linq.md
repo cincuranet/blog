@@ -108,6 +108,7 @@ public class MultiQuery
 	}
 	#endregion
 }
+
 static class MultiQueryExt
 {
 	internal static ObjectResult Translate(this ObjectContext context, Type type, IDataReader reader)
