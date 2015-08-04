@@ -27,10 +27,12 @@ public class MultiQuery
 			return new QueryRecord() { Query = query, Type = typeof(T) };
 		}
 	}
+	
 	#region Fields
 	ObjectContext _context;
 	List<QueryRecord> _queries;
 	#endregion
+	
 	#region Constructors
 	public MultiQuery(ObjectContext context)
 	{
@@ -38,6 +40,7 @@ public class MultiQuery
 		_context = context;
 	}
 	#endregion
+	
 	#region Public Methods
 	public MultiQuery Add<T>(ObjectQuery<T> query)
 	{
@@ -46,10 +49,12 @@ public class MultiQuery
 		_queries.Add(QueryRecord.Create(query));
 		return this;
 	}
+	
 	public MultiQuery Add<T>(IQueryable<T> query)
 	{
 		return this.Add(query as ObjectQuery<T>);
 	}
+	
 	public IEnumerable<ObjectResult> Execute()
 	{
 		IDbConnection storeConnection = ((EntityConnection)_context.Connection).StoreConnection;
@@ -79,6 +84,7 @@ public class MultiQuery
 		}
 	}
 	#endregion
+	
 	#region Private Methods
 	string CreateCommand(IEnumerable<ObjectQuery> queries, Func<IDataParameter> parameterCreator, ref IDataParameterCollection parameters)
 	{
