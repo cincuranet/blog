@@ -19,6 +19,8 @@ Doesn't matter. It's an awesome game. Really. It's simple and me and my friends 
 
 So how it works? You're presented with a canvas with points connected by lines. Unless you're very lucky some lines intersect. Your task is to move the points (click somewhere in the circle) in such a way that the lines do not intersect using as little moves as possible. The number of moves is displayed in title bar. That's it.
 
+![image]({{ site.url }}/i/233521/game.png)
+
 Of course there are some rough edges. What you expect from one hour project?
 
 * No detection whether the game is done (no intersections) or not. Yes, it's up to you. 8-)
