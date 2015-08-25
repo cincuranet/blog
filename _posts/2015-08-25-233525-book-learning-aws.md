@@ -1,5 +1,5 @@
 ---
-title: "Book: \Learning AWS\""
+title: "Book: \"Learning AWS\""
 date: 2015-08-25T05:07:00Z
 tags:
   - Books
