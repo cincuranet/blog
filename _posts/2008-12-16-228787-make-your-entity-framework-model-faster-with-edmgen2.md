@@ -12,7 +12,8 @@ If we'll skip exact details, we can say, that internal behavior of whole modelin
 Luckily there's a solution. These views can be generated using EdmGen or [EdmGen2][1] (or your own tool). For this case I'll use EdmGen2, because the work is slightly more comfortable, because you can work directly with EMDX file.
 
 OK, so create model of your favorite database and create pre-build action in Visual Studio and add:
-```plain
+
+```text
 cd "$(ProjectDir)"
 "$(SolutionDir)EdmGen2.exe" /ViewGen cs "$(ProjectDir)BigModel.edmx"
 ```
