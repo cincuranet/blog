@@ -20,7 +20,7 @@ New 4.8.0.0 version of [ADO.NET provider for Firebird][1] is ready for download.
 
 <!-- excerpt -->
 
-Overview of changes can be found in [tracker][4].
+Overview of changes can be found in [tracker][4]. Please take a extra attention to DNET-625 and DNET-626 as these might silently affect your code in an unexpected way.
 
 You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2] and [EntityFramework.Firebird][3] (or from [firebirdsql.org][1]).
 
@@ -28,3 +28,5 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2] and [Entity
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
 [4]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10705&styleName=Text&projectId=10003
+[5]: http://tracker.firebirdsql.org/browse/DNET-625
+[6]: http://tracker.firebirdsql.org/browse/DNET-626
