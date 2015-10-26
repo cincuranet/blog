@@ -24,9 +24,9 @@ Here's the code for analyzer and the codefix.
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class UnderscoreForPrivateFieldAnalyzer : DiagnosticAnalyzer
 {
-	public const string DiagnosticId = "FieldUnderscore";
+	public const string DiagnosticId = "FU001";
 
-	private static DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, "FU001", "Field {0} does not start with `_`", "Naming", DiagnosticSeverity.Warning, isEnabledByDefault: true);
+	private static DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, DiagnosticId, "Field {0} does not start with `_`", "Naming", DiagnosticSeverity.Warning, isEnabledByDefault: true);
 
 	public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
 
