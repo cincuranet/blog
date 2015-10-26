@@ -26,7 +26,7 @@ public class UnderscoreForPrivateFieldAnalyzer : DiagnosticAnalyzer
 {
 	public const string DiagnosticId = "FU001";
 
-	private static DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, DiagnosticId, "Field {0} does not start with `_`", "Naming", DiagnosticSeverity.Warning, isEnabledByDefault: true);
+	static DiagnosticDescriptor Rule = new DiagnosticDescriptor(DiagnosticId, DiagnosticId, "Field {0} does not start with `_`", "Naming", DiagnosticSeverity.Warning, isEnabledByDefault: true);
 
 	public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get { return ImmutableArray.Create(Rule); } }
 
@@ -35,7 +35,7 @@ public class UnderscoreForPrivateFieldAnalyzer : DiagnosticAnalyzer
 		context.RegisterSymbolAction(AnalyzeField, SymbolKind.Field);
 	}
 
-	private static void AnalyzeField(SymbolAnalysisContext context)
+	static void AnalyzeField(SymbolAnalysisContext context)
 	{
 		var field = (IFieldSymbol)context.Symbol;
 		if (field.IsStatic)
@@ -75,7 +75,7 @@ public class UnderscoreForPrivateFieldCodeFixProvider : CodeFixProvider
 			diagnostic);
 	}
 
-	private async Task<Solution> PrependUnderscore(Document document, SyntaxToken declaration, CancellationToken cancellationToken)
+	async Task<Solution> PrependUnderscore(Document document, SyntaxToken declaration, CancellationToken cancellationToken)
 	{
 		var newName = $"_{declaration.ValueText}";
 		var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
