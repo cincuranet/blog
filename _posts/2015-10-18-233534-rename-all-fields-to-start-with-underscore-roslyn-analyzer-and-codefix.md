@@ -78,10 +78,10 @@ public class UnderscoreForPrivateFieldCodeFixProvider : CodeFixProvider
 	async Task<Solution> PrependUnderscore(Document document, SyntaxToken declaration, CancellationToken cancellationToken)
 	{
 		var newName = $"_{declaration.ValueText}";
-		var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
+		var semanticModel = await document.GetSemanticModelAsync(cancellationToken).ConfigureAwait(false);
 		var symbol = semanticModel.GetDeclaredSymbol(declaration.Parent, cancellationToken);
 		var solution = document.Project.Solution;
-		return await Renamer.RenameSymbolAsync(solution, symbol, newName, solution.Workspace.Options, cancellationToken);
+		return await Renamer.RenameSymbolAsync(solution, symbol, newName, solution.Workspace.Options, cancellationToken).ConfigureAwait(false);
 	}
 }
 ```
