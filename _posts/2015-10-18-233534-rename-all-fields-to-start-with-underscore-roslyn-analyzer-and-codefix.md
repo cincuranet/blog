@@ -16,7 +16,7 @@ The task was pretty simple. I had a solution with a lot of objects and the namin
 
 The problem with code is that you need to have at least minimal context information else the automation will just break - although very quickly - a lot of stuff. Clearly the regex will not cut it. Luckily with Visual Studio 2015 and Roslyn I can use compiler-as-a-service and write so called _analyzer_ and _codefix_. I [have written][1] few already so I knew this path was a good path.
 
-So basically I want every (private) field of an object to start with an underscore and then the original name (some people also use `m_Whatever`) aka the `string name;` becomes `string _name;`. In whole solution. Of course all the uses renamed as well. Nothing else. Well, I'm skipping `static` fields and `struct`s. For obvious reasons.
+So basically I want every (private) field of an object to start with an underscore and then the original name (some people also use `m_Whatever`) aka the `string name;` becomes `string _name;`. In whole solution. Of course all the uses are renamed as well. Nothing else. Well, I'm skipping `static` fields and `struct`s. For obvious reasons.
 
 Here's the code for analyzer and the codefix.
 
