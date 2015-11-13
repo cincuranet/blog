@@ -54,4 +54,4 @@ Although I spent significant amount of time, way more than I expected, on the co
 You can find the code in [this repository][1]. PRs welcome. And if you want to use it, just add [`ExplicitDefaultAccessModifiersAnalyzer` NuGet package][2] to your projects.
 
 [1]: https://github.com/cincuranet/ExplicitDefaultAccessModifiersAnalyzer
-[1]: http://www.nuget.org/packages/ExplicitDefaultAccessModifiersAnalyzer
+[2]: http://www.nuget.org/packages/ExplicitDefaultAccessModifiersAnalyzer
