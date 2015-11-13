@@ -116,7 +116,7 @@ input, textarea {
 	overflow: hidden;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 	#wrapper {
 		margin-left: 16px;
 		margin-right: 16px;
