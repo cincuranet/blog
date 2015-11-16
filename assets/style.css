@@ -20,7 +20,7 @@ img {
 	border: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	padding-left: 8px;
 	padding-right: 8px;
 	color: #000;
@@ -56,7 +56,7 @@ h4 {
 }
 
 h5 {
-	margin-bottom: 1em;
+	margin-bottom: .6em;
 	font-size: 1rem;
 	line-height: 1.6;
 
@@ -193,13 +193,6 @@ article p.meta {
 	font-size: .9rem;
 }
 
-article h5 {
-	margin-top: 2.5em;
-	margin-bottom: .5em;
-	padding-left: 8px;
-	padding-right: 8px;
-	text-transform: uppercase;
-}
 
 article blockquote {
 	margin: 0 1em 1em 1em;
