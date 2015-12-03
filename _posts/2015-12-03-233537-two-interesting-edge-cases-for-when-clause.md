@@ -83,7 +83,7 @@ static bool Throw<TException>(Exception ex) where TException : Exception, new()
 
 Running this code will clearly show the exception is not handled. Whether the type is "compatible" with the `catch` clause or not doesn't matter (one might quickly try it changing the `when` clause to i.e. `when (Throw<InvalidCastException>(ex))`).
 
-Alright, so throwing exception is basically the same as returning false.
+Alright, so throwing exception is basically the same as returning `false`.
 
 #### Closing
 
