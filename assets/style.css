@@ -253,6 +253,10 @@ article img {
 	padding-right: 16px;
 }
 
+article > p {
+  overflow-x: auto;
+}
+
 /* -------------------------------------- [ Comments ] */
 
 .comment {
