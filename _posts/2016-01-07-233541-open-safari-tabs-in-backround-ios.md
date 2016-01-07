@@ -15,7 +15,7 @@ Mostly because the menu showed this.
 
 ![image]({{ site.url }}/i/233541/menu.png)
 
-You know. It says "new tab". There's no hint of background or foreground. And I lived with the pain. Until recently. I was looking for something, I don't even remember what, in Settings. And there I saw it. Seatings > Safari > Open Links.
+You know. It says "new tab". There's no hint of background or foreground. And I lived with the pain. Until recently. I was looking for something, I don't even remember what, in Settings. And there I saw it. Settings > Safari > Open Links.
 
 ![image]({{ site.url }}/i/233541/settings.png)
 
