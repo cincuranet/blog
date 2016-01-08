@@ -3,6 +3,7 @@ title: "C# 6 refactoring"
 date: 2016-01-08T06:24:00Z
 tags:
   - C#
+  - Programming in general
 redirect_from: /id/233542/
 category: none
 layout: post
