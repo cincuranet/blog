@@ -1,6 +1,6 @@
 ---
 title: "Open Safari tabs in background (iOS)"
-date: 2016-01-05T17:26:00Z
+date: 2016-01-07T17:26:00Z
 tags:
   - Apple iPhone/iPad/iPod
 redirect_from: /id/233541/
