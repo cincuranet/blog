@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="robots" content="all,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% if page.title != nil %}
+	{% if page.title %}
 	<title>{{ page.title }} | {% include site_name_text.html %}</title>
 	{% else %}
 	<title>{% include site_name_text.html %} | {% include site_description_text.html %}</title>
