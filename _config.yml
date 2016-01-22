@@ -7,7 +7,7 @@ timezone: UTC
 excerpt_separator: <!-- excerpt -->
 site_posts: 20
 feed_posts: 20
-feed: atom.xml
+feed: feed.xml
 sitemap: sitemap.xml
 disqus_shortname: blogcincuranet
 markdown: redcarpet
