@@ -18,7 +18,7 @@ So what I actually did? I just really played little bit with formatting. But the
 
 <!-- excerpt -->
 
-In your PowerShell profile (`$PROFILE`) you can specify `Prompt` function and have the prompt whatever you like. The main part for me is having the blank line, followed by current path on one line and the "real" prompt on new one. From `Bash` I'm used to `$` as a prompt and `#` as root (or `Administrator` in Windows case) respectively. I also change the title of the window to include `ADMIN: ` prefix, just to see it there as well, i.e. for Alt-Tab. Finally I also replace the path from `USERPROFILE` environment variable (if it's there) in current path by `~`.
+In your PowerShell profile (`$PROFILE`) you can specify `Prompt` function and have the prompt whatever you like. The mine is the blank line, followed by current path and the "real" prompt on new line. From `Bash` I'm used to `$` as a prompt and `#` as root (or `Administrator` in Windows case) respectively. I also change the title of the window to include `ADMIN: ` prefix, just to see it there as well, i.e. for Alt-Tab. Finally I also replace the path from `USERPROFILE` environment variable (if it's there) in current path by `~`.
 
 Here's how it looks like.
 
