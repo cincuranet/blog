@@ -3,7 +3,7 @@ title: "My Bash like prompt in PowerShell"
 date: 2016-01-24T19:55:00Z
 tags:
   - PowerShell
-	- Bash
+  - Bash
 redirect_from: /id/233545/
 category: none
 layout: post
