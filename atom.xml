@@ -11,14 +11,11 @@ layout: null
 		<name>{% include site_name_text.html %}</name>
 	</author>
 	<id>{{ site.url }}/</id>
-
-	{% for post in site.posts limit: site.feed_posts %}
 	<entry>
-		<title>{{ post.title }}</title>
-		<link href="{{ site.url }}{{ post.url }}"/>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>{{ site.url }}{{ post.url }}</id>
-		<content type="html">{{ post.content | xml_escape }}</content>
+		<title>Feed moved</title>
+		<link href="{{ site.url }}"/>
+		<updated>2016-01-26T12:00:00+00:00</updated>
+		<id>{{ site.url }}</id>
+		<content type="html">This feed has been moved to new address: {{ site.url }}/{{ site.feed }}</content>
 	</entry>
-	{% endfor %}
 </feed>
