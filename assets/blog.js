@@ -105,8 +105,16 @@ var blog = (function() {
 		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 	}
 
+	function initHeader() {
+		var h1 = $('header > h1');
+		var h2 = $('header > h2');
+		h1.html(h1.html().replace('can\'t', '<span class="low">can\'t</span>').replace('doing it', '<span class="low">doing it</span>'));
+		h2.html(h2.html().replace('{x2}', '<span class="low">{x2}</span>'));
+	}
+
 	return {
 		initGeneral: function() {
+			initHeader();
 			initLinks();
 			initImageTitles();
 			initLineNumbers();
