@@ -18,7 +18,7 @@ layout: null
 		<link href="{{ site.url }}{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>{{ site.url }}{{ post.url }}</id>
-		<content type="html">{{ post.excerpt | xml_escape }}</content>
+		<content type="html"><![CDATA[{{ post.excerpt }}<p class="links"><a href="{{ site.url }}{{ post.url }}">{{ site.excerpt_link_name }}</a>]]></content>
 	</entry>
 	{% endfor %}
 </feed>

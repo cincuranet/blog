@@ -5,6 +5,7 @@ url: http://blog.cincura.net
 permalink: /:title/
 timezone: UTC
 excerpt_separator: <!-- excerpt -->
+excerpt_link_name: Continue reading...
 site_posts: 20
 feed_posts: 20
 feed: feed.xml
