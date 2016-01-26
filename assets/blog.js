@@ -106,9 +106,9 @@ var blog = (function() {
 	}
 
 	function initHeader() {
-		var h1 = $('header > h1');
-		var h2 = $('header > h2');
+		var h1 = $('header h1');
 		h1.html(h1.html().replace('can\'t', '<span class="low">can\'t</span>').replace('doing it', '<span class="low">doing it</span>'));
+		var h2 = $('header h2');
 		h2.html(h2.html().replace('{x2}', '<span class="low">{x2}</span>'));
 	}
 
