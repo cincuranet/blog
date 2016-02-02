@@ -4,8 +4,8 @@ date: 2015-04-17T06:49:00Z
 tags:
   - Announcements &amp; Invitations 
   - Presentations &amp; Speaking
-	- Azure
-	- Cloud
+  - Azure
+  - Cloud
 redirect_from: /id/233505/
 category: none
 layout: post
