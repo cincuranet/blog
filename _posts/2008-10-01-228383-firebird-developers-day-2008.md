@@ -3,7 +3,6 @@ title: "Firebird Developers' Day 2008"
 date: 2008-10-01T16:48:00Z
 tags:
   - Announcements &amp; Invitations
-  - Conferences
   - Databases in general
   - Entity Framework
   - Firebird

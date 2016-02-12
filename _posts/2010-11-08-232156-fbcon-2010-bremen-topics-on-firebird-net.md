@@ -4,7 +4,6 @@ date: 2010-11-08T18:53:07Z
 tags:
   - .NET
   - Announcements &amp; Invitations
-  - Conferences
   - Databases in general
   - Firebird
   - LINQ

@@ -4,7 +4,6 @@ date: 2009-11-02T11:00:43Z
 tags:
   - .NET
   - Announcements &amp; Invitations
-  - Conferences
   - Databases in general
   - Entity Framework
   - Firebird

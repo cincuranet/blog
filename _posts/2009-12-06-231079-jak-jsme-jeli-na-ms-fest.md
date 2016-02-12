@@ -2,7 +2,6 @@
 title: "Jak jsme jeli na MS Fest"
 date: 2009-12-06T19:11:51Z
 tags:
-  - Conferences
   - Life
 redirect_from: /id/231079/
 category: none

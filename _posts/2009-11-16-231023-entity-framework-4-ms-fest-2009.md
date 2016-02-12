@@ -4,7 +4,6 @@ date: 2009-11-16T12:46:37Z
 tags:
   - .NET
   - Announcements &amp; Invitations
-  - Conferences
   - Entity Framework
   - Entity SQL
   - LINQ

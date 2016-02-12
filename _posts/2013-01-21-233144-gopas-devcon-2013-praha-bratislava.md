@@ -3,7 +3,6 @@ title: "Gopas DevCon 2013 (Praha, Bratislava)"
 date: 2013-01-21T09:00:37Z
 tags:
   - Announcements &amp; Invitations
-  - Conferences
   - Presentations &amp; Speaking
 redirect_from: /id/233144/
 category: none
