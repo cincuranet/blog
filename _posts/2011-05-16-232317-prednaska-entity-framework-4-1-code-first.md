@@ -2,7 +2,6 @@
 title: "Přednáška \"Entity Framework 4.1 - Code First\""
 date: 2011-05-16T10:00:46Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232317/
 category: none

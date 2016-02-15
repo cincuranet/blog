@@ -3,7 +3,6 @@ title: "DDEX provider 3.0.2 for Firebird released"
 date: 2015-07-24T07:37:00Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Databases in general
   - Firebird
   - Visual Studio

@@ -2,7 +2,6 @@
 title: "WUG: Zkušenosti s tvorbou a provozem aplikací na Windows Azure"
 date: 2012-06-05T10:00:32Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232892/
 category: none

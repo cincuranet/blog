@@ -3,7 +3,6 @@ title: "Přednáška ADO.NET Entity Framework - MFF UK, Praha    "
 date: 2009-10-24T10:00:31Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Entity Framework
   - Entity SQL
   - LINQ

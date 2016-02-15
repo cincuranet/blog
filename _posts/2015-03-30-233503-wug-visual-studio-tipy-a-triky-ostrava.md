@@ -2,7 +2,6 @@
 title: "WUG: Visual Studio tipy a triky (Ostrava)"
 date: 2015-03-30T05:43:00Z
 tags:
-  - Announcements &amp; Invitations 
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard

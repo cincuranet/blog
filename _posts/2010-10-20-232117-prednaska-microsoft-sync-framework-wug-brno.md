@@ -2,7 +2,6 @@
 title: "Přednáška Microsoft Sync Framework - WUG Brno"
 date: 2010-10-20T18:37:42Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232117/
 category: none

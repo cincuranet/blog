@@ -2,7 +2,6 @@
 title: "WUG: ADO.NET Entity Framework - Co je nového"
 date: 2011-10-31T11:00:05Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232553/
 category: none

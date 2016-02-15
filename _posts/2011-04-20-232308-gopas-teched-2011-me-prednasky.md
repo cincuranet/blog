@@ -2,7 +2,6 @@
 title: "Gopas TechEd 2011 - mé přednášky"
 date: 2011-04-20T10:00:01Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232308/
 category: none

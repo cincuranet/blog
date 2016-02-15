@@ -2,7 +2,6 @@
 title: "Firebird Developers' Day 2007"
 date: 2007-10-11T08:43:00Z
 tags:
-  - Announcements &amp; Invitations
   - Databases in general
   - Firebird
 redirect_from: /id/226498/

@@ -2,7 +2,6 @@
 title: "FirebirdClient 2.5.1 released"
 date: 2009-09-12T14:25:52Z
 tags:
-  - Announcements &amp; Invitations
   - Firebird
 redirect_from: /id/230806/
 category: none

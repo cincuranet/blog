@@ -3,7 +3,6 @@ title: "ADO.NET provider 4.9.0.0 for Firebird is ready"
 date: 2015-12-19T17:13:00Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - C#
   - Databases in general
   - Entity Framework

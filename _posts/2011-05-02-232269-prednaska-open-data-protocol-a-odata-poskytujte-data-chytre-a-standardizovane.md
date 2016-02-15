@@ -2,7 +2,6 @@
 title: "Přednáška \"Open Data Protocol a OData - poskytujte data chytře a standardizovaně\""
 date: 2011-05-02T10:00:31Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232269/
 category: none

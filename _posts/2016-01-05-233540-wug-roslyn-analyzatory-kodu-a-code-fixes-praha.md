@@ -2,7 +2,6 @@
 title: "WUG: Roslyn: Analyzátory kódu a code fixes (Praha)"
 date: 2016-01-05T17:26:00Z
 tags:
-  - Announcements &amp; Invitations 
   - Presentations &amp; Speaking
   - Visual Studio
   - Roslyn

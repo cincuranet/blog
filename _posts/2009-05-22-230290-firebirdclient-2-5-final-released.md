@@ -3,7 +3,6 @@ title: "FirebirdClient 2.5 Final released"
 date: 2009-05-22T07:50:00Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Entity Framework
   - Firebird
   - LINQ

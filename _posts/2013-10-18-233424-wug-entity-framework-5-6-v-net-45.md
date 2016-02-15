@@ -2,7 +2,6 @@
 title: "WUG: Entity Framework (5, 6) v .NET 4.5"
 date: 2013-10-18T07:01:00Z
 tags:
-  - Announcements &amp; Invitations
   - Entity Framework
   - Presentations &amp; Speaking
 redirect_from: /id/233424/

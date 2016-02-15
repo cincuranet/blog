@@ -2,7 +2,6 @@
 title: "PowerThreading library on NuGet"
 date: 2011-09-04T07:11:16Z
 tags:
-  - Announcements &amp; Invitations
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - NuGet
 redirect_from: /id/232526/

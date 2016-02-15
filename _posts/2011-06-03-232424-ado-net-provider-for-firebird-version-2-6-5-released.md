@@ -3,7 +3,6 @@ title: "ADO.NET provider for Firebird version 2.6.5 released"
 date: 2011-06-03T12:30:01Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Databases in general
   - Entity Framework
   - Entity SQL

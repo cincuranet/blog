@@ -2,7 +2,6 @@
 title: "Firebird's DDEX provider 2.0.6 with Visual Studio 2012 support released"
 date: 2012-09-04T11:28:13Z
 tags:
-  - Announcements &amp; Invitations
   - Firebird
   - Visual Studio
 redirect_from: /id/232999/

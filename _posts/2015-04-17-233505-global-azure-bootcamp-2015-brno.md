@@ -2,7 +2,6 @@
 title: "Global Azure Bootcamp 2015 (Brno)"
 date: 2015-04-17T06:49:00Z
 tags:
-  - Announcements &amp; Invitations 
   - Presentations &amp; Speaking
   - Azure
   - Cloud

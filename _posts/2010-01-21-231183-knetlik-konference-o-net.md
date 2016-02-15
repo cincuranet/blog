@@ -3,7 +3,6 @@ title: "Knetlik - konference o .NET"
 date: 2010-01-21T12:54:02Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/231183/
 category: none

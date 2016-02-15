@@ -3,7 +3,6 @@ title: "ADO.NET provider 3.0.0 for Firebird and DDEX provider 3.0.0 for Firebird
 date: 2012-10-26T13:00:11Z
 tags:
   - .NET
-  - Announcements &amp; Invitations
   - Databases in general
   - Entity Framework
   - Entity SQL

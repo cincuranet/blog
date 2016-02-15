@@ -2,7 +2,6 @@
 title: "Přednáška Open Data Protocol (OData) - WUG Brno"
 date: 2010-09-14T10:00:37Z
 tags:
-  - Announcements &amp; Invitations
   - Presentations &amp; Speaking
 redirect_from: /id/232005/
 category: none
