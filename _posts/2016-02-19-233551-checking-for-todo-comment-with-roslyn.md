@@ -82,7 +82,7 @@ static string MinimizePath(string path)
 {
 	return path.Remove(0, Environment.CurrentDirectory.Length + 1);
 }
-```csharp
+```
 
 I'm trying to find first solution file and then C# project file in current directory. Straightforward. Once I have that I do the looping and looking for the magic comment. Bit of writing to console (for humans, probably) and exit codes (for machines).
 
