@@ -22,9 +22,9 @@ using (var cmd = connection.CreateCommand())
 }
 ```
 
-But the `COUNT` function in Firebird 3 now returns 64bit integer (described in release notes, of course). So the above casting will fail. The `ExecuteScalar` is returning `object` so it can return whatever needed. In this case the `long` is wrapped into it. Casting it to `int` is obviously going to fail.
+But the `COUNT` function in Firebird 3 now returns 64bit integer (described in release notes). So the above casting will fail. The `ExecuteScalar` is returning `object` so it can return whatever needed. In this case the `long` is wrapped into it. Casting it to `int` is obviously going to fail.
 
-There's a bunch of options. Of course you can do the casting in SQL directly and then it datatype will be fine. It's just bit clunky. Maybe better option is to not cast it to some type directly, but convert it. .NET offers a handy [`Convert` class][2] where a [`ToInt32` method][3] is. With that it's enough that the value `ExecuteScalar` returned is a "number" and fit's into `int` (which it should if it worked before).
+There's a bunch of options. Sure you can do the casting in SQL directly and then it datatype will be fine. It's just bit clunky. Maybe better option is to not cast it to some type directly, but convert it. .NET offers a handy [`Convert` class][2] where a [`ToInt32` method][3] is. With that it's enough that the value `ExecuteScalar` returned is a "number" and fit's into `int` (which it should if it worked before).
 
 ```csharp
 using (var cmd = connection.CreateCommand())
