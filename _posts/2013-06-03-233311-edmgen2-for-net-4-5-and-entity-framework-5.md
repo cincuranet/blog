@@ -17,6 +17,8 @@ So I grabbed the sources and did changes to work with Entity Framework 5 and on 
 
 If you're using this tool, please, drop a line in comments. Maybe it could be merged with [Entity Framework sources][9] and be maintained directly by team. Or at least I'll know it's worth to update it to support Entity Framework 6 (by the way view generation speed was improved in Entity Framework 6).
 
+> [Follow up.][10]
+
 [1]: http://www.x2develop.com
 [2]: {{ site.url }}{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}
 [3]: http://msdn.com/ef
@@ -26,3 +28,4 @@ If you're using this tool, please, drop a line in comments. Maybe it could be me
 [7]: https://bitbucket.org/
 [8]: https://bitbucket.org/cincura_net/edmgen2
 [9]: http://entityframework.codeplex.com
+[10]: {{ site.url }}{% post_url 2013-10-05-233421-edmgen2-sources-moved %}
