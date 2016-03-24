@@ -1,5 +1,5 @@
 ---
-title: "DotNetbeer: Roslyn: Analyzátory kódu a code fixes (Brno)"
+title: "DotNetBeer: Roslyn: Analyzátory kódu a code fixes (Brno)"
 date: 2016-03-24T08:34:00Z
 tags:
   - Presentations &amp; Speaking
@@ -10,6 +10,6 @@ redirect_from: /id/233554/
 category: none
 layout: post
 ---
-Máme v Brně novou komunitní akci. DotNetBeer nebo DotNetPivo. No a na třetím "výskytu" - [30.3.2016 v 18:00][1] - se podíváme na Roslyn a analyzátory kodů a vše okolo.  
+Máme v Brně novou komunitní akci. DotNetBeer nebo DotNetPivo. No a na třetím "výskytu" - [30.3.2016 v 18:00][1] - se podíváme na Roslyn a analyzátory kódu a vše okolo.  
 
 [1]: http://www.meetup.com/DotNetPivo-Brno/events/228255603/
