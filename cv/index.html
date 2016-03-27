@@ -47,18 +47,6 @@ layout: null
 				height: 2px;
 				width: 80%;
 			}
-			table.skills {
-				border: 1px black solid;
-				border-top: 0;
-			}
-			td.skills {
-				border-collapse: collapse;
-				border-top: 1px black solid;
-			}
-			td > small {
-				font-size: 10pt;
-				padding-left: 20pt;
-			}
 			.more {
 				font-style: italic;
 			}
@@ -146,123 +134,18 @@ ga('send', 'pageview');
 		</ul>
 		<hr />
 		<h2>Skills:</h2>
-		<table width="100%" class="skills" cellspacing="0" cellpadding="2">
-			<tr>
-				<td class="skills">.NET Framework/C#</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(multithreaded-programming, ADO.NET, Entity Framework, WinForms, ASP.NET MVC, PocketPC/Windows Mobile (Compact Framework), Windows Azure)</small></td></tr>
-			<tr>
-				<td class="skills">Delphi (Object Pascal)/Pascal</td>
-				<td class="skills">high</td>
-				<td class="skills">not using</td>
-			</tr><tr><td colspan="3"><small>(multithreaded-programming, DLL/BPL, CLX, networking (TCP/IP), XML, Win32 API)</small></td></tr>
-			<tr>
-				<td class="skills">relational (SQL) databases - Firebird (InterBase)</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(development, deployment, administration, internals)</small></td></tr>
-			<tr>
-				<td class="skills">relational (SQL) databases - MS SQL</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(development, basic administration)</small></td></tr>
-			<tr>
-				<td class="skills">relational (SQL) databases - Oracle</td>
-				<td class="skills">average</td>
-				<td class="skills">occasionally using</td>
-			</tr><tr><td colspan="3"><small>(development)</small></td></tr>
-			<tr>
-				<td class="skills">relational (SQL) databases - MySQL</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(development)</small></td></tr>
-			<tr>
-				<td class="skills">unit testing, TDD, Continuous Integration/Continuous Delivery</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(NUnit, MSTest, Moq, TeamCity, DI/IoC)</small></td></tr>
-			<tr>
-				<td class="skills">cloud services &amp; programming</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(Windows Azure platform, Amazon AWS platform, AppHarbor)</small></td></tr>
-			<tr>
-				<td class="skills">"newSQL" databases</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(NuoDB)</small></td></tr>
-			<tr>
-				<td class="skills">Win32 API</td>
-				<td class="skills">average</td>
-				<td class="skills">occasionally using</td>
-			</tr>
-			<tr>
-				<td class="skills">PHP</td>
-				<td class="skills">average</td>
-				<td class="skills">occasionally using</td>
-			</tr>
-			<tr>
-				<td class="skills">PowerShell</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr>
-			<tr>
-				<td class="skills">Python</td>
-				<td class="skills">basic</td>
-				<td class="skills">occasionally using</td>
-			</tr>
-			<tr>
-				<td class="skills">XML/XSLT</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr>
-			<tr>
-				<td class="skills">(X)HTML/CSS/AJAX</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(web administration and web creating)</small></td></tr>
-			<tr>
-				<td class="skills">JavaScript</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(web, AJAX)</small></td></tr>
-			<tr>
-				<td class="skills">Windows Server administration</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(Windows Server 2003/2008/2012, Active Directory)</small></td></tr>
-			<tr>
-				<td class="skills">Windows (Client) administration</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr>
-			<tr>
-				<td class="skills">UNIX/Linux administration, shell programming</td>
-				<td class="skills">average</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(server maintenance, bash programming)</small></td></tr>
-			<tr>
-				<td class="skills">Java</td>
-				<td class="skills">basic</td>
-				<td class="skills">occasionally using</td>
-			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-			<tr>
-				<td class="skills">VB.NET</td>
-				<td class="skills">basic</td>
-				<td class="skills">occasionally using</td>
-			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-			<tr>
-				<td class="skills">C/C++</td>
-				<td class="skills">basic</td>
-				<td class="skills">need to refresh</td>
-			</tr><tr><td colspan="3"><small>(code reading)</small></td></tr>
-			<tr>
-				<td class="skills">Source control (Subversion, Git)</td>
-				<td class="skills">high</td>
-				<td class="skills">using</td>
-			</tr><tr><td colspan="3"><small>(also maintaining and installing Subversion server)</small></td></tr>
-		</table>
+		<ul>
+			<li>Actively using:
+				<ul>
+					<li>.NET Framework/C#, cloud (Microsoft Azure, AWS), databases (relational (Firebird, MS SQL, Oracle, MySQL), newSQL (NuoDB)), PowerShell, Python, unit testing/TDD, Continuous Integration, Continuous Delivery, Win32 API, Windows (client) administration, UNIX/Linux usage & shell scripting, source control (SVN, Git)</li>
+				</ul>
+			</li>
+			<li>Passively using:
+				<ul>
+					<li>PHP, Java, C, C++, Delphi/Object Pascal/Pascal, XML/XSLT, (X)HTML/CSS, JavaScript, Windows Server administration</li>
+				</ul>
+			</li>
+		</ul>
 		<hr />
 		<h2>Professional career (contracts):</h2>
 		<ul>
