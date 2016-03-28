@@ -17,8 +17,8 @@ Trying to compile that file immediately returned `error CS1504: Source file '...
 
 So I searched a little and found [Peter Ritchie's blog post][1] where he was actually trying to do the same Though he used `await` statements. But the backing state machine shares the structure with what `yield` produces. Read the post if you're interested in details.
 
-Because somebody already did the work of trying to push it to the limit, I decided I'll stop here. Frankly I should have searched first to save myself few minutes of time it took to generate the 60+GB file. That's how I roll. :)
+Because somebody already did the work of trying to push it to the limit, I decided I'll stop here. Frankly I should have searched first to save myself few minutes of time it took to generate the 60+GB file. But that's how I roll. :)
 
-The good news is, the `int` used for the state machine is not an issue at all. You'll hit other limits way sooner. And honestly having more than, say, 1000 `await`s or `yield`s seems to be like a pretty bad code anyway in real world.
+The good news is, the `int` used for the state machine is not an issue at all. You'll hit other limits way sooner. And honestly having more than, say, 100 `await`s or `yield`s seems to be like a pretty bad code anyway in real world.
 
 [1]: http://blogs.msmvps.com/peterritchie/2012/01/19/c-async-limits-oh-my/
