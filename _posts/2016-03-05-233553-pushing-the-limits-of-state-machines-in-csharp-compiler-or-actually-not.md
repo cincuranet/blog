@@ -7,7 +7,7 @@ redirect_from: /id/233553/
 category: none
 layout: post
 ---
-Tuesday this week I was explaining some internals of `await`. And as you might know it's backed by a state machine not different from what `yield` does. The state machine uses `int` field to track it's state. And I've got an idea to try, what would happen if I'd create a method with more states that the `int` can hold...
+Tuesday this week I was explaining some internals of `await`. And as you might know it's backed by a state machine not different from what `yield` does. The state machine uses `int` field to track it's state. And I've got an idea to try, what would happen if I'd create a method with more states than the `int` can hold...
 
 <!-- excerpt -->
 
