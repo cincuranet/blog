@@ -10,7 +10,6 @@ site_posts: 20
 feed_posts: 20
 feed: feed.xml
 sitemap: sitemap.xml
-disqus_shortname: blogcincuranet
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
