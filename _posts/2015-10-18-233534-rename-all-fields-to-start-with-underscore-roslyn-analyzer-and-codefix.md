@@ -90,4 +90,4 @@ It's pretty raw and simple. Doing only what _I_ needed. No tests 8-).
 
 Anyway if you're interested improving it or integrating it into some of these big refactoring packages, be my guest. Just please keep the credits.
 
-[1]: {{ site.url }}{% post_url 2015-08-22-233523-checking-for-configureawait-false-as-visual-studio-2015-analyzer %}
+[1]: {{ site.address }}{% post_url 2015-08-22-233523-checking-for-configureawait-false-as-visual-studio-2015-analyzer %}

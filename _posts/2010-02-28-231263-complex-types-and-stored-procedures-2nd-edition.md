@@ -14,5 +14,5 @@ Right now I'm running RC of Visual Studio 2010 (the development probably in feat
 
 Looks like complex types, sadly, are still not first class citizens for designer.
 
-[1]: {{ site.url }}{% post_url 2010-01-31-231207-complex-types-and-stored-procedures %}
+[1]: {{ site.address }}{% post_url 2010-01-31-231207-complex-types-and-stored-procedures %}
 [2]: http://social.msdn.microsoft.com/Forums/en-US/adonetefx/thread/528d6d79-e8d8-4db7-86c9-0aa2d29dca08/

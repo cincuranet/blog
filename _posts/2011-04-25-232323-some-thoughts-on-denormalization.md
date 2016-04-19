@@ -32,4 +32,4 @@ Because you write this only once (yes, probably you have to rename some table ne
 My head-split is solved. :)
 
 [1]: http://www.firebirdsql.org
-[2]: {{ site.url }}{% post_url 2011-05-03-232347-tokenize-string-in-sql-firebird-syntax %}
+[2]: {{ site.address }}{% post_url 2011-05-03-232347-tokenize-string-in-sql-firebird-syntax %}

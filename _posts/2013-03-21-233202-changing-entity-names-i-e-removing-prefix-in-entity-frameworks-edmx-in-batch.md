@@ -103,5 +103,5 @@ Of course you can go further and change also names on i.e. navigational properti
 
 Enjoy.
 
-[1]: {{ site.url }}{% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}
+[1]: {{ site.address }}{% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}
 [2]: http://www.thedatafarm.org

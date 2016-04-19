@@ -13,11 +13,11 @@ From time to time I get a question about [SQL Azure][1] and [Entity Framework][2
 
 The following lines will quickly guide you through the steps of using SQL Azure with Entity Framework. You need to have and Azure account ready. There's no way to install SQL Azure to your own server or something like that. First login in to [sql.azure.com][5] and select some project you have there. This will bring you this screen.
 
-![image]({{ site.url }}/i/232236/azure_ef_1.png)
+![image]({{ site.address }}/i/232236/azure_ef_1.png)
 
 By default only `master` database is created and it's up to you to create additional database. Right now you can create from two editions and few sizes: Web and Business and from 1GB to 50GB. The price you'll pay depends on this selection (but not only). For purpose of this article I created 1GB Web edition database.
 
-![image]({{ site.url }}/i/232236/azure_ef_2.png)
+![image]({{ site.address }}/i/232236/azure_ef_2.png)
 
 On the main screen you have a button to get a connection string. I'm often using it, as it's easier for me to get information from it than compose it from pieces on screen. :) Mine is:
 

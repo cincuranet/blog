@@ -18,7 +18,7 @@ And the dynamic point of view? I read somewhere that the target audience is expe
 
 On the other hand, maybe it's a good idea, and only because we're not novices and the "product" isn't enterprise ready, we should understand it and try not to judge it with enterprise-ready eyes. Because we are maybe spinning in our own world not seeing outside the box. But I personally still think the idea how it's done it's wrong.
 
-[1]: {{ site.url }}{% post_url 2010-08-03-231866-lets-try-something-new-what-about-microsoft-data-dll %}
+[1]: {{ site.address }}{% post_url 2010-08-03-231866-lets-try-something-new-what-about-microsoft-data-dll %}
 [2]: http://weblogs.asp.net/davidfowler/archive/2010/08/03/microsoft-data-dll-a-re-introduction.aspx
 [3]: http://search.twitter.com/search?phrase=Microsoft.Data&lang=all&from=cincura_net
 [4]: http://www.asp.net/webmatrix

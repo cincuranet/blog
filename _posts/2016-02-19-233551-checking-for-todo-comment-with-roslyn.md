@@ -88,4 +88,4 @@ I'm trying to find first solution file and then C# project file in current direc
 
 And there you have it. Take it, use it, change it. Enjoy.
 
-[1]: {{ site.url }}{% post_url 2016-02-09-233548-wug-roslyn-analyzatory-kodu-a-code-fixes-zlin %}
+[1]: {{ site.address }}{% post_url 2016-02-09-233548-wug-roslyn-analyzatory-kodu-a-code-fixes-zlin %}

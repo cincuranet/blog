@@ -47,5 +47,5 @@ timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 And what about you? Do you do the "safe" assignment or assign directly?
 
 [1]: http://msdn.microsoft.com/en-us/library/system.threading.timer(v=vs.110).aspx
-[2]: {{ site.url }}{% post_url 2013-10-23-233425-scheduling-absolute-time-operations-with-timer %}
-[3]: {{ site.url }}{% post_url 2012-04-05-232782-executing-method-in-intervals-good-and-bad-approaches %}
+[2]: {{ site.address }}{% post_url 2013-10-23-233425-scheduling-absolute-time-operations-with-timer %}
+[3]: {{ site.address }}{% post_url 2012-04-05-232782-executing-method-in-intervals-good-and-bad-approaches %}

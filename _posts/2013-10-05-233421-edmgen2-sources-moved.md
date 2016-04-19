@@ -13,6 +13,6 @@ Today I decided to move [updated EdmGen2][1] sources from [BitBucket][2] to [Git
 
 Feel free to contribute, issue pull requests, ...
 
-[1]: {{ site.url }}{% post_url 2013-06-03-233311-edmgen2-for-net-4-5-and-entity-framework-5 %}
+[1]: {{ site.address }}{% post_url 2013-06-03-233311-edmgen2-for-net-4-5-and-entity-framework-5 %}
 [2]: https://bitbucket.org/
 [3]: https://github.com/cincuranet/EdmGen2

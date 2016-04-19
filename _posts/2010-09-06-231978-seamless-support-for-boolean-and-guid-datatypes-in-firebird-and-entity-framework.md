@@ -21,7 +21,7 @@ If you wanna try it, grab it from [SVN][6] or [weekly builds][7] and enjoy. And 
 [1]: http://www.firebirdsql.org
 [2]: http://www.microsoft.com/net/
 [3]: http://msdn.microsoft.com/en-us/library/bb399572.aspx
-[4]: {{ site.url }}{% post_url 2009-10-03-230841-generated-primary-key-in-entity-framework-model-from-firebird %}
+[4]: {{ site.address }}{% post_url 2009-10-03-230841-generated-primary-key-in-entity-framework-model-from-firebird %}
 [5]: http://blogs.msdn.com/b/adonet/archive/2009/11/05/model-first-with-the-entity-framework-4.aspx
 [6]: http://firebird.svn.sourceforge.net/svnroot/firebird/NETProvider/trunk/
 [7]: http://netprovider.cincura.net

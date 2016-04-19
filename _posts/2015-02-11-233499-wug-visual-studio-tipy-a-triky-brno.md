@@ -18,4 +18,4 @@ Zároveň malý pohled pod pokličku ukazuje, že ani Ostrava nepřijde zkrátka
 Takže 17.2.2015 od 17:00 na [WUGu v Brně][1] vám ukážu co všechno se dá rychle dělat, aniž by bylo třeba myší, touchpadů nebo třeba velkých pluginů. 
 
 [1]: http://www.wug.cz/brno/akce/717-Visual-Studio-tipy-a-triky
-[2]: {{ site.url }}{% post_url 2015-01-20-233494-wug-visual-studio-tipy-a-triky-zlin %}
+[2]: {{ site.address }}{% post_url 2015-01-20-233494-wug-visual-studio-tipy-a-triky-zlin %}

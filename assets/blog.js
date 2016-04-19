@@ -2,7 +2,7 @@
 ---
 var blog = (function() {
 	function initLinks() {
-		$('article a:not(a[href*="blog.cincura.net"])').attr('target', '_blank');
+		$('article a:not(a[href*="{{ site.address }}"])').attr('target', '_blank');
 	}
 
 	function initImageTitles() {
@@ -25,7 +25,7 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
-		$('article a[href*="blog.cincura.net/i/"]:has(img)').attr('rel', 'gallery').fancybox({
+		$('article a[href*="{{ site.address }}/i/"]:has(img)').attr('rel', 'gallery').fancybox({
 			openEffect: 'fade',
 			closeEffect: 'fade',
 			nextEffect: 'fade',
@@ -38,8 +38,8 @@ var blog = (function() {
 			if (e.which == 13) {
 				e.preventDefault();
 				var query = $(e.target).val();
-				var site = '{{ site.url }}';
-				window.open('https://www.google.com/search?q=' + query + ' site:' + site.replace(/^https?:\/\//,''));
+				var site = '{{ site.address }}'.replace(/^\/\//, '');
+				window.open('https://www.google.com/search?q=' + query + ' site:' + site);
 			}
 		});
 	}
@@ -90,7 +90,7 @@ var blog = (function() {
 
 	function initFullDisqus(postUrl) {
 		disqus_config = function () {
-			this.page.url = '{{ site.url }}' + postUrl;
+			this.page.url = 'http:{{ site.address }}' + postUrl;
 		};
 
 		var d = document, s = d.createElement('script');

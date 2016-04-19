@@ -57,8 +57,8 @@ I also made `MakeUpperCase` method virtual in case somebody would like to make s
 
 With this it shouldn't take long to create bunch of custom conventions (and combine these) to match naming conventions - like `T_<tablename>`, `F_<columnname>` or `PropertyName` -> `PROPERTY_NAME`.  
 
-[1]: {{ site.url }}{% post_url 2013-03-06-233167-custom-conventions-in-entity-framework-6-helping-firebird %}
-[2]: {{ site.url }}{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}
+[1]: {{ site.address }}{% post_url 2013-03-06-233167-custom-conventions-in-entity-framework-6-helping-firebird %}
+[2]: {{ site.address }}{% post_url 2013-03-11-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}
 [3]: http://msdn.microsoft.com/en-us/library/dn338062(v=vs.113).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.core.metadata.edm.edmproperty(v=vs.113).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.data.entity.core.metadata.edm.entitytype(v=vs.113).aspx

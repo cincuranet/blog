@@ -22,4 +22,4 @@ Yup. Pretty confusing. I was not expecting that. I'd really like to know the rea
 
 [1]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa394418(v=vs.85).aspx
 [2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa389390(v=vs.85).aspx
-[3]: {{ site.url }}{% post_url 2016-01-08-233543-win32-service-class-bit-me-again %}
+[3]: {{ site.address }}{% post_url 2016-01-08-233543-win32-service-class-bit-me-again %}

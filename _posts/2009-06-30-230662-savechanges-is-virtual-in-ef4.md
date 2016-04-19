@@ -17,5 +17,5 @@ The method also have new [SaveOptions][4] parameter. As it's enum we can expect 
 
 [1]: http://msdn.microsoft.com/en-us/library/dd395500(VS.100).aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.savingchanges.aspx
-[3]: {{ site.url }}{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}
+[3]: {{ site.address }}{% post_url 2009-02-24-229056-onvalidate-like-validation-in-entity-framework %}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.objects.saveoptions(VS.100).aspx

@@ -72,4 +72,4 @@ namespace port_listen
 }
 ```
 
-[1]: {{ site.url }}{% post_url 2014-07-22-233470-tcplistener-and-tcpclient-an-easy-to-use-example-part-2 %}
+[1]: {{ site.address }}{% post_url 2014-07-22-233470-tcplistener-and-tcpclient-an-easy-to-use-example-part-2 %}

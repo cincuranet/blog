@@ -43,4 +43,4 @@ catch (HttpRequestException ex) when (ex.InnerException is WebException)
 
 I think this is great example. It's shorter, more "ordered", sort of, and thus more readable. What do you think?
 
-[1]: {{ site.url }}{% post_url 2015-11-24-233536-ms-fest-2015-praha %}
+[1]: {{ site.address }}{% post_url 2015-11-24-233536-ms-fest-2015-praha %}

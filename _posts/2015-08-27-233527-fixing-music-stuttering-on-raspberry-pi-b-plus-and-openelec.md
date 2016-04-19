@@ -43,6 +43,6 @@ Although a lot of articles mentions this with respect to video, it applies to au
 
 Now I can nicely enjoy my music and relax. 
 
-[1]: {{ site.url }}{% post_url 2014-12-06-233491-tp-link-tl-wn723n-on-raspberry-pi-plus-b-with-openelec %}
+[1]: {{ site.address }}{% post_url 2014-12-06-233491-tp-link-tl-wn723n-on-raspberry-pi-plus-b-with-openelec %}
 [2]: http://kodi.wiki/view/HOW-TO:Modify_the_video_cache#Cache_settings
 [3]: http://kodi.wiki/view/Advancedsettings.xml

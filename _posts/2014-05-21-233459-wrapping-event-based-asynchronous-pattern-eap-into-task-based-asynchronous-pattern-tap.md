@@ -117,7 +117,7 @@ Anyway I believe you should first try wrapping [asynchronous programming model (
 
 If you're stuck with EAP, I hope the code above helps.
 
-[1]: {{ site.url }}{% post_url 2014-05-13-233457-wug-asynchronni-a-paralelni-programovani-v-netu %}
+[1]: {{ site.address }}{% post_url 2014-05-13-233457-wug-asynchronni-a-paralelni-programovani-v-netu %}
 [2]: http://msdn.microsoft.com/en-us/library/ms228969(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/dd449174(v=vs.110).aspx

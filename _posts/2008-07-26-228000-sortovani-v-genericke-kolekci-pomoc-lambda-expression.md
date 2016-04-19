@@ -17,4 +17,4 @@ public void SortByPosition(bool descending)
 }
 ```
 
-[1]: {{ site.url }}{% post_url 2007-04-18-224878-sortovani-v-genericke-kolekci-anonymni-metodou %}
+[1]: {{ site.address }}{% post_url 2007-04-18-224878-sortovani-v-genericke-kolekci-anonymni-metodou %}

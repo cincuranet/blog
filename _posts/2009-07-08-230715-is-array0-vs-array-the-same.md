@@ -56,4 +56,4 @@ resulted in this IL:
 
 As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.
 
-[1]: {{ site.url }}{% post_url 2007-04-28-224879-concatenating-string-during-compile %}
+[1]: {{ site.address }}{% post_url 2007-04-28-224879-concatenating-string-during-compile %}

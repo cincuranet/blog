@@ -35,9 +35,9 @@ If you have any questions about BlackBerry PlayBook, feel free to use comments.
 
 _This post, except adding links, was completely written on PlayBook._
 
-[1]: {{ site.url }}{% post_url 2011-05-21-232398-blackberry-playbook-first-sight-review %}
+[1]: {{ site.address }}{% post_url 2011-05-21-232398-blackberry-playbook-first-sight-review %}
 [2]: http://us.blackberry.com/playbook-tablet/
-[3]: {{ site.url }}{% post_url 2011-05-21-232398-blackberry-playbook-first-sight-review %}
+[3]: {{ site.address }}{% post_url 2011-05-21-232398-blackberry-playbook-first-sight-review %}
 [4]: http://www.apple.com/itunes/
 [5]: http://www.microsoft.com/windows/
 [6]: http://www.microsoft.com/windowsmobile/

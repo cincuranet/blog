@@ -16,5 +16,5 @@ After creating model from database, creating and rewriting sql scripts for Fireb
 
 Never mind, when another test version will be available be sure, I'll try it and we'll see what's what. :)
 
-[1]: {{ site.url }}{% post_url 2009-07-18-230768-playing-with-astoria-offline %}
+[1]: {{ site.address }}{% post_url 2009-07-18-230768-playing-with-astoria-offline %}
 [2]: http://blogs.msdn.com/pablo

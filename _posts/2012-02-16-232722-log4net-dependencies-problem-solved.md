@@ -16,7 +16,7 @@ So today I pushed version 2.0.0, which is actually 1.2.11 with new keys, and 1.2
 
 Fire is quenched, hopefully.
 
-[1]: {{ site.url }}{% post_url 2011-12-21-232619-log4net-back-alive-on-nuget %}
+[1]: {{ site.address }}{% post_url 2011-12-21-232619-log4net-back-alive-on-nuget %}
 [2]: http://semver.org/
-[3]: {{ site.url }}{% post_url 2011-12-21-232619-log4net-back-alive-on-nuget %}
+[3]: {{ site.address }}{% post_url 2011-12-21-232619-log4net-back-alive-on-nuget %}
 [4]: http://nuget.org/

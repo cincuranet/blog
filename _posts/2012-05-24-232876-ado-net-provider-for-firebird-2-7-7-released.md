@@ -27,7 +27,7 @@ The functionality is mainly about:
 
 You can find all details in [tracker][2] and download it from [website][3] or [NuGet][4].
 
-[1]: {{ site.url }}{% post_url 2012-05-22-232871-disabling-database-triggers-in-firebirdclient %}
+[1]: {{ site.address }}{% post_url 2012-05-22-232871-disabling-database-triggers-in-firebirdclient %}
 [2]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10466
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://nuget.org/packages/firebirdsql.data.firebirdclient

@@ -15,4 +15,4 @@ Musím přiznat, že tento obrat je skvělý a sám bych jej nevymyslel. Míč s
 
 _Pokud máte nějakou aplikaci, která by jeden menší server (1CPU, 1GB RAM, 30GB HDD) potřebovala, dejte mi klidně vědět._
 
-[1]: {{ site.url }}{% post_url 2012-07-05-232935-jak-nezrusit-sluzbu-u-vshosting %}
+[1]: {{ site.address }}{% post_url 2012-07-05-232935-jak-nezrusit-sluzbu-u-vshosting %}

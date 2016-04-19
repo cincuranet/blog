@@ -30,4 +30,4 @@ After adding this, your app should be able to use not only "code time" Firebird,
 
 If you have any perception to this topic, let me know!
 
-[1]: {{ site.url }}{% post_url 2006-02-19-7471-ddex-and-firebird-net-data-provider %}
+[1]: {{ site.address }}{% post_url 2006-02-19-7471-ddex-and-firebird-net-data-provider %}

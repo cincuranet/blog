@@ -73,6 +73,6 @@ internal static IEnumerable<ParallelProjectionResult<TSource, TResult>> Parallel
 #endregion
 ```
 
-[1]: {{ site.url }}{% post_url 2010-08-02-231850-projection-select-on-a-collection-running-in-parallel %}
+[1]: {{ site.address }}{% post_url 2010-08-02-231850-projection-select-on-a-collection-running-in-parallel %}
 [2]: http://msdn.microsoft.com/en-us/library/system.aggregateexception.aspx
-[3]: {{ site.url }}{% post_url 2010-08-02-231850-projection-select-on-a-collection-running-in-parallel %}
+[3]: {{ site.address }}{% post_url 2010-08-02-231850-projection-select-on-a-collection-running-in-parallel %}

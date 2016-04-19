@@ -26,5 +26,5 @@ Some historical references: [link][4], [link][5], [link][6].
 [2]: https://github.com/aspnet/Announcements/issues/42
 [3]: https://github.com/aspnet/EntityFramework/wiki/NuGet-Package-Naming
 [4]: http://thedatafarm.com/blog/data-access/ef4-ef4-ef4/
-[5]: {{ site.url }}{% post_url 2012-01-13-232666-entity-framework-5-0 %}
-[6]: {{ site.url }}{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}
+[5]: {{ site.address }}{% post_url 2012-01-13-232666-entity-framework-5-0 %}
+[6]: {{ site.address }}{% post_url 2012-01-15-232675-entity-framework-5-0-2 %}

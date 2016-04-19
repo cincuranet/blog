@@ -17,4 +17,4 @@ Nope. Not at all. I tried to build FirebirdClient in a Silverlight environment a
 
 If you need data, use ADO.NET Data Services or any other webservices (which will also fit for DDL etc. commands). That also means, that writing Silverlight based Firebird database manager (without any support backend), which is one of few reasonable ideas, cannot be done either.
 
-[1]: {{ site.url }}{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}
+[1]: {{ site.address }}{% post_url 2009-10-03-230843-prednaska-ado-net-entity-framework-microsoft-praha %}

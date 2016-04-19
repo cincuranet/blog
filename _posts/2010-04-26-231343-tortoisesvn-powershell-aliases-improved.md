@@ -16,4 +16,4 @@ function fn_update($path = ".") {tortoiseproc /command:update /path:$path}
 function fn_commit($path = ".") {tortoiseproc /command:commit /path:$path}
 ```
 
-[1]: {{ site.url }}{% post_url 2010-02-23-231239-managing-tortoisesvn-commit-and-update-from-command-line-and-creating-powershell-alias %}
+[1]: {{ site.address }}{% post_url 2010-02-23-231239-managing-tortoisesvn-commit-and-update-from-command-line-and-creating-powershell-alias %}

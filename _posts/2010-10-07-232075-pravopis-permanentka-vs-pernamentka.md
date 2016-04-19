@@ -13,5 +13,5 @@ Takže. Slovo "pernamentka" je blbost. Nic takového není. Správně je permane
 
 Závěr je jednoduchý. Naučte se slovo správně, ať nevypadáte jako blbci (a ať mám já klidné spaní :)).
 
-[1]: {{ site.url }}{% post_url 2009-06-11-230564-pravopis-mne-me %}
+[1]: {{ site.address }}{% post_url 2009-06-11-230564-pravopis-mne-me %}
 [2]: http://prirucka.ujc.cas.cz/?slovo=permanentka

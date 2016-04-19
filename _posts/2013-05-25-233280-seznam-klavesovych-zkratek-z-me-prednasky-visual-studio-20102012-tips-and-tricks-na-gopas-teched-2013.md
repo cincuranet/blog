@@ -69,5 +69,5 @@ Shift-Alt-F11
 >
 ```
 
-[1]: {{ site.url }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}
+[1]: {{ site.address }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}
 [2]: http://www.teched.cz

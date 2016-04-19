@@ -11,7 +11,7 @@ Maybe it's related to [new firmware][1], but today I noticed, that my Kindle no 
 
 _What about others? Feel free to use comments to report result in your country._
 
-[1]: {{ site.url }}{% post_url 2010-06-26-231706-new-kindle-firmware-2-5-reflections %}
+[1]: {{ site.address }}{% post_url 2010-06-26-231706-new-kindle-firmware-2-5-reflections %}
 [2]: http://www.wikipedia.org
 [3]: http://www.amazon.com
 [4]: http://www.id3renamer.com

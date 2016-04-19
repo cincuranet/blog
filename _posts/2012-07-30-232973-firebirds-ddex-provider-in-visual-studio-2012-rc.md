@@ -12,10 +12,10 @@ As with every new Visual Studio, I'm trying the [DDEX provider for Firebird][1] 
 
 Some images to turn you on. :)
 
-![image]({{ site.url }}/i/232973/ddex_fb_vs2012_1.png)
+![image]({{ site.address }}/i/232973/ddex_fb_vs2012_1.png)
 
-![image]({{ site.url }}/i/232973/ddex_fb_vs2012_2.png)
+![image]({{ site.address }}/i/232973/ddex_fb_vs2012_2.png)
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {{ site.url }}{% post_url 2008-11-22-228661-ddex-for-firebird-and-visual-studio-2010 %}
+[2]: {{ site.address }}{% post_url 2008-11-22-228661-ddex-for-firebird-and-visual-studio-2010 %}
 [3]: http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/DataDesignerExtensibility/ReadMe.txt?view=markup

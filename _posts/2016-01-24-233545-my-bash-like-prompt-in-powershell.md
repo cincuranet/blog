@@ -22,7 +22,7 @@ In your PowerShell profile (`$PROFILE`) you can specify `Prompt` function and ha
 
 Here's how it looks like.
 
-![image]({{ site.url }}/i/233545/prompt.png)
+![image]({{ site.address }}/i/233545/prompt.png)
 
 So my `Prompt` function look like this.
 

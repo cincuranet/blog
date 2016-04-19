@@ -118,7 +118,7 @@ See also: [How to use custom objects with associations in Entity Framework][3]
 
 _Published on [Databazovy Svet][4]_
 
-[1]: {{ site.url }}{% post_url 2008-07-08-227892-edmgen-on-steroids-edmgen2 %}
+[1]: {{ site.address }}{% post_url 2008-07-08-227892-edmgen-on-steroids-edmgen2 %}
 [2]: http://msdn.microsoft.com/en-us/library/cc716756.aspx
-[3]: {{ site.url }}{% post_url 2008-10-12-228431-how-to-use-custom-objects-with-associations-in-entity-framework %}
+[3]: {{ site.address }}{% post_url 2008-10-12-228431-how-to-use-custom-objects-with-associations-in-entity-framework %}
 [4]: http://dbsvet.cz/

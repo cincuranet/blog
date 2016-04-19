@@ -15,4 +15,4 @@ I understand that hiding setter causes the updates or inserts to stop working. B
 Anyway it was really "interesting" ;) to find this out.
 
 [1]: http://msdn.microsoft.com/en-us/library/system.data.services.entitysetrights.aspx
-[2]: {{ site.url }}{% post_url 2009-07-02-230674-select-method-kind-of-in-ado-net-data-services-to-exclude-big-blob-fields %}
+[2]: {{ site.address }}{% post_url 2009-07-02-230674-select-method-kind-of-in-ado-net-data-services-to-exclude-big-blob-fields %}

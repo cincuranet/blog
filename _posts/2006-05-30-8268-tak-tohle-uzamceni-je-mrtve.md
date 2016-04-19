@@ -11,4 +11,4 @@ Už jednou jsem zmínil [o knize, za kterou jsem de facto vyhodil peníze][1] a 
 
 No myslím, že každý by mohl přihodit svou vlastní zkušenost, já však doufám, že od této knihy nic sem nepřidám (a že ji konečně dočtu, abych neměl tak velký pocit vyhozených peněz).
 
-[1]: {{ site.url }}{% post_url 2006-02-18-7459-vite-co-je-to-vytvarec %}
+[1]: {{ site.address }}{% post_url 2006-02-18-7459-vite-co-je-to-vytvarec %}

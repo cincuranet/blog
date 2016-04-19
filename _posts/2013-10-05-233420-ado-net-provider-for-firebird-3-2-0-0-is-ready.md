@@ -28,4 +28,4 @@ Enjoy.
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.2.0/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10571&styleName=Text&projectId=10003&Create=Create
-[6]: {{ site.url }}{% post_url 2013-09-05-233412-nbackup-support-in-firebirdclient %}
+[6]: {{ site.address }}{% post_url 2013-09-05-233412-nbackup-support-in-firebirdclient %}

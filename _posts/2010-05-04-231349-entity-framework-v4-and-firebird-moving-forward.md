@@ -19,6 +19,6 @@ In fact right now all the major improvements in Entity Framework v4 are supporte
 The DDEX for Firebird supports Visual Studio 2010 and the full Entity Framework v4 support will be here soon – now you can try a [weekly build][4].  Feel free to ask about anything related.
 
 [1]: http://msdn.microsoft.com/en-us/library/dd395596(VS.100).aspx
-[2]: {{ site.url }}{% post_url 2009-11-24-231060-comparing-date-only-in-ef %}
+[2]: {{ site.address }}{% post_url 2009-11-24-231060-comparing-date-only-in-ef %}
 [3]: http://msdn.microsoft.com/en-us/data/ff628199.aspx
 [4]: http://netprovider.cincura.net

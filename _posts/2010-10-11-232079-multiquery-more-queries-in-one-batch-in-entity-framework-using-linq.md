@@ -137,7 +137,7 @@ A lot of "fetching" methods in Entity Framework supports also [MergeOption][14].
 [4]: http://community.bartdesmet.net/blogs/bart/Default.aspx
 [5]: http://community.bartdesmet.net/blogs/bart/archive/tags/Crazy+Sundays/default.aspx
 [6]: http://msdn.microsoft.com/en-us/library/bb345303.aspx
-[7]: {{ site.url }}{% post_url 2010-04-25-231337-new-translate-and-executestorequery-executestorecommand-on-objectcontext-in-entity-framework-v4 %}
+[7]: {{ site.address }}{% post_url 2010-04-25-231337-new-translate-and-executestorequery-executestorecommand-on-objectcontext-in-entity-framework-v4 %}
 [8]: http://code.msdn.microsoft.com/EFExtensions
 [9]: http://msdn.microsoft.com/en-us/library/h43ks021.aspx
 [10]: http://www.microsoft.com/sqlserver/

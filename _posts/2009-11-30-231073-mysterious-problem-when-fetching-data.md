@@ -13,4 +13,4 @@ This time it's about views in Entity Framework. If you add a view into your mode
 
 Anyway, now I know also the B > A way, which is even better as it was my personal experience.
 
-[1]: {{ site.url }}{% post_url 2009-05-14-230207-what-the-hell-where-s-my-added-view %}
+[1]: {{ site.address }}{% post_url 2009-05-14-230207-what-the-hell-where-s-my-added-view %}

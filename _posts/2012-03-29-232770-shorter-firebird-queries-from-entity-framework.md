@@ -28,6 +28,6 @@ select A.Foo, A.Bar, B.Baz from SomeTable as A join AnotherTable as B ...
 
 Nothing super-cool, but because somebody suggested this in tracker, it's there. On the other hand to be honest I've never hit the query length limit myself. Maybe I'm lucky, maybe I'm writing too simple queries. But still, shorter query means also less data to be transfered. Hope to help to use Entity Framework and Firebird for big stuff. :)
 
-[1]: {{ site.url }}{% post_url 2012-03-28-232764-ado-net-provider-for-firebird-2-7-5-released %}
+[1]: {{ site.address }}{% post_url 2012-03-28-232764-ado-net-provider-for-firebird-2-7-5-released %}
 [2]: http://firebirdsql.org
 [3]: http://msdn.microsoft.com/data/ef

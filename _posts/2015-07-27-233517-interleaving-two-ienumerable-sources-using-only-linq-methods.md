@@ -24,4 +24,4 @@ internal static IEnumerable<T> Interleave<T>(this IEnumerable<T> first, IEnumera
 
 Of course there's a small difference how this method handles `IEnumerable`s with different length compared to the other. But frankly I don't know what's the "correct" behavior (should it be allowed, for example?). Both - the old one and the new one - seem to be fine. Heck there's even a third option. I'll leave that for others. There's not enough small brain teasers. :)      
 
-[1]: {{ site.url }}{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}
+[1]: {{ site.address }}{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}

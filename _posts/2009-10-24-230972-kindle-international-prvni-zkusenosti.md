@@ -13,7 +13,7 @@ Nejprve obrázek.
 
 Porovnání Kindlu s běžnou kreditní kartou:
 
-[![Porovnání Kindlu s běžnou kreditní kartou]({{ site.url }}/i/230972/kindle_1_thumb.jpg)][1]
+[![Porovnání Kindlu s běžnou kreditní kartou]({{ site.address }}/i/230972/kindle_1_thumb.jpg)][1]
 
 Kindle je jednoduchý – za dvě, tři hodiny zmáknete 99% funkcí, včetně vyzkoušení. Tlačítka jsou jasná a ovládání jednoduché, přímočaré. Žádné složité nastavování. Je třeba se připravit, že primárně je to zařízení „pro čtení", takže vše se točí kolem toho – nečekejte nic dalšího.
 
@@ -39,11 +39,11 @@ Máte-li libovolný dotaz, využijte komentářů.  V případě, že budu znát
 
 Zobrazení kódu (původně byl barevný):
 
-![Zobrazení kódu (původně byl barevný)]({{ site.url }}/i/230972/kindle_2.jpg)
+![Zobrazení kódu (původně byl barevný)]({{ site.address }}/i/230972/kindle_2.jpg)
 
 Obrázek (IE se Silverlight aplikací s tlačítky):
 
-![Obrázek (IE se Silverlight aplikací s tlačítky)]({{ site.url }}/i/230972/kindle_3.jpg)
+![Obrázek (IE se Silverlight aplikací s tlačítky)]({{ site.address }}/i/230972/kindle_3.jpg)
 
-[1]: {{ site.url }}/i/230972/kindle_1.jpg
+[1]: {{ site.address }}/i/230972/kindle_1.jpg
 [2]: http://www.amazon.com/kindle

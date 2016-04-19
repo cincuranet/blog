@@ -114,14 +114,14 @@ Considering, I can store data in structured form in tables, use SQL and still be
 
 What's next? We'll explore some failure and scaling scenarios.
 
-[1]: {{ site.url }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}
+[1]: {{ site.address }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}
 [2]: http://www.nuodb.com/
 [3]: http://en.wikipedia.org/wiki/ODBC
 [4]: http://github.com/nuodb/nuodb-drivers
 [5]: http://github.com/nuodb/nuodb-drivers/tree/master/dotnet
 [6]: http://microsoft.com/net
 [7]: http://www.codeproject.com/Articles/7652/Dynamically-adding-DSN-names
-[8]: {{ site.url }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}
+[8]: {{ site.address }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}
 [9]: http://msdn.microsoft.com/en-us/library/e80y5yhx
 [10]: //blog.cincura.net/tag/entity-framework
 [11]: http://msdn.microsoft.com/en-us/library/bb397926.aspx

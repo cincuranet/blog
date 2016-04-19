@@ -19,7 +19,7 @@ Doesn't matter. It's an awesome game. Really. It's simple and me and my friends 
 
 So how it works? You're presented with a canvas with points connected by lines. Unless you're very lucky some lines intersect. Your task is to move the points (click somewhere in the circle) in such a way that the lines do not intersect using as little moves as possible. The number of moves is displayed in title bar. That's it.
 
-![image]({{ site.url }}/i/233521/game.png)
+![image]({{ site.address }}/i/233521/game.png)
 
 Of course there are some rough edges. What you expect from one hour project?
 
@@ -133,5 +133,5 @@ namespace Game
 
 Don't play too hard. ;)
 
-[1]: {{ site.url }}{% post_url 2015-08-05-233520-dirty-html-to-markdown-converter-code %}
+[1]: {{ site.address }}{% post_url 2015-08-05-233520-dirty-html-to-markdown-converter-code %}
 [2]: http://www.fi.muni.cz/

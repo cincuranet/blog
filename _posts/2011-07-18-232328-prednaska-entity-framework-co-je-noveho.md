@@ -13,7 +13,7 @@ Zajímá-li vás co je nového v Entity Frameworku (aktuálně verze 4.1), nezap
 
 Registrace na [wug.cz][4].
 
-[1]: {{ site.url }}{% post_url 2011-04-20-232308-gopas-teched-2011-me-prednasky %}
-[2]: {{ site.url }}{% post_url 2011-05-16-232317-prednaska-entity-framework-4-1-code-first %}
+[1]: {{ site.address }}{% post_url 2011-04-20-232308-gopas-teched-2011-me-prednasky %}
+[2]: {{ site.address }}{% post_url 2011-05-16-232317-prednaska-entity-framework-4-1-code-first %}
 [3]: http://www.wug.cz
 [4]: http://www.wug.cz/praha/akce/409-Entity-Framework-co-je-noveho

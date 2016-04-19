@@ -18,27 +18,27 @@ Following screens will walk you through the application - it's a simple [eBay][4
 
 Home screen - before starting the application:
 
-[![Home screen - before starting the application]({{ site.url }}/i/232415/playbook_1app_01_thumb.jpg)][5]
+[![Home screen - before starting the application]({{ site.address }}/i/232415/playbook_1app_01_thumb.jpg)][5]
 
 Application is starting:
 
-[![Application is starting]({{ site.url }}/i/232415/playbook_1app_02_thumb.jpg)][6]
+[![Application is starting]({{ site.address }}/i/232415/playbook_1app_02_thumb.jpg)][6]
 
 Ready to do the search:
 
-[![Ready to do the search]({{ site.url }}/i/232415/playbook_1app_03_thumb.jpg)][7]
+[![Ready to do the search]({{ site.address }}/i/232415/playbook_1app_03_thumb.jpg)][7]
 
 Search in progress (take notice of super cool throbber 8)):
 
-[![Search in progress (take notice of super cool throbber 8))]({{ site.url }}/i/232415/playbook_1app_04_thumb.jpg)][8]
+[![Search in progress (take notice of super cool throbber 8))]({{ site.address }}/i/232415/playbook_1app_04_thumb.jpg)][8]
 
 Results...:
 
-[![Results...]({{ site.url }}/i/232415/playbook_1app_05_thumb.jpg)][9]
+[![Results...]({{ site.address }}/i/232415/playbook_1app_05_thumb.jpg)][9]
 
 Application while switching to another application:
 
-[![Application while switching to another application]({{ site.url }}/i/232415/playbook_1app_06_thumb.jpg)][10]
+[![Application while switching to another application]({{ site.address }}/i/232415/playbook_1app_06_thumb.jpg)][10]
 
 Cannot say I like the development process, but who knows where it ends (I end).
 
@@ -46,9 +46,9 @@ Cannot say I like the development process, but who knows where it ends (I end).
 [2]: http://us.blackberry.com/developers/tablet/webworks.jsp
 [3]: http://www.odata.org
 [4]: http://www.ebay.com
-[5]: {{ site.url }}/i/232415/playbook_1app_01.png
-[6]: {{ site.url }}/i/232415/playbook_1app_02.png
-[7]: {{ site.url }}/i/232415/playbook_1app_03.png
-[8]: {{ site.url }}/i/232415/playbook_1app_04.png
-[9]: {{ site.url }}/i/232415/playbook_1app_05.png
-[10]: {{ site.url }}/i/232415/playbook_1app_06.png
+[5]: {{ site.address }}/i/232415/playbook_1app_01.png
+[6]: {{ site.address }}/i/232415/playbook_1app_02.png
+[7]: {{ site.address }}/i/232415/playbook_1app_03.png
+[8]: {{ site.address }}/i/232415/playbook_1app_04.png
+[9]: {{ site.address }}/i/232415/playbook_1app_05.png
+[10]: {{ site.address }}/i/232415/playbook_1app_06.png

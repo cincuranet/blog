@@ -28,4 +28,4 @@ Hit the NuGet.
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/4.1.0/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10583&styleName=Text&projectId=10003
-[6]: {{ site.url }}{% post_url 2013-11-18-233429-ado-net-provider-for-firebird-4-0-0-0-is-ready %}
+[6]: {{ site.address }}{% post_url 2013-11-18-233429-ado-net-provider-for-firebird-4-0-0-0-is-ready %}

@@ -15,4 +15,4 @@ Vzal jsem první WPF sample s pěknou 3D animací a udělal z toho aplikaci, bez
 
 Zde je vidět desktop s běžící aplikací:
 
-![image]({{ site.url }}/i/230602/desktop_CubeAnimation.jpg)
+![image]({{ site.address }}/i/230602/desktop_CubeAnimation.jpg)
