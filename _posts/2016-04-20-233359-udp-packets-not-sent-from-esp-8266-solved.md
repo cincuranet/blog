@@ -29,7 +29,7 @@ client.endPacket();
 
 I was playing with different IP addresses - unicast, broadcast. Nothing was working. As I was digging deeper I faced few times WDT reset. Good night sleep and I was able to connect the dots. I changed my code to use `ESP.deepSleep` (as I was prototyping more real world scenario) from `delay` one day ago. And this call was right after returning from the sending method (the one above). Could it be, that the board didn't had time to finish everything before going to sleep?
 
-So I modified the code slightly (I tried calling `yield` blindly, I'm still learning, although this seemed like a reasonable function to have ;)).
+So I modified the code slightly (I tried calling `yield` blindly first before going safely to `delay` - I'm still learning, although this seemed like a reasonable function to have ;)).
 
 ```cpp
 WiFiUDP client;
