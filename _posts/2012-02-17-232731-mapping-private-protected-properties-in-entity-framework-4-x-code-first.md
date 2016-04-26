@@ -41,4 +41,4 @@ Nice isn't it? It's separated (kind of - you can't have entity classes in one as
 [1]: {{ site.address }}{% post_url 2010-11-04-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}
 [2]: http://blogs.msdn.com/b/adonet/archive/2012/02/09/ef-4-3-released.aspx
 [3]: http://nuget.org/packages/Mono.Linq.Expressions
-[4]: {{ site.address }}{% post_url 2010-11-04-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4.md %}#comments
+[4]: {{ site.address }}{% post_url 2010-11-04-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}#comments
