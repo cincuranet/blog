@@ -49,7 +49,7 @@ Thus if you need somewhere this "cached already completed" `Task` you can simply
 
 Both ways are valid and correct. The `Task.Delay(0)` is just there waiting for you, and even probably `ngen`ed.
 
-> [On .NET 4.6 and up you can use `Task.CompletedTask` directly][3].
+> [On .NET 4.6 and up you can use `Task.CompletedTask` directly.][3]
 
 [1]: http://msdn.microsoft.com/en-us/library/dd460717(v=vs.110).aspx
 [2]: http://referencesource.microsoft.com/#mscorlib/system/threading/Tasks/Task.cs#5868
