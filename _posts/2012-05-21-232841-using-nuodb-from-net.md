@@ -123,5 +123,5 @@ What's next? We'll explore some failure and scaling scenarios.
 [7]: http://www.codeproject.com/Articles/7652/Dynamically-adding-DSN-names
 [8]: {{ site.address }}{% post_url 2012-05-07-232827-nuodb-starting-with-newsql-database %}
 [9]: http://msdn.microsoft.com/en-us/library/e80y5yhx
-[10]: //blog.cincura.net/tag/entity-framework
+[10]: http://msdn.com/ef
 [11]: http://msdn.microsoft.com/en-us/library/bb397926.aspx
