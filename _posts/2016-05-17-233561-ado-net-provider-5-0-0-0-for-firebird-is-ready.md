@@ -19,6 +19,8 @@ New 5.0.0.0 version of [ADO.NET provider for Firebird][1] is ready for download.
 
 This release contains two new big features, both focused on Firebird 3. The `BOOLEAN` datatype is now supported (except Entity Framework mapping, currently). And SRP authentication is supported on Firebird 3. I think these are the most fundamental new features so I'm releasing it now. There's more to come.  
 
+Also internals of the protocol handling were refactored and slightly cleaned up (and more to do). Hopefully that will enable easier improvements and fixes in the future.  
+
 <!-- excerpt -->
 
 Overview of changes can be found in [tracker][4].
