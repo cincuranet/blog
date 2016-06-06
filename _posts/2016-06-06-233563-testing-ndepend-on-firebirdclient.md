@@ -36,9 +36,15 @@ Interesting that even the functionality was added in general, all the cleanup ar
 
 Some other numbers I though might be interesting too.
 
+Code size:
+
 ![Code size]({{ site.address }}/i/233563/compare/code_size.png)
 
+Code numbers - maximums and averages:
+
 ![Code numbers - maximums and averages]({{ site.address }}/i/233563/compare/maximum_average.png)
+
+Third-party assemblies usages:
 
 ![Third-party assemblies usages]({{ site.address }}/i/233563/compare/3usage.png)
 
