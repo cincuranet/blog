@@ -3,6 +3,7 @@
 var blog = (function() {
 	function initLinks() {
 		$('article a:not(a[href*="{{ site.address }}"])').attr('target', '_blank');
+		$('article a[href*="{{ site.address }}/i/"]').attr('target', '_blank');
 	}
 
 	function initImageTitles() {
