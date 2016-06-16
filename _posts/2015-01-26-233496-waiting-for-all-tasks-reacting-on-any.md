@@ -25,7 +25,7 @@ public static async Task WhenAllOnAny(Task[] tasks, Action<Task> onAny)
 }
 ```
 
-I looked like a good mental training initially, but at the end it's pretty boring. Disappointed.
+It looked like a good mental training initially, but at the end it's pretty boring. Disappointed.
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.whenany%28v=vs.110%29.aspx
 [2]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith(v=vs.110).aspx
