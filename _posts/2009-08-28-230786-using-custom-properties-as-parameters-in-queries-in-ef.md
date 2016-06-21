@@ -36,7 +36,7 @@ public bool IsReadyToShip
 
 But with this property you're not able to query for all Foos ready to ship. Luckily the solution is pretty easy. First you'll create expression for this:
 
-<pre class=brush:csharp">
+```csharp
 public static Expression<Func<Foo, bool>> IsReadyToShipExpression = f => f.IsAccepted.HasValue && f.IsAccepted && f.IsPaid && f.IsPacked;
 ```
 
