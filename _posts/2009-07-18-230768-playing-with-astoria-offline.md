@@ -11,7 +11,7 @@ redirect_from: /id/230768/
 category: none
 layout: post
 ---
-<p>Astoria so called offline has been released while ago. But until now I have no time and yen for playing with it. When I first heard about offline support for Astoria I was thinking, hmm that's going to be cool and though that it will be build inside the client itself, with an option to store this information and do offline work when no connection is available - something like "we suppose the connection is mostly available, hence this is only for the few cases when not".
+Astoria so called offline has been released while ago. But until now I have no time and yen for playing with it. When I first heard about offline support for Astoria I was thinking, hmm that's going to be cool and though that it will be build inside the client itself, with an option to store this information and do offline work when no connection is available - something like "we suppose the connection is mostly available, hence this is only for the few cases when not".
 
 But not. Astoria offline (at least the [preview][1] is based on, of course, regular Astoria and Entity Framework and then Sync Framework.So finally it works like this. You're doing queries using Entity Framework (local model) and local SQLCE database and if you need to get fresh data and/or push data back, you simply synchronize this source, using Sync Framework, with the webservice. That's a little bit different from what I was expecting. :)
 
