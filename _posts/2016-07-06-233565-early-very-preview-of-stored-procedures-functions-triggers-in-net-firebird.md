@@ -131,6 +131,7 @@ Important part is the `external name` in format `<assembly location without exte
 I'd like to hear some feedback whether this is something you'd like to see move forward (else it was nice brain excercise for me :)) and probably help move it forward. And also general ideas about how it could take shape.
 
 Some ideas I have in my head:
+
 * Allow the routine to attach to current transaction. So in the same as transaction as the routine is being executed one would be able to use regular `FbConnection` etc.
 * Load (and unload) the assembly with routines only when needed.
 * Caching of some heavy reflection calls.
