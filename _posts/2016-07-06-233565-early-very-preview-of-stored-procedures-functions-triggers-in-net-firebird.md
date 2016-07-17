@@ -135,7 +135,7 @@ Some ideas I have in my head:
 * Allow the routine to attach to current transaction. So in the same as transaction as the routine is being executed one would be able to use regular `FbConnection` etc.
 * Load (and unload) the assembly with routines only when needed.
 * Caching of some heavy reflection calls.
-* _Maybe_ (to make it extra interesting :)) ability to store the code of the routine in a table and compile and execute it on the fly (maybe some caching). 
+* _Maybe_ (to make it extra interesting :)) ability to store the code of the routine in a table and compile and execute it on the fly (with some caching). 
 
 [1]: {{ site.address }}/i/233565/FbNetExternalEngine32.7z
 [2]: {{ site.address }}/i/233565/FbNetExternalEngine64.7z
