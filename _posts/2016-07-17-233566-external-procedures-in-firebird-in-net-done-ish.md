@@ -21,7 +21,7 @@ The concepts are still the same as before. It should just work better and could 
 
 I'd like to get some feedback how it's used and what you'd like to have implemented. Before I get enough ideas and so on I'll suspend my work on this and focus also a little on FirebirdClient. Let's see where this ends.
 
-_BTW if you very closely you might find kind of easter egg. ;)_   
+_BTW if you look very closely you might find kind of easter egg. ;)_   
 
 [1]: {{ site.address }}/i/233566/FbNetExternalEngine32.7z
 [2]: {{ site.address }}/i/233566/FbNetExternalEngine64.7z
