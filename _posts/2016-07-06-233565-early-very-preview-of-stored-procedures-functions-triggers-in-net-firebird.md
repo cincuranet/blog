@@ -11,6 +11,8 @@ redirect_from: /id/233565/
 category: none
 layout: post
 ---
+> [Follow-up post.][6]
+
 [Firebird 3][3] - with it's new plugin architecture - has a feature that allows execute stored procedures, functions and triggers in environment different from inside engine. Basically one can write (or rather use) plugin that allow to write i.e. triggers in different language like C++ (or any native code). Nice. But I like to write in .NET and C#.
 
 So I set out to try to write such plugin and funnel the data to and from .NET where it will be executed...
@@ -142,3 +144,4 @@ Some ideas I have in my head:
 [3]: http://firebirdsql.org/
 [4]: https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx
 [5]: https://msdn.microsoft.com/en-us/library/dd386941(v=vs.110).aspx
+[6]: {{ site.address }}{% post_url 2016-07-17-233566-external-procedures-in-firebird-in-net-done-ish %}
