@@ -15,4 +15,4 @@ I want to make some small addition to this post. There's another stuff to think 
 You should always consider the cost of parsing, compiling, finding execution plan etc. the query on server as well as fetching the intermediate data (which may cause cleaning up caches etc.). Thus sometimes (and we're back to balance as Julie said) it's better to issue couple of smaller (not so complex) queries, rather than one huge query.
 
 [1]: http://www.thedatafarm.com/blog/2009/03/30/TheCostOfEagerLoadingInEntityFramework.aspx
-[2]: http://blog.cincura.net/contact/
+[2]: {{ site.address }}/contact

@@ -15,5 +15,5 @@ After some poking around, research etc. I found that there's indeed a limitation
 
 Wondering how's possible I never thought about this myself before??? :)
 
-[1]: /contact
+[1]: {{ site.address }}/contact
 [2]: http://msdn.microsoft.com/en-us/library/system.data.services.mimetypeattribute.aspx
