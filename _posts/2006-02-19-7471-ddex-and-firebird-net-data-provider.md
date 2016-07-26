@@ -19,4 +19,3 @@ Well, in this article I'm going do describe step-by-step how-to add Firebird .NE
 Now you can startup the VS and try to add database to Database Explorer toolbox. If you will follow these steps exactly, you have 99,9% chance for success. :)
 
 PS: Sorry for my English. ;)
-

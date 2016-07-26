@@ -15,4 +15,3 @@ start flamerobin_unicode.exe /uh "%cd%conf"
 ```
 
 It's simply as it can be. First it sets the dir where it is as working and then runs the FR binary. That's all. You can use it on flash drive, on network drive, wherever you want.
-
