@@ -15,4 +15,4 @@ _Do you have any interesting usage of Firebird and/or FirebirdClient? Let [us][
 [2]: http://www.firebirdsql.org
 [3]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
 [4]: http://www.firebirdsql.org/index.php?op=lists#ibdi
-[5]: {{ site.address }}/about/
+[5]: /about/

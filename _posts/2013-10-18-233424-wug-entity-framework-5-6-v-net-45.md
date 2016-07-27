@@ -15,8 +15,8 @@ Moje přednáška na téma [Entity Framework (5, 6) v .NET 4.5][4] se koná 24. 
 
 [Link na registraci.][5]
 
-[1]: {{ site.address }}{% post_url 2013-10-08-233422-ms-fest-2013-brno-praha %}
-[2]: {{ site.address }}{% post_url 2013-05-13-233262-gopas-teched-2013 %}
+[1]: {% post_url 2013-10-08-233422-ms-fest-2013-brno-praha %}
+[2]: {% post_url 2013-05-13-233262-gopas-teched-2013 %}
 [3]: http://www.wug.cz
 [4]: http://wug.cz/zlin/akce/612-Entity-Framework-5-6-v-NET-4-5
 [5]: http://wug.cz/zlin/akce/612-Entity-Framework-5-6-v-NET-4-5

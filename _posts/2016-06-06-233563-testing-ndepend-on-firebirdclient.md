@@ -14,7 +14,7 @@ Couple of weeks ago [Patrick Smacchia][1] reached to me and offered me a license
 
 Because it's NDepend, I have to look at dependencies graph, right? Here it is (you might open the raw image and scroll a lot).
 
-[![Dependecies]({{ site.address }}/i/233563/current/deps_thumb.png)]({{ site.address }}/i/233563/current/deps.png)
+[![Dependecies](/i/233563/current/deps_thumb.png)](/i/233563/current/deps.png)
 
 Yes, the layering is not perfect. But it's not crappy either, is it? Occasional runs with chainsaw causing breaking changes are paying back. At least here. 8-)
 
@@ -37,22 +37,22 @@ Some other numbers I though might be interesting too.
 
 Code size:
 
-![Code size]({{ site.address }}/i/233563/compare/code_size.png)
+![Code size](/i/233563/compare/code_size.png)
 
 Code numbers - maximums and averages:
 
-![Code numbers - maximums and averages]({{ site.address }}/i/233563/compare/maximum_average.png)
+![Code numbers - maximums and averages](/i/233563/compare/maximum_average.png)
 
 Third-party assemblies usages:
 
-![Third-party assemblies usages]({{ site.address }}/i/233563/compare/3usage.png)
+![Third-party assemblies usages](/i/233563/compare/3usage.png)
 
 I know looking at the report that there are some _critical_ rules violated. Some might be right. Some (maybe even bigger part) not, in my opinion. Not that these rules are wrong. For generic code they make sense. Here's it's often enforced by environment. But if you feel like tackling some of them, feel free to [issue a PR][7].
 
 [1]: http://www.ndepend.com/
 [2]: http://www.sms-timing.com/karting-software
 [3]: http://www.firebirdsql.org/en/net-provider/
-[4]: {{ site.address }}/i/233563/current/NDependOut/NDependReport.html
+[4]: /i/233563/current/NDependOut/NDependReport.html
 [5]: http://www.ndepend.com/default-rules/webframe.html
-[6]: {{ site.address }}/i/233563/compare/NDependOut/NDependReport.html
+[6]: /i/233563/compare/NDependOut/NDependReport.html
 [7]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/pulls

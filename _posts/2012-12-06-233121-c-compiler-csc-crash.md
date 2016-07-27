@@ -11,11 +11,11 @@ Last week I was doing fairly simple change in a project I'm currently working on
 
 First: 
 
-![image]({{ site.address }}/i/233121/csharp_crash.png)
+![image](/i/233121/csharp_crash.png)
 
 Quickly followed by: 
 
-![image]({{ site.address }}/i/233121/csharp_crash2.png)
+![image](/i/233121/csharp_crash2.png)
 
 Well, let's try some basic healing steps. Restarting Visual Studio (2012); no luck. Deleting all `bin`, `obj` etc. and restarting Visual Studio; no luck either. OK, time to use big guns. Restarting complete machine; no luck.
 

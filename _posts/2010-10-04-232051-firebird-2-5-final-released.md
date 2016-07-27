@@ -29,7 +29,7 @@ Note: _The MindTheBird campaign team will run a webinar today at 13:00 GMT in an
 [5]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
 [6]: http://tracker.firebirdsql.org/browse/CORE-1246
 [7]: http://msdn.microsoft.com/en-us/library/bb399572.aspx
-[8]: {{ site.address }}{% post_url 2010-04-03-231316-running-commands-on-firebird-in-background-and-canceling %}
+[8]: {% post_url 2010-04-03-231316-running-commands-on-firebird-in-background-and-canceling %}
 [9]: http://www.firebirdsql.org/
 [10]: http://www.firebirdsql.org/index.php?op=devel&sub=engine
 [11]: http://www.firebirdsql.org/index.php?op=files&id=engine_250

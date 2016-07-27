@@ -9,7 +9,7 @@ layout: post
 ---
 The [Firebird Conference in Hamburg][1] is gone. But there are some resources, that I'm finding in my notebook bag. This picture
 
-![image]({{ site.address }}/i/226725/226725.jpg)
+![image](/i/226725/226725.jpg)
 
 proves that time spent on lunch and between sessions can be productive a lot. :) We've discussed Firebird charsets and collations, common tasks about charset, problems with specific behavior in some countries etc. There're Japanese, Czech, German (and maybe more) characters/language elements. Underlined chars above three Japanese characters in circles is my name (surname as far as i remember) in Japanese characters. Nice, isn't it? :)
 

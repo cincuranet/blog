@@ -12,4 +12,4 @@ Tools > Options > Text Editor > Track Changes.
 
 Používá někdo z vás tuto "lištu" vedomě?
 
-[1]: {{ site.address }}{% post_url 2006-06-08-8358-navigace-v-kodu %}
+[1]: {% post_url 2006-06-08-8358-navigace-v-kodu %}

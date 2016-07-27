@@ -22,6 +22,6 @@ Although the `FileStream.Length` property behavior is completely clear I haven't
 [2]: http://msdn.microsoft.com/en-us/library/system.io.filestream.length(v=vs.110).aspx
 [3]: http://en.wikipedia.org/wiki/Server_Message_Block
 [4]: http://msdn.microsoft.com/en-us/library/system.io.ioexception%28v=vs.110%29.aspx
-[5]: {{ site.address }}{% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}
+[5]: {% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}
 [6]: http://referencesource.microsoft.com/mscorlib/system/io/filestream.cs.html#fa88edfdb51ed91c
 [7]: http://azure.microsoft.com/en-us/services/storage/

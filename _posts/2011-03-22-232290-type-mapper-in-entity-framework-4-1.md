@@ -34,5 +34,5 @@ class FooBarConfiguration : EntityTypeConfiguration<FooBar>
 
 At first I was confused, but after quick email exchange with EF team the "issue" was clear.
 
-[1]: {{ site.address }}{% post_url 2011-03-21-232283-removing-all-conventions-in-entity-framework-4-1-code-first %}
+[1]: {% post_url 2011-03-21-232283-removing-all-conventions-in-entity-framework-4-1-code-first %}
 [2]: http://msdn.microsoft.com/en-us/magazine/gg232765.aspx

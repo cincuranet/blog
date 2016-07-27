@@ -61,5 +61,5 @@ Interesting may be also the object model aka objects created from conceptual mod
 [5]: http://thedatafarm.com/blog/data-access/quick-trick-for-forcing-metadataworkspace-itemcollections-to-load/
 [6]: http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataitem.metadataproperties.aspx
 [7]: http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.edmfunction.parameters.aspx
-[8]: {{ site.address }}{% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}
+[8]: {% post_url 2008-12-16-228787-make-your-entity-framework-model-faster-with-edmgen2 %}
 [9]: http://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/

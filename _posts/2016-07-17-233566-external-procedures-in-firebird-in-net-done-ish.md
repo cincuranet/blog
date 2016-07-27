@@ -22,6 +22,6 @@ I'd like to get some feedback how it's used and what you'd like to have implemen
 
 _BTW if you look very closely you might find kind of easter egg. ;)_   
 
-[1]: {{ site.address }}/i/233566/FbNetExternalEngine32.7z
-[2]: {{ site.address }}/i/233566/FbNetExternalEngine64.7z
-[3]: {{ site.address }}{% post_url 2016-07-06-233565-early-very-preview-of-stored-procedures-functions-triggers-in-net-firebird %}
+[1]: /i/233566/FbNetExternalEngine32.7z
+[2]: /i/233566/FbNetExternalEngine64.7z
+[3]: {% post_url 2016-07-06-233565-early-very-preview-of-stored-procedures-functions-triggers-in-net-firebird %}

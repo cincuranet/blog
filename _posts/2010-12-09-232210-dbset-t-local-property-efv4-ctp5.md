@@ -63,7 +63,7 @@ As always, nothing huge, but nice, handy.
 PS: Did you noticed, I'm using [Firebird][5]? ;)
 
 [1]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d
-[2]: {{ site.address }}{% post_url 2010-07-26-231816-useful-find-method-on-dbset %}
-[3]: {{ site.address }}{% post_url 2009-02-22-229047-local-queries-2nd-edition %}
+[2]: {% post_url 2010-07-26-231816-useful-find-method-on-dbset %}
+[3]: {% post_url 2009-02-22-229047-local-queries-2nd-edition %}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx
 [5]: http://www.firebirdsql.org/

@@ -15,4 +15,4 @@ Místo a čas: učebna B117, 18:00
 Ed: Aktuálně (bohužel) můžeme přijmout pouze studenty MU.
 
 [1]: http://www.fi.muni.cz/
-[2]: {{ site.address }}/about/
+[2]: /about/

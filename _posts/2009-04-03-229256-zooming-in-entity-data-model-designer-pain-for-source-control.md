@@ -12,4 +12,4 @@ Couldn't help but wonder, why is zoom number saved? Maybe then the scroll positi
 
 I hope in next versions of VS the designer stuff and model itself will be split. Or you can use [EdmGen2][1] and commit only CSDL, MSL, SSDL files and use EDMX just for changing stuff in VS.
 
-[1]: {{ site.address }}{% post_url 2008-07-08-227892-edmgen-on-steroids-edmgen2 %}
+[1]: {% post_url 2008-07-08-227892-edmgen-on-steroids-edmgen2 %}

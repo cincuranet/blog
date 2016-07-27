@@ -29,7 +29,7 @@ You can download it at [http://sourceforge.net/projects/firebird/files/firebird-
 Hope you'll enjoy the release.
 
 [1]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&&pid=10003&fixfor=10400&sorter/field=issuekey&sorter/order=DESC
-[2]: {{ site.address }}{% post_url 2010-12-14-232218-trace-api-support-in-ado-net-provider-for-firebird-fbtrace %}
-[3]: {{ site.address }}{% post_url 2011-05-19-232387-improved-command-logging-in-ado-net-provider-for-firebird %}
+[2]: {% post_url 2010-12-14-232218-trace-api-support-in-ado-net-provider-for-firebird-fbtrace %}
+[3]: {% post_url 2011-05-19-232387-improved-command-logging-in-ado-net-provider-for-firebird %}
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/2.6.5/
 [5]: http://www.firebirdsql.org/en/net-provider/

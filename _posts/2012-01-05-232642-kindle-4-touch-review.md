@@ -10,7 +10,7 @@ When I first saw the news about new [Kindle][1] coming and being with touch supp
 
 Boring story for the beginning. :) Now about the Kindle 4 Touch itself.
 
-[![image]({{ site.address }}/i/232642/kindle4touch_thumb.jpg)][2]
+[![image](/i/232642/kindle4touch_thumb.jpg)][2]
 
 Although you can check the dimensions compared to [Kindle 3 Keyboard][3], something different is feeling. Yes, it feels smaller, but also - to me - little bit heavier and also thicker. The thickness is actually good. The previous Kindle was to thin for my hands. The new one is more comfortable to hold.
 
@@ -27,5 +27,5 @@ Obbligato question at the end. Would I buy it again? Yes, I would. Do I regret i
 _If you have any question or something to try, feel free to ask in comments. I try to answer to my best._
 
 [1]: http://www.kindle.com
-[2]: {{ site.address }}/i/232642/kindle4touch.jpg
-[3]: {{ site.address }}{% post_url 2010-09-14-232014-kindle-3-after-some-time %}
+[2]: /i/232642/kindle4touch.jpg
+[3]: {% post_url 2010-09-14-232014-kindle-3-after-some-time %}

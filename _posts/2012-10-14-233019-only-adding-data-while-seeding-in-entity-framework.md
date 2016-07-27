@@ -68,6 +68,6 @@ context.People.AddOnly(
 
 I promised the students in my course to create method like this and publish it here. I hope they will visit my blog. :)
 
-[1]: {{ site.address }}/about/
+[1]: /about/
 [2]: http://msdn.microsoft.com/en-us/library/cc716791.aspx
 [3]: http://msdn.microsoft.com/en-us/library/hh829453(v=vs.103).aspx

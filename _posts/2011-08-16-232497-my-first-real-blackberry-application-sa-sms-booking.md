@@ -15,7 +15,7 @@ The [SA SMS Booking][6] is free.
 
 Here's the screen (only one) of the [SA SMS Booking][7] 1.0:
 
-![image]({{ site.address }}/i/232497/sasmsbooking1_screen.png)
+![image](/i/232497/sasmsbooking1_screen.png)
 
 It's basic. Focusing only to do the thing you want to do as quickly as possible (I'm sometimes trying to book a seat while trying to catch the bus itself :)).
 

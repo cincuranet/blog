@@ -11,4 +11,4 @@ What's better than finding what you need to fix for upcoming release of product?
 
 Check this out. Nice, isn't it? :-)
 
-![image]({{ site.address }}/i/228661/228661.png)
+![image](/i/228661/228661.png)

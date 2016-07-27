@@ -20,4 +20,4 @@ Luckily last week when I was relying on hotel's Wi-Fi, it was not reliable and I
 
 Now back to work.
 
-[1]: {{ site.address }}{% post_url 2014-09-03-233474-deleting-emails-on-vacation-not-that-simple-isnt-it %}
+[1]: {% post_url 2014-09-03-233474-deleting-emails-on-vacation-not-that-simple-isnt-it %}

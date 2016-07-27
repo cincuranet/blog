@@ -12,10 +12,10 @@ When I'm browsing on my phone I either click on a link and open it in current ta
 
 Mostly because the menu showed this.
 
-![image]({{ site.address }}/i/233541/menu.png)
+![image](/i/233541/menu.png)
 
 You know. It says "new tab". There's no hint of background or foreground. And I lived with the pain. Until recently. I was looking for something, I don't even remember what, in Settings. And there I saw it. Settings > Safari > Open Links.
 
-![image]({{ site.address }}/i/233541/settings.png)
+![image](/i/233541/settings.png)
 
 Eureka. I immediately changed it to "In Background" and my life improved instantly. I just wish I found it earlier.

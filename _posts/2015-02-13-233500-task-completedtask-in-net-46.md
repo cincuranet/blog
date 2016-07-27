@@ -19,4 +19,4 @@ Luckily in .NET 4.6 the before `internal` [`Task.CompletedTask`][1] property is 
 Now to just wait for .NET 4.6 to RTM.
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.completedtask%28v=vs.110%29.aspx
-[2]: {{ site.address }}{% post_url 2014-05-08-233455-better-cached-completed-task %}
+[2]: {% post_url 2014-05-08-233455-better-cached-completed-task %}

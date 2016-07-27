@@ -17,5 +17,5 @@ Now it adds default configuration into your `app.config`/`web.config` and also d
 
 Feedback is welcome.
 
-[1]: {{ site.address }}{% post_url 2013-10-05-233419-log4net-nuget-package-updated-without-some-goodies %}
+[1]: {% post_url 2013-10-05-233419-log4net-nuget-package-updated-without-some-goodies %}
 [2]: http://www.nuget.org/packages/log4net

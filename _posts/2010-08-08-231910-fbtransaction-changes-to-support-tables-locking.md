@@ -34,6 +34,6 @@ Available right now in [weekly builds][7] and [SVN][8].
 [3]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
 [4]: http://tracker.firebirdsql.org/browse/DNET-338
 [5]: http://firebird.1100200.n4.nabble.com/Transaction-configuration-with-the-ADO-NET-Data-provider-for-Firebird-td2311603.html
-[6]: {{ site.address }}{% post_url 2008-10-20-228524-timeout-for-wait-transactions-in-firebirdclient %}
+[6]: {% post_url 2008-10-20-228524-timeout-for-wait-transactions-in-firebirdclient %}
 [7]: http://netprovider.cincura.net
 [8]: http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/

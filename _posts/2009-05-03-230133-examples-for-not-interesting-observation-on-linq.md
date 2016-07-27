@@ -62,6 +62,6 @@ class Class2
 
 The example is magically returning from Where IEnumerable of other class. :) Doing this with couple of standard LINQ operators may confuse your colleagues well. You can also check the "LINQ to Simpsons" from [Bart de Smet][3] to see comprehensive confusing.
 
-[1]: {{ site.address }}{% post_url 2009-04-11-229357-not-interesting-observation-on-linq %}
+[1]: {% post_url 2009-04-11-229357-not-interesting-observation-on-linq %}
 [2]: http://blog.vyvojar.cz/michal/
 [3]: http://community.bartdesmet.net/blogs/bart/Default.aspx

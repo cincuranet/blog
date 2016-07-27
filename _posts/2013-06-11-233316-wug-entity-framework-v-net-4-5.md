@@ -21,5 +21,5 @@ _[Slajdy][5] a [zdrojáky][6]_
 [2]: http://www.wug.cz
 [3]: http://wug.cz/praha/akce/591-Entity-Framework-v-NET-4-5
 [4]: http://wug.cz/praha/akce/591-Entity-Framework-v-NET-4-5
-[5]: {{ site.address }}/i/233316/wug-ef5-6.pdf
-[6]: {{ site.address }}/i/233316/ConsoleApplication2.7z
+[5]: /i/233316/wug-ef5-6.pdf
+[6]: /i/233316/ConsoleApplication2.7z

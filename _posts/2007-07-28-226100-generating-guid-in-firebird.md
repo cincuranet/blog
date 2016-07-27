@@ -24,4 +24,4 @@ GEN_UUID
 CCF4A86789D04F4B8BEE808C5CFCB852
 ```
 
-[1]: {{ site.address }}{% post_url 2007-07-08-225946-guid-in-firebird %}
+[1]: {% post_url 2007-07-08-225946-guid-in-firebird %}

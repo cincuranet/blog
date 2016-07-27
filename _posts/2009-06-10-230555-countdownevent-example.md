@@ -41,7 +41,7 @@ As I said, the work is similar to work with array of ManualResetEvent, just pack
 
 Do you like the class too?
 
-[1]: {{ site.address }}{% post_url 2009-06-09-230550-countdownevent-class %}
+[1]: {% post_url 2009-06-09-230550-countdownevent-class %}
 [2]: http://msdn.microsoft.com/en-us/library/system.threading.manualresetevent.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.countdownevent.addcount(VS.100).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.countdownevent.tryaddcount(VS.100).aspx

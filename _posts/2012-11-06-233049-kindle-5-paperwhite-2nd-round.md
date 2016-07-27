@@ -20,4 +20,4 @@ The battery life doesn't seem to be affected by the frontlight. Mine still lasts
 
 I still like it. I'm really enjoying reading in bed with lights turned off. When I'm done, I just turn off Kindle, put it down and go to sleep. Really, really good experience.
 
-[1]: {{ site.address }}{% post_url 2012-10-17-233024-kindle-5-paperwhite-review %}
+[1]: {% post_url 2012-10-17-233024-kindle-5-paperwhite-review %}

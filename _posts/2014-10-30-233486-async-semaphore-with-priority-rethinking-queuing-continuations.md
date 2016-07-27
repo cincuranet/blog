@@ -68,7 +68,7 @@ Once the `Wait` was gone there was little reason to keep using `Task`. I could q
 
 I'm running it in, same as previous version, a high-load environment. Hope I'll learn something new again.
 
-[1]: {{ site.address }}{% post_url 2014-02-28-233445-async-semaphore-with-priority %}
+[1]: {% post_url 2014-02-28-233445-async-semaphore-with-priority %}
 [2]: http://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.wait(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.threadpool(v=vs.110).aspx

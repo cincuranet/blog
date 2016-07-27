@@ -23,5 +23,5 @@ Last topic that's in my head right now, is working with entities in code - chang
 
 I don't know whether I cover all main basic stuff you can do with EF as I'm writing it from top of my head, bare with me and feel free to comment. And be it as it is right now, if there's 1% chance of being able to use separate ObjectContexts, do it. It will prevent you lot of headaches.
 
-[1]: {{ site.address }}{% post_url 2009-06-30-230662-savechanges-is-virtual-in-ef4 %}
+[1]: {% post_url 2009-06-30-230662-savechanges-is-virtual-in-ef4 %}
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx

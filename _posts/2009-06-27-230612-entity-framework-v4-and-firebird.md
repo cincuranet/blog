@@ -17,5 +17,5 @@ On the other hand, even the new singularize/pluralize function is nice and works
 Anyway, if you found any problems with EF4, let me know.
 
 [1]: http://thedatafarm.com/blog/data-access/ef4-ef4-ef4/
-[2]: {{ site.address }}{% post_url 2008-11-22-228661-ddex-for-firebird-and-visual-studio-2010 %}
-[3]: {{ site.address }}{% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}
+[2]: {% post_url 2008-11-22-228661-ddex-for-firebird-and-visual-studio-2010 %}
+[3]: {% post_url 2008-12-07-228749-making-names-of-entities-or-any-identifiers-in-entity-framework-model-code-and-developer-friendly-not-uppercase %}

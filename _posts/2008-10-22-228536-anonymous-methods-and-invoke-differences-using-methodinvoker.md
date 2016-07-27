@@ -72,4 +72,4 @@ So what to use? I think it's question of personal preferences (and just to be co
 
 _What's your preference?_
 
-[1]: {{ site.address }}{% post_url 2006-06-02-8310-synchronizationcontext-class-how-to-use-it %}
+[1]: {% post_url 2006-06-02-8310-synchronizationcontext-class-how-to-use-it %}

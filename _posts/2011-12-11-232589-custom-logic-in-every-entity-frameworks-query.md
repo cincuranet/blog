@@ -11,11 +11,11 @@ Few days ago there was a question on Twitter in [`#efhelp`][1] about adding cust
 
 First you need to focus you [Entity Set][2] (not [Entity Type][3]) in [Model Browser][4] window.
 
-![image]({{ site.address }}/i/232589/CustomLogicEntitySet1.png)
+![image](/i/232589/CustomLogicEntitySet1.png)
 
 Here set the access modifier to i.e. `private` or (`internal`/`protected`) and rename it to something else, so it'll not interfere with original name of property we're going to create. I often use `X` prefix (especially for properties on entities).
 
-![image]({{ site.address }}/i/232589/CustomLogicEntitySet2.png)
+![image](/i/232589/CustomLogicEntitySet2.png)
 
 Now it's pretty easy to create some logic. Here I simply added filtering to always only fetch entities younger than 10 days from now.
 
@@ -35,7 +35,7 @@ partial class Model1Container
 
 And that's it. Not a difficult task. But also note that through [Entity SQL][5] (or i.e. reflection) somebody might be still able to access original entity set and get access to the data. So it's not rock hard security solution.
 
-[1]: {{ site.address }}{% post_url 2011-11-11-232567-improved-efhelp-hashtag-cooperation-with-efhelp %}
+[1]: {% post_url 2011-11-11-232567-improved-efhelp-hashtag-cooperation-with-efhelp %}
 [2]: http://msdn.microsoft.com/en-us/library/ee382830.aspx
 [3]: http://msdn.microsoft.com/en-us/library/ee382837.aspx
 [4]: http://msdn.microsoft.com/en-us/library/bb738483.aspx

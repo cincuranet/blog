@@ -23,4 +23,4 @@ static void CreateFBDatabase(string host, string fileName, string user, string p
 }
 ```
 
-[1]: {{ site.address }}{% post_url 2006-04-18-7953-creating-firebird-database-programatically-delphi %}
+[1]: {% post_url 2006-04-18-7953-creating-firebird-database-programatically-delphi %}

@@ -34,5 +34,5 @@ See. So I think it's more 2x2 options (and Code First being able to do two tasks
 [7]: http://msdn.microsoft.com/en-us/library/gg696117(v=vs.103).aspx
 [8]: http://msdn.microsoft.com/en-us/library/gg696149(v=vs.103).aspx
 [9]: http://msdn.microsoft.com/en-us/library/system.data.entity.modelconfiguration.conventions.iconvention(v=vs.103).aspx
-[10]: {{ site.address }}{% post_url 2011-05-06-232358-getting-database-script-from-dbcontext-code-first %}
+[10]: {% post_url 2011-05-06-232358-getting-database-script-from-dbcontext-code-first %}
 [11]: http://thedatafarm.com/blog/data-access/model-first-database-first-or-code-first-ndash-update-to-data-points-column/

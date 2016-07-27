@@ -14,5 +14,5 @@ On the other hand, the good news (from reliable source ;)) is, that in RTM this 
 
 [1]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d
 [2]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=4e094902-aeff-4ee2-a12d-5881d4b0dd3e
-[3]: {{ site.address }}{% post_url 2010-12-09-232210-dbset-t-local-property-efv4-ctp5 %}
+[3]: {% post_url 2010-12-09-232210-dbset-t-local-property-efv4-ctp5 %}
 [4]: http://blogs.msdn.com/b/adonet/archive/2010/12/15/ef-feature-ctp5-validation.aspx

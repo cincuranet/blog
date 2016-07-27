@@ -52,6 +52,6 @@ using (testEntities ent = new testEntities())
 
 If you run the code, you'll see it works as expected. Exactly like the generated classes, although these are (pure) POCO classes - no need to use proxies or any special collections. I like the smart work done behind by Entity Framework for me.
 
-[1]: {{ site.address }}{% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}
+[1]: {% post_url 2009-04-22-229660-load-with-filtering-or-limiting %}
 [2]: http://msdn.microsoft.com/en-us/library/bb738708.aspx
-[3]: {{ site.address }}{% post_url 2008-07-29-228036-entity-framework-include-with-func %}
+[3]: {% post_url 2008-07-29-228036-entity-framework-include-with-func %}

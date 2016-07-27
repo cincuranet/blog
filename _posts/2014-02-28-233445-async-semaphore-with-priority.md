@@ -107,4 +107,4 @@ Enjoy. Improvements are welcome.
 [3]: http://blogs.msdn.com/b/pfxteam/archive/2012/02/12/10266983.aspx
 [4]: http://msdn.microsoft.com/en-us/library/hh462723(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx
-[6]: {{ site.address }}{% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}
+[6]: {% post_url 2014-10-30-233486-async-semaphore-with-priority-rethinking-queuing-continuations %}

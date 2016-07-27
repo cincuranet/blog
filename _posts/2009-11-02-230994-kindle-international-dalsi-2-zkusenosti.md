@@ -34,4 +34,4 @@ Systém placení bych řekl je nastaven rozumně, aspoň co jsem mohl vyzkoušet
 
 Pokud máte dotaz, opět jsou komentáře k dispozici.
 
-[1]: {{ site.address }}{% post_url 2009-10-24-230972-kindle-international-prvni-zkusenosti %}
+[1]: {% post_url 2009-10-24-230972-kindle-international-prvni-zkusenosti %}

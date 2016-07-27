@@ -40,6 +40,6 @@ Of course, you can also call `Suspend`, `Stop`, `Resume` and `List` methods to d
 
 This is the initial implementation and some methods may be added (I'm already thinking about a few). Hope you enjoy it. Feel free to play with it and comment here or in list.
 
-[1]: {{ site.address }}{% post_url 2010-11-11-232169-fbcon-10-live-feed %}
+[1]: {% post_url 2010-11-11-232169-fbcon-10-live-feed %}
 [2]: http://www.firebirdsql.org/rlsnotesh/rlsnotes25.html#rnfb25-trace
 [3]: http://www.firebirdsql.org

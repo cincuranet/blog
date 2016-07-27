@@ -37,6 +37,6 @@ internal static IEnumerable<TResult> IncrementalAggregate<TSource, TResult>(this
 
 With it you can do i.e. summing the numbers and know what the intermediate sums were. Yes, sounds weird, but you might need it, one day as I did. :)
 
-[1]: {{ site.address }}{% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}
+[1]: {% post_url 2010-10-05-232039-interleaving-two-ienumerable-sources %}
 [2]: http://msdn.microsoft.com/en-us/library/system.linq.enumerable.aggregate.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx

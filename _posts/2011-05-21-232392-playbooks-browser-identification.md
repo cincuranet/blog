@@ -17,4 +17,4 @@ Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.11+ (KHTML
 
 It contains "PlayBook", so it's easily grep-able.
 
-[1]: {{ site.address }}{% post_url 2010-09-08-231986-identification-of-kindle-browser %}
+[1]: {% post_url 2010-09-08-231986-identification-of-kindle-browser %}

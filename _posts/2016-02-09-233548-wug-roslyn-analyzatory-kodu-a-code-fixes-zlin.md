@@ -36,4 +36,4 @@ SyntaxFactory.Block()
 A případně se podívat na property `ContainsAnnotations` u závorek.
 
 [1]: http://wug.cz/zlin/akce/763-Roslyn-Analyzatory-kodu-a-code-fixes
-[2]: {{ site.address }}{% post_url 2016-01-05-233540-wug-roslyn-analyzatory-kodu-a-code-fixes-praha %}
+[2]: {% post_url 2016-01-05-233540-wug-roslyn-analyzatory-kodu-a-code-fixes-praha %}

@@ -19,7 +19,7 @@ copy C:\WindowsServicePackFilesi386ntkrpamp.exe C:\Windowssystem32ntkrnlpa.exe
 
 Anyway, on real important system I would recommend safe mode too. After reboot the system detected new hardware, installed it and after another reboot I was ready to make the cores screaming.
 
-[1]: {{ site.address }}{% post_url 2009-11-05-231004-virtual-pc-vmware-workstation %}
-[2]: {{ site.address }}{% post_url 2009-11-05-231004-virtual-pc-vmware-workstation %}
+[1]: {% post_url 2009-11-05-231004-virtual-pc-vmware-workstation %}
+[2]: {% post_url 2009-11-05-231004-virtual-pc-vmware-workstation %}
 [3]: http://konference.vyvojar.cz/post.aspx?id=211460
 [4]: http://handaware.com/multiprocessor_XP.html

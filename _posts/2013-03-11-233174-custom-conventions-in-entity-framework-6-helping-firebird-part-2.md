@@ -57,12 +57,12 @@ As you can see it's not magic, if you know where to look at. Because the `Table`
 
 With this conventions, hopefully, all the tables and columns, except specified explicitly, will be renamed to "common" [Firebird][8] naming.
 
-[1]: {{ site.address }}{% post_url 2013-03-06-233167-custom-conventions-in-entity-framework-6-helping-firebird %}
+[1]: {% post_url 2013-03-06-233167-custom-conventions-in-entity-framework-6-helping-firebird %}
 [2]: http://blog.oneunicorn.com/
 [3]: http://msdn.com/ef
-[4]: {{ site.address }}{% post_url 2009-06-14-230583-metadataworkspace-in-entity-framework %}
-[5]: {{ site.address }}{% post_url 2010-08-25-231942-tph-mapping-discriminator-condition-from-metadataworkspace %}
+[4]: {% post_url 2009-06-14-230583-metadataworkspace-in-entity-framework %}
+[5]: {% post_url 2010-08-25-231942-tph-mapping-discriminator-condition-from-metadataworkspace %}
 [6]: http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataitem.metadataproperties.aspx
 [7]: http://entityframework.codeplex.com/workitem/681
 [8]: http://www.firebirdsql.org
-[9]: {{ site.address }}{% post_url 2014-11-11-233488-upper-casing-convention-as-sql-likes-it-in-entity-framework-6 %}
+[9]: {% post_url 2014-11-11-233488-upper-casing-convention-as-sql-likes-it-in-entity-framework-6 %}

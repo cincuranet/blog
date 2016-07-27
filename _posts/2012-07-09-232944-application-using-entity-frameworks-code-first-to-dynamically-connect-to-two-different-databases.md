@@ -188,4 +188,4 @@ I hope everything is clear. If you have a question, comments are here for you, I
 [3]: http://msdn.com/ef
 [4]: http://www.oracle.com/us/products/database/index.html
 [5]: http://www.firebirdsql.org
-[6]: {{ site.address }}/about/
+[6]: /about/
