@@ -70,7 +70,7 @@ var blog = (function() {
 			anchor.append(e);
 		});
 
-		$('.collapsable .collapsable-header').each(function(i,e) {
+		$('.collapsable .collapsable-header').each(function(i, e) {
 			e = $(e);
 			e.click(function() {
 				e.parent().children('.collapsable-item').slideToggle();
