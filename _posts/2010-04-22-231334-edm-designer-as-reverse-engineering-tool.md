@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Entity Framework
 redirect_from: /id/231334/
-category: none
 layout: post
 ---
 Yesterday there was a question in one list I'm following. Simply to share some recommendation for tool being able to reverse engineer the database structure and show some E-R diagram.

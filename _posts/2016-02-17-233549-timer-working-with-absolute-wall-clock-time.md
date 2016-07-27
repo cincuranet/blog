@@ -6,7 +6,6 @@ tags:
   - Windows
   - C#
 redirect_from: /id/233549/
-category: none
 layout: post
 ---
 From time to time I need to create some kind of scheduler for recurring stuff in application. As long as it's based on interval I can use the [`Timer`][1]. But when you need to trigger the action on specific time - wall clock time - it's not smooths sailing. There's a bunch of ways to tackle the problem and each presents different obstacles (like time changes due to NTP synchronization). But this is already solved in Windows kernel. Windows allow you to use timers with either absolute time or intervals.

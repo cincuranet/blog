@@ -6,7 +6,6 @@ tags:
   - Visual Studio
   - Windows
 redirect_from: /id/228555/
-category: none
 layout: post
 ---
 Ačkoli .NET Framework 4 tu ještě není, můžete mrknout na plakát. Více na [http://blogs.msdn.com/brada/archive/2008/10/29/net-framework-4-poster.aspx][1].

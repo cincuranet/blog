@@ -4,7 +4,6 @@ date: 2011-07-10T09:31:12Z
 tags:
   - Entity Framework
 redirect_from: /id/232480/
-category: none
 layout: post
 ---
 There's a lot of new stuff coming with the [Entity Framework June 2011 CTP][1] - enums and spatial types and ... you can find it all around blogosphere. And for sure, I'll cover my finding as I'll dive into it. But there's one, one could call it very minor, improvement, that was in, my opinion, pain in the ass.

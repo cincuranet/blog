@@ -4,7 +4,6 @@ date: 2009-07-23T14:29:45Z
 tags:
   - MS SQL Server
 redirect_from: /id/230777/
-category: none
 layout: post
 ---
 Shortly: Very.

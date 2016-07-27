@@ -6,7 +6,6 @@ tags:
   - Cloud
   - Amazon AWS
 redirect_from: /id/233525/
-category: none
 layout: post
 ---
 Recently I finished reviewing another book for Packt. This time it was not cookbook, but a more or less regular book with text and examples. It's called [Learning AWS][1]. As you can guess from the name this book is about Amazon's cloud. Because it is not a cookbook, the text contains also some background information to understand the chapter. Great to also learn something new. 

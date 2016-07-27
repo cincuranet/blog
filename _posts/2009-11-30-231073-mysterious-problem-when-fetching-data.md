@@ -4,7 +4,6 @@ date: 2009-11-30T21:51:24Z
 tags:
   - Entity Framework
 redirect_from: /id/231073/
-category: none
 layout: post
 ---
 Sometimes you're talking about something on trainings and conferences and ... and you simply forgot about it when you use it - it's like being able to think in A > B way but not B > A.

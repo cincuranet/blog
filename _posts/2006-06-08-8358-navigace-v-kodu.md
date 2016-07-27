@@ -4,7 +4,6 @@ date: 2006-06-08T20:46:00Z
 tags:
   - Visual Studio
 redirect_from: /id/8358/
-category: none
 layout: post
 ---
 Jak již (myslím) někdo tady psal (chtěl jsem najít link, ale nepovedlo se, už je někde moc vzadu) tak poměrně silně zabržduje Visual Studio ta lišta s ComboBoxem, kde jsou vidět metody a je možné na ně jednoduše "skočit". Protože dělám hodně na notebooku, který není nejnovější, je každé procento výkonu znát a tak jsem tuto věcičku podle odkazovaného návodu vypnul. Rychlost pohybu kurzoru v kódu opravdu citelně vzrostla, ale měl jsem divný pocit, že nemůže nějak rychle skákat v kódu a tak jsem hledal něco co by toto nahradilo (zapínání a vypínání té lišty se mi nezdálo dobré). V Delphi existovat expert (z GExperts) který umožnovat inkrementálně vyhledat v seznamu metod a pak se event. na ni přesunout. Hledal jsem něco podobného, ale marně (a další add-iny se mi instalovat nechce).

@@ -5,7 +5,6 @@ tags:
   - Home
   - Life
 redirect_from: /id/233516/
-category: none
 layout: post
 ---
 Because "I do software" I was never too hyped by vacuum cleaner robots. In back of my mind I knew how hard would be to process all the ambient space and behave more or less inteligently. But I eventually gave up - I was drunk by the idea of having less boring work to do :) and I was also bit curious. Heck there must be some progress in last five or so years, isn't it? Look at the processing power of RaspberryPi or Arduino boards. People are doing crazy stuff with these. 

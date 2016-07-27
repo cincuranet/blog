@@ -5,7 +5,6 @@ tags:
   - .NET
   - Visual Studio
 redirect_from: /id/233464/
-category: none
 layout: post
 ---
 I don't like doing things twice or more times. And creating builds with `csproj` for multiple frameworks (like .NET 2.0, .NET 3.5, .NET 4.0, .NET 4.5) isn't easy. Bunch of projects I'm following has like `Project_40.csproj`, `Project_45.csproj` and so on. That means you have to maintain two project files when you add, move or remove files. 

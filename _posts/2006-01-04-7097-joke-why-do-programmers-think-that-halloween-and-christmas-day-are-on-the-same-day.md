@@ -4,7 +4,6 @@ date: 2006-01-04T15:50:00Z
 tags:
   - Uncategorized
 redirect_from: /id/7097/
-category: none
 layout: post
 ---
 Because DEC 25 == OCT 31.

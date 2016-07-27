@@ -5,7 +5,6 @@ tags:
   - .NET
   - Books
 redirect_from: /id/7459/
-category: none
 layout: post
 ---
 Nevíte? Nic si z toho nedělejte, ja to taky nevěděl. Vezmu to trochu obšírněji. Během svého záchvatu po koupi knihy a sebevzdělávání jsem zakoupil knihu _C# - programování databází (Jason Price)_ (a asi 5 týdnů ležela na stole). K této knize napíšu jen několik slov, neb více si nezaslouží.

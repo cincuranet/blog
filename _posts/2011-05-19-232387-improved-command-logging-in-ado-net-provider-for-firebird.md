@@ -6,7 +6,6 @@ tags:
   - Firebird
   - Logging &amp; Tracing
 redirect_from: /id/232387/
-category: none
 layout: post
 ---
 I recently improved the command logging in [ADO.NET provider for Firebird][1]. Let me start with little bit of history and then you'll see the motivation and current improvements.

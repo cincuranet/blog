@@ -5,7 +5,6 @@ tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233457/
-category: none
 layout: post
 ---
 Asynchronní proramování nabralo za posledních pár let na obrátkách a dostalo se do povědomí mnoha vývojářů. Ačkoli ve své podstatě se nejedná o nic nového, alespoň v systému Windows. Nicméně příchod C# 5 a, jistě nyní známých, klíčových slov `async` a `await` umožnil použití asynchronní programování bez dřiny.

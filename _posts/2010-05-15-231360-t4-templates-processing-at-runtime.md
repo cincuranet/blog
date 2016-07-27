@@ -7,7 +7,6 @@ tags:
   - T4 templates
   - Visual Studio
 redirect_from: /id/231360/
-category: none
 layout: post
 ---
 The T4 templates are great tool for use. You can generate literally anything with it with comfort of using any .NET code you have available. Code generation (i.e. POCO classes in EFv4), web service proxies, simple DALs, …, all easily available.

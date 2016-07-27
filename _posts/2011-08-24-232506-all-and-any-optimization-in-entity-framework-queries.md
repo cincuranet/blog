@@ -8,7 +8,6 @@ tags:
   - Entity SQL
   - LINQ
 redirect_from: /id/232506/
-category: none
 layout: post
 ---
 When I'm teaching my Entity Framework trainings, I'm always begging to look, at least from time to time or when you see the query looks complex, to generated SQL statement. And if you have (near to) real data, also execution plan. Although Entity Framework helps you with standard data access layer, it's not magic – the query translation is complex process and sometimes what you capture in LINQ query isn't exactly how you'd express it in SQL. You simply have different concepts in LINQ vs. in SQL.

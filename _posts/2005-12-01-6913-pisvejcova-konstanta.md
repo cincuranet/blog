@@ -4,7 +4,6 @@ date: 2005-12-01T13:45:00Z
 tags:
   - Uncategorized
 redirect_from: /id/6913/
-category: none
 layout: post
 ---
 Opět jsem se dozvě děl něco velice zajimavého. V matematice existuje tzv. Pišvejcova konstanta. I když podle definice se o konstantě moc mluvit nedá. No ona i ta definice je zajimavá. 

@@ -5,7 +5,6 @@ tags:
   - BlackBerry PlayBook
   - BlackBerry WebWorks
 redirect_from: /id/232544/
-category: none
 layout: post
 ---
 I was finishing some final touches on an application for [BlackBerry PlayBook][1]. I'll talk about it later, when it's released. ;) And you know, these final touches are most time consuming (also sometimes boring). You're quickly changing few small items and testing it again and again. I was redeploying it to my PlayBook probably every minute. The application has quite some graphics in it and suddenly the PlayBook stopped running it. The application runs in portrait mode, so I missed the message for the first time.

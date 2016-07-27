@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
 redirect_from: /id/227980/
-category: none
 layout: post
 ---
 Did you know, that you can use in [Firebird .NET Data Provider][1] more "firebirdish" connection strings?

@@ -6,7 +6,6 @@ tags:
   - Best practice or not?
   - C#
 redirect_from: /id/232663/
-category: none
 layout: post
 ---
 I have a small morale from today. I was writing some code that was handling searching for items base also on [CultureInfo][1]. Because it's a pretty straightforward object, in core of .NET Framework (it's in `mscorlib`) I was expecting to handle equality using `==` based on culture itself not the object. And of course, I was wrong. :)

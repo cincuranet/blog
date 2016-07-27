@@ -4,7 +4,6 @@ date: 2005-12-28T21:08:00Z
 tags:
   - .NET
 redirect_from: /id/7062/
-category: none
 layout: post
 ---
 Včera jsem se pokušel napsat příklad, který by demonstroval co se stane, pokud thready využívající sdílený prostředek nejsou synchronizovány. Jak asi každý ví, že se to tam a tam může pokazit, snaží se automaticky myslet tak, aby tomuto nedeterministickému chování předešel. Já jsem však potřeboval napsat příklad, který by toto záměrně porušoval. Pachtil jsem se s tim poměrně dlouho - myslel jsem si, že špatný příklad lehce dokážu vytvořit - a hle, není to tak jednoduché. :)

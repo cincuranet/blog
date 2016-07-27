@@ -6,7 +6,6 @@ tags:
   - C#
   - LINQ
 redirect_from: /id/232041/
-category: none
 layout: post
 ---
 Similarly to [previous method for Interleaving two IEnumerables][1] I needed one method for doing kind of aggregate, but also to know about the intermediate steps. I could abuse the [Aggregate][2] method either directly or indirectly but I'm always more happy with clean solution.

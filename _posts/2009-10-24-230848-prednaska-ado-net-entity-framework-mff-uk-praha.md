@@ -9,7 +9,6 @@ tags:
   - OData/Data Services (Astoria)
   - Presentations &amp; Speaking
 redirect_from: /id/230848/
-category: none
 layout: post
 ---
 Pokud jste nestihli první [pražskou][1] nebo [brněnskou][2] přednášku, máte v Praze další šanci. 3.11.2009 (úterý) od 17:20 v rámci programátorských večerů na MFF UK.

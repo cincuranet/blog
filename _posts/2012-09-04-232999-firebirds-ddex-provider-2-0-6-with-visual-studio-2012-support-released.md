@@ -5,7 +5,6 @@ tags:
   - Firebird
   - Visual Studio
 redirect_from: /id/232999/
-category: none
 layout: post
 ---
 I just updated [DDEX provider][1] for [Firebird][2] to version 2.0.6 adding support for Visual Studio 2012 (on both 32bit and 64bit Windows). Go [get it][3] and enjoy.

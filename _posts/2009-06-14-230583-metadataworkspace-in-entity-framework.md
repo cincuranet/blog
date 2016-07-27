@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/230583/
-category: none
 layout: post
 ---
 A lot of people get used to understand the [ObjectStateManager][1] class. Yep, it's the place where all the change tracking magic happens. But there's also one other place that's interesting. It's [MetadataWorkspace][2]. With this class' properties and methods you can find almost everything about stuff in your model, in runtime.

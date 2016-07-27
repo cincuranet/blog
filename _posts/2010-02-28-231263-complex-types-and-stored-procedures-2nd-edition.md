@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Visual Studio
 redirect_from: /id/231263/
-category: none
 layout: post
 ---
 Some time ago I was [writing about not supported scenario when you have entity with complex type and you want to map result of stored procedure to this entity][1]. I couldn't believe that this, from my point of view fairly common, scenario will not be supported in designer in RTM.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
 redirect_from: /id/7471/
-category: none
 layout: post
 ---
 Well, in this article I'm going do describe step-by-step how-to add Firebird .NET Data Provider into Visual Studio 2005. So I assume, I have downloaded and installed the provider (be sure that's for .NET2).

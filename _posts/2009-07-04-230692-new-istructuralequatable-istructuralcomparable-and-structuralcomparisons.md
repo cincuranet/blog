@@ -6,7 +6,6 @@ tags:
   - C#
   - F#
 redirect_from: /id/230692/
-category: none
 layout: post
 ---
 .NET Framework 4 comes with (among others) with two new interfaces. [IStructuralEquatable][1] and [IStructuralComparable][2]. These are implemented (right now in Beta 1) by [Array][3] and [Tuple(s)][4].

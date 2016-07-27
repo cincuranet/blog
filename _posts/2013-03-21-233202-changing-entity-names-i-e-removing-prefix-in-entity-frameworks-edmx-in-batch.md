@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Visual Studio
 redirect_from: /id/233202/
-category: none
 layout: post
 ---
 Few years back I wrote a similar post [Making names of entities (or any identifiers) in Entity Framework model "code and developer friendly" (= not uppercase)][1], but as the time goes, it's now little bit outdated. But yesterday [Julie Lerman][2], while trying to find solution for one particular question, dug it out. As I was also then introduced to problem the solution there was indeed a good way to go. But to use it, it needed to be updated for current version of Entity Framework (version 5 in time of writing).

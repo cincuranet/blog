@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - OData/Data Services (Astoria)
 redirect_from: /id/227942/
-category: none
 layout: post
 ---
 If you're looking to some articles/resources/documents you may find, that "greater than or equal" or "lower than or equal" operators have keywords `gteq` or `lteq`. But when you try these, the request fails.

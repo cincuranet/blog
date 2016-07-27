@@ -6,7 +6,6 @@ tags:
   - Git
   - Subversion
 redirect_from: /id/233371/
-category: none
 layout: post
 ---
 Few months ago I wrote an email to [Firebird's ADO.NET provider][1] mailing list expressing my desire to release more often and with less friction (which is more important for me, than to consumers). Because there are some bugs of features that need testing with some underlying code or setup, I often create my private "branches". But with Subversion that's not easy and sooner or later I end up with multiple copies of sources, manually merging changes etc. So I decided to make a move and move sources to Git. I recently started using it for a lot of my projects and it's really way better compared to Subversion if you're doing a lot of small changes and jumping back and forth (which is what I do, because I do provider in my free time).

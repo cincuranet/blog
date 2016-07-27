@@ -6,7 +6,6 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233500/
-category: none
 layout: post
 ---
 I wrote about fast path optimizations with having already completed task prepared before in my ["Better "cached completed Task""][2]. At that time the was no way to directly access already completed `Task` the TPL has. 

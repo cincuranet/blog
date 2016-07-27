@@ -7,7 +7,6 @@ tags:
   - Roslyn
   - Visual Studio
 redirect_from: /id/233535/
-category: none
 layout: post
 ---
 This was really an enriching experience. Not only I finally understood better formatting and trivias in Roslyn, I also had to think about what my code looks like in general, which I thought I had clear in my head. Here's the full story.

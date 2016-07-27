@@ -6,7 +6,6 @@ tags:
   - Cloud
   - SQL Azure
 redirect_from: /id/232236/
-category: none
 layout: post
 ---
 From time to time I get a question about [SQL Azure][1] and [Entity Framework][2]. Can I use it? Does it work? Etc. Because the SQL Azure is in fact a special version (you can check [unsupported][3] and [partially supported][4] T-SQL statements) of MS SQL Server it works without any hassle. That's the short story.

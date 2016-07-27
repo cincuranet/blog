@@ -4,7 +4,6 @@ date: 2007-07-10T18:16:00Z
 tags:
   - Firebird
 redirect_from: /id/225960/
-category: none
 layout: post
 ---
 Pokud máte problém se spuštěním čerstvé bety Firebirdu (2.1), vězte, že vám chybí manifest pro dll knihovnu (`Microsoft.VC80.CRT.manifest`) (na Windows samozřejmě). Pravděpodobně na to narazíte - jako já - při testování na čistém (virtuálním) stroji (normálně se dostane vše do systému s Office, Visual Studio apod.). Build nebude aktualizován, ale na stránkách Firebirdu ([www.firebirdsql.org][1]) je soubor separátně ke stažení. Stačí jej plácnout do adresáře `bin`.

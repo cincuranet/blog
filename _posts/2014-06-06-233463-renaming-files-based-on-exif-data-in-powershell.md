@@ -7,7 +7,6 @@ tags:
   - .NET
   - Photos
 redirect_from: /id/233463/
-category: none
 layout: post
 ---
 I like my files organized. Heck. I like everything organized. In order. And as I take some pictures, today mostly with my phone, I upload these files into specific folder. But the files has whatever name the photo or uploading application decides. Not good for my obsession with order. Because these files are simply some snaps of world around me, I name these based on date and time. Pretty simple. 

@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
 redirect_from: /id/230715/
-category: none
 layout: post
 ---
 Today I was writing some code, where I needed create initially empty array. I wondered if the `array[0]` vs. `array[] { }` is the same. Alike with the [string concatenation][1].

@@ -5,7 +5,6 @@ tags:
   - Applications in general
   - Programming in general
 redirect_from: /id/230765/
-category: none
 layout: post
 ---
 Nevím, jestli je to jen můj problém/pocit, ale v standardním balíku komponent v .NETu není nic co se by se podobalo něčemu jako "shell tree", prostě to co má Explorer v okně nalevo. Hledal jsem i před časem na různých místech, ale nic pořádného.

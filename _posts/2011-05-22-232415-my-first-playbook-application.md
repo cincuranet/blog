@@ -7,7 +7,6 @@ tags:
   - BlackBerry WebWorks
   - OData/Data Services (Astoria)
 redirect_from: /id/232415/
-category: none
 layout: post
 ---
 I have to be honest with you. I'm ill, desperately ill developer. :) First day I was just playing with PlayBook and exploring as much details as I was able to. First half of day two I was doing the same, but slowly. The other half was "lost" - I started to think about developing something. :D

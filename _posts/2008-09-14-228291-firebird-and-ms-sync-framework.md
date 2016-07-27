@@ -5,7 +5,6 @@ tags:
   - Firebird
   - Sync Framework
 redirect_from: /id/228291/
-category: none
 layout: post
 ---
 Few days ago I was playing with Sync Framework (if you're able to read Czech, you can check my [series about it][1]). You know, all testing and exploration I was always doing with SQL Server on server side. :) But this should work with any ADO.NET "equiped" database. So why not to test Firebird?

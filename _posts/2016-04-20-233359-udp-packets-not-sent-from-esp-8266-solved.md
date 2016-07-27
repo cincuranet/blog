@@ -9,7 +9,6 @@ tags:
   - ESP-8266
   - Arduino
 redirect_from: /id/233559/
-category: none
 layout: post
 ---
 I'm now playing with ESP-8266, [Wemos D1 mini][1] to be precise. One think I'm now using for fun/debugging/communication is broadcasting UDP packets. For some reason the packets were not coming lately.

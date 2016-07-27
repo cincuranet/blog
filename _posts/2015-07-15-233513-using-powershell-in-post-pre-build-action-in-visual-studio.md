@@ -5,7 +5,6 @@ tags:
   - Visual Studio
   - PowerShell
 redirect_from: /id/233513/
-category: none
 layout: post
 ---
 Let's say it. Batch files are plain simple for any real developer to use. [PowerShell][1] rocks. Sadly in Visual Studio in fairly useful feature of post/pre build actions you can by default use only batch files. Normally for full builds I use [psake][2] or I just script it on build server as next step, but today I needed it directly in Visual Studio. Time to start playing. 

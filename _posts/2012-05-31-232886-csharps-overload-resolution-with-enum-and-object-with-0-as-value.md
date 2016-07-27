@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
 redirect_from: /id/232886/
-category: none
 layout: post
 ---
 Today I faced surprising behavior once again. Completely off guard.

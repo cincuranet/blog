@@ -5,7 +5,6 @@ tags:
   - Email
   - Life
 redirect_from: /id/231268/
-category: none
 layout: post
 ---
 Generally, I'm not recommending services I'm using here. But experience from today is just too great not to share it. I'm using Hosted Exchange from [Sherweb][1].

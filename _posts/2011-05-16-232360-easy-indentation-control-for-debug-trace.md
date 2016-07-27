@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
 redirect_from: /id/232360/
-category: none
 layout: post
 ---
 I was setting up simple command logging, but keeping in my mind where I increased the indentation to later decrease it back was causing me headache. Also formatting the string I'd like to put out wasn't smooth.

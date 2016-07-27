@@ -6,7 +6,6 @@ tags:
   - Firebird
   - SQL
 redirect_from: /id/232584/
-category: none
 layout: post
 ---
 Imagine you have a blob column and you want to add sorting clause to your query based on that column. Crazy? Might be. On the other hand, why not?

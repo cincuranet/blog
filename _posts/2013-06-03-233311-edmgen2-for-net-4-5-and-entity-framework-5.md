@@ -6,7 +6,6 @@ tags:
   - C#
   - Entity Framework
 redirect_from: /id/233311/
-category: none
 layout: post
 ---
 I don't know whether somebody remembers or even uses EdmGen2. I hope it does. Anyway I was doing my [Entity Framework course][1] last week and demoing [pre-generating views][2] to speed up the startup. Here the EdmGen2 tool comes handy because it's able to work with `EDMX` file directly. You don't have to split it into `SSDL`, `CSDL` and `MSL` to use the standard EdmGen tool. Because I was working in Visual Studio 2012 by default I was working with [Entity Framework 5][3] and [.NET 4.5][4]. Model from this version(s) doesn't work with old EdmGen2. I checked the [original site][5] and sure, the last version (in time of writing) is from 2010.

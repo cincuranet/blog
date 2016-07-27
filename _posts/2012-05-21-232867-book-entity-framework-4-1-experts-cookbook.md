@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Test Driven Development (TDD)
 redirect_from: /id/232867/
-category: none
 layout: post
 ---
 I recently did a technical review of book from [Packt Publishing][1] (actually I reviewed some chapters, not all). It's called [Entity Framework 4.1: Expert's Cookbook][2].

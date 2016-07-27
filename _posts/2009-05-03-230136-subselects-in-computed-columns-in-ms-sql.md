@@ -5,7 +5,6 @@ tags:
   - Firebird
   - MS SQL Server
 redirect_from: /id/230136/
-category: none
 layout: post
 ---
 I found nice hack on MS SQL. On Firebird I'm using sometimes computed column(s) with select in definition. It can be performance (or concurrency) problem, but if you use it carefully it's helpful. And I was missing this feature on MS SQL. But accidentally I found solution/workaround.

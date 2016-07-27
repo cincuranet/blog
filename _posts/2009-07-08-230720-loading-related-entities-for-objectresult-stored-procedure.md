@@ -7,7 +7,6 @@ tags:
   - Entity SQL
   - LINQ
 redirect_from: /id/230720/
-category: none
 layout: post
 ---
 There're two kinds of people. 1) people doing almost everything in code; 2) people doing everything on database side. I'm in neither of these buckets. ;) I like doing a lot of stuff on database side, because sometimes expressing something in set operations (these are good for RDBMS) is really challenging. On the other way, when it's easy and fast to do it in code, why bother...

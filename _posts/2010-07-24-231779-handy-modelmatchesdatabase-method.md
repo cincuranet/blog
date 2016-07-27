@@ -4,7 +4,6 @@ date: 2010-07-24T13:12:45Z
 tags:
   - Entity Framework
 redirect_from: /id/231779/
-category: none
 layout: post
 ---
 The [Entity Framework 4 CTP4][1] is out and contains nice improvements. One is especially handy. Well you was able to do the same even in v1 but it was a lot of work. The method is `ModelMatchesDatabase` in `System.Data.Entity.Infrastructure.Database`. You can get `Database` object easily through `DbContext.Database`. The method return boolean value and checks whether your database matches mapping or not.

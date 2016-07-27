@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
 redirect_from: /id/7894/
-category: none
 layout: post
 ---
 A máme to tu zas. Mám na to prostě asi štěstí. Databáze "naklikávám" podle čmáranic v GUI (je to pohodlnější, neboť to umí ledacos doplnit). Jenže jak to něco doplňuje, něco se přehlédne.

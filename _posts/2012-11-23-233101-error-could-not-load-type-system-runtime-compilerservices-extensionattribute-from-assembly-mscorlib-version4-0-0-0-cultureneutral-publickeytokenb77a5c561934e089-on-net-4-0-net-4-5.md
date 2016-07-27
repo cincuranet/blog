@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
 redirect_from: /id/233101/
-category: none
 layout: post
 ---
 This error isn't related only to [FirebirdClient][1] only, but any .NET application that is targeting multiple .NET Framework versions, but I spotted it first during FirebirdClient development.

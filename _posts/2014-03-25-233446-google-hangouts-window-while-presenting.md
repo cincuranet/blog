@@ -5,7 +5,6 @@ tags:
   - Presentations &amp; Speaking
   - IM
 redirect_from: /id/233446/
-category: none
 layout: post
 ---
 Few weeks ago I stoped using Miranda, which I used for years, and installed [Hangouts][1] directly into my [Iron][2] (Chromium). I stopped using multiple IM networks few years back and I now use only Hangouts and only with my family. Last week while I was teaching my ["multithreading" course][3] I received a message, I saw it on my phone, and while the attendees were working on assignment I wanted to respond. And it didn't worked.

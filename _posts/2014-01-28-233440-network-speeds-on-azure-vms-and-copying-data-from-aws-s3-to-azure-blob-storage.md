@@ -8,7 +8,6 @@ tags:
   - Cloud
   - Storage &amp; Backup
 redirect_from: /id/233440/
-category: none
 layout: post
 ---
 I recently moved about one TB from [AWS S3][1] to [Azure Storage][2]. Nothing special. However, doing that using my connection would mean weeks of copying, I decided to spin up a VM and use huge pipes in both datacenters to speed up the process.

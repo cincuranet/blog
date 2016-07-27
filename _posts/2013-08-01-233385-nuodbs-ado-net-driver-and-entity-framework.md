@@ -13,7 +13,6 @@ tags:
   - SQL
   - Visual Studio
 redirect_from: /id/233385/
-category: none
 layout: post
 ---
 I recently started working on [NuoDB's .NET driver][1] to improve it and especially to introduce Entity Framework support. I was playing with NuoDB before, even from .NET, but [using only ODBC that was available at that time][2]. Currently good pure .NET driver is available and now it has even full [Entity Framework][3] support.

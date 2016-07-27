@@ -4,7 +4,6 @@ date: 2010-10-07T06:34:38Z
 tags:
   - Čeština
 redirect_from: /id/232075/
-category: none
 layout: post
 ---
 Po delší době, kdy mě vytočilo [používání mně a mě špatně][1], tu mám další kousek. Normálně mírné excesy v používání slova permanentka přecházím, ale tento týden jsem "pernamentka" slyšel tolikrát, že si musím ulevit.

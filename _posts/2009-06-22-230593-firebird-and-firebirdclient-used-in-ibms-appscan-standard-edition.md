@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
 redirect_from: /id/230593/
-category: none
 layout: post
 ---
 Few days ago I got interesing information that IBM in [AppScan Standard Edition][1] is using [Firebird][2] database and [FirebirdClient][3] as .NET provider. It's a great finding where all is Firebird used.

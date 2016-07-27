@@ -9,7 +9,6 @@ tags:
   - LINQ
   - .NET
 redirect_from: /id/233472/
-category: none
 layout: post
 ---
 With [today's release of .NET provider for Firebird][1] the [Entity Framework][2] (version 6) support got even better. But given we're 3<sup>rd</sup> party provider, there's always some steps involved. I created a sample project that shows both approaches to working with Entity Framework - Code First manually and EDMX using wizard (or course you can mix these two together too).

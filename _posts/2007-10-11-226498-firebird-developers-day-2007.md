@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Firebird
 redirect_from: /id/226498/
-category: none
 layout: post
 ---
 Úplně bych na to při všem tom shonu zapomněl.

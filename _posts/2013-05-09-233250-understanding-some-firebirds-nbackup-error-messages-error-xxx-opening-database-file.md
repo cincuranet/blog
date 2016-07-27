@@ -5,7 +5,6 @@ tags:
   - Firebird
   - Storage &amp; Backup
 redirect_from: /id/233250/
-category: none
 layout: post
 ---
 Because on the server where the application is running I'm unable to do backup using regular `gbak` tool, I turned my attention to `nbackup`. In fact I'm doing just file copy and using `alter database begin backup`/`alter database end backup` ([more info][1]). But doing the backup is only part of the story. You have also know you know how to restore it and whether you can restore it (aka whether the backup is not corrupted).

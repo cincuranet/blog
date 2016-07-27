@@ -5,7 +5,6 @@ tags:
   - Best practice or not?
   - Databases in general
 redirect_from: /id/226877/
-category: none
 layout: post
 ---
 Dneska jsem se dostal opět k velmi vtipnému řešení problému v relační databázi (to jsem to hezky napsal, ale ve skutečnosti jde o prasácky vyrobenou tabulku(y) vyústivší v prasácké selecty).

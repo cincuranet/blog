@@ -7,7 +7,6 @@ tags:
   - Functional programming
   - LINQ
 redirect_from: /id/232625/
-category: none
 layout: post
 ---
 Few days ago I was writing a class, that was simply wrapped for a collection of other classes (with same interface), aggregate class. The class also had few methods, where the logic was simple. Let's say one method `M`. Other classes having same method as well. This method was simple transformation of data with same output as input. The aggregate class was simply calling `M` method of first, second, ... of other classes.

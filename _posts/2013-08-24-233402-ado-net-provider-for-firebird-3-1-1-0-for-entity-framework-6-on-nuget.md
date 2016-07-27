@@ -13,7 +13,6 @@ tags:
   - SQL
   - Visual Studio
 redirect_from: /id/233402/
-category: none
 layout: post
 ---
 Few days ago the [Entity Framework 6][1] jumped into RC stage. [FirebirdClient ][2]has already support for Entity Framework 6, but I was waiting for some "significant" (as RC ;)) stage to start pushing it more except for publishing the build on [FirebirdSQL.org site][3].

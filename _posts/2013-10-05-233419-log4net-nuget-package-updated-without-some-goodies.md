@@ -5,7 +5,6 @@ tags:
   - Logging &amp; Tracing
   - NuGet
 redirect_from: /id/233419/
-category: none
 layout: post
 ---
 [Few days ago I published a new log4net's package][1] on NuGet and based on feedback on previous version I added some "goodies". Given more feedback on this version, when other people were not that happy with the change and after listening to some arguments, I decided to remove the "goodies" and publish just the binaries (1.2.12).

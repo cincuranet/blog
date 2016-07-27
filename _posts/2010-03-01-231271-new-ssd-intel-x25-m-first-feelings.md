@@ -5,7 +5,6 @@ tags:
   - Storage &amp; Backup
   - Windows
 redirect_from: /id/231271/
-category: none
 layout: post
 ---
 It is couple of hours I'm using my new SSD – Intel X25-M. I ordered it to improve and speedup by working environment.

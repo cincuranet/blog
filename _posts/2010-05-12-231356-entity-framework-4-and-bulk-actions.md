@@ -6,7 +6,6 @@ tags:
   - Entity SQL
   - LINQ
 redirect_from: /id/231356/
-category: none
 layout: post
 ---
 Though Entity Framework 4 doesn't support bulk action, you can do it. As [Matthieu Mezil][1] [shows, it's possible][2]. Nice piece of code, Matthieu.

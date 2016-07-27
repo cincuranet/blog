@@ -5,7 +5,6 @@ tags:
   - C#
   - Entity Framework
 redirect_from: /id/232147/
-category: none
 layout: post
 ---
 If you're specifying mapping in Code First in Entity Framework you're essentially describing it with like this (assuming using `EntityConfiguration` class).

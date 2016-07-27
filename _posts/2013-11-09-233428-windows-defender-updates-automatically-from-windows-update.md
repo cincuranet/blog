@@ -6,7 +6,6 @@ tags:
   - .NET
   - Windows Update
 redirect_from: /id/233428/
-category: none
 layout: post
 ---
 Some time during last week I came across [this tweet][1] from [Peter Ritchie][2].

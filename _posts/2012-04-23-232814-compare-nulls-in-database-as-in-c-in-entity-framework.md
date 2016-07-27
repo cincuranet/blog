@@ -8,7 +8,6 @@ tags:
   - Entity SQL
   - LINQ
 redirect_from: /id/232814/
-category: none
 layout: post
 ---
 Roughly two years ago I blogged about [differences in NULLs handling in databases and in (some) programming languages (C# in particular)][1]. But Entity Framework 5 (in .NET 4.5) ([lost?][2]) comes with handy switch. It's [`UseCSharpNullComparisonBehavior`][3]. What this basically does is ensure when you compare nullable fields to be handled like in C#, aka `null == null` and not like in SQL where NULL compared to anything is NULL or false when boolean value is needed.

@@ -8,7 +8,6 @@ tags:
   - Firebird
   - SQL
 redirect_from: /id/233565/
-category: none
 layout: post
 ---
 > [Follow-up post.][6]

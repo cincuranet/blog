@@ -5,7 +5,6 @@ tags:
   - BlackBerry
   - BlackBerry PlayBook
 redirect_from: /id/232392/
-category: none
 layout: post
 ---
 Similarly to my post about [Kindle's browser][1] I looked how the browser in PlayBook is identifying self.

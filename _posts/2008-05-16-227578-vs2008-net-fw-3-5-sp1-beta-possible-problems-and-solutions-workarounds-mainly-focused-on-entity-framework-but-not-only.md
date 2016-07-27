@@ -7,7 +7,6 @@ tags:
   - Visual Studio
   - Windows
 redirect_from: /id/227578/
-category: none
 layout: post
 ---
 Couple of links I've found during recent days:

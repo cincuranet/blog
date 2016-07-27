@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Presentations &amp; Speaking
 redirect_from: /id/233424/
-category: none
 layout: post
 ---
 Pokud jste nestihli/nestihnete letošní [MSFest][1] nebo [TechEd][2] a zajímá vás (především) Entity Framework 6 mohla by vám přijít vhod akce [WUG][3]u ve Zlíně.

@@ -7,7 +7,6 @@ tags:
   - Storage &amp; Backup
   - Synology
 redirect_from: /id/232571/
-category: none
 layout: post
 ---
 I'm not writing often about services I use etc. But from time to time I'm extremely pleased with some and that's worth mentioning. This time it's [Synology][1]. I'm using Synology NAS boxes for a many years and in my opinion these are the best. But that's not what I like to talk about.

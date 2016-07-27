@@ -5,7 +5,6 @@ tags:
   - .NET
   - Applications in general
 redirect_from: /id/8442/
-category: none
 layout: post
 ---
 Sometimes you'll need to create settings provider, which allows you to save configuration into specific format and/or specific place. In FW are some basic providers, but creating your own isn't difficult.

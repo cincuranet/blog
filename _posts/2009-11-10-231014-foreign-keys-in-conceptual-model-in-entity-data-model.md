@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Entity Framework
 redirect_from: /id/231014/
-category: none
 layout: post
 ---
 When I first heard about exposing foreign keys in conceptual model I was getting crazy. It's the object world, you shouldn't think this way, in a relational world. On the other hand, working purely in objects can be a pain, especially in web development, and performance problem. Sure, foreign keys can solve you some "problems" (and maybe [add some][1]) without tweaking the [EntityKey][2] or doing stub entities. Which is hard when dealing with [POCO][3].

@@ -7,7 +7,6 @@ tags:
   - LINQ
   - Spatial data
 redirect_from: /id/233239/
-category: none
 layout: post
 ---
 When the [Entity Framework][1] was first introduced it came with (basically) two flavors of querying. [LINQ to Entities][2] and [Entity SQL][3] (ESQL). I'm not going to describe the history here. But as LINQ (any LINQ) gained popularity it was obvious, that LINQ to Entities is a future (though it had initially small deficit compared to Entity SQL). I even on [my courses][4] recommend using LINQ to Entities whenever possible and I'm also showing some dynamic querying where normally people start concatenating ESQL strings.

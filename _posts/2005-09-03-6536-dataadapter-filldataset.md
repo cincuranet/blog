@@ -4,7 +4,6 @@ date: 2005-09-03T16:58:00Z
 tags:
   - .NET
 redirect_from: /id/6536/
-category: none
 layout: post
 ---
 Tak jsem si dneska opět krásně naběhl. Připravil jsem si vše pro připojení k Firebirdu a začal jsem psát takové ty kravinky pro buttony (na testování). Přidal jsem si tam:

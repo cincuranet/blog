@@ -4,7 +4,6 @@ date: 2013-11-20T14:27:00Z
 tags:
   - .NET
 redirect_from: /id/233432/
-category: none
 layout: post
 ---
 I never noticed it, but as I was today rewriting some [`Console.WriteLine`][1]'s behavior I saw it clear. The [`Console.WriteLine`][2] (in linked overload) takes `params` named `arg`. But the [`String.Format`][3] takes `params` named `args`, as you would probably expect.

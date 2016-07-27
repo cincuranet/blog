@@ -4,7 +4,6 @@ date: 2014-04-15T05:17:00Z
 tags:
   - Running
 redirect_from: /id/233449/
-category: none
 layout: post
 ---
 Two days ago I was running [marathon in Vienna][1]. Because it was my second marathon in a 7 days time span I knew I would not run PR (OK, honestly, first half I was checking my splits ;) to see how I'm doing, but I was fading). Anyway as I entered the last ~2k of the race I decided to try what's left in my legs and try to run harder. As hard as I though would be fine. Frankly it's ~2k to the finish, if I blow up, I'll be able to crawl that.

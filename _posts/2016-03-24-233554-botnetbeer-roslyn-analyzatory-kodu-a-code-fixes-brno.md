@@ -7,7 +7,6 @@ tags:
   - Roslyn
   - C#
 redirect_from: /id/233554/
-category: none
 layout: post
 ---
 Máme v Brně novou komunitní akci. DotNetBeer nebo DotNetPivo. No a na třetím "výskytu" - [30.3.2016 v 18:00][1] se mnou - se podíváme na Roslyn a analyzátory kódu a vše okolo.  

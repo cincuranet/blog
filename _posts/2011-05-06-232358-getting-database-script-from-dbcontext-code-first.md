@@ -4,7 +4,6 @@ date: 2011-05-06T07:22:32Z
 tags:
   - Entity Framework
 redirect_from: /id/232358/
-category: none
 layout: post
 ---
 I was [speaking at Gopas Teched][1] few days ago and there was a good question from audience about how to get the SQL script the DbContext is using to create database.

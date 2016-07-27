@@ -7,7 +7,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - C#
 redirect_from: /id/233435/
-category: none
 layout: post
 ---
 Mixing IO-bound and CPU-bound operations in a single chunk of code isn't always a base idea. Like computing hashes/checksums. You read the data from storage and you compute the hash. When all bytes are read, you're done. Of course you can do it as a producer-consumer with a ring buffer, but mixing IO-bound and CPU-bound here is damn straightforward.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - Windows
 redirect_from: /id/233564/
-category: none
 layout: post
 ---
 We have a program that sends emails to clients based on what happens at business side. Pretty simple - you register, you got welcome email; and so on. And there's a lot of these "actions". When I wrote the program few years back I tested it and I was able to peak at about 3500 email per second. Should be plenty enough. But recently the queue started to get longer. Emails were processed later. And everything started to behave oddly.

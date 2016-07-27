@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/230234/
-category: none
 layout: post
 ---
 Probably one of the first methods you've seen/wrote while playing with Entity Framework is IsDirty method. It's a great example how to use [ObjectStateManager][1]. While [doing consultancy work][2] I was asked to create method IsGraphDirty. Handy if you have i.e. some editing form with couple of related entities like Order and OrderLines. 

@@ -6,7 +6,6 @@ tags:
   - Databases in general
   - Firebird
 redirect_from: /id/232051/
-category: none
 layout: post
 ---
 Today the [Firebird 2.5 is being released][1]. You can read the [press release][2] and most importantly [release notes][3]. And sure, you can [download it and use/test/deploy][4].

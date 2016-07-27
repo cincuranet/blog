@@ -9,7 +9,6 @@ tags:
   - OData/Data Services (Astoria)
   - Presentations &amp; Speaking
 redirect_from: /id/230843/
-category: none
 layout: post
 ---
 13.10.2009 (úterý) od 17:30 budu přednášet o novince (je to ještě novinka, když .NET 4 je za dveřmi?) v .NET 3.5 SP1 - Entity Framework. A nejen to. Zabředneme také do nových vlastností, které přinese Entity Framework v4 v .NET 4. Pokud zbyde čas, na řadu přijde rychlé info o ADO.NET Data Services (Astoria).

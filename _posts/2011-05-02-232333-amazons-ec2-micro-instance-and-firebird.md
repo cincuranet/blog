@@ -6,7 +6,6 @@ tags:
   - Cloud
   - Firebird
 redirect_from: /id/232333/
-category: none
 layout: post
 ---
 Few months ago I was playing with different [VPS][1] providers and I was also considering deploying the application to some "small instance" cloud. I came to [Micro Instance][2] of Amazon EC2. Part of the solution I was doing research for is [Firebird database][3] and because the [pricing][4] looks good, I tried to install Firebird (2.5 SuperClassic) on this instance.

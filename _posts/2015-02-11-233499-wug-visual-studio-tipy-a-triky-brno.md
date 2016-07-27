@@ -6,7 +6,6 @@ tags:
   - Visual Studio
   - Keyboard
 redirect_from: /id/233499/
-category: none
 layout: post
 ---
 Aby to nebylo Brnu líto dáme si opakování [zlínské "Visual Studio tipy a triky"][2]. 

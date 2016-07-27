@@ -4,7 +4,6 @@ date: 2010-10-20T18:37:42Z
 tags:
   - Presentations &amp; Speaking
 redirect_from: /id/232117/
-category: none
 layout: post
 ---
 Chcete-li se dozvědět zajímavé informace o Sync Frameworku - nástroji pro (nejen) snadnou synchronizaci souborů, databází, ... - můžete zajít na mou [přednášku na WUGu][1] [[akce.altairis.cz][2]] 26.10.2010 (úterý).

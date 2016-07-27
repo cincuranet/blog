@@ -6,7 +6,6 @@ tags:
   - .NET
   - Markdown
 redirect_from: /id/233520/
-category: none
 layout: post
 ---
 Few weeks ago I decided to convert some old posts on this blog to [Markdown][1] as the rest. These posts were eight, ten years old, sometimes with code formatting with good old `<font>` tags. :) Not a pretty markup. After starting manually and realizing it would take me probably half a year I decided to help myself by code.

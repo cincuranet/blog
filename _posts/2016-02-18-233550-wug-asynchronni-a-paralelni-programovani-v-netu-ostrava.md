@@ -5,7 +5,6 @@ tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233550/
-category: none
 layout: post
 ---
 Paralelizmus, souběžnost, zamykání atp. Baví mě to. A rád o tom povídám. Rád o těchto problémech přemýšlím. Tentokrát se budu snažit natlačit něco z mé hlavy do hlavy všem zájemcům v Ostravě.

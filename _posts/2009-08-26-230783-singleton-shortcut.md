@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
 redirect_from: /id/230783/
-category: none
 layout: post
 ---
 Probably every developer sometimes heard about the singleton pattern. I'll be not far from truth that you're probably writing it like this:

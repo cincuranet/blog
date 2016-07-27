@@ -9,7 +9,6 @@ tags:
   - LINQ
   - .NET
 redirect_from: /id/233426/
-category: none
 layout: post
 ---
 > This post is outdated. Read the [updated version][5].

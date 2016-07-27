@@ -6,7 +6,6 @@ tags:
   - Running
   - GPS
 redirect_from: /id/233414/
-category: none
 layout: post
 ---
 I like running and I found myself gradually transitioning into running longer pieces and mainly on trails. I'm not fast nor is my endurance spectacular. But I still like moving through nature and mountains using just my legs. I don't care how fast (or in my case slow). I enjoy the movement. But I'm also developer and I like data.

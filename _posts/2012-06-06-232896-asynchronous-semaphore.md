@@ -5,7 +5,6 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/232896/
-category: none
 layout: post
 ---
 I was just checking some documentation around [System.Threading namespace for .NET 4.5][1] and I found that there's one nice addition to synchronization primitives.

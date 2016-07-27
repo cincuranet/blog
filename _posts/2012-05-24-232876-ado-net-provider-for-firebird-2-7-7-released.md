@@ -9,7 +9,6 @@ tags:
   - Firebird
   - LINQ
 redirect_from: /id/232876/
-category: none
 layout: post
 ---
 The 2.7.7 version of ADO.NET provider for Firebird is ready for download. This version contains some bug fixes as well as new functionality.

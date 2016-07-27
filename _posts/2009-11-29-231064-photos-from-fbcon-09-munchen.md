@@ -5,7 +5,6 @@ tags:
   - Firebird
   - Photos
 redirect_from: /id/231064/
-category: none
 layout: post
 ---
 Starter for (but not only) morning:

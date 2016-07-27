@@ -4,7 +4,6 @@ date: 2009-05-03T11:06:00Z
 tags:
   - LINQ
 redirect_from: /id/230133/
-category: none
 layout: post
 ---
 After the post [(Not) interesting observation on LINQ][1] was out [Michal Blaha][2] asked me to show some example to show what I'm talking about. :) 

@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Firebird
 redirect_from: /id/226725/
-category: none
 layout: post
 ---
 The [Firebird Conference in Hamburg][1] is gone. But there are some resources, that I'm finding in my notebook bag. This picture

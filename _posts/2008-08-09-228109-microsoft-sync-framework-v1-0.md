@@ -7,7 +7,6 @@ tags:
   - Sync Framework
   - Visual Studio
 redirect_from: /id/228109/
-category: none
 layout: post
 ---
 MS Sync Framework v1.0 is ready for [download][1].

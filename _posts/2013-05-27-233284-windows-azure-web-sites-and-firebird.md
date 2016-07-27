@@ -8,7 +8,6 @@ tags:
   - Firebird
   - Storage &amp; Backup
 redirect_from: /id/233284/
-category: none
 layout: post
 ---
 I recently migrated all my sites to [Windows Azure][1] (this blog is served from Azure too). I was bored maintaining my own little server. Patches, updates, configurations, backups. It was taking too much time. And because of that I was trying to run as less as possible. So I did a little math and figured, that if I'll ditch some old projects and use what I really use I can run it on Azure Web Sites just fine with about the same price. That allowed (to be honest forced) me to remove some old projects and also rethink some of my oldest pieces of code for efficiency. Because on cloud every penny matters. I'm not using Azure because I'm expecting some huge load or anything like that. Simply because it's, well, simple and, no doubt, cool.

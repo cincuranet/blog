@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/228036/
-category: none
 layout: post
 ---
 Really good extension methods.

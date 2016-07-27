@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/233451/
-category: none
 layout: post
 ---
 Today I spotted [`#efhelp`][1] [question on Twitter][2] about using [`Find`][3] method but with predicate.

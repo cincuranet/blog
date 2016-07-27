@@ -6,7 +6,6 @@ tags:
   - LINQ
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/231850/
-category: none
 layout: post
 ---
 > [Here's updated version of the method.][1]

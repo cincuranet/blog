@@ -8,7 +8,6 @@ tags:
   - Mono
   - MonoDroid
 redirect_from: /id/232132/
-category: none
 layout: post
 ---
 Remember the [challenge I did][1] some time ago with [.NET provider for Firebird][2] and [MonoTouch][3]? Well because I've got access to previews of [MonoDroid][4], why not to try the same here?

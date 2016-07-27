@@ -7,7 +7,6 @@ tags:
   - MS SQL Server
   - Oracle
 redirect_from: /id/230837/
-category: none
 layout: post
 ---
 I have a strong feeling that MS SQL knows I don't like it. I don't say it's a bad database, but sometimes it's really "interesting". ;)

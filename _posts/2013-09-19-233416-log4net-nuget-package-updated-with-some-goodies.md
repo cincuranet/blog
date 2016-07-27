@@ -5,7 +5,6 @@ tags:
   - Logging &amp; Tracing
   - NuGet
 redirect_from: /id/233416/
-category: none
 layout: post
 ---
 > [Follow-up post.][1]

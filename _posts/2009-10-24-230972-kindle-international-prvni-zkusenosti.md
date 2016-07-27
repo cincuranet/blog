@@ -4,7 +4,6 @@ date: 2009-10-24T08:56:52Z
 tags:
   - Amazon Kindle
 redirect_from: /id/230972/
-category: none
 layout: post
 ---
 Kindle konečně včera dorazil, takže jej nyní mám necelých 24 hodin a ještě musíme odečíst spánek. Poznatky jsou tedy zatím povrchní.

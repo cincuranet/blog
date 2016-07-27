@@ -4,7 +4,6 @@ date: 2006-05-03T20:19:00Z
 tags:
   - .NET
 redirect_from: /id/8053/
-category: none
 layout: post
 ---
 Zítra (4.5.) se na [Fakultě Informatiky, MU Brno][1] uskuteční přednáška či spíše workshop na téma ADO.NET a použití ve WinForms. Každý kdo má zájem se přijít podívat, nechť mi [napíše][2], kapacita zatím je.

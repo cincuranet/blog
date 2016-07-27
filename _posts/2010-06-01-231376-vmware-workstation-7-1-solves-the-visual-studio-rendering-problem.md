@@ -7,7 +7,6 @@ tags:
   - VMware
   - Windows Presentation Foundation (WPF)
 redirect_from: /id/231376/
-category: none
 layout: post
 ---
 The [VMWare Workstation][1] [had a problem with Visual Studio 2010 rendering (in fact all WPF apps were affected) when the hardware graphic acceleration was turned on][2]. But since [version 7.1][3] this is no longer true.

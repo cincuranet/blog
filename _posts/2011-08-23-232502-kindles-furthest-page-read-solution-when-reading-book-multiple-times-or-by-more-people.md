@@ -4,7 +4,6 @@ date: 2011-08-23T06:51:53Z
 tags:
   - Amazon Kindle
 redirect_from: /id/232502/
-category: none
 layout: post
 ---
 > [I wrote a follow up post.][1]

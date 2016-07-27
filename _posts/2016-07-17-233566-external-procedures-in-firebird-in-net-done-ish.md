@@ -8,7 +8,6 @@ tags:
   - Firebird
   - SQL
 redirect_from: /id/233566/
-category: none
 layout: post
 ---
 Over the rainy afternoons I slowly went through all the notes in the code I made when cutting corners to make it work as fast as possible and started cleaning. Just cleaning, no serious performance measurements nor improvements were done. But now it's without any nasty hacks and shortcuts.

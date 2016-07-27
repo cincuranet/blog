@@ -6,7 +6,6 @@ tags:
   - Mono
   - MonoTouch
 redirect_from: /id/231161/
-category: none
 layout: post
 ---
 Looks like I joined the prominent group of iPhone developers. Friend of mine, [Meap][1], also experienced iPhone developer should be scared. This is what I did in almost no time.

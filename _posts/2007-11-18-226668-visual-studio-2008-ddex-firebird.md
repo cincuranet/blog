@@ -5,7 +5,6 @@ tags:
   - Firebird
   - Visual Studio
 redirect_from: /id/226668/
-category: none
 layout: post
 ---
 Yes, it's here. A small taste for start:

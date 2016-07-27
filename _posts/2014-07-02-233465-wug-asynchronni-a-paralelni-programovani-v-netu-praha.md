@@ -5,7 +5,6 @@ tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233465/
-category: none
 layout: post
 ---
 Pro velký úspěch v Brně si zopakujeme [Asynchronní a paralelní programování v .NETu][2] pro Prahu. :)

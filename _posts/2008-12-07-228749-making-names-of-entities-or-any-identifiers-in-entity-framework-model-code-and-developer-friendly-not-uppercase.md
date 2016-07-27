@@ -7,7 +7,6 @@ tags:
   - Firebird
   - Visual Studio
 redirect_from: /id/228749/
-category: none
 layout: post
 ---
 > [There's an updated version of this post.][1]

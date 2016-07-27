@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Firebird
 redirect_from: /id/232792/
-category: none
 layout: post
 ---
 I like POCOs and Code First. Simply because that way I have everything under my control. I don't mean just the code itself, but also the formatting, ordering of static/public/private/... properties etc. Same with mapping. Everything is described by me. No magic conventions. But there was one problem. If you already had a database (even with new database the initial amount of tables is big) writing all this stuff was tedious and boring.

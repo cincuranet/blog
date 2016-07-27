@@ -6,7 +6,6 @@ tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233438/
-category: none
 layout: post
 ---
 While I was digging into some locking I discovered interesting behavior. It behaves completely as it should, if you follow strictly the process in your brain. But we often skip some steps because we think we know better/faster. So let's start.

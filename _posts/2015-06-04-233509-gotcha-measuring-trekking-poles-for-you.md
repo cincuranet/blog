@@ -4,7 +4,6 @@ date: 2015-06-04T08:14:00Z
 tags:
   - Running
 redirect_from: /id/233509/
-category: none
 layout: post
 ---
 I recently decided to buy myself a set of poles. I was struggling with the idea for couple of months. When I'm running I want to have minimal amount of gear. Just essentials (or mandatory stuff the race needs, which is often more I'd like to ;)).

@@ -9,7 +9,6 @@ tags:
   - LINQ
   - TeamCity
 redirect_from: /id/232986/
-category: none
 layout: post
 ---
 If you're following everything around [Entity Framework][1] at least a little you know it's now open source. Except the obvious think of having sources available for study, bug finding, improvements etc. there's also option to play with bleeding edge features available. If you're into it or there's one particular bug fix that changes the world for you into piece and happiness instantly I have a good news for you.

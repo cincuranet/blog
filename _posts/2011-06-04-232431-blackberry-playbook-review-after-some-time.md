@@ -5,7 +5,6 @@ tags:
   - BlackBerry
   - BlackBerry PlayBook
 redirect_from: /id/232431/
-category: none
 layout: post
 ---
 [My initial review of BlackBerry PlayBook][1] was based on couple of hours using it. Right now I've used it almost every day since, so I have some observations based on real world usage.

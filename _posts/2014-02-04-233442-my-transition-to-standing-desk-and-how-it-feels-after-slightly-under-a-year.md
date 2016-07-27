@@ -5,7 +5,6 @@ tags:
   - Life
   - Standing desk
 redirect_from: /id/233442/
-category: none
 layout: post
 ---
 Roughly a nine months ago I bought myself a standing desk. I've heard about it in previous years but I always thought it's just another extravaganza. What made me change my mind was interesting. I never had a back problems or anything like that. I exercise a lot and I try to vary what I do to keep all my body fit. But, let's say, eleven months ago my body forced me to stand up a few times during a days and have a short walk simply because my legs kind of wanted to "stretch". Maybe it was because I was ramping up my running training/mileage and I was also running in the morning before work. I don't know, it just felt good to stand up do a few, really a few, steps and continue what I was doing. I soon realized that standing and moving felt fine.

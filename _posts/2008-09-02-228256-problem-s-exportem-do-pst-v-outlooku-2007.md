@@ -5,7 +5,6 @@ tags:
   - MS Office
   - Windows
 redirect_from: /id/228256/
-category: none
 layout: post
 ---
 Před časem jsem si nainstaloval načisto Office 2007. Pečlivě jsem ořezal instalaci o nepotřebný balast. Nicméně po jisté chvíli jsem zjistil, že v Outlooku nefunguje export do PST. Prohlédl jsem instalaci, jestli jsem něco moc neořezal. Nicméně instalace ukazovala, že jsem odšktal pouze věci pro import a že export je "tam".

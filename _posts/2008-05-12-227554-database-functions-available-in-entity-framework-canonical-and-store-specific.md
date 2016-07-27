@@ -6,7 +6,6 @@ tags:
   - Firebird
   - LINQ
 redirect_from: /id/227554/
-category: none
 layout: post
 ---
 You may wonder, how the Entity Framework will map some basic functions (concatenation, average, etc.) from i.e. LINQ or from EntitySQL to functions supported by database and what functions will be "the selected". Well the answer is easy. Every provider will support (should support) so-called canonical functions. For Beta 3 version (current latest) of Entity Framework you can find these on [http://msdn.microsoft.com/en-us/library/bb738626.aspx][1]. As you can see, there's a really good selection of functions and I think most of databases supports them in some way.

@@ -4,7 +4,6 @@ date: 2007-06-08T19:03:00Z
 tags:
   - Databases in general
 redirect_from: /id/225588/
-category: none
 layout: post
 ---
 OK, not so describing title, but ...

@@ -5,7 +5,6 @@ tags:
   - Python
   - Azure
 redirect_from: /id/233498/
-category: none
 layout: post
 ---
 Let me state that upfront: I'm a Python newbie. I started playing with slightly over half a year ago as a way to expand my view. Lately I was looking for something new to try among simple scripts that do this or that. I thought something web based is a good way to start. Web is now everywhere and it's easier than packing up some desktop or mobile application (IMO).

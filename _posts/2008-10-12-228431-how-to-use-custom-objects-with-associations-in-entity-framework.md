@@ -8,7 +8,6 @@ tags:
   - LINQ
   - Visual Studio
 redirect_from: /id/228431/
-category: none
 layout: post
 ---
 Today I had some time and I spent it playing with associations mapping on custom objects. Adding new objects is easy. It's what you already know. The only one new part is work with associations and navigation properties. But as always when you stuck you can generate dummy EDMX file and look at the result. :-)

@@ -5,7 +5,6 @@ tags:
   - C#
   - Programming in general
 redirect_from: /id/233542/
-category: none
 layout: post
 ---
 [Speaking last year on MS Fest][1] in Prague about C# 6 I got feedback I showed all the features in funny way and mostly in edge cases which were far from real world usage. And kind of questioning the usefulness of the features.

@@ -5,7 +5,6 @@ tags:
   - Firebird
   - SQL
 redirect_from: /id/232778/
-category: none
 layout: post
 ---
 I was recently in a talk related to [Firebird][1] and I found, that people are not aware of these two constructs. Either they don't know both or don't know they differ. These statements are doing similar stuff, but the evil is in details.

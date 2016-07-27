@@ -4,7 +4,6 @@ date: 2012-04-30T18:14:28Z
 tags:
   - Linux
 redirect_from: /id/232820/
-category: none
 layout: post
 ---
 One of my first servers I used for real world applications is now unplugged. Weird feeling. It was Linux box running [Slackware][1] 10.2.0 (yeah, old). For a while it was my main mail ([Postfix][2], [Dovecot][3]) and antispam ([SpamAssassin][4]) server. I had [Firebird][5] there as well as [Apache/httpd][6], [PHP][7], [Subversion ][8] and [Mono][9]. And all the standard services (SSH, cron, FTP, gcc, ...). The Firebird handled quite some applications thorough years. Apache handled till very last time, among other things, download mirror for [PSPad][10] (and I learned a lot about performance tuning with limited resources available when new (non-beta) version of PSPad was released). Few scripts were written in [Perl][11], a lot of in [bash][12] directly. And that's just what I remember.

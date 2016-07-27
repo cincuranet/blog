@@ -4,7 +4,6 @@ date: 2006-04-02T10:36:00Z
 tags:
   - .NET
 redirect_from: /id/7766/
-category: none
 layout: post
 ---
 Tento týden na cvikách z C# (BTW první cvika co vypadala slušně - ale učí se to první rok, tak se teprve učí jak na to) bylo v rámci procvičení práce se streamy za úkol udělat program, který všechny soubory z daného adresáře (nebo spíše soubory, které tam vložíte) nacpe do jednoho a uloží.

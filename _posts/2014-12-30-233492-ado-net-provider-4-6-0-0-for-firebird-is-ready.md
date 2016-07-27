@@ -12,7 +12,6 @@ tags:
   - SQL
   - Visual Studio
 redirect_from: /id/233492/
-category: none
 layout: post
 ---
 Maybe a bit late with Christmas gift. But better late than never, right? Also just before end of the year because what's a better plan than to update your production software last day of year. Go for it. :-P  

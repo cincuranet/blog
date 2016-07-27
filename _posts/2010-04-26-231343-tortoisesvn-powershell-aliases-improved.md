@@ -6,7 +6,6 @@ tags:
   - Subversion
   - TortoiseSVN
 redirect_from: /id/231343/
-category: none
 layout: post
 ---
 Some time ago [I wrote about creating PowerShell aliases for commit and update for TortoiseSVN][1]. But I needed little bit more flexibility with path so I added a parameter with default to `.`.

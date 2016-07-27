@@ -12,7 +12,6 @@ tags:
   - SQL
   - Visual Studio
 redirect_from: /id/233562/
-category: none
 layout: post
 ---
 New 5.0.5.0 version of [ADO.NET provider for Firebird][1] is ready for download. As with every major release the changes of something going wrong are high. No exception here. Big thanks to people testing the provider and reporting bugs.

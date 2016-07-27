@@ -4,7 +4,6 @@ date: 2009-05-14T08:17:00Z
 tags:
   - Entity Framework
 redirect_from: /id/230207/
-category: none
 layout: post
 ---
 This behavior may confuse you. You're adding new shiny view and it's not added into the model. Where's the problem?

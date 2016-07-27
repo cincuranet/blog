@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Firebird
 redirect_from: /id/233174/
-category: none
 layout: post
 ---
 > [Follow-up post.][9]

@@ -4,7 +4,6 @@ date: 2007-11-08T08:46:00Z
 tags:
   - Firebird
 redirect_from: /id/226626/
-category: none
 layout: post
 ---
 I like the software without installation, just one exe, one config saved on some well know place or near exe. For Firebird administration, I'm mainly using wfsql (better isql), IBExpert and FlameRobin (and sometimes isql). Well the isql is without config at all, the wfsql has one ini file, no problem. But sometimes you need something graphical, 'cause it's faster to click here and there, commit, going home. The FlameRobin has nice switch. The `/uh`. When you put into `/uh` path to the conf directory, it will use it, else it will be saved somewhere is `%AppData%`. So I've create simple batch file to run it.

@@ -7,7 +7,6 @@ tags:
   - MySQL
   - PHP
 redirect_from: /id/232299/
-category: none
 layout: post
 ---
 I was recently migrating my server to [PHP][1] 5.3. To be honest I don't know why. I'm not using PHP often, only few applications and some simple web pages (really simple logic). And this blog. To make things worse, I'm using as my main database [Firebird][2], not [MySQL][3]. And [PHP driver for Firebird][4], say, it's very average. But to keep myself in touch with "current" world I decided to go to PHP 5.3 (hoping also some bugs (mainly Firebird related ;)) to be fixed there). I faced two issues.

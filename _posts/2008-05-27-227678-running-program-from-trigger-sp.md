@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Firebird
 redirect_from: /id/227678/
-category: none
 layout: post
 ---
 <small>This article was originally created for [Databazovy Svet][1] (in Czech) and covers a little bit more about this topic. This shortened version is focused only on solutions for Firebird, without any other stuff.</small>

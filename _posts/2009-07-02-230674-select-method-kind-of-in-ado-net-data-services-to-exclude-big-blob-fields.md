@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - OData/Data Services (Astoria)
 redirect_from: /id/230674/
-category: none
 layout: post
 ---
 Current version of ADO.NET Data Services doesn't support Select method. Neither the .NET Framework v4. This may cause you problems when your entity contains relatively big blob fields, like photo of user in users table/entity. You can do almost nothing with it.

@@ -4,7 +4,6 @@ date: 2005-09-08T19:44:00Z
 tags:
   - Uncategorized
 redirect_from: /id/6557/
-category: none
 layout: post
 ---
 Zajímavý nadpis že?. ;)

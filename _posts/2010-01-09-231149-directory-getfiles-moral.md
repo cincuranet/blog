@@ -5,7 +5,6 @@ tags:
   - .NET
   - Programming in general
 redirect_from: /id/231149/
-category: none
 layout: post
 ---
 Oh yes. I have here another moral. And it's not good for me, because it's (again) described in documentation (but who reads it when there's nice IntelliSense?). In my program [ID3 renamer][1] I have couple of custom IO operations. One of fundamental methods is for enumerating directory(ies) for all MP3 files. It's based on [Directory.GetFiles][2] and few functions inside [ID3 renamer][3] need exact order of files. One of these functions is [FreeDB search][4]. When I was renaming files on my network share, it wasn't finding anything. But when moving the directory to local drive everything was fine.

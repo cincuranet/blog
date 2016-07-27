@@ -5,7 +5,6 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/230555/
-category: none
 layout: post
 ---
 Yesterday [I wrote][1] about new CountdownEvent class. But what's better than see some example of usage? ;-)

@@ -5,7 +5,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - NuGet
 redirect_from: /id/232526/
-category: none
 layout: post
 ---
 I like [NuGet][1] because it removes the hassle of downloading and installing libraries. And sadly only small number of vendors is providing just package without installer. And I also like parallel/multithreaded programming. Crucial tool in my toolbox for parallel programming is Jeffrey Richter's ([Wintellect][2]) [PowerThreading][3] library. The library is great and contains a lot of smart ideas <small>(In fact the [async/await feature in C# 5][4] uses similar concept as `AsyncEnumerator`.)</small> and some handy objects too. And it's completely _free_.

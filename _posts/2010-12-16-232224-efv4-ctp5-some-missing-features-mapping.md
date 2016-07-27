@@ -4,7 +4,6 @@ date: 2010-12-16T10:11:31Z
 tags:
   - Entity Framework
 redirect_from: /id/232224/
-category: none
 layout: post
 ---
 [Entity Framework v4 CTP5][1] added some new nice features since [CTP4][2], for example the [DbSet<T>.Local property I was blogging about][3] or [Validation][4]. But, sadly, there's something missing, mainly due to huge refactoring.

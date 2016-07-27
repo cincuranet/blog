@@ -5,7 +5,6 @@ tags:
   - PowerShell
   - Bash
 redirect_from: /id/233545/
-category: none
 layout: post
 ---
 It all started with this [tweet][1]:

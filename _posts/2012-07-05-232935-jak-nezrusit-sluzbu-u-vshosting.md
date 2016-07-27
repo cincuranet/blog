@@ -4,7 +4,6 @@ date: 2012-07-05T12:19:49Z
 tags:
   - Life
 redirect_from: /id/232935/
-category: none
 layout: post
 ---
 > [Jak (ne)zrušit službu u VSHosting – part deux][1]

@@ -7,7 +7,6 @@ tags:
   - Firebird
   - LINQ
 redirect_from: /id/229049/
-category: none
 layout: post
 ---
 You may wonder how to use usefull coalesce operator in Entity Framework. If you look to [some EF provider, i.e. for Firebird][1] ;) you will see, that there's no coalesce related code. So you will end up, probably, with code like `x => (x.BAR != null ? x.BAR : "N/A")`. And that's fun until you need longer chain of (not) null checks. But as [Diego Vega][2] pointed in some forum thread, you can use `??` operator. And the `x => x.BAR ?? x.BAR ?? x.BAR ?? "N/A"` looks, in my opinion, better.

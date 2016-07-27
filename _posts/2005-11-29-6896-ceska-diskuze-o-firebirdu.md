@@ -4,7 +4,6 @@ date: 2005-11-29T21:52:00Z
 tags:
   - Firebird
 redirect_from: /id/6896/
-category: none
 layout: post
 ---
 Dovolím si udělat tu malou reklamu. A proč by ne, je to vlastně můj blog. :)

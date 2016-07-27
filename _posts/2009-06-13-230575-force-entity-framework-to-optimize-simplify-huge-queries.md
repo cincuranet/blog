@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Entity Framework
 redirect_from: /id/230575/
-category: none
 layout: post
 ---
 When you write huge (I mean really huge, not a ~300 lines baby) complex query you may experience, that the generated query looks (well) suboptimal. The reason is that after some line the Entity Framework will gave up on optimization and simply throws it as is. To turn this off and force to simplify it whatever query it is you can add this into your app.config, as Kati Iceva pointed in [MSDN forums][1]. 

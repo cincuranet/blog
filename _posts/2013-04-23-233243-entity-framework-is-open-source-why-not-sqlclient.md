@@ -8,7 +8,6 @@ tags:
   - MS SQL Server
   - Open Source
 redirect_from: /id/233243/
-category: none
 layout: post
 ---
 If you're watching at least a little what's going on in .NET world you noticed that Entity Framework is open source for couple months now. That's a good thing.

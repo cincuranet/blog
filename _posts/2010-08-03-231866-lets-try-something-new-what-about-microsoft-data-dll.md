@@ -5,7 +5,6 @@ tags:
   - .NET
   - Databases in general
 redirect_from: /id/231866/
-category: none
 layout: post
 ---
 The new [Microsoft.Data.dll][1] seems to be very "interesting". 8-)

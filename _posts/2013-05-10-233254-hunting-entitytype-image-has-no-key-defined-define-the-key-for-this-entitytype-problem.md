@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Firebird
 redirect_from: /id/233254/
-category: none
 layout: post
 ---
 Few weeks back I was [hired][1] to debug the above mentioned problem. The application was using [Entity Framework 5][2] and [Firebird][3] as a database. The message says clearly what's wrong. How hard can it be to fix the problem, right? I was thinking the same. And how wrong I was.

@@ -4,7 +4,6 @@ date: 2007-12-06T10:53:00Z
 tags:
   - Databases in general
 redirect_from: /id/226734/
-category: none
 layout: post
 ---
 * Use Firebird SQL Server, if you have the luxury to choose among many database systems. ([http://www.firebirdsql.org/][1])

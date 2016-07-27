@@ -4,7 +4,6 @@ date: 2006-05-01T14:47:00Z
 tags:
   - .NET
 redirect_from: /id/8026/
-category: none
 layout: post
 ---
 Potřeboval jsem dnes vytvořit položky menu a skrýt ty které nejsou pro daného uživatele viditelné. V jednom videu na msdn jsem toto viděl, takže jsem "našel" řešení (resp. našel to video a v něm řešení) v podobě atributu `securityTrimmingEnabled`, který stačí přidat do web.config do siteMap sekce k danému providerovi.

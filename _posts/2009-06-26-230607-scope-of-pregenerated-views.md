@@ -4,7 +4,6 @@ date: 2009-06-26T19:38:23Z
 tags:
   - Entity Framework
 redirect_from: /id/230607/
-category: none
 layout: post
 ---
 Pregenerating views can speed up startup time of you application. You may find more info in my [previous post about it][1]. On the other hand, setting up this for all developers or i.e. build machine can be tricky. Thus it may be worth to think whether it's for you or not.

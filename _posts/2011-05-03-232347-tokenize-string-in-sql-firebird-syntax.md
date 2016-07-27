@@ -5,7 +5,6 @@ tags:
   - Firebird
   - SQL
 redirect_from: /id/232347/
-category: none
 layout: post
 ---
 Few days ago I wrote ["Some thoughts on denormalization" post][1]. Though concatenating data to one string is easy with there introduced function, splitting it back could be harder. I left it as exercise, but I feel, to make it complete, it's good to show one possible implementation.

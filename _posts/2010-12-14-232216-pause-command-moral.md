@@ -5,7 +5,6 @@ tags:
   - Batch files
   - Windows
 redirect_from: /id/232216/
-category: none
 layout: post
 ---
 Few days ago I created batch file to backup [Firebird][1] databases, [Subversion][2] repositories and some other data on a new server. During the testing of the script I put `PAUSE` command at the end, to see the result (or better to say errors). After I was done with polishing it up I created record in [Task Scheduler][3] and started test run. Everything finished in a couple of minutes nicely. I left it there, expecting it to do the backup during the night, as scheduled.

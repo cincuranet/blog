@@ -6,7 +6,6 @@ tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/233335/
-category: none
 layout: post
 ---
 Yesterday I was doing my [parallel-threading-async-locking course][1] and at one time we discussed (unplanned) [Thread Local Storage (TLS)][2] with one participant. To make a long story short they needed to know when processing of some item in [`ThreadPool`][3] completed. The default implementation of `ThreadPool` doesn't have such event, but luckily we can create such one. I sketched this in under five minutes and I think it might be worth for others.

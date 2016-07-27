@@ -4,7 +4,6 @@ date: 2009-11-02T15:01:01Z
 tags:
   - Amazon Kindle
 redirect_from: /id/230994/
-category: none
 layout: post
 ---
 Asi před týdnem jsem popisoval [první zkušenosti s Kindlem][1]. To jsem ho měl v ruce sotva den, takže všechny neduhy a neergonomické vlastnosti musely přijít logicky později.

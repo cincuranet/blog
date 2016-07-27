@@ -6,7 +6,6 @@ tags:
   - C#
   - LINQ
 redirect_from: /id/232039/
-category: none
 layout: post
 ---
 > [Follow-up post.][1]

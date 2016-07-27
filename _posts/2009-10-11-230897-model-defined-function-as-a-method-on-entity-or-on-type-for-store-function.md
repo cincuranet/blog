@@ -6,7 +6,6 @@ tags:
   - Entity SQL
   - LINQ
 redirect_from: /id/230897/
-category: none
 layout: post
 ---
 Model Defined functions are [new feature][1] in EFv4. You simply define you function using EDM functions etc. in your model and then you can use it in your queries. With [EdmFunction][2] attribute you can also create stub function to use it in LINQ queries. That's all great, and even itself makes life with Entity Framework easier.

@@ -6,7 +6,6 @@ tags:
   - OData/Data Services (Astoria)
   - Silverlight
 redirect_from: /id/230940/
-category: none
 layout: post
 ---
 I had this idea on my list for a couple of months and I was always postponing it, because it's stupid. But you know. Exploring the unexplored ways, that's what I like to do :).

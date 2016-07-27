@@ -4,7 +4,6 @@ date: 2011-05-18T17:05:46Z
 tags:
   - Entity Framework
 redirect_from: /id/232371/
-category: none
 layout: post
 ---
 In a lot of articles the [Entity Framework's 4.1 Code First][1] is described as third option to the already available so called Database First and Model First paths. But I'm not sure, it's really a third distinct path. At least it's not so clear.

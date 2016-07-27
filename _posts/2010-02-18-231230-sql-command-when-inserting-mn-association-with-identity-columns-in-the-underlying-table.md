@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - MS SQL Server
 redirect_from: /id/231230/
-category: none
 layout: post
 ---
 Today I uncovered a magic command from Entity Framework v4 when you create M:N association and the underlying table is defined with both columns as identity and you insert there. I don't what's it good for, as this table in fact only stores the two IDs to connect other tables. But somebody may build some logic on identity there, sure.

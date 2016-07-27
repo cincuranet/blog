@@ -4,7 +4,6 @@ date: 2010-08-24T20:35:12Z
 tags:
   - Databases in general
 redirect_from: /id/231929/
-category: none
 layout: post
 ---
 Nedávno se na [Builderu lehce rozjela diskuze][1], ačkoli v threadu na odlišné téma, jestli sloupce v SQL příkazech vyjmenovávat nebo ne. Nedá mi to a přispěju taky svou troškou.

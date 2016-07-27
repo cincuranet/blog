@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/227674/
-category: none
 layout: post
 ---
 > [Updated version.][1]

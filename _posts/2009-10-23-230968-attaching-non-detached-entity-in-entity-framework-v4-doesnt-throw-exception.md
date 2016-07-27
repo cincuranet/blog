@@ -4,7 +4,6 @@ date: 2009-10-23T18:47:01Z
 tags:
   - Entity Framework
 redirect_from: /id/230968/
-category: none
 layout: post
 ---
 While slowly digging into Beta 2 of EF4 I discovered new nice "feature". In EF1, if you had code like this.

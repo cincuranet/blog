@@ -4,7 +4,6 @@ date: 2005-06-21T11:22:00Z
 tags:
   - .NET
 redirect_from: /id/6188/
-category: none
 layout: post
 ---
 > [Follow up post available.][1]

@@ -7,7 +7,6 @@ tags:
   - NoSQL
   - NuoDB
 redirect_from: /id/232901/
-category: none
 layout: post
 ---
 I know, there was a small gap between NuoDB related posts. I was little bit busy. But I'm now going to change it. In today's post we'll try to scale our chorus both in transactions and I/O throughput.

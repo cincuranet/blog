@@ -4,7 +4,6 @@ date: 2009-11-08T22:09:54Z
 tags:
   - Entity Framework
 redirect_from: /id/231012/
-category: none
 layout: post
 ---
 The last beta (Beta 2) of Visual Studio 2010 with EF4 contains one "interesting" change. The implicit lazy loading is turned on by default. And I'm not sure I like it.

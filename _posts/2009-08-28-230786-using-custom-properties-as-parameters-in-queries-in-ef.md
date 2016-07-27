@@ -7,7 +7,6 @@ tags:
   - Entity Framework
   - LINQ
 redirect_from: /id/230786/
-category: none
 layout: post
 ---
 Most of the time you're using properties in objects that are also in database. But sometimes you may need to create property in object that's not in database - it's used only in this application or it's there custom logic. Then, if you wanna use it in queries, you're out. You can use only those properties declared in table, obviously.

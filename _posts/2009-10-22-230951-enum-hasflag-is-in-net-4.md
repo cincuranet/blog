@@ -4,7 +4,6 @@ date: 2009-10-22T14:30:47Z
 tags:
   - .NET
 redirect_from: /id/230951/
-category: none
 layout: post
 ---
 Today I noticed, that in beta 2 of .NET Framework 4 (and Visual Studio 2010) there's a new method for enums - [HasFlag][1]. Using bitwise operators was sometimes ugly and decreased the readability of code, hence (I think) almost everybody wrote similar method i.e.:

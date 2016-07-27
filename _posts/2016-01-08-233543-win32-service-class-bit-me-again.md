@@ -5,7 +5,6 @@ tags:
   - Best practice or not?
   - Windows
 redirect_from: /id/233543/
-category: none
 layout: post
 ---
 [When I wrote few weeks ago about my gotcha with `Win32_Service`][1] little I knew it is a journey to begin. Here's next part.

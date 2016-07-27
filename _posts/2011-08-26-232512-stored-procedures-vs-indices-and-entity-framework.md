@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Entity Framework
 redirect_from: /id/232512/
-category: none
 layout: post
 ---
 Sometimes I came to discussion about Entity Framework not being able to use (map) particular stored procedure somebody wrote to do something very quickly and/or efficiently (kind of ;)). You know, it's boiling water for coffee, printing invoice and sending flowers to cafeteria girl down in a hall.

@@ -5,7 +5,6 @@ tags:
   - OpenELEC
   - Raspberry Pi
 redirect_from: /id/233527/
-category: none
 layout: post
 ---
 I like music a lot. When I'm listening for pleasure, not simply as a "noise" on background, I like to enjoy it on my stereo without any fiddling with laptop or cables. I recently took Raspberry Pi (the B+ model) and OpenELEC and connected it to my receiver using HDMI. Everything works fine - I'm even impressed how smooth the OpenELEC runs and how much power the Raspberry Pi has, given the friendly price. There was only one problem. Sometimes. Irregularly. The music was playing fine and suddenly it stopped for a second or two. And then it was fine again for a minute or hour.

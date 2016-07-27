@@ -5,7 +5,6 @@ tags:
   - Windows
   - Presentations &amp; Speaking
 redirect_from: /id/233508/
-category: none
 layout: post
 ---
 When I'm teaching my courses I'm of course in Presentation Mode. I keep all my applications running, but I just don't want to have notifications popping up while I'm talking. During the day I also have tasks for people to complete so they get familiar with whatever area we're talking about - listening is something, but actually doing it yourself is one step higher. While they are completing these tasks I often freeze the image on the projector and I do some easy work myself and waiting for questions to pop up. At this time the Presentation Mode is not needed and I'm turning it off.

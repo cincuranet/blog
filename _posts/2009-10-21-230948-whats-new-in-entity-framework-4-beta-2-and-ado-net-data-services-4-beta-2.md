@@ -9,7 +9,6 @@ tags:
   - LINQ
   - OData/Data Services (Astoria)
 redirect_from: /id/230948/
-category: none
 layout: post
 ---
 Nice list at [http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx][1].

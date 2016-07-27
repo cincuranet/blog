@@ -11,7 +11,6 @@ tags:
   - Visual Studio
   - Windows
 redirect_from: /id/228839/
-category: none
 layout: post
 ---
 I'm pleased to announce 2.5.0 Beta 1 for .NET 3.5/2.0 [with Entity Framework support] version. It contains several bugfixes as well as brand new Entity Framework support (still beta!). Looking forward to your feedback.

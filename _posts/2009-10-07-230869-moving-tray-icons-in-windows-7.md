@@ -4,7 +4,6 @@ date: 2009-10-07T18:41:55Z
 tags:
   - Windows
 redirect_from: /id/230869/
-category: none
 layout: post
 ---
 Today I found interesting thing. Tray icons in Windows 7 keep their position and you can reorder them in a way you want. What a great idea.

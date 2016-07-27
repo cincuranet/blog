@@ -6,7 +6,6 @@ tags:
   - Best practice or not?
   - Multithreading/Parallelism/Asynchronous/Concurrency
 redirect_from: /id/232802/
-category: none
 layout: post
 ---
 Collections in [`System.Collections.Concurrent`][1] namespace are optimized for access from more (basically) threads. That means no stupid "one-lock-for-everything" approach. Actually these are [lock free][2].
