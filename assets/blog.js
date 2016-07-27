@@ -36,9 +36,6 @@ var blog = (function() {
 	function initImageBox() {
 		$('article a:has(img)').each(function(i, e) {
 			e = $(e);
-			if (isLocalLink(e[0].href)) {
-				return;
-			}
 			e.attr('rel', 'gallery');
 			e.fancybox({
 				openEffect: 'fade',
