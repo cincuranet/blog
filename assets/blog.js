@@ -4,10 +4,10 @@ var blog = (function() {
 	function initLinks() {
 		$('article a').each(function(i, e) {
 			e = $(e);
-			if (!isLocalLink(e.href)) {
+			if (!isLocalLink(e.attr('href'))) {
 				e.attr('target', '_blank');
 			}
-			else if (isLocalImageLink(e.href)) {
+			else if (isLocalImageLink(e.attr('href'))) {
 				e.attr('target', '_blank');
 			}
 		});
@@ -35,7 +35,7 @@ var blog = (function() {
 	function initImageBox() {
 		$('article a:has(img)').each(function(i, e) {
 			e = $(e);
-			if (isLocalLink(e.href)) {
+			if (isLocalLink(e.attr('href'))) {
 				return;
 			}
 			e.attr('rel', 'gallery');
