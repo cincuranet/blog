@@ -19,8 +19,8 @@ Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datov
 
 <h4>More info</h4>
 <table>
-	<tr><td>Email:</td><td>[jiri@cincura.net][6]</td></tr>
-	<tr><td>CV:</td><td>[http:{{ site.address }}/cv/][8]</td></tr>
+	<tr><td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td></tr>
+	<tr><td>CV:</td><td><a href="http:{{ site.address }}/cv/">http:{{ site.address }}/cv/</a></td></tr>
 	<tr><td>ID:</td><td>73563005 (Czech Republic, EU)</td></tr>
 	<tr><td>VAT:</td><td>CZ8303051218</td></tr>
 	<tr><td>Bank account:</td><td>2900324931/2010 (Fio banka)</td></tr>
