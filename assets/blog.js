@@ -2,7 +2,8 @@
 ---
 var blog = (function() {
 	function initLinks() {
-		$('article a').each(function(i, e) {
+		// should I do all links?
+		$('article a, a').each(function(i, e) {
 			e = $(e);
 			if (!isLocalLink(e.attr('href'))) {
 				e.attr('target', '_blank');
