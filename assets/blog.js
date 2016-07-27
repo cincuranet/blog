@@ -5,10 +5,10 @@ var blog = (function() {
 		// should I do all links?
 		$('article a, a').each(function(i, e) {
 			e = $(e);
-			if (!isLocalLink(e.attr('href'))) {
+			if (!isLocalLink(e[0].href)) {
 				e.attr('target', '_blank');
 			}
-			else if (isLocalImageLink(e.attr('href'))) {
+			else if (isLocalImageLink(e[0].href)) {
 				e.attr('target', '_blank');
 			}
 		});
@@ -36,7 +36,7 @@ var blog = (function() {
 	function initImageBox() {
 		$('article a:has(img)').each(function(i, e) {
 			e = $(e);
-			if (isLocalLink(e.attr('href'))) {
+			if (isLocalLink(e[0].href)) {
 				return;
 			}
 			e.attr('rel', 'gallery');
