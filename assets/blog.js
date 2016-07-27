@@ -2,8 +2,15 @@
 ---
 var blog = (function() {
 	function initLinks() {
-		$('article a:not(a[href*="{{ site.address }}"])').attr('target', '_blank');
-		$('article a[href*="{{ site.address }}/i/"]').attr('target', '_blank');
+		$('article a').each(function(i, e) {
+			e = $(e);
+			if (!isLocalLink(e.href)) {
+				e.attr('target', '_blank');
+			}
+			else if (isLocalImageLink(e.href)) {
+				e.attr('target', '_blank');
+			}
+		});
 	}
 
 	function initImageTitles() {
@@ -26,11 +33,18 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
-		$('article a[href*="{{ site.address }}/i/"]:has(img)').attr('rel', 'gallery').fancybox({
-			openEffect: 'fade',
-			closeEffect: 'fade',
-			nextEffect: 'fade',
-			prevEffect: 'fade'
+		$('article a:has(img)').each(function(i, e) {
+			e = $(e);
+			if (isLocalLink(e.href)) {
+				return;
+			}
+			e.attr('rel', 'gallery');
+			e.fancybox({
+				openEffect: 'fade',
+				closeEffect: 'fade',
+				nextEffect: 'fade',
+				prevEffect: 'fade'
+			});
 		});
 	}
 
@@ -84,7 +98,7 @@ var blog = (function() {
 	}
 
 	function showArticleNicely() {
-		if (/blog\.cincura\.net/.test(document.referrer)) {
+		if (isLocalLink(document.referrer)) {
 			$(document).scrollTop($('article').offset().top);
 		}
 	}
@@ -109,6 +123,14 @@ var blog = (function() {
 		h1.html(h1.html().replace('can\'t', '<span class="low">can\'t</span>').replace('doing it', '<span class="low">doing it</span>'));
 		var h2 = $('header h2');
 		h2.html(h2.html().replace('{x2}', '<span class="low">{x2}</span>'));
+	}
+
+	function isLocalLink(link) {
+		return link.indexOf('{{ site.address }}') != -1;
+	}
+
+	function isLocalImageLink(link) {
+		return isLocalLink(link) && link.indexOf('/i/') != -1;
 	}
 
 	return {
