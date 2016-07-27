@@ -28,11 +28,11 @@ Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datov
 	<tr><td>SWIFT:</td><td>FIOBCZPPXXX</td></tr>
 </table>
 
-[1]: {{ site.address }}
+[1]: /
 [2]: https://github.com/cincuranet/
-[3]: {{ site.address }}/cv/#speaker-events
-[4]: {{ site.address }}/{{ site.feed }}
+[3]: /cv/#speaker-events
+[4]: /{{ site.feed }}
 [5]: https://twitter.com/cincura_net
 [6]: mailto:jiri@cincura.net
 [7]: http://www.id3renamer.com
-[8]: {{ site.address }}/cv/
+[8]: /cv/

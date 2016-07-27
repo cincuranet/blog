@@ -9,23 +9,23 @@
 	{% else %}
 	<title>{{ site.name }} | {{ site.description }}</title>
 	{% endif %}
-	<link rel="shortcut icon" href="{{ site.address }}/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="{{ site.address }}/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-	<link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.address }}/{{ site.feed }}" />
+	<link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="/{{ site.feed }}" />
 
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />
 
-	<link rel="stylesheet" href="{{ site.address }}/assets/style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="{{ site.address }}/assets/syntax.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/assets/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/assets/syntax.css" type="text/css" media="all" />
 
-	<script type="text/javascript" src="{{ site.address }}/assets/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
 
-	<script type="text/javascript" src="{{ site.address }}/assets/fancybox/jquery.fancybox.pack.js"></script>
-	<link rel="stylesheet" href="{{ site.address }}/assets/fancybox/jquery.fancybox.css" type="text/css" media="all" />
+	<script type="text/javascript" src="/assets/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css" type="text/css" media="all" />
 
-	<script type="text/javascript" src="{{ site.address }}/assets/blog.js"></script>
+	<script type="text/javascript" src="/assets/blog.js"></script>
 
 <script type="text/javascript">
 	$(document).ready(blog.initGeneral);
@@ -35,15 +35,15 @@
 <div id="wrapper">
 	<nav>
 		<ul>
-			<li><a href="{{ site.address }}/">Home</a></li>
-			<li><a href="{{ site.address }}/archive/">Archive</a></li>
-			<li><a href="{{ site.address }}/tags/">Tags</a></li>
-			<li><a href="{{ site.address }}/about/">About</a></li>
-			<li><a href="{{ site.address }}/cv/">CV</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/archive/">Archive</a></li>
+			<li><a href="/tags/">Tags</a></li>
+			<li><a href="/about/">About</a></li>
+			<li><a href="/cv/">CV</a></li>
 		</ul>
 	</nav>
 
 	<header>
-		<h1><a href="{{ site.address }}/">{{ site.description }}</a></h1>
+		<h1><a href="/">{{ site.description }}</a></h1>
 		<h2><span class="low">by</span> {{ site.name }}</h2>
 	</header>
