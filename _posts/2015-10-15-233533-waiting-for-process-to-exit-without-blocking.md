@@ -17,6 +17,7 @@ The problem is that the [`Process` class][1] has only `WaitForExit` method, bloc
 ```csharp
 public static Task WaitForExitAsync(this Process p)
 {
+  p.EnableRaisingEvents = true;
   var tcs = new TaskCompletionSource<object>();
   p.Exited += (s, e) => tcs.TrySetResult(null);
   if (p.HasExited)
