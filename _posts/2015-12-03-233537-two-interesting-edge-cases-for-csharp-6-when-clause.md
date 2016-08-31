@@ -1,5 +1,5 @@
 ---
-title: "Two interesting edge cases for when clause"
+title: "Two interesting edge cases for C#6's when clause"
 date: 2015-12-03T04:24:00Z
 tags:
   - .NET
