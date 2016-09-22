@@ -1,18 +1,5 @@
 image: ruby:2.3
 
-test:
-  stage: test
-  script:
-  - gem install jekyll
-  - gem install jekyll-sitemap
-  - gem install jekyll-redirect-from
-  - jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
-
 pages:
   stage: deploy
   script:
