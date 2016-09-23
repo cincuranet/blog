@@ -2,6 +2,7 @@ name: Jiří {x2} Činčura
 description: Taking something that can't be done, and then doing it.
 permalink: /:title/
 timezone: UTC
+protocol: "https:"
 address: //blog.cincura.net
 excerpt_separator: <!-- excerpt -->
 excerpt_link_name: Continue reading...

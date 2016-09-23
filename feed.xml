@@ -4,8 +4,8 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"> 
 	<title>{{ site.name }}</title>
-	<link href="http:{{ site.address }}/{{ site.feed }}" rel="self"/>
-	<link href="http:{{ site.address }}"/>
+	<link href="{{ site.protocol }}{{ site.address }}/{{ site.feed }}" rel="self"/>
+	<link href="{{ site.protocol }}{{ site.address }}"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>          
 	<author>
 		<name>{{ site.name }}</name>
@@ -15,10 +15,10 @@ layout: null
 	{% for post in site.posts limit: site.feed_posts %}
 	<entry>
 		<title>{{ post.title }}</title>
-		<link href="http:{{ site.address }}{{ post.url }}"/>
+		<link href="{{ site.protocol }}{{ site.address }}{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>http:{{ site.address }}{{ post.url }}</id>
-		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="http:{{ site.address }}{{ post.url }}">{{ site.excerpt_link_name }}</a>]]></content>
+		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="{{ site.protocol }}{{ site.address }}{{ post.url }}">{{ site.excerpt_link_name }}</a>]]></content>
 	</entry>
 	{% endfor %}
 </feed>
