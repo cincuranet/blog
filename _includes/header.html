@@ -10,14 +10,14 @@ if (window.location.protocol != 'https:') {
 	<meta name="robots" content="all,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{% if page.title %}
-	<title>{{ page.title }} | {{ site.name }}</title>
+	<title>{{ page.title }} | {{ site.name | strip_html }}</title>
 	{% else %}
-	<title>{{ site.name }} | {{ site.description | strip_html }}</title>
+	<title>{{ site.name | strip_html }} | {{ site.description | strip_html }}</title>
 	{% endif %}
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-	<link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="/{{ site.feed }}" />
+	<link rel="alternate" type="application/atom+xml" title="{{ site.name | strip_html }}" href="/{{ site.feed }}" />
 
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />
