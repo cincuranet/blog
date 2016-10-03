@@ -116,11 +116,6 @@ var blog = (function() {
 		$('body').append('<script id="dsq-count-scr" src="//blogcincuranet.disqus.com/count.js" async></script>');
 	}
 
-	function initHeader() {
-		var h2 = $('header h2');
-		h2.html(h2.html().replace(/({.+?})/g, '<span class="low">$1</span>'));
-	}
-
 	function isLocalLink(link) {
 		return link.indexOf('{{ site.address }}') != -1;
 	}
@@ -131,7 +126,6 @@ var blog = (function() {
 
 	return {
 		initGeneral: function() {
-			initHeader();
 			initLinks();
 			initImageTitles();
 			initLineNumbers();
