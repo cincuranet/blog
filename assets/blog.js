@@ -123,12 +123,6 @@ var blog = (function() {
 		h2.html(h2.html().replace('{x2}', '<span class="low">{x2}</span>'));
 	}
 
-	function initHttps() {
-		if (window.location.protocol != 'https:') {
-			window.location.replace('https:' + window.location.href.substring(window.location.protocol.length));
-		}
-	}
-
 	function isLocalLink(link) {
 		return link.indexOf('{{ site.address }}') != -1;
 	}
@@ -139,7 +133,6 @@ var blog = (function() {
 
 	return {
 		initGeneral: function() {
-			initHttps();
 			initHeader();
 			initLinks();
 			initImageTitles();
