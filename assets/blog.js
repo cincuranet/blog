@@ -118,7 +118,7 @@ var blog = (function() {
 
 	function initHeader() {
 		var h2 = $('header h2');
-		h2.html(h2.html().replace('{x2}', '<span class="low">{x2}</span>'));
+		h2.html(h2.html().replace(/({.+?})/g, '<span class="low">$1</span>'));
 	}
 
 	function isLocalLink(link) {
