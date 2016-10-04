@@ -146,6 +146,8 @@ var blog = (function() {
 	};
 })();
 
+blog.initGeneral();
+
 var disqus_config = function () {
 	this.page.url = '';
 };
