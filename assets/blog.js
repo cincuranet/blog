@@ -152,11 +152,11 @@ var blog = (function() {
 })();
 
 blog.initGeneral();
-if (window.location.pathname == '/')
+if (/^\/$/i.test(window.location.pathname))
 	blog.initPostsListPage();
-if (window.location.pathname == '/tags/')
+if (/^\/tags\/$/i.test(window.location.pathname))
 	blog.initTagsPage();
-if (typeof post_url !== 'undefined')
+if (/^\/\d+-.+\/$/i.test(window.location.pathname))
 	blog.initPostPage();
 
 var disqus_config = function () {
