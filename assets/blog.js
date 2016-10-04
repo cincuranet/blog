@@ -147,6 +147,10 @@ var blog = (function() {
 })();
 
 blog.initGeneral();
+if (window.location.pathname == '/')
+	blog.initPostsListPage();
+if (window.location.pathname == '/tags/')
+	blog.initTagsPage();
 
 var disqus_config = function () {
 	this.page.url = '';

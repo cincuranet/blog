@@ -2,9 +2,6 @@
 layout: default
 title: Tags
 ---
-<script type="text/javascript">
-	$(document).ready(blog.initTagsPage);
-</script>
 <h3>Tags</h3>
 {% for t in site.tags %}
 <div class="collapsable" data-sort-key="{{ t[0] | downcase }}">
