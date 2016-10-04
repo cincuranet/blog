@@ -101,9 +101,9 @@ var blog = (function() {
 		}
 	}
 
-	function initFullDisqus(postUrl) {
+	function initFullDisqus() {
 		disqus_config = function () {
-			this.page.url = 'http:{{ site.address }}' + postUrl;
+			this.page.url = 'http:{{ site.address }}' + post_url;
 		};
 
 		var d = document, s = d.createElement('script');
@@ -136,9 +136,9 @@ var blog = (function() {
 		initTagsPage: function() {
 			tagsFolding();
 		},
-		initPostPage: function(postUrl) {
+		initPostPage: function() {
 			showArticleNicely();
-			initFullDisqus(postUrl);
+			initFullDisqus();
 		},
 		initPostsListPage: function() {
 			initDisqusCounts();
