@@ -153,6 +153,10 @@ var blog = (function() {
 	};
 })();
 
+var disqus_config = function () {
+	this.page.url = '';
+};
+
 blog.initGeneral();
 if (/^\/\d+-.+\/$/i.test(window.location.pathname)) {
 	blog.initPostPage();
@@ -163,8 +167,4 @@ else {
 		blog.initPostsListPage();
 	else if (/^\/tags\/$/i.test(window.location.pathname))
 		blog.initTagsPage();
-} 
-
-var disqus_config = function () {
-	this.page.url = '';
-};
+}
