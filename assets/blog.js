@@ -151,6 +151,8 @@ if (window.location.pathname == '/')
 	blog.initPostsListPage();
 if (window.location.pathname == '/tags/')
 	blog.initTagsPage();
+if (post_url)
+	blog.initPostPage();
 
 var disqus_config = function () {
 	this.page.url = '';
