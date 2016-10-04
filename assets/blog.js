@@ -154,9 +154,9 @@ var blog = (function() {
 blog.initGeneral();
 if (/^\/$/i.test(window.location.pathname))
 	blog.initPostsListPage();
-if (/^\/tags\/$/i.test(window.location.pathname))
+else if (/^\/tags\/$/i.test(window.location.pathname))
 	blog.initTagsPage();
-if (/^\/\d+-.+\/$/i.test(window.location.pathname))
+else if (/^\/\d+-.+\/$/i.test(window.location.pathname))
 	blog.initPostPage();
 
 var disqus_config = function () {
