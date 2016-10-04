@@ -80,6 +80,10 @@ a:hover {
 	color: #0F83DB;
 }
 
+a[rel="gallery"] {
+	cursor: zoom-in;
+}
+
 kbd {
 	font-family: Consolas, 'Lucida Console', monospace;
 	font-size: .8rem;
