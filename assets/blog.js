@@ -135,6 +135,10 @@ var blog = (function() {
 			initImageBox();
 			initGA();
 		},
+		initContentPage: function() {
+			initSearch();
+			initTwitter();
+		},
 		initTagsPage: function() {
 			tagsFolding();
 		},
@@ -145,19 +149,21 @@ var blog = (function() {
 		},
 		initPostsListPage: function() {
 			initDisqusCounts();
-			initSearch();
-			initTwitter();
 		}
 	};
 })();
 
 blog.initGeneral();
-if (/^\/$/i.test(window.location.pathname))
-	blog.initPostsListPage();
-else if (/^\/tags\/$/i.test(window.location.pathname))
-	blog.initTagsPage();
-else if (/^\/\d+-.+\/$/i.test(window.location.pathname))
+if (/^\/\d+-.+\/$/i.test(window.location.pathname)) {
 	blog.initPostPage();
+}
+else {
+	blog.initContentPage();
+	if (/^\/$/i.test(window.location.pathname))
+		blog.initPostsListPage();
+	else if (/^\/tags\/$/i.test(window.location.pathname))
+		blog.initTagsPage();
+} 
 
 var disqus_config = function () {
 	this.page.url = '';
