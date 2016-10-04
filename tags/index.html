@@ -3,7 +3,8 @@ layout: default
 title: Tags
 ---
 <h3>Tags</h3>
-{% for t in site.tags %}
+{% assign sorted_tags = site.tags | sort %}
+{% for t in sorted_tags %}
 <div class="collapsable" data-sort-key="{{ t[0] | downcase }}">
 	<p>
 		<span class="collapsable-header"><a href="#{{ t[0] | downcase }}" name="{{ t[0] | downcase }}">{{ t[0] }} ({{ t[1] | size }})</a></span>
