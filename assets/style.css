@@ -140,6 +140,11 @@ nav li {
 	padding-left: 8px;
 }
 
+nav .icon {
+	font-size: 1.4rem;
+	line-height: 0;
+}
+
 /* ------------------------------------------ [ Header ] */
 
 header {
