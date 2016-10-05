@@ -347,13 +347,19 @@ footer p {
 
 /* --------------------------------- [ Search ] */
 
-input.search-field {
-	background: transparent url(bg-search.gif) no-repeat 7px center;
-	padding: 0 0 0 23px;
-	height: 24px;
-	font-size: .9rem;
+div.search-field {
+	display: table;
 }
 
-p.search-field {
-	padding-right: 16px;
+div.search-field > span {
+	display: table-cell;
+	border: 1px black solid;
+	border-right: 0;
+	padding:  0px 4px 0px 4px;
+}
+
+div.search-field > input {
+	display: table-cell;
+	height: 24px;
+	font-size: .9rem;
 }
