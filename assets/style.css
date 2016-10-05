@@ -84,12 +84,6 @@ a[rel="gallery"] {
 	cursor: zoom-in;
 }
 
-kbd {
-	font-family: Consolas, 'Lucida Console', monospace;
-	font-size: .8rem;
-	text-transform: uppercase;
-}
-
 table {
 	margin-bottom: 1em;
 	font-size: 1rem;
@@ -197,7 +191,6 @@ article p.meta {
 	font-size: .9rem;
 }
 
-
 article blockquote {
 	margin: 0 1em 1em 1em;
 	padding: 8px;
@@ -223,10 +216,15 @@ article ol {
 }
 
 article li {
-	padding-left: 20px;
+	padding-left: 12px;
 	font-size: 1rem;
 	line-height: 1.6;
-	background: transparent url(bullet.gif) no-repeat left 2px top 4px;
+}
+article li:before {
+	content: '\f101';
+	font-size: .9rem;
+	font-family: FontAwesome;
+	padding-right: 8px;
 }
 
 article code {
@@ -320,12 +318,6 @@ footer {
 footer p {
 	margin-bottom: .2em;
 	font-size: .9rem;
-}
-
-footer .rss {
-	margin-left: 0;
-	padding-left: 16px;
-	background: transparent url(feed-icon.gif) no-repeat center left;
 }
 
 /* --------------------------------- [ General Classes ] */
