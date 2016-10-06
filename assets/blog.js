@@ -46,17 +46,6 @@ var blog = (function() {
 		});
 	}
 
-	function initSearch() {
-		$('#search').keypress(function(e) {
-			if (e.which == 13) {
-				e.preventDefault();
-				var query = $(e.target).val();
-				var site = '{{ site.address }}'.replace(/^\/\//, '');
-				window.open('https://www.google.com/search?q=' + query + ' site:' + site);
-			}
-		});
-	}
-
 	function initGA() {
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -65,10 +54,6 @@ var blog = (function() {
 
 		ga('create', 'UA-113043-8', 'cincura.net');
 		ga('send', 'pageview');
-	}
-
-	function initTwitter() {
-		$('#twitter').html('<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/cincura_net" data-widget-id="379189791515885568" data-chrome="noheader nofooter noborders transparent">&nbsp;</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>');
 	}
 
 	function tagsFolding() {
@@ -136,8 +121,6 @@ var blog = (function() {
 			initGA();
 		},
 		initContentPage: function() {
-			initSearch();
-			initTwitter();
 		},
 		initTagsPage: function() {
 			tagsFolding();

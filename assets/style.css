@@ -280,36 +280,6 @@ article > p {
 	min-height: 325px;
 }
 
-/* ----------------------------------------- [ Aside ] */
-
-aside {
-	border-top: 1px solid #111;
-	padding-top: 1em;
-	overflow: hidden;
-}
-
-aside h4 {
-	padding-bottom: .6em;
-	line-height: 1.6;
-	border-bottom: 1px dotted #666;
-}
-
-aside p {
-	font-size: .9rem;
-	color: #111;
-}
-
-aside .col {
-	overflow: hidden;
-	width: calc((100% - 16px - 16px) / 3);
-	margin-right: 16px;
-	float: left;
-}
-
-aside .col:last-of-type {
-	margin-right: 0;
-}
-
 /* --------------------------------------- [ Footer ] */
 
 footer {
@@ -343,23 +313,4 @@ footer p {
 	font-weight: normal;
 	text-transform: lowercase;
 	color: #666;
-}
-
-/* --------------------------------- [ Search ] */
-
-div.search-field {
-	display: table;
-}
-
-div.search-field > span {
-	display: table-cell;
-	border: 1px black solid;
-	border-right: 0;
-	padding:  0px 4px 0px 4px;
-}
-
-div.search-field > input {
-	display: table-cell;
-	height: 24px;
-	font-size: .9rem;
 }
