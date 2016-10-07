@@ -113,7 +113,6 @@ input, textarea {
 	margin-bottom: 3em;
 	overflow: hidden;
 }
-
 @media (max-width: 768px) {
 	#wrapper {
 		margin-left: 16px;
@@ -138,6 +137,11 @@ nav li {
 	font-size: 1rem;
 	line-height: 1.6;
 	padding-left: 8px;
+}
+@media (max-width: 768px) {
+	nav li {
+		margin-right: 8px;
+	}
 }
 
 nav .icon {
