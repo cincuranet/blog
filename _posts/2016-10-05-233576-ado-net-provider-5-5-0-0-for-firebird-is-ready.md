@@ -18,7 +18,7 @@ I'm going to be honest with you. I'm a bit disappointed. About a month ago I [as
   
 <!-- excerpt --> 
 
-It's time to released it.
+It's time to release it.
 
 New version 5.5.0.0 of [ADO.NET provider for Firebird][1] is ready for download. There's really just one new notable feature - the compression support for Firebird 3. Along the way the network packets handling was reworked, so you might see some minor performance improvement even if you're not using compression or Firebird 3.
 
