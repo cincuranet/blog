@@ -26,7 +26,7 @@ You can download the [32-bit build][1] or [64-bit build][2] depending on what Fi
 
 The plugin needs to be first registered in `plugins.conf`.
 
-```plain
+```text
 Plugin = FBNETEXTERNALENGINE {
 	Module = $(dir_plugins)/FbNetExternalEnginePlugin
 	Config = FBNETEXTERNALENGINE_config
