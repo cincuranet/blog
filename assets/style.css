@@ -236,26 +236,37 @@ article li:before {
 	padding-right: 8px;
 }
 
-article code {
+article code, article pre {
 	font-family: Consolas, 'Lucida Console', monospace;
+	font-size: 1rem;
+	line-height: 1.2;
 }
 
-article pre {
+article div.highlight {    
 	margin: 0 1em 1em 1em;
 	padding: 8px;
-	font-size: 1rem;
-	overflow: auto;
-	background-color: #EEEEF2;
 	border-radius: .5em;
+	background-color: #EEEEF2;
+	overflow: auto;
+}
+article .highlight table {
+	margin-bottom: 0;
+}
+article .highlight td {
+	padding: 0;
 }
 
-article .line-number {
-	display: inline-block;
-	padding-right: 8px;
-	margin-right: 8px;
+article pre:not(.lineno) {
+	padding-left: 8px;
+}
+article pre.lineno {
 	border-right: 1px solid #000;
-	width: 1.5em;
 	text-align: right;
+	padding-right: 8px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 article img {
