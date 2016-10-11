@@ -7,7 +7,7 @@ tags:
 redirect_from: /id/231271/
 layout: post
 ---
-It is couple of hours I'm using my new SSD – Intel X25-M. I ordered it to improve and speedup by working environment.
+It is couple of hours I'm using my new SSD – Intel X25-M. I ordered it to improve and speedup my working environment.
 
 I'll start with the migration steps I performed. My initial idea was to use "Complete PC Backup and Restore" function that's available in Windows 7 (since Windows Vista, I think). As the hardware, except the disk, will be the same it should work smoothly. Research on some blogs and also some friends confirmed this idea (especially  [Michal Altair Valášek][1]). You create a backup, swap disks, boot from DVD and start restore. Simple and also nice, that such a tool is available directly in Windows.
 
@@ -17,10 +17,10 @@ After boot the system found the drive, installed drives and asked me for reboot.
 
 Now about the performance. I state beforehand, that I'm using the drive only a while and I don't have any numbers and I'm going to do any tests.
 
-The first think that literally made me confused was the noise. Well the lack of any noise. Really, the drive is completely silent. And for a guy used to hear the disks from various notebooks, computers with and without cases, NASes for many years it's really weird. I was so confused I don't hear the heads seeking a turned off the stereo and looked for some problem. :) On the other hand it's nice to have completely silent notebook (except times the fan is on).
+The first think that literally made me confused was the noise. Well the lack of any noise. Really, the drive is completely silent. And for a guy used to hear the disks from various notebooks, computers with and without cases, NASes for many years it's really weird. I was so confused I don't hear the heads seeking, I turned off the stereo and looked for some problem. :) On the other hand it's nice to have completely silent notebook (except times the fan is on).
 
 The boot of Windows 7 was little faster, but nothing killing speed. Same after logging in. When you start application you can definitely feel it's faster, especially application doing a lot of I/O, like Opera, Outlook or VMWare Workstation when starting VM. Roughly two times faster. But to be honest it's not a high order of magnitude I was expecting (maybe I expected it to be close to RAM).
 
-Anyway it's just couple of hours. I'm pleased with the result so far. The drive is completely silent. It's perceivable faster. And the battery life should be better too. I'll give it hard times later while doing real work and report back.
+Anyway it's just couple of hours. I'm pleased with the result so far. The drive is completely silent. It's perceivably faster. And the battery life should be better too. I'll give it hard times later while doing real work and report back.
 
 [1]:  http://www.aspnet.cz/Authors/1-michal-altair-valasek.aspx
