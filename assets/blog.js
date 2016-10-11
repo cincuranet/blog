@@ -19,15 +19,17 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
-		$('article a:has(img)').each(function(i, e) {
+		var items = $('article a:has(img)');
+		items.each(function(i, e) {
 			e = $(e);
 			e.attr('rel', 'gallery');
-			e.fancybox({
-				openEffect: 'fade',
-				closeEffect: 'fade',
-				nextEffect: 'fade',
-				prevEffect: 'fade'
-			});
+			e.attr('title', e.children().first().attr('title'));
+		});
+		items.fancybox({
+			openEffect: 'fade',
+			closeEffect: 'fade',
+			nextEffect: 'fade',
+			prevEffect: 'fade'
 		});
 	}
 
