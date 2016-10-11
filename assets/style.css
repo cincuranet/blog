@@ -258,6 +258,7 @@ article .highlight td {
 
 article pre:not(.lineno) {
 	padding-left: 8px;
+	padding-right: 8px;
 }
 article pre.lineno {
 	border-right: 1px solid #000;
