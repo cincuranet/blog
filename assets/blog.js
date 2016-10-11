@@ -23,7 +23,7 @@ var blog = (function() {
 		items.each(function(i, e) {
 			e = $(e);
 			e.attr('rel', 'gallery');
-			e.attr('title', e.children().first().attr('title'));
+			e.attr('title', e.find('img').attr('title'));
 		});
 		items.fancybox({
 			openEffect: 'fade',
