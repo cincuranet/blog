@@ -242,6 +242,11 @@ article code, article pre {
 	line-height: 1.2;
 }
 
+article code {
+	background-color: #EEEEF2;
+	padding-left: 2px;
+	padding-right: 2px;
+}
 article div.highlight {    
 	margin: 0 1em 1em 1em;
 	padding: 8px;
