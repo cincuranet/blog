@@ -1,7 +1,7 @@
 ---
-layout: default
 title: About
 redirect_from: /contact/
+layout: default
 ---
 <h4>Mgr. Jiří Činčura</h4>
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
