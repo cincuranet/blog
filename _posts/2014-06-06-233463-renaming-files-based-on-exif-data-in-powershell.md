@@ -15,7 +15,7 @@ I like my files organized. Heck. I like everything organized. In order. And as I
 
 But renaming these manually was boring. So I decided to automate it. It's repetitive, so why not. First I thought I use [NConvert][1] as I knew there's some renaming feature and rename based on [Exif][8] seemed to be reasonable request. Sadly it's not there. After quick search for a simple command line tool I gave up and concluded I can write one myself quicker. It shouldn't be hard in PowerShell and .NET, right?
 
-Luckily the [`System.Drawing`][2] has basic support for reading Exif data and it was just a matter of wiring it together. The [`Bitmap`][3] class has a method [`GetPropertyItem`][4] that returns you Exif data you request. You have to search Internet for the number of property item you want and you need to get if from the byte array. The "date taken" property I needed is simple `string` so it was not hard to extract it. The string is [null terminated][5] so take that into account when you're parsing other data - I'm simply skipping the last byte 8-).
+Luckily the [`System.Drawing`][2] has basic support for reading Exif data and it was just a matter of wiring it together. The [`Bitmap`][3] class has a method [`GetPropertyItem`][4] that returns you Exif data you request. You have to search internet for the number of property item you want and you need to get if from the byte array. The "date taken" property I needed is simple `string` so it was not hard to extract it. The string is [null terminated][5] so take that into account when you're parsing other data - I'm simply skipping the last byte 8-).
 
 After that it was quick to put it together, return [`DateTime`][6] object instead of [`string`][7] and add some error handling. Here's the script.
 
