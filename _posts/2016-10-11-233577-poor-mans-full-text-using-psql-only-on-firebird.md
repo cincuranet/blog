@@ -11,8 +11,8 @@ layout: post
 I was presenting this idea on [this year's Firebird Conference][1]. It's an idea, working with some constraints of Firebird, but one can take it as an inspiration and maybe extend it to another usage on another platform. We had quite a productive discussion about possible improvements (I'll describe mines at the end), but unless the people will provide the ideas in comments here too, you'll have to use your own brain (you should've been there ;)).
 
 I'll show you the initial idea with some simple speed improvement of PSQL code itself. And then describe options in how to store it better, mostly because it's very specific to needs and you'll need to tune it for your scenario.
-  
-<!-- excerpt --> 
+
+<!-- excerpt -->
 
 #### Motivation
 
@@ -26,7 +26,7 @@ Because we know where and how the search is used, we know our clients search for
 
 #### Getting the words
 
-So first I need to get the words from the whole strings and then search them quickly. 
+So first I need to get the words from the whole strings and then search them quickly.
 
 Splitting the string to words is not difficult. I just need to split on non-alphanumeric character, handling properly accents because the strings are not just US-ASCII. I first created a `D_FT_TERM` domain like this.
 
@@ -107,7 +107,7 @@ And the trigger just gets the words from interesting columns (here for example t
 if (updating or deleting) then
 begin
 	delete from t_ft_terms where f_id = old.f_id;
-end   
+end
 if (inserting or updating) then
 begin
 	insert into t_ft_terms(f_term, f_id)
@@ -123,7 +123,7 @@ I know you're screaming how inefficient this is and how better you can make it. 
 
 #### Indexing
 
-Now the critical part. Indexing will make it fast, if done properly. I need to be smart. Fact #1: Firebird can use index for prefix match. So the `LIKE '<something>%'` will use index and will be fast (faster than "natural scan"). Now the remaining suffix match. Bit of fumbling around and I realized the suffix match is actually reversed prefix match. Fact #2: The `LIKE '%abc'` is the same as `LIKE 'cba%'` on reversed words. 
+Now the critical part. Indexing will make it fast, if done properly. I need to be smart. Fact #1: Firebird can use index for prefix match. So the `LIKE '<something>%'` will use index and will be fast (faster than "natural scan"). Now the remaining suffix match. Bit of fumbling around and I realized the suffix match is actually reversed prefix match. Fact #2: The `LIKE '%abc'` is the same as `LIKE 'cba%'` on reversed words.
 
 Because we know, when the clients search, let's say, for my name, it's going to be `jir` (just typing it as it goes) or `iri` (misheard the first letter, unable to spell, etc.).
 
@@ -134,7 +134,7 @@ Getting it all together. I can express the match like (no pun intended) this.
 'jiri' LIKE 'jir%'
 ```
 
-Or. 
+Or.
 
 ```sql
 -- reversed suffix match will work (second case)
@@ -148,7 +148,7 @@ CREATE INDEX IDX_FT_TERM ON T_FT_TERMS (F_TERM);
 CREATE INDEX IDX_FT_TERM_REVERSE ON T_FT_TERMS COMPUTED BY (REVERSE(F_TERM));
 ```
 
-Of course indexing the `F_ID` field is a good idea too. 
+Of course indexing the `F_ID` field is a good idea too.
 
 #### Searching
 
@@ -164,7 +164,7 @@ With this query Firebird will be able to use both `IDX_FT_TERM` and `IDX_FT_TERM
 
 #### Optimizations
 
-Basically the biggest problem with `T_FT_TERMS` table is the size. I'm storing every word for every string multiple times if it's there multiple times. Not doing any matching, hence ignoring the `CI`-ness and `AI`-ness of the column. Simple `MERGE` statement will help a lot here. 
+Basically the biggest problem with `T_FT_TERMS` table is the size. I'm storing every word for every string multiple times if it's there multiple times. Not doing any matching, hence ignoring the `CI`-ness and `AI`-ness of the column. Simple `MERGE` statement will help a lot here.
 
 Also if two strings contain same word I store it twice with different IDs. If you have a lot of repetitions two tables might be better. Something like `T_FT_TERMS` and `T_FT_OCCURENCES` with 1:N relation. But it's good to measure the result, because the extra join might defeat the density of the index.
 
@@ -178,7 +178,7 @@ Feel free to share your ideas in the comments.
 
 #### Conclusion
 
-Thanks to the relaxed expectations (see above) the indexing does not need to handle a lot of combinations. So the index fits into the memory and has some significant benefit. The regular expressions together with `CI` and `AI` collation helped to create "real" words without knowing all the possible reasonable characters from Unicode in advance. And the biggest help was realizing the suffix match can be transformed to prefix match in reverse so the index will be used (which it has to be to get some decent speed). 
+Thanks to the relaxed expectations (see above) the indexing does not need to handle a lot of combinations. So the index fits into the memory and has some significant benefit. The regular expressions together with `CI` and `AI` collation helped to create "real" words without knowing all the possible reasonable characters from Unicode in advance. And the biggest help was realizing the suffix match can be transformed to prefix match in reverse so the index will be used (which it has to be to get some decent speed).
 
 [1]: http://firebirdsql.org/en/firebird-conference-2016/
 [2]: http://www.sms-timing.com/karting-software
