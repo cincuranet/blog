@@ -11,7 +11,7 @@ Yesterday I started a simple task. Or at least I thought it was simple. Basicall
 
 <!-- excerpt -->
 
-My immediate attempt was targeted towards Azure. I have a couple of projects there. I explore various services there, if I have a time. So I went to portal, created new CDN profile and went to assign custom domain. Around these steps I realized there's nothing about SSL certificates in the blades. As I finished assigning custom domain, with the hope some SSL menu will show up, I found nothing. Not for Verizon nor Akamai _Plan_. Bravely I searched and found [this][1]. Yep. You read it correctly. It's not supported and - from the history - it was shifted couple of times.
+My immediate attempt was targeted towards Azure. I have a couple of projects there. I explore various services there, if I have a time. So I went to portal, created new CDN profile and went to assign custom domain. Around these steps I realized there's nothing about SSL certificates in the blades. As I finished assigning custom domain, with the hope some SSL menu will show up, I found nothing. Not for Verizon nor Akamai plan. Bravely I searched and found [this][1]. Yep. You read it correctly. It's not supported and - from the history - it was shifted couple of times.
 
 Alrighty.
 
