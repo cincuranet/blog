@@ -93,7 +93,7 @@ var blog = (function() {
 	}
 
 	function isLocalLink(link) {
-		return link.indexOf('{{ site.address }}') != -1;
+		return link.indexOf(window.location.host) != -1;
 	}
 
 	function isLocalImageLink(link) {
