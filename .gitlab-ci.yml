@@ -9,5 +9,8 @@ build:
     - gem install jekyll jekyll-sitemap jekyll-redirect-from
     - jekyll build -d public
     - lftp -c "set ssl:verify-certificate off && set ftp:ssl-force on && open -u $FTP_USER,$FTP_PASSWORD h.cincura.net && mirror -vvv -R -e ./public /"
+  artifacts:
+    paths:
+      - public
   only:
     - master
