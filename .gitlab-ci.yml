@@ -1,4 +1,4 @@
-build:
+publish:
   stage: deploy
   image: alpine
   script:
