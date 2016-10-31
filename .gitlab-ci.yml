@@ -1,6 +1,7 @@
 publish:
   stage: deploy
   image: alpine
+  environment: production
   script:
     - apk update
     - apk add ca-certificates
