@@ -1,17 +1,26 @@
+build:
+  stage: build
+  image: ruby:2.3
+  script:
+    - gem install jekyll jekyll-sitemap jekyll-redirect-from
+    - jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
 publish:
   stage: deploy
   image: alpine
-  environment: production
+  environment: 
+    name: production
+  dependencies:
+    - build
   script:
     - apk update
     - apk add ca-certificates
     - apk add lftp
-    - apk add build-base libffi libffi-dev ruby ruby-dev ruby-irb ruby-rake ruby-rdoc ruby-io-console yaml yaml-dev
-    - gem install jekyll jekyll-sitemap jekyll-redirect-from
-    - jekyll build -d public
     - lftp -c "set ssl:verify-certificate off && set ftp:ssl-force on && open -u $FTP_USER,$FTP_PASSWORD h.cincura.net && mirror -vvv -R -e --scan-all-first --transfer-all --overwrite --parallel=24 ./public /"
-  artifacts:
-    paths:
-      - public
   only:
     - master
