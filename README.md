@@ -1,1 +1,1 @@
-[blog.cincura.net](http://blog.cincura.net/)
+[blog.cincura.net](https://blog.cincura.net/)
