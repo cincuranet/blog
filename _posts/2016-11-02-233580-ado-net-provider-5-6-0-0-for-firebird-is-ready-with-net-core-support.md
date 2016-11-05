@@ -16,13 +16,13 @@ layout: post
 ---
 New version 5.6.0.0 of [ADO.NET provider for Firebird][1] is ready for download. There's really only one new feature in this release - .NET Core support!
 
+<!-- excerpt -->
+
 The port was sponsored by [Integrative][5], so pay them a visit on the website.
 
 Right now the target is `netstandard1.6`. So you can use it on .NET Core 1.0 (`netcoreapp1.0`) and .NET Framework 4.6.3 (when it's available). Every feature, including the `Embedded` mode (whoa), is supported except for `Schema` namespace. I'm waiting for `netstandard2.0` (probably) when the .NET Core will have clear(er) vision around that.
 
 Next big stop? Entity Framework Core 1.0/1.1.
-
-<!-- excerpt -->
 
 Overview of changes can be found in [tracker][4].
 
