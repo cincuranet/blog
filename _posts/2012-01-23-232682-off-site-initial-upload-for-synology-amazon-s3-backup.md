@@ -2,7 +2,7 @@
 title: "Off-site initial upload for Synology Amazon S3 backup"
 date: 2012-01-23T08:33:01Z
 tags:
-  - Amazon AWS
+  - AWS
   - Cloud
   - Network Attached Storage (NAS)
   - Storage &amp; Backup

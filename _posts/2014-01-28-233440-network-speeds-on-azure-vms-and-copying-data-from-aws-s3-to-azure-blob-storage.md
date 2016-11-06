@@ -2,7 +2,7 @@
 title: "Network speeds on Azure VMs and copying data from AWS S3 to Azure Blob Storage"
 date: 2014-01-28T09:39:00Z
 tags:
-  - Amazon AWS
+  - AWS
   - Azure
   - Azure Storage
   - Cloud

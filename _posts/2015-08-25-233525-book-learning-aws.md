@@ -4,7 +4,7 @@ date: 2015-08-25T05:07:00Z
 tags:
   - Books
   - Cloud
-  - Amazon AWS
+  - AWS
 redirect_from: /id/233525/
 layout: post
 ---

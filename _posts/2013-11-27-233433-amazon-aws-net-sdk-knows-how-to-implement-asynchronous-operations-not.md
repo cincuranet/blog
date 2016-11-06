@@ -5,7 +5,7 @@ tags:
   - Best practice or not?
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Storage &amp; Backup
-  - Amazon AWS
+  - AWS
   - Cloud
 redirect_from: /id/233433/
 layout: post
