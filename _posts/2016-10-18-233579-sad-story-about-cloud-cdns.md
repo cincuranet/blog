@@ -4,6 +4,8 @@ date: 2016-10-18T04:53:00Z
 tags:
   - Cloud
   - CDN
+  - Azure
+  - AWS
 redirect_from: /id/233579/
 layout: post
 ---
