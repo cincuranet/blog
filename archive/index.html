@@ -3,8 +3,19 @@ title: Archive
 layout: default
 ---
 <h3>Archive ({{ site.posts | size }} posts)</h3>
-<p>
+<p id="archive_tags">
+	<select>
+		<option value="">All Tags</option>
+		{% assign sorted_tags = site.tags | sort %}
+		{% for tag in sorted_tags %}
+			{% assign t = tag | first %}
+			{% assign posts = tag | last %}
+		<option value='{{ t | replace: "'","&#39;" }}'>{{ t }} ({{ posts | size }} posts)</option>
+		{% endfor %}
+	</select>
+</p>
+<p id="archive_posts">
 	{% for post in site.posts %}
-	<a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %b %Y" }})<br />
+	<span data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %b %Y" }})<br /></span>
 	{% endfor %}
 </p>

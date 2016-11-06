@@ -96,11 +96,14 @@ td {
 }
 
 input, textarea {
-	width: 94%;
 	padding: 8px;
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 1rem;
 	border: 1px solid #666;
+}
+
+option {
+	font-weight: inherit;
 }
 
 /* ----------------------------------------- [ Wrapper ] */
@@ -335,4 +338,12 @@ footer p {
 	font-weight: normal;
 	text-transform: lowercase;
 	color: #666;
+}
+
+/* --------------------------------- [ Special ] */
+
+#archive_tags select {
+	border: 1px solid #111;
+	font-weight: bold; 
+	max-width: 200px;
 }

@@ -43,32 +43,21 @@ var blog = (function() {
 		ga('send', 'pageview');
 	}
 
-	function tagsFolding() {
-		$('.collapsable .collapsable-item').hide();
-
-		var items = $('.collapsable[data-sort-key]');
-		var anchor = items.first().parent();
-		items = items.sort(function(x, y) {
-			var xData = $(x).data('sort-key');
-			var yData = $(y).data('sort-key');
-			return xData.localeCompare(yData);
-		});
-		items.each(function(i, e) {
-			e = $(e);
-			anchor.append(e);
-		});
-
-		$('.collapsable .collapsable-header').each(function(i, e) {
-			e = $(e);
-			e.click(function() {
-				e.parent().find('.collapsable-item').slideToggle();
+	function initTagsFilter() {
+		var tags = $('#archive_tags select');
+		var posts = $('#archive_posts span');
+		tags.change(function() {
+			var selected = tags.val();
+			posts.each(function(i, e) {
+				e = $(e);
+				if (e.data('tags').indexOf(selected) != -1 || !selected) {
+					e.show();
+				}
+				else {
+					e.hide();
+				}
 			});
 		});
-
-		var hash = window.location.hash.substring(1);
-		if (hash) {
-			$('a[name="' + hash + '"]').parent().click();
-		}
 	}
 
 	function showArticleNicely() {
@@ -109,8 +98,8 @@ var blog = (function() {
 		},
 		initContentPage: function() {
 		},
-		initTagsPage: function() {
-			tagsFolding();
+		initArchivePage: function() {
+			initTagsFilter();
 		},
 		initPostPage: function() {
 			showArticleNicely();
@@ -127,13 +116,13 @@ var disqus_config = function () {
 };
 
 blog.initGeneral();
-if (/^\/\d+-.+\/$/i.test(window.location.pathname)) {
+if (/^\/\d+-.+\/$/.test(window.location.pathname)) {
 	blog.initPostPage();
 }
 else {
 	blog.initContentPage();
-	if (/^\/$/i.test(window.location.pathname))
+	if (/^\/$/.test(window.location.pathname))
 		blog.initPostsListPage();
-	else if (/^\/tags\/$/i.test(window.location.pathname))
-		blog.initTagsPage();
+	else if (/^\/archive\/$/i.test(window.location.pathname))
+		blog.initArchivePage();
 }
