@@ -344,6 +344,9 @@ footer p {
 
 #archive_tags select {
 	border: 1px solid #111;
-	font-weight: bold; 
-	max-width: 200px;
+	background-color: #fff;
+	font-weight: bold;
+	font-family: inherit;
+	font-size: inherit; 
+	max-width: 100%;
 }
