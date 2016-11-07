@@ -2,7 +2,7 @@ build:
   stage: build
   image: ruby:2.3
   script:
-    - gem install jekyll jekyll-sitemap jekyll-redirect-from
+    - gem install jekyll jekyll-sitemap
     - jekyll build -d public
   artifacts:
     paths:

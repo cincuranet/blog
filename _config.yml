@@ -19,4 +19,4 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: true
-gems: [jekyll-sitemap, jekyll-redirect-from]
+gems: [jekyll-sitemap]
