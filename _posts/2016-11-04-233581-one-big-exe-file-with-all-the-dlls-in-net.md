@@ -14,7 +14,7 @@ Sadly there's nothing in the .NET available right now (my hopes are high for .NE
 
 <!-- excerpt -->
 
-There are some products on the market you can use - like [_ILMerge_][1] or [_SmartAssembly_][2]. In fact we used _SmartAssembly_, but lately it was getting more into our way instead of helping us. Thus decision has been made to replace it - and to my pleasure - replace it with something I'll create. :)
+There are some products on the market you can use - like [_ILMerge_][1], [_SmartAssembly_][2] or [_PostSharp_][8]. In fact we used _SmartAssembly_, but lately it was getting more into our way instead of helping us. Thus decision has been made to replace it - and to my pleasure - replace it with something I'll create. :)
 
 The path I chose, because I used it manually couple fo times before, was to use [`AppDomain.AssemblyResolve` event][3]. Handling this event you can load assembly the way you want. In my case from resources. The rest is just a glue. I also wanted to have a tool that will be fully autonomous and independent from the application itself.
 
@@ -229,3 +229,4 @@ The complete code is available in [this repository][5]. Feel free to contribute 
 [5]: https://github.com/cincuranet/SingleExecutable/
 [6]: http://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/
 [7]: http://ilspy.net/
+[8]: https://www.postsharp.net/
