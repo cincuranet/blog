@@ -4,7 +4,6 @@ date: 2011-08-29T16:56:21Z
 tags:
   - .NET
   - C#
-redirect_from: /id/232514/
 layout: post
 ---
 From time to time I'm working on some method that returns some collection. Mainly processing some data from input. Often it's really just couple of conditions, get something from there and here and return it. Because I'm composing these methods too, if I return [IEnumerable<T>][1] and later in other method I need to add something (if you're lost, you'll see what I mean in example below), I need to use some variable, like array or list and append (or prepend). Boring.

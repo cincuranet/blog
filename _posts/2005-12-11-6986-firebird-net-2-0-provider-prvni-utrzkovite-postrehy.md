@@ -4,7 +4,6 @@ date: 2005-12-11T20:42:00Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/6986/
 layout: post
 ---
 Tak jsem tu s prvními pocity s Firebird .NET 2.0 Providerem. Instalace proběhla bez problémů, stačilo pěkně odklikat. Poté jsem si přidal FbCommand, FbConnection, ... do Toolboxu ve VS C# 2005 EE a začal testovat. Vypadá to pěkně, zdá se že všechno jede jak má. Překompiloval jsem i testovací aplikaci a bez problémů (ale pár ostrých aplikací stále radši provozuji na 1.7). Ale jeden problém se přece jen vyskytl. Dnes.

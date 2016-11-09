@@ -7,7 +7,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Programming in general
   - Reactive Extensions (Rx)
-redirect_from: /id/232782/
 layout: post
 ---
 In last few days I've seen couple of pieces of code with "executing method every x seconds". And a lot of bad. Not buggy, but superfluously expensive. I'm also here adding a simple loop to run just 10 times.

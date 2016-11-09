@@ -3,7 +3,6 @@ title: "K zasmání (Microsoft Academic Developer Roadshow)"
 date: 2006-05-03T20:03:00Z
 tags:
   - Uncategorized
-redirect_from: /id/8052/
 layout: post
 ---
 Dnes se v Brně uskutečnila akce s názvem MS Academic Developer Roadshow. Nechci zde popisovat, co jsem se dozvěděl nebo nedozvěděl, každý si všeho všudy může stáhnout pro omrknutí slajdy, které byly používány.

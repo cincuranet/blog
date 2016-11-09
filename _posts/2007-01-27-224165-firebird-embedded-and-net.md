@@ -4,7 +4,6 @@ date: 2007-01-27T23:07:00Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/224165/
 layout: post
 ---
 Firebird Embedded is a very popular, special, version of Firebird database engine. The main advantage is, that there's no need to install it. Not to bring some wrong information, it's not some crippled down version (there are some limitations, but it's the being embedded consequence) - it's the fully-featured database engine. For those, who don't know what Firebird is or just want to discover what this - more than twenty years audited - engine is able to do, can study [this document][1] - it will not take more than two minutes.

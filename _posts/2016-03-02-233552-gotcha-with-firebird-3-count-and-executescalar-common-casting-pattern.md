@@ -4,7 +4,6 @@ date: 2016-03-02T10:01:00Z
 tags:
   - Firebird
   - C#
-redirect_from: /id/233552/
 layout: post
 ---
 There's a common pattern used in ADO.NET with [`ExecuteScalar`][1] method. And this one is going to be bit broken with changes introduced in Firebird 3 (currently RC2).

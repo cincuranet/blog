@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Firebird
   - Visual Studio
-redirect_from: /id/228700/
 layout: post
 ---
 Entity Framework support for Firebird had a problem, when you created model and then tried to update model (_Update Model from Database_) VS would freeze. I was pretty sure, that's a problem of server - because I was using 2.5 build from `HEAD` that cannot be considered as stable and the 2.1 was working fine (except the left outer join problem ;)) (because foreign keys/associations were not generated the problem wasn't fired). And I was wrong.

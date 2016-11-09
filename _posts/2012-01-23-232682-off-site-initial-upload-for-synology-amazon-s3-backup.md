@@ -7,7 +7,6 @@ tags:
   - Network Attached Storage (NAS)
   - Storage &amp; Backup
   - Synology
-redirect_from: /id/232682/
 layout: post
 ---
 I recently started thinking about backing up also "less" important data (No matter what you think, every data is important. You'll find out, when you will loose the least important data (you thought it's least important). But everybody needs to learn that the hard way, before really believing.) to [Amazon S3][1] from my [Synology NAS][2], which is my primary backup location. The problem was, that the amount was about 150GB. Far more than I can upload through my home connection in reasonable time. It would take weeks. When I first started using [S3 backup on my NAS][3], I checked, what's exactly being copied to the bucket, in case disaster happens and I'll be force to restore without any Synology box around (or at least restore critical data sooner than I'll have it available).

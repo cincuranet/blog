@@ -4,7 +4,6 @@ date: 2011-05-21T12:49:46Z
 tags:
   - BlackBerry
   - BlackBerry PlayBook
-redirect_from: /id/232398/
 layout: post
 ---
 I had [PlayBook][1] in my hands for almost two days. So I think it's time to share some first impressions.

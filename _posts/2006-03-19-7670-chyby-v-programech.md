@@ -3,7 +3,6 @@ title: "Chyby v programech"
 date: 2006-03-19T22:08:00Z
 tags:
   - Uncategorized
-redirect_from: /id/7670/
 layout: post
 ---
 Před několik dny jsem slyšel zajímavou myšlenku, pokusím se ji přetlumočit i zde: "Není důležité psát programy bez chyb, ale takové programy, které se dokáží s chybou vyrovnat.".

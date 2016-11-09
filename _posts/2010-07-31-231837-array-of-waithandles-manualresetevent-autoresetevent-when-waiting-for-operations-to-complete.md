@@ -6,7 +6,6 @@ tags:
   - Best practice or not?
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Programming in general
-redirect_from: /id/231837/
 layout: post
 ---
 Often, when you discover the beauty of multithreading and parallelism, you find a need to run some operations in parallel and wait for completion. Fairly common scenario. Although now, with .NET Framework 4, you can write it using [Task Parallel Library][1]'s [Parallel.Invoke][2], there are scenarios when you need to plug it in into some other methods/parameters, so you'll do it yourself explicitly with threads or better to say [ThreadPool][3].

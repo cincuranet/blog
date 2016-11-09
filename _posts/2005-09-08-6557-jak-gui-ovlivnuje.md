@@ -3,7 +3,6 @@ title: "Jak GUI ovlivňuje."
 date: 2005-09-08T19:44:00Z
 tags:
   - Uncategorized
-redirect_from: /id/6557/
 layout: post
 ---
 Zajímavý nadpis že?. ;)

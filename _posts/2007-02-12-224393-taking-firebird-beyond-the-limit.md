@@ -3,7 +3,6 @@ title: "Taking Firebird beyond the limit"
 date: 2007-02-12T23:12:00Z
 tags:
   - Firebird
-redirect_from: /id/224393/
 layout: post
 ---
 Well, a little bit weird heading. But a few days ago there was a really interesting discuss on the Firebird(CZ) list (about the ROW_COUNT variable). During the discussion I've decided (with Ivan Prenosil's kick) to test what will happen if you'll have more than 2G and also 4G records.

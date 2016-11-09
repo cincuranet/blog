@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - LINQ
-redirect_from: /id/233517/
 layout: post
 ---
 I was cleaning up some old posts and converting them to Markdown on this blog and I came across [this post][1]. Although it's still valid and works fine I've got an idea. Is it possible to write it using only LINQ methods? Thus not being imperative? You might be wondering: "Why?". But I just like these small brain teasers. :) 

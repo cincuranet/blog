@@ -4,7 +4,6 @@ date: 2013-11-01T10:28:00Z
 tags:
   - NuoDB
   - NuGet
-redirect_from: /id/233427/
 layout: post
 ---
 This year while I was helping [NuoDB][1] to [improve Entity Framework support in their driver][2] I had in my head that the [NuGet][3] package for driver would be nice. But you know, ..., time flies.

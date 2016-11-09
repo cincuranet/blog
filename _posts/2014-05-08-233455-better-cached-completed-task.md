@@ -5,7 +5,6 @@ tags:
   - C#
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233455/
 layout: post
 ---
 I like the topics of _threading_, _parallelism_ or _asynchronous_ processing. Maybe it's because it's similar to problems you're solving when dealing with transactions and concurrent access. Or maybe vice versa. Anyway, I like to look at various "helper" libraries people are using. Especially around [Task Parallel Library (TPL)][1].

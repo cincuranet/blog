@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - Visual Studio
-redirect_from: /id/228242/
 layout: post
 ---
 The final version of SP1 for VS2008 and .NET 3.5 is out for a while. And you may noticed, that there were some [changes][1] between SP1 beta and SP1 final. These changes are happily not huge as between EF Beta 3 and SP1 Beta 1.

@@ -4,7 +4,6 @@ date: 2013-10-13T16:56:00Z
 tags:
   - Entity Framework
   - Twitter
-redirect_from: /id/233423/
 layout: post
 ---
 The `#efhelp` hashtag on Twitter is now back (not that it was ever off, just slightly crippled).

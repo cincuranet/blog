@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233231/
 layout: post
 ---
 My mind today was in weird shape (again). I blame Friday. What that means is, that I came with weird pieces of code, that are fun to just write. Brain training. :)

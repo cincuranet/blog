@@ -4,7 +4,6 @@ date: 2006-04-20T13:51:00Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/7968/
 layout: post
 ---
 Well, after [Creating Firebird database programatically (Delphi)][1] post I'm bringing the example "How to create FB database programatically from .NET?".

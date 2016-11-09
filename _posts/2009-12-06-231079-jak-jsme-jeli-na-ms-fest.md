@@ -3,7 +3,6 @@ title: "Jak jsme jeli na MS Fest"
 date: 2009-12-06T19:11:51Z
 tags:
   - Life
-redirect_from: /id/231079/
 layout: post
 ---
 Před týdnem, joj to to letí, se konala akce [MS Fest][1]. S překvapivým množstvím přednášejících z Brna, konkrétně pět. Někoho, z této bandy napadlo zeptat se MS, jestli by nebylo možné uhradit nějaké ubytování, neboť akce začínala v 9 ráno, kluci od serverů měli tři servery, takže i když nebyl (myslím) nikdo první, stejně to chtělo přípravu. Tedy to znamenalo určitě před 6 vyjet z Brna (a mít čas všechny posbírat) – pro geeky kritický čas. :) A MS souhlasil. Pozn.: MS Fest je organizován MSPs (Microsoft Student Partners), hlavně z MFF UK, nikoli MS, ten pouze [přispívá][2].

@@ -4,7 +4,6 @@ date: 2012-05-31T14:07:44Z
 tags:
   - .NET
   - C#
-redirect_from: /id/232886/
 layout: post
 ---
 Today I faced surprising behavior once again. Completely off guard.

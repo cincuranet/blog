@@ -4,7 +4,6 @@ date: 2013-10-23T08:03:00Z
 tags:
   - Reactive Extensions (Rx)
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233425/
 layout: post
 ---
 Sometimes I'm coding a simple task – start an operation at a given time. Some kind of scheduler in inside application. No, I'm not going to cry over [`Thread`][1] and [`Thread.Sleep`][2] abuse. I'm over it. :) It's [`Timer`][3] usage.

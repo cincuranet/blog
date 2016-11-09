@@ -5,7 +5,6 @@ tags:
   - .NET
   - Databases in general
   - Entity Framework
-redirect_from: /id/231337/
 layout: post
 ---
 I don't know whether it's somewhere specifically pointed, but the [ObjectContext][1] in Entity Framework v4 has two (three) new handy methods. And I like these.

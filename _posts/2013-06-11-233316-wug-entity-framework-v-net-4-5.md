@@ -4,7 +4,6 @@ date: 2013-06-11T06:00:39Z
 tags:
   - Entity Framework
   - Presentations &amp; Speaking
-redirect_from: /id/233316/
 layout: post
 ---
 Pokud vás zajímá co nového v [Entity Frameworku][1] 5 a také 6, přijďte se podívat na [WUG][2] v Praze na téma [Entity Framework v .NET 4.5][3].

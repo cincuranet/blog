@@ -3,7 +3,6 @@ title: "Zooming in Entity Data Model Designer - pain for source control"
 date: 2009-04-03T07:38:00Z
 tags:
   - Entity Framework
-redirect_from: /id/229256/
 layout: post
 ---
 From the beginning, when we discovered, that the EDMX file contains also section for design time stuff we knew, that it's not the best for source control systems (i.e. Subversion). Yesterday I found another nasty feature. Even if you're not moving entities in designer, changing zoom is also saved into the file. Can the collision making be easier?

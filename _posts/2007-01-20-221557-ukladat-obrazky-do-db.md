@@ -3,7 +3,6 @@ title: "Ukládat obrázky do DB???"
 date: 2007-01-20T10:01:00Z
 tags:
   - Databases in general
-redirect_from: /id/221557/
 layout: post
 ---
 Tento post chci napsat již dlouho. Ale pořád jsem buď neměl čas nebo chuť či odvahu. No ale nakonec se hvězdy dostaly do správné konfigurace a píšu.

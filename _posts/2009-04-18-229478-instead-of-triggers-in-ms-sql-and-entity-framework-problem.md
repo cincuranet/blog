@@ -4,7 +4,6 @@ date: 2009-04-18T10:42:00Z
 tags:
   - Entity Framework
   - MS SQL Server
-redirect_from: /id/229478/
 layout: post
 ---
 I don't like the model of instead of and after triggers in MS SQL. The before and after ones are, in my opinion, better. Anyway I needed to do some complex tests, not possible with check constraints, before inserting. Hence I jumped into instead of trigger. No problem in a view. Or not? 

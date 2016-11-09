@@ -3,7 +3,6 @@ title: "Sending documents wirelessly to Kindle for free"
 date: 2010-09-12T10:30:16Z
 tags:
   - Amazon Kindle
-redirect_from: /id/231995/
 layout: post
 ---
 Today I accidentally discovered the way to send documents into Kindle for free. It's pretty easy.

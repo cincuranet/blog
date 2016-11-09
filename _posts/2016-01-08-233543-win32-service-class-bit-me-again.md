@@ -4,7 +4,6 @@ date: 2016-01-08T14:51:00Z
 tags:
   - Best practice or not?
   - Windows
-redirect_from: /id/233543/
 layout: post
 ---
 [When I wrote few weeks ago about my gotcha with `Win32_Service`][1] little I knew it is a journey to begin. Here's next part.

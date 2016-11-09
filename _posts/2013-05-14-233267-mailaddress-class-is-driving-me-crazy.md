@@ -5,7 +5,6 @@ tags:
   - .NET
   - Best practice or not?
   - Email
-redirect_from: /id/233267/
 layout: post
 ---
 I'm now working a lot with emails and email addresses. Loading, parsing and so on. Because of that I'm also using a [`MailAddress`][1] class a lot. And I hate it. The class, even simple, makes me want to scream.

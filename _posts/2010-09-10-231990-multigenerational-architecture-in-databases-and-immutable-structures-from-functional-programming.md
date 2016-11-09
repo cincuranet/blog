@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Programming in general
-redirect_from: /id/231990/
 layout: post
 ---
 I've just realized something interesting.

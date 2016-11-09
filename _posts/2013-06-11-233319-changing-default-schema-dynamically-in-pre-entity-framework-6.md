@@ -3,7 +3,6 @@ title: "Changing default schema dynamically in pre-Entity Framework 6 "
 date: 2013-06-11T12:03:40Z
 tags:
   - Entity Framework
-redirect_from: /id/233319/
 layout: post
 ---
 If you're using 3<sup>rd</sup> party database where `dbo` is not the default you might hit the wall with default conventions. Why? Because even if you didn't configured the schema by calling [`EntityTypeConfiguration.ToTable`][1] overload it will result in `dbo`. It's simply hard-coded there. Entity Framework 6 solves this by adding `DbModelBuilder.HasDefaultSchema` property. Or you can write your own convention. In time of writing the version 6 is in beta stage, hence probably not something you should use in production. But there's still a way.

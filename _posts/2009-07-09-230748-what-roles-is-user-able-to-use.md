@@ -3,7 +3,6 @@ title: "What roles is user able to use?"
 date: 2009-07-09T11:31:02Z
 tags:
   - Firebird
-redirect_from: /id/230748/
 layout: post
 ---
 About a month ago there was a question in [Firebird (CZ) group][1] how to find whether the user is able to use particular role or to get all roles for user.

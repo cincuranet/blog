@@ -3,7 +3,6 @@ title: "Katastrofální selhání"
 date: 2007-04-11T07:51:00Z
 tags:
   - Visual Studio
-redirect_from: /id/224786/
 layout: post
 ---
 Před pár dny jsem se chtěl podívat na psaní add-inů ve VS2005. Našel jsem nějaké ukázky, ale většinou dost komplexní. Tak jsem si otevřel aspoň prázdný projekt a chystal se podívat co v částech, které VS vygenerovalo mají napsáno jiní v oněch příkladech. A hle, počítač pomalu dochrochtával a najednou:

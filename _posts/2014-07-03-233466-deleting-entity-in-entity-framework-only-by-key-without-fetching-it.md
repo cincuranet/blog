@@ -3,7 +3,6 @@ title: "Deleting entity in Entity Framework only by key without fetching it"
 date: 2014-07-03T07:42:00Z
 tags:
   - Entity Framework
-redirect_from: /id/233466/
 layout: post
 ---
 I was showing today on my [Entity Framework][3] [course][4] some tips and one of them was how to delete entity when you only have a key without fetching it first. Kind of small optimization. And then my brain started to think whether I can do it completely dynamically – just having the type of entity and values of key properties.

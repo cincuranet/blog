@@ -7,7 +7,6 @@ tags:
   - Firebird
   - LINQ
   - Visual Studio
-redirect_from: /id/230290/
 layout: post
 ---
 I'm happy to announce, after about 47 000 000 seconds of thinking and development, release of FirebirdClient 2.5. This new shiny release contains couple of very interesting new features:

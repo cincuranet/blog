@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - Visual Studio
-redirect_from: /id/228749/
 layout: post
 ---
 > [There's an updated version of this post.][1]

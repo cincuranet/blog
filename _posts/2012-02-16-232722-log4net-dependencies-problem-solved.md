@@ -4,7 +4,6 @@ date: 2012-02-16T15:50:55Z
 tags:
   - Logging &amp; Tracing
   - NuGet
-redirect_from: /id/232722/
 layout: post
 ---
 OK, following log4net's versioning scheme [in NuGet package][1] wasn't a good idea. In version 1.2.11 the new keys were used and I used this as a fresh start. I didn't realized that thanks to [semantic versioning][2] everybody will be updated to latest version and dependencies will be broken. My fault. :-?

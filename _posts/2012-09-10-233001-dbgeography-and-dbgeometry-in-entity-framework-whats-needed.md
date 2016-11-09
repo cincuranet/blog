@@ -5,7 +5,6 @@ tags:
   - Entity Framework
   - Firebird
   - Spatial data
-redirect_from: /id/233001/
 layout: post
 ---
 There seems to be a small confusion about what is needed to be able to use spatial data - exposed as [`DbGeography`][1] and [`DbGeometry`][2] types - in [Entity Framework][3].

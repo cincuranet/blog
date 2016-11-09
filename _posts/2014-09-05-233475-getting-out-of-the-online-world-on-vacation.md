@@ -5,7 +5,6 @@ tags:
   - Email
   - Life
   - Running
-redirect_from: /id/233475/
 layout: post
 ---
 After I [wrote the earlier piece][1], I realized there's maybe another option. And then after thinking about it I realized it's not that black and white either.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - Azure
   - Performance
-redirect_from: /id/233490/
 layout: post
 ---
 I'm writing a tool that has, at the core, only one task. Upload file or files to the [Azure blob][7] as fast and as efficiently as possible. Nothing special overall. The devil is in details. As usual.

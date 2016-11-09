@@ -4,7 +4,6 @@ date: 2011-11-11T18:04:05Z
 tags:
   - Entity Framework
   - Twitter
-redirect_from: /id/232567/
 layout: post
 ---
 Few days ago we [started using `#efhelp` hashtag for Entity Framework related questions][1]. It's starting well so far, but there was one small problem. Without a support from client application you can't follow hashtag. That leaves you with the search "solution".

@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - Entity Framework
-redirect_from: /id/233421/
 layout: post
 ---
 Today I decided to move [updated EdmGen2][1] sources from [BitBucket][2] to [GitHub][3]. I'm still absolutely happy with BitBucket for my private projects, but for OSS GitHub is de facto standard and EdmGen2 might be more visible there.

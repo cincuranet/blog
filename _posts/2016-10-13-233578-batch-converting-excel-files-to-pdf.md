@@ -7,7 +7,6 @@ tags:
   - Windows
   - Windows Scripting Host
   - PowerShell
-redirect_from: /id/233578/
 layout: post
 ---
 I have - or rather I've had - bunch of Excel files and I needed these in PDF. If I would be just five or so of these I would do it manually in Excel. But there was bit over 200 files. Doable but not fun. 

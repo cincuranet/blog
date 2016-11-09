@@ -4,7 +4,6 @@ date: 2012-12-06T11:03:52Z
 tags:
   - C#
   - Programming in general
-redirect_from: /id/233121/
 layout: post
 ---
 Last week I was doing fairly simple change in a project I'm currently working on daily. Added a controller, model, few DTOs and orchestrated all this together using some methods from "library". I had clean focus what to do and some pieces of new methods I already had in existing methods. So I partly also did small refactoring. While typing the code I noticed the red squiggles etc. are behaving weird already. When I was done with change I invoked build process and suddenly everything went wrong.

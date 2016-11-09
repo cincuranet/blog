@@ -4,7 +4,6 @@ date: 2010-06-26T12:41:55Z
 tags:
   - .NET
   - C#
-redirect_from: /id/231701/
 layout: post
 ---
 Today I faced a behavior I have no idea exists. It's more or less ambiguity between method with some parameters and one using `params`. Why more or less? Well, because it surely described in C# specification ("best match" or something similar to it). But I hadn't know I should think about it until I was debugging weird behavior.

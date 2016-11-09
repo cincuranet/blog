@@ -3,7 +3,6 @@ title: "How dumb the instead of triggers on MS SQL are???"
 date: 2009-07-23T14:29:45Z
 tags:
   - MS SQL Server
-redirect_from: /id/230777/
 layout: post
 ---
 Shortly: Very.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - IL
-redirect_from: /id/233581/
 layout: post
 ---
 Where do I begin? ... If you're developing classic client side applications, like WinForms, having a one big EXE file to deploy is a huge benefit. One item to copy, you know all the dependencies are there and nobody can accidentally remove some, plus updating is a breeze too.

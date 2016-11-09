@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - LINQ
-redirect_from: /id/232037/
 layout: post
 ---
 Previous two functions ([function 1][1], [function 2][2]) I presented were doing something that wasn't core part of [LINQ][3] and it was up to you to create it. On the other hand, this function is different. It's just a helper to simplify writing of [left outer join][4] (or right outer join, depending on what collection you consider to be on left/right side). Not because it's hard to write it, but because it involves couple of lines and repeating it all the time is just boring. 8-)

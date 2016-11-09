@@ -3,7 +3,6 @@ title: "Upper-casing conventions as SQL likes it in Entity Framework 6"
 date: 2014-11-11T05:57:00Z
 tags:
   - Entity Framework
-redirect_from: /id/233488/
 layout: post
 ---
 Before Entity Framework 6 was finalized I wrote posts ([[1]][1] and [[2]][2]) showing how with the help of conventions you can save yourself some tedious typing for databases following strictly SQL standard in respect to upper case and (not)quoting (see previous posts for details).

@@ -11,7 +11,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-redirect_from: /id/233429/
 layout: post
 ---
 Today is your lucky day because the version 4.0.0.0 of FirebirdClient is waiting for you to be downloaded. You can get the bits from [NuGet][1] ([EF6-ready version][2]) or from [FirebirdSQL.org site][3] (or [directly][4]).

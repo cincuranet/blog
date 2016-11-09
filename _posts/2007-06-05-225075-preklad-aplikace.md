@@ -3,7 +3,6 @@ title: "Překlad aplikace"
 date: 2007-06-05T22:57:00Z
 tags:
   - Uncategorized
-redirect_from: /id/225075/
 layout: post
 ---
 Asi všichni čekáte, že zde budu rozebírat možnosti, jak udělat různé jazykové mutace ASP.NET stránek. Omyl. Dokonce nebudu ani rozebírat způsoby jak dělat více jazyků ve WinForms aplikaci (i když mám v plánu jednu aplikaci takto lokalizovat, takže možná nějaké postřehy budou). Chci ukázat něco v PHP a MySQL (to koukáte co?), nicméně postup je použitelný i na jinou kombinaci technologií.

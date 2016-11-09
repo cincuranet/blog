@@ -3,7 +3,6 @@ title: "TcpListener and TcpClient (an easy-to-use example)"
 date: 2005-06-21T11:22:00Z
 tags:
   - .NET
-redirect_from: /id/6188/
 layout: post
 ---
 > [Follow up post available.][1]

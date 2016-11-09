@@ -4,7 +4,6 @@ date: 2012-01-11T18:05:42Z
 tags:
   - Firebird
   - SQL
-redirect_from: /id/232657/
 layout: post
 ---
 A question came to me last week. It was simple. Given the column I'd like to query all tables in database for this column (with some condition) and get values back. It was on [Firebird][1] so I jumped into system tables and generated query on the fly in [`execute block`][2] (aka anonymous [stored procedure][3]).

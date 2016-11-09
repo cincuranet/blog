@@ -4,7 +4,6 @@ date: 2007-03-08T20:33:00Z
 tags:
   - Best practice or not?
   - Databases in general
-redirect_from: /id/224526/
 layout: post
 ---
 Dnešním příspěvkem bych chtěl ukázt, proč nemám MySQL resp. uživatele MySQL rád. Není to špatná DB, ale špatné jméno jí dělají uživatelé, kteří často postrádají základní znalosti a bohužel je jich obrovská masa, takže "je to vidět".

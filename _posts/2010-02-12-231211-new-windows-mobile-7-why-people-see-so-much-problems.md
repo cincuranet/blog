@@ -3,7 +3,6 @@ title: "New Windows Mobile 7 - why people see so much \"problems\"?"
 date: 2010-02-12T09:42:09Z
 tags:
   - Windows Mobile/Windows Phone
-redirect_from: /id/231211/
 layout: post
 ---
 There's a lot of rumors about the new Windows Mobile 7, especially in last days before MWC. A lot of unconfirmed information is flying around and lot of comments. What I would like to focus on is backward compatibility, Marketplace, Compact Framework and new look and feel of homescreen.

@@ -4,7 +4,6 @@ date: 2011-12-11T13:41:50Z
 tags:
   - Entity Framework
   - Entity SQL
-redirect_from: /id/232589/
 layout: post
 ---
 Few days ago there was a question on Twitter in [`#efhelp`][1] about adding custom logic to every query in Entity Framework. It's pretty easy and you can do it absolutely transparently so nobody using your code needs to know.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/231393/
 layout: post
 ---
 Last week I was solving problem. The piece of code another code was plugged in was doing some crazy threading stuff inside while the code plugged in used some component that needed some methods (in my case just two) to be called in same thread. Well, that is to make the long story short.

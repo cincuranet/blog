@@ -4,7 +4,6 @@ date: 2011-06-20T12:14:57Z
 tags:
   - NUnit
   - Test Driven Development (TDD)
-redirect_from: /id/232467/
 layout: post
 ---
 When I'm fixing bugs found by [unit tests][1] it's quick process - run test, spot the problem, fix it, build, run again. The problem is, that often, during the build I switch to other window and then to [NUnit][2] GUI. And then I don't know whether the assembly with tests was already reloaded (and hence contains the fix) or not. So I often reloaded it again, just to be sure a.k.a wasting time.

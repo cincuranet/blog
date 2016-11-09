@@ -8,7 +8,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-redirect_from: /id/232192/
 layout: post
 ---
 Firebird .NET provider team is proud to announce next version of ADO.NET provider for Firebird - 2.6.0.

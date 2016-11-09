@@ -3,7 +3,6 @@ title: "Waiting for all tasks, reacting on any"
 date: 2015-01-26T07:06:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233496/
 layout: post
 ---
 About a week ago I needed to wait on all tasks to complete and also do some side processing as any completes. Sure I could wrap it using [`ContinueWith`][2] or something like that, but I made it from other way around. 

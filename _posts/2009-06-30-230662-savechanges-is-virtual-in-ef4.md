@@ -3,7 +3,6 @@ title: "SaveChanges is virtual in EF4"
 date: 2009-06-30T20:50:08Z
 tags:
   - Entity Framework
-redirect_from: /id/230662/
 layout: post
 ---
 I don't know whether I just noticed this too late, but the [SaveChanges][1] method in upcoming EF4 is virtual. This is a great small change.

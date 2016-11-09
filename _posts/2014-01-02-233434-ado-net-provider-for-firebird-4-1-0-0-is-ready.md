@@ -11,7 +11,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-redirect_from: /id/233434/
 layout: post
 ---
 Happy New Year from Firebird-slash-dot-NET world. I was not in lounge mode last few days and hence you can enjoy version 4.1.0.0 of FirebirdClient. You can get the bits from [NuGet][1] ([EF6-ready version][2]) or from [FirebirdSQL.org site][3] (or [directly][4]).

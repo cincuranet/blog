@@ -3,7 +3,6 @@ title: "Type mapper in Entity Framework 4.1"
 date: 2011-03-22T18:03:36Z
 tags:
   - Entity Framework
-redirect_from: /id/232290/
 layout: post
 ---
 Even if you [remove all conventions][1] when using [Code First][2] you might get errors from Entity Framework about not being able to properly map some items. The reason is _type mapper_. In RC (and very probably in RTM as well) it's not implemented as convention, hence always kicks in.

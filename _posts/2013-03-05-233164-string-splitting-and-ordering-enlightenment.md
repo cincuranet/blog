@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - Lessons learned
-redirect_from: /id/233164/
 layout: post
 ---
 Couple of years back I wrote a C# that was splitting response from server to lines. I had the data as one string and I needed to have it as array of strings, based on lines. Pretty simple, right?

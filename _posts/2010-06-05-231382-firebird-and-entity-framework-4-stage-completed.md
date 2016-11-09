@@ -8,7 +8,6 @@ tags:
   - Firebird
   - LINQ
   - Visual Studio
-redirect_from: /id/231382/
 layout: post
 ---
 The [ADO.NET provider for Firebird][1] now fully supports all the new features in [Entity Framework 4][2]. Simple. If you're eager to test it, grab the [weekly build][3] and enjoy.

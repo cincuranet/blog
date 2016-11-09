@@ -4,7 +4,6 @@ date: 2014-10-26T08:27:00Z
 tags:
   - C#                
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233484/
 layout: post
 ---
 When I'm teaching my ["parallel-threading-asynchronous-locking-synchronization" course][1] I discuss the [`lock` statement][2] a lot. Not only because it's probably the most widely used "lock", but also because it's pretty easy to fall into a trap if you don't know what's going on behind the scenes and around you.

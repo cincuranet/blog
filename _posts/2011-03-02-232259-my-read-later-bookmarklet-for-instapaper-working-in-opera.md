@@ -7,7 +7,6 @@ tags:
   - JavaScript
   - Opera
   - Web
-redirect_from: /id/232259/
 layout: post
 ---
 Before I used [Instapaper][1] I had a 30+ tabs opened in [Opera][2]. And I was used to that, though whoever saw it was asking me how I work in Opera with this amount of tabs. :) But to get the content into [Kindle][3] to be able to comfortably read it I started using Instapaper. Sadly in recent version of Opera the "Read Later" bookmarklet stopped working (yes, it's reported to Opera). Not good, I'm pushing through it a lot of articles into Instapaper or Kindle respectively.

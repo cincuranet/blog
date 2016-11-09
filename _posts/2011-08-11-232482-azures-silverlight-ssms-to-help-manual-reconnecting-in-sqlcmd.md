@@ -4,7 +4,6 @@ date: 2011-08-11T12:03:28Z
 tags:
   - Azure
   - SQL Azure
-redirect_from: /id/232482/
 layout: post
 ---
 I'm a console guy. I like to work from whatever is text based (yes, I do remember DOS (the real one, not the black hole window in Windows), I'm old ;)). That's why I'm doing most of my MS SQL Server/Azure SQL database work though `sqlcmd`. But on Azure SQL I'm often being disconnected because I'm reading the results, testing something etc. and the connection is simply closed by server to save resources. Reconnecting is pain and slows me down.

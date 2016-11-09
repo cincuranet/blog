@@ -6,7 +6,6 @@ tags:
   - NewSQL
   - NoSQL
   - NuoDB
-redirect_from: /id/233089/
 layout: post
 ---
 I don't know whether you noticed, [NuoDB][1] is now in RC stage. If you're following NuoDB long enough you might remember old console (you can check some images in [my older post][2]). It was a Java based application. Simple and it was not nice. Now it's different. It's web based. So it's easier to connect to it. You can even connect to it from your phone (if it's powerful enough to handle the JavaScript). It's way nicer, nothing fancy (but I'm not expecting to be super cool, it's basically admin panel for database, right?) and mainly, it has tons of new features.

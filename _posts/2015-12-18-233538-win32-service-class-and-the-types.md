@@ -4,7 +4,6 @@ date: 2015-12-18T12:38:00Z
 tags:
   - Best practice or not?
   - Windows
-redirect_from: /id/233538/
 layout: post
 ---
 This is a story about a class named `Win32_Service` and the types. Types we all like (or hate, doesn't matter in this case :)). And the WMI.

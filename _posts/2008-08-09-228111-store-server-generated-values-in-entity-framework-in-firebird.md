@@ -4,7 +4,6 @@ date: 2008-08-09T17:00:00Z
 tags:
   - Entity Framework
   - Firebird
-redirect_from: /id/228111/
 layout: post
 ---
 You know, server generated values - not only autoincrements are very useful think. Entity Framework supports two types "Computed" and "Identity". When you update or insert entity, these fields are automatically refreshed according to state in database (after calling SaveChanges). For more info look at [StoreGeneratedPattern][1].

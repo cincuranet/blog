@@ -4,7 +4,6 @@ date: 2009-01-17T13:00:00Z
 tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/228921/
 layout: post
 ---
 Probably you heard about the very good library called [Power Threading Library][1]. Shortly, it allows you to run async methods in a near-sync-looking code (and besides provides some useful classes for working in multithreaded environment). But the problem is, that you have to use methods ready for async way. That easy for dtabase calls or web service calls. But you may have your own code and you want to utilize this library to really burn up your CPU.

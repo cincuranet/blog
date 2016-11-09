@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Firebird
   - PHP
-redirect_from: /id/233007/
 layout: post
 ---
 I was hunting some problem in PHP application and thanks to [Trace API in Firebird][1] I found terrible default value in PHP. What value? It's the default transaction isolation level value. In 99% of languages/environments in something close to read committed. But not in PHP.

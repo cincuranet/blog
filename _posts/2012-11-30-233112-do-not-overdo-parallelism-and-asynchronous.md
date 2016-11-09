@@ -7,7 +7,6 @@ tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Programming in general
-redirect_from: /id/233112/
 layout: post
 ---
 Sometimes it's easy to little bit overdo the need for having everything asynchronous and parallel. Quite often in last few weeks I've seen methods similar to this one.

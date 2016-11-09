@@ -3,7 +3,6 @@ title: "Using database initializers with EDMX"
 date: 2011-11-21T18:02:42Z
 tags:
   - Entity Framework
-redirect_from: /id/232577/
 layout: post
 ---
 Last week at my Entity Framework training I got a question whether you can use database initializer while still using EDMX file. The answer, as it turned out, isn't that straightforward.

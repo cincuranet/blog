@@ -4,7 +4,6 @@ date: 2009-03-10T15:04:00Z
 tags:
   - Visual Studio
   - Keyboard
-redirect_from: /id/229121/
 layout: post
 ---
 I'm not kind of guy hungry for thousands of new features in my current development IDE. In fact I'm happy for decently smart editor, because my work mainly involves BL etc. But couple of new features in new Visual Studio 2010 I really like.

@@ -5,7 +5,6 @@ tags:
   - Synology
   - Network Attached Storage (NAS)
   - Western Digital
-redirect_from: /id/233473/
 layout: post
 ---
 I'm running [Synology][1] DS207+ home. I know this one is old, but it still works fine. And it does almost all I need. From time to time I change hard drives because the old one are basically done. Luckily the [RAID 1][2] saves me a lot of trouble.

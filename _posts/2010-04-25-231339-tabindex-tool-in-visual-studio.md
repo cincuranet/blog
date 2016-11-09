@@ -7,7 +7,6 @@ tags:
   - Windows
   - Windows Presentation Foundation (WPF)
   - WinForms
-redirect_from: /id/231339/
 layout: post
 ---
 I remember from old times that I was using some plug-in into [Delphi][1] IDE to set tab order by clicking on components in order you wanted the ordering to be. Today I was reviewing the tab ordering in [ID3 renamer][2] as somebody reported in forum it's wrong. I was scared doing all the work through [Properties window][3] in Visual Studio.

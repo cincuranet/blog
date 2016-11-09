@@ -4,7 +4,6 @@ date: 2012-05-22T17:00:07Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/232871/
 layout: post
 ---
 Database triggers are a nice new feature added to [Firebird][1] in version 2.1. And as you can do a lot of stuff with them, sometimes you also might wanna to connect without firing these, especially if you made a mistake there and it's forcibly closing your connection. :) To disable these, standard Firebird utilities have a new switches. But it boils down to the API itself, nothing magical. 

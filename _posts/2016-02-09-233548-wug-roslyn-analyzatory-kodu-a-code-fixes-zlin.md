@@ -6,7 +6,6 @@ tags:
   - Visual Studio
   - Roslyn
   - C#
-redirect_from: /id/233548/
 layout: post
 ---
 Po [Praze][2] se na zoubek analyzátorům podíváme i ve Zlíně - 16.2.2016 od 17:30 na [WUGu][1].

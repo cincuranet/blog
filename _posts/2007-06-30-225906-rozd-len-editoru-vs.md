@@ -3,7 +3,6 @@ title: "Rozdělení editoru VS"
 date: 2007-06-30T11:21:00Z
 tags:
   - Visual Studio
-redirect_from: /id/225906/
 layout: post
 ---
 Kliknout omylem se někdy vyplatí. Přišel jsem tím na jednu zajímavou fičurku. Mezi zavíracím křížkem a scrollbarem se nachází "prostor", který když popotáhnete, rozdělí se aktuální okno na dvě části.

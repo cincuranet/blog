@@ -3,7 +3,6 @@ title: "Mapping private/protected/... properties in Entity Framework 4.x Code Fi
 date: 2012-02-17T13:07:34Z
 tags:
   - Entity Framework
-redirect_from: /id/232731/
 layout: post
 ---
 More than a year ago I was blogging about [how to map private/protected/... properties in Code First CTP4][1] for the time being. Well it has been a long time and a lot of changed. The code there isn't absolutely up to date with current [Entity Framework 4.3][2].

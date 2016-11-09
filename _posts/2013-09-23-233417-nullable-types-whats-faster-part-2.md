@@ -3,7 +3,6 @@ title: "Nullable types - what's faster? - part 2"
 date: 2013-09-23T12:07:00Z
 tags:
   - .NET
-redirect_from: /id/233417/
 layout: post
 ---
 Years ago I wrote post [Nullable types - what's faster?][1] at that time on .NET FW 3.5. Today I came across post [Hrátky s Nullable typy][2] which is related to my old post. That made me thinking about the test again and how it's the state today.

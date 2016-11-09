@@ -3,7 +3,6 @@ title: "Identification of Kindle browser"
 date: 2010-09-08T14:23:18Z
 tags:
   - Amazon Kindle
-redirect_from: /id/231986/
 layout: post
 ---
 New [Kindle 3][1] has also new browser. It's based on [WebKit][2] and I have to say, it's noticeably better than the previous one. The browsing, if the page is focused on text, is really pleasant.

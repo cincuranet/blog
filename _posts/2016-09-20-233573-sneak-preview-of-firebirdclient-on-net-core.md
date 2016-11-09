@@ -7,7 +7,6 @@ tags:
   - C#
   - Firebird
   - SQL
-redirect_from: /id/233573/
 layout: post
 ---
 I know a lot of people asked me about .NET Core version of FirebirdClient. Unfortunately the Firebird 3 was released few months ago as well and so it was about priorities (and also my free time). Luckily recently I got some free time and also a reason and time to work on .NET Core port thanks to [Integrative][1].

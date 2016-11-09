@@ -4,7 +4,6 @@ date: 2014-04-24T12:38:00Z
 tags:
   - .NET
   - C#
-redirect_from: /id/233452/
 layout: post
 ---
 You know these Try-Get methods that return `bool` when the action was succesful and then in `out` parameter you have the actual result, right? Like [`IDictionary<TKey, TValue>.TryGetValue`][1]. I hate these. You have to declare the `out` variable (I know C# 6 will simplify this), then have the `if`. Just too much noise. Today I had enough and I decided to solve it. In code. For me.

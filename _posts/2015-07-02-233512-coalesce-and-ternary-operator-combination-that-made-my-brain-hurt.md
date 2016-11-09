@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - Best practice or not?
-redirect_from: /id/233512/
 layout: post
 ---
 Often I like exploring all the nuances in languages and what you can do chaining stuff together. Today was not the day. Statement that was "clearly" correct was returning wrong values. Splitting it to pieces and executing produced expected values. After maybe an hour I finally understood my mistake. Let's have a look.

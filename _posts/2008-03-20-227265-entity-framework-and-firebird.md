@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - Visual Studio
-redirect_from: /id/227265/
 layout: post
 ---
 Just a small taste of Entity Framework using Firebird. Nothing else is working (and probably something is doing what it shouldn't). :-) Compiled right now.

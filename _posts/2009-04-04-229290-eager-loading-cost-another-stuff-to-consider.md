@@ -4,7 +4,6 @@ date: 2009-04-04T20:20:00Z
 tags:
   - Databases in general
   - Entity Framework
-redirect_from: /id/229290/
 layout: post
 ---
 Julie Lerman made a great post about [The cost of eager loading in Entity Framework][1]. And everything there is true, in fact if you take [my Entity Framework training][2], you will know that with all reasons and you'll also learn performace improvements you may incorporate into your solution.

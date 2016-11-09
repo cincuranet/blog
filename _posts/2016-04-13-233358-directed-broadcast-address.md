@@ -8,7 +8,6 @@ tags:
   - IoT
   - ESP-8266
   - Arduino
-redirect_from: /id/233558/
 layout: post
 ---
 Although I can make it out of the TCP/IP woods almost always, sometimes I find edge cases that are interesting. More often than not these are result of security hacks in last 20 or so years and my knowledge is based on "regular/happy" case. 

@@ -3,7 +3,6 @@ title: "Hádanka (Firebird)"
 date: 2006-08-13T12:52:00Z
 tags:
   - Firebird
-redirect_from: /id/8922/
 layout: post
 ---
 Mějme takovéto zadání:

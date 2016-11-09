@@ -4,7 +4,6 @@ date: 2014-10-25T08:26:00Z
 tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233483/
 layout: post
 ---
 In last couple of weeks I was again confronted number of times with something "asynchronous". In this post I don't want to argue about CPU-bound and IO-bound operations with respect to "asynchronous" word. What I'll talk about is the `async` keyword. Because it looks like there's still confusion.

@@ -6,7 +6,6 @@ tags:
   - .NET
   - LINQ
   - Lessons learned
-redirect_from: /id/233557/
 layout: post
 ---
 Today was a refactoring day. Well half of it. I was in correct mood. And I was bitten by old code and my own ignorance of deferred execution for enumerables.

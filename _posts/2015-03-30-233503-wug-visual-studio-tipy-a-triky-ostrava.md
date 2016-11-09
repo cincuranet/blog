@@ -5,7 +5,6 @@ tags:
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard
-redirect_from: /id/233503/
 layout: post
 ---
 Slib je slib a proto si dáme klávesnicovou show v Ostravě.

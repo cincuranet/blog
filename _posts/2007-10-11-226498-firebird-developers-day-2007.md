@@ -4,7 +4,6 @@ date: 2007-10-11T08:43:00Z
 tags:
   - Databases in general
   - Firebird
-redirect_from: /id/226498/
 layout: post
 ---
 Úplně bych na to při všem tom shonu zapomněl.

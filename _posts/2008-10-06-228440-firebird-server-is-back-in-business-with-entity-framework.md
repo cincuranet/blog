@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - Visual Studio
-redirect_from: /id/228440/
 layout: post
 ---
 As you (maybe) know, there was a bug in `left outer join` so the model generation/update etc. in Entity Framework and similar tools was failing. The bug is now gone. Well, it's not in some oficial release, but it's in sources. If you want to test it, grab sources and build or grab [this build][1] (only SuperServer executable). Also take into accout, that it's build from current sources and can be _very unstable_.

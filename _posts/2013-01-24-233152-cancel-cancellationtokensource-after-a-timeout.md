@@ -3,7 +3,6 @@ title: "Cancel CancellationTokenSource after a timeout"
 date: 2013-01-24T09:26:20Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233152/
 layout: post
 ---
 Maybe you already discovered it. But in .NET 4.5 the [`CancellationTokenSource`][1] class has a new method [`CancelAfter`][2]. It allows you to signal cancellation after a specified interval aka timeout.

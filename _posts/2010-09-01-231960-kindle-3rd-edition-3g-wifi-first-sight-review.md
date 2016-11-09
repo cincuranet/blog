@@ -3,7 +3,6 @@ title: "Kindle 3rd edition (3G, WiFi) - first sight review"
 date: 2010-09-01T08:01:02Z
 tags:
   - Amazon Kindle
-redirect_from: /id/231960/
 layout: post
 ---
 Last (almost) day I was playing with new [Kindle][1] 3<sup>rd</sup> generation and I'll share my initial thoughts. I'll came with more detailed observations later (i.e. battery life).

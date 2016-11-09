@@ -4,7 +4,6 @@ date: 2010-07-23T15:21:09Z
 tags:
   - Storage &amp; Backup
   - Windows Mobile/Windows Phone
-redirect_from: /id/231774/
 layout: post
 ---
 I had problem with my Samsung i900 Omnia phone being stuck in stand by mode for no obvious reason, except I discovered applications doing this. I was living with that some time until I finally jumped into the problem.

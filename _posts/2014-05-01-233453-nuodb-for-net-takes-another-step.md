@@ -5,7 +5,6 @@ tags:
   - NuoDB
   - Entity Framework
   - LINQ
-redirect_from: /id/233453/
 layout: post
 ---
 We will soon be releasing NuoDB 2.0.4 and this release will include support for the latest ADO.NET provider. As the ADO.NET world evolves, especially the Entity Framework (EF), we here at NuoDB are not standing by but are moving the driver forward as well.

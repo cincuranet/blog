@@ -3,7 +3,6 @@ title: "EdmGen on steroids? EdmGen2!"
 date: 2008-07-08T21:01:00Z
 tags:
   - Entity Framework
-redirect_from: /id/227892/
 layout: post
 ---
 The EdmGen tool available in Entity Framework or simply SP1 installation is good tool for playing with CSDL, SSDL and MSL files. On the other hand, when using Visual Studio you get all these files in one EDMX file. Though it's just a pack of these two files, you cannot use it as input/output for EdmGen.

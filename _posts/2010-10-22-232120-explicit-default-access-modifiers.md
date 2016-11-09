@@ -4,7 +4,6 @@ date: 2010-10-22T08:46:02Z
 tags:
   - C#
   - Programming in general
-redirect_from: /id/232120/
 layout: post
 ---
 Few months ago [Miguel de Icaza][1] posted on Twitter message about explicitly stating your member private access modifier (or anything that's default) and that he doesn't understand it, the he wants his code be succinct.

@@ -3,7 +3,6 @@ title: "My Phone - folder synchronization disappointment"
 date: 2009-10-09T19:26:04Z
 tags:
   - Windows Mobile/Windows Phone
-redirect_from: /id/230875/
 layout: post
 ---
 I just found out that My Phone was released (is it a long time or not? :)). Although I'm synchronizing my device with Exchange server, I'm really missing (wireless) file synchronization - either with some folder on my computer or via some website. So the My Phone looked like what I was looking for.

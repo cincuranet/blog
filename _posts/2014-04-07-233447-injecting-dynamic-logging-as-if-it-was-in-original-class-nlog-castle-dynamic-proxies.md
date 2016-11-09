@@ -5,7 +5,6 @@ tags:
   - .NET
   - Logging &amp; Tracing
   - Aspect Oriented Programming (AOP)
-redirect_from: /id/233447/
 layout: post
 ---
 In my current project I have bunch of classes that are just a simple wrapper to call some of my [ASP.NET WebAPI][1] endpoints. These classes are not generated, but I have a skeleton code that I then just call from various methods. But I also wanted to add to some of these wrappers simple logging/tracing to have first a feedback that something is going on, because some methods are called at the start of application and before any real work is done and also to see how long it took to execute (I think I'll reuse this part later on different places as well). And all this to look like it's in the class itself (aka the "logger name" should be the implementation itself).

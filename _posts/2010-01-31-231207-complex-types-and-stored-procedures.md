@@ -4,7 +4,6 @@ date: 2010-01-31T15:52:11Z
 tags:
   - Entity Framework
   - Visual Studio
-redirect_from: /id/231207/
 layout: post
 ---
 I like the idea of [complex type][1]. Sadly the designer didn't supported complex types in EFv1/VS2008, although you could use it manually editing the model (it's just a XML file). The designer in EFv2/VS2010 supports complex types (and you can use it also with EFv1, [see this][2]) hence it's time to start really using these.

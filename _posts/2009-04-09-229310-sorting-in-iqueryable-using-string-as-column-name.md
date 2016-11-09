@@ -4,7 +4,6 @@ date: 2009-04-09T20:33:00Z
 tags:
   - Entity Framework
   - LINQ
-redirect_from: /id/229310/
 layout: post
 ---
 Today my UI/ASP.NET guru workmate asked me whether it's possible to provide sorting methods on queries (in our case Entity Framework) using column name as string instead of expression. Well, I thought, why it shouldn't.

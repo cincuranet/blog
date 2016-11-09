@@ -3,7 +3,6 @@ title: "MS SQL delete a insert"
 date: 2008-03-28T19:16:00Z
 tags:
   - Databases in general
-redirect_from: /id/227299/
 layout: post
 ---
 MS SQL je divnej :) [tak, to to schytám]. Přepisoval jsem něco do Entity Frameworku pro Firebird ze samples, kde se samozřejmě pracuje s MS SQL. Ačkoli specifikace SQL (SQL'92) hovoří jasně o tom, jak má vypadat insert a delete statement, MS SQL musí mít něco extra (a určitě to má super důvod).

@@ -4,7 +4,6 @@ date: 2008-07-29T12:14:00Z
 tags:
   - Entity Framework
   - LINQ
-redirect_from: /id/228036/
 layout: post
 ---
 Really good extension methods.

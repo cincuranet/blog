@@ -3,7 +3,6 @@ title: "Navigate To window case sensitivity and insensitivity"
 date: 2012-01-09T06:11:55Z
 tags:
   - Visual Studio
-redirect_from: /id/232652/
 layout: post
 ---
 [Visual Studio][1]'s Navigate To window (Ctrl+,) is a very fast way to navigate in your files, classes etc. Few days ago I accidentally found a "feature". I always started typing with first letter in upper case and after few characters I messed it up by typing letter in wrong case and missing object I was looking for. I was trying to find a way to make it do the search case insensitively.

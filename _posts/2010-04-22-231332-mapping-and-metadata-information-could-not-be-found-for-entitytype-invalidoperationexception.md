@@ -3,7 +3,6 @@ title: "Mapping and metadata information could not be found for EntityType (Inva
 date: 2010-04-22T20:17:02Z
 tags:
   - Entity Framework
-redirect_from: /id/231332/
 layout: post
 ---
 I updated my pretty big model today. Added absolutely simple table, no foreign keys, basic datatypes, simple PK. When I was calling [CreateObjectSet][1]<T> what a surprise - InvalidOperationException saying "Mapping and metadata information could not be found for EntityType". That's not so much descriptive.

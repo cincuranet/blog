@@ -4,7 +4,6 @@ date: 2015-12-03T04:24:00Z
 tags:
   - .NET
   - C#
-redirect_from: /id/233537/
 layout: post
 ---
 Last weekend [I was speaking on a conference][1] and one of my two sessions was about new features in C# 6. I like when people ask questions about topic I'm explaining and in this session there were two questions I'd like to share with you, because I think these are very interesting (and also I'm pretty sure it's described to a detail in the specification, but that's boring 8-)) and hence worth sharing.

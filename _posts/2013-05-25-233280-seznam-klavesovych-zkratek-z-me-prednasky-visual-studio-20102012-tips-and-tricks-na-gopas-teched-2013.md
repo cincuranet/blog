@@ -3,7 +3,6 @@ title: "Seznam klávesových zkratek z mé přednášky \"Visual Studio 2010/201
 date: 2013-05-25T09:15:34Z
 tags:
   - Presentations &amp; Speaking
-redirect_from: /id/233280/
 layout: post
 ---
 Na [letošním Gopas TechEdu][1] jsem měl kromě standardních technických přednášek i jednu oddychovou, netechnickou. Konkrétně "Visual Studio 2010/2012 tips and tricks". Což byl její pracovní název, ale probublal až na oficiální. No a tato přednáška neměla moc slajdů. Zato jsem prošel plno zajímavých - podle mě - klávesových zkratek, které ovládají běžné funkce Visual Studia (možná proto jsou již předdefinované). Prezentace z této, i ostatních, přednášek budou dostupné na [oficiálním webu][2]. Nicméně byla by škoda vás ochudit o všechny ty klávesové zkratky, které jsem prošel (nepředpokládám, že by si je někdo všechny zapisoval).

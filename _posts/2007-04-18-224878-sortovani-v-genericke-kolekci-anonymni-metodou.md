@@ -3,7 +3,6 @@ title: "Sortování v generické kolekci anonymní metodou"
 date: 2007-04-18T08:04:00Z
 tags:
   - .NET
-redirect_from: /id/224878/
 layout: post
 ---
 Když jsem dneska četl [Anonymní metoda pro hledání v generické kolekci][1] vzpomněl jsem si, že jsem podobnou věc dělal u sortování.

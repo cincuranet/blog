@@ -4,7 +4,6 @@ date: 2012-04-10T10:00:58Z
 tags:
   - Entity Framework
   - Presentations &amp; Speaking
-redirect_from: /id/232756/
 layout: post
 ---
 Není tomu tak dávno, co jsem slyšel od Entity Framework týmu, že, v té době ještě pouze nad EDMX, nic jako porovnávání a změny struktury databáze oproti modelu nejsou a nebudou. A hle, o několik let později je tu máme. Pokrok nezastavíš. :)

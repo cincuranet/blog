@@ -3,7 +3,6 @@ title: "Problem waking up computer from sleep"
 date: 2011-09-22T18:48:57Z
 tags:
   - VMware
-redirect_from: /id/232538/
 layout: post
 ---
 I recently upgraded [VMware Workstation][1] to version 8 (it also runs Windows 8 nicely) and experienced one problem with putting my laptop to sleep.

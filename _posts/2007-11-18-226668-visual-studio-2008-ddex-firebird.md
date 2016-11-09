@@ -4,7 +4,6 @@ date: 2007-11-18T10:14:00Z
 tags:
   - Firebird
   - Visual Studio
-redirect_from: /id/226668/
 layout: post
 ---
 Yes, it's here. A small taste for start:

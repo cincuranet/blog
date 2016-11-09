@@ -4,7 +4,6 @@ date: 2009-04-22T17:18:00Z
 tags:
   - Entity Framework
   - LINQ
-redirect_from: /id/229660/
 layout: post
 ---
 Today, you have two direct options how to load related data for given entity. Use [Include][1] or use [Load][2] method. In this post, I'll focus on Load, because this problem on Include is little bit easier than on Load. Unfortunately the Load method isn't providing any option to filter or limit what you're loading. That means, if you have customer with for example 200 invoices, you'll load all these 200 invoice, even if you need only first 5 or something like that. And that's wasting of resources.

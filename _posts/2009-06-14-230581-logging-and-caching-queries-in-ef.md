@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
-redirect_from: /id/230581/
 layout: post
 ---
 [Jarek Kowalski][1] posted to MSDN Code Gallery [wrappers][2] for any ADO.NET Entity Framework provider with ability to do caching and logging.

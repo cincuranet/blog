@@ -11,7 +11,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-redirect_from: /id/233487/
 layout: post
 ---
 Version 4.5.2.0 of [ADO.NET provider for Firebird][1] is ready for download.

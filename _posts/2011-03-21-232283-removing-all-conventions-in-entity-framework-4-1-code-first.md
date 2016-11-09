@@ -3,7 +3,6 @@ title: "Removing all conventions in Entity Framework 4.1 Code First"
 date: 2011-03-21T18:03:52Z
 tags:
   - Entity Framework
-redirect_from: /id/232283/
 layout: post
 ---
 Convention-over-configuration is great, at least for a quick start, in my opinion. But if you're like me and you want everything under your control, you may want to remove all (at least those you can remove via code).

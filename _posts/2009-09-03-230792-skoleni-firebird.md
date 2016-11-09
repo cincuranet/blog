@@ -3,7 +3,6 @@ title: "Školení Firebird"
 date: 2009-09-03T20:51:19Z
 tags:
   - Firebird
-redirect_from: /id/230792/
 layout: post
 ---
 Společně s Databázovým světem jsem připravil prefabrikované školení týkající se Firebirdu. Podrobnosti naleznete na [http://www.dbsvet.cz/view.php?cisloclanku=2009083103][1], včetně možnosti registrace. Pokud vše půjde dobře, nabídneme brzy i pokročilejší témata.

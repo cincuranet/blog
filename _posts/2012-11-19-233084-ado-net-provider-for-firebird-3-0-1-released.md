@@ -8,7 +8,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-redirect_from: /id/233084/
 layout: post
 ---
 Few weeks ago the 3.0.0 version was released (actually it was during Firebird Conference 2012, during my talk ;)) and it came with some new features and improvements (hence version 3.0.0). And as it goes, nothing is perfect and few items slipped through testing phase. So that's th reason why today, I'm happy to announce version 3.0.1 to be released.

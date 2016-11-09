@@ -5,7 +5,6 @@ tags:
   - Databases in general
   - Entity Framework
   - Firebird
-redirect_from: /id/228383/
 layout: post
 ---
 Podobně jako minulý rok, i letos jsme se rozhodli uspořádat Firebird Developers' Day. Loni místnost trochu přetékala, takže doporučuju registrovat včas.

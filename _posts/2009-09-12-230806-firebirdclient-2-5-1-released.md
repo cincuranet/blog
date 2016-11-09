@@ -3,7 +3,6 @@ title: "FirebirdClient 2.5.1 released"
 date: 2009-09-12T14:25:52Z
 tags:
   - Firebird
-redirect_from: /id/230806/
 layout: post
 ---
 I'm proud to announce next version of FirebirdClient - 2.5.1. This release is focused mainly on bug fixes, no new features were added.

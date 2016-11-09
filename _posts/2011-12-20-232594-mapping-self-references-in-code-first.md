@@ -3,7 +3,6 @@ title: "Mapping self references in Code First"
 date: 2011-12-20T18:56:28Z
 tags:
   - Entity Framework
-redirect_from: /id/232594/
 layout: post
 ---
 From time to time I see people having problems to map self references in [Code First in Entity Framework][1]. It might be confusing what to do with [HasMany][2]/[WithMany][3] and [HasOptional][4]/[WithOptional][5].

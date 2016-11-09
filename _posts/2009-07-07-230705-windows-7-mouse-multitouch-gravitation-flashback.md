@@ -7,7 +7,6 @@ tags:
   - Mouse
   - Physics
   - Windows
-redirect_from: /id/230705/
 layout: post
 ---
 While reading [Mike Taulty's][1] posts about playing with [Windows 7 and multitouch][2] some words like deceleration, inertia etc. started some process in my head and I recalled some very old program everybody was creating. I don't know if everybody, but at least 99,9% of Delphi developers.

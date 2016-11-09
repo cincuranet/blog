@@ -6,7 +6,6 @@ tags:
   - C/C++
   - Delphi/Object Pascal/Pascal
   - Memory
-redirect_from: /id/230931/
 layout: post
 ---
 Similarly to my way to [CountdownEvent class][1], I found [MemoryMappedFiles namespace][2], which is new in .NET 4. It's in System.IO.

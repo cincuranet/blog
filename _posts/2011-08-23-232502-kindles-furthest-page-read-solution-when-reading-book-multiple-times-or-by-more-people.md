@@ -3,7 +3,6 @@ title: "Kindle's \"furthest page read\" solution when reading book multiple time
 date: 2011-08-23T06:51:53Z
 tags:
   - Amazon Kindle
-redirect_from: /id/232502/
 layout: post
 ---
 > [I wrote a follow up post.][1]

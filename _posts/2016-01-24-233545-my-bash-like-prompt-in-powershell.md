@@ -4,7 +4,6 @@ date: 2016-01-24T19:55:00Z
 tags:
   - PowerShell
   - Bash
-redirect_from: /id/233545/
 layout: post
 ---
 It all started with this [tweet][1]:

@@ -8,7 +8,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-redirect_from: /id/233028/
 layout: post
 ---
 I'm pleased to announce version 3.0.0 of ADO.NET provider for Firebird and version 3.0.0 of DDEX provider for Firebird. ADO.NET provider 3.0.0 comes with couple of bug fixes and two major improvements.

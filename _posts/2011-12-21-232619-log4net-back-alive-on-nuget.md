@@ -4,7 +4,6 @@ date: 2011-12-21T17:11:19Z
 tags:
   - Logging &amp; Tracing
   - NuGet
-redirect_from: /id/232619/
 layout: post
 ---
 It turned out, that the previous maintainer of [log4net NuGet package][1] [@dotnetjunky][2] was assigned mistakenly. So nobody was actually maintaining that package. After few messages with him, we decided, I'll take over the ownership and maintain it.

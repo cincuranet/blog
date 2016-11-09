@@ -4,7 +4,6 @@ date: 2012-11-14T11:17:13Z
 tags:
   - Entity Framework
   - LINQ
-redirect_from: /id/233077/
 layout: post
 ---
 Four years back (wow) I wrote a post about [how to show SQL command created by Entity Framework][1]. The information there still holds. But now it's 2012, Entity Framework progressed. Now you're probably using [`DbContext`][2] and [`IDbSet<T>`][3] APIs, it's actually recommended.

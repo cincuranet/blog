@@ -4,7 +4,6 @@ date: 2014-04-12T07:56:00Z
 tags:
   - Entity Framework
   - Visual Studio
-redirect_from: /id/233448/
 layout: post
 ---
 I don't remember when people started begging [EF team][1] to add support for reordering properties in EDMX designer. I think I first found the need around 2008. :) I hoped, guessing it's a simple feature, to have it in some update to EF1. Sadly not. Only option, though simple, was to open the EDMX as a XML file and change the order of properties in CSDL part.

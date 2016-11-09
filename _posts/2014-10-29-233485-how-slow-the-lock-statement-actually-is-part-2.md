@@ -4,7 +4,6 @@ date: 2014-10-29T11:36:00Z
 tags:
   - C#                
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233485/
 layout: post
 ---
 After measuring the [`lock` statement][2] compared to naked [`Monitor`][3] calls I got some remarks about my code not being equivalent. Of course it's not. If it would be equivalent the time would be (should be) same. I wrote it as I did because I think there are some problems with the `lock` statement. 

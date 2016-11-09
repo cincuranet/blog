@@ -4,7 +4,6 @@ date: 2016-11-07T11:58:00Z
 tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233582/
 layout: post
 ---
 [V Praze][2] to byla zábava. Narazili jsme na otázky, u kterých jsem viděl často chyby a tak jsem byl rád, že jsme to mohli dopodrobna rozebrat. Doufám, že si to stejně na prvočinitele rozebereme i v Brně. Přijďte [na WUG][1] 15.11.2016 od 17:00. 

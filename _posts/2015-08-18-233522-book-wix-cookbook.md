@@ -4,7 +4,6 @@ date: 2015-08-18T11:54:00Z
 tags:
   - Books
   - WiX
-redirect_from: /id/233522/
 layout: post
 ---
 The [WiX][1] is a nice tool. And it's complex, because the MSI is complex like hell. Whenever I need to create an installer (and I hate installers, applications should be mostly "portable") I build it from pieces I wrote before and only add never used features. That way, over the years, I learned a lot of basic scenarios. Not the best or fastest way.

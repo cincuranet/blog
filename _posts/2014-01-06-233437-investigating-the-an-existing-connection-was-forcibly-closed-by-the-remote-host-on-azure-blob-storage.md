@@ -6,7 +6,6 @@ tags:
   - Azure Storage
   - Cloud
   - Storage &amp; Backup
-redirect_from: /id/233437/
 layout: post
 ---
 As I was working on a side project that uses [Azure Blob Storage][1] to store some files I was getting `An existing connection was forcibly closed by the remote host` error while uploading, sometimes. And I had no idea why. There was nothing more specific in the exception(s) that would help me to get a clue.

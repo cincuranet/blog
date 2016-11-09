@@ -3,7 +3,6 @@ title: "More space for Kindle's \"Cover View\""
 date: 2013-10-02T11:50:00Z
 tags:
   - Amazon Kindle
-redirect_from: /id/233418/
 layout: post
 ---
 When I bought ([link][1], [link][2]) the Kindle 5 Paperwhite the _Cover View_ was one part of the new UI. And I found it not that much usable. Basically half of the space was occupied with _Recommended Content_. Though the recommendations are often a good match (say hello to data-mining) it was just using a lot of space. So I - as I wrote in posts linked above - stoped using this view and used the old view with just text and lines.

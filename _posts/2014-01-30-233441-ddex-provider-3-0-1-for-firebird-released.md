@@ -6,7 +6,6 @@ tags:
   - Databases in general
   - Firebird
   - Visual Studio
-redirect_from: /id/233441/
 layout: post
 ---
 I has been a while since Visual Studio 2013 was released and I was kind of slow with updating the DDEX. Mainly because it's such a pain in the ass to install Visual Studio 2005 (the oldest version supported) plus Visual Studio SDK and build it, just to have version number bumped. The rest is done in no time.

@@ -3,7 +3,6 @@ title: "Multiple MimeType attribute for OData service"
 date: 2012-11-12T09:42:15Z
 tags:
   - OData/Data Services (Astoria)
-redirect_from: /id/233060/
 layout: post
 ---
 I was recently doing my course on Entity Framework ([drop me a line][1], if you're interested) and the last day we were diving into WCF Data Services aka OData.

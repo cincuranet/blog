@@ -6,7 +6,6 @@ tags:
   - Best practice or not?
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/232916/
 layout: post
 ---
 I like asynchronous programming. The [Asynchronous Programming Model][1] and later [Task][2]s with [ContinueWith][3] offer great performance especially if no waiting and similar is used.

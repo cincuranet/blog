@@ -3,7 +3,6 @@ title: "NGen Entity Framework"
 date: 2015-03-24T13:19:00Z
 tags:
   - Entity Framework
-redirect_from: /id/233502/
 layout: post
 ---
 Entity Framework is not an ultra lightweight layer you add to your application (at least not pre-EF7). It contains a lot of features and a lot of code. Before the [Entity Framework was NuGet package][1], it was part of [.NET Framework][2] and hence it was `ngen`ed when you installed some version of .NET Framework. Not with NuGet.

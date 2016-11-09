@@ -5,7 +5,6 @@ tags:
   - .NET
   - C#
   - LINQ
-redirect_from: /id/232039/
 layout: post
 ---
 > [Follow-up post.][1]

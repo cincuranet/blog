@@ -4,7 +4,6 @@ date: 2013-09-05T14:56:37Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/233412/
 layout: post
 ---
 Today I had a little of spare time and I had in my head support for [NBackup via Services API][1] in [FirebirdClient][2] for a long time. Especially since [NBackup saved me on Azure Websites][3].I was guessing it should not take that long to implement it, if you're in a good mood. Surprisingly I was right with my estimate.

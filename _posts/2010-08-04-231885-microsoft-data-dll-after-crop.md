@@ -4,7 +4,6 @@ date: 2010-08-04T06:06:44Z
 tags:
   - .NET
   - Databases in general
-redirect_from: /id/231885/
 layout: post
 ---
 Last 24 hours was interesting. Almost everybody doing something with databases and .NET was talking about new [Microsoft.Data.dll][1]. And there has been recently a lot of clarification (i.e. [this][2] or [this][3]) <small>(check your favorite search engine for more)</small> what it is and what it is not and who's target audience.

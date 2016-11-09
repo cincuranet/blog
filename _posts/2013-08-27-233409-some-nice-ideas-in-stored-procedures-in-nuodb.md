@@ -8,7 +8,6 @@ tags:
   - NuoDB
   - Programming in general
   - SQL
-redirect_from: /id/233409/
 layout: post
 ---
 NuoDB recently released preview of stored procedures in version 1.2. You can read more in [this blog post][1]. As I was going though it I found some "syntax pieces" interesting. Kind of "modern", so it's not that `x` decades old SQL.

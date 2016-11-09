@@ -3,7 +3,6 @@ title: "Firebird Developers' Day 2009 :("
 date: 2009-10-11T20:37:26Z
 tags:
   - Firebird
-redirect_from: /id/230915/
 layout: post
 ---
 Možná jste si všimli, že jste si nevšimli žádné upoutávky na letošní Firebird Developers‘ Day. Není to chyba na vašem přijímači. Zatím žádné takové oznámení nebylo.

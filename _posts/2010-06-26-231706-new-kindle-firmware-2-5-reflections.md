@@ -4,7 +4,6 @@ date: 2010-06-26T19:23:45Z
 tags:
   - Amazon Kindle
   - Social Networks
-redirect_from: /id/231706/
 layout: post
 ---
 [Amazon][1] released [new firmware (2.5)][2] for [Kindle][3] couple of days ago. And I have to say, there were some features I was quite looking forward. Namely the collections, PDF zoom and lately also the social networks integration. The rest wasn't so much interesting for me. Let me go through these three and put out some reflection I have from usage.

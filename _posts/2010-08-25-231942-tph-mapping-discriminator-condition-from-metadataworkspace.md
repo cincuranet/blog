@@ -3,7 +3,6 @@ title: "TPH mapping discriminator condition from MetadataWorkspace"
 date: 2010-08-25T14:07:19Z
 tags:
   - Entity Framework
-redirect_from: /id/231942/
 layout: post
 ---
 The [MetadataWorkspace][1] contains a lot of [useful information][2]. Recently I was facing a challenge to get information about TPH ([table per hierarchy][3]) inheritance conditions for particular type. Sure, it's in EDMX file and/or in MSL file. So you can parse the XML and get the info. I was on the other hand more interested getting the info from MetadataWorkspace, partially as a good "brain training" 8) side project.

@@ -5,7 +5,6 @@ tags:
   - .NET
   - Windows
   - Windows Presentation Foundation (WPF)
-redirect_from: /id/230602/
 layout: post
 ---
 Vista mi jaksi vypíná grafika-3D-cosi (zajímavé, že to začalo zlobit až po instalaci systému s integrovaným SP1). Takže se minimalizace okna, scrollování nebo třeba Alt-Tab trošku zasekávalo. Hlavně Alt-Tab mě štvalo, protože trvalo relativně dlouho, než se zobrazilo. Po dlouhé snaze vyřešit to systémově, jsem přešel na "programátorské” řešení.

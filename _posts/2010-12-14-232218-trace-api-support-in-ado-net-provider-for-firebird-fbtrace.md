@@ -4,7 +4,6 @@ date: 2010-12-14T21:02:29Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/232218/
 layout: post
 ---
 When I came from [Firebird Conference in Bremen][1] I was so excited about all the people being excited about [Trace and Audit API][2] :) I decided I'll implement this in .NET provider as soon as possible. And here it is.

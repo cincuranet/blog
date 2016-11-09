@@ -5,7 +5,6 @@ tags:
   - .NET
   - LINQ
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/231892/
 layout: post
 ---
 Few days ago I posted an [extension method to run projection on a collection in parallel][1]. The method has one problem. It's not dealing with exceptions. And because the ordering wasn't (and isn't) implicitly preserved, I did this small improvement.

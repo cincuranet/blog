@@ -4,7 +4,6 @@ date: 2009-04-13T16:03:00Z
 tags:
   - Entity Framework
   - Firebird
-redirect_from: /id/229356/
 layout: post
 ---
 Did you ever think about how cool would it be to have fully featured SQL database, without installation (just `xcopy`) and with Entity Framework support?

@@ -7,7 +7,6 @@ tags:
   - Storage &amp; Backup
   - AWS
   - Cloud
-redirect_from: /id/233433/
 layout: post
 ---
 Recently I was working on an application of my own and as I was in it I decided to check what updates to NuGet packages are available. I like to keep up to date to avoid any huge updates and surprises. And I also noticed [AWS SDK][1] had a new version, new major version.

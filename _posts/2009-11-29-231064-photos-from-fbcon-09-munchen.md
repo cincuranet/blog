@@ -4,7 +4,6 @@ date: 2009-11-29T09:03:24Z
 tags:
   - Firebird
   - Photos
-redirect_from: /id/231064/
 layout: post
 ---
 Starter for (but not only) morning:

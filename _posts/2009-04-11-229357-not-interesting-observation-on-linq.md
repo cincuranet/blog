@@ -3,7 +3,6 @@ title: "(Not) interesting observation on LINQ"
 date: 2009-04-11T16:05:00Z
 tags:
   - LINQ
-redirect_from: /id/229357/
 layout: post
 ---
 I've found interesting stuff in last couple of ... I don't know. Well it's not interesting because everybody knows it :), but using it this way, was for me like going the other direction. 

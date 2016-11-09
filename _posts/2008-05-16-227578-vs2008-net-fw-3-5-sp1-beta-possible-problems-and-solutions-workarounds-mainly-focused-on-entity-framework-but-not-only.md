@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Visual Studio
   - Windows
-redirect_from: /id/227578/
 layout: post
 ---
 Couple of links I've found during recent days:

@@ -3,7 +3,6 @@ title: "Gopas TechEd 2011 - mé přednášky"
 date: 2011-04-20T10:00:01Z
 tags:
   - Presentations &amp; Speaking
-redirect_from: /id/232308/
 layout: post
 ---
 Tento rok, podobně jako v předchozích letech, se uskuteční velká akce s názvem Gopas TechEd. Konkrétně 2.-5. května. [Celý program][1] je již dostupný na webu. Nicméně já bych vám doporučil středu 12:45 - 14:00 a 15:45 - 17:00. ;)

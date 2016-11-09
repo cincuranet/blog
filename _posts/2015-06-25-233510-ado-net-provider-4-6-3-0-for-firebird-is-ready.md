@@ -11,7 +11,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-redirect_from: /id/233510/
 layout: post
 ---
 New 4.6.3.0 version of [ADO.NET provider for Firebird][1] is ready for download. As you can spot from version number change it's not a huge release, but contains some useful changes.

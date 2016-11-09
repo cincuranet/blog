@@ -6,7 +6,6 @@ tags:
   - Apple iPhone/iPad/iPod
   - Cloud
   - Windows Mobile/Windows Phone
-redirect_from: /id/232102/
 layout: post
 ---
 I was recently thinking about phones and how these, now so called smart, device work together with our life. And I have to say my conclusions are not good. :)

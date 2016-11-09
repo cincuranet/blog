@@ -3,7 +3,6 @@ title: "SynchronizationContext class - how to use it?"
 date: 2006-06-02T19:55:00Z
 tags:
   - .NET
-redirect_from: /id/8310/
 layout: post
 ---
 In .NET framework 2.0 is new class SynchronizationContext. This class can be very helpful when using threads and communication (and collaboration) between threads.

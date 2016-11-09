@@ -4,7 +4,6 @@ date: 2012-01-24T11:41:36Z
 tags:
   - .NET
   - C#
-redirect_from: /id/232693/
 layout: post
 ---
 I was recently writing a lot of method that talked to 3<sup>rd</sup> party API. And after small refactoring a lot of methods was like try to call some method, if it throws exception return false, if not return true. And I was wondering, what's the best (in terms of code being generated, speed, efficiency but also readability) way to write it.

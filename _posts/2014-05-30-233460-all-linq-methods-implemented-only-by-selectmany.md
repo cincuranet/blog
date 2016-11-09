@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - Monad
-redirect_from: /id/233460/
 layout: post
 ---
 Somewhere this week I read or maybe heard that you can implement all LINQ methods only by `SelectMany`. Somebody just mentioned along the way. 

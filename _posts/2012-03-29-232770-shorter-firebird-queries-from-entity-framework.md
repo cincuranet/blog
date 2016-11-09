@@ -6,7 +6,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-redirect_from: /id/232770/
 layout: post
 ---
 Yesterday I [released ADO.NET provider for Firebird version 2.7.5][1] and there's one feature I'd like to blog about. As you might know [Firebird][2] has a pretty old limitation on "size" of query. It's both the string itself, but also the column datatypes and parameters used. No need to dive to details, because I'll only talk about the first item.

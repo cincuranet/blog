@@ -4,7 +4,6 @@ date: 2012-11-23T13:35:35Z
 tags:
   - .NET
   - Firebird
-redirect_from: /id/233101/
 layout: post
 ---
 This error isn't related only to [FirebirdClient][1] only, but any .NET application that is targeting multiple .NET Framework versions, but I spotted it first during FirebirdClient development.

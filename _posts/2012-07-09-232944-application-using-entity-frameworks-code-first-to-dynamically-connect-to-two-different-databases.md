@@ -7,7 +7,6 @@ tags:
   - Firebird
   - MS SQL Server
   - Oracle Database
-redirect_from: /id/232944/
 layout: post
 ---
 I was doing Entity Framework [training][1] roughly two weeks ago and normally I have 99% of people working with [MS SQL][2]. This however I had two guys from some company, where they worked with different databases, as the product they are working on is able to use couple of different databases. What a great setup. Finally I can show how to use [Entity Framework][3] with non-MS SQL databases.

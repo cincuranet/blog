@@ -3,7 +3,6 @@ title: "Kindle 3 - after some time"
 date: 2010-09-14T14:56:25Z
 tags:
   - Amazon Kindle
-redirect_from: /id/232014/
 layout: post
 ---
 When I was writing my ["first day review"][1] about [Kindle 3][2], I promised to get back with some experience after more days of using. Well, here it is. Two weeks of usage.

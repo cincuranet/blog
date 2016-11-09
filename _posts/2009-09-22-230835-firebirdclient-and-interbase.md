@@ -4,7 +4,6 @@ date: 2009-09-22T14:01:46Z
 tags:
   - Firebird
   - InterBase
-redirect_from: /id/230835/
 layout: post
 ---
 Wondering what changed on Earth in last, say, four weeks. I'm getting more than average (read: more than zero) emails, asking whether FirebirdClient works with InterBase. Similarly in mailing list.

@@ -4,7 +4,6 @@ date: 2011-07-09T17:13:29Z
 tags:
   - .NET
   - C#
-redirect_from: /id/232476/
 layout: post
 ---
 I was reading Twitter yesterday and spotted a [tweet][1] from [Shawn Wildermuth][2] about his pain about using [coalesce operator (`??`) in C#][3] and doing immediately something with result.

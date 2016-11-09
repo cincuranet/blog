@@ -5,7 +5,6 @@ tags:
   - .NET
   - Firebird
   - Visual Studio
-redirect_from: /id/226062/
 layout: post
 ---
 Some months ago I was writing about installing DDEX provider for Firebird to Visual Studio ([DDEX and Firebird .NET Data Provider][1]). There is described the "old style" method of using it. It's still working, but you need Visual Studio SDK, and so it's not so direct.

@@ -4,7 +4,6 @@ date: 2010-01-10T21:23:33Z
 tags:
   - Apple iPhone/iPad/iPod
   - Mac
-redirect_from: /id/231157/
 layout: post
 ---
 Today I was installing iPhone SDK (in fact that's first time I was installing something such big on Mac) and at the end of the installation the installer started optimizing system (yes, system) for installed software. :D Funny. Hopefully it was not creating new kernel. :) Just wondering, what would happen if this crashes...

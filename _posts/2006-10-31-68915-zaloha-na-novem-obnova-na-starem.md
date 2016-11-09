@@ -3,7 +3,6 @@ title: "Záloha na novém, obnova na starém?"
 date: 2006-10-31T20:51:00Z
 tags:
   - Firebird
-redirect_from: /id/68915/
 layout: post
 ---
 Asi trochu podivný nadpis. Nicméně vzhledem k tomu, že každou chvíli můžeme očekávat Firebird 2.0. A jak to tak bývá, bude se nejdříve trochu experimentovat (nepředpokládám, že by někdo vyměnil 1.5 hned na 2.0 bez otestování), ale i tak se může stát, že vše krásně pojede a až později se objeví problém, který možná nepůjde vyřešit hned. Potom budete chtít udělat zálohu z FB 2.0 a přěnést ji zpět na 1.5.

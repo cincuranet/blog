@@ -3,7 +3,6 @@ title: "Problem \"Could not load file or assembly '&lt;assembly&gt;' or one of i
 date: 2012-04-16T09:59:40Z
 tags:
   - Entity Framework
-redirect_from: /id/232804/
 layout: post
 ---
 When you use `migrate.exe` from [Entity Framework][1]'s Migrations (in time of writing [4.3.1][2]) you might get the error saying:

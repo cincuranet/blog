@@ -6,7 +6,6 @@ tags:
   - Firebird
   - Life
   - SQL
-redirect_from: /id/232881/
 layout: post
 ---
 Couple of days back I was hunting some problem in code, that processes and later translates [LINQ][1] queries preprocessed by [Entity Framework][2]. The bottom line is that you are in code, where you have pieces of query, you're rewriting these (even partially) or exchanging/adding new pieces if needed. You don't have whole picture, because pieces are changing and so on.

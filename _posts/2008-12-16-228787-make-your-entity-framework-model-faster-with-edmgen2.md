@@ -3,7 +3,6 @@ title: "Make your Entity Framework model faster (with EdmGen2)"
 date: 2008-12-16T05:00:00Z
 tags:
   - Entity Framework
-redirect_from: /id/228787/
 layout: post
 ---
 If we'll skip exact details, we can say, that internal behavior of whole modeling and mapping is based on views (attention, we're not talking about views in i.e. SQL databases!). Mapping is compiled into bidirectional views. These views express entities in form of tables (one direction – so called query views) and tables in form of entities (other direction – so called update views). Among others these views satisfy `entity = query_view(update_view(entity))`. As you might expect, generating this views isn't simple. More important, these views are generated in runtime. So if you have big model with a lot of associations and entities, the generating can take significant time. For my test, overgrown sort of :), model with 400+ entities and 300+ associations it takes 20 seconds.

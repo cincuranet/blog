@@ -4,7 +4,6 @@ date: 2016-09-22T06:48:00Z
 tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
-redirect_from: /id/233574/
 layout: post
 ---
 Léto je beznadějně pryč a jak se krátí dny, je třeba zalézt před příjemné světlo monitorů a začít něco kutit. :) No, ale když se kutí nemusí to vypadat jako zbastlená koule kódu, že?

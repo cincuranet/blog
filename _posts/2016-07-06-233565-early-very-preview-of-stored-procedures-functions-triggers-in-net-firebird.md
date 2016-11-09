@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-redirect_from: /id/233565/
 layout: post
 ---
 > [Follow-up post.][6]

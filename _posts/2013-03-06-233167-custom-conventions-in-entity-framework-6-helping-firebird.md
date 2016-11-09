@@ -4,7 +4,6 @@ date: 2013-03-06T16:59:58Z
 tags:
   - Entity Framework
   - Firebird
-redirect_from: /id/233167/
 layout: post
 ---
 > [There's a part 2 of this story.][1]
