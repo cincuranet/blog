@@ -67,7 +67,7 @@ var blog = (function() {
 	}
 
 	function initFullDisqus() {
-		disqus_config = function () {
+		disqus_config = function() {
 			this.page.url = 'http:{{ site.address }}' + post_url;
 		};
 
@@ -111,7 +111,7 @@ var blog = (function() {
 	};
 })();
 
-var disqus_config = function () {
+var disqus_config = function() {
 	this.page.url = '';
 };
 
