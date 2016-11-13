@@ -221,6 +221,8 @@ It was a joy to work on something simple and straightforward from outside, learn
 
 The complete code is available in [this repository][5]. Feel free to contribute and improve it. 
 
+> [Related story.][9]
+
 [1]: https://www.microsoft.com/en-us/download/details.aspx?id=17630
 [2]: https://www.red-gate.com/products/dotnet-development/smartassembly/
 [3]: https://msdn.microsoft.com/en-us/library/system.appdomain.assemblyresolve%28v=vs.110%29.aspx
@@ -229,3 +231,4 @@ The complete code is available in [this repository][5]. Feel free to contribute 
 [6]: http://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/
 [7]: http://ilspy.net/
 [8]: https://www.postsharp.net/
+[9]: {% post_url 2016-11-13-233585-shortcutting-went-wrong-the-method-needs-to-be-jited-completely %}
