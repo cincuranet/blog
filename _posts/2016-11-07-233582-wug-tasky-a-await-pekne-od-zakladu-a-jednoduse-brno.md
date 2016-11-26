@@ -12,5 +12,8 @@ layout: post
 
 > Kolem Tasku, TPL, async a await a IO operací, ... jsem už jako přednášející povídal hodně věcí, ale stále vidím, že se opakují stejné chyby. Chyby, které pramení z míchání pojmů a nedodržovaní základních principů. Potom veškeré použití vede ke zneužití a lepení oprav na opravy, místo "vyztužení" základu. Takže to vezmeme pěkně od základu, žádné fajnové věcičky. Něco na čem se dá stavět a dává solidní vědomosti. 
 
+> [Záznam z akce.][3]
+
 [1]: http://wug.cz/brno/akce/888-Tasky-a-await-pekne-od-zakladu-a-jednoduse
 [2]: {% post_url 2016-09-22-233574-wug-tasky-a-await-pekne-od-zakladu-a-jednoduse-praha %}
+[3]: http://wug.cz/zaznamy/350-Tasky-a-await-pekne-od-zakladu-a-jednoduse
