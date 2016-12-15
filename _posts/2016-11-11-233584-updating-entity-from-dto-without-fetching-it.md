@@ -45,7 +45,7 @@ using (var ctx = new MyContext())
 		Id = 25,
 		A = 66,
 	};
-	// manual shoveling the data
+	// manual shoveling of the data
 	var entity = new Entity()
 	{
 		Id = dto.Id,
