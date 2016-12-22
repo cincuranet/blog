@@ -48,7 +48,7 @@ I just need to first declare the variable because I'll use it in the lambda/dele
 And that's it. I created a simple helper for it, so you can just grab it and use it. Or change for different intervals (not daily). I also created one overload for `async` methods, because else the behavior would not be correct ([`TimerCallback`][6] is basically `Action<object>` and hence void returning method aka you cannot `await` it).
 
 
-Also if you're using Rx (Reactive Extensions) you can use [this overload][7] ([with `IScheduler`][8]) of `[Observable.Timer][9]` to do the same (maybe using more succinct code).
+Also if you're using Rx (Reactive Extensions) you can use [this overload][7] ([with `IScheduler`][8]) of [`Observable.Timer`][9] to do the same (maybe using more succinct code).
 
 ```csharp
 static class DailyHourMinuteTimerHelper
