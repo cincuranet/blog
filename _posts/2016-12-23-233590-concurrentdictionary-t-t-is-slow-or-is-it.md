@@ -79,7 +79,7 @@ And finally, running the code shows that for _Monitor_ version the CPU is 100% u
 
 #### Reason
 
-If you look at the [`TryAddInternal` method][10] of `ConcurrentDictionary<T, T>` you'll see it's using `Node` class handle the items. So that means allocations.
+If you look at the [`TryAddInternal` method][10] of `ConcurrentDictionary<T, T>` you'll see it's using `Node` class to handle the items. So that means allocations.
 
 Second clue is in [`GrowTable` method][11].  And it's doing quite a locking and shuffling of locks (and of course also the resizing).
 
