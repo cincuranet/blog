@@ -1,6 +1,5 @@
 ---
 title: About
-redirect_from: /contact/
 layout: default
 ---
 <h4>Mgr. Jiří Činčura</h4>
