@@ -97,7 +97,7 @@ td {
 
 input, textarea {
 	padding: 8px;
-	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1rem;
 	border: 1px solid #666;
 }
