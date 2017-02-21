@@ -16,6 +16,6 @@ layout: default
 </p>
 <p id="archive_posts">
 	{% for post in site.posts %}
-	<span data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %b %Y" }})<br /></span>
+	<span data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}">{{ post.title | escape }}</a> ({{ post.date | date: "%-d %b %Y" }})<br /></span>
 	{% endfor %}
 </p>

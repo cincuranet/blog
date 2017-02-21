@@ -1,5 +1,5 @@
 ---
-title: "&lt;authorization&gt; a securityTrimmingEnabled"
+title: "<authorization> a securityTrimmingEnabled"
 date: 2006-05-01T14:47:00Z
 tags:
   - .NET

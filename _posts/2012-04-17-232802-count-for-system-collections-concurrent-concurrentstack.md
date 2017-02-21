@@ -1,5 +1,5 @@
 ---
-title: "Count for System.Collections.Concurrent.ConcurrentStack&lt;T&gt;"
+title: "Count for System.Collections.Concurrent.ConcurrentStack<T>"
 date: 2012-04-17T17:36:30Z
 tags:
   - .NET

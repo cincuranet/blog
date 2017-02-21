@@ -3,7 +3,7 @@ layout: default
 ---
 {% for post in site.posts limit: site.site_posts %}
 <article>
-	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<h3><a href="{{ post.url }}">{{ post.title | escape }}</a></h3>
 	<p class="meta">Published <span title="{{ post.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ post.date | date: "%-d %b %Y" }}</span> in {{ post.tags | sort | array_to_sentence_string }}</p>
 	{{ post.excerpt }}
 	<p class="links"><a href="{{ post.url }}">{{ site.excerpt_link_name }}</a>&nbsp;|&nbsp;<a href="{{ post.url }}#comments"><span class="fa fa-comments"></span>&nbsp;<span class="disqus-comment-count" data-disqus-url="http:{{ site.address }}{{ post.url }}">&nbsp;</span></a></p>

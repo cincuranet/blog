@@ -1,5 +1,5 @@
 ---
-title: "Casting Expression&lt;Func&lt;TEntity, TProperty&gt;&gt; to Expression&lt;Func&lt;TEntity, object&gt;&gt;"
+title: "Casting Expression<Func<TEntity, TProperty>> to Expression<Func<TEntity, object>>"
 date: 2011-02-28T05:13:04Z
 tags:
   - .NET

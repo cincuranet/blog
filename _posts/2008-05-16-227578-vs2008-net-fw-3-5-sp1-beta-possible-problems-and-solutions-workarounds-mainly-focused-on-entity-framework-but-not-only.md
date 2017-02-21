@@ -1,5 +1,5 @@
 ---
-title: "VS2008 &amp; .NET FW 3.5 SP1 Beta - possible problems and solutions/workarounds (mainly focused on Entity Framework, but not only)"
+title: "VS2008 & .NET FW 3.5 SP1 Beta - possible problems and solutions/workarounds (mainly focused on Entity Framework, but not only)"
 date: 2008-05-16T21:59:00Z
 tags:
   - .NET
