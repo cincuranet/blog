@@ -1,5 +1,6 @@
 ---
-title: "Problem \"Could not load file or assembly '<assembly>' or one of its dependencies. The given assembly name or codebase was invalid. (Exception from HRESULT: 0x80131047)\" when using Entity Framework's migrate.exe"
+title: |
+  Problem "Could not load file or assembly '<assembly>' or one of its dependencies. The given assembly name or codebase was invalid. (Exception from HRESULT: 0x80131047)" when using Entity Framework's migrate.exe
 date: 2012-04-16T09:59:40Z
 tags:
   - Entity Framework

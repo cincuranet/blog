@@ -1,5 +1,6 @@
 ---
-title: "Using per solution/project NuGet package sources (in Visual Studio)"
+title: |
+  Using per solution/project NuGet package sources (in Visual Studio)
 date: 2013-01-02T10:00:47Z
 tags:
   - NuGet

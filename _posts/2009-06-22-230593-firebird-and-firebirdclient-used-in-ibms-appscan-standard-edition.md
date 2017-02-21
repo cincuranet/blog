@@ -1,5 +1,6 @@
 ---
-title: "Firebird and FirebirdClient used in IBM's AppScan Standard Edition"
+title: |
+  Firebird and FirebirdClient used in IBM's AppScan Standard Edition
 date: 2009-06-22T16:43:44Z
 tags:
   - .NET

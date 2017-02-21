@@ -1,5 +1,6 @@
 ---
-title: "Malé zrychlení Visual Studia"
+title: |
+  Malé zrychlení Visual Studia
 date: 2007-12-13T18:35:00Z
 tags:
   - Visual Studio

@@ -1,5 +1,6 @@
 ---
-title: "Custom logic in every Entity Framework's query"
+title: |
+  Custom logic in every Entity Framework's query
 date: 2011-12-11T13:41:50Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Přednáška ADO.NET Entity Framework - Microsoft, Praha"
+title: |
+  Přednáška ADO.NET Entity Framework - Microsoft, Praha
 date: 2009-10-03T10:00:09Z
 tags:
   - .NET

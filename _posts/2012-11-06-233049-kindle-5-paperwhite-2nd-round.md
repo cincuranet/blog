@@ -1,5 +1,6 @@
 ---
-title: "Kindle 5 Paperwhite 2nd round"
+title: |
+  Kindle 5 Paperwhite 2nd round
 date: 2012-11-06T13:15:11Z
 tags:
   - Amazon Kindle

@@ -1,5 +1,6 @@
 ---
-title: "Select method (kind of) in ADO.NET Data Services (to exclude big blob fields)"
+title: |
+  Select method (kind of) in ADO.NET Data Services (to exclude big blob fields)
 date: 2009-07-02T10:37:44Z
 tags:
   - Entity Framework

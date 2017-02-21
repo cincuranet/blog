@@ -1,5 +1,6 @@
 ---
-title: "Pravopis - \"vs.\" versus \"vs\""
+title: |
+  Pravopis - "vs." versus "vs"
 date: 2012-06-21T14:23:49Z
 tags:
   - Čeština

@@ -1,5 +1,6 @@
 ---
-title: "Store (server) generated values in Entity Framework in Firebird"
+title: |
+  Store (server) generated values in Entity Framework in Firebird
 date: 2008-08-09T17:00:00Z
 tags:
   - Entity Framework

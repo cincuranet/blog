@@ -1,5 +1,6 @@
 ---
-title: "TPH mapping discriminator condition from MetadataWorkspace"
+title: |
+  TPH mapping discriminator condition from MetadataWorkspace
 date: 2010-08-25T14:07:19Z
 tags:
   - Entity Framework

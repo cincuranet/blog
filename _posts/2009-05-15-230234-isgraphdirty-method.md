@@ -1,5 +1,6 @@
 ---
-title: "IsGraphDirty method"
+title: |
+  IsGraphDirty method
 date: 2009-05-15T08:34:00Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Shortcutting went wrong: The method needs to be JITed completely"
+title: |
+  Shortcutting went wrong: The method needs to be JITed completely
 date: 2016-11-13T18:09:00Z
 tags:
   - .NET

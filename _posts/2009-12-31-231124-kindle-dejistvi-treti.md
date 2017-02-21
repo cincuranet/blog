@@ -1,5 +1,6 @@
 ---
-title: "Kindle, dějiství třetí"
+title: |
+  Kindle, dějiství třetí
 date: 2009-12-31T16:41:20Z
 tags:
   - Amazon Kindle

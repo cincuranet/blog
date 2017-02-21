@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework 6 with Firebird updated"
+title: |
+  Entity Framework 6 with Firebird updated
 date: 2014-07-28T09:49:00Z
 tags:
   - C#

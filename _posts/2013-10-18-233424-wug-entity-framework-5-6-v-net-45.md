@@ -1,5 +1,6 @@
 ---
-title: "WUG: Entity Framework (5, 6) v .NET 4.5"
+title: |
+  WUG: Entity Framework (5, 6) v .NET 4.5
 date: 2013-10-18T07:01:00Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Using PowerShell in post/pre build action in Visual Studio"
+title: |
+  Using PowerShell in post/pre build action in Visual Studio
 date: 2015-07-15T17:51:00Z
 tags:
   - Visual Studio

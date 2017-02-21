@@ -1,5 +1,6 @@
 ---
-title: "NuGet on TeamCity gotcha"
+title: |
+  NuGet on TeamCity gotcha
 date: 2015-05-10T11:40:00Z
 tags:
   - TeamCity

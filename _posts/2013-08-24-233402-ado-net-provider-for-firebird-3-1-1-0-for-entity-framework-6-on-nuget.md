@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider for Firebird 3.1.1.0 for Entity Framework 6 on NuGet"
+title: |
+  ADO.NET provider for Firebird 3.1.1.0 for Entity Framework 6 on NuGet
 date: 2013-08-24T09:16:21Z
 tags:
   - .NET

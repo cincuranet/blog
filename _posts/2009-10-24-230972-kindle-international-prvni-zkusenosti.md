@@ -1,5 +1,6 @@
 ---
-title: "Kindle (International) - první zkušenosti"
+title: |
+  Kindle (International) - první zkušenosti
 date: 2009-10-24T08:56:52Z
 tags:
   - Amazon Kindle

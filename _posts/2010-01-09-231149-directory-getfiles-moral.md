@@ -1,5 +1,6 @@
 ---
-title: "Directory.GetFiles moral"
+title: |
+  Directory.GetFiles moral
 date: 2010-01-09T09:09:29Z
 tags:
   - .NET

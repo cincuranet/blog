@@ -1,5 +1,6 @@
 ---
-title: "Identification of Kindle browser"
+title: |
+  Identification of Kindle browser
 date: 2010-09-08T14:23:18Z
 tags:
   - Amazon Kindle

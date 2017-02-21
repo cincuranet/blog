@@ -1,5 +1,6 @@
 ---
-title: "TabIndex tool in Visual Studio"
+title: |
+  TabIndex tool in Visual Studio
 date: 2010-04-25T19:29:15Z
 tags:
   - Delphi/Object Pascal/Pascal

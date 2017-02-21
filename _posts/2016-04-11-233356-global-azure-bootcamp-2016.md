@@ -1,5 +1,6 @@
 ---
-title: "Global Azure Bootcamp 2016"
+title: |
+  Global Azure Bootcamp 2016
 date: 2016-04-11T07:33:00Z
 tags:
   - Presentations &amp; Speaking

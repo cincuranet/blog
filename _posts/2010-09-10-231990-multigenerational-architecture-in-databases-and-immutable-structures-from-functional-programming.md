@@ -1,5 +1,6 @@
 ---
-title: "Multigenerational architecture (in databases) and immutable structures (from functional programming)"
+title: |
+  Multigenerational architecture (in databases) and immutable structures (from functional programming)
 date: 2010-09-10T11:22:29Z
 tags:
   - Databases in general

@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider for Firebird 3.2.0.0 is ready"
+title: |
+  ADO.NET provider for Firebird 3.2.0.0 is ready
 date: 2013-10-05T10:06:00Z
 tags:
   - .NET

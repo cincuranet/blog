@@ -1,5 +1,6 @@
 ---
-title: "Logging and caching queries in EF"
+title: |
+  Logging and caching queries in EF
 date: 2009-06-14T12:03:55Z
 tags:
   - .NET

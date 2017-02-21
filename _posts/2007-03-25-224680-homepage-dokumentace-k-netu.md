@@ -1,5 +1,6 @@
 ---
-title: "HomePage dokumentace k .NETu"
+title: |
+  HomePage dokumentace k .NETu
 date: 2007-03-25T14:46:00Z
 tags:
   - .NET

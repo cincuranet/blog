@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider for Firebird with Entity Framework 6 support preview"
+title: |
+  ADO.NET provider for Firebird with Entity Framework 6 support preview
 date: 2013-05-31T17:52:07Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Firebird Embedded and .NET"
+title: |
+  Firebird Embedded and .NET
 date: 2007-01-27T23:07:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "Timestamp property on Windows Azure Table entity"
+title: |
+  Timestamp property on Windows Azure Table entity
 date: 2013-01-16T12:24:59Z
 tags:
   - Azure

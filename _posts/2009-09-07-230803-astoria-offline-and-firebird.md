@@ -1,5 +1,6 @@
 ---
-title: "Astoria \"offline\" and Firebird"
+title: |
+  Astoria "offline" and Firebird
 date: 2009-09-07T06:24:48Z
 tags:
   - Astoria "offline"

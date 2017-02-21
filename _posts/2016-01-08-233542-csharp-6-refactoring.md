@@ -1,5 +1,6 @@
 ---
-title: "C# 6 refactoring"
+title: |
+  C# 6 refactoring
 date: 2016-01-08T06:24:00Z
 tags:
   - C#

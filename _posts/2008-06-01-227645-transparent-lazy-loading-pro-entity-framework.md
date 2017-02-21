@@ -1,5 +1,6 @@
 ---
-title: "Transparent Lazy Loading pro Entity Framework"
+title: |
+  Transparent Lazy Loading pro Entity Framework
 date: 2008-06-01T08:14:00Z
 tags:
   - .NET

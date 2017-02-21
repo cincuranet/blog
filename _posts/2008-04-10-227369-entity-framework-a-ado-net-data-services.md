@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework a ADO.NET Data Services"
+title: |
+  Entity Framework a ADO.NET Data Services
 date: 2008-04-10T23:37:00Z
 tags:
   - .NET

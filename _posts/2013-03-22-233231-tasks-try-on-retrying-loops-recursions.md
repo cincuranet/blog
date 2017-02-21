@@ -1,5 +1,6 @@
 ---
-title: "Tasks - try on retrying, loops, recursions"
+title: |
+  Tasks - try on retrying, loops, recursions
 date: 2013-03-22T12:45:23Z
 tags:
   - .NET

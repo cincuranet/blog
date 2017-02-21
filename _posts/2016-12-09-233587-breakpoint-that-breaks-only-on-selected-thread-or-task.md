@@ -1,5 +1,6 @@
 ---
-title: "Breakpoint that breaks only on selected thread or task"
+title: |
+  Breakpoint that breaks only on selected thread or task
 date: 2016-12-09T10:46:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency

@@ -1,5 +1,6 @@
 ---
-title: "Jak se počítají záznamy..."
+title: |
+  Jak se počítají záznamy...
 date: 2007-03-08T20:33:00Z
 tags:
   - Best practice or not?

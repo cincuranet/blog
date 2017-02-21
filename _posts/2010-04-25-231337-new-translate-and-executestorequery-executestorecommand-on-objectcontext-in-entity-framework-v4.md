@@ -1,5 +1,6 @@
 ---
-title: "New Translate<T> and ExecuteStoreQuery<T> (+ExecuteStoreCommand) on ObjectContext in Entity Framework v4"
+title: |
+  New Translate<T> and ExecuteStoreQuery<T> (+ExecuteStoreCommand) on ObjectContext in Entity Framework v4
 date: 2010-04-25T19:20:23Z
 tags:
   - .NET

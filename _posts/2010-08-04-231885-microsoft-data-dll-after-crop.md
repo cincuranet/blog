@@ -1,5 +1,6 @@
 ---
-title: "Microsoft.Data.dll after crop"
+title: |
+  Microsoft.Data.dll after crop
 date: 2010-08-04T06:06:44Z
 tags:
   - .NET

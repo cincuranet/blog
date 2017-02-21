@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework v4 and Firebird - moving forward"
+title: |
+  Entity Framework v4 and Firebird - moving forward
 date: 2010-05-04T20:35:43Z
 tags:
   - .NET

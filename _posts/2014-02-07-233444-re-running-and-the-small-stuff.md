@@ -1,5 +1,6 @@
 ---
-title: "RE: Running And The Small Stuff"
+title: |
+  RE: Running And The Small Stuff
 date: 2014-02-07T08:14:00Z
 tags:
   - Running

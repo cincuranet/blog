@@ -1,5 +1,6 @@
 ---
-title: "Solved Samsung i900 Omnia's freezing"
+title: |
+  Solved Samsung i900 Omnia's freezing
 date: 2010-07-23T15:21:09Z
 tags:
   - Storage &amp; Backup

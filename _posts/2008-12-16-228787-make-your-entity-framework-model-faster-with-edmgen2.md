@@ -1,5 +1,6 @@
 ---
-title: "Make your Entity Framework model faster (with EdmGen2)"
+title: |
+  Make your Entity Framework model faster (with EdmGen2)
 date: 2008-12-16T05:00:00Z
 tags:
   - Entity Framework

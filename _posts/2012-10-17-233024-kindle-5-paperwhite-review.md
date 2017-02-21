@@ -1,5 +1,6 @@
 ---
-title: "Kindle 5 Paperwhite review"
+title: |
+  Kindle 5 Paperwhite review
 date: 2012-10-17T11:04:25Z
 tags:
   - Amazon Kindle

@@ -1,5 +1,6 @@
 ---
-title: "Unique constraint on MS SQL?!"
+title: |
+  Unique constraint on MS SQL?!
 date: 2009-09-26T15:06:49Z
 tags:
   - Databases in general

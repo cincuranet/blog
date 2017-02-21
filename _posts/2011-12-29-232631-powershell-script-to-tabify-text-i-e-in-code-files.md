@@ -1,5 +1,6 @@
 ---
-title: "PowerShell script to tabify text (i.e. in code files)"
+title: |
+  PowerShell script to tabify text (i.e. in code files)
 date: 2011-12-29T18:50:23Z
 tags:
   - C#

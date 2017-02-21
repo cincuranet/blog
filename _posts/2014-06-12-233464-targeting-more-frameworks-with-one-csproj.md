@@ -1,5 +1,6 @@
 ---
-title: "Targeting more frameworks with on csproj"
+title: |
+  Targeting more frameworks with on csproj
 date: 2014-06-12T08:01:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "Sortování v generické kolekci pomocí lambda expression"
+title: |
+  Sortování v generické kolekci pomocí lambda expression
 date: 2008-07-26T11:22:00Z
 tags:
   - .NET

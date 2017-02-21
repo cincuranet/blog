@@ -1,5 +1,6 @@
 ---
-title: "Virtual PC ==> VMWare Workstation"
+title: |
+  Virtual PC ==> VMWare Workstation
 date: 2009-11-05T10:20:44Z
 tags:
   - Virtualization

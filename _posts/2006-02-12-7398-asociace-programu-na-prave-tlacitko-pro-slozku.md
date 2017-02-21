@@ -1,5 +1,6 @@
 ---
-title: "Asociace programu na pravé tlačítko pro složku"
+title: |
+  Asociace programu na pravé tlačítko pro složku
 date: 2006-02-12T14:56:00Z
 tags:
   - .NET

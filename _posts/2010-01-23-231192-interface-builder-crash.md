@@ -1,5 +1,6 @@
 ---
-title: "Interface Builder crash"
+title: |
+  Interface Builder crash
 date: 2010-01-23T17:43:29Z
 tags:
   - Apple iPhone/iPad/iPod

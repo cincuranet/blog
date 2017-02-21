@@ -1,5 +1,6 @@
 ---
-title: "WUG: Visual Studio tipy a triky (Brno)"
+title: |
+  WUG: Visual Studio tipy a triky (Brno)
 date: 2015-02-11T09:50:00Z
 tags:
   - Presentations &amp; Speaking

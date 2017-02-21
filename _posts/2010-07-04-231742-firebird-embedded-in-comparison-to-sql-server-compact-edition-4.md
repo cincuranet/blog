@@ -1,5 +1,6 @@
 ---
-title: "Firebird Embedded in comparison to SQL Server Compact Edition 4"
+title: |
+  Firebird Embedded in comparison to SQL Server Compact Edition 4
 date: 2010-07-04T15:00:11Z
 tags:
   - .NET

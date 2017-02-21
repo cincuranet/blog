@@ -1,5 +1,6 @@
 ---
-title: "Differences between \"recreate procedure/...\" and \"create or alter procedure/...\""
+title: |
+  Differences between "recreate procedure/..." and "create or alter procedure/..."
 date: 2012-04-03T14:17:11Z
 tags:
   - Firebird

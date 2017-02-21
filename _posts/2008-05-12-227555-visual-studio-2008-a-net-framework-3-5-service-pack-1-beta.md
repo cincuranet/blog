@@ -1,5 +1,6 @@
 ---
-title: "Visual Studio 2008 a .NET Framework 3.5 Service Pack 1 Beta"
+title: |
+  Visual Studio 2008 a .NET Framework 3.5 Service Pack 1 Beta
 date: 2008-05-12T18:12:00Z
 tags:
   - .NET

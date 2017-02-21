@@ -1,5 +1,6 @@
 ---
-title: "Chyby v programech"
+title: |
+  Chyby v programech
 date: 2006-03-19T22:08:00Z
 tags:
   - Uncategorized

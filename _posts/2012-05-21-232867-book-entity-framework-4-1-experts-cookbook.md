@@ -1,5 +1,6 @@
 ---
-title: "Book: \"Entity Framework 4.1: Expert's Cookbook\""
+title: |
+  Book: "Entity Framework 4.1: Expert's Cookbook"
 date: 2012-05-21T08:50:08Z
 tags:
   - Books

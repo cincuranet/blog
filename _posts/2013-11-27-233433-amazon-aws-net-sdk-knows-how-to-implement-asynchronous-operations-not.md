@@ -1,5 +1,6 @@
 ---
-title: "Amazon AWS's .NET SDK knows how to implement asynchronous operations. Not!"
+title: |
+  Amazon AWS's .NET SDK knows how to implement asynchronous operations. Not!
 date: 2013-11-27T12:28:00Z
 tags:
   - Best practice or not?

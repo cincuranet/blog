@@ -1,5 +1,6 @@
 ---
-title: "String splitting and ordering enlightenment"
+title: |
+  String splitting and ordering enlightenment
 date: 2013-03-05T11:32:06Z
 tags:
   - .NET

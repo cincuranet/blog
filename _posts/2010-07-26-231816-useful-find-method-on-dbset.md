@@ -1,5 +1,6 @@
 ---
-title: "Useful Find method on DbSet"
+title: |
+  Useful Find method on DbSet
 date: 2010-07-26T06:09:29Z
 tags:
   - Entity Framework

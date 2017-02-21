@@ -1,5 +1,6 @@
 ---
-title: "T4 templates processing at runtime"
+title: |
+  T4 templates processing at runtime
 date: 2010-05-15T18:22:02Z
 tags:
   - .NET

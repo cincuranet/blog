@@ -1,5 +1,6 @@
 ---
-title: "CultureInfo equality"
+title: |
+  CultureInfo equality
 date: 2012-01-13T20:13:45Z
 tags:
   - .NET

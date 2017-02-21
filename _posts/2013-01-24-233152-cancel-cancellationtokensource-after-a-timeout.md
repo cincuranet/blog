@@ -1,5 +1,6 @@
 ---
-title: "Cancel CancellationTokenSource after a timeout"
+title: |
+  Cancel CancellationTokenSource after a timeout
 date: 2013-01-24T09:26:20Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency

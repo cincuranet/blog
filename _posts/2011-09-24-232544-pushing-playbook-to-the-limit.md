@@ -1,5 +1,6 @@
 ---
-title: "Pushing PlayBook to the limit"
+title: |
+  Pushing PlayBook to the limit
 date: 2011-09-24T12:49:43Z
 tags:
   - BlackBerry PlayBook

@@ -1,5 +1,6 @@
 ---
-title: "Lide a binarni kod - pro zasmani :-)"
+title: |
+  Lide a binarni kod - pro zasmani :-)
 date: 2005-06-14T11:11:00Z
 tags:
   - Uncategorized

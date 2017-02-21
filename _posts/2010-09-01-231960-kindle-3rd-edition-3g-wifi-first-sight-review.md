@@ -1,5 +1,6 @@
 ---
-title: "Kindle 3rd edition (3G, WiFi) - first sight review"
+title: |
+  Kindle 3rd edition (3G, WiFi) - first sight review
 date: 2010-09-01T08:01:02Z
 tags:
   - Amazon Kindle

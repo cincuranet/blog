@@ -1,5 +1,6 @@
 ---
-title: "Running the other method on same thread as the first one"
+title: |
+  Running the other method on same thread as the first one
 date: 2010-06-06T21:31:56Z
 tags:
   - .NET

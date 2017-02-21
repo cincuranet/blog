@@ -1,5 +1,6 @@
 ---
-title: "Updating entity from DTO without fetching it"
+title: |
+  Updating entity from DTO without fetching it
 date: 2016-11-11T09:04:00Z
 tags:
   - Entity Framework

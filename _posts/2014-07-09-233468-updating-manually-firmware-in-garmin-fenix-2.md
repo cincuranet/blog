@@ -1,5 +1,6 @@
 ---
-title: "Updating manually firmware in Garmin fēnix 2"
+title: |
+  Updating manually firmware in Garmin fēnix 2
 date: 2014-07-09T16:39:00Z
 tags:
   - Garmin

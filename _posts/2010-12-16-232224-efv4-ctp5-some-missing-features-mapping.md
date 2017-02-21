@@ -1,5 +1,6 @@
 ---
-title: "EFv4 CTP5 some missing features (mapping)"
+title: |
+  EFv4 CTP5 some missing features (mapping)
 date: 2010-12-16T10:11:31Z
 tags:
   - Entity Framework

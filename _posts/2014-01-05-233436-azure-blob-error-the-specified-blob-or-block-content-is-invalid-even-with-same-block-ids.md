@@ -1,5 +1,6 @@
 ---
-title: "Azure blob error \"The specified blob or block content is invalid.\" even with \"same\" block IDs"
+title: |
+  Azure blob error "The specified blob or block content is invalid." even with "same" block IDs
 date: 2014-01-05T08:17:00Z
 tags:
   - Azure

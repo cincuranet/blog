@@ -1,5 +1,6 @@
 ---
-title: "Mapping self references in Code First"
+title: |
+  Mapping self references in Code First
 date: 2011-12-20T18:56:28Z
 tags:
   - Entity Framework

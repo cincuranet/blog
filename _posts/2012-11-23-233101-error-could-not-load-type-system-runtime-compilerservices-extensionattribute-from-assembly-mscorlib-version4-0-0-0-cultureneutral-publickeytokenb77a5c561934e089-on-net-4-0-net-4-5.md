@@ -1,5 +1,6 @@
 ---
-title: "Error \"Could not load type 'System.Runtime.CompilerServices.ExtensionAttribute' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.\" on .NET 4.0/.NET 4.5"
+title: |
+  Error "Could not load type 'System.Runtime.CompilerServices.ExtensionAttribute' from assembly 'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'." on .NET 4.0/.NET 4.5
 date: 2012-11-23T13:35:35Z
 tags:
   - .NET

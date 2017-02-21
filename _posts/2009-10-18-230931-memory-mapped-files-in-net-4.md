@@ -1,5 +1,6 @@
 ---
-title: "Memory mapped files in .NET 4"
+title: |
+  Memory mapped files in .NET 4
 date: 2009-10-18T13:42:52Z
 tags:
   - .NET

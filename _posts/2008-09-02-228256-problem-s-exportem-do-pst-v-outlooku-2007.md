@@ -1,5 +1,6 @@
 ---
-title: "Problém s exportem do PST v Outlooku 2007"
+title: |
+  Problém s exportem do PST v Outlooku 2007
 date: 2008-09-02T17:11:00Z
 tags:
   - MS Office

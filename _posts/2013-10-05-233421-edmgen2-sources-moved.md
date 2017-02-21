@@ -1,5 +1,6 @@
 ---
-title: "EdmGen2 sources moved"
+title: |
+  EdmGen2 sources moved
 date: 2013-10-05T12:29:00Z
 tags:
   - .NET

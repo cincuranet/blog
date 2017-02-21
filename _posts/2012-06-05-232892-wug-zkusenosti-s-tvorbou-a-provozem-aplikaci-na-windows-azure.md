@@ -1,5 +1,6 @@
 ---
-title: "WUG: Zkušenosti s tvorbou a provozem aplikací na Windows Azure"
+title: |
+  WUG: Zkušenosti s tvorbou a provozem aplikací na Windows Azure
 date: 2012-06-05T10:00:32Z
 tags:
   - Presentations &amp; Speaking

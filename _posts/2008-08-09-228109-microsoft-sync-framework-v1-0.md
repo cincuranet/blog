@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Sync Framework v1.0"
+title: |
+  Microsoft Sync Framework v1.0
 date: 2008-08-09T03:51:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "SHA1Managed with asynchronous ComputeHash"
+title: |
+  SHA1Managed with asynchronous ComputeHash
 date: 2014-01-03T06:21:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "Looking for user application data path"
+title: |
+  Looking for user application data path
 date: 2006-06-17T08:04:00Z
 tags:
   - .NET

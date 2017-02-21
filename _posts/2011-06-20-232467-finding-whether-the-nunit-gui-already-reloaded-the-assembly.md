@@ -1,5 +1,6 @@
 ---
-title: "Finding whether the NUnit GUI already reloaded the assembly"
+title: |
+  Finding whether the NUnit GUI already reloaded the assembly
 date: 2011-06-20T12:14:57Z
 tags:
   - NUnit

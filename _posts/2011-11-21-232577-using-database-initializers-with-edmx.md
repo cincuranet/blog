@@ -1,5 +1,6 @@
 ---
-title: "Using database initializers with EDMX"
+title: |
+  Using database initializers with EDMX
 date: 2011-11-21T18:02:42Z
 tags:
   - Entity Framework

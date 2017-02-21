@@ -1,5 +1,6 @@
 ---
-title: "EdmGen on steroids? EdmGen2!"
+title: |
+  EdmGen on steroids? EdmGen2!
 date: 2008-07-08T21:01:00Z
 tags:
   - Entity Framework

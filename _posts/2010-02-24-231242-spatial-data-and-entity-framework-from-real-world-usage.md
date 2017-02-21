@@ -1,5 +1,6 @@
 ---
-title: "Spatial data and Entity Framework - from real world usage"
+title: |
+  Spatial data and Entity Framework - from real world usage
 date: 2010-02-24T21:57:59Z
 tags:
   - Entity Framework

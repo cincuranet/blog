@@ -1,5 +1,6 @@
 ---
-title: "Firebird Developers' Day 2008"
+title: |
+  Firebird Developers' Day 2008
 date: 2008-10-01T16:48:00Z
 tags:
   - Databases in general

@@ -1,5 +1,6 @@
 ---
-title: "WUG: Asynchronní a paralelní programování v .NETu (Olomouc)"
+title: |
+  WUG: Asynchronní a paralelní programování v .NETu (Olomouc)
 date: 2014-10-06T18:10:00Z
 tags:
   - Presentations &amp; Speaking

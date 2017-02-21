@@ -1,5 +1,6 @@
 ---
-title: "Quick Search renamed to Navigate To"
+title: |
+  Quick Search renamed to Navigate To
 date: 2009-12-18T16:54:01Z
 tags:
   - Visual Studio

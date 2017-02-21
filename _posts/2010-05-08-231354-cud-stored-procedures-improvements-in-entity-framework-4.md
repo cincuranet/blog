@@ -1,5 +1,6 @@
 ---
-title: "CUD stored procedures \"improvements\" in Entity Framework 4"
+title: |
+  CUD stored procedures "improvements" in Entity Framework 4
 date: 2010-05-08T15:55:51Z
 tags:
   - Databases in general

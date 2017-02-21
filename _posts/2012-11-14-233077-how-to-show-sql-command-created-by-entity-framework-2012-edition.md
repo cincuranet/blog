@@ -1,5 +1,6 @@
 ---
-title: "How to show SQL command created by Entity Framework? [2012 edition]"
+title: |
+  How to show SQL command created by Entity Framework? [2012 edition]
 date: 2012-11-14T11:17:13Z
 tags:
   - Entity Framework

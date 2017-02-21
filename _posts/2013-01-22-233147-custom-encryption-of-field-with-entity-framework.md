@@ -1,5 +1,6 @@
 ---
-title: "Custom encryption of field with Entity Framework"
+title: |
+  Custom encryption of field with Entity Framework
 date: 2013-01-22T09:23:31Z
 tags:
   - Encryption

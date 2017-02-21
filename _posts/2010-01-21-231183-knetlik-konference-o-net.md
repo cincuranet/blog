@@ -1,5 +1,6 @@
 ---
-title: "Knetlik - konference o .NET"
+title: |
+  Knetlik - konference o .NET
 date: 2010-01-21T12:54:02Z
 tags:
   - .NET

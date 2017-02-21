@@ -1,5 +1,6 @@
 ---
-title: "Is MapReduce a step back?"
+title: |
+  Is MapReduce a step back?
 date: 2009-09-04T21:22:49Z
 tags:
   - Uncategorized

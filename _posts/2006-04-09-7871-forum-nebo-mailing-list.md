@@ -1,5 +1,6 @@
 ---
-title: "Fórum nebo mailing-list?"
+title: |
+  Fórum nebo mailing-list?
 date: 2006-04-09T21:38:00Z
 tags:
   - Uncategorized

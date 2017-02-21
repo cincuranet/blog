@@ -1,5 +1,6 @@
 ---
-title: "log4net (back) alive on NuGet"
+title: |
+  log4net (back) alive on NuGet
 date: 2011-12-21T17:11:19Z
 tags:
   - Logging &amp; Tracing

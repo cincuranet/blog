@@ -1,5 +1,6 @@
 ---
-title: "Understanding (some) Firebird's nbackup error messages (\"Error (xxx) opening database file\")"
+title: |
+  Understanding (some) Firebird's nbackup error messages ("Error (xxx) opening database file")
 date: 2013-05-09T09:25:16Z
 tags:
   - Firebird

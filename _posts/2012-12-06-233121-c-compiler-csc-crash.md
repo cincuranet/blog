@@ -1,5 +1,6 @@
 ---
-title: "C# compiler (CSC) crash"
+title: |
+  C# compiler (CSC) crash
 date: 2012-12-06T11:03:52Z
 tags:
   - C#

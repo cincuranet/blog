@@ -1,5 +1,6 @@
 ---
-title: "Investigating the \"An existing connection was forcibly closed by the remote host\" on Azure Blob Storage"
+title: |
+  Investigating the "An existing connection was forcibly closed by the remote host" on Azure Blob Storage
 date: 2014-01-06T13:49:00Z
 tags:
   - Azure

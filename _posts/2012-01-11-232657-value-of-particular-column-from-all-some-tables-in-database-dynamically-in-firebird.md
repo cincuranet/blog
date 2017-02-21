@@ -1,5 +1,6 @@
 ---
-title: "Value of particular column from all (some) tables in database dynamically in Firebird"
+title: |
+  Value of particular column from all (some) tables in database dynamically in Firebird
 date: 2012-01-11T18:05:42Z
 tags:
   - Firebird

@@ -1,5 +1,6 @@
 ---
-title: "What's new in Entity Framework 4 Beta 2 and ADO.NET Data Services 4 Beta 2"
+title: |
+  What's new in Entity Framework 4 Beta 2 and ADO.NET Data Services 4 Beta 2
 date: 2009-10-21T14:18:32Z
 tags:
   - .NET

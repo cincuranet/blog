@@ -1,5 +1,6 @@
 ---
-title: "Superb gesture from Amazon"
+title: |
+  Superb gesture from Amazon
 date: 2009-10-22T14:42:16Z
 tags:
   - Amazon Kindle

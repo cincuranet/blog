@@ -1,5 +1,6 @@
 ---
-title: "Force Entity Framework to optimize/simplify huge queries"
+title: |
+  Force Entity Framework to optimize/simplify huge queries
 date: 2009-06-13T09:27:00Z
 tags:
   - Databases in general

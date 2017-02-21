@@ -1,5 +1,6 @@
 ---
-title: "NuoDB has new (web-based) management console"
+title: |
+  NuoDB has new (web-based) management console
 date: 2012-11-21T15:38:56Z
 tags:
   - Databases in general

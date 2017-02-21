@@ -1,5 +1,6 @@
 ---
-title: "Computed by column with select in definition"
+title: |
+  Computed by column with select in definition
 date: 2008-02-03T11:50:00Z
 tags:
   - Firebird

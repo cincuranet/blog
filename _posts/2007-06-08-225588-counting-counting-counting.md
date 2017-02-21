@@ -1,5 +1,6 @@
 ---
-title: "Counting, counting, counting ..."
+title: |
+  Counting, counting, counting ...
 date: 2007-06-08T19:03:00Z
 tags:
   - Databases in general

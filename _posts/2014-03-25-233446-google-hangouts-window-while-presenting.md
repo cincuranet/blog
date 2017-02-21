@@ -1,5 +1,6 @@
 ---
-title: "Google Hangouts' window while presenting"
+title: |
+  Google Hangouts' window while presenting
 date: 2014-03-25T06:36:00Z
 tags:
   - Presentations &amp; Speaking

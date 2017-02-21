@@ -1,5 +1,6 @@
 ---
-title: "Zabalení souborů do jednoho (hackneme serializaci?) :)"
+title: |
+  Zabalení souborů do jednoho (hackneme serializaci?) :)
 date: 2006-04-02T10:36:00Z
 tags:
   - .NET

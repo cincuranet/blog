@@ -1,5 +1,6 @@
 ---
-title: "Error \"The operation could not be completed\" or \"Exception has been thrown by the target of an invocation.\" when opening LINQ to SQL file in VS2008"
+title: |
+  Error "The operation could not be completed" or "Exception has been thrown by the target of an invocation." when opening LINQ to SQL file in VS2008
 date: 2008-05-08T13:21:00Z
 tags:
   - LINQ

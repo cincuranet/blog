@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework and Firebird Embedded"
+title: |
+  Entity Framework and Firebird Embedded
 date: 2009-04-13T16:03:00Z
 tags:
   - Entity Framework

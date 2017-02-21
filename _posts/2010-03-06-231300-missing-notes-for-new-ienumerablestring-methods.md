@@ -1,5 +1,6 @@
 ---
-title: "Missing notes for new IEnumerable<string> methods"
+title: |
+  Missing notes for new IEnumerable<string> methods
 date: 2010-03-06T17:12:31Z
 tags:
   - .NET

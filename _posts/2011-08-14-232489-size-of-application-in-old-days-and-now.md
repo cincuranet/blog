@@ -1,5 +1,6 @@
 ---
-title: "Size of application in old days and now..."
+title: |
+  Size of application in old days and now...
 date: 2011-08-14T04:15:24Z
 tags:
   - Programming in general

@@ -1,5 +1,6 @@
 ---
-title: "VMWare Workstation 7.1 solves the Visual Studio rendering problem"
+title: |
+  VMWare Workstation 7.1 solves the Visual Studio rendering problem
 date: 2010-06-01T13:52:02Z
 tags:
   - Virtualization

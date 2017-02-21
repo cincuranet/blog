@@ -1,5 +1,6 @@
 ---
-title: "Firebird 2 - třetí místo"
+title: |
+  Firebird 2 - třetí místo
 date: 2006-12-02T09:30:00Z
 tags:
   - Firebird

@@ -1,5 +1,6 @@
 ---
-title: "After you recovered from disaster how are you going to \"unleash\" your users?"
+title: |
+  After you recovered from disaster how are you going to "unleash" your users?
 date: 2014-06-03T06:09:00Z
 tags:
   - Disaster recovery

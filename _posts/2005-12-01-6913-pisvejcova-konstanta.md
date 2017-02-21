@@ -1,5 +1,6 @@
 ---
-title: "Pišvejcova konstanta"
+title: |
+  Pišvejcova konstanta
 date: 2005-12-01T13:45:00Z
 tags:
   - Uncategorized

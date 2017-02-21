@@ -1,5 +1,6 @@
 ---
-title: "Complex types and stored procedures"
+title: |
+  Complex types and stored procedures
 date: 2010-01-31T15:52:11Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Try catch return bool"
+title: |
+  Try catch return bool
 date: 2012-01-24T11:41:36Z
 tags:
   - .NET

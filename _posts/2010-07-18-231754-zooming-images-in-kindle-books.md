@@ -1,5 +1,6 @@
 ---
-title: "Zooming images in Kindle books"
+title: |
+  Zooming images in Kindle books
 date: 2010-07-18T08:31:44Z
 tags:
   - Amazon Kindle

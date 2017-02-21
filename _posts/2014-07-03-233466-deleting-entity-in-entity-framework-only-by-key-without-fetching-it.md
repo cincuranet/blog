@@ -1,5 +1,6 @@
 ---
-title: "Deleting entity in Entity Framework only by key without fetching it"
+title: |
+  Deleting entity in Entity Framework only by key without fetching it
 date: 2014-07-03T07:42:00Z
 tags:
   - Entity Framework

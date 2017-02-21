@@ -1,5 +1,6 @@
 ---
-title: "Problem waking up computer from sleep"
+title: |
+  Problem waking up computer from sleep
 date: 2011-09-22T18:48:57Z
 tags:
   - VMware

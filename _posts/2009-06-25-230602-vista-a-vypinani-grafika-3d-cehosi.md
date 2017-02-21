@@ -1,5 +1,6 @@
 ---
-title: "Vista a vypínání grafika-3D-čehosi"
+title: |
+  Vista a vypínání grafika-3D-čehosi
 date: 2009-06-25T17:01:20Z
 tags:
   - .NET

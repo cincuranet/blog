@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider 5.6.0.0 for Firebird is ready (with .NET Core support)"
+title: |
+  ADO.NET provider 5.6.0.0 for Firebird is ready (with .NET Core support)
 date: 2016-11-02T10:20:00Z
 tags:
   - .NET

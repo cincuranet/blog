@@ -1,5 +1,6 @@
 ---
-title: "Velká písmena na Firebirdu 1.5"
+title: |
+  Velká písmena na Firebirdu 1.5
 date: 2006-11-18T07:25:00Z
 tags:
   - Firebird

@@ -1,5 +1,6 @@
 ---
-title: "Name and path of .NET program accessing Firebird database"
+title: |
+  Name and path of .NET program accessing Firebird database
 date: 2008-12-05T08:25:00Z
 tags:
   - .NET

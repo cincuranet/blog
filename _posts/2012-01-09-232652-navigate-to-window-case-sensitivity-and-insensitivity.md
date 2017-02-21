@@ -1,5 +1,6 @@
 ---
-title: "Navigate To window case sensitivity and insensitivity"
+title: |
+  Navigate To window case sensitivity and insensitivity
 date: 2012-01-09T06:11:55Z
 tags:
   - Visual Studio

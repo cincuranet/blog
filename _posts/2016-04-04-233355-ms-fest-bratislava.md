@@ -1,5 +1,6 @@
 ---
-title: "MS Fest Bratislava"
+title: |
+  MS Fest Bratislava
 date: 2016-04-04T03:44:00Z
 tags:
   - Presentations &amp; Speaking

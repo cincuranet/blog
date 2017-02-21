@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework 4 - MS Fest 2009"
+title: |
+  Entity Framework 4 - MS Fest 2009
 date: 2009-11-16T12:46:37Z
 tags:
   - .NET

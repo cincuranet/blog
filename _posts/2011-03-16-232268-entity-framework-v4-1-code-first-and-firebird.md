@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework v4.1 Code First and Firebird"
+title: |
+  Entity Framework v4.1 Code First and Firebird
 date: 2011-03-16T20:16:29Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Google - BigTable"
+title: |
+  Google - BigTable
 date: 2006-10-05T04:14:00Z
 tags:
   - Uncategorized

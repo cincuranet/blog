@@ -1,5 +1,6 @@
 ---
-title: "My first PlayBook \"application\" :)"
+title: |
+  My first PlayBook "application" :)
 date: 2011-05-22T18:37:37Z
 tags:
   - BlackBerry

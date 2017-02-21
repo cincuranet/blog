@@ -1,5 +1,6 @@
 ---
-title: "Resetting Kindle's \"furthest page read\", now really"
+title: |
+  Resetting Kindle's "furthest page read", now really
 date: 2012-11-07T12:29:18Z
 tags:
   - Amazon Kindle

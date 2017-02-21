@@ -1,5 +1,6 @@
 ---
-title: "Settings and IList"
+title: |
+  Settings and IList
 date: 2006-07-17T21:05:00Z
 tags:
   - .NET

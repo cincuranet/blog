@@ -1,5 +1,6 @@
 ---
-title: "Passing data between build steps in TeamCity"
+title: |
+  Passing data between build steps in TeamCity
 date: 2015-03-18T20:23:00Z
 tags:
   - TeamCity

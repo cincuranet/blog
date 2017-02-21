@@ -1,5 +1,6 @@
 ---
-title: "Tlačítko Start ve Vistě :)"
+title: |
+  Tlačítko Start ve Vistě :)
 date: 2007-06-16T17:26:00Z
 tags:
   - Windows

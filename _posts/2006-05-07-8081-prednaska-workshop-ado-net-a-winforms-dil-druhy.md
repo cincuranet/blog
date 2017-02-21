@@ -1,5 +1,6 @@
 ---
-title: "Přednáška/Workshop ADO.NET (a WinForms) - díl druhý"
+title: |
+  Přednáška/Workshop ADO.NET (a WinForms) - díl druhý
 date: 2006-05-07T17:36:00Z
 tags:
   - .NET

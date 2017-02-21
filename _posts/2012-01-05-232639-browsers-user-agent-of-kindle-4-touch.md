@@ -1,5 +1,6 @@
 ---
-title: "Browser's User-Agent of Kindle 4 Touch"
+title: |
+  Browser's User-Agent of Kindle 4 Touch
 date: 2012-01-05T18:46:53Z
 tags:
   - Amazon Kindle

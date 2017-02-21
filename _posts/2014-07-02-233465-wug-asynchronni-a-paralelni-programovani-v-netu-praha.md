@@ -1,5 +1,6 @@
 ---
-title: "WUG: Asynchronní a paralelní programování v .NETu (Praha)"
+title: |
+  WUG: Asynchronní a paralelní programování v .NETu (Praha)
 date: 2014-07-02T12:33:00Z
 tags:
   - Presentations &amp; Speaking

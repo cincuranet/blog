@@ -1,5 +1,6 @@
 ---
-title: "Unobserved tasks in .NET 4.5"
+title: |
+  Unobserved tasks in .NET 4.5
 date: 2012-06-14T10:45:17Z
 tags:
   - .NET

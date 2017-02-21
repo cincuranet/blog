@@ -1,5 +1,6 @@
 ---
-title: "Firebird (server) is back in business with Entity Framework"
+title: |
+  Firebird (server) is back in business with Entity Framework
 date: 2008-10-06T16:37:00Z
 tags:
   - .NET

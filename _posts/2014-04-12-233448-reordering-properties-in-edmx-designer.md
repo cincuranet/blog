@@ -1,5 +1,6 @@
 ---
-title: "Reordering properties in EDMX designer"
+title: |
+  Reordering properties in EDMX designer
 date: 2014-04-12T07:56:00Z
 tags:
   - Entity Framework

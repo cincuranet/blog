@@ -1,5 +1,6 @@
 ---
-title: "Singleton shortcut"
+title: |
+  Singleton shortcut
 date: 2009-08-26T18:54:29Z
 tags:
   - .NET

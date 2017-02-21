@@ -1,5 +1,6 @@
 ---
-title: "Examples for \"(Not) interesting observation on LINQ\""
+title: |
+  Examples for "(Not) interesting observation on LINQ"
 date: 2009-05-03T11:06:00Z
 tags:
   - LINQ

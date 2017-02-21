@@ -1,5 +1,6 @@
 ---
-title: "Only adding data while seeding in Entity Framework"
+title: |
+  Only adding data while seeding in Entity Framework
 date: 2012-10-14T18:17:17Z
 tags:
   - Entity Framework

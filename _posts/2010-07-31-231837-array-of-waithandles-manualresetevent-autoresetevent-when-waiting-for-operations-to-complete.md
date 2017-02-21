@@ -1,5 +1,6 @@
 ---
-title: "Array of WaitHandles (ManualResetEvent, AutoResetEvent, ...) when waiting for operations to complete ..."
+title: |
+  Array of WaitHandles (ManualResetEvent, AutoResetEvent, ...) when waiting for operations to complete ...
 date: 2010-07-31T16:03:30Z
 tags:
   - .NET

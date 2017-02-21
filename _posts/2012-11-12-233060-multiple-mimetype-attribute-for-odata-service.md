@@ -1,5 +1,6 @@
 ---
-title: "Multiple MimeType attribute for OData service"
+title: |
+  Multiple MimeType attribute for OData service
 date: 2012-11-12T09:42:15Z
 tags:
   - OData/Data Services (Astoria)

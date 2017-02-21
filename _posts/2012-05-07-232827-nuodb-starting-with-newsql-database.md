@@ -1,5 +1,6 @@
 ---
-title: "NuoDB - starting with \"NewSQL\" database"
+title: |
+  NuoDB - starting with "NewSQL" database
 date: 2012-05-07T08:00:35Z
 tags:
   - Databases in general

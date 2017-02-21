@@ -1,5 +1,6 @@
 ---
-title: "New Windows Mobile 7 - why people see so much \"problems\"?"
+title: |
+  New Windows Mobile 7 - why people see so much "problems"?
 date: 2010-02-12T09:42:09Z
 tags:
   - Windows Mobile/Windows Phone

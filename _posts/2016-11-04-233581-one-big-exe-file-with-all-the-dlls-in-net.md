@@ -1,5 +1,6 @@
 ---
-title: "One big EXE file with all the DLLs in .NET"
+title: |
+  One big EXE file with all the DLLs in .NET
 date: 2016-11-05T07:28:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "Entity SQL and spatial data"
+title: |
+  Entity SQL and spatial data
 date: 2013-04-22T18:25:21Z
 tags:
   - Entity Framework

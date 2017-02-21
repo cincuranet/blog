@@ -1,5 +1,6 @@
 ---
-title: "To jsem zase jednou updatoval ..."
+title: |
+  To jsem zase jednou updatoval ...
 date: 2007-04-11T22:43:00Z
 tags:
   - Windows

@@ -1,5 +1,6 @@
 ---
-title: "Tokenize string in SQL (Firebird syntax)"
+title: |
+  Tokenize string in SQL (Firebird syntax)
 date: 2011-05-03T19:00:18Z
 tags:
   - Firebird

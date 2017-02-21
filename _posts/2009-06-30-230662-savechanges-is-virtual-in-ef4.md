@@ -1,5 +1,6 @@
 ---
-title: "SaveChanges is virtual in EF4"
+title: |
+  SaveChanges is virtual in EF4
 date: 2009-06-30T20:50:08Z
 tags:
   - Entity Framework

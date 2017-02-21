@@ -1,5 +1,6 @@
 ---
-title: "NGen Entity Framework"
+title: |
+  NGen Entity Framework
 date: 2015-03-24T13:19:00Z
 tags:
   - Entity Framework

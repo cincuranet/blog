@@ -1,5 +1,6 @@
 ---
-title: "Birthdates and looking for birthdays"
+title: |
+  Birthdates and looking for birthdays
 date: 2008-12-09T22:34:00Z
 tags:
   - Databases in general

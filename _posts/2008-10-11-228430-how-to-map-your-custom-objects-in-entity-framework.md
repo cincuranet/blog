@@ -1,5 +1,6 @@
 ---
-title: "How to map your custom objects in Entity Framework"
+title: |
+  How to map your custom objects in Entity Framework
 date: 2008-10-11T22:00:00Z
 tags:
   - .NET

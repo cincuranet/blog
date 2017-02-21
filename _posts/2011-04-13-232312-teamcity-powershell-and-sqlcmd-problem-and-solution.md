@@ -1,5 +1,6 @@
 ---
-title: "TeamCity, PowerShell and sqlcmd problem (and solution)"
+title: |
+  TeamCity, PowerShell and sqlcmd problem (and solution)
 date: 2011-04-13T17:46:19Z
 tags:
   - Continuous Integration

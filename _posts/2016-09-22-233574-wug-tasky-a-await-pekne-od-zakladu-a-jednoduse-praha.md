@@ -1,5 +1,6 @@
 ---
-title: "WUG: Tasky a await pěkně od základu a jednoduše (Praha)"
+title: |
+  WUG: Tasky a await pěkně od základu a jednoduše (Praha)
 date: 2016-09-22T06:48:00Z
 tags:
   - Presentations &amp; Speaking

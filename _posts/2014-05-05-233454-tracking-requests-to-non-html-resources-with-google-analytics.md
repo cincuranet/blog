@@ -1,5 +1,6 @@
 ---
-title: "Tracking requests to non-HTML resources with Google Analytics"
+title: |
+  Tracking requests to non-HTML resources with Google Analytics
 date: 2014-05-05T15:37:00Z
 tags:
   - Google

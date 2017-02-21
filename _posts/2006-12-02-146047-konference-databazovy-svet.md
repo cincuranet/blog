@@ -1,5 +1,6 @@
 ---
-title: "Konference Databázový svět"
+title: |
+  Konference Databázový svět
 date: 2006-12-02T08:30:00Z
 tags:
   - Databases in general

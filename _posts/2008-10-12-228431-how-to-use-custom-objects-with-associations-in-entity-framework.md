@@ -1,5 +1,6 @@
 ---
-title: "How to use custom objects with associations in Entity Framework"
+title: |
+  How to use custom objects with associations in Entity Framework
 date: 2008-10-12T22:00:00Z
 tags:
   - .NET

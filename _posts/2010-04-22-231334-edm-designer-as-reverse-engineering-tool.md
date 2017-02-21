@@ -1,5 +1,6 @@
 ---
-title: "EDM designer as reverse engineering tool"
+title: |
+  EDM designer as reverse engineering tool
 date: 2010-04-22T19:58:54Z
 tags:
   - Databases in general

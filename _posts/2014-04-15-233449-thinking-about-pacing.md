@@ -1,5 +1,6 @@
 ---
-title: "Thinking about pacing"
+title: |
+  Thinking about pacing
 date: 2014-04-15T05:17:00Z
 tags:
   - Running

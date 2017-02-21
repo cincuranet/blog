@@ -1,5 +1,6 @@
 ---
-title: "The magic of \"async\" keyword"
+title: |
+  The magic of "async" keyword
 date: 2014-10-25T08:26:00Z
 tags:
   - C#

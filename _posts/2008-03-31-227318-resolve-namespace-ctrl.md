@@ -1,5 +1,6 @@
 ---
-title: "Resolve namespace (Ctrl+.)"
+title: |
+  Resolve namespace (Ctrl+.)
 date: 2008-03-31T21:20:00Z
 tags:
   - Visual Studio

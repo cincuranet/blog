@@ -1,5 +1,6 @@
 ---
-title: "Creating Firebird database programatically (C#/.NET)"
+title: |
+  Creating Firebird database programatically (C#/.NET)
 date: 2006-04-20T13:51:00Z
 tags:
   - .NET

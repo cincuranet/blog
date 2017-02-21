@@ -1,5 +1,6 @@
 ---
-title: "Press, Click, Select or Choose?!?"
+title: |
+  Press, Click, Select or Choose?!?
 date: 2008-11-23T21:40:00Z
 tags:
   - Windows Mobile/Windows Phone

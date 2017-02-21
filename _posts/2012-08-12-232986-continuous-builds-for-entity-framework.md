@@ -1,5 +1,6 @@
 ---
-title: "Continuous builds for Entity Framework"
+title: |
+  Continuous builds for Entity Framework
 date: 2012-08-12T16:52:50Z
 tags:
   - .NET

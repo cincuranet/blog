@@ -1,5 +1,6 @@
 ---
-title: "Krabice od pizzy"
+title: |
+  Krabice od pizzy
 date: 2006-05-30T19:18:00Z
 tags:
   - Uncategorized

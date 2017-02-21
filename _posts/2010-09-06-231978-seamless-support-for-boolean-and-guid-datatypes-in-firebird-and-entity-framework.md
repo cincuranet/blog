@@ -1,5 +1,6 @@
 ---
-title: "Seamless support for Boolean and GUID datatypes in Firebird and Entity Framework"
+title: |
+  Seamless support for Boolean and GUID datatypes in Firebird and Entity Framework
 date: 2010-09-06T13:48:42Z
 tags:
   - Entity Framework

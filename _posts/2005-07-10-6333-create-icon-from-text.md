@@ -1,5 +1,6 @@
 ---
-title: "Create icon from text"
+title: |
+  Create icon from text
 date: 2005-07-10T14:18:00Z
 tags:
   - .NET

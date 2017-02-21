@@ -1,5 +1,6 @@
 ---
-title: "FirebirdClient on NuGet"
+title: |
+  FirebirdClient on NuGet
 date: 2011-08-13T14:31:36Z
 tags:
   - .NET

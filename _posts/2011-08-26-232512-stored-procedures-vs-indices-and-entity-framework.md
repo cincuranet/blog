@@ -1,5 +1,6 @@
 ---
-title: "Stored procedures vs. indices and Entity Framework"
+title: |
+  Stored procedures vs. indices and Entity Framework
 date: 2011-08-26T05:11:50Z
 tags:
   - Databases in general

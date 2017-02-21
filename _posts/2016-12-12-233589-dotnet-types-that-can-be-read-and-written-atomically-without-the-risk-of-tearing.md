@@ -1,5 +1,6 @@
 ---
-title: ".NET types that can be read and written atomically without the risk of tearing"
+title: |
+  .NET types that can be read and written atomically without the risk of tearing
 date: 2016-12-12T15:07:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency

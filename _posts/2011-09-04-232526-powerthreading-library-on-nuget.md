@@ -1,5 +1,6 @@
 ---
-title: "PowerThreading library on NuGet"
+title: |
+  PowerThreading library on NuGet
 date: 2011-09-04T07:11:16Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency

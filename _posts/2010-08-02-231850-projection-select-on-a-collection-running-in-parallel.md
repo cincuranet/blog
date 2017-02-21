@@ -1,5 +1,6 @@
 ---
-title: "Projection (select) on a collection running in parallel"
+title: |
+  Projection (select) on a collection running in parallel
 date: 2010-08-02T16:23:05Z
 tags:
   - .NET

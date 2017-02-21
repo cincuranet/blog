@@ -1,5 +1,6 @@
 ---
-title: "Zooming in Entity Data Model Designer - pain for source control"
+title: |
+  Zooming in Entity Data Model Designer - pain for source control
 date: 2009-04-03T07:38:00Z
 tags:
   - Entity Framework

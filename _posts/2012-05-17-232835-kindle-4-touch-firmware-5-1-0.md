@@ -1,5 +1,6 @@
 ---
-title: "Kindle 4 Touch firmware 5.1.0"
+title: |
+  Kindle 4 Touch firmware 5.1.0
 date: 2012-05-17T04:55:29Z
 tags:
   - Amazon Kindle

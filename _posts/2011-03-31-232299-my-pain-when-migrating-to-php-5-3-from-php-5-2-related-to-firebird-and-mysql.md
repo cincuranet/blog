@@ -1,5 +1,6 @@
 ---
-title: "My pain when migrating to PHP 5.3 from PHP 5.2 (related to Firebird and MySQL)"
+title: |
+  My pain when migrating to PHP 5.3 from PHP 5.2 (related to Firebird and MySQL)
 date: 2011-03-31T05:02:51Z
 tags:
   - Firebird

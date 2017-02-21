@@ -1,5 +1,6 @@
 ---
-title: "My Timer usage and references moral"
+title: |
+  My Timer usage and references moral
 date: 2009-10-29T22:41:01Z
 tags:
   - .NET

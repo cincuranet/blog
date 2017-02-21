@@ -1,5 +1,6 @@
 ---
-title: "Running commands on Firebird in background and canceling"
+title: |
+  Running commands on Firebird in background and canceling
 date: 2010-04-03T16:30:32Z
 tags:
   - .NET

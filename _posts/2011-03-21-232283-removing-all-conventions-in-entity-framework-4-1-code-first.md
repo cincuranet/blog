@@ -1,5 +1,6 @@
 ---
-title: "Removing all conventions in Entity Framework 4.1 Code First"
+title: |
+  Removing all conventions in Entity Framework 4.1 Code First
 date: 2011-03-21T18:03:52Z
 tags:
   - Entity Framework

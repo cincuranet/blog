@@ -1,5 +1,6 @@
 ---
-title: "Custom conventions in Entity Framework 6 helping Firebird - part 2"
+title: |
+  Custom conventions in Entity Framework 6 helping Firebird - part 2
 date: 2013-03-11T09:32:56Z
 tags:
   - Entity Framework

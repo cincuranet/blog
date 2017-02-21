@@ -1,5 +1,6 @@
 ---
-title: "Anonymous methods and Invoke - differences using MethodInvoker"
+title: |
+  Anonymous methods and Invoke - differences using MethodInvoker
 date: 2008-10-22T18:34:00Z
 tags:
   - .NET

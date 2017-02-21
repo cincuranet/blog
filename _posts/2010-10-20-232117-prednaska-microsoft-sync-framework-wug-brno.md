@@ -1,5 +1,6 @@
 ---
-title: "Přednáška Microsoft Sync Framework - WUG Brno"
+title: |
+  Přednáška Microsoft Sync Framework - WUG Brno
 date: 2010-10-20T18:37:42Z
 tags:
   - Presentations &amp; Speaking

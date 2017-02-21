@@ -1,5 +1,6 @@
 ---
-title: "MultiQuery (more queries in one batch) in Entity Framework using LINQ"
+title: |
+  MultiQuery (more queries in one batch) in Entity Framework using LINQ
 date: 2010-10-11T11:23:58Z
 tags:
   - Entity Framework

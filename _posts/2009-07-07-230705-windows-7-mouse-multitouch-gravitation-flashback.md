@@ -1,5 +1,6 @@
 ---
-title: "Windows 7, mouse, multitouch, gravitation - flashback"
+title: |
+  Windows 7, mouse, multitouch, gravitation - flashback
 date: 2009-07-07T11:31:27Z
 tags:
   - Delphi/Object Pascal/Pascal

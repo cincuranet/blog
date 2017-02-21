@@ -1,5 +1,6 @@
 ---
-title: "Using Entity Framework's Find method with predicate"
+title: |
+  Using Entity Framework's Find method with predicate
 date: 2014-04-24T05:21:00Z
 tags:
   - Entity Framework

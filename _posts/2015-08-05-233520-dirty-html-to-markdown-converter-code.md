@@ -1,5 +1,6 @@
 ---
-title: "Dirty HTML to Markdown converter code"
+title: |
+  Dirty HTML to Markdown converter code
 date: 2015-08-05T14:21:00Z
 tags:
   - C#

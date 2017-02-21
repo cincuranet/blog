@@ -1,5 +1,6 @@
 ---
-title: "MS SQL delete a insert"
+title: |
+  MS SQL delete a insert
 date: 2008-03-28T19:16:00Z
 tags:
   - Databases in general

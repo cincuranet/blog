@@ -1,5 +1,6 @@
 ---
-title: "Getting out of the online world on vacation?"
+title: |
+  Getting out of the online world on vacation?
 date: 2014-09-05T05:45:00Z
 tags:
   - Email

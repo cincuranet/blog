@@ -1,5 +1,6 @@
 ---
-title: "SemaphoreSlim's WaitAsync puzzle"
+title: |
+  SemaphoreSlim's WaitAsync puzzle
 date: 2014-01-09T06:45:00Z
 tags:
   - .NET

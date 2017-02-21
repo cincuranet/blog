@@ -1,5 +1,6 @@
 ---
-title: "Deleting emails on vacation. Not that simple, isn't it?"
+title: |
+  Deleting emails on vacation. Not that simple, isn't it?
 date: 2014-09-03T13:33:00Z
 tags:
   - Email

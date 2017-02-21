@@ -1,5 +1,6 @@
 ---
-title: "Complex types and stored procedures - 2nd edition"
+title: |
+  Complex types and stored procedures - 2nd edition
 date: 2010-02-28T15:28:27Z
 tags:
   - Entity Framework

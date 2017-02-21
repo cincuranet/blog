@@ -1,5 +1,6 @@
 ---
-title: "NuoDB's .NET driver on NuGet"
+title: |
+  NuoDB's .NET driver on NuGet
 date: 2013-11-01T10:28:00Z
 tags:
   - NuoDB

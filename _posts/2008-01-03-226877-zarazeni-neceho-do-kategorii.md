@@ -1,5 +1,6 @@
 ---
-title: "Zařazení něčeho do kategorií..."
+title: |
+  Zařazení něčeho do kategorií...
 date: 2008-01-03T17:54:00Z
 tags:
   - Best practice or not?

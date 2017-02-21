@@ -1,5 +1,6 @@
 ---
-title: "Synchronizace threadů"
+title: |
+  Synchronizace threadů
 date: 2005-12-28T21:08:00Z
 tags:
   - .NET

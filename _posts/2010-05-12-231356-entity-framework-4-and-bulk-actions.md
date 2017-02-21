@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework 4 and bulk actions"
+title: |
+  Entity Framework 4 and bulk actions
 date: 2010-05-12T11:26:44Z
 tags:
   - Entity Framework

@@ -1,5 +1,6 @@
 ---
-title: "Comparing date only in EF"
+title: |
+  Comparing date only in EF
 date: 2009-11-24T14:52:11Z
 tags:
   - Entity Framework

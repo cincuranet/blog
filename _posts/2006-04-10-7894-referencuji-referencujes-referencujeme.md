@@ -1,5 +1,6 @@
 ---
-title: "Referencuji, referencuješ, referencujeme"
+title: |
+  Referencuji, referencuješ, referencujeme
 date: 2006-04-10T20:01:00Z
 tags:
   - .NET

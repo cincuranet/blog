@@ -1,5 +1,6 @@
 ---
-title: "InfoQ interview with me"
+title: |
+  InfoQ interview with me
 date: 2012-01-24T08:50:12Z
 tags:
   - .NET

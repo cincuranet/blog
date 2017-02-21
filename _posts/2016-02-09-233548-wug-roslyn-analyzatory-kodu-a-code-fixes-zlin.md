@@ -1,5 +1,6 @@
 ---
-title: "WUG: Roslyn: Analyzátory kódu a code fixes (Zlín)"
+title: |
+  WUG: Roslyn: Analyzátory kódu a code fixes (Zlín)
 date: 2016-02-09T08:00:00Z
 tags:
   - Presentations &amp; Speaking

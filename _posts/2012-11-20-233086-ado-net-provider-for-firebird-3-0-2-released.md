@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider for Firebird 3.0.2 released"
+title: |
+  ADO.NET provider for Firebird 3.0.2 released
 date: 2012-11-20T07:15:44Z
 tags:
   - .NET

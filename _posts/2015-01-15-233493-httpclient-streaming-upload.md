@@ -1,5 +1,6 @@
 ---
-title: "HttpClient streaming upload"
+title: |
+  HttpClient streaming upload
 date: 2015-01-15T10:34:00Z
 tags:
   - .NET

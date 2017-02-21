@@ -1,5 +1,6 @@
 ---
-title: "Facts about databases :)"
+title: |
+  Facts about databases :)
 date: 2007-12-06T10:53:00Z
 tags:
   - Databases in general

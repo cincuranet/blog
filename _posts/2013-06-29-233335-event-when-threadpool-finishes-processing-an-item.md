@@ -1,5 +1,6 @@
 ---
-title: "Event when ThreadPool finishes processing an item"
+title: |
+  Event when ThreadPool finishes processing an item
 date: 2013-06-29T08:22:24Z
 tags:
   - .NET

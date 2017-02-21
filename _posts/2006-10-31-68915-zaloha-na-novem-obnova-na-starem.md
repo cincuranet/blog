@@ -1,5 +1,6 @@
 ---
-title: "Záloha na novém, obnova na starém?"
+title: |
+  Záloha na novém, obnova na starém?
 date: 2006-10-31T20:51:00Z
 tags:
   - Firebird

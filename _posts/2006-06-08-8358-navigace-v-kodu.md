@@ -1,5 +1,6 @@
 ---
-title: "Navigace v kódu"
+title: |
+  Navigace v kódu
 date: 2006-06-08T20:46:00Z
 tags:
   - Visual Studio

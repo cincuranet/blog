@@ -1,5 +1,6 @@
 ---
-title: "Windows Defender updates automatically from Windows Update"
+title: |
+  Windows Defender updates automatically from Windows Update
 date: 2013-11-09T10:28:00Z
 tags:
   - C#

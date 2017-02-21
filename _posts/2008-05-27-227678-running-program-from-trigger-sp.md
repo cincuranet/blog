@@ -1,5 +1,6 @@
 ---
-title: "Running program from trigger, SP, ..."
+title: |
+  Running program from trigger, SP, ...
 date: 2008-05-27T04:00:00Z
 tags:
   - Databases in general

@@ -1,5 +1,6 @@
 ---
-title: "Doing Firebird's nbackup database \"fixup\" from .NET"
+title: |
+  Doing Firebird's nbackup database "fixup" from .NET
 date: 2016-02-04T15:21:00Z
 tags:
   - Firebird

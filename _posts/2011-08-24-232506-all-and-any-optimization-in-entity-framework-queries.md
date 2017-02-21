@@ -1,5 +1,6 @@
 ---
-title: "All and Any optimization in Entity Framework queries"
+title: |
+  All and Any optimization in Entity Framework queries
 date: 2011-08-24T06:55:58Z
 tags:
   - C#

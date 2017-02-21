@@ -1,5 +1,6 @@
 ---
-title: "PlayBook's browser identification"
+title: |
+  PlayBook's browser identification
 date: 2011-05-21T12:50:50Z
 tags:
   - BlackBerry

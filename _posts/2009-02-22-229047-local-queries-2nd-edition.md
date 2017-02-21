@@ -1,5 +1,6 @@
 ---
-title: "\"Local\" Queries 2nd edition"
+title: |
+  "Local" Queries 2nd edition
 date: 2009-02-22T14:22:00Z
 tags:
   - Entity Framework

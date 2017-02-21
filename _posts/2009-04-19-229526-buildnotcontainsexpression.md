@@ -1,5 +1,6 @@
 ---
-title: "BuildNotContainsExpression"
+title: |
+  BuildNotContainsExpression
 date: 2009-04-19T10:28:00Z
 tags:
   - Entity Framework

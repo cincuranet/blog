@@ -1,5 +1,6 @@
 ---
-title: "Jak jsme jeli na MS Fest"
+title: |
+  Jak jsme jeli na MS Fest
 date: 2009-12-06T19:11:51Z
 tags:
   - Life

@@ -1,5 +1,6 @@
 ---
-title: "How to break your code easily a.k.a my params hell"
+title: |
+  How to break your code easily a.k.a my params hell
 date: 2010-06-26T12:41:55Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "DDEX for Firebird and Visual Studio 2010"
+title: |
+  DDEX for Firebird and Visual Studio 2010
 date: 2008-11-22T21:59:00Z
 tags:
   - Firebird

@@ -1,5 +1,6 @@
 ---
-title: "Disabling database triggers in FirebirdClient"
+title: |
+  Disabling database triggers in FirebirdClient
 date: 2012-05-22T17:00:07Z
 tags:
   - .NET

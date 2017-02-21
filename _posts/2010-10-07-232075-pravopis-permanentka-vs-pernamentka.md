@@ -1,5 +1,6 @@
 ---
-title: "Pravopis - Permanentka vs. pernamentka"
+title: |
+  Pravopis - Permanentka vs. pernamentka
 date: 2010-10-07T06:34:38Z
 tags:
   - Čeština

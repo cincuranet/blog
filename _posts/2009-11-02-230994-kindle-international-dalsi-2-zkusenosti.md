@@ -1,5 +1,6 @@
 ---
-title: "Kindle (International) – další (2.) zkušenosti"
+title: |
+  Kindle (International) – další (2.) zkušenosti
 date: 2009-11-02T15:01:01Z
 tags:
   - Amazon Kindle

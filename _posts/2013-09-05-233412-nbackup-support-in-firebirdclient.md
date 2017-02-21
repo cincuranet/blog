@@ -1,5 +1,6 @@
 ---
-title: "NBackup support in FirebirdClient"
+title: |
+  NBackup support in FirebirdClient
 date: 2013-09-05T14:56:37Z
 tags:
   - .NET

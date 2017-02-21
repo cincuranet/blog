@@ -1,5 +1,6 @@
 ---
-title: "log4net NuGet package updated without some goodies"
+title: |
+  log4net NuGet package updated without some goodies
 date: 2013-10-05T08:03:00Z
 tags:
   - Logging &amp; Tracing

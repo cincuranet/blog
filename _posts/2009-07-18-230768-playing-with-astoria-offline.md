@@ -1,5 +1,6 @@
 ---
-title: "Playing with Astoria \"offline\""
+title: |
+  Playing with Astoria "offline"
 date: 2009-07-18T09:42:06Z
 tags:
   - Astoria "offline"

@@ -1,5 +1,6 @@
 ---
-title: "Not All Bugs Are Worth Fixing"
+title: |
+  Not All Bugs Are Worth Fixing
 date: 2006-01-31T19:36:00Z
 tags:
   - Uncategorized

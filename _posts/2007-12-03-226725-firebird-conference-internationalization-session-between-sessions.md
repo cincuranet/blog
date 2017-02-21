@@ -1,5 +1,6 @@
 ---
-title: "Firebird Conference - Our internationalization session during lunch and between sessions"
+title: |
+  Firebird Conference - Our internationalization session during lunch and between sessions
 date: 2007-12-03T14:10:00Z
 tags:
   - Databases in general

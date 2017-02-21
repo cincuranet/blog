@@ -1,5 +1,6 @@
 ---
-title: "Nemám rád ASP.NET (__doPostBack)"
+title: |
+  Nemám rád ASP.NET (__doPostBack)
 date: 2006-01-26T21:17:00Z
 tags:
   - .NET

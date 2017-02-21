@@ -1,5 +1,6 @@
 ---
-title: "Moving tray icons in Windows 7"
+title: |
+  Moving tray icons in Windows 7
 date: 2009-10-07T18:41:55Z
 tags:
   - Windows

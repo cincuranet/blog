@@ -1,5 +1,6 @@
 ---
-title: "Testing NDepend on FirebirdClient"
+title: |
+  Testing NDepend on FirebirdClient
 date: 2016-06-06T14:48:00Z
 tags:
   - .NET

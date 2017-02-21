@@ -1,5 +1,6 @@
 ---
-title: "Toggle \"Presentation Mode\""
+title: |
+  Toggle "Presentation Mode"
 date: 2015-05-23T13:22:00Z
 tags:
   - Windows

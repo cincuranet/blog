@@ -1,5 +1,6 @@
 ---
-title: "Transactions are making me crazy"
+title: |
+  Transactions are making me crazy
 date: 2009-07-20T20:42:34Z
 tags:
   - Databases in general

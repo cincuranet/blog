@@ -1,5 +1,6 @@
 ---
-title: "Connecting from Android to Firebird"
+title: |
+  Connecting from Android to Firebird
 date: 2010-11-02T16:10:24Z
 tags:
   - .NET

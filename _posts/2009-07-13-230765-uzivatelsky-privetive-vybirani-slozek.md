@@ -1,5 +1,6 @@
 ---
-title: "Uživatelsky přívětivé vybírání složek"
+title: |
+  Uživatelsky přívětivé vybírání složek
 date: 2009-07-13T17:31:00Z
 tags:
   - Applications in general

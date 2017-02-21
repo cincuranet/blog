@@ -1,5 +1,6 @@
 ---
-title: "Subselects in computed columns in MS SQL"
+title: |
+  Subselects in computed columns in MS SQL
 date: 2009-05-03T20:28:00Z
 tags:
   - Firebird

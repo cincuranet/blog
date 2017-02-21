@@ -1,5 +1,6 @@
 ---
-title: "Tab closing button in Visual Studio 2010"
+title: |
+  Tab closing button in Visual Studio 2010
 date: 2009-08-30T18:40:46Z
 tags:
   - Visual Studio

@@ -1,5 +1,6 @@
 ---
-title: "Jak (ne)násilně vypnout Windows Media Encoder?"
+title: |
+  Jak (ne)násilně vypnout Windows Media Encoder?
 date: 2006-03-15T13:17:00Z
 tags:
   - Windows

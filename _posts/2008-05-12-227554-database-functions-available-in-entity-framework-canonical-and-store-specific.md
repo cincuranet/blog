@@ -1,5 +1,6 @@
 ---
-title: "Database functions available in Entity Framework [canonical and store specific]"
+title: |
+  Database functions available in Entity Framework [canonical and store specific]
 date: 2008-05-12T16:34:00Z
 tags:
   - Entity Framework

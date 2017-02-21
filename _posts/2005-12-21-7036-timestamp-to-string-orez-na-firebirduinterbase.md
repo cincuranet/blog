@@ -1,5 +1,6 @@
 ---
-title: "TIMESTAMP to STRING + ořez na Firebirdu/InterBase"
+title: |
+  TIMESTAMP to STRING + ořez na Firebirdu/InterBase
 date: 2005-12-21T21:24:00Z
 tags:
   - Firebird

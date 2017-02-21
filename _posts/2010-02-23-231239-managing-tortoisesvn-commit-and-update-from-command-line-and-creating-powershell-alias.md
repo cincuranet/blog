@@ -1,5 +1,6 @@
 ---
-title: "Managing TortoiseSVN commit and update from command line and creating PowerShell alias"
+title: |
+  Managing TortoiseSVN commit and update from command line and creating PowerShell alias
 date: 2010-02-23T09:07:28Z
 tags:
   - PowerShell

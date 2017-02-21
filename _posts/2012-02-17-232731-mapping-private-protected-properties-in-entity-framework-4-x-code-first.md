@@ -1,5 +1,6 @@
 ---
-title: "Mapping private/protected/... properties in Entity Framework 4.x Code First"
+title: |
+  Mapping private/protected/... properties in Entity Framework 4.x Code First
 date: 2012-02-17T13:07:34Z
 tags:
   - Entity Framework

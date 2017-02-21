@@ -1,5 +1,6 @@
 ---
-title: "Is array[0] vs. array[] { } the same?"
+title: |
+  Is array[0] vs. array[] { } the same?
 date: 2009-07-08T16:06:28Z
 tags:
   - .NET

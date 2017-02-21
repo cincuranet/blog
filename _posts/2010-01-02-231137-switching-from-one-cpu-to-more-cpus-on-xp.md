@@ -1,5 +1,6 @@
 ---
-title: "Switching from one CPU to more CPUs on XP"
+title: |
+  Switching from one CPU to more CPUs on XP
 date: 2010-01-02T19:34:11Z
 tags:
   - Virtualization

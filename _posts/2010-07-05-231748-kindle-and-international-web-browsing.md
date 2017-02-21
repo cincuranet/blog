@@ -1,5 +1,6 @@
 ---
-title: "Kindle and international web browsing"
+title: |
+  Kindle and international web browsing
 date: 2010-07-05T08:51:52Z
 tags:
   - Amazon Kindle

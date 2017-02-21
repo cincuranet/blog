@@ -1,5 +1,6 @@
 ---
-title: "Firebird's DDEX provider in Visual Studio 2012 (RC)"
+title: |
+  Firebird's DDEX provider in Visual Studio 2012 (RC)
 date: 2012-07-30T12:50:17Z
 tags:
   - Firebird

@@ -1,5 +1,6 @@
 ---
-title: "ADO.NET provider 4.5.0.0 for Firebird is ready"
+title: |
+  ADO.NET provider 4.5.0.0 for Firebird is ready
 date: 2014-07-28T08:05:00Z
 tags:
   - .NET

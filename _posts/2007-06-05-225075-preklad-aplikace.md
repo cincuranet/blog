@@ -1,5 +1,6 @@
 ---
-title: "Překlad aplikace"
+title: |
+  Překlad aplikace
 date: 2007-06-05T22:57:00Z
 tags:
   - Uncategorized

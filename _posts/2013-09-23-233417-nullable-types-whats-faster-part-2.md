@@ -1,5 +1,6 @@
 ---
-title: "Nullable types - what's faster? - part 2"
+title: |
+  Nullable types - what's faster? - part 2
 date: 2013-09-23T12:07:00Z
 tags:
   - .NET

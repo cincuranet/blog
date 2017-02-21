@@ -1,5 +1,6 @@
 ---
-title: "Mysterious problem when fetching data"
+title: |
+  Mysterious problem when fetching data
 date: 2009-11-30T21:51:24Z
 tags:
   - Entity Framework

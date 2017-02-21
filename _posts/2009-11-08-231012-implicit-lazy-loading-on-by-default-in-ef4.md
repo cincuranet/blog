@@ -1,5 +1,6 @@
 ---
-title: "Implicit lazy loading on by default in EF4"
+title: |
+  Implicit lazy loading on by default in EF4
 date: 2009-11-08T22:09:54Z
 tags:
   - Entity Framework

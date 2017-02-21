@@ -1,5 +1,6 @@
 ---
-title: "Sherweb's Hosted Exchange - what a great service"
+title: |
+  Sherweb's Hosted Exchange - what a great service
 date: 2010-03-01T08:58:47Z
 tags:
   - Email

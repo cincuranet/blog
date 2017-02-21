@@ -1,5 +1,6 @@
 ---
-title: "Coalescing object and accessing it"
+title: |
+  Coalescing object and accessing it
 date: 2011-07-09T17:13:29Z
 tags:
   - .NET

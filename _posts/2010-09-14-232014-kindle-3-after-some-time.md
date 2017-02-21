@@ -1,5 +1,6 @@
 ---
-title: "Kindle 3 - after some time"
+title: |
+  Kindle 3 - after some time
 date: 2010-09-14T14:56:25Z
 tags:
   - Amazon Kindle

@@ -1,5 +1,6 @@
 ---
-title: "BlackBerry PlayBook - first sight review"
+title: |
+  BlackBerry PlayBook - first sight review
 date: 2011-05-21T12:49:46Z
 tags:
   - BlackBerry

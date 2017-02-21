@@ -1,5 +1,6 @@
 ---
-title: "Katastrofální selhání"
+title: |
+  Katastrofální selhání
 date: 2007-04-11T07:51:00Z
 tags:
   - Visual Studio

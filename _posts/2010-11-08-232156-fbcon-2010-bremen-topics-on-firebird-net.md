@@ -1,5 +1,6 @@
 ---
-title: "FBCon 2010 Bremen - topics on Firebird & .NET"
+title: |
+  FBCon 2010 Bremen - topics on Firebird & .NET
 date: 2010-11-08T18:53:07Z
 tags:
   - .NET

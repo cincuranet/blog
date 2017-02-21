@@ -1,5 +1,6 @@
 ---
-title: "VMWare Workstation 7 and Visual Studio 2010 rendering problem"
+title: |
+  VMWare Workstation 7 and Visual Studio 2010 rendering problem
 date: 2009-11-05T10:28:03Z
 tags:
   - Virtualization

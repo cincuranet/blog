@@ -1,5 +1,6 @@
 ---
-title: "Binding Boolean fields from Firebird"
+title: |
+  Binding Boolean fields from Firebird
 date: 2007-07-02T09:32:00Z
 tags:
   - .NET

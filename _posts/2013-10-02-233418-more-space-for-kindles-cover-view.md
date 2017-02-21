@@ -1,5 +1,6 @@
 ---
-title: "More space for Kindle's \"Cover View\""
+title: |
+  More space for Kindle's "Cover View"
 date: 2013-10-02T11:50:00Z
 tags:
   - Amazon Kindle

@@ -1,5 +1,6 @@
 ---
-title: "Fixing music stuttering on Raspberry Pi (B+) and OpenELEC"
+title: |
+  Fixing music stuttering on Raspberry Pi (B+) and OpenELEC
 date: 2015-08-27T06:40:00Z
 tags:
   - OpenELEC

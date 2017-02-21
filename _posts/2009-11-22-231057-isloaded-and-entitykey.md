@@ -1,5 +1,6 @@
 ---
-title: "IsLoaded and EntityKey"
+title: |
+  IsLoaded and EntityKey
 date: 2009-11-22T21:25:20Z
 tags:
   - Entity Framework

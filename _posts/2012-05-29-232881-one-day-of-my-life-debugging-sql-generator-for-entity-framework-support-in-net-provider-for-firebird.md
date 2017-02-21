@@ -1,5 +1,6 @@
 ---
-title: "One day of my life - debugging SQL generator for Entity Framework support in .NET provider for Firebird"
+title: |
+  One day of my life - debugging SQL generator for Entity Framework support in .NET provider for Firebird
 date: 2012-05-29T18:48:57Z
 tags:
   - Entity Framework

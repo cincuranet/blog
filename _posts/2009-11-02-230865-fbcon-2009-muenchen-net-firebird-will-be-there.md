@@ -1,5 +1,6 @@
 ---
-title: "FBCon 2009 München - .NET + Firebird will be there"
+title: |
+  FBCon 2009 München - .NET + Firebird will be there
 date: 2009-11-02T11:00:43Z
 tags:
   - .NET

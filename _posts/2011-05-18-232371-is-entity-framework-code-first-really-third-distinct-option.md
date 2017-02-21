@@ -1,5 +1,6 @@
 ---
-title: "Is Entity Framework Code First really third distinct option?"
+title: |
+  Is Entity Framework Code First really third distinct option?
 date: 2011-05-18T17:05:46Z
 tags:
   - Entity Framework

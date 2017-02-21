@@ -1,5 +1,6 @@
 ---
-title: "Executing program using Process class being slow - the reason"
+title: |
+  Executing program using Process class being slow - the reason
 date: 2016-06-16T09:42:00Z
 tags:
   - .NET

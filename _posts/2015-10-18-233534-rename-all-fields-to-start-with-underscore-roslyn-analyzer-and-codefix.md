@@ -1,5 +1,6 @@
 ---
-title: "Rename all fields to start with underscore (Roslyn analyzer and codefix)"
+title: |
+  Rename all fields to start with underscore (Roslyn analyzer and codefix)
 date: 2015-10-18T16:28:00Z
 tags:
   - C#

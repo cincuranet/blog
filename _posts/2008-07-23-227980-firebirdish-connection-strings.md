@@ -1,5 +1,6 @@
 ---
-title: "\"Firebirdish\" connection strings"
+title: |
+  "Firebirdish" connection strings
 date: 2008-07-23T08:52:00Z
 tags:
   - .NET

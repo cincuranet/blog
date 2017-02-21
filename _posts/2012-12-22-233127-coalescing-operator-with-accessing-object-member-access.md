@@ -1,5 +1,6 @@
 ---
-title: "Coalescing operator with accessing object member access"
+title: |
+  Coalescing operator with accessing object member access
 date: 2012-12-22T17:33:08Z
 tags:
   - .NET

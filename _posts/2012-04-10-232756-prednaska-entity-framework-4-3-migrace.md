@@ -1,5 +1,6 @@
 ---
-title: "Přednáška \"Entity Framework 4.3 - migrace\""
+title: |
+  Přednáška "Entity Framework 4.3 - migrace"
 date: 2012-04-10T10:00:58Z
 tags:
   - Entity Framework

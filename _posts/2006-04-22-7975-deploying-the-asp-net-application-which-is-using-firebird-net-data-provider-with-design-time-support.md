@@ -1,5 +1,6 @@
 ---
-title: "Deploying the ASP.NET application which is using Firebird .NET Data Provider (with design-time support)"
+title: |
+  Deploying the ASP.NET application which is using Firebird .NET Data Provider (with design-time support)
 date: 2006-04-22T15:44:00Z
 tags:
   - .NET

@@ -1,5 +1,6 @@
 ---
-title: "Making names of entities (or any identifiers) in Entity Framework model \"code and developer friendly\" (= not uppercase)"
+title: |
+  Making names of entities (or any identifiers) in Entity Framework model "code and developer friendly" (= not uppercase)
 date: 2008-12-07T17:55:00Z
 tags:
   - .NET

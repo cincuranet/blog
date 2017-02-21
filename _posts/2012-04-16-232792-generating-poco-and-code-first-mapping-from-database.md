@@ -1,5 +1,6 @@
 ---
-title: "Generating POCO and Code First mapping from database"
+title: |
+  Generating POCO and Code First mapping from database
 date: 2012-04-16T12:23:58Z
 tags:
   - Entity Framework

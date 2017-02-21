@@ -1,5 +1,6 @@
 ---
-title: "Entity Framework v4 and Firebird"
+title: |
+  Entity Framework v4 and Firebird
 date: 2009-06-27T16:41:56Z
 tags:
   - Entity Framework

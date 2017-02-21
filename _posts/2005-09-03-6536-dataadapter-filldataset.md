@@ -1,5 +1,6 @@
 ---
-title: "...DataAdapter.Fill(dataSet...)"
+title: |
+  ...DataAdapter.Fill(dataSet...)
 date: 2005-09-03T16:58:00Z
 tags:
   - .NET

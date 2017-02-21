@@ -1,5 +1,6 @@
 ---
-title: "Gopas TechEd 2011 - mé přednášky"
+title: |
+  Gopas TechEd 2011 - mé přednášky
 date: 2011-04-20T10:00:01Z
 tags:
   - Presentations &amp; Speaking

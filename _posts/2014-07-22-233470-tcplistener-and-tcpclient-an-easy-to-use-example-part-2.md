@@ -1,5 +1,6 @@
 ---
-title: "TcpListener and TcpClient (an easy-to-use example) - part 2"
+title: |
+  TcpListener and TcpClient (an easy-to-use example) - part 2
 date: 2014-07-22T06:20:00Z
 tags:
   - .NET

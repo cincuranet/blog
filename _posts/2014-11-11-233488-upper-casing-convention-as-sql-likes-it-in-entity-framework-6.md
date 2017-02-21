@@ -1,5 +1,6 @@
 ---
-title: "Upper-casing conventions as SQL likes it in Entity Framework 6"
+title: |
+  Upper-casing conventions as SQL likes it in Entity Framework 6
 date: 2014-11-11T05:57:00Z
 tags:
   - Entity Framework

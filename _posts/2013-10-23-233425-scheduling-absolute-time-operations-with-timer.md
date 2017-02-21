@@ -1,5 +1,6 @@
 ---
-title: "Scheduling absolute time operations with Timer"
+title: |
+  Scheduling absolute time operations with Timer
 date: 2013-10-23T08:03:00Z
 tags:
   - Reactive Extensions (Rx)

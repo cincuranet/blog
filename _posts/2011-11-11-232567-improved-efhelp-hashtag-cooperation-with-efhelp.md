@@ -1,5 +1,6 @@
 ---
-title: "Improved #efhelp hashtag (cooperation with @EFHelp)"
+title: |
+  Improved #efhelp hashtag (cooperation with @EFHelp)
 date: 2011-11-11T18:04:05Z
 tags:
   - Entity Framework

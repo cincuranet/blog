@@ -1,5 +1,6 @@
 ---
-title: "DbGeography and DbGeometry in Entity Framework - what's needed?"
+title: |
+  DbGeography and DbGeometry in Entity Framework - what's needed?
 date: 2012-09-10T07:18:13Z
 tags:
   - Entity Framework

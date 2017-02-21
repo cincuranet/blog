@@ -1,5 +1,6 @@
 ---
-title: "Gopas DevCon 2013 (Praha, Bratislava)"
+title: |
+  Gopas DevCon 2013 (Praha, Bratislava)
 date: 2013-01-21T09:00:37Z
 tags:
   - Presentations &amp; Speaking

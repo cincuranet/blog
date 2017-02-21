@@ -1,5 +1,6 @@
 ---
-title: "Astoria 1.5 CTP2 - projections and counts"
+title: |
+  Astoria 1.5 CTP2 - projections and counts
 date: 2009-09-20T15:53:45Z
 tags:
   - Entity Framework
