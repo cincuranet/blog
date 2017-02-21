@@ -1,5 +1,5 @@
 ---
-title: "ConcurrentDictionary<T, T> is slow. Or is it?"
+title: "ConcurrentDictionary&lt;T, T&gt; is slow. Or is it?"
 date: 2016-12-23T10:11:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
