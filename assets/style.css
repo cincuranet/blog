@@ -322,17 +322,7 @@ footer p {
 
 /* --------------------------------- [ General Classes ] */
 
-.small {
-	font-size: .8rem;
-	line-height: 1.6;
-}
-
-.ver {
-	text-transform: uppercase;
-	color: #000;
-}
-
-.low {
+.accent {
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
 	font-style: italic;
 	font-weight: normal;
