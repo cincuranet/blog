@@ -8,17 +8,17 @@ build:
     paths:
       - wwwroot
 
-# publish:
-#   stage: deploy
-#   image: alpine
-#   environment: 
-#     name: production
-#   dependencies:
-#     - build
-#   script:
-#     - apk update
-#     - apk add ca-certificates
-#     - apk add lftp
-#     - lftp -c "set ssl:verify-certificate on && set ftp:ssl-force on && open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER && mirror -vvv -R -e --scan-all-first --transfer-all --overwrite --parallel=24 ./wwwroot $FTP_LOCATION"
-#   only:
-#     - master
+publish:
+  stage: deploy
+  image: alpine
+  environment:
+    name: production
+  dependencies:
+    - build
+  script:
+    - apk update
+    - apk add ca-certificates
+    - apk add lftp
+    - lftp -c "set ssl:verify-certificate on && set ftp:ssl-force on && open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER && mirror -vvv -R -e --scan-all-first --transfer-all --overwrite --parallel=24 ./wwwroot $FTP_LOCATION"
+  only:
+    - master
