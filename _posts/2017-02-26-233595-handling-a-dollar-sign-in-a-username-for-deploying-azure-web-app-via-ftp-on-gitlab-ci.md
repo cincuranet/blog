@@ -17,7 +17,7 @@ Long story short, if you have dollar sign in a GitLab CI variable, you have to e
 
 #### Full story
 
-For FTP deployment I'm using `lftp` and a trivial `bash` script. Putting the username and password into [Secret variables], to be able to have the repository public. Running the build I was unable to login. Some debugging later I found the username was not correctly passed to the FTP server. At that point I somewhat convinced myself the `lftp` is doing something wrong handling the credentials and I spent days trying to avoid it (various quotings, different commands, ...).
+For FTP deployment I'm using `lftp` and a trivial `bash` script. Putting the username and password into [Secret variables][2], to be able to have the repository public. Running the build I was unable to login. Some debugging later I found the username was not correctly passed to the FTP server. At that point I somewhat convinced myself the `lftp` is doing something wrong handling the credentials and I spent days trying to avoid it (various quotings, different commands, ...).
 
 Luckily [I got a nudge][3] in a correct direction. What if the `lftp` is innocent and GitLab CI is doing something wrong? Quick `echo` test confirmed it. The dollar sign (and whatever follows) is expanded on GitLab CI before (as if it was a regular variable) passing it to the script. Quoting it with another `$` solves it right away. 
 
