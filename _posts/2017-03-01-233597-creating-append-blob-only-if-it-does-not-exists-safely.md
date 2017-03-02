@@ -22,7 +22,7 @@ try
 	await blob.CreateOrReplaceAsync(
 		AccessCondition.GenerateIfNotExistsCondition(),
 		new BlobRequestOptions() { RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(1), 10) },
-		new OperationContext());
+		null);
 }
 catch (StorageException ex) when (ex.RequestInformation?.HttpStatusCode == (int)HttpStatusCode.Conflict)
 { }
