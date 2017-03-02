@@ -19,10 +19,10 @@ Luckily there's a way to do kind of [optimistic locking][8]. I can use the [`Cre
 var blob = container.GetAppendBlobReference("foobar.txt");
 try
 {
-    await blob.CreateOrReplaceAsync(
-			AccessCondition.GenerateIfNotExistsCondition(), 
-			new BlobRequestOptions() { RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(1), 10) }, 
-			new OperationContext());
+	await blob.CreateOrReplaceAsync(
+		AccessCondition.GenerateIfNotExistsCondition(),
+		new BlobRequestOptions() { RetryPolicy = new LinearRetry(TimeSpan.FromSeconds(1), 10) },
+		new OperationContext());
 }
 catch (StorageException ex) when (ex.RequestInformation?.HttpStatusCode == (int)HttpStatusCode.Conflict)
 { }
