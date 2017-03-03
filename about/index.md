@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: page
 ---
 <h4>Mgr. Jiří Činčura</h4>
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
