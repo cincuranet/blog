@@ -42,7 +42,6 @@ option {
 
 #wrapper {
 	max-width: 1280px;
-	/*!!!units*/
 	margin-left: calc(100% / 7);
 	margin-right: calc(100% / 7);
 	margin-top: 3rem;
@@ -51,8 +50,10 @@ option {
 }
 @media (max-width: 768px) {
 	#wrapper {
-		margin-left: 16px;
-		margin-right: 16px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -81,7 +82,7 @@ nav li .icon {
 }
 @media (max-width: 768px) {
 	nav li {
-		padding-left: 8px;
+		padding-left: .5rem;
 	}
 }
 
@@ -93,7 +94,7 @@ header {
 	padding-right: .5rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	height: 8rem;
+	min-height: 8rem;
 }
 
 header a:hover {
@@ -147,6 +148,7 @@ article h4, article h5, article h6 {
 article p {
 	line-height: 1.6em;
 	margin-bottom: 1em;
+	overflow: auto;
 }
 article p:last-child {
 	margin-bottom: 0;
@@ -208,9 +210,8 @@ article pre.lineno {
 /* article - images */
 
 article img {
-	padding-bottom: 2rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
 }
 
 
@@ -292,4 +293,6 @@ article td:first-of-type {
 	font-weight: bold;
 	font-family: inherit;
 	font-size: inherit; 
+	width: 100%;
+	max-width: 30rem;
 }
