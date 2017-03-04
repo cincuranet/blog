@@ -2,19 +2,20 @@
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"> 
-	<title>{{ site.name | strip_html }}</title>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	{% capture title %}{{ site.heading1 }} by {{ site.heading2 }}{% endcapture %}
+	<title>{{ title }}</title>
 	<link href="{{ site.protocol }}{{ site.address }}/{{ site.feed }}" rel="self"/>
 	<link href="{{ site.protocol }}{{ site.address }}"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>          
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<author>
-		<name>{{ site.name | strip_html }}</name>
+		<name>{{ title }}</name>
 	</author>
 	<id>http:{{ site.address }}/</id>
 
 	{% for post in site.posts limit: site.feed_posts %}
 	<entry>
-		<title><![CDATA[{{ post.title | strip_html }}]]></title>
+		<title><![CDATA[{{ post.title }}]]></title>
 		<link href="{{ site.protocol }}{{ site.address }}{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
 		<id>http:{{ site.address }}{{ post.url }}</id>

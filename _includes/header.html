@@ -4,15 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="all,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% if page.title %}
-	<title>{{ page.title | escape }} | {{ site.name | strip_html }}</title>
-	{% else %}
-	<title>{{ site.name | strip_html }} | {{ site.description | strip_html }}</title>
-	{% endif %}
+	{% capture title %}{{ site.heading1 }} by {{ site.heading2 }}{% endcapture %}
+	{% capture page_title %}{% if page.title %}{{ page.title | escape }} | {% endif %}{{ title }}{% endcapture %}
+	<title>{{ page_title }}</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-	<link rel="alternate" type="application/atom+xml" title="{{ site.name | strip_html }}" href="/{{ site.feed }}" />
+	<link rel="alternate" type="application/atom+xml" title="{{ title }}" href="/{{ site.feed }}" />
 
 	<link rel="openid2.provider" href="https://openid.stackexchange.com/openid/provider" />
 	<link rel="openid2.local_id" href="https://openid.stackexchange.com/user/0737fcac-a411-47ad-8255-7cd579b7dbf1" />
@@ -34,6 +32,8 @@
 	</nav>
 
 	<header>
-		<h1><a href="/">{{ site.description }}</a></h1>
-		<h2><span class="accent">by</span> {{ site.name }}</h2>
+		{% capture heading1_accent %}<span class="accent">{{ site.heading1_accent }}</span>{% endcapture %}
+		{% capture heading2_accent %}<span class="accent">{{ site.heading2_accent }}</span>{% endcapture %}
+		<h1><a href="/">{{ site.heading1 | replace: site.heading1_accent,heading1_accent }}</a></h1>
+		<h2><span class="accent">by</span> {{ site.heading2 | replace: site.heading2_accent,heading2_accent }}</h2>
 	</header>
