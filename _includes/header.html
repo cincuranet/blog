@@ -4,9 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="all,follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	{% capture title %}{{ site.heading1 }} by {{ site.heading2 }}{% endcapture %}
-	{% capture page_title %}{% if page.title %}{{ page.title | escape }} | {% endif %}{{ title }}{% endcapture %}
-	<title>{{ page_title }}</title>
+	<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{% include title.txt %}</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
