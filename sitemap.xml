@@ -5,7 +5,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	{% for doc in site.posts %}
 	<url>
-		<loc>http:{{site.address}}{{doc.url}}</loc>
+		<loc>{{ site.protocol }}{{ site.address }}{{ doc.url }}</loc>
 	</url>
 	{% endfor %}
 	{% for doc in site.html_pages %}
@@ -13,7 +13,7 @@ layout: null
 		{% continue %}
 	{% endif %}
 	<url>
-		<loc>http:{{site.address}}{{doc.url}}</loc>
+		<loc>{{ site.protocol }}{{ site.address }}{{ doc.url }}</loc>
 	</url>
 	{% endfor %}
 </urlset> 

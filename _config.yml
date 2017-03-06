@@ -1,11 +1,11 @@
-﻿heading1: "tabs ↹ over ␣ ␣ ␣ spaces"
+heading1: "tabs ↹ over ␣ ␣ ␣ spaces"
 heading1_accent: "over"
 heading2: "Jiří {x2} Činčura"
 heading2_accent: "{x2}"
 permalink: "/:title/"
 timezone: UTC
 protocol: "https:"
-address: "//blog.cincura.net"
+address: "//www.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
 excerpt_link_name: "Continue reading..."
 site_posts: 20
