@@ -48,16 +48,14 @@ span[title] {
 	max-width: 1280px;
 	margin-left: calc(100% / 7);
 	margin-right: calc(100% / 7);
-	margin-top: 3rem;
-	margin-bottom: 4rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	overflow: hidden;
 }
 @media (max-width: 768px) {
 	#wrapper {
 		margin-left: 1rem;
 		margin-right: 1rem;
-		margin-top: 1rem;
-		margin-bottom: 2rem;
 	}
 }
 
