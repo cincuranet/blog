@@ -45,18 +45,14 @@ span[title] {
 /* wrapper */
 
 #wrapper {
-	max-width: 1280px;
-	margin-left: calc(100% / 7);
-	margin-right: calc(100% / 7);
-	margin-top: 1rem;
-	margin-bottom: 2rem;
+	max-width: 1120px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
 	overflow: hidden;
-}
-@media (max-width: 768px) {
-	#wrapper {
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* nav */
