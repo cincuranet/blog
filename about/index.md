@@ -16,12 +16,12 @@ And finally I also run. I like running long, so called ultra, distances. Prefera
 I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
 
 <h4 id="bio">Bio</h4>
-Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datové a business vrstvy, jazykové konstrukce, paralelizmus a databáze. Od roku 2009 působí jako odborný lektor Počítačové školy Gopas se specializací na Entity Framework, asynchronní a paralelní programování, cloud a Windows Azure. Je nositelem titulu Microsoft Most Valuable Professional. Jeho články, rady, tipy a triky si můžete přečíst na http:{{ site.address }}.
+Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datové a business vrstvy, jazykové konstrukce, paralelizmus a databáze. Od roku 2009 působí jako odborný lektor Počítačové školy Gopas se specializací na Entity Framework, asynchronní a paralelní programování, cloud a Windows Azure. Je nositelem titulu Microsoft Most Valuable Professional. Jeho články, rady, tipy a triky si můžete přečíst na {{ site.protocol }}{{ site.address }}.
 
 <h4>More info</h4>
 <table>
 	<tr><td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td></tr>
-	<tr><td>CV:</td><td><a href="/cv/">http:{{ site.address }}/cv/</a></td></tr>
+	<tr><td>CV:</td><td><a href="/cv/">{{ site.protocol }}{{ site.address }}/cv/</a></td></tr>
 	<tr><td>ID:</td><td>73563005 (Czech Republic, EU)</td></tr>
 	<tr><td>VAT:</td><td>CZ8303051218</td></tr>
 	<tr><td>Bank account:</td><td>2900324931/2010 (Fio banka)</td></tr>
