@@ -18,7 +18,7 @@ Of course _efficiently_ means different thing in different scenarios. In the fol
 
 Let's talk about resources. Obviously the whole action is going to be asynchronous. I mean real asynchronous IO. Why? Well, because it's an IO operation. And asynchronous IO operations are using machine resources more intelligently. There's no blocking of threads or creating (or injecting in case of [`ThreadPool`][1]) new ones. As threads are expensive. Similar to that I also don't want to start downloading all at once. There's no point in starting hundreds of requests and then waiting for the choking network to process it (unless you sit on a huge pipe, of course). Simple as that.
 
-### Code
+#### Code
 
 ```csharp
 public static async Task<ICollection<(string url, byte[] data)>> DownloadUrlsAsync(IEnumerable<string> urls, int limit)
