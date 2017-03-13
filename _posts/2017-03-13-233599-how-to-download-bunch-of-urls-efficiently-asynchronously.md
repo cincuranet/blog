@@ -60,7 +60,7 @@ The `DownloadUrlsAsync` does the initial plumbing and then it starts all the dow
 #### Tweaking
 
 * You might want to raise the [`ServicePointManager`'s `DefaultConnectionLimit`][4].
-* The `DownloadUrlsAsync` method returns the result as a whole. For big data or streamed processing it might be better processed on the fly as it's coming.
+* The `DownloadUrlsAsync` method returns the result as a whole. For big data or streamed processing it might be better to process data on the fly as it's coming.
 * For extra big collections of URLs you might not start all at once, because the TPL needs to manage these tasks and most of these would be waiting anyway because of the limiting.  
 
 #### Summary 
