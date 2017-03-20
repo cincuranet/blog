@@ -14,7 +14,11 @@ I decided to write an extension for Visual Studio to help me automate these last
 
 It's stupidly simple. It adds new _Close and Delete Solution_ item into _File_ menu of Visual Studio. After clicking it, and confirming prompt, the current solution will be closed and the whole solution folder will be deleted. Nothing more, nothing less. The default shortcut is `Alt+4, Alt+4`, similar to `Alt+F4` to quickly close Visual Studio if wanted.
 
-I currently tested it on Visual Studio 2017, because that's what I have and use. Feel free to test it on previous versions and submit PR (fixing bugs is welcome as well ;)), the [complete code is on my GitHub][2].
+You can see it in action here (yes, it's an animated gif :)):
+
+![CloseAndDelete](/i/233603/close_and_delete.gif)
+
+I tested it on Visual Studio 2017, because that's what I have and use. Feel free to test it on previous versions and submit PR (fixing bugs is welcome as well ;)), the [complete code is on my GitHub][2].
 
 By the way the nice icon comes from [ButterflyTronics][3].
 
