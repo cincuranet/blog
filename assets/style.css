@@ -172,6 +172,7 @@ article code {
 	background-color: #eeeef2;
 	padding-left: .2rem;
 	padding-right: .2rem;
+	word-wrap: break-word;
 }
 
 article div.highlight {
