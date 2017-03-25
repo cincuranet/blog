@@ -65,7 +65,7 @@ Merge this file using regedit and then unload the hive.
 
 That's it and you can enjoy DDEX for Firebird in Visual Studio 2017.
 
-![DDEX for Firebird in Visual Studio 2017](/i/233603/ddex_vs2017.png)
+![DDEX for Firebird in Visual Studio 2017](/i/233604/ddex_vs2017.png)
 
 > I'm planning to change the DDEX provider from installer, which was acceptable with Visual Studio 2005 (yes, you can still use it there), to VSIX. That will not only make easier to install but also easier to manage.
 
