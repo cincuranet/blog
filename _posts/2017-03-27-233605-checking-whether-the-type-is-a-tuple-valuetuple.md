@@ -11,7 +11,7 @@ Continuing with my tuples ([`ValueTuple<...>`][1] to be precise) [exploration][2
 
 <!-- excerpt -->
 
-For example `ValueTuple<int, int, int, int, int, int, int, int>` compiles fine, but the 8th element (`TRest`) should be another `ValueTuple<int>`. Similarly also just plain `int` isn't a tuple, obviously.
+For example `ValueTuple<int, int, int, int, int, int, int, int>` compiles fine, but the 8th element (`TRest`) should be another `ValueTuple<int>`. Similarly also plain `int` isn't a tuple, obviously.
 
 So I wrote a small helper for myself.
 
