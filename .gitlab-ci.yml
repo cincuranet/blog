@@ -1,6 +1,6 @@
 build:
   stage: build
-  image: ruby:2.3
+  image: ruby:2.4
   script:
     - gem install jekyll
     - jekyll build -d wwwroot
