@@ -1,6 +1,6 @@
 ---
 title: |
-  Checking whether the type is tuple (ValueTuple)
+  Checking whether the type is a tuple (ValueTuple)
 date: 2017-03-27T18:45:00Z
 tags:
   - .NET
