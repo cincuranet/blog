@@ -168,7 +168,7 @@ article p.meta {
 	font-style: italic;
 }
 
-article p.links {
+article p.links a {
 	font-weight: bold;
 }
 
