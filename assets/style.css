@@ -99,7 +99,7 @@ header {
 }
 
 header a:hover {
-	color: #000 /*reset*/;
+	color: inherit;
 }
 
 header h1 {
@@ -172,11 +172,11 @@ article a {
 	text-decoration: underline;
 }
 article h3 a {
-	text-decoration: none; /*reset*/
+	text-decoration: inherit;
 }
 article p.links a {
 	font-weight: bold;
-	text-decoration: none; /*reset*/
+	text-decoration: inherit;
 }
 
 /* article - code */
