@@ -170,7 +170,6 @@ article p.meta {
 
 article a {
 	text-decoration: underline;
-	/*text-decoration-color: #0f83db;*/
 }
 article h3 a {
 	text-decoration: none; /*reset*/
