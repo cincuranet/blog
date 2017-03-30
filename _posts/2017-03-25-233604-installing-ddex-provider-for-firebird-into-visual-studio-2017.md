@@ -17,7 +17,7 @@ Before the Visual Studio stored its configuration in registry in `HKLM` and `HKC
 
 You can still use the installer and just do the last step or you can copy the `FirebirdSql.VisualStudio.DataTools.dll` and `FirebirdSql.VisualStudio.DataToolsUI.dll` and modify the `machine.config`/`devenv.exe.config` [yourself][1] and then do this last step.
 
-Open `regedit` and load the `privateregistry.bin` file using the `File > Load Hive...` menu and load it i.e. into `HKEY_USERS` under some name. I'll use `VS2017PrivateRegistry` here. Take a copy of [`FirebirdDDEXProvider64.reg`][2] (or [`FirebirdDDEXProvider32.reg`][3]) and change the registry paths `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0_Config` to `HKEY_USERS\VS2017PrivateRegistry\Software\Microsoft\VisualStudio\15.0_21a5f3d6_Config`. Don't forget to properly change the `%Path%` variable too in this file. At the end, it might look like this.
+Open `regedit` and load the `privateregistry.bin` file using the `File > Load Hive...` menu and load it i.e. into `HKEY_USERS` under some name. I'll use `VS2017PrivateRegistry` here. Take a copy of [`FirebirdDDEXProvider64.reg`][2] (or [`FirebirdDDEXProvider32.reg`][3]) and change the registry paths `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0_Config` to `HKEY_USERS\VS2017PrivateRegistry\Software\Microsoft\VisualStudio\15.0_<something>_Config`. Don't forget to properly change the `%Path%` variable too in this file. At the end, it might look like this.
 
 ```text
 Windows Registry Editor Version 5.00
