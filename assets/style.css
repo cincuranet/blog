@@ -185,6 +185,7 @@ article p.links a {
 article code, article pre {
 	font-family: Consolas, 'Lucida Console', monospace;
 	line-height: 1.2em;
+	font-size: .9rem;
 }
 
 article code {
