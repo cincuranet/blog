@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Waiting for all tasks, reacting on any
 date: 2015-01-26T07:06:00Z
 tags:

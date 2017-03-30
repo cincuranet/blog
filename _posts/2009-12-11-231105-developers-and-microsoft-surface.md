@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Developers and Microsoft Surface...
 date: 2009-12-11T09:46:20Z
 tags:

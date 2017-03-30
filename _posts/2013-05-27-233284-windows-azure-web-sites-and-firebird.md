@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Windows Azure Web Sites and Firebird
 date: 2013-05-27T13:26:03Z
 tags:

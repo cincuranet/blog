@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Chyby v programech
 date: 2006-03-19T22:08:00Z
 tags:

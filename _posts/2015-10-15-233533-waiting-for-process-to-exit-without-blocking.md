@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Waiting for process to exit without blocking
 date: 2015-10-15T07:31:00Z
 tags:

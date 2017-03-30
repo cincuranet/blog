@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   What the hell, where's my added view?
 date: 2009-05-14T08:17:00Z
 tags:

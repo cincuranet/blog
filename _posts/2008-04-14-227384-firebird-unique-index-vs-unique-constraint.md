@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird - unique index vs. unique constraint
 date: 2008-04-14T19:29:00Z
 tags:

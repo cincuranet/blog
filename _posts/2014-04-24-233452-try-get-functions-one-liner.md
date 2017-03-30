@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Try-Get functions one-liner
 date: 2014-04-24T12:38:00Z
 tags:

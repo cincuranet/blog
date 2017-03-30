@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Getting database script from DbContext (Code First)
 date: 2011-05-06T07:22:32Z
 tags:

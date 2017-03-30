@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Problém s exportem do PST v Outlooku 2007
 date: 2008-09-02T17:11:00Z
 tags:

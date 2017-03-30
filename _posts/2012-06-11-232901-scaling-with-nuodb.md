@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Scaling with NuoDB
 date: 2012-06-11T16:00:33Z
 tags:

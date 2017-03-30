@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Photos from FBCon 09 München
 date: 2009-11-29T09:03:24Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sortování v generické kolekci anonymní metodou
 date: 2007-04-18T08:04:00Z
 tags:

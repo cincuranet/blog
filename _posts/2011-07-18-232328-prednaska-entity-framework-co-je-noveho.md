@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška "Entity Framework - co je nového"
 date: 2011-07-18T10:00:05Z
 tags:

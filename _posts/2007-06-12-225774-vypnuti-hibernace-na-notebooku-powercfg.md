@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Vypnutí hibernace na notebooku (powercfg)
 date: 2007-06-12T19:22:00Z
 tags:

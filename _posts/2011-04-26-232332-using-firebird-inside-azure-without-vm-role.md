@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Using Firebird inside Azure (without VM role)
 date: 2011-04-26T18:30:45Z
 tags:

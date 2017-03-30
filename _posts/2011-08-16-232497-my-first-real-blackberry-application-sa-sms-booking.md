@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My first real BlackBerry application - SA SMS Booking
 date: 2011-08-16T05:17:42Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Timer instance and race condition
 date: 2013-11-20T07:54:00Z
 tags:

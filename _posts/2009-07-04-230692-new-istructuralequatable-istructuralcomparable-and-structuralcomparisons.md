@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   New IStructuralEquatable, IStructuralComparable and StructuralComparisons
 date: 2009-07-04T12:08:16Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Synology's support is exceptional
 date: 2011-11-14T18:55:22Z
 tags:

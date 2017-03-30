@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Zjištění 12h nebo 24h formátu???
 date: 2009-01-07T20:53:00Z
 tags:

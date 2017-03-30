@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Update Model from Database and CatalogName
 date: 2008-11-28T14:40:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My transition to standing desk. And how it feels after slightly under a year.
 date: 2014-02-04T08:50:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Uživatelsky přívětivé vybírání složek
 date: 2009-07-13T17:31:00Z
 tags:

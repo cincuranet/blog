@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   FlameRobin Portable
 date: 2007-11-08T08:46:00Z
 tags:

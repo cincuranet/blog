@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   All LINQ methods implemented only by SelectMany
 date: 2014-05-21T07:45:00Z
 tags:

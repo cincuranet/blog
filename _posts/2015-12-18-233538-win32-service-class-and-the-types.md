@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Win32_Service class and the types
 date: 2015-12-18T12:38:00Z
 tags:

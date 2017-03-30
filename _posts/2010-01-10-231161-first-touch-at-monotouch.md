@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   First touch at MonoTouch
 date: 2010-01-10T21:58:35Z
 tags:

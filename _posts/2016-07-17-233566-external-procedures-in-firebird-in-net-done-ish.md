@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   External procedures in Firebird in .NET done(-ish)
 date: 2016-07-17T07:44:00Z
 tags:

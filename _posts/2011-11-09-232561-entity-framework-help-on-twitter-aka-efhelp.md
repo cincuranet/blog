@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework help on Twitter aka #efhelp
 date: 2011-11-09T16:12:12Z
 tags:

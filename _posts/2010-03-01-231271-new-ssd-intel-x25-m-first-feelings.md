@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   New SSD (Intel X25-M) - first feelings
 date: 2010-03-01T17:05:32Z
 tags:

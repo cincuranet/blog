@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Windows 8/8.1 background API mismatch
 date: 2013-09-16T16:35:00Z
 tags:

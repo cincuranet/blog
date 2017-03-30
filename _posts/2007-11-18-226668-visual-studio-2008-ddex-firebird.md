@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Visual Studio 2008, DDEX, Firebird
 date: 2007-11-18T10:14:00Z
 tags:

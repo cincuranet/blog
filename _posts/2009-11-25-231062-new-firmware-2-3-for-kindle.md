@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   New firmware (2.3) for Kindle
 date: 2009-11-25T07:56:02Z
 tags:

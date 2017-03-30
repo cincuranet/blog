@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Rozdělení editoru VS
 date: 2007-06-30T11:21:00Z
 tags:

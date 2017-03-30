@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Loading related entities for ObjectResult (stored procedure)
 date: 2009-07-08T22:07:32Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   C#'s overload resolution with enum and object with 0 as value
 date: 2012-05-31T14:07:44Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   DotNetBeer: Roslyn: Analyzátory kódu a code fixes (Brno)
 date: 2016-03-24T08:34:00Z
 tags:

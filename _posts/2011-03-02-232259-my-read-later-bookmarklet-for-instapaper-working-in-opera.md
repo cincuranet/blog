@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My "read later" bookmarklet for Instapaper working in Opera
 date: 2011-03-02T20:11:45Z
 tags:

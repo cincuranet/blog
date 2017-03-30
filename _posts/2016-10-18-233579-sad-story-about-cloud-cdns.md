@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sad story about cloud CDNs
 date: 2016-10-18T04:53:00Z
 tags:

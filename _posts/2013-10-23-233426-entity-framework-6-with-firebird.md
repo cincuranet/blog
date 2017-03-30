@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework 6 with Firebird
 date: 2013-10-23T13:25:00Z
 tags:

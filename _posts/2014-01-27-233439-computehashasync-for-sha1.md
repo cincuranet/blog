@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   ComputeHashAsync for SHA1
 date: 2014-01-27T06:19:00Z
 tags:

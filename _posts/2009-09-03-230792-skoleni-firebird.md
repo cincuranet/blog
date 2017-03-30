@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Školení Firebird
 date: 2009-09-03T20:51:19Z
 tags:

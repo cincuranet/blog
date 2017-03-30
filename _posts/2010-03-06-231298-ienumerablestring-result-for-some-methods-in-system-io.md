@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   IEnumerable<string> result for some methods in System.IO
 date: 2010-03-06T17:11:35Z
 tags:

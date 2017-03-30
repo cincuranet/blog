@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Zařazení něčeho do kategorií...
 date: 2008-01-03T17:54:00Z
 tags:

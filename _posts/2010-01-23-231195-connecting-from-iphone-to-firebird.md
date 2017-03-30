@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Connecting from iPhone to Firebird
 date: 2010-01-23T21:11:09Z
 tags:

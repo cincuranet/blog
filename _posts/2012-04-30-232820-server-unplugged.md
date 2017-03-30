@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Server unplugged
 date: 2012-04-30T18:14:28Z
 tags:

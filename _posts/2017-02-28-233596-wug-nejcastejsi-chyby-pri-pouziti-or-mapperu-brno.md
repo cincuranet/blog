@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   WUG: Nejčastější chyby při použití O/R mapperu (Brno)
 date: 2017-02-28T17:39:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   POCOs and Entity Framework's automagic association wiring
 date: 2010-04-10T19:37:20Z
 tags:

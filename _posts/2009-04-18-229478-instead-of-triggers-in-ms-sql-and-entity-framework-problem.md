@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Instead of triggers in MS SQL and Entity Framework problem
 date: 2009-04-18T10:42:00Z
 tags:

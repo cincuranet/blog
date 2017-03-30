@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My old game you'll never stop playing
 date: 2015-08-07T07:26:00Z
 tags:

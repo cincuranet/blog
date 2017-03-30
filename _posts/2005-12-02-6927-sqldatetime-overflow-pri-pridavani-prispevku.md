@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   SqlDateTime overflow při přidávání příspěvku
 date: 2005-12-02T17:20:00Z
 tags:

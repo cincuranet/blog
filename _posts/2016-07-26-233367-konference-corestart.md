@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Konference CoreStart
 date: 2016-07-26T20:29:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Tab closing button in Visual Studio 2010 - part 2
 date: 2010-10-07T21:19:02Z
 tags:

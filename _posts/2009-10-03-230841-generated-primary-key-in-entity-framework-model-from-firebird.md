@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Generated primary key in Entity Framework model from Firebird
 date: 2009-10-03T12:14:05Z
 tags:

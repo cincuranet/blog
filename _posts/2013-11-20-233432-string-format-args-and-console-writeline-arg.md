@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   String.Format "args" and Console.WriteLine "arg"
 date: 2013-11-20T14:27:00Z
 tags:

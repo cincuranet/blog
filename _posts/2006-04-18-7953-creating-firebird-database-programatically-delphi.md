@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Creating Firebird database programatically (Delphi)
 date: 2006-04-18T12:45:00Z
 tags:

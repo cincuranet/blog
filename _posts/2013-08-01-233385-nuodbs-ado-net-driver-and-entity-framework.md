@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   NuoDB's ADO.NET driver and Entity Framework
 date: 2013-08-01T16:30:08Z
 tags:

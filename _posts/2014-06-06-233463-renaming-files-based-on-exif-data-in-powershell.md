@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Renaming files based on Exif data in PowerShell
 date: 2014-06-06T07:59:00Z
 tags:

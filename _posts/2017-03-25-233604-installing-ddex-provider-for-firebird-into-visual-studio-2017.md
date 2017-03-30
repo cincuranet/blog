@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Installing DDEX provider for Firebird into Visual Studio 2017
 date: 2017-03-25T05:55:00Z
 tags:

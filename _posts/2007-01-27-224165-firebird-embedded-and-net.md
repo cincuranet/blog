@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird Embedded and .NET
 date: 2007-01-27T23:07:00Z
 tags:

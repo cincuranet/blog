@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Designer file in Entity Framework June 2011 CTP
 date: 2011-07-10T09:31:12Z
 tags:

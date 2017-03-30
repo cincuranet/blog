@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird vs SQL Server CE - MS Fest 2011
 date: 2011-11-19T11:00:46Z
 tags:

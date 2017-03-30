@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   gteq and lteq problem in ADO.NET Data Services
 date: 2008-07-17T21:56:00Z
 tags:

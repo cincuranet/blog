@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   {Read|Write}File Win32 API a peklo v Delphi
 date: 2006-01-08T20:54:00Z
 tags:

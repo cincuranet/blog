@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Configuring 3rd party Entity Framework provider (Firebird) from code
 date: 2016-08-19T14:04:00Z
 tags:

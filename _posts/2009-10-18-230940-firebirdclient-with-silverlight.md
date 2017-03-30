@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird(Client) with Silverlight
 date: 2009-10-18T16:53:49Z
 tags:

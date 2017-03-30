@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Easier ArgumentException messages
 date: 2012-07-31T14:53:43Z
 tags:

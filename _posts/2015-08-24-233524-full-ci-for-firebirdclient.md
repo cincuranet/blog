@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Full CI for FirebirdClient
 date: 2015-08-24T08:23:00Z
 tags:

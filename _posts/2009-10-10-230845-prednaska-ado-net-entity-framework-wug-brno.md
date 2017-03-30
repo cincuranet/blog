@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška ADO.NET Entity Framework - WUG, Brno
 date: 2009-10-10T10:00:43Z
 tags:

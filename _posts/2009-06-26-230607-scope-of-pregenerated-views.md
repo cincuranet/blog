@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Scope of pregenerated views
 date: 2009-06-26T19:38:23Z
 tags:

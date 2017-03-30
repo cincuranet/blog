@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Provider for Entity Framework for Firebird is back and ready for SP1 final
 date: 2008-08-29T17:58:00Z
 tags:

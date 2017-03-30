@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Creating your own settings provider - example
 date: 2006-06-17T18:35:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   BlackBerry PlayBook - review after some time
 date: 2011-06-04T13:55:35Z
 tags:

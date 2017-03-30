@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Book: "WiX Cookbook"
 date: 2015-08-18T11:54:00Z
 tags:

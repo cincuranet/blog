@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Synology disk power cable
 date: 2010-01-14T11:10:26Z
 tags:

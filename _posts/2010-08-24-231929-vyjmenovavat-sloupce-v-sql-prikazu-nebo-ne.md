@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Vyjmenovávat sloupce v SQL příkazu nebo ne???
 date: 2010-08-24T20:35:12Z
 tags:

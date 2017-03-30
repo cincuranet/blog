@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sorting in IQueryable using string as column name
 date: 2009-04-09T20:33:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My Injinji socks hack
 date: 2017-02-21T17:29:00Z
 tags:

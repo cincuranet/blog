@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Rotační hyperboloid? Ale kdepak.
 date: 2009-06-08T06:19:00Z
 tags:

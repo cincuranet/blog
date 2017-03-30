@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Second feelings about the new SSD
 date: 2010-03-02T21:19:17Z
 tags:

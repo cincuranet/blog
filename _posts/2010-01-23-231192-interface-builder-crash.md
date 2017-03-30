@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Interface Builder crash
 date: 2010-01-23T17:43:29Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Shortly with iPad
 date: 2010-06-27T17:48:31Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   TortoiseSVN PowerShell aliases improved
 date: 2010-04-26T08:47:46Z
 tags:

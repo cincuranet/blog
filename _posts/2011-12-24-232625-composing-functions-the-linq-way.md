@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Composing functions the LINQ way
 date: 2011-12-24T07:55:18Z
 tags:

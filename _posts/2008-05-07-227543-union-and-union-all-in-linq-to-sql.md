@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   UNION and UNION ALL in LINQ to SQL
 date: 2008-05-07T13:20:00Z
 tags:

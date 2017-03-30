@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Trace API support in ADO.NET provider for Firebird (FbTrace)
 date: 2010-12-14T21:02:29Z
 tags:

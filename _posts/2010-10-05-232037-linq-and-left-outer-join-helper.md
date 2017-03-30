@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   LINQ and left outer join helper
 date: 2010-10-05T09:55:38Z
 tags:

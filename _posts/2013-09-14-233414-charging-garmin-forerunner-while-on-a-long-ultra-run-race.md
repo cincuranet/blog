@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Charging Garmin Forerunner while on a long (ultra) run/race
 date: 2013-09-14T17:53:00Z
 tags:

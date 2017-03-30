@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sending documents wirelessly to Kindle for free
 date: 2010-09-12T10:30:16Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Some nice ideas in stored procedures in NuoDB
 date: 2013-08-27T06:33:42Z
 tags:

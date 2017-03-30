@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework Include with Func
 date: 2008-07-29T12:14:00Z
 tags:

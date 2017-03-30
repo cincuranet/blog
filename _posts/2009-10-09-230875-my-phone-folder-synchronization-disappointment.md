@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My Phone - folder synchronization disappointment
 date: 2009-10-09T19:26:04Z
 tags:

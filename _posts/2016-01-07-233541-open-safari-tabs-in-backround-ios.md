@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Open Safari tabs in background (iOS)
 date: 2016-01-07T17:26:00Z
 tags:

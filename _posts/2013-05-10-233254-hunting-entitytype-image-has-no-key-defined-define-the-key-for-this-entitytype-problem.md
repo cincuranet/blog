@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Hunting "EntityType 'Image' has no key defined. Define the key for this EntityType." problem
 date: 2013-05-10T07:53:24Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   ADO.NET provider 3.0.0 for Firebird and DDEX provider 3.0.0 for Firebird released
 date: 2012-10-26T13:00:11Z
 tags:

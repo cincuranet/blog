@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   CherryPy on Azure Websites
 date: 2015-02-08T17:45:00Z
 tags:

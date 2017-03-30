@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Kindle's "furthest page read" solution when reading book multiple times (or by more people)
 date: 2011-08-23T06:51:53Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Casting Expression<Func<TEntity, TProperty>> to Expression<Func<TEntity, object>>
 date: 2011-02-28T05:13:04Z
 tags:

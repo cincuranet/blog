@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Getting the size of a tuple (number of items)
 date: 2017-03-28T15:46:00Z
 tags:

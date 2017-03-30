@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Shorter Firebird queries from Entity Framework
 date: 2012-03-29T15:58:52Z
 tags:

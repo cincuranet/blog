@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   null != foo vs. foo != null
 date: 2009-01-17T12:10:00Z
 tags:

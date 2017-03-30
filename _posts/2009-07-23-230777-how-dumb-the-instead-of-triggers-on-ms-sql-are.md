@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   How dumb the instead of triggers on MS SQL are???
 date: 2009-07-23T14:29:45Z
 tags:

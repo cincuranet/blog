@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Async semaphore with priority: Rethinking queuing continuations
 date: 2014-10-30T06:11:00Z
 tags:

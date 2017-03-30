@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Gotcha measuring trekking poles for you
 date: 2015-06-04T08:14:00Z
 tags:

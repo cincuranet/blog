@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Timeout for wait transactions in FirebirdClient
 date: 2008-10-20T17:24:00Z
 tags:

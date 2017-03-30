@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   ADO.NET Data Service and non-public properties in Entity Data Model
 date: 2009-07-02T10:45:42Z
 tags:

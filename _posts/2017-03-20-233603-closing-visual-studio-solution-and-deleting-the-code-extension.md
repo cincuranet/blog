@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Closing Visual Studio solution and deleting the code (extension)
 date: 2017-03-20T10:22:00Z
 tags:

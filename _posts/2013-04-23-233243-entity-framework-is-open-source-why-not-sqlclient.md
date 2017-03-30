@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework is open source, why not SqlClient?
 date: 2013-04-23T18:34:10Z
 tags:

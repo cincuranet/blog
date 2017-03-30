@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Invalid XML after going over OData's DataServiceConfiguration.MaxResultsPerCollection
 date: 2012-11-13T09:46:10Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Parametrized queries OR checking input - how to learn :)
 date: 2007-10-10T20:42:00Z
 tags:

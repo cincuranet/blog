@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Zajímavá fičurka pro nastavení zvuku
 date: 2009-04-06T15:12:00Z
 tags:

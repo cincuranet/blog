@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška/Workshop ADO.NET (a WinForms)
 date: 2006-05-03T20:19:00Z
 tags:

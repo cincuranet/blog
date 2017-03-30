@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Gotcha with Firebird 3, COUNT and ExecuteScalar's common casting pattern
 date: 2016-03-02T10:01:00Z
 tags:

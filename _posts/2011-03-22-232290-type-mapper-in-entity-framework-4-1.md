@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Type mapper in Entity Framework 4.1
 date: 2011-03-22T18:03:36Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   MailAddress class is driving me crazy
 date: 2013-05-14T08:41:19Z
 tags:

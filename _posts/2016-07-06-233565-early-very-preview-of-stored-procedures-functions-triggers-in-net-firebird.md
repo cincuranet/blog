@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Early (very) preview of stored procedures (functions, triggers) in .NET in Firebird
 date: 2016-07-06T05:57:00Z
 tags:

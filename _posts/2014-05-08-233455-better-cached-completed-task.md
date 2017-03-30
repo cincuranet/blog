@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Better "cached completed Task"
 date: 2014-05-08T07:17:00Z
 tags:

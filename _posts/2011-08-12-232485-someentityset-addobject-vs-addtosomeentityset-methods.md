@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   SomeEntitySet.AddObject vs. AddToSomeEntitySet methods
 date: 2011-08-12T12:33:45Z
 tags:

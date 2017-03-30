@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Another progress on Entity Framework provider for Firebird
 date: 2008-07-13T20:17:00Z
 tags:

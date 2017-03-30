@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Master-detail magic that's completely clear
 date: 2014-07-07T07:54:00Z
 tags:

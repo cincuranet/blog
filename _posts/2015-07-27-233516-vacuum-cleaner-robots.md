@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Vacuum cleaner robots
 date: 2015-07-27T05:15:00Z
 tags:

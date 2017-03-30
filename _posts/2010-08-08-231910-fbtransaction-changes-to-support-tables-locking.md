@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   FbTransaction changes to support tables locking
 date: 2010-08-08T17:52:42Z
 tags:

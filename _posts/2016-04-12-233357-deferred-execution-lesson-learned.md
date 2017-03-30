@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Deferred execution - lesson learned
 date: 2016-04-12T18:45:00Z
 tags:

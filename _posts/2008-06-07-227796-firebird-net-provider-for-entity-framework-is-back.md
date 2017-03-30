@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird .NET provider for Entity Framework is back
 date: 2008-06-07T23:23:00Z
 tags:

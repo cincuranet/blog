@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Be careful with "not" conditions and nulls in LINQ when querying databases
 date: 2010-01-21T15:11:31Z
 tags:

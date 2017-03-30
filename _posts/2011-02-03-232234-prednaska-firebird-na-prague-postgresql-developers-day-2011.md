@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška "Firebird" na Prague PostgreSQL Developers' Day 2011
 date: 2011-02-03T11:00:11Z
 tags:

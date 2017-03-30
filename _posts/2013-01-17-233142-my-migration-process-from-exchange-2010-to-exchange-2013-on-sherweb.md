@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My migration process from Exchange 2010 to Exchange 2013 on SherWeb
 date: 2013-01-17T11:10:56Z
 tags:

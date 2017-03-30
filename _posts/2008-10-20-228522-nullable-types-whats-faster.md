@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Nullable types - what's faster?
 date: 2008-10-20T16:00:00Z
 tags:

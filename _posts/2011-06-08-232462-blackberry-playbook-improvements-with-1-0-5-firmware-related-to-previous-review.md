@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   BlackBerry PlayBook improvements with 1.0.5 firmware (related to previous review)
 date: 2011-06-08T10:11:08Z
 tags:

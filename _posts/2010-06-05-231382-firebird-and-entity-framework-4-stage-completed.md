@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird and Entity Framework 4 - stage completed
 date: 2010-06-05T20:12:53Z
 tags:

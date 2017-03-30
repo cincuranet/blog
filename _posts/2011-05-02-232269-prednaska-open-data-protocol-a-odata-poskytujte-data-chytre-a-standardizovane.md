@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška "Open Data Protocol a OData - poskytujte data chytře a standardizovaně"
 date: 2011-05-02T10:00:31Z
 tags:

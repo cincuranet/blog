@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Running queries in parallel with Entity Framework (and not only with it)
 date: 2010-03-12T18:56:27Z
 tags:

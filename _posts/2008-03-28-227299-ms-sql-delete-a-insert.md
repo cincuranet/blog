@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   MS SQL delete a insert
 date: 2008-03-28T19:16:00Z
 tags:

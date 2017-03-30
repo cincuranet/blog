@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Executing method in intervals - good and bad approaches
 date: 2012-04-05T15:43:36Z
 tags:

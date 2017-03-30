@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Eager loading cost - another stuff to consider
 date: 2009-04-04T20:20:00Z
 tags:

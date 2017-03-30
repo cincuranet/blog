@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Model Defined Function as a method on entity (or on type for store function)
 date: 2009-10-11T12:56:49Z
 tags:

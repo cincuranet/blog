@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird .NET 2.0 Provider - první útržkovité postřehy
 date: 2005-12-11T20:42:00Z
 tags:

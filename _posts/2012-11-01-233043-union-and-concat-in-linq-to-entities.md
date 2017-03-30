@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Union and Concat in LINQ to Entities
 date: 2012-11-01T14:29:09Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   FirebirdClient and InterBase
 date: 2009-09-22T14:01:46Z
 tags:

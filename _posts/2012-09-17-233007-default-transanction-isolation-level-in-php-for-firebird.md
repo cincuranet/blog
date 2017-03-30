@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Default transanction isolation level in PHP for Firebird
 date: 2012-09-17T06:21:04Z
 tags:

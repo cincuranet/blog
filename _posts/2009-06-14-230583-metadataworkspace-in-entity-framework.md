@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   MetadataWorkspace in Entity Framework
 date: 2009-06-14T15:07:00Z
 tags:

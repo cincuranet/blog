@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Kindle 4 Touch review
 date: 2012-01-05T18:44:27Z
 tags:

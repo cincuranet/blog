@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška "Entity Framework 4.1 - Code First"
 date: 2011-05-16T10:00:46Z
 tags:

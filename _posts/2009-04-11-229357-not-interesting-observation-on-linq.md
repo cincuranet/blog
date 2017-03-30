@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   (Not) interesting observation on LINQ
 date: 2009-04-11T16:05:00Z
 tags:

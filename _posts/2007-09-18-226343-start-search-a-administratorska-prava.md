@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Start Search a Administratorská práva
 date: 2007-09-18T09:23:00Z
 tags:

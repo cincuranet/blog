@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Coalesce and ternary operator - combination that made my brain hurt
 date: 2015-07-02T13:52:00Z
 tags:

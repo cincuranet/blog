@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Programming for 35+ years in production
 date: 2013-09-13T6:45:00Z
 tags:

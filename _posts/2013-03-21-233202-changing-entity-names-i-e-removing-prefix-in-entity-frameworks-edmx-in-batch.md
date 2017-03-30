@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Changing entity names (i.e. removing prefix) in Entity Framework's EDMX in batch
 date: 2013-03-21T08:17:12Z
 tags:

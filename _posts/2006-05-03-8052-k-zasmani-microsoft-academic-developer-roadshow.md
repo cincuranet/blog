@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   K zasmání (Microsoft Academic Developer Roadshow)
 date: 2006-05-03T20:03:00Z
 tags:

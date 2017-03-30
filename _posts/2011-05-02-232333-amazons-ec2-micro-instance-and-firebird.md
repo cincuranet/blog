@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Amazon's EC2 Micro Instance and Firebird
 date: 2011-05-02T18:36:57Z
 tags:

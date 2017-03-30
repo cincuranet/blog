@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   SQL command when inserting M:N association with identity columns in the underlying table
 date: 2010-02-18T13:51:39Z
 tags:

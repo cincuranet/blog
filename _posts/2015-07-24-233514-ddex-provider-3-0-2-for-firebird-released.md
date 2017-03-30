@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   DDEX provider 3.0.2 for Firebird released
 date: 2015-07-24T07:37:00Z
 tags:

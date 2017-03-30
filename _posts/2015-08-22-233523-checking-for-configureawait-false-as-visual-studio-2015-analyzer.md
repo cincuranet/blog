@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Checking for ConfigureAwait(false) as Visual Studio 2015 analyzer
 date: 2015-08-22T09:30:00Z
 tags:

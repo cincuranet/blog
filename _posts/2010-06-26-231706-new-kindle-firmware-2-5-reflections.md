@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   New Kindle firmware (2.5) - reflections
 date: 2010-06-26T19:23:45Z
 tags:

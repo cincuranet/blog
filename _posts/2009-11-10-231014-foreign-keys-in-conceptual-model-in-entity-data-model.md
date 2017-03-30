@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Foreign keys in conceptual model in Entity Data Model
 date: 2009-11-10T08:08:01Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Let's try something new... What about Microsoft.Data.dll?
 date: 2010-08-03T13:39:04Z
 tags:

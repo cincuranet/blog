@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Interleaving two IEnumerable sources
 date: 2010-10-05T09:53:23Z
 tags:

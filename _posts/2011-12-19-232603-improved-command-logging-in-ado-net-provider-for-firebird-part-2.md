@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Improved command logging in ADO.NET provider for Firebird - part 2
 date: 2011-12-19T09:29:43Z
 tags:

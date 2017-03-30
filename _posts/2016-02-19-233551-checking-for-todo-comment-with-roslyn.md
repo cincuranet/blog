@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Checking for "TODO" comment with Roslyn
 date: 2016-02-19T10:36:00Z
 tags:

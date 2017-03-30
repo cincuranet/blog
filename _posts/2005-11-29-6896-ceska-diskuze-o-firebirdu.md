@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Česká diskuze o Firebirdu
 date: 2005-11-29T21:52:00Z
 tags:

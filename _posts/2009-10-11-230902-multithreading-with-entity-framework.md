@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Multithreading with Entity Framework
 date: 2009-10-11T16:27:33Z
 tags:

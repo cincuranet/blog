@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Hádanka (Firebird)
 date: 2006-08-13T12:52:00Z
 tags:

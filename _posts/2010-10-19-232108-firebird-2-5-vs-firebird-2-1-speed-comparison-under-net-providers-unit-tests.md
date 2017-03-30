@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird 2.5 vs. Firebird 2.1 speed comparison under .NET provider's unit tests
 date: 2010-10-19T10:00:56Z
 tags:

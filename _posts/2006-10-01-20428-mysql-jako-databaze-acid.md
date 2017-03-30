@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   MySQL jako databáze? - ACID
 date: 2006-10-01T10:30:00Z
 tags:

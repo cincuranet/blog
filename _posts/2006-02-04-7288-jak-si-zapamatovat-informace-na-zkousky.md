@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Jak si zapamatovat informace na zkoušky...
 date: 2006-02-04T09:12:00Z
 tags:

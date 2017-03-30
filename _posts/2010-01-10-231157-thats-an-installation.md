@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   That's an installation...
 date: 2010-01-10T21:23:33Z
 tags:

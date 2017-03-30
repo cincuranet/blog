@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Concatenating(?) string during compile
 date: 2007-04-28T21:34:00Z
 tags:

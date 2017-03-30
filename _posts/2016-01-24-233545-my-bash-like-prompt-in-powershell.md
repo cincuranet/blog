@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   My Bash like prompt in PowerShell
 date: 2016-01-24T19:55:00Z
 tags:

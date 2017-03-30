@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Různé věci, různé (možnosti) tvoření
 date: 2005-12-24T19:56:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Removing explicit default access modifiers (Roslyn analyzer and codefix)
 date: 2015-11-13T04:27:00Z
 tags:

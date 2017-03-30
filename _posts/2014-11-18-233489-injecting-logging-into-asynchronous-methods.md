@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Injecting logging into asynchronous methods
 date: 2014-11-18T07:47:00Z
 tags:

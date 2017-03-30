@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Awaiting something in TransactionScope
 date: 2012-06-12T12:15:43Z
 tags:

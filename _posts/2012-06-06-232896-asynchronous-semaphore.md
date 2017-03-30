@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Asynchronous semaphore
 date: 2012-06-06T18:23:18Z
 tags:

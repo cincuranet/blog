@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Prepend method in LINQ
 date: 2010-06-29T07:07:29Z
 tags:

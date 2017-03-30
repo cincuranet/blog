@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Kde soudruzi z nVidia udělali chybu???
 date: 2007-05-16T14:03:00Z
 tags:

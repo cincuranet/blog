@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Thinking about pacing
 date: 2014-04-15T05:17:00Z
 tags:

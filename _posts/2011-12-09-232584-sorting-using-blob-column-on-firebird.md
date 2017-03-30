@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sorting using blob column on Firebird
 date: 2011-12-09T19:27:25Z
 tags:

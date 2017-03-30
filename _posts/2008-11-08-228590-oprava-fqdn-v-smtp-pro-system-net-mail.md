@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Oprava FQDN v SMTP pro System.Net.Mail
 date: 2008-11-08T18:32:00Z
 tags:

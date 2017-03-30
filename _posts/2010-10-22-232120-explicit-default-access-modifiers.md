@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Explicit default access modifiers?
 date: 2010-10-22T08:46:02Z
 tags:

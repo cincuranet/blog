@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Generating GUID in Firebird
 date: 2007-07-28T18:27:00Z
 tags:

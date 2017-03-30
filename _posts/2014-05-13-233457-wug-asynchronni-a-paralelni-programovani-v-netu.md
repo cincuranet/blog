@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   WUG: Asynchronní a paralelní programování v .NETu
 date: 2014-05-13T11:08:00Z
 tags:

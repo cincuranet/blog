@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Mapping private or protected properties with Code First (EFv4, CTP4)
 date: 2010-11-04T21:49:20Z
 tags:

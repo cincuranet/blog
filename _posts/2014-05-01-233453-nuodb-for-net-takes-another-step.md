@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   NuoDB for .NET takes another step
 date: 2014-05-01T13:28:00Z
 tags:

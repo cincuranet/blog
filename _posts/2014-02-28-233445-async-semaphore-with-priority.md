@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Async semaphore with priority
 date: 2014-02-28T05:51:00Z
 tags:

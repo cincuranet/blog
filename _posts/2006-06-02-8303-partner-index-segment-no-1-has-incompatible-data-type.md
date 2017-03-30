@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   partner index segment no 1 has incompatible data type
 date: 2006-06-02T10:33:00Z
 tags:

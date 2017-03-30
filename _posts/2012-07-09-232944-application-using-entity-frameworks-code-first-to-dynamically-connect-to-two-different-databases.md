@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Application using Entity Framework's Code First to dynamically connect to two different databases
 date: 2012-07-09T09:08:47Z
 tags:

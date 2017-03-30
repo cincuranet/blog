@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Charging Garmin fēnix 2 while in activity
 date: 2015-01-26T07:22:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird's ADO.NET provider (sources) has a new home
 date: 2013-07-29T16:14:56Z
 tags:

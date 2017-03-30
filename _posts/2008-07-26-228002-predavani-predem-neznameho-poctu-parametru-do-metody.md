@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Předávání předem neznámého počtu parametrů do metody
 date: 2008-07-26T21:51:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   OnValidate-like validation in Entity Framework
 date: 2009-02-24T04:57:00Z
 tags:

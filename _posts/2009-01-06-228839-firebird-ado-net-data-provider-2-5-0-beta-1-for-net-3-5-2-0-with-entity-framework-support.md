@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird ADO.NET Data Provider 2.5.0 Beta 1 for .NET 3.5/2.0 [with Entity Framework support]
 date: 2009-01-06T10:48:00Z
 tags:

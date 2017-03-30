@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Directed broadcast address
 date: 2016-04-13T08:10:00Z
 tags:

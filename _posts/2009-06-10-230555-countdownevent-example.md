@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   CountdownEvent example
 date: 2009-06-10T08:49:00Z
 tags:

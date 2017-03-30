@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   DDEX, Vista (64-bit), Firebird, Visual Studio 2005
 date: 2007-07-22T13:15:00Z
 tags:

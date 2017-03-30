@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird .NET provider and calling stored procedures with parameters
 date: 2008-02-12T09:33:00Z
 tags:

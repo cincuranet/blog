@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   PAUSE command moral
 date: 2010-12-14T13:39:57Z
 tags:

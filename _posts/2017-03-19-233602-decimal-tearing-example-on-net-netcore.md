@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Decimal tearing example on .NET/.NET Core
 date: 2017-03-19T19:25:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   SQL Azure and Entity Framework
 date: 2011-01-31T10:34:49Z
 tags:

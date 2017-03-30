@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird and MS Sync Framework
 date: 2008-09-14T18:25:00Z
 tags:

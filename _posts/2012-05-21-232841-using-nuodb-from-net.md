@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Using NuoDB from .NET
 date: 2012-05-21T17:04:38Z
 tags:

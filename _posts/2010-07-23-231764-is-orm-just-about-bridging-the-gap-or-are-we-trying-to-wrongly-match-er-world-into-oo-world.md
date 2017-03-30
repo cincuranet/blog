@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Is ORM just about bridging the gap or are we trying to wrongly match ER world into OO world?
 date: 2010-07-23T03:49:08Z
 tags:

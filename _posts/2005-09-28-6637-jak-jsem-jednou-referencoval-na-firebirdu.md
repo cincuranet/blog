@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Jak jsem jednou referencoval na Firebirdu
 date: 2005-09-28T20:27:00Z
 tags:

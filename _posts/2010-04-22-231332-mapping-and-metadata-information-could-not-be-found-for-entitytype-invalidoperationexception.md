@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Mapping and metadata information could not be found for EntityType (InvalidOperationException)
 date: 2010-04-22T20:17:02Z
 tags:

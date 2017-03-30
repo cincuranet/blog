@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   WUG: Visual Studio tipy a triky (Zlín)
 date: 2015-01-20T17:06:00Z
 tags:

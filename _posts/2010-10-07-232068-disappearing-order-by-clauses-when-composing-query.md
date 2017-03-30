@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Disappearing order by clauses when composing query
 date: 2010-10-07T11:23:09Z
 tags:

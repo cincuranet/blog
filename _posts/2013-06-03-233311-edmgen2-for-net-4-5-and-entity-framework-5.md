@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   EdmGen2 for .NET 4.5 and Entity Framework 5
 date: 2013-06-03T13:44:17Z
 tags:

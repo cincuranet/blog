@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Synology DS207+ with Western Digital WD20EFRX
 date: 2014-08-24T18:41:00Z
 tags:

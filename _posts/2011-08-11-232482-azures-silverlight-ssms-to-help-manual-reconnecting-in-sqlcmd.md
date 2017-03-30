@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Azure's Silverlight SSMS to help manual reconnecting in sqlcmd
 date: 2011-08-11T12:03:28Z
 tags:

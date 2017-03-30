@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Coalesce operator in Entity Framework
 date: 2009-02-22T14:37:00Z
 tags:

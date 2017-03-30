@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Do not overdo parallelism and asynchronous
 date: 2012-11-30T09:08:40Z
 tags:

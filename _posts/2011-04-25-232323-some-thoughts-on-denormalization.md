@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Some thoughts on denormalization
 date: 2011-04-25T14:29:48Z
 tags:

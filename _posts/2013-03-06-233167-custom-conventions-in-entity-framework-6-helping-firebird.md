@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Custom conventions in Entity Framework 6 helping Firebird
 date: 2013-03-06T16:59:58Z
 tags:

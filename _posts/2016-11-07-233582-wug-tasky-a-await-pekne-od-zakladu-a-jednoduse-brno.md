@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   WUG: Tasky a await pěkně od základu a jednoduše (Brno)
 date: 2016-11-07T11:58:00Z
 tags:

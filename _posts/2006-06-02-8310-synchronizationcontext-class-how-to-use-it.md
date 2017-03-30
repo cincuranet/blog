@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   SynchronizationContext class - how to use it?
 date: 2006-06-02T19:55:00Z
 tags:

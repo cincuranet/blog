@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework did it again. And then it didn't.
 date: 2015-08-04T15:43:00Z
 tags:

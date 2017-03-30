@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird Developers' Day 2009 :(
 date: 2009-10-11T20:37:26Z
 tags:

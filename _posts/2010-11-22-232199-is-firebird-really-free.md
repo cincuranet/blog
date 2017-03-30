@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Is Firebird really free?
 date: 2010-11-22T05:30:48Z
 tags:

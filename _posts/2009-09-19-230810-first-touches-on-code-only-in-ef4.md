@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   First touches on Code Only in EF4
 date: 2009-09-19T18:04:04Z
 tags:

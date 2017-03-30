@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   CountdownEvent class
 date: 2009-06-09T09:06:00Z
 tags:

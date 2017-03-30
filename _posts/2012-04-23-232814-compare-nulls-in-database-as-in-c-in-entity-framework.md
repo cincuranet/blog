@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Compare NULLs in database as in C# in Entity Framework
 date: 2012-04-23T10:10:30Z
 tags:

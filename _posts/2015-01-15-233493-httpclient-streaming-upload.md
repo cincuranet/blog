@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   HttpClient streaming upload
 date: 2015-01-15T10:34:00Z
 tags:

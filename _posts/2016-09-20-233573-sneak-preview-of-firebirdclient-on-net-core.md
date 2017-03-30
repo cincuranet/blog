@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Sneak preview of FirebirdClient on .NET Core
 date: 2016-09-20T12:59:00Z
 tags:

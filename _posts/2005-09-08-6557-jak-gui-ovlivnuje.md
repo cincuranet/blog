@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Jak GUI ovlivňuje.
 date: 2005-09-08T19:44:00Z
 tags:

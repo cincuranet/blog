@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   ADO.NET provider for Firebird 2.7 released
 date: 2011-12-19T09:28:51Z
 tags:

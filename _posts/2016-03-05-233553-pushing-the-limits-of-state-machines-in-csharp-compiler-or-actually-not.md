@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Pushing the limits of state machines in C# compiler ... or actually not
 date: 2016-03-05T16:35:00Z
 tags:

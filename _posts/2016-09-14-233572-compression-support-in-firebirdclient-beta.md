@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Compression support in FirebirdClient beta
 date: 2016-09-14T06:48:00Z
 tags:

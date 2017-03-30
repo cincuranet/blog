@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   .NET Framework 4 Poster
 date: 2008-11-01T12:00:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   #efhelp hashtag now better than ever
 date: 2013-10-13T16:56:00Z
 tags:

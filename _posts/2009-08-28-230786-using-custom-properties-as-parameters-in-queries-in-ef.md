@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Using custom properties as parameters in queries (in EF)
 date: 2009-08-28T10:43:34Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Bitten by the magic behind ValueTuple with C# 7
 date: 2017-03-15T06:00:00Z
 tags:

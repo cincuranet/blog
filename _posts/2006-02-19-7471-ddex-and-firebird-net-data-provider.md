@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   DDEX and Firebird .NET Data Provider
 date: 2006-02-19T20:19:00Z
 tags:

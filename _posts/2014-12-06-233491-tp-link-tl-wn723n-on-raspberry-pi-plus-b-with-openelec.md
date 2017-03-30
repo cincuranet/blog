@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   TP-LINK TL-WN723N on Raspberry Pi B+ with OpenELEC
 date: 2014-12-06T08:17:00Z
 tags:

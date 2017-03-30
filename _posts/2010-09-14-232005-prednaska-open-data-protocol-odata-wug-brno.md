@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Přednáška Open Data Protocol (OData) - WUG Brno
 date: 2010-09-14T10:00:37Z
 tags:

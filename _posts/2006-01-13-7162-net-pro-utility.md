@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   .NET pro utility?
 date: 2006-01-13T11:10:00Z
 tags:

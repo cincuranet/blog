@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Collection type result - speed comparison of IList.Add and IEnumerable.Concat
 date: 2011-08-29T16:56:21Z
 tags:

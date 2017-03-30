@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Using CTEs to generate ranges and/or fill holes
 date: 2010-10-06T08:22:27Z
 tags:

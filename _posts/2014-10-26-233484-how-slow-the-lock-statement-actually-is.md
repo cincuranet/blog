@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   How slow the "lock" statement actually is?
 date: 2014-10-26T08:27:00Z
 tags:

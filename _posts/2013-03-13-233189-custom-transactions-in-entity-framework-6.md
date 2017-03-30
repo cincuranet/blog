@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Custom transactions in Entity Framework 6
 date: 2013-03-13T14:58:05Z
 tags:

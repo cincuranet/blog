@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Timer working with absolute - wall clock - time
 date: 2016-02-17T10:36:00Z
 tags:

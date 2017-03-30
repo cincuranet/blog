@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Easy indentation control for Debug/Trace/...
 date: 2011-05-16T11:16:01Z
 tags:

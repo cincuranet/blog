@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   DbProviderFactories and machine.config in Framework/Framework64 fun
 date: 2012-09-11T18:43:22Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Attaching non-detached entity in Entity Framework v4 doesn't throw exception
 date: 2009-10-23T18:47:01Z
 tags:

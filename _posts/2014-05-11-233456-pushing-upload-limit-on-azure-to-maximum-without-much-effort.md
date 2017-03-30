@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Pushing upload limit on Azure to maximum without much effort
 date: 2014-05-11T15:15:00Z
 tags:

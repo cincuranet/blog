@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Validace dat - kam jak kde proč
 date: 2008-05-18T20:20:00Z
 tags:

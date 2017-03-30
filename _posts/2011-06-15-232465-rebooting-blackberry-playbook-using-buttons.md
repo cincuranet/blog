@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Rebooting BlackBerry PlayBook using buttons
 date: 2011-06-15T17:06:25Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework Designer file (EDMX) opened in both designer and XML Editor
 date: 2010-03-31T11:32:19Z
 tags:

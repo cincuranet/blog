@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   C# obsesión - how many characters you are able to put into type? :)
 date: 2009-05-09T14:14:00Z
 tags:

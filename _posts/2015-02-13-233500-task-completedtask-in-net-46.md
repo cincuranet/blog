@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Task.CompletedTask in .NET 4.6
 date: 2015-02-12T05:39:00Z
 tags:

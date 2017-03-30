@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Víte co je to "vytvářeč"?
 date: 2006-02-18T17:13:00Z
 tags:

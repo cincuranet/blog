@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   log4net dependencies problem - solved
 date: 2012-02-16T15:50:55Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Running sync methods in async way
 date: 2009-01-17T13:00:00Z
 tags:

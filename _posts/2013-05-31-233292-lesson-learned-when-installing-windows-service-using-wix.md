@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Lesson learned when installing Windows service using WiX
 date: 2013-05-31T12:25:32Z
 tags:

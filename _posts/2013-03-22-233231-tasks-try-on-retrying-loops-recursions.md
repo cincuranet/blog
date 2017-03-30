@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Tasks - try on retrying, loops, recursions
 date: 2013-03-22T12:45:23Z
 tags:

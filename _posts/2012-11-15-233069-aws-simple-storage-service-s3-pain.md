@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   AWS Simple Storage Service (S3) pain
 date: 2012-11-15T09:36:39Z
 tags:

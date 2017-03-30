@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Mapping stored procedures that are returning non-entity result in EDM
 date: 2009-01-25T18:07:00Z
 tags:

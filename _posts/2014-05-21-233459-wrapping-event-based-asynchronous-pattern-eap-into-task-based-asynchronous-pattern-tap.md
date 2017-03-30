@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Wrapping event-based asynchronous pattern (EAP) into task-based asynchronous pattern (TAP)
 date: 2014-05-21T07:45:00Z
 tags:

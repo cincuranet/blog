@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Quick Search and Call Hierarchy in VS 2010
 date: 2009-03-10T15:04:00Z
 tags:

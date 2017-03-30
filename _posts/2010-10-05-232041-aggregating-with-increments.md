@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Aggregating with increments
 date: 2010-10-05T09:54:56Z
 tags:

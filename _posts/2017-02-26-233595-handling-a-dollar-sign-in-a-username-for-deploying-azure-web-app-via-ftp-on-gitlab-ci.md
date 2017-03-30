@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Handling a dollar sign in a username for deploying Azure Web App via FTP on GitLab CI
 date: 2017-02-26T16:45:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Jak (ne)zrušit službu u VSHosting
 date: 2012-07-05T12:19:49Z
 tags:

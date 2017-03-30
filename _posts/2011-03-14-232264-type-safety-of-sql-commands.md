@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Type safety of SQL commands
 date: 2011-03-14T04:03:28Z
 tags:

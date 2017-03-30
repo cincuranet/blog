@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Associations without foreign keys
 date: 2009-10-23T09:00:54Z
 tags:

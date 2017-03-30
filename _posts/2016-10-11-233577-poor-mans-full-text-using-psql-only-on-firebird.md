@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Poor man's full-text search using PSQL only on Firebird
 date: 2016-10-11T16:56:00Z
 tags:

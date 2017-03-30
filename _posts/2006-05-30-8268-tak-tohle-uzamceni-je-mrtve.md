@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   "Tak tohle uzamčení je mrtvé."
 date: 2006-05-30T19:47:00Z
 tags:

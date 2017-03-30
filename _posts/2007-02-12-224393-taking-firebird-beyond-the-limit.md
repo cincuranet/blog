@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Taking Firebird beyond the limit
 date: 2007-02-12T23:12:00Z
 tags:

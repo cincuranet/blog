@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Can the phones be really smart?
 date: 2010-10-18T10:00:20Z
 tags:

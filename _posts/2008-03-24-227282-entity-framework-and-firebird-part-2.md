@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Entity Framework and Firebird (Part 2)
 date: 2008-03-24T21:52:00Z
 tags:

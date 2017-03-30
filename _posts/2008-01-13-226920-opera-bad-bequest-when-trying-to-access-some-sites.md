@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Opera - Bad Request when trying to access some site(s)
 date: 2008-01-13T22:01:00Z
 tags:

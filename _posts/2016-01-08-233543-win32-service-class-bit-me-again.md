@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Win32_Service bit me again
 date: 2016-01-08T14:51:00Z
 tags:

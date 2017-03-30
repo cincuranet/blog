@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   ADO.NET provider 5.7.0.0 for Firebird is ready
 date: 2016-12-12T12:32:00Z
 tags:

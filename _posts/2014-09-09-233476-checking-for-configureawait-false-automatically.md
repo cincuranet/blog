@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Checking for ConfigureAwait(false) automatically
 date: 2014-09-09T11:20:00Z
 tags:

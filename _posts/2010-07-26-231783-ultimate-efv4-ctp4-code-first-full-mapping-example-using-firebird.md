@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Ultimate EFv4 CTP4 Code First (full mapping) example (using Firebird)
 date: 2010-07-26T18:25:28Z
 tags:

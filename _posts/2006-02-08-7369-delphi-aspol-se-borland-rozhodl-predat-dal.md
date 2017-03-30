@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Delphi (aspol.) se Borland rozhodl "předat dál"
 date: 2006-02-08T22:02:00Z
 tags:

@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Firebird 2.5 (final) released
 date: 2010-10-04T08:00:43Z
 tags:

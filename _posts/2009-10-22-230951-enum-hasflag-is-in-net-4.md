@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Enum.HasFlag is in .NET 4
 date: 2009-10-22T14:30:47Z
 tags:

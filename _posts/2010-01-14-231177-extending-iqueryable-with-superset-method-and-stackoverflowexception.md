@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Extending IQueryable with superset method and StackOverflowException
 date: 2010-01-14T11:33:18Z
 tags:

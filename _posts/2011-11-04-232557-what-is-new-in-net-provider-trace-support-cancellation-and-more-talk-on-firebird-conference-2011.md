@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   What is new in .NET provider (trace support, cancellation and more) talk on Firebird Conference 2011
 date: 2011-11-04T11:00:16Z
 tags:

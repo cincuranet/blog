@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   NuoDB's .NET driver with connection pooling
 date: 2013-08-24T06:52:51Z
 tags:

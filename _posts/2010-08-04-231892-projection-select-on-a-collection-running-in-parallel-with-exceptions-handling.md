@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Projection (select) on a collection running in parallel with exceptions handling
 date: 2010-08-04T15:20:52Z
 tags:

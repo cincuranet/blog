@@ -1,5 +1,5 @@
 ---
-title: |
+title: |-
   Seznam klávesových zkratek z mé přednášky "Visual Studio 2010/2012 tips and tricks" na Gopas TechEd 2013
 date: 2013-05-25T09:15:34Z
 tags:
