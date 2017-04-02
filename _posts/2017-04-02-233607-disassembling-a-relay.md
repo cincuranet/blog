@@ -1,6 +1,6 @@
 ---
 title: |-
-  Disassembling the relay
+  Disassembling a relay
 date: 2017-04-02T16:41:00Z
 tags:
   - IoT
