@@ -18,7 +18,9 @@ So when I realized my 4 dollar relay is broken I decided to take it apart (irrev
 Here are some picture (excuse my sloppy soldering job):
 
 [![Relay 01](/i/233607/relay01_thumb.jpg)](/i/233607/relay01.jpg)
+
 [![Relay 02](/i/233607/relay02_thumb.jpg)](/i/233607/relay02.jpg)
+
 [![Relay 03](/i/233607/relay03_thumb.jpg)](/i/233607/relay03.jpg)
 
 To my surprise even the real life "implementation" of relay (alright, this is a cheap 4 dollar relay, not rated for high current, precise switching times, etc.) is pretty much the same as the basic concept. There's a coil, some contacts and one of them is on a preloaded piece of metal acting as a spring. 
