@@ -19,17 +19,13 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
+		$.fancybox.defaults.loop = false;
 		var items = $('article a:has(img)');
 		items.each(function(i, e) {
 			e = $(e);
 			e.attr('rel', 'gallery');
+			e.attr('data-fancybox', 'gallery');
 			e.attr('title', e.find('img').attr('title'));
-		});
-		items.fancybox({
-			openEffect: 'fade',
-			closeEffect: 'fade',
-			nextEffect: 'fade',
-			prevEffect: 'fade'
 		});
 	}
 
