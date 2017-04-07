@@ -30,7 +30,7 @@ static void Test(BigAssStruct param = default(BigAssStruct))
 { }
 ```
 
-Compilation went fine, but execution ended with `System.TypeLoadException: Internal limitation: too many fields.`. Dammit. What now? I tried half of the fields and it executed fine. By trying some "computer numbers" I ended up on `65535` (`2^16 - 1`). Great! I learned something! You can't have a `struct` with more than `65535` fields. And now you know it too! There must be some usage for this knowledge.
+Compilation went fine, but execution ended with `System.TypeLoadException: Internal limitation: too many fields.`. Dammit. What now? I tried half of the fields and it executed fine. By trying some "computer numbers" I ended up on `65535` (`2^16 - 1`). Great! I learned something! You can't have a `struct` with more than 65535 fields and use it (that's important, because it compiled fine). And now you know it too! There must be some usage for this knowledge.
 
 At the end the template looked like this.
 
