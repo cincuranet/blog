@@ -92,7 +92,7 @@ And it executed just fine. I like when something works as expected.
 
 You can cause stack overflow just by "regular" code in C#, plenty of options for that without hitting any limits (like for example [here][7]). But the code is very likely not going to be written completely by hand, because any sane developer would spot the number of fields (either in the `struct` or in general) is going nuts and it should probably be refactored.
 
-Note: Be sure to be in _Release_ configuration (aka all optimizations turned on). Else you might see `System.InvalidProgramException: JIT Compiler encountered an internal limitation.`.
+Note: Be sure to be in _Release_ configuration (all optimizations turned on). Else you might see `System.InvalidProgramException: JIT Compiler encountered an internal limitation.`.
 
 [1]: https://www.wug.cz/zaznamy/322--NET-Memory-Internals-WinDbg
 [2]: https://knowledge-base.havit.cz/author/roberthaken/
