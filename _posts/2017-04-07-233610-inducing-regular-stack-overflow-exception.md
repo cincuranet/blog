@@ -23,7 +23,7 @@ I wasn't sure I'll be able to do it, because I might hit some compiler or [JIT][
 
 Because I can't use recursion (that's what Robert saw already and I think he's not alone ;)), I'm left with a lot of arguments or local variables. Local variables might be, because these will be unused in my code, optimized away by the compiler, I decided to go with arguments.
 
-I started with a simple `struct` and generating a lot of fields. Because generating method with a lot of arguments seemed lame. The struct is a _value type_ thus it will be on the stack and I can use it multiple times if I need more space to be taken. The T4 file comes handy here. Being cocky I started with something like 100 000 fields. What could possibly go wrong...
+I started with a simple `struct` and generating a lot of fields. Because generating method with a lot of arguments seemed lame. The `struct` is a _value type_ thus it will be on the stack and I can use it multiple times if I need more space to be taken. The T4 file comes handy here. Being cocky I started with something like 100 000 fields. What could possibly go wrong...
 
 ```csharp
 static void Test(BigAssStruct param = default(BigAssStruct))
@@ -53,6 +53,9 @@ As you can see I also disabled [warning `0169`][6], else it was slowing down Vis
 Sadly, running this didn't induce `StackOverflowException`. Bring more arguments!
 
 ```text
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+
 partial class Program
 {
     static void Test(
