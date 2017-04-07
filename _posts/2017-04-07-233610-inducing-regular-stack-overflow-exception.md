@@ -1,6 +1,6 @@
 ---
 title: |-
-  Exploiting "regular" stack overflow exception
+  Inducing "regular" stack overflow exception
 date: 2017-04-07T12:43:00Z
 tags:
   - .NET
