@@ -30,7 +30,7 @@ static void Test(BigAssStruct param = default(BigAssStruct))
 { }
 ```
 
-Compilation went fine, but execution ended with `System.TypeLoadException: Internal limitation: too many fields.`. Dammit. What now? I tried half of the fields and it executed fine. By trying some "computer numbers" I ended up on `65535` (`2^16 - 1`). Great! I learned something! You can't have a `struct` with more than 65535 fields and use it (that's important, because it compiled fine). And now you know it too! There must be some usage for this knowledge.
+Compilation went fine, but execution ended with `System.TypeLoadException: Internal limitation: too many fields.`. Dammit. What now? I tried half of the fields and it executed fine. By trying some "computer numbers" I ended up on 65535 (`2^16 - 1`). Great! I learned something! You can't have a `struct` with more than 65535 fields and use it (that's important, because it compiled fine). And now you know it too! There must be some usage for this knowledge.
 
 At the end the template looked like this.
 
@@ -97,6 +97,8 @@ You can cause stack overflow just by "regular" code in C#, plenty of options for
 
 Note: Be sure to be in _Release_ configuration (all optimizations turned on). Else you might see `System.InvalidProgramException: JIT Compiler encountered an internal limitation.`.
 
+> [Part 2 of the story.][8]
+
 [1]: https://www.wug.cz/zaznamy/322--NET-Memory-Internals-WinDbg
 [2]: https://knowledge-base.havit.cz/author/roberthaken/
 [3]: https://en.wikipedia.org/wiki/Call_stack
@@ -104,3 +106,4 @@ Note: Be sure to be in _Release_ configuration (all optimizations turned on). El
 [5]: https://en.wikipedia.org/wiki/Just-in-time_compilation
 [6]: https://msdn.microsoft.com/en-us/library/x7sk421w.aspx
 [7]: {% post_url 0000-00-00-233553-pushing-the-limits-of-state-machines-in-csharp-compiler-or-actually-not %}
+[8]: {% post_url 0000-00-00-233611-inducing-regular-stack-overflow-exception-part-2 %}
