@@ -15,6 +15,7 @@ sitemap: sitemap.xml
 markdown: kramdown
 kramdown:
   input: GFM
+  auto_ids: false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     span:
