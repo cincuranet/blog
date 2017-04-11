@@ -39,4 +39,4 @@ string s = context.test_master.Include("test_details").ToTraceString();
 Easily done, isn't it.
 
 [1]: http://blog.vyvojar.cz/michal
-[2]: {% post_url 0000-00-00-230843-prednaska-ado-net-entity-framework-microsoft-praha %}
+[2]: {% post_url 0000-00-00-230843-prednaska-ado-net-entity-framework-microsoft-praha %}/

@@ -16,6 +16,6 @@ Today the same idea popped in my head again and I decided to quickly jump into a
 Head to [NuoDb.Data.Client's NuGet page][4] and download, install, enjoy.
 
 [1]: http://www.nuodb.com
-[2]: {% post_url 0000-00-00-233385-nuodbs-ado-net-driver-and-entity-framework %}
+[2]: {% post_url 0000-00-00-233385-nuodbs-ado-net-driver-and-entity-framework %}/
 [3]: http://www.nuget.org
 [4]: http://www.nuget.org/packages/NuoDb.Data.Client/

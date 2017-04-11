@@ -17,7 +17,7 @@ And as a reading device? I don't know. I have doubts about the weight, at least 
 
 Would I buy one? For half a price, yes. Would I throw away my Kindle? No. Kindle is so focused on reading; and that's what I like on it.
 
-[1]: {% post_url 0000-00-00-231209-ipad-vs-kindle %}
+[1]: {% post_url 0000-00-00-231209-ipad-vs-kindle %}/
 [2]: http://www.apple.com/ipad/
 [3]: http://twitter.com/PetrKaleta
 [4]: http://en.wikipedia.org/wiki/Paper_size#The_international_standard:_ISO_216

@@ -27,4 +27,4 @@ The rest of work is more pleasant. It's not lightning fast (as I expected for th
 If you have any questions or you want me to test something, let me know, I'll try my best. Oh, for true geeks, I'm running `SSDSA2M160G2GC` (model code) or `SSDSA2MH160G2XX` (product code) Intel X25-M 34nm SATA SSD.
 
 [1]: http://twitter.com/PetrKaleta
-[2]: {% post_url 0000-00-00-231271-new-ssd-intel-x25-m-first-feelings %}
+[2]: {% post_url 0000-00-00-231271-new-ssd-intel-x25-m-first-feelings %}/

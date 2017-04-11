@@ -43,6 +43,6 @@ public int GetSizeTest(Type tuple)
 
 I opted for slightly longer code but more readable code, instead of having it on just two lines.  
 
-[1]: {% post_url 0000-00-00-233605-checking-whether-the-type-is-a-tuple-valuetuple %}
-[2]: {% post_url 0000-00-00-233601-bitten-by-the-magic-behind-valuetuple-with-csharp-7 %}
-[3]: {% post_url 0000-00-00-233566-external-procedures-in-firebird-in-net-done-ish %}
+[1]: {% post_url 0000-00-00-233605-checking-whether-the-type-is-a-tuple-valuetuple %}/
+[2]: {% post_url 0000-00-00-233601-bitten-by-the-magic-behind-valuetuple-with-csharp-7 %}/
+[3]: {% post_url 0000-00-00-233566-external-procedures-in-firebird-in-net-done-ish %}/

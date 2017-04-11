@@ -87,4 +87,4 @@ I'm trying to find first solution file and then C# project file in current direc
 
 And there you have it. Take it, use it, change it. Enjoy.
 
-[1]: {% post_url 0000-00-00-233548-wug-roslyn-analyzatory-kodu-a-code-fixes-zlin %}
+[1]: {% post_url 0000-00-00-233548-wug-roslyn-analyzatory-kodu-a-code-fixes-zlin %}/

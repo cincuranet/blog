@@ -16,5 +16,5 @@ layout: post
 > [Záznam z akce.][3]
 
 [1]: http://wug.cz/brno/akce/888-Tasky-a-await-pekne-od-zakladu-a-jednoduse
-[2]: {% post_url 0000-00-00-233574-wug-tasky-a-await-pekne-od-zakladu-a-jednoduse-praha %}
+[2]: {% post_url 0000-00-00-233574-wug-tasky-a-await-pekne-od-zakladu-a-jednoduse-praha %}/
 [3]: http://wug.cz/zaznamy/350-Tasky-a-await-pekne-od-zakladu-a-jednoduse

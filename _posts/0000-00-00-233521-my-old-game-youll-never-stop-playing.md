@@ -132,5 +132,5 @@ namespace Game
 
 Don't play too hard. ;)
 
-[1]: {% post_url 0000-00-00-233520-dirty-html-to-markdown-converter-code %}
+[1]: {% post_url 0000-00-00-233520-dirty-html-to-markdown-converter-code %}/
 [2]: http://www.fi.muni.cz/

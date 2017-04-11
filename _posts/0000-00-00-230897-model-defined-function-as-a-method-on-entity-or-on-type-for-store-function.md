@@ -52,5 +52,5 @@ I'm especially happy for store function exposed to LINQ. I'm using these in a re
 
 [1]: http://blogs.msdn.com/efdesign/archive/2009/01/07/model-defined-functions.aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.edmfunctionattribute(VS.100).aspx
-[3]: {% post_url 0000-00-00-230843-prednaska-ado-net-entity-framework-microsoft-praha %}
+[3]: {% post_url 0000-00-00-230843-prednaska-ado-net-entity-framework-microsoft-praha %}/
 [4]: http://blogs.msdn.com/efdesign/archive/2008/10/08/edm-and-store-functions-exposed-in-linq.aspx

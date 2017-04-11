@@ -29,4 +29,4 @@ After adding this, your app should be able to use not only "code time" Firebird,
 
 If you have any perception to this topic, let me know!
 
-[1]: {% post_url 0000-00-00-7471-ddex-and-firebird-net-data-provider %}
+[1]: {% post_url 0000-00-00-7471-ddex-and-firebird-net-data-provider %}/

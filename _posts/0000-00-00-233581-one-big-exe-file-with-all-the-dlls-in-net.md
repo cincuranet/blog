@@ -232,4 +232,4 @@ The complete code is available in [this repository][5]. Feel free to contribute 
 [6]: http://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/
 [7]: http://ilspy.net/
 [8]: https://www.postsharp.net/
-[9]: {% post_url 0000-00-00-233585-shortcutting-went-wrong-the-method-needs-to-be-jited-completely %}
+[9]: {% post_url 0000-00-00-233585-shortcutting-went-wrong-the-method-needs-to-be-jited-completely %}/

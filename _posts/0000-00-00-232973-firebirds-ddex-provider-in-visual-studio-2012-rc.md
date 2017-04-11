@@ -16,5 +16,5 @@ Some images to turn you on. :)
 ![image](/i/232973/ddex_fb_vs2012_2.png)
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {% post_url 0000-00-00-228661-ddex-for-firebird-and-visual-studio-2010 %}
+[2]: {% post_url 0000-00-00-228661-ddex-for-firebird-and-visual-studio-2010 %}/
 [3]: http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/DataDesignerExtensibility/ReadMe.txt?view=markup

@@ -28,4 +28,4 @@ _If you have any question or something to try, feel free to ask in comments. I t
 
 [1]: http://www.kindle.com
 [2]: /i/232642/kindle4touch.jpg
-[3]: {% post_url 0000-00-00-232014-kindle-3-after-some-time %}
+[3]: {% post_url 0000-00-00-232014-kindle-3-after-some-time %}/

@@ -81,7 +81,7 @@ public struct SomeData
 
 The reading and writing is little bit limited, as you're in fact dealing with just a bunch of memory, not some structured storage. But if you like working with it directly as stream (or you have some smart wrappers around streams), you can also use method [CreateViewStream][3] instead of [CreateViewAccessor][4] used in my example. These method have some overloads with option to specify also the access rights using [MemoryMappedFileAccess][5], so you can i.e. use CopyOnWrite and any write operations will not be seen by other processes.
 
-[1]: {% post_url 0000-00-00-230550-countdownevent-class %}
+[1]: {% post_url 0000-00-00-230550-countdownevent-class %}/
 [2]: http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles(VS.100).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewstream(VS.100).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.io.memorymappedfiles.memorymappedfile.createviewaccessor(VS.100).aspx

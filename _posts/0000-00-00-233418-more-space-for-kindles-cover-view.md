@@ -14,5 +14,5 @@ But yesterday I was aimlessly jumping in Kindle's menus to kill some time becaus
 
 Still don't know whether I like the _Cover View_ more, but it's for sure more usable now. What view are you using?
 
-[1]: {% post_url 0000-00-00-233049-kindle-5-paperwhite-2nd-round %}
-[2]: {% post_url 0000-00-00-233024-kindle-5-paperwhite-review %}
+[1]: {% post_url 0000-00-00-233049-kindle-5-paperwhite-2nd-round %}/
+[2]: {% post_url 0000-00-00-233024-kindle-5-paperwhite-review %}/

@@ -2,7 +2,7 @@
 heading1_accent: "over"
 heading2: "Jiří {x2} Činčura"
 heading2_accent: "{x2}"
-permalink: "/:title/"
+permalink: "/:title"
 # env TZ=UTC on command line
 #timezone: UTC
 protocol: "https:"

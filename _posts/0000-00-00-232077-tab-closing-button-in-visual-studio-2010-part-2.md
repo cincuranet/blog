@@ -12,4 +12,4 @@ Anyway I'm using Visual Studio 2010 as my daily environment for almost a year an
 
 As the Visual Studio will move forward, we'll probably forget about the old placement. Of course up until some UX designer will move the button to different place. ;)
 
-[1]: {% post_url 0000-00-00-230790-tab-closing-button-in-visual-studio-2010 %}
+[1]: {% post_url 0000-00-00-230790-tab-closing-button-in-visual-studio-2010 %}/

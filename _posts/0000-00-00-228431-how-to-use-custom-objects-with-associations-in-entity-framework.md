@@ -99,6 +99,6 @@ See also: [How to map your custom objects in Entity Framework][2]
 
 _Published on [Databazovy Svet][3]_
 
-[1]: {% post_url 0000-00-00-228036-entity-framework-include-with-func %}
-[2]: {% post_url 0000-00-00-228430-how-to-map-your-custom-objects-in-entity-framework %}
+[1]: {% post_url 0000-00-00-228036-entity-framework-include-with-func %}/
+[2]: {% post_url 0000-00-00-228430-how-to-map-your-custom-objects-in-entity-framework %}/
 [3]: http://dbsvet.cz/

@@ -65,4 +65,4 @@ At the end I have a mixed feelings. I'm glad it was fairly easy to dig out what 
 [6]: http://en.wikipedia.org/wiki/Reflection_(computer_programming)
 [7]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbset.attach(v=vs.113).aspx
 [8]: http://msdn.microsoft.com/en-us/library/gg679233(v=vs.113).aspx
-[9]: {% post_url 0000-00-00-233584-updating-entity-from-dto-without-fetching-it %}
+[9]: {% post_url 0000-00-00-233584-updating-entity-from-dto-without-fetching-it %}/

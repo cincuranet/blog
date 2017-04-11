@@ -81,7 +81,7 @@ Finally, what's with the 65521 or 65520 respectively being limit on number of me
 
 There you have it. Another "regular" C# code that induced stack overflow. This one maybe even little bit more realistic than the previous one. Still nothing that would happen easily by any means.
 
-[1]: {% post_url 0000-00-00-233610-inducing-regular-stack-overflow-exception %}
+[1]: {% post_url 0000-00-00-233610-inducing-regular-stack-overflow-exception %}/
 [2]: https://en.wikipedia.org/wiki/Tail_call
 [3]: https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimplattribute%28v=vs.110%29.aspx
 [4]: #

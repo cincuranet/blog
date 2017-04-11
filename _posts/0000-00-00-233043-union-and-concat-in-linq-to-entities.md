@@ -76,6 +76,6 @@ Both queries are using `UNION ALL`. What's wrong? The key magic is in usage of `
 
 Yes, little bit hidden, but the semantic is kept.
 
-[1]: {% post_url 0000-00-00-227543-union-and-union-all-in-linq-to-sql %}
+[1]: {% post_url 0000-00-00-227543-union-and-union-all-in-linq-to-sql %}/
 [2]: http://msdn.microsoft.com/en-us/library/bb351755.aspx
 [3]: http://msdn.microsoft.com/en-us/library/bb156049.aspx

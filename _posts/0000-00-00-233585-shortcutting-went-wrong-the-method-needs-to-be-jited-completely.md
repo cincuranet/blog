@@ -24,5 +24,5 @@ I'm pretty sure this not the last bug there. It's just embarrassing because I kn
 
 The changes are in already released [version 1.1.0][2].
 
-[1]: {% post_url 0000-00-00-233581-one-big-exe-file-with-all-the-dlls-in-net %}
+[1]: {% post_url 0000-00-00-233581-one-big-exe-file-with-all-the-dlls-in-net %}/
 [2]: https://www.nuget.org/packages/SingleExecutable/1.1.0

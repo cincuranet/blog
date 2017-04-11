@@ -16,5 +16,5 @@ Unless you decrease the "sampling" interval significantly any watch will hit the
 
 So here you are. If you're searching interwebs for the information whether fēnix 2 charges in activity - **yes it does** (and you can fully operate the watch). Hope the 920XT behavior is a glitch not a trend.    
 
-[1]: {% post_url 0000-00-00-233414-charging-garmin-forerunner-while-on-a-long-ultra-run-race %}
+[1]: {% post_url 0000-00-00-233414-charging-garmin-forerunner-while-on-a-long-ultra-run-race %}/
 [2]: http://www.dcrainmaker.com/2014/11/garmin-forerunner-920xt-depth-review.html

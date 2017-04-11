@@ -54,8 +54,8 @@ What the first one is doing is handling the case where C# null (in parameter) ca
 
 If you're not familiar with NULLs in database this can be tricky to handle correctly, especially if you have [negations][4], [All][5]s and [Any][6]s nested inside query. Hence setting this property to `true` can save you hours of debugging and wondering what's going on.
 
-[1]: {% post_url 0000-00-00-231185-be-careful-with-not-conditions-and-nulls-in-linq-when-querying-databases %}
-[2]: {% post_url 0000-00-00-232675-entity-framework-5-0-2 %}
+[1]: {% post_url 0000-00-00-231185-be-careful-with-not-conditions-and-nulls-in-linq-when-querying-databases %}/
+[2]: {% post_url 0000-00-00-232675-entity-framework-5-0-2 %}/
 [3]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/f2kd6eb2.aspx
 [5]: http://msdn.microsoft.com/en-us/library/bb534754.aspx

@@ -50,9 +50,9 @@ end
 go
 ```
 
-[1]: {% post_url 0000-00-00-230669-ado-net-data-service-and-non-public-properties-in-entity-data-model %}
+[1]: {% post_url 0000-00-00-230669-ado-net-data-service-and-non-public-properties-in-entity-data-model %}/
 [2]: http://msdn.microsoft.com/en-us/library/bb896231.aspx
-[3]: {% post_url 0000-00-00-228940-mapping-stored-procedures-that-are-returning-non-entity-result-in-edm %}
+[3]: {% post_url 0000-00-00-228940-mapping-stored-procedures-that-are-returning-non-entity-result-in-edm %}/
 [4]: http://msdn.microsoft.com/en-us/library/cc668788(VS.100).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.servicemodel.web.webgetattribute.aspx
 [6]: http://msdn.microsoft.com/en-us/library/system.data.services.singleresultattribute.aspx

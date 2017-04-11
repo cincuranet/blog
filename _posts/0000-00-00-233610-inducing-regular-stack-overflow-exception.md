@@ -105,5 +105,5 @@ Note: Be sure to be in _Release_ configuration (all optimizations turned on). El
 [4]: https://msdn.microsoft.com/en-us/library/system.stackoverflowexception%28v=vs.110%29.aspx
 [5]: https://en.wikipedia.org/wiki/Just-in-time_compilation
 [6]: https://msdn.microsoft.com/en-us/library/x7sk421w.aspx
-[7]: {% post_url 0000-00-00-233553-pushing-the-limits-of-state-machines-in-csharp-compiler-or-actually-not %}
-[8]: {% post_url 0000-00-00-233611-inducing-regular-stack-overflow-exception-part-2 %}
+[7]: {% post_url 0000-00-00-233553-pushing-the-limits-of-state-machines-in-csharp-compiler-or-actually-not %}/
+[8]: {% post_url 0000-00-00-233611-inducing-regular-stack-overflow-exception-part-2 %}/

@@ -24,4 +24,4 @@ public static IEnumerable<TEntity> Local<TEntity, TObjectContext>(this ObjectCon
 It's using Danny's original one to do the dirty work ;), so it's just a small helper for helper. You can call it like `e.Local<DETAIL, MyEntities>(x => x.Details).ToArray();` instead of `e.Local<DETAIL>("Details").ToArray();`.
 
 [1]: http://blogs.msdn.com/dsimmons/archive/2009/02/21/local-queries.aspx
-[2]: {% post_url 0000-00-00-228036-entity-framework-include-with-func %}
+[2]: {% post_url 0000-00-00-228036-entity-framework-include-with-func %}/

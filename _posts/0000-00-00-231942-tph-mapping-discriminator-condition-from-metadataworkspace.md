@@ -47,7 +47,7 @@ It's written in a compact way. If you want to further dig into partial results, 
 As all the data are not public, I'll not describe how and why it is as it is. I did it using trial and error process. :) Maybe there's other/simpler path. Feel free to use comments if you find one.
 
 [1]: http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataworkspace.aspx
-[2]: {% post_url 0000-00-00-230583-metadataworkspace-in-entity-framework %}
+[2]: {% post_url 0000-00-00-230583-metadataworkspace-in-entity-framework %}/
 [3]: http://msdn.microsoft.com/en-us/library/bb738443.aspx
 [4]: http://en.wikipedia.org/wiki/Reflection_(computer_science)
 [5]: http://msdn.microsoft.com/en-us/library/cyzbs7s2.aspx

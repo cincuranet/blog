@@ -20,4 +20,4 @@ Well, nothing painfull, isn't it? DDEX, Vista (64-bit), Firebird, Visual Studio 
 
 ![image](/i/226062/226062.png)
 
-[1]: {% post_url 0000-00-00-7471-ddex-and-firebird-net-data-provider %}
+[1]: {% post_url 0000-00-00-7471-ddex-and-firebird-net-data-provider %}/

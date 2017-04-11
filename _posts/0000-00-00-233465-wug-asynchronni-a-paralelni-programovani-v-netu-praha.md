@@ -14,4 +14,4 @@ Pro velký úspěch v Brně si zopakujeme [Asynchronní a paralelní programová
 Pokud vás zajímají detaily od křemíku až po kód, přijďte [3.7.2014 od 17:30 na WUG do Prahy][1].
 
 [1]: http://wug.cz/praha/akce/652-Asynchronni-a-paralelni-programovani-v-NETu
-[2]: {% post_url 0000-00-00-233457-wug-asynchronni-a-paralelni-programovani-v-netu %}
+[2]: {% post_url 0000-00-00-233457-wug-asynchronni-a-paralelni-programovani-v-netu %}/
