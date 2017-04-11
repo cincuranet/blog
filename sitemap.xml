@@ -13,7 +13,11 @@ layout: null
 		{% continue %}
 	{% endif %}
 	<url>
-		<loc>{{ site.protocol }}{{ site.address }}{{ doc.url }}/</loc>
+		{% assign slash = '/' %}
+		{% if doc.url == '/' %}
+			{% assign slash = '' %}
+		{% endif %}
+		<loc>{{ site.protocol }}{{ site.address }}{{ doc.url }}{{ slash }}</loc>
 	</url>
 	{% endfor %}
 </urlset> 
