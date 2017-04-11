@@ -1,8 +1,9 @@
-heading1: "tabs ↹ over ␣ ␣ ␣ spaces"
+﻿heading1: "tabs ↹ over ␣ ␣ ␣ spaces"
 heading1_accent: "over"
 heading2: "Jiří {x2} Činčura"
 heading2_accent: "{x2}"
 permalink: "/:title/"
+# env TZ=UTC on command line
 #timezone: UTC
 protocol: "https:"
 address: "//www.tabsoverspaces.com"
