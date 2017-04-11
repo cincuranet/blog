@@ -6,7 +6,7 @@ layout: null
 	<title>{% include title.txt %}</title>
 	<link href="{{ site.protocol }}{{ site.address }}/{{ site.feed }}" rel="self"/>
 	<link href="{{ site.protocol }}{{ site.address }}"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
 	<author>
 		<name>{% include title.txt %}</name>
 	</author>
@@ -16,7 +16,7 @@ layout: null
 	<entry>
 		<title><![CDATA[{{ post.title }}]]></title>
 		<link href="{{ site.protocol }}{{ site.address }}{{ post.url }}/"/>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
 		<id>http:{{ site.address }}{{ post.url }}/</id>
 		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="{{ site.protocol }}{{ site.address }}{{ post.url }}/">{{ site.excerpt_link_name }}</a></p>]]></content>
 	</entry>
