@@ -3,7 +3,7 @@ heading1_accent: "over"
 heading2: "Jiří {x2} Činčura"
 heading2_accent: "{x2}"
 permalink: "/:title/"
-timezone: UTC
+#timezone: UTC
 protocol: "https:"
 address: "//www.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
