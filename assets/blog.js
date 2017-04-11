@@ -1,5 +1,3 @@
----
----
 var blog = (function() {
 	function initLinks() {
 		// should I do only 'article' links?
@@ -54,7 +52,7 @@ var blog = (function() {
 
 	function initFullDisqus() {
 		disqus_config = function() {
-			this.page.url = 'http:{{ site.address }}' + post_url;
+			this.page.url = disqus_url;
 		};
 
 		var d = document, s = d.createElement('script');

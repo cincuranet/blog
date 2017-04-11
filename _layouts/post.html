@@ -1,8 +1,5 @@
 {% include header.html %}
 
-<script type="text/javascript">
-	var post_url = '{{ page.url }}';
-</script>
 <main>
 	<article>
 		<h3>{{ page.title | escape }} <a href="{% include permalink.txt post=page %}" title="Permalink"><span class="fa fa-link"></span></a></h3>
@@ -14,5 +11,9 @@
 <div id="disqus_thread"></div>
 	</div>
 </main>
+
+<script type="text/javascript">
+	var disqus_url = 'http:{{ site.address }}{{ page.url }}';
+</script>
 
 {% include footer.html %}
