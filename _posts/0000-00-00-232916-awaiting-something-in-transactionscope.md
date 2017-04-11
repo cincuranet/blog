@@ -81,7 +81,7 @@ But considering, that the _Other stuff_ **might** have some dependency in data b
 So it's not always wrong, nor some gotcha in compiler. But think it through before using this construct.
 
 [1]: http://msdn.microsoft.com/en-us/library/ms228963.aspx
-[2]: msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx
+[2]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith.aspx
 [4]: http://msdn.microsoft.com/en-us/library/hh191443(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.threading.monitor.aspx

@@ -112,6 +112,6 @@ As I said, nothing difficult, isn't it?
 
 [1]: http://msdn.com/ef
 [2]: http://www.firebirdsql.org
-[3]: www.firebirdsql.org/en/net-provider/
+[3]: http://www.firebirdsql.org/en/net-provider/
 [4]: https://github.com/cincuranet/EF6_Firebird
 [5]: {% post_url 0000-00-00-233472-entity-framework-6-with-firebird-updated %}/
