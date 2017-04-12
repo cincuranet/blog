@@ -194,9 +194,11 @@ article code {
 	word-wrap: break-word;
 }
 
-article div.highlight {
+article pre {
 	margin-left: .5rem;
 	margin-right: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	border-radius: .5rem;
@@ -205,24 +207,10 @@ article div.highlight {
 	overflow: auto;
 }
 
-article div.highlight table {
-	margin-bottom: 0 /*reset*/;
-}
-
-article pre:not(.lineno) {
-	padding-left: .5rem;
-	padding-right: .5rem;
-	-webkit-text-size-adjust: 100%;
-}
-article pre.lineno {
-	border-right: 1px solid #000;
-	text-align: right;
-	padding-left: .5rem;
-	padding-right: .5rem;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+article pre code {
+	padding-left: 0; /* reset */
+	padding-right: 0; /* reset */
+	word-wrap: normal; /* reset */
 }
 
 /* article - images */
@@ -275,17 +263,6 @@ article ul > li:before {
 	content: '\f101';
 	font-size: .9rem;
 	font-family: FontAwesome;
-	padding-right: .5rem;
-}
-
-/* article - table */
-
-article table {
-	line-height: 1.6;
-	margin-bottom: 1em;
-}
-
-article td:first-of-type {
 	padding-right: .5rem;
 }
 
