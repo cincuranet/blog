@@ -166,6 +166,7 @@ article p:last-child {
 article p.meta {
 	font-size: .9rem;
 	font-style: italic;
+	color: #666;
 }
 
 article a {
@@ -185,10 +186,10 @@ article code, article pre {
 	font-family: "Consolas", "Lucida Console", monospace;
 	line-height: 1.2em;
 	font-size: .9rem;
+	background-color: #eee;
 }
 
 article code {
-	background-color: #eeeef2;
 	padding-left: .2rem;
 	padding-right: .2rem;
 	word-wrap: break-word;
@@ -203,7 +204,6 @@ article pre {
 	padding-bottom: .5rem;
 	border-radius: .5rem;
 	margin-bottom: 1em;
-	background-color: #eeeef2;
 	overflow: auto;
 }
 
