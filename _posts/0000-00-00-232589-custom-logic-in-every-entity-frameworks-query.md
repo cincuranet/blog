@@ -35,7 +35,7 @@ partial class Model1Container
 
 And that's it. Not a difficult task. But also note that through [Entity SQL][5] (or i.e. reflection) somebody might be still able to access original entity set and get access to the data. So it's not rock hard security solution.
 
-[1]: {% post_url 0000-00-00-232567-improved-efhelp-hashtag-cooperation-with-efhelp %}/
+[1]: {% include post_id_link.txt id='232567' %}
 [2]: http://msdn.microsoft.com/en-us/library/ee382830.aspx
 [3]: http://msdn.microsoft.com/en-us/library/ee382837.aspx
 [4]: http://msdn.microsoft.com/en-us/library/bb738483.aspx

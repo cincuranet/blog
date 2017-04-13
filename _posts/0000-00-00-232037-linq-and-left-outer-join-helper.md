@@ -23,7 +23,7 @@ internal static IEnumerable<TResult> LeftOuterJoin<TOuter, TLeft, TKey, TResult>
 
 Nothing tricky. You can find this in many examples, I just wrapped it into method and parametrized it a little. Enjoy.
 
-[1]: {% post_url 0000-00-00-232039-interleaving-two-ienumerable-sources %}/
-[2]: {% post_url 0000-00-00-232041-aggregating-with-increments %}/
+[1]: {% include post_id_link.txt id='232039' %}
+[2]: {% include post_id_link.txt id='232041' %}
 [3]: http://en.wikipedia.org/wiki/Language_Integrated_Query
 [4]: http://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join

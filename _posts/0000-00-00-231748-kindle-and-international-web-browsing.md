@@ -10,7 +10,7 @@ Maybe it's related to [new firmware][1], but today I noticed, that my Kindle no 
 
 _What about others? Feel free to use comments to report result in your country._
 
-[1]: {% post_url 0000-00-00-231706-new-kindle-firmware-2-5-reflections %}/
+[1]: {% include post_id_link.txt id='231706' %}
 [2]: http://www.wikipedia.org
 [3]: http://www.amazon.com
 [4]: http://www.id3renamer.com

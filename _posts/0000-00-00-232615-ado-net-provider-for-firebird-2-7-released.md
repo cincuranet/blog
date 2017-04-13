@@ -20,6 +20,6 @@ You can download it at [www.firebirdsql.org][3] or use [NuGet package][4].
 Enjoy!
 
 [1]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10431
-[2]: {% post_url 0000-00-00-232603-improved-command-logging-in-ado-net-provider-for-firebird-part-2 %}/
+[2]: {% include post_id_link.txt id='232603' %}
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://nuget.org/packages/FirebirdSql.Data.FirebirdClient

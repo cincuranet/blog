@@ -23,7 +23,7 @@ Now you don't have to open AppWorld application couple times a week just to see 
 
 I wish to have [arrow keys I was talking about][4] as well. But my hopes are still high, maybe next time. Every little improvement counts.
 
-[1]: {% post_url 0000-00-00-232431-blackberry-playbook-review-after-some-time %}/
+[1]: {% include post_id_link.txt id='232431' %}
 [2]: http://us.blackberry.com/playbook-tablet/
 [3]: http://us.blackberry.com/apps-software/appworld/
-[4]: {% post_url 0000-00-00-232431-blackberry-playbook-review-after-some-time %}/
+[4]: {% include post_id_link.txt id='232431' %}

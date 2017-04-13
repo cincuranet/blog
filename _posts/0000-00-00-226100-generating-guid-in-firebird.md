@@ -24,4 +24,4 @@ GEN_UUID
 CCF4A86789D04F4B8BEE808C5CFCB852
 ```
 
-[1]: {% post_url 0000-00-00-225946-guid-in-firebird %}/
+[1]: {% include post_id_link.txt id='225946' %}

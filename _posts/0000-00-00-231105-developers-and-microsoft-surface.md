@@ -13,5 +13,5 @@ What will happen when you put couple of developers during the conference in fron
 Yep, in every developer there's a child (and in us maybe two) who wants to play.
 
 [1]: http://www.microsoft.com/surface/
-[2]: {% post_url 0000-00-00-231079-jak-jsme-jeli-na-ms-fest %}/
+[2]: {% include post_id_link.txt id='231079' %}
 [3]: /i/231105/surface_house.jpg

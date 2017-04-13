@@ -122,4 +122,4 @@ Although it may look like a lot of work, it isn't. In fact you're pretty fast (t
 [1]: http://thedatafarm.com/blog/data-access/yes-you-can-read-and-probably-write-spatial-data-with-entity-framework/
 [2]: http://msdn.microsoft.com/en-us/library/microsoft.sqlserver.types(SQL.105).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.edmfunctionattribute(VS.100).aspx
-[4]: {% post_url 0000-00-00-230897-model-defined-function-as-a-method-on-entity-or-on-type-for-store-function %}/
+[4]: {% include post_id_link.txt id='230897' %}

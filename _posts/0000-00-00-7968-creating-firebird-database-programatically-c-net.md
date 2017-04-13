@@ -23,4 +23,4 @@ static void CreateFBDatabase(string host, string fileName, string user, string p
 }
 ```
 
-[1]: {% post_url 0000-00-00-7953-creating-firebird-database-programatically-delphi %}/
+[1]: {% include post_id_link.txt id='7953' %}

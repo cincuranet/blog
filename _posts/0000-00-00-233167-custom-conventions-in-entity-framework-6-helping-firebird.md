@@ -113,7 +113,7 @@ Few lines of code and could save you maybe hundreds of lines of code you'd have 
 
 > Note: This code uses custom build FirebirdClient (with current stable one it will not work), because Entity Framework 6 contains some breaking changes for provider writers. I'm working on it and the test builds will be available soon.
 
-[1]: {% post_url 0000-00-00-233174-custom-conventions-in-entity-framework-6-helping-firebird-part-2 %}/
+[1]: {% include post_id_link.txt id='233174' %}
 [2]: http://entityframework.codeplex.com/wikipage?title=Custom%20Conventions
 [3]: http://www.firebirdsql.org
-[4]: {% post_url 0000-00-00-233488-upper-casing-convention-as-sql-likes-it-in-entity-framework-6 %}/
+[4]: {% include post_id_link.txt id='233488' %}

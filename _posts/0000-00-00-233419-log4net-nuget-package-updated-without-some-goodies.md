@@ -15,5 +15,5 @@ Also because I learned something about feedback - basically you only hear from p
 
 Enjoy. Issue pull requests.
 
-[1]: {% post_url 0000-00-00-233416-log4net-nuget-package-updated-with-some-goodies %}/
+[1]: {% include post_id_link.txt id='233416' %}
 [2]: https://github.com/cincuranet/log4net-nuget

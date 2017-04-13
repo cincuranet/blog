@@ -16,6 +16,6 @@ After two weeks of usage I don't have enough samples to judge the battery life. 
 
 The new Kindle still outruns the old one very. So far I didn't find any problem that would make me regretting the buy. I would still recommend it to anyone who loves to read. And a recently discovered [way to get documents into it for free without having to plug it in using cable][3], it's my primary device for _all_ content I read that takes more than minute or two to read.
 
-[1]: {% post_url 0000-00-00-231960-kindle-3rd-edition-3g-wifi-first-sight-review %}/
+[1]: {% include post_id_link.txt id='231960' %}
 [2]: http://www.amazon.com/Kindle-Wireless-Reading-Display-Globally/dp/B003FSUDM4/
-[3]: {% post_url 0000-00-00-231995-sending-documents-wirelessly-to-kindle-for-free %}/
+[3]: {% include post_id_link.txt id='231995' %}

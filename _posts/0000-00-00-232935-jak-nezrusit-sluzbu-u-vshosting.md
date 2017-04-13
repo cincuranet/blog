@@ -18,5 +18,5 @@ Zde bych se rád zastavil. Jedna se o VPS. Zrušení je otázka deseti minut a �
 
 Veřím, že je toto v podmínkách podchyceno. Předpokládal bych ale, že dobra platební morálka, neporušovaní podmínek, snaha o domluvu atp. by zasloužila alespoň odpověď. U VSHosting asi ne... Jasně, prachy mají, tak co.
 
-[1]: {% post_url 0000-00-00-232935-jak-nezrusit-sluzbu-u-vshosting %}/
+[1]: {% include post_id_link.txt id='232935' %}
 [2]: http://www.vshosting.cz/

@@ -32,4 +32,4 @@ Conclusion? The new Kindle is great. I'm happy spending my money on new Kindle. 
 [2]: /i/231960/kindle2_kindle3.jpg
 [3]: http://www.amazon.com/Kindle-Wireless-Reading-Display-Globally/dp/B003FSUDM4/
 [4]: http://webkit.org/
-[5]: {% post_url 0000-00-00-231748-kindle-and-international-web-browsing %}/
+[5]: {% include post_id_link.txt id='231748' %}

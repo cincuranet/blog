@@ -15,6 +15,6 @@ After previous trip to wonderland I was taking extra caution when doing anything
 
 I have a feeling this is not the last confusion I'll face.
 
-[1]: {% post_url 0000-00-00-233538-win32-service-class-and-the-types %}/
+[1]: {% include post_id_link.txt id='233538' %}
 [2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa389390(v=vs.85).aspx
 [3]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa394418(v=vs.85).aspx

@@ -323,7 +323,7 @@ I'm glad I was able to figure out how to map everything without touching databas
 [1]: http://en.wikipedia.org/wiki/Convention_over_configuration
 [2]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
 [3]: http://www.firebirdsql.org/
-[4]: {% post_url 0000-00-00-231382-firebird-and-entity-framework-4-stage-completed %}/
+[4]: {% include post_id_link.txt id='231382' %}
 [5]: http://en.wikipedia.org/wiki/Entity-relationship_model
 [6]: http://en.wikipedia.org/wiki/Object-oriented_programming
 [7]: http://msdn.microsoft.com/en-us/library/bb738472.aspx

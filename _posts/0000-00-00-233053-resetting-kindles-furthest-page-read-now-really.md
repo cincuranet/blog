@@ -12,4 +12,4 @@ About a year ago [I wrote about my solution to keep yourself in sync if you're r
 
 Yes. Now we have a way to clear the marker and start from fresh. Pretty nice.
 
-[1]: {% post_url 0000-00-00-232502-kindles-furthest-page-read-solution-when-reading-book-multiple-times-or-by-more-people %}/
+[1]: {% include post_id_link.txt id='232502' %}

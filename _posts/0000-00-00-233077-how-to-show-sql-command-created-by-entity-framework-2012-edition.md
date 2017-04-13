@@ -34,7 +34,7 @@ class FooBar
 }
 ```
 
-[1]: {% post_url 0000-00-00-227674-how-to-show-sql-command-created-by-entity-framework %}/
+[1]: {% include post_id_link.txt id='227674' %}
 [2]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx
 [3]: http://msdn.microsoft.com/en-us/library/gg679233(v=vs.103).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.infrastructure.dbquery.tostring(v=vs.103).aspx

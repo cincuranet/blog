@@ -41,4 +41,4 @@ It's pretty much same API as with regular `FbBackup` and `FbRestore`, just with 
 
 [1]: http://tracker.firebirdsql.org/browse/DNET-224
 [2]: http://www.firebirdsql.org/en/net-provider/
-[3]: {% post_url 0000-00-00-233284-windows-azure-web-sites-and-firebird %}/
+[3]: {% include post_id_link.txt id='233284' %}

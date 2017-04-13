@@ -16,6 +16,6 @@ Mozilla/5.0 (X11; U; Linux armv7l like Android; en-us) AppleWebKit/531.2+ (KHTML
 
 Probably the interesting piece is `Kindle/3.0+`, so you can distinguish previous [Kindle 3][3].
 
-[1]: {% post_url 0000-00-00-232642-kindle-4-touch-review %}/
+[1]: {% include post_id_link.txt id='232642' %}
 [2]: http://www.instapaper.com
-[3]: {% post_url 0000-00-00-231986-identification-of-kindle-browser %}/
+[3]: {% include post_id_link.txt id='231986' %}

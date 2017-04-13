@@ -71,4 +71,4 @@ namespace port_listen
 }
 ```
 
-[1]: {% post_url 0000-00-00-233470-tcplistener-and-tcpclient-an-easy-to-use-example-part-2 %}/
+[1]: {% include post_id_link.txt id='233470' %}

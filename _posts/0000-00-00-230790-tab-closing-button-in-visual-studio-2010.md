@@ -10,5 +10,5 @@ The new Visual Studio 2010 looks. I'm more interested in .NET FW 4.0 and C# 4 ne
 
 > [Follow-up post.][2]
 
-[1]: {% post_url 0000-00-00-229121-quick-search-and-call-hierarchy-in-vs-2010 %}/
-[2]: {% post_url 0000-00-00-232077-tab-closing-button-in-visual-studio-2010-part-2 %}/
+[1]: {% include post_id_link.txt id='229121' %}
+[2]: {% include post_id_link.txt id='232077' %}

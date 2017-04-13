@@ -37,7 +37,7 @@ And now in mapping you'll just use the expressions.
 
 Nice isn't it? It's separated (kind of - you can't have entity classes in one assembly and the expressions in other) and it's strongly typed.
 
-[1]: {% post_url 0000-00-00-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}/
+[1]: {% include post_id_link.txt id='232147' %}
 [2]: http://blogs.msdn.com/b/adonet/archive/2012/02/09/ef-4-3-released.aspx
 [3]: http://nuget.org/packages/Mono.Linq.Expressions
-[4]: {% post_url 0000-00-00-232147-mapping-private-or-protected-properties-with-code-first-efv4-ctp4 %}/#comments
+[4]: {% include post_id_link.txt id='232147' %}#comments

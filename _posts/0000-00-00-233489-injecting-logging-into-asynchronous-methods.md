@@ -63,7 +63,7 @@ Then I have two implementations of `InterceptAsync`. One for `Task` and one for 
 
 It's really simple at the end. It just took a few tries (and errors) to figure out how to properly replace `ReturnValue` to not break `await`'s infrastructure.
 
-[1]: {% post_url 0000-00-00-233447-injecting-dynamic-logging-as-if-it-was-in-original-class-nlog-castle-dynamic-proxies %}/
+[1]: {% include post_id_link.txt id='233447' %}
 [2]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.asyncstatemachineattribute(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith(v=vs.110).aspx

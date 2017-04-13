@@ -24,5 +24,5 @@ Console.WriteLine(((ObjectQuery)q).ToTraceString());
 
 This will show you the query, that's sent to store you're using (mainly relational database). Neat and easy.
 
-[1]: {% post_url 0000-00-00-233077-how-to-show-sql-command-created-by-entity-framework-2012-edition %}/
+[1]: {% include post_id_link.txt id='233077' %}
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectquery.totracestring.aspx

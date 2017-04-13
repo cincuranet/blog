@@ -89,4 +89,4 @@ It's pretty raw and simple. Doing only what _I_ needed. No tests 8-).
 
 Anyway if you're interested improving it or integrating it into some of these big refactoring packages, be my guest. Just please keep the credits.
 
-[1]: {% post_url 0000-00-00-233523-checking-for-configureawait-false-as-visual-studio-2015-analyzer %}/
+[1]: {% include post_id_link.txt id='233523' %}

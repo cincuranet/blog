@@ -16,7 +16,7 @@ A kromě toho integrace se slovníkem (implicitně [The New Oxford American Dict
 
 Asi nemusím připomínat, že 99% věcí v nabídce Kindle Storu je anglicky psaných. Nicméně třeba nabídka ne-USA novin znatelně roste. Doufejme, že i vydavatelství z Čech se zapojí. Mimochodem, pokud titul není pro Kindle dostupný, leč je v papírové verzi dostupný, je doporučeno "prudit" v diskuzi. Odezvy jsou, údajně, předávány vydavatelstvím, které následně mohou Kindle verzi schválit.
 
-[1]: {% post_url 0000-00-00-231062-new-firmware-2-3-for-kindle %}/
-[2]: {% post_url 0000-00-00-231027-fbcon-09-live-feed %}/
+[1]: {% include post_id_link.txt id='231062' %}
+[2]: {% include post_id_link.txt id='231027' %}
 [3]: http://www.amazon.com
 [4]: http://en.wikipedia.org/wiki/New_Oxford_American_Dictionary

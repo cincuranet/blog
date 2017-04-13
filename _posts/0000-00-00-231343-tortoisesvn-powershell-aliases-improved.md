@@ -15,4 +15,4 @@ function fn_update($path = ".") {tortoiseproc /command:update /path:$path}
 function fn_commit($path = ".") {tortoiseproc /command:commit /path:$path}
 ```
 
-[1]: {% post_url 0000-00-00-231239-managing-tortoisesvn-commit-and-update-from-command-line-and-creating-powershell-alias %}/
+[1]: {% include post_id_link.txt id='231239' %}

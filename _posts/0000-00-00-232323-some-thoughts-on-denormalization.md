@@ -31,4 +31,4 @@ Because you write this only once (yes, probably you have to rename some table ne
 My head-split is solved. :)
 
 [1]: http://www.firebirdsql.org
-[2]: {% post_url 0000-00-00-232347-tokenize-string-in-sql-firebird-syntax %}/
+[2]: {% include post_id_link.txt id='232347' %}

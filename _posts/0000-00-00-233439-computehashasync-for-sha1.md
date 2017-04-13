@@ -40,7 +40,7 @@ public static async Task<byte[]> ComputeHashAsync(this SHA1 sha1, Stream inputSt
 
 Because the `TransformBlock` and `TransformFinalBlock` methods are actually defined on [`HashAlgorithm`][5] this might work for any derived class like i.e. [`MD5`][6]. But I haven't tested it. Other classes might need also "special" calls before or after.
 
-[1]: {% post_url 0000-00-00-233435-sha1manaded-with-asynchronous-computehash %}/
+[1]: {% include post_id_link.txt id='233435' %}
 [2]: http://msdn.microsoft.com/en-us/library/e7hyyd4e(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.transformblock(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.security.cryptography.hashalgorithm.transformfinalblock(v=vs.110).aspx

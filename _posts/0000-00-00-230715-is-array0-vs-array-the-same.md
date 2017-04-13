@@ -55,4 +55,4 @@ resulted in this IL:
 
 As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.
 
-[1]: {% post_url 0000-00-00-224879-concatenating-string-during-compile %}/
+[1]: {% include post_id_link.txt id='224879' %}

@@ -106,4 +106,4 @@ As usual the decision is on you.
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.monitor.enter(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.monitor.exit(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/dd289498(v=vs.110).aspx
-[6]: {% post_url 0000-00-00-233485-how-slow-the-lock-statement-actually-is-part-2 %}/
+[6]: {% include post_id_link.txt id='233485' %}

@@ -14,4 +14,4 @@ layout: post
 You can download it from [FirebirdSQL.org site][1].
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {{ site.url}}{% post_url 0000-00-00-233441-ddex-provider-3-0-1-for-firebird-released %}/
+[2]: {{ site.url}}{% include post_id_link.txt id='233441' %}

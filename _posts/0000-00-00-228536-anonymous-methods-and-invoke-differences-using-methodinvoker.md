@@ -72,4 +72,4 @@ So what to use? I think it's question of personal preferences (and just to be co
 
 _What's your preference?_
 
-[1]: {% post_url 0000-00-00-8310-synchronizationcontext-class-how-to-use-it %}/
+[1]: {% include post_id_link.txt id='8310' %}

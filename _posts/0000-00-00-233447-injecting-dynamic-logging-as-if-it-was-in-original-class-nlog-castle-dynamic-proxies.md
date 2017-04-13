@@ -65,4 +65,4 @@ Few lines of code and the work is done.
 [3]: http://nlog-project.org/
 [4]: http://en.wikipedia.org/wiki/Aspect-oriented_programming
 [5]: http://docs.castleproject.org/Windsor.Registering-Interceptors-ProxyOptions.ashx
-[6]: {% post_url 0000-00-00-233489-injecting-logging-into-asynchronous-methods %}/
+[6]: {% include post_id_link.txt id='233489' %}

@@ -42,6 +42,6 @@ Although a lot of articles mentions this with respect to video, it applies to au
 
 Now I can nicely enjoy my music and relax. 
 
-[1]: {% post_url 0000-00-00-233491-tp-link-tl-wn723n-on-raspberry-pi-plus-b-with-openelec %}/
+[1]: {% include post_id_link.txt id='233491' %}
 [2]: http://kodi.wiki/view/HOW-TO:Modify_the_video_cache#Cache_settings
 [3]: http://kodi.wiki/view/Advancedsettings.xml

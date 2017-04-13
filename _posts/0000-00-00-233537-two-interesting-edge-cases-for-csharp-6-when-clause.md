@@ -90,4 +90,4 @@ I was kind of expecting it to behave like this and it seems to be reasonable beh
 
 I like poking into (any) language or system from different angles and discover how it behaves and what was the reasoning behind that behavior.
 
-[1]: {% post_url 0000-00-00-233536-ms-fest-2015-praha %}/
+[1]: {% include post_id_link.txt id='233536' %}

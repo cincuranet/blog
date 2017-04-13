@@ -16,4 +16,4 @@ public void SortByPosition(bool descending)
 }
 ```
 
-[1]: {% post_url 0000-00-00-224878-sortovani-v-genericke-kolekci-anonymni-metodou %}/
+[1]: {% include post_id_link.txt id='224878' %}

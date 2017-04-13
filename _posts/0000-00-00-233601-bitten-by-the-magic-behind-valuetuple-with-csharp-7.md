@@ -33,5 +33,5 @@ It makes perfect sense, given the behavior I described above. It's just somethin
 
 [1]: https://www.nuget.org/packages/System.ValueTuple/
 [2]: https://blogs.msdn.microsoft.com/dotnet/2017/03/09/new-features-in-c-7-0/
-[3]: {% post_url 0000-00-00-233566-external-procedures-in-firebird-in-net-done-ish %}/
+[3]: {% include post_id_link.txt id='233566' %}
 [4]: https://msdn.microsoft.com/en-us/library/system.tuple%28v=vs.110%29.aspx

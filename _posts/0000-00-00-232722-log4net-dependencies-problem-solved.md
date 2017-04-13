@@ -15,7 +15,7 @@ So today I pushed version 2.0.0, which is actually 1.2.11 with new keys, and 1.2
 
 Fire is quenched, hopefully.
 
-[1]: {% post_url 0000-00-00-232619-log4net-back-alive-on-nuget %}/
+[1]: {% include post_id_link.txt id='232619' %}
 [2]: http://semver.org/
-[3]: {% post_url 0000-00-00-232619-log4net-back-alive-on-nuget %}/
+[3]: {% include post_id_link.txt id='232619' %}
 [4]: http://nuget.org/

@@ -12,4 +12,4 @@ Tools > Options > Text Editor > Track Changes.
 
 Používá někdo z vás tuto "lištu" vedomě?
 
-[1]: {% post_url 0000-00-00-8358-navigace-v-kodu %}/
+[1]: {% include post_id_link.txt id='8358' %}

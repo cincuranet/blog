@@ -24,4 +24,4 @@ Known Issue: When you select "Update Model from Database" in Visual Studio you g
 Anyway for testing, I recommend you to use EdmGen (or [EdmGen2][2]), it's faster and more controlled. :)
 
 [1]: http://netprovider.cincura.net/
-[2]: {% post_url 0000-00-00-227892-edmgen-on-steroids-edmgen2 %}/
+[2]: {% include post_id_link.txt id='227892' %}

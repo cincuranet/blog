@@ -17,7 +17,7 @@ Because I believe it's important to have easy way to see (and not only for Entit
 Hope you find this useful as I do.
 
 [1]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
-[2]: {% post_url 0000-00-00-230290-firebirdclient-2-5-final-released %}/
+[2]: {% include post_id_link.txt id='230290' %}
 [3]: http://www.microsoft.com/visualstudio/en-us/products/2010-editions
 [4]: http://msdn.microsoft.com/en-us/library/dd264915.aspx
 [5]: http://www.firebirdsql.org

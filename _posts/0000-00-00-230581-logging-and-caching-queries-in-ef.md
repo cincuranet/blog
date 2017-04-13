@@ -17,5 +17,5 @@ I was thinking about creating some wrapped provider, but this is better (and wit
 
 [1]: http://blogs.msdn.com/jkowalski/archive/2009/06/11/tracing-and-caching-in-entity-framework-available-on-msdn-code-gallery.aspx
 [2]: http://code.msdn.com/EFProviderWrappers
-[3]: {% post_url 0000-00-00-227674-how-to-show-sql-command-created-by-entity-framework %}/
+[3]: {% include post_id_link.txt id='227674' %}
 [4]: http://www.firebirdsql.org/index.php?op=files&id=netprovider

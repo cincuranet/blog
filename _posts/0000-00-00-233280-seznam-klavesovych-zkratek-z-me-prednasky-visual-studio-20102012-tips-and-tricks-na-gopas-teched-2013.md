@@ -68,5 +68,5 @@ Shift-Alt-F11
 >
 ```
 
-[1]: {% post_url 0000-00-00-233262-gopas-teched-2013 %}/
+[1]: {% include post_id_link.txt id='233262' %}
 [2]: http://www.teched.cz

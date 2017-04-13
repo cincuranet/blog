@@ -32,4 +32,4 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2] and [Entity
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
 [4]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?styleName=Text&projectId=10003&version=10783
-[5]: {% post_url 0000-00-00-233572-compression-support-in-firebirdclient-beta %}/
+[5]: {% include post_id_link.txt id='233572' %}
