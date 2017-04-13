@@ -116,7 +116,7 @@ Anyway I believe you should first try wrapping [asynchronous programming model (
 
 If you're stuck with EAP, I hope the code above helps.
 
-[1]: {% include post_id_link.txt id="233457" %}
+[1]: {% include post_id_link id="233457" %}
 [2]: http://msdn.microsoft.com/en-us/library/ms228969(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/hh873175(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/dd449174(v=vs.110).aspx

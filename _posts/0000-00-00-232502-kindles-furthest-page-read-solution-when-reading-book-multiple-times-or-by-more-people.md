@@ -16,6 +16,6 @@ So my solution works like this. If stop reading, I put there a bookmark. When I 
 
 Most of the time I'm reading the book only once, and then looking for specific passages, but sometimes it's just worth read it again. Knowing where I ended bothered me and asking support to reset it, isn't in my opinion good experience. But I think bookmarks are solving it pretty well.
 
-[1]: {% include post_id_link.txt id="233053" %}
+[1]: {% include post_id_link id="233053" %}
 [2]: http://www.kindle.com
 [3]: http://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=518316

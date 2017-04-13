@@ -8,8 +8,8 @@ layout: post
 ---
 About a year ago [I wrote about my solution to keep yourself in sync if you're reading some book once more][1]. The root cause of the problem was inability to reset the "furthest page read" marker easily. Today I was checking something in my _Your Kindle Library_ section of my Amazon's account and found this:
 
-![image]({% include post_i_link.txt post=page name="reset_fpr.png" %})
+![image]({% include post_i_link post=page name="reset_fpr.png" %})
 
 Yes. Now we have a way to clear the marker and start from fresh. Pretty nice.
 
-[1]: {% include post_id_link.txt id="232502" %}
+[1]: {% include post_id_link id="232502" %}

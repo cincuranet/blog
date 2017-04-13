@@ -91,5 +91,5 @@ It's really nothing special. I just replaced the thread with asynchronous calls.
 
 Maybe I'll put a task for 2023 to write an - at that time current - version.
 
-[1]: {% include post_id_link.txt id="6188" %}
+[1]: {% include post_id_link id="6188" %}
 [2]: http://msdn.microsoft.com/en-us/library/ms228963(v=vs.110).aspx

@@ -17,7 +17,7 @@ Few weeks ago on my "parallel-async-threading" deep dive course somebody asked a
 
 One option is to create a conditional breakpoint. What's conditional breakpoint? It's a breakpoint that has a boolean condition attached and before it breaks (or not) the condition is evaluated. This has been in Visual Studio for years. Right clicking on a regular breakpoint shows you a menu, where you can select such item and then set it up. Something like on this picture.
 
-![Conditional breakpoint]({% include post_i_link.txt post=page name="conditional_breakpoint.png" %})
+![Conditional breakpoint]({% include post_i_link post=page name="conditional_breakpoint.png" %})
 
 I'm using the [`Thread.CurrentThread.ManagedThreadId` property][1] to break only on selected thread. For tasks I can use [`Task.CurrentId` value][2].
 

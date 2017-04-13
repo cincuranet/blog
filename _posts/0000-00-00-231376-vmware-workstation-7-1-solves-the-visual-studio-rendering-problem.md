@@ -14,5 +14,5 @@ The [VMWare Workstation][1] [had a problem with Visual Studio 2010 rendering (in
 Recently I updated my virtual machine (VMWare Workstation 7.1 + new VMWare Tools + turning graphic acceleration on) with Visual Studio 2010 and the rendering is correct. Finally I'll enjoy the graphic card accelerated machine and lighten up CPU.
 
 [1]: http://www.vmware.com/products/workstation/
-[2]: {% include post_id_link.txt id="231002" %}
+[2]: {% include post_id_link id="231002" %}
 [3]: http://www.vmware.com/support/ws71/doc/releasenotes_ws71.html

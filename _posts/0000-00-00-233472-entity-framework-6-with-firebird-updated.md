@@ -33,7 +33,7 @@ And that's it. I would say making EDMX work needs same amount of work as Code Fi
 
 If you'd like to see the both methods in action, check the [`EF6_Firebird` repository][4]. Code First "just works". For EDMX you need to make sure your DDEX provider for Firebird is installed and working.
 
-[1]: {% include post_id_link.txt id="233471" %}
+[1]: {% include post_id_link id="233471" %}
 [2]: http://msdn.com/ef
 [3]: http://www.firebirdsql.org/en/additional-downloads/
 [4]: https://github.com/cincuranet/EF6_Firebird

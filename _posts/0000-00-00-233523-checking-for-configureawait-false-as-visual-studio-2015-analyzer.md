@@ -23,11 +23,11 @@ The code fixes were new and I found them harder to implement. Not only you need 
 
 Here's how it looks like in real.
 
-![image]({% include post_i_link.txt post=page name="cac.png" %})
+![image]({% include post_i_link post=page name="cac.png" %})
 
 Also some a small caveat. There's a `ConfigureAwaitChecker` package available. It's a fork of my original code (using the console app, just plugged into Visual Studio). I think it would be nice to use this package ID (even though the name containing "Analyzer" explicitly states what it is - I don't know, let me know) I tried contacting the author already few weeks ago, but so far no reply. 
 
-[1]: {% include post_id_link.txt id="233476" %}
+[1]: {% include post_id_link id="233476" %}
 [2]: https://github.com/dotnet/roslyn
 [3]: https://msdn.microsoft.com/en-us/magazine/Dn879356.aspx
 [4]: http://www.pluralsight.com/courses/vs-2015-diagnostic-analyzers-first-look

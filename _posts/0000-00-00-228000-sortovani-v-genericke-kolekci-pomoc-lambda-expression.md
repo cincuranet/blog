@@ -16,4 +16,4 @@ public void SortByPosition(bool descending)
 }
 ```
 
-[1]: {% include post_id_link.txt id="224878" %}
+[1]: {% include post_id_link id="224878" %}

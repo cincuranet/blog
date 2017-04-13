@@ -11,4 +11,4 @@ What's better than finding what you need to fix for upcoming release of product?
 
 Check this out. Nice, isn't it? :-)
 
-![image]({% include post_i_link.txt post=page name="228661.png" %})
+![image]({% include post_i_link post=page name="228661.png" %})

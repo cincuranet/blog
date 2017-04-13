@@ -14,7 +14,7 @@ Po vzájemné dohodě jsme se rozhodli „apartmány" opustit a najít něco za 
 
 Ranní startovací kofein a mohli jsme začít. Večerní D1 jsme přežili všichni ve zdraví, neusnul jsem. Poučení? Pro příště nenavštěvovat „Hostel Strahov" a nebo si zajistit něco sám. I v tomto čase v Praze (v předstihu) se za přibližně dvojnásobek „naší" ceny dá najít útulný hotel nedaleko centra včetně snídaně.
 
-[1]: {% include post_id_link.txt id="231023" %}
+[1]: {% include post_id_link id="231023" %}
 [2]: http://www.vbnet.cz/blog-clanek--320.aspx
 [3]: http://twitter.com/PetrKaleta
 [4]: http://www.facebook.com/KamilRT

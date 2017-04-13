@@ -15,7 +15,7 @@ So today I pushed version 2.0.0, which is actually 1.2.11 with new keys, and 1.2
 
 Fire is quenched, hopefully.
 
-[1]: {% include post_id_link.txt id="232619" %}
+[1]: {% include post_id_link id="232619" %}
 [2]: http://semver.org/
-[3]: {% include post_id_link.txt id="232619" %}
+[3]: {% include post_id_link id="232619" %}
 [4]: http://nuget.org/

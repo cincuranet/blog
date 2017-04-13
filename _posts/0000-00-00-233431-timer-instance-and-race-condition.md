@@ -46,5 +46,5 @@ timer.Change(TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 And what about you? Do you do the "safe" assignment or assign directly?
 
 [1]: http://msdn.microsoft.com/en-us/library/system.threading.timer(v=vs.110).aspx
-[2]: {% include post_id_link.txt id="233425" %}
-[3]: {% include post_id_link.txt id="232782" %}
+[2]: {% include post_id_link id="233425" %}
+[3]: {% include post_id_link id="232782" %}

@@ -12,6 +12,6 @@ Today I decided to move [updated EdmGen2][1] sources from [BitBucket][2] to [Git
 
 Feel free to contribute, issue pull requests, ...
 
-[1]: {% include post_id_link.txt id="233311" %}
+[1]: {% include post_id_link id="233311" %}
 [2]: https://bitbucket.org/
 [3]: https://github.com/cincuranet/EdmGen2

@@ -14,4 +14,4 @@ Paralelizmus, souběžnost, zamykání atp. Baví mě to. A rád o tom povídám
 Pokud vás zajímají detaily od křemíku až po kód, přijďte [25.2.2016 od 17:00 na WUG do Ostravy][1].
 
 [1]: http://wug.cz/ostrava/akce/776-Asynchronni-a-paralelni-programovani-v-NETu
-[2]: {% include post_id_link.txt id="233480" %}
+[2]: {% include post_id_link id="233480" %}

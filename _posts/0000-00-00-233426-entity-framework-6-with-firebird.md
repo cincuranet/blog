@@ -114,4 +114,4 @@ As I said, nothing difficult, isn't it?
 [2]: http://www.firebirdsql.org
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: https://github.com/cincuranet/EF6_Firebird
-[5]: {% include post_id_link.txt id="233472" %}
+[5]: {% include post_id_link id="233472" %}

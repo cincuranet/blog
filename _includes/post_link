@@ -1,0 +1,1 @@
+{% assign id = include.post.url | remove: "/" | split: "-" | first %}{% include post_id_link id=id %}

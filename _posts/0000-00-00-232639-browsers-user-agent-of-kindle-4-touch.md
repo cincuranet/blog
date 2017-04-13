@@ -16,6 +16,6 @@ Mozilla/5.0 (X11; U; Linux armv7l like Android; en-us) AppleWebKit/531.2+ (KHTML
 
 Probably the interesting piece is `Kindle/3.0+`, so you can distinguish previous [Kindle 3][3].
 
-[1]: {% include post_id_link.txt id="232642" %}
+[1]: {% include post_id_link id="232642" %}
 [2]: http://www.instapaper.com
-[3]: {% include post_id_link.txt id="231986" %}
+[3]: {% include post_id_link id="231986" %}

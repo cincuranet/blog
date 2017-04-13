@@ -49,4 +49,4 @@ public bool IsTupleTest(Type tuple)
 There's one small catch, though. You can't really create a `ValueTuple<T>` (on a top level) using C# `(T)` syntax, because for the compiler the `(` and `)` are just plain parentheses, but I consider that for me as a valid tuple anyway.
 
 [1]: https://www.nuget.org/packages/System.ValueTuple/
-[2]: {% include post_id_link.txt id="233601" %}
+[2]: {% include post_id_link id="233601" %}

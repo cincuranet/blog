@@ -16,5 +16,5 @@ The other new feature is support for count. You can simply ask Astoria to return
 Looking forward to see the new version of Astoria, [Astoria "offline"][3] and Entity Framework v4 all released.
 
 [1]: http://blogs.msdn.com/adonet/archive/2009/09/01/ado-net-data-services-v1-5-ctp2-now-available.aspx
-[2]: {% include post_id_link.txt id="230674" %}
-[3]: {% include post_id_link.txt id="230768" %}
+[2]: {% include post_id_link id="230674" %}
+[3]: {% include post_id_link id="230768" %}

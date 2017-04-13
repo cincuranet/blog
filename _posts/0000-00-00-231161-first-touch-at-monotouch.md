@@ -10,7 +10,7 @@ layout: post
 ---
 Looks like I joined the prominent group of iPhone developers. Friend of mine, [Meap][1], also experienced iPhone developer should be scared. This is what I did in almost no time.
 
-[![image]({% include post_i_link.txt post=page name="iphone_jirirocks_thumb.jpg" %})][2]
+[![image]({% include post_i_link post=page name="iphone_jirirocks_thumb.jpg" %})][2]
 
 OK, this application sucks, it's doing nothing and looks ... well looks how it looks. :D
 

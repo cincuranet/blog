@@ -50,9 +50,9 @@ end
 go
 ```
 
-[1]: {% include post_id_link.txt id="230669" %}
+[1]: {% include post_id_link id="230669" %}
 [2]: http://msdn.microsoft.com/en-us/library/bb896231.aspx
-[3]: {% include post_id_link.txt id="228940" %}
+[3]: {% include post_id_link id="228940" %}
 [4]: http://msdn.microsoft.com/en-us/library/cc668788(VS.100).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.servicemodel.web.webgetattribute.aspx
 [6]: http://msdn.microsoft.com/en-us/library/system.data.services.singleresultattribute.aspx

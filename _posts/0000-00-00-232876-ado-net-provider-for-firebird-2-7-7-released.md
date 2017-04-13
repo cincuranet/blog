@@ -26,7 +26,7 @@ The functionality is mainly about:
 
 You can find all details in [tracker][2] and download it from [website][3] or [NuGet][4].
 
-[1]: {% include post_id_link.txt id="232871" %}
+[1]: {% include post_id_link id="232871" %}
 [2]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10466
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://nuget.org/packages/firebirdsql.data.firebirdclient

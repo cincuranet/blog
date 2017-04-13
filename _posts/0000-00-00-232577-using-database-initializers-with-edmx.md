@@ -12,7 +12,7 @@ Directly you can't. Because you need [DbContext][1] to create [IDatabaseInitiali
 
 On the other hand, there's a good news, kind of. There's a template (from Microsoft) to generate `DbContext` and classes from EDMX file.
 
-![image]({% include post_i_link.txt post=page name="dbcontext_t4_template_item.png" %})
+![image]({% include post_i_link post=page name="dbcontext_t4_template_item.png" %})
 
 With this template you will get all you need to start using database initializers. Only problem is, that you don't have configurations generated from EDMX. But there's also 3<sup>rd</sup> template, that can generate configurations (I haven't tested it exhaustively).
 

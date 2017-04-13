@@ -13,7 +13,7 @@ Today, after some days/weeks, I finally created some noticable (= not only inter
 
 Now, the provider is able to use, map, call, ... stored procedures (and functions [very experimental]). You can select stored procedures from database, map these to some operations in EF, create "function imports" etc. You can see this working on picture:
 
-![image]({% include post_i_link.txt post=page name="227904.png" %})
+![image]({% include post_i_link post=page name="227904.png" %})
 
 I have not tested all available options of calling etc. SPs, so feel free to report any problems with it. Current version can be downloaded from [netprovider.cincura.net (aka weekly builds)][1].
 
@@ -24,4 +24,4 @@ Known Issue: When you select "Update Model from Database" in Visual Studio you g
 Anyway for testing, I recommend you to use EdmGen (or [EdmGen2][2]), it's faster and more controlled. :)
 
 [1]: http://netprovider.cincura.net/
-[2]: {% include post_id_link.txt id="227892" %}
+[2]: {% include post_id_link id="227892" %}

@@ -17,27 +17,27 @@ Following screens will walk you through the application - it's a simple [eBay][4
 
 Home screen - before starting the application:
 
-[![Home screen - before starting the application]({% include post_i_link.txt post=page name="playbook_1app_01_thumb.jpg" %})][5]
+[![Home screen - before starting the application]({% include post_i_link post=page name="playbook_1app_01_thumb.jpg" %})][5]
 
 Application is starting:
 
-[![Application is starting]({% include post_i_link.txt post=page name="playbook_1app_02_thumb.jpg" %})][6]
+[![Application is starting]({% include post_i_link post=page name="playbook_1app_02_thumb.jpg" %})][6]
 
 Ready to do the search:
 
-[![Ready to do the search]({% include post_i_link.txt post=page name="playbook_1app_03_thumb.jpg" %})][7]
+[![Ready to do the search]({% include post_i_link post=page name="playbook_1app_03_thumb.jpg" %})][7]
 
 Search in progress (take notice of super cool throbber 8)):
 
-[![Search in progress (take notice of super cool throbber 8))]({% include post_i_link.txt post=page name="playbook_1app_04_thumb.jpg" %})][8]
+[![Search in progress (take notice of super cool throbber 8))]({% include post_i_link post=page name="playbook_1app_04_thumb.jpg" %})][8]
 
 Results...:
 
-[![Results...]({% include post_i_link.txt post=page name="playbook_1app_05_thumb.jpg" %})][9]
+[![Results...]({% include post_i_link post=page name="playbook_1app_05_thumb.jpg" %})][9]
 
 Application while switching to another application:
 
-[![Application while switching to another application]({% include post_i_link.txt post=page name="playbook_1app_06_thumb.jpg" %})][10]
+[![Application while switching to another application]({% include post_i_link post=page name="playbook_1app_06_thumb.jpg" %})][10]
 
 Cannot say I like the development process, but who knows where it ends (I end).
 

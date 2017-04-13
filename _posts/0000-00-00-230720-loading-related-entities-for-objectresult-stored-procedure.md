@@ -96,8 +96,8 @@ Anyway, hope this helps and hope I find why the associations are not wired up pr
 
 [1]: http://msdn.microsoft.com/en-us/library/bb896279.aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.dataclasses.irelatedend.load.aspx
-[3]: {% include post_id_link.txt id="230583" %}
-[4]: {% include post_id_link.txt id="229660" %}
+[3]: {% include post_id_link id="230583" %}
+[4]: {% include post_id_link id="229660" %}
 [5]: http://msdn.microsoft.com/en-us/library/bb345303.aspx
 [6]: http://msdn.microsoft.com/en-us/library/bb739113.aspx
 [7]: http://social.msdn.microsoft.com/Forums/en-US/adodotnetentityframework/thread/d2dbc9fa-6574-4cb7-a98d-900a2d449f66

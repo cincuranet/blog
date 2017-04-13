@@ -3,12 +3,12 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{% include title.txt %}</title>
+	<title>{% include title %}</title>
 	<link href="{{ site.protocol }}{{ site.address }}/{{ site.feed }}" rel="self"/>
 	<link href="{{ site.protocol }}{{ site.address }}"/>
 	<updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
 	<author>
-		<name>{% include title.txt %}</name>
+		<name>{% include title %}</name>
 	</author>
 	<id>http:{{ site.address }}/</id>
 

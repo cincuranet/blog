@@ -16,7 +16,7 @@ It's stupidly simple. It adds new _Close and Delete Solution_ item into _File_ m
 
 You can see it in action here (yes, it's an animated gif :)):
 
-![CloseAndDelete]({% include post_i_link.txt post=page name="close_and_delete.gif" %})
+![CloseAndDelete]({% include post_i_link post=page name="close_and_delete.gif" %})
 
 I tested it on Visual Studio 2017, because that's what I have and use. Feel free to test it on previous versions and submit PR (fixing bugs is welcome as well ;)), the [complete code is on my GitHub][2].
 

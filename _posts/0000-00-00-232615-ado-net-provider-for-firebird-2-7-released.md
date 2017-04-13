@@ -20,6 +20,6 @@ You can download it at [www.firebirdsql.org][3] or use [NuGet package][4].
 Enjoy!
 
 [1]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10431
-[2]: {% include post_id_link.txt id="232603" %}
+[2]: {% include post_id_link id="232603" %}
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://nuget.org/packages/FirebirdSql.Data.FirebirdClient
