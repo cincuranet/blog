@@ -2,7 +2,7 @@
 
 <main>
 	<article>
-		<h3>{{ page.title | escape }} <a href="{% include permalink.txt post=page %}" rel="bookmark" title="Permalink"><span class="fa fa-link"></span></a></h3>
+		<h3>{{ page.title | escape }} <a href="{% include permalink.txt post=page %}" rel="bookmark nofollow" title="Permalink"><span class="fa fa-link"></span></a></h3>
 		<p class="meta">Published <span title="{{ page.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ page.date | date: "%-d %b %Y" }}</span> in {{ page.tags | sort | array_to_sentence_string }}</p>
 {{ content }}
 	</article>
