@@ -222,7 +222,7 @@ article img {
 }
 
 
-article a[rel~="gallery"] {
+article a[data-img-gallery] {
 	cursor: zoom-in;
 }
 

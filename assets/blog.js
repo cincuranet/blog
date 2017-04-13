@@ -25,7 +25,7 @@ var blog = (function() {
 		var items = $('article a:has(img)');
 		items.each(function(i, e) {
 			e = $(e);
-			e.attr('rel', 'gallery');
+			e.attr('data-img-gallery', '');
 			e.attr('data-fancybox', 'gallery');
 			e.attr('title', e.find('img').attr('title'));
 		});
