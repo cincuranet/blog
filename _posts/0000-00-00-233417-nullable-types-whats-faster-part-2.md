@@ -22,5 +22,5 @@ I don't know whether the C# 5.0 compiler now generates new (better) code or the 
 
 If you have different results use comments and tell us (with some details about environment).
 
-[1]: {% include post_id_link.txt id='228522' %}
+[1]: {% include post_id_link.txt id="228522" %}
 [2]: http://www.dotnetportal.cz/blogy/3/Tomas-Herceg/1965/Hratky-s-Nullable-typy

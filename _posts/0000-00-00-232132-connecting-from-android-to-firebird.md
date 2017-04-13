@@ -22,11 +22,11 @@ Cool, isn't it? Taking into account, that the [Windows Phone 7][7] (because ever
 
 Still using i.e. OData is probably better idea, but who knows what somebody might wanna create.
 
-[1]: {% include post_id_link.txt id='231195' %}
+[1]: {% include post_id_link.txt id="231195" %}
 [2]: http://firebirdsql.org/index.php?op=files&id=netprovider
 [3]: http://monotouch.net/
 [4]: http://monodroid.net/
-[5]: {% include post_id_link.txt id='231195' %}
+[5]: {% include post_id_link.txt id="231195" %}
 [6]: /i/232132/android_firebird.png
 [7]: http://en.wikipedia.org/wiki/Windows_Phone_7
 [8]: http://silverlight.net/

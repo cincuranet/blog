@@ -27,6 +27,6 @@ The new one builds on top of [`TraceSource` class][3] allowing you to handle dif
 
 The code above sends all messages (commands) from provider to (only) console window. You can use your own listener, of course or turn it off completely, using just the `<clear />`.
 
-[1]: {% include post_id_link.txt id='232387' %}
+[1]: {% include post_id_link.txt id="232387" %}
 [2]: http://www.firebirdsql.org/en/net-provider/
 [3]: http://msdn.microsoft.com/en-us/library/system.diagnostics.tracesource.aspx

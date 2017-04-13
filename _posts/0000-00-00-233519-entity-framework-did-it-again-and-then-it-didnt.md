@@ -25,5 +25,5 @@ Some historical references: [link][4], [link][5], [link][6].
 [2]: https://github.com/aspnet/Announcements/issues/42
 [3]: https://github.com/aspnet/EntityFramework/wiki/NuGet-Package-Naming
 [4]: http://thedatafarm.com/blog/data-access/ef4-ef4-ef4/
-[5]: {% include post_id_link.txt id='232666' %}
-[6]: {% include post_id_link.txt id='232675' %}
+[5]: {% include post_id_link.txt id="232666" %}
+[6]: {% include post_id_link.txt id="232675" %}

@@ -10,5 +10,5 @@ The new Visual Studio 2010 looks. I'm more interested in .NET FW 4.0 and C# 4 ne
 
 > [Follow-up post.][2]
 
-[1]: {% include post_id_link.txt id='229121' %}
-[2]: {% include post_id_link.txt id='232077' %}
+[1]: {% include post_id_link.txt id="229121" %}
+[2]: {% include post_id_link.txt id="232077" %}

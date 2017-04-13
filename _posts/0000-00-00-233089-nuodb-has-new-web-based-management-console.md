@@ -42,7 +42,7 @@ I like the new console. With the old one I was more happy with the command line 
 _I know I promised blog post about using NuoDB in cloud (Amazon EC2/Amazon S3), but still busy to prepare it completely. :/_
 
 [1]: http://www.nuodb.com
-[2]: {% include post_id_link.txt id='232901' %}
+[2]: {% include post_id_link.txt id="232901" %}
 [3]: /i/233089/01-nuodb-newconsole-main.png
 [4]: /i/233089/02-nuodb-newconsole-creatingdb.png
 [5]: /i/233089/03-nuodb-newconsole-database1.png

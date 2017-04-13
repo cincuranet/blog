@@ -10,4 +10,4 @@ Už jednou jsem zmínil [o knize, za kterou jsem de facto vyhodil peníze][1] a 
 
 No myslím, že každý by mohl přihodit svou vlastní zkušenost, já však doufám, že od této knihy nic sem nepřidám (a že ji konečně dočtu, abych neměl tak velký pocit vyhozených peněz).
 
-[1]: {% include post_id_link.txt id='7459' %}
+[1]: {% include post_id_link.txt id="7459" %}

@@ -28,4 +28,4 @@ _If you have any question or something to try, feel free to ask in comments. I t
 
 [1]: http://www.kindle.com
 [2]: /i/232642/kindle4touch.jpg
-[3]: {% include post_id_link.txt id='232014' %}
+[3]: {% include post_id_link.txt id="232014" %}

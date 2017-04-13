@@ -14,4 +14,4 @@ layout: post
 You can download it from [FirebirdSQL.org site][1].
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {{ site.url}}{% include post_id_link.txt id='233441' %}
+[2]: {{ site.url}}{% include post_id_link.txt id="233441" %}

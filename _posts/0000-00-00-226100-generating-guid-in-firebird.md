@@ -24,4 +24,4 @@ GEN_UUID
 CCF4A86789D04F4B8BEE808C5CFCB852
 ```
 
-[1]: {% include post_id_link.txt id='225946' %}
+[1]: {% include post_id_link.txt id="225946" %}

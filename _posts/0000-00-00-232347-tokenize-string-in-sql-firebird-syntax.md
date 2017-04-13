@@ -57,7 +57,7 @@ What it is not handling is some form of quoting in case there's a token inside t
 
 Feel free to improve it etc. (either post link to your solution or post the code in comments).
 
-[1]: {% include post_id_link.txt id='232323' %}
+[1]: {% include post_id_link.txt id="232323" %}
 [2]: http://www.firebirdsql.org
 [3]: http://en.wikipedia.org/wiki/SQL
-[4]: {% include post_id_link.txt id='232323' %}
+[4]: {% include post_id_link.txt id="232323" %}

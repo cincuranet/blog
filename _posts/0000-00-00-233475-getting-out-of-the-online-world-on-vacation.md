@@ -20,4 +20,4 @@ Luckily last week when I was relying on hotel's Wi-Fi, it was not reliable and I
 
 Now back to work.
 
-[1]: {% include post_id_link.txt id='233474' %}
+[1]: {% include post_id_link.txt id="233474" %}

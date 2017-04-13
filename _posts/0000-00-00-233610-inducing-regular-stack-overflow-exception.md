@@ -105,5 +105,5 @@ Note: Be sure to be in _Release_ configuration (all optimizations turned on). El
 [4]: https://msdn.microsoft.com/en-us/library/system.stackoverflowexception%28v=vs.110%29.aspx
 [5]: https://en.wikipedia.org/wiki/Just-in-time_compilation
 [6]: https://msdn.microsoft.com/en-us/library/x7sk421w.aspx
-[7]: {% include post_id_link.txt id='233553' %}
-[8]: {% include post_id_link.txt id='233611' %}
+[7]: {% include post_id_link.txt id="233553" %}
+[8]: {% include post_id_link.txt id="233611" %}

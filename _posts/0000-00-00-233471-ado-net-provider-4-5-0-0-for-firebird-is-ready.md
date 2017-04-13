@@ -31,4 +31,4 @@ High level overview of changes can be found in [tracker][4].
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?projectId=10003&styleName=Text&version=10600
 [5]: http://www.firebirdsql.org/en/firebird-conference-2014/
-[6]: {% include post_id_link.txt id='233472' %}
+[6]: {% include post_id_link.txt id="233472" %}

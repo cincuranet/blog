@@ -17,7 +17,7 @@ But it's over. The new application is simply fetching all `#efhelp` tagged tweet
 
 I hope you'll enjoy this new functionality. Also now with full Twitter API we can do whatever we want, just tell me. For example I'm thinking about retweeting [`entity-framework` tag from StackOverflow][5].
 
-[1]: {% include post_id_link.txt id='232567' %}
+[1]: {% include post_id_link.txt id="232567" %}
 [2]: http://pipes.yahoo.com
 [3]: https://twitter.com/efhelp
 [4]: http://en.wikipedia.org/wiki/OAuth

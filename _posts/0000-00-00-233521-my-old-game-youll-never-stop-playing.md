@@ -132,5 +132,5 @@ namespace Game
 
 Don't play too hard. ;)
 
-[1]: {% include post_id_link.txt id='233520' %}
+[1]: {% include post_id_link.txt id="233520" %}
 [2]: http://www.fi.muni.cz/

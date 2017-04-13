@@ -39,7 +39,7 @@ I agree these reasons are not black and white. That's probably also why the `loc
 
 Although I'd like to hear your opinions on this topic. 
 
-[1]: {% include post_id_link.txt id='233484' %}   
+[1]: {% include post_id_link.txt id="233484" %}   
 [2]: http://msdn.microsoft.com/en-us/library/c5kehkcz.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.monitor(v=vs.110).aspx
 [4]: http://en.wikipedia.org/wiki/Concurrent_computing#Coordinating_access_to_shared_resources

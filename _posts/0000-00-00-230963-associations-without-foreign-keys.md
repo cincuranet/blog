@@ -39,4 +39,4 @@ string s = context.test_master.Include("test_details").ToTraceString();
 Easily done, isn't it.
 
 [1]: http://blog.vyvojar.cz/michal
-[2]: {% include post_id_link.txt id='230843' %}
+[2]: {% include post_id_link.txt id="230843" %}

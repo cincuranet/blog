@@ -23,7 +23,7 @@ If you'll run the application, you might notice nice surprise – it's faster. W
 
 <small>Originally written for [vyvojar.cz][5].</small>
 
-[1]: {% include post_id_link.txt id='227892' %}
+[1]: {% include post_id_link.txt id="227892" %}
 [2]: http://blogs.msdn.com/adonet/archive/2008/02/04/exploring-the-performance-of-the-ado-net-entity-framework-part-1.aspx
 [3]: http://blogs.msdn.com/adonet/archive/2008/02/11/exploring-the-performance-of-the-ado-net-entity-framework-part-2.aspx
 [4]: http://blogs.msdn.com/adonet/archive/2008/03/27/ado-net-entity-framework-performance-comparison.aspx

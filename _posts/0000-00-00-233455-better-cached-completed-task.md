@@ -52,4 +52,4 @@ Both ways are valid and correct. The `Task.Delay(0)` is just there waiting for y
 
 [1]: http://msdn.microsoft.com/en-us/library/dd460717(v=vs.110).aspx
 [2]: http://referencesource.microsoft.com/#mscorlib/system/threading/Tasks/Task.cs#5868
-[3]: {% include post_id_link.txt id='233500' %}
+[3]: {% include post_id_link.txt id="233500" %}

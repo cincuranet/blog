@@ -63,7 +63,7 @@ And the generated update statement will update only the column `A`, leaving the 
 
 Honestly I thought it's going to be a little more fiddling. But simple code is a good code. Especially for people - not like me - not interested in fiddling.
 
-[1]: {% include post_id_link.txt id='233466' %}
+[1]: {% include post_id_link.txt id="233466" %}
 [2]: https://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext%28v=vs.113%29.aspx
 [3]: https://msdn.microsoft.com/en-us/library/gg696410(v=vs.113).aspx
 [4]: https://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext.entry(v=vs.113).aspx#M:System.Data.Entity.DbContext.Entry``1%28``0%29 

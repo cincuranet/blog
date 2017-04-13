@@ -16,5 +16,5 @@ Some images to turn you on. :)
 ![image](/i/232973/ddex_fb_vs2012_2.png)
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {% include post_id_link.txt id='228661' %}
+[2]: {% include post_id_link.txt id="228661" %}
 [3]: http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/DataDesignerExtensibility/ReadMe.txt?view=markup

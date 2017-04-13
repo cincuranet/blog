@@ -20,4 +20,4 @@ Well, nothing painfull, isn't it? DDEX, Vista (64-bit), Firebird, Visual Studio 
 
 ![image](/i/226062/226062.png)
 
-[1]: {% include post_id_link.txt id='7471' %}
+[1]: {% include post_id_link.txt id="7471" %}

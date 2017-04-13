@@ -40,6 +40,6 @@ Of course, you can also call `Suspend`, `Stop`, `Resume` and `List` methods to d
 
 This is the initial implementation and some methods may be added (I'm already thinking about a few). Hope you enjoy it. Feel free to play with it and comment here or in list.
 
-[1]: {% include post_id_link.txt id='232169' %}
+[1]: {% include post_id_link.txt id="232169" %}
 [2]: http://www.firebirdsql.org/rlsnotesh/rlsnotes25.html#rnfb25-trace
 [3]: http://www.firebirdsql.org

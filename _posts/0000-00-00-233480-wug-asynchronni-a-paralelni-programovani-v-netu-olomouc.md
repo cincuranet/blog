@@ -14,5 +14,5 @@ Po [Brně][2] a [Praze][3] si "Asynchronní a paralelní programování v .NETu"
 Pokud vás zajímají detaily od křemíku až po kód, přijďte [13.10.2014 od 17:30 na WUG do Olomouce][1].
 
 [1]: http://wug.cz/olomouc/akce/657-Asynchronni-a-paralelni-programovani-v-NETu
-[2]: {% include post_id_link.txt id='233457' %}   
-[3]: {% include post_id_link.txt id='233465' %}
+[2]: {% include post_id_link.txt id="233457" %}   
+[3]: {% include post_id_link.txt id="233465" %}

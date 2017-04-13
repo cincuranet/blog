@@ -99,6 +99,6 @@ See also: [How to map your custom objects in Entity Framework][2]
 
 _Published on [Databazovy Svet][3]_
 
-[1]: {% include post_id_link.txt id='228036' %}
-[2]: {% include post_id_link.txt id='228430' %}
+[1]: {% include post_id_link.txt id="228036" %}
+[2]: {% include post_id_link.txt id="228430" %}
 [3]: http://dbsvet.cz/

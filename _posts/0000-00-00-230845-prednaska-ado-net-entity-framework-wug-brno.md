@@ -17,6 +17,6 @@ Registrace na [http://wug.cz/Aktuality/tabid/36/ctl/Detail/mid/492/ItemId/303/la
 
 [Prezentace][3] ke stažení.
 
-[1]: {% include post_id_link.txt id='230843' %}
+[1]: {% include post_id_link.txt id="230843" %}
 [2]: http://wug.cz/Aktuality/tabid/36/ctl/Detail/mid/492/ItemId/303/language/cs-CZ/Default.aspx
 [3]: http://cid-bdb67deba4c656e5.skydrive.live.com/self.aspx/Veřejné/20102009%20-%20Entity%20Framework/ef.pdf
