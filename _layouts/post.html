@@ -1,19 +1,16 @@
-{% include header.html %}
-
-<main>
-	<article>
-		<h3>{{ page.title | escape }} <a href="{% include post_link.txt post=page %}" rel="bookmark nofollow" title="Permalink"><span class="fa fa-link"></span></a></h3>
-		<p class="meta">Published <span title="{{ page.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ page.date | date: "%-d %b %Y" }}</span> in {{ page.tags | sort | array_to_sentence_string }}</p>
+---
+layout: base
+---
+<article>
+	<h3>{{ page.title | escape }} <a href="{% include post_link.txt post=page %}" rel="bookmark nofollow" title="Permalink"><span class="fa fa-link"></span></a></h3>
+	<p class="meta">Published <span title="{{ page.date | date: "%-d %b %Y %H:%M UTC (%A)" }}">{{ page.date | date: "%-d %b %Y" }}</span> in {{ page.tags | sort | array_to_sentence_string }}</p>
 {{ content }}
-	</article>
+</article>
 
-	<div id="comments">
-<div id="disqus_thread"></div>
-	</div>
-</main>
+<div id="comments">
+	<div id="disqus_thread"></div>
+</div>
 
 <script type="text/javascript">
 	var disqus_url = 'http:{{ site.address }}{{ page.url }}/';
 </script>
-
-{% include footer.html %}
