@@ -10,6 +10,10 @@ var blog = (function() {
 				e.attr('target', '_blank');
 			}
 		});
+		
+		$('a[rel="bookmark"]').click(function(e) {
+			e.preventDefault();			
+		});
 	}
 
 	function initImageTitles() {
