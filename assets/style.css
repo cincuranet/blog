@@ -266,6 +266,24 @@ article ul > li:before {
 	padding-right: .5rem;
 }
 
+/* article - table */
+
+article table {
+	line-height: 1.6;
+	margin-bottom: 1em;
+}
+
+article td {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+article td:first-of-type {
+	padding-left: 0;
+}
+article td:last-of-type {
+	padding-right: 0;
+}
+
 /* disqus */
 
 #comments {
