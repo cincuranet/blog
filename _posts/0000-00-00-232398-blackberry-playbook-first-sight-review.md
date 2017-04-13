@@ -11,7 +11,7 @@ I had [PlayBook][1] in my hands for almost two days. So I think it's time to sha
 
 First the size and weight. It's smaller than well known iPad, you can get that from specifications. It's roughly the size of [Kindle 3<sup>rd</sup> generation][2]. The weight is officially 425g, but I care more about how it feels. And being used to Kindle (very light) and having two or three times iPad in my hands (first time I almost dropped it, how heavy it was) it's what I expected. Thanks to the size, you can hold it in one hand and do stuff. And also hold it in almost every position you want (including lying for a decent amount of time) without being quickly tired. It fits my usage perfectly.
 
-[![image](/i/232398/playbook_kindle3_thumb.jpg)][3]
+[![image]({% include post_i_link.txt post=page name="playbook_kindle3_thumb.jpg" %})][3]
 
 With physical size the screen size relates. For web browsing is, I think, just enough. Sure, bigger screen would mean more content. In last two days or so I just watched some videos and read articles. I had no problem with reading, slowly scrolling through text and reading paragraphs was fine, no hassle. Video is fine as well. If you're watching is from standard reading distance, something around from 25cm to 40cm, no problem at all. The hi-res videos are looking great on in. Nice colors, but not over-juiced.
 

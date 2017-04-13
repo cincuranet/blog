@@ -11,9 +11,9 @@ As with every new Visual Studio, I'm trying the [DDEX provider for Firebird][1] 
 
 Some images to turn you on. :)
 
-![image](/i/232973/ddex_fb_vs2012_1.png)
+![image]({% include post_i_link.txt post=page name="ddex_fb_vs2012_1.png" %})
 
-![image](/i/232973/ddex_fb_vs2012_2.png)
+![image]({% include post_i_link.txt post=page name="ddex_fb_vs2012_2.png" %})
 
 [1]: http://www.firebirdsql.org/en/net-provider/
 [2]: {% include post_id_link.txt id="228661" %}

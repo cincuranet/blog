@@ -21,7 +21,7 @@ With couple of minor tweaks I was able to create application that connects from 
 
 Application connecting to Firebird server and showing the server version:
 
-[![image](/i/231195/iphone_firebird_thumb.jpg)][5]
+[![image]({% include post_i_link.txt post=page name="iphone_firebird_thumb.jpg" %})][5]
 
 First I'm impressed how mature the MonoTouch is. Second I'm still trying think thru all the possibilities you have with this. With some work on UI you can deliver the same database oriented application to Windows Mobile and iPhone using the same business layer (sure some webservice approach would be better, but ...).
 

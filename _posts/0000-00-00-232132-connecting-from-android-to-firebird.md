@@ -16,7 +16,7 @@ Again it's a pretty challenge for the whole MonoDroid stack, as the provider use
 
 Application connected to Firebird server and showing server version and data from `MON$DABATASE`:
 
-[![image](/i/232132/android_firebird_thumb.jpg)][6]
+[![image]({% include post_i_link.txt post=page name="android_firebird_thumb.jpg" %})][6]
 
 Cool, isn't it? Taking into account, that the [Windows Phone 7][7] (because everything there is based on [Silverlight][8]) doesn't contain pieces from [ADO.NET][9], it's nice that [Mono][10] isn't crippling the objects available.
 

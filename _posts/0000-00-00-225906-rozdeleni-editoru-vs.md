@@ -8,6 +8,6 @@ layout: post
 ---
 Kliknout omylem se někdy vyplatí. Přišel jsem tím na jednu zajímavou fičurku. Mezi zavíracím křížkem a scrollbarem se nachází "prostor", který když popotáhnete, rozdělí se aktuální okno na dvě části.
 
-![image](/i/225906/225906.png)
+![image]({% include post_i_link.txt post=page name="225906.png" %})
 
 Nikdy jsem to nepotřeboval, ale když o tom vím, možná se to nějak využije.

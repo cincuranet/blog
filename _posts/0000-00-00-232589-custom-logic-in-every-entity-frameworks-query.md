@@ -11,11 +11,11 @@ Few days ago there was a question on Twitter in [`#efhelp`][1] about adding cust
 
 First you need to focus you [Entity Set][2] (not [Entity Type][3]) in [Model Browser][4] window.
 
-![image](/i/232589/CustomLogicEntitySet1.png)
+![image]({% include post_i_link.txt post=page name="CustomLogicEntitySet1.png" %})
 
 Here set the access modifier to i.e. `private` or (`internal`/`protected`) and rename it to something else, so it'll not interfere with original name of property we're going to create. I often use `X` prefix (especially for properties on entities).
 
-![image](/i/232589/CustomLogicEntitySet2.png)
+![image]({% include post_i_link.txt post=page name="CustomLogicEntitySet2.png" %})
 
 Now it's pretty easy to create some logic. Here I simply added filtering to always only fetch entities younger than 10 days from now.
 

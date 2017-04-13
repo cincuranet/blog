@@ -23,7 +23,7 @@ The code fixes were new and I found them harder to implement. Not only you need 
 
 Here's how it looks like in real.
 
-![image](/i/233523/cac.png)
+![image]({% include post_i_link.txt post=page name="cac.png" %})
 
 Also some a small caveat. There's a `ConfigureAwaitChecker` package available. It's a fork of my original code (using the console app, just plugged into Visual Studio). I think it would be nice to use this package ID (even though the name containing "Analyzer" explicitly states what it is - I don't know, let me know) I tried contacting the author already few weeks ago, but so far no reply. 
 

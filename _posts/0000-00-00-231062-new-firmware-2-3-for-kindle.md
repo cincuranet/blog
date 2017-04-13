@@ -12,7 +12,7 @@ You can read about the new features on Amazon page, I was especially looking for
 
 The battery life I can judge now. But anything that improves the batter life, even 1%, is good.
 
-[![image](/i/231062/kindle_update1_thumb.jpg)][3]
+[![image]({% include post_i_link.txt post=page name="kindle_update1_thumb.jpg" %})][3]
 
 [1]: http://www.hanselman.com/blog/ScreenshotsAmazonKindle2GetsBetterBatteryLifeAndNativePDFSupport.aspx
 [2]: http://www.amazon.com/gp/help/customer/display.html?nodeId=200324680
