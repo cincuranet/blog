@@ -11,7 +11,7 @@ var blog = (function() {
 			}
 		});
 		
-		$('a[rel="bookmark"]').click(function(e) {
+		$('a[rel~="bookmark"]').click(function(e) {
 			e.preventDefault();			
 		});
 	}
