@@ -20,7 +20,7 @@ What? I mean WHAAAT? It's fucking not! It's a good old `<form>` that is `POST`in
 
 With that "solution" in my hands I turned over, moved the website to my own server and cancelled the account. This is not an inconvenience. It's a pure ignorance. Wrong attitude. 
 
-Eventually told me I can access it via HTTPS, although I would have to accept self-signed certificate (without at least trying to send me the fingerprint for manual validation (not that it matters because the support platform was on plain HTTP anyway)). Hard to chew that if you can get free certificate from Let's Encrypt.
+Eventually they told me I can access it via HTTPS, although I would have to accept self-signed certificate (without at least trying to send me the fingerprint for manual validation (not that it matters because the support platform was on plain HTTP anyway)). Hard to chew that if you can get free certificate from Let's Encrypt.
 
 If you want to know what others think, [here's a tweet][2] I posted yesterday.
 
