@@ -75,7 +75,7 @@ Running `Program0.Test0` from the code above ends in stack overflow. Good. Anoth
 
 But, what's actually the number of calls? Adding a simple counter stops it at 128441. Doing simple math and one can conclude that in this scenario function call needs 8B. My functions don't have any arguments or local variables so that's out. What else needs to be stored? 4B are taken by the return address pushed by `call` and another 4B for saving `ebp` register. Who said assembly knowledge is useless in .NET world? ;) A small warning. These numbers are absolutely depending on a compiler (in case of .NET the JIT compiler) and architecture. It might be different on different CPU architecture and/or different compiler (there are even stack-less compilers/languages).
 
-Finally, what's with the 65521 or 65520 respectively being limit on number of methods? Why not 65535 exactly? The [answer (not yet published)][4] is in separate post, because it needs some longer thinking.
+Finally, what's with the 65521 or 65520 respectively being limit on number of methods? Why not 65535 exactly? The [answer][4] is in separate post, because it needs some longer thinking.
 
 #### Summary
 
@@ -84,4 +84,4 @@ There you have it. Another "regular" C# code that induced stack overflow. This o
 [1]: {% include post_id_link id="233610" %}
 [2]: https://en.wikipedia.org/wiki/Tail_call
 [3]: https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimplattribute%28v=vs.110%29.aspx
-[4]: #
+[4]: {% include post_id_link id="233613" %}
