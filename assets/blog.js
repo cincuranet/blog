@@ -33,7 +33,7 @@ var blog = (function() {
 
 	function initTagsFilter() {
 		var tags = $('#archive_tags select');
-		var posts = $('#archive_posts span');
+		var posts = $('#archive_posts li');
 		tags.change(function() {
 			var selected = tags.val();
 			posts.each(function(i, e) {

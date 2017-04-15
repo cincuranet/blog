@@ -14,8 +14,8 @@ layout: page
 		{% endfor %}
 	</select>
 </p>
-<p id="archive_posts">
+<ul id="archive_posts">
 	{% for post in site.posts %}
-	<span data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}">{{ post.title | escape }}</a> ({{ post.date | date: "%-d %b %Y" }})<br /></span>
+	<li data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}">{{ post.title | escape }}</a> ({{ post.date | date: "%-d %b %Y" }})</li>
 	{% endfor %}
-</p>
+</ul>
