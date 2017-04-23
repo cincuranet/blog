@@ -116,4 +116,4 @@ I know this has probably no usage for a real world programming in .NET and it's 
 [2]: {% include post_id_link id="233611" %}
 [3]: http://referencesource.microsoft.com/#mscorlib/system/object.cs,d9262ceecc1719ab
 [4]: https://github.com/dotnet/coreclr
-[5]: https://github.com/dotnet/coreclr/blob/master/src/vm/methodtable.h#L1483
+[5]: https://github.com/dotnet/coreclr/blob/ad8afe4f8c9537e8652ae35b301366d737bc1e04/src/vm/methodtable.h#L1483
