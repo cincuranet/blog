@@ -4,21 +4,21 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{% include title %}</title>
-	<link href="{{ site.protocol }}{{ site.address }}/{{ site.feed }}" rel="self"/>
-	<link href="{{ site.protocol }}{{ site.address }}"/>
+	<link href="https://{{ site.address }}/{{ site.feed }}" rel="self"/>
+	<link href="https://{{ site.address }}"/>
 	<updated>{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
 	<author>
 		<name>{% include title %}</name>
 	</author>
-	<id>http:{{ site.address }}/</id>
+	<id>http://{{ site.address }}/</id>
 
 	{% for post in site.posts limit: site.feed_posts %}
 	<entry>
 		<title><![CDATA[{{ post.title }}]]></title>
-		<link href="{{ site.protocol }}{{ site.address }}{{ post.url }}/"/>
+		<link href="https://{{ site.address }}{{ post.url }}/"/>
 		<updated>{{ post.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
-		<id>http:{{ site.address }}{{ post.url }}/</id>
-		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="{{ site.protocol }}{{ site.address }}{{ post.url }}/">{{ site.excerpt_link_name }}</a></p>]]></content>
+		<id>http://{{ site.address }}{{ post.url }}/</id>
+		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="https://{{ site.address }}{{ post.url }}/">{{ site.excerpt_link_name }}</a></p>]]></content>
 	</entry>
 	{% endfor %}
 </feed>

@@ -5,8 +5,7 @@ heading2_accent: "{x2}"
 permalink: "/:title"
 # env TZ=UTC on command line
 #timezone: UTC
-protocol: "https:"
-address: "//www.tabsoverspaces.com"
+address: "www.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
 excerpt_link_name: "Continue reading..."
 site_posts: 20
