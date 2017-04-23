@@ -37,10 +37,6 @@ option {
 	content: "\00a0|\00a0";
 }
 
-span[title] {
-	cursor: help;
-}
-
 /* wrapper */
 
 #wrapper {
