@@ -76,6 +76,6 @@ Both queries are using `UNION ALL`. What's wrong? The key magic is in usage of `
 
 Yes, little bit hidden, but the semantic is kept.
 
-[1]: {% include post_id_link id="227543" %}
+[1]: {% include post_link id="227543" %}
 [2]: http://msdn.microsoft.com/en-us/library/bb351755.aspx
 [3]: http://msdn.microsoft.com/en-us/library/bb156049.aspx

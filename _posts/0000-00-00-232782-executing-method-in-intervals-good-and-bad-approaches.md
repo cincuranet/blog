@@ -116,6 +116,6 @@ No matter what approach you'll use, please don't (ab)use threads (manually creat
 [1]: http://msdn.microsoft.com/en-us/library/system.threading.thread.aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.threading.thread.sleep.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx
-[4]: {% include post_id_link id="230984" %}
+[4]: {% include post_link id="230984" %}
 [5]: http://msdn.microsoft.com/en-us/data/gg577609
 [6]: http://msdn.microsoft.com/en-us/library/system.idisposable.aspx

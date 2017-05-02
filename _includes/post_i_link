@@ -1,1 +1,0 @@
-{% assign id = include.post.url | remove: "/" | split: "-" | first %}/i/{{ id }}/{{ include.name }}

@@ -56,8 +56,8 @@ I also made `MakeUpperCase` method virtual in case somebody would like to make s
 
 With this it shouldn't take long to create bunch of custom conventions (and combine these) to match naming conventions - like `T_<tablename>`, `F_<columnname>` or `PropertyName` -> `PROPERTY_NAME`.  
 
-[1]: {% include post_id_link id="233167" %}
-[2]: {% include post_id_link id="233174" %}
+[1]: {% include post_link id="233167" %}
+[2]: {% include post_link id="233174" %}
 [3]: http://msdn.microsoft.com/en-us/library/dn338062(v=vs.113).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.core.metadata.edm.edmproperty(v=vs.113).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.data.entity.core.metadata.edm.entitytype(v=vs.113).aspx

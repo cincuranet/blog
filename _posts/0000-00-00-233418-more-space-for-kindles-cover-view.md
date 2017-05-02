@@ -14,5 +14,5 @@ But yesterday I was aimlessly jumping in Kindle's menus to kill some time becaus
 
 Still don't know whether I like the _Cover View_ more, but it's for sure more usable now. What view are you using?
 
-[1]: {% include post_id_link id="233049" %}
-[2]: {% include post_id_link id="233024" %}
+[1]: {% include post_link id="233049" %}
+[2]: {% include post_link id="233024" %}

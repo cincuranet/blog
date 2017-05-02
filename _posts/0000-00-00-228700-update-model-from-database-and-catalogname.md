@@ -21,4 +21,4 @@ _This problem itself has been also discussed in comments [here][4]._
 [1]: http://forums.microsoft.com/MSDN/ShowPost.aspx?siteid=1&PostID=3519267
 [2]: http://netprovider.cincura.net/
 [3]: http://cid-bdb67deba4c656e5.skydrive.live.com/self.aspx/Ve%c5%99ejn%c3%a9/FB%7C_FixedLeftOuterJoin/Firebird-2.5.0.21381-0%7C_Win32.zip
-[4]: {% include post_id_link id="228524" %}
+[4]: {% include post_link id="228524" %}

@@ -57,7 +57,7 @@ The method is straightforward, a lot of work was saved using the smart blocking 
 
 And that's it. Again, it's not general purpose method. Use with care, it may bring you even worse performance if wrongly used.
 
-[1]: {% include post_id_link id="231892" %}
+[1]: {% include post_link id="231892" %}
 [2]: http://msdn.microsoft.com/en-us/library/system.linq.parallelenumerable.asparallel.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.threadpool.aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.collections.concurrent.aspx

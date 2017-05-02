@@ -27,4 +27,4 @@ Hit the NuGet.
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/4.1.0/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10583&styleName=Text&projectId=10003
-[6]: {% include post_id_link id="233429" %}
+[6]: {% include post_link id="233429" %}

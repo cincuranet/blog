@@ -52,6 +52,6 @@ using (testEntities ent = new testEntities())
 
 If you run the code, you'll see it works as expected. Exactly like the generated classes, although these are (pure) POCO classes - no need to use proxies or any special collections. I like the smart work done behind by Entity Framework for me.
 
-[1]: {% include post_id_link id="229660" %}
+[1]: {% include post_link id="229660" %}
 [2]: http://msdn.microsoft.com/en-us/library/bb738708.aspx
-[3]: {% include post_id_link id="228036" %}
+[3]: {% include post_link id="228036" %}

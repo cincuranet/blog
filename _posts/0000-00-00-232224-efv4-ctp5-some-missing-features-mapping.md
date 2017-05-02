@@ -14,5 +14,5 @@ On the other hand, the good news (from reliable source ;)) is, that in RTM this 
 
 [1]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d
 [2]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=4e094902-aeff-4ee2-a12d-5881d4b0dd3e
-[3]: {% include post_id_link id="232210" %}
+[3]: {% include post_link id="232210" %}
 [4]: http://blogs.msdn.com/b/adonet/archive/2010/12/15/ef-feature-ctp5-validation.aspx

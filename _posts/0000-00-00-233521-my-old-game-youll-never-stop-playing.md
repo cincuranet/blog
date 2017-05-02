@@ -18,7 +18,7 @@ Doesn't matter. It's an awesome game. Really. It's simple and me and my friends 
 
 So how it works? You're presented with a canvas with points connected by lines. Unless you're very lucky some lines intersect. Your task is to move the points (click somewhere in the circle) in such a way that the lines do not intersect using as little moves as possible. The number of moves is displayed in title bar. That's it.
 
-![image]({% include post_i_link post=page name="game.png" %})
+![image]({% include post_ilink post=page name="game.png" %})
 
 Of course there are some rough edges. What you expect from one hour project?
 
@@ -132,5 +132,5 @@ namespace Game
 
 Don't play too hard. ;)
 
-[1]: {% include post_id_link id="233520" %}
+[1]: {% include post_link id="233520" %}
 [2]: http://www.fi.muni.cz/

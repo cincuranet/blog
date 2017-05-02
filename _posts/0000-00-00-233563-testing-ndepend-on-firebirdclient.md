@@ -14,7 +14,7 @@ Couple of weeks ago [Patrick Smacchia][1] reached to me and offered me a license
 
 Because it's NDepend, I have to look at dependencies graph, right? Here it is (you might open the raw image and scroll a lot).
 
-[![Dependecies]({% include post_i_link post=page name="current/deps_thumb.png" %})]({% include post_i_link post=page name="current/deps.png" %})
+[![Dependecies]({% include post_ilink post=page name="current/deps_thumb.png" %})]({% include post_ilink post=page name="current/deps.png" %})
 
 Yes, the layering is not perfect. But it's not crappy either, is it? Occasional runs with chainsaw causing breaking changes are paying back. At least here. 8-)
 
@@ -37,15 +37,15 @@ Some other numbers I though might be interesting too.
 
 Code size:
 
-![Code size]({% include post_i_link post=page name="compare/code_size.png" %})
+![Code size]({% include post_ilink post=page name="compare/code_size.png" %})
 
 Code numbers - maximums and averages:
 
-![Code numbers - maximums and averages]({% include post_i_link post=page name="compare/maximum_average.png" %})
+![Code numbers - maximums and averages]({% include post_ilink post=page name="compare/maximum_average.png" %})
 
 Third-party assemblies usages:
 
-![Third-party assemblies usages]({% include post_i_link post=page name="compare/3usage.png" %})
+![Third-party assemblies usages]({% include post_ilink post=page name="compare/3usage.png" %})
 
 I know looking at the report that there are some _critical_ rules violated. Some might be right. Some (maybe even bigger part) not, in my opinion. Not that these rules are wrong. For generic code they make sense. Here's it's often enforced by environment. But if you feel like tackling some of them, feel free to [issue a PR][7].
 

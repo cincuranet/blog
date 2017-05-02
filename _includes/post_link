@@ -1,1 +1,6 @@
-{% assign id = include.post.url | remove: "/" | split: "-" | first %}{% include post_id_link id=id %}
+{% for post in site.posts %}{%
+capture post_id %}{% include post_id post=post %}{% endcapture %}{%
+if post_id == include.id
+%}{{ post.url }}/{% 
+endif %}{%
+endfor %}

@@ -9,47 +9,47 @@ layout: post
 ---
 Starter for (but not only) morning:
 
-[![Starter for (but not only) morning]({% include post_i_link post=page name="fbcon09_01_thumb.jpg" %})][1]
+[![Starter for (but not only) morning]({% include post_ilink post=page name="fbcon09_01_thumb.jpg" %})][1]
 
 Holger Klemt:
 
-[![Holger Klemt]({% include post_i_link post=page name="fbcon09_02_thumb.jpg" %})][2]
+[![Holger Klemt]({% include post_ilink post=page name="fbcon09_02_thumb.jpg" %})][2]
 
 Stefan Heymann doing the same as me:
 
-[![Stefan Heymann doing the same as me]({% include post_i_link post=page name="fbcon09_03_thumb.jpg" %})][3]
+[![Stefan Heymann doing the same as me]({% include post_ilink post=page name="fbcon09_03_thumb.jpg" %})][3]
 
 Dmitry Yemanov:
 
-[![Dmitry Yemanov]({% include post_i_link post=page name="fbcon09_04_thumb.jpg" %})][4]
+[![Dmitry Yemanov]({% include post_ilink post=page name="fbcon09_04_thumb.jpg" %})][4]
 
 Vlad Khorsun:
 
-[![Vlad Khorsun]({% include post_i_link post=page name="fbcon09_05_thumb.jpg" %})][5]
+[![Vlad Khorsun]({% include post_ilink post=page name="fbcon09_05_thumb.jpg" %})][5]
 
 Roman Rokytskyy:
 
-[![Roman Rokytskyy]({% include post_i_link post=page name="fbcon09_06_thumb.jpg" %})][6]
+[![Roman Rokytskyy]({% include post_ilink post=page name="fbcon09_06_thumb.jpg" %})][6]
 
 In between sessions:
 
-[![In between sessions]({% include post_i_link post=page name="fbcon09_07_thumb.jpg" %})][7]
+[![In between sessions]({% include post_ilink post=page name="fbcon09_07_thumb.jpg" %})][7]
 
 During session:
 
-[![During session]({% include post_i_link post=page name="fbcon09_08_thumb.jpg" %})][8]
+[![During session]({% include post_ilink post=page name="fbcon09_08_thumb.jpg" %})][8]
 
 In between sessions:
 
-[![In between sessions]({% include post_i_link post=page name="fbcon09_09_thumb.jpg" %})][9]
+[![In between sessions]({% include post_ilink post=page name="fbcon09_09_thumb.jpg" %})][9]
 
 Everybody is solving problems during conference:
 
-[![Everybody is solving problems during conference]({% include post_i_link post=page name="fbcon09_10_thumb.jpg" %})][10]
+[![Everybody is solving problems during conference]({% include post_ilink post=page name="fbcon09_10_thumb.jpg" %})][10]
 
 Talking about (not only) Firebird in the hallways:
 
-[![Talking about (not only) Firebird in the hallways]({% include post_i_link post=page name="fbcon09_11_thumb.jpg" %})][11]
+[![Talking about (not only) Firebird in the hallways]({% include post_ilink post=page name="fbcon09_11_thumb.jpg" %})][11]
 
 [1]: /i/231064/fbcon09_01.jpg
 [2]: /i/231064/fbcon09_02.jpg

@@ -1,0 +1,1 @@
+/i/{% include post_id post=include.post %}/{{ include.name }}

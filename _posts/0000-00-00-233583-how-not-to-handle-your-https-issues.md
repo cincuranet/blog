@@ -14,7 +14,7 @@ What could possibly go wrong when you expect HTTPS for signing in... I was handl
 
 Here's the screenshot of that ticket.
 
-![Support ticket]({% include post_i_link post=page name="ticket.jpg" %})
+![Support ticket]({% include post_ilink post=page name="ticket.jpg" %})
 
 What? I mean WHAAAT? It's fucking not! It's a good old `<form>` that is `POST`ing the values to the server. Every script kiddie can handle that.
 

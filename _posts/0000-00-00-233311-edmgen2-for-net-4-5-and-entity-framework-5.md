@@ -19,7 +19,7 @@ If you're using this tool, please, drop a line in comments. Maybe it could be me
 > [Follow up post.][10]
 
 [1]: http://www.x2develop.com
-[2]: {% include post_id_link id="228787" %}
+[2]: {% include post_link id="228787" %}
 [3]: http://msdn.com/ef
 [4]: http://microsoft.com/net
 [5]: http://archive.msdn.microsoft.com/EdmGen2
@@ -27,4 +27,4 @@ If you're using this tool, please, drop a line in comments. Maybe it could be me
 [7]: https://bitbucket.org/
 [8]: https://bitbucket.org/cincura_net/edmgen2
 [9]: http://entityframework.codeplex.com
-[10]: {% include post_id_link id="233421" %}
+[10]: {% include post_link id="233421" %}

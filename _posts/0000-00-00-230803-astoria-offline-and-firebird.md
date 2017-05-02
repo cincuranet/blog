@@ -15,5 +15,5 @@ After creating model from database, creating and rewriting sql scripts for Fireb
 
 Never mind, when another test version will be available be sure, I'll try it and we'll see what's what. :)
 
-[1]: {% include post_id_link id="230768" %}
+[1]: {% include post_link id="230768" %}
 [2]: http://blogs.msdn.com/pablo

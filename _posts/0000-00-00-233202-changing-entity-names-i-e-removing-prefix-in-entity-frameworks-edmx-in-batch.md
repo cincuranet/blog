@@ -102,5 +102,5 @@ Of course you can go further and change also names on i.e. navigational properti
 
 Enjoy.
 
-[1]: {% include post_id_link id="228749" %}
+[1]: {% include post_link id="228749" %}
 [2]: http://www.thedatafarm.org

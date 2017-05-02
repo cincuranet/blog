@@ -71,4 +71,4 @@ namespace port_listen
 }
 ```
 
-[1]: {% include post_id_link id="233470" %}
+[1]: {% include post_link id="233470" %}

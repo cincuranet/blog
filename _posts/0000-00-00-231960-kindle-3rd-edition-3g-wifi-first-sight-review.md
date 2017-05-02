@@ -10,7 +10,7 @@ Last (almost) day I was playing with new [Kindle][1] 3<sup>rd</sup> generation a
 
 Let's start with pictures. Kindle 3rd generation compared to Kindle 2nd generation.
 
-[![image]({% include post_i_link post=page name="kindle2_kindle3_thumb.jpg" %})][2]
+[![image]({% include post_ilink post=page name="kindle2_kindle3_thumb.jpg" %})][2]
 
 The new Kindle is smaller and lighter (you can't get that from the picture :)). Exact dimensions at [Amazon page][3]. Important is you feel it's smaller and it looks good. Partially also because it's graphite and the old one was white. What I was worried about is the smaller space on left and right side of display, where I place my thumb while reading. Now it's just to place it there and not press the button(s). The back is not some metal alloy but it's plastic (good for weight) and covered with some antiskid layer. And it really works, at least from what I can judge from one day using.
 
@@ -32,4 +32,4 @@ Conclusion? The new Kindle is great. I'm happy spending my money on new Kindle. 
 [2]: /i/231960/kindle2_kindle3.jpg
 [3]: http://www.amazon.com/Kindle-Wireless-Reading-Display-Globally/dp/B003FSUDM4/
 [4]: http://webkit.org/
-[5]: {% include post_id_link id="231748" %}
+[5]: {% include post_link id="231748" %}

@@ -29,7 +29,7 @@ Note: _The MindTheBird campaign team will run a webinar today at 13:00 GMT in an
 [5]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
 [6]: http://tracker.firebirdsql.org/browse/CORE-1246
 [7]: http://msdn.microsoft.com/en-us/library/bb399572.aspx
-[8]: {% include post_id_link id="231316" %}
+[8]: {% include post_link id="231316" %}
 [9]: http://www.firebirdsql.org/
 [10]: http://www.firebirdsql.org/index.php?op=devel&sub=engine
 [11]: http://www.firebirdsql.org/index.php?op=files&id=engine_250

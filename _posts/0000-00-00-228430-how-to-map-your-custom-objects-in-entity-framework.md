@@ -117,7 +117,7 @@ See also: [How to use custom objects with associations in Entity Framework][3]
 
 _Published on [Databazovy Svet][4]_
 
-[1]: {% include post_id_link id="227892" %}
+[1]: {% include post_link id="227892" %}
 [2]: http://msdn.microsoft.com/en-us/library/cc716756.aspx
-[3]: {% include post_id_link id="228431" %}
+[3]: {% include post_link id="228431" %}
 [4]: http://dbsvet.cz/

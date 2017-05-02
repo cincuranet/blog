@@ -65,4 +65,4 @@ At the end I have a mixed feelings. I'm glad it was fairly easy to dig out what 
 [6]: http://en.wikipedia.org/wiki/Reflection_(computer_programming)
 [7]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbset.attach(v=vs.113).aspx
 [8]: http://msdn.microsoft.com/en-us/library/gg679233(v=vs.113).aspx
-[9]: {% include post_id_link id="233584" %}
+[9]: {% include post_link id="233584" %}

@@ -35,7 +35,7 @@ public static async Task<IEnumerable<T>> FindPredicateAsync<T>(this DbSet<T> dbS
 
 The method first checks "local" source, if there's nothing - either the record(s) are really not in memory yet or the predicate doesn't match anything (2<sup>nd</sup> item is important to keep in mind) - it hits the database. For convenience I also included asynchronous version of the same method.
 
-[1]: {% include post_id_link id="233423" %}
+[1]: {% include post_link id="233423" %}
 [2]: https://twitter.com/pilotbob/status/459035141672009728
 [3]: http://msdn.microsoft.com/en-us/library/gg696418.aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext.aspx

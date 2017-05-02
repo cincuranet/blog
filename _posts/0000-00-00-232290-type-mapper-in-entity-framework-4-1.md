@@ -34,5 +34,5 @@ class FooBarConfiguration : EntityTypeConfiguration<FooBar>
 
 At first I was confused, but after quick email exchange with EF team the "issue" was clear.
 
-[1]: {% include post_id_link id="232283" %}
+[1]: {% include post_link id="232283" %}
 [2]: http://msdn.microsoft.com/en-us/magazine/gg232765.aspx

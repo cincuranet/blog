@@ -54,8 +54,8 @@ What the first one is doing is handling the case where C# null (in parameter) ca
 
 If you're not familiar with NULLs in database this can be tricky to handle correctly, especially if you have [negations][4], [All][5]s and [Any][6]s nested inside query. Hence setting this property to `true` can save you hours of debugging and wondering what's going on.
 
-[1]: {% include post_id_link id="231185" %}
-[2]: {% include post_id_link id="232675" %}
+[1]: {% include post_link id="231185" %}
+[2]: {% include post_link id="232675" %}
 [3]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontextoptions.usecsharpnullcomparisonbehavior(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/f2kd6eb2.aspx
 [5]: http://msdn.microsoft.com/en-us/library/bb534754.aspx

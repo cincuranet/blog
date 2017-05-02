@@ -9,7 +9,7 @@ layout: post
 ---
 Today I was installing iPhone SDK (in fact that's first time I was installing something such big on Mac) and at the end of the installation the installer started optimizing system (yes, system) for installed software. :D Funny. Hopefully it was not creating new kernel. :) Just wondering, what would happen if this crashes...
 
-[![image]({% include post_i_link post=page name="iphonesdkinstall_thumb.jpg" %})][1]
+[![image]({% include post_ilink post=page name="iphonesdkinstall_thumb.jpg" %})][1]
 
 <small>OK, before all Mac-friendly people will kill me, I'll make a simple statement. I'm not using Mac regularly and that's why I sometimes found something funny and why I'm making fun of it (and because I'm Windows user ;)).</small>
 

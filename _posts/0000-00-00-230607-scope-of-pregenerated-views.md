@@ -12,5 +12,5 @@ One reason not to pregenerate these views (besides laziness ;)) could be, that y
 
 Good news. These bi-directional views are cached per appdomain. So if you don't care about startup time and your application is long running (in one appdomain) you don't have to care about setting up all the stuff [described in the article][2].
 
-[1]: {% include post_id_link id="228787" %}
-[2]: {% include post_id_link id="228787" %}
+[1]: {% include post_link id="228787" %}
+[2]: {% include post_link id="228787" %}

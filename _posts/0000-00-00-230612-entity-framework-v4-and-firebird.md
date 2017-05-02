@@ -17,5 +17,5 @@ On the other hand, even the new singularize/pluralize function is nice and works
 Anyway, if you found any problems with EF4, let me know.
 
 [1]: http://thedatafarm.com/blog/data-access/ef4-ef4-ef4/
-[2]: {% include post_id_link id="228661" %}
-[3]: {% include post_id_link id="228749" %}
+[2]: {% include post_link id="228661" %}
+[3]: {% include post_link id="228749" %}

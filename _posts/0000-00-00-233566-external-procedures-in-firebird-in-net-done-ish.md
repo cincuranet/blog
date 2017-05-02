@@ -24,4 +24,4 @@ _BTW if you look very closely you might find kind of easter egg. ;)_
 
 [1]: /i/233566/FbNetExternalEngine32.7z
 [2]: /i/233566/FbNetExternalEngine64.7z
-[3]: {% include post_id_link id="233565" %}
+[3]: {% include post_link id="233565" %}

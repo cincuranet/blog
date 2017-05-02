@@ -55,4 +55,4 @@ resulted in this IL:
 
 As you (and I) can see, the code is the same (I was kind of expecting that - but what's better proof than IL?). So you don't need to worry using the first or the other syntax.
 
-[1]: {% include post_id_link id="224879" %}
+[1]: {% include post_link id="224879" %}

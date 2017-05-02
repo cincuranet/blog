@@ -143,4 +143,4 @@ Some ideas I have in my head:
 [3]: http://firebirdsql.org/
 [4]: https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx
 [5]: https://msdn.microsoft.com/en-us/library/dd386941(v=vs.110).aspx
-[6]: {% include post_id_link id="233566" %}
+[6]: {% include post_link id="233566" %}

@@ -62,6 +62,6 @@ class Class2
 
 The example is magically returning from Where IEnumerable of other class. :) Doing this with couple of standard LINQ operators may confuse your colleagues well. You can also check the "LINQ to Simpsons" from [Bart de Smet][3] to see comprehensive confusing.
 
-[1]: {% include post_id_link id="229357" %}
+[1]: {% include post_link id="229357" %}
 [2]: http://blog.vyvojar.cz/michal/
 [3]: http://community.bartdesmet.net/blogs/bart/Default.aspx

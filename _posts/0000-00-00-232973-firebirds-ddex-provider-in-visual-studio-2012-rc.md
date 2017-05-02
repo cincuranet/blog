@@ -11,10 +11,10 @@ As with every new Visual Studio, I'm trying the [DDEX provider for Firebird][1] 
 
 Some images to turn you on. :)
 
-![image]({% include post_i_link post=page name="ddex_fb_vs2012_1.png" %})
+![image]({% include post_ilink post=page name="ddex_fb_vs2012_1.png" %})
 
-![image]({% include post_i_link post=page name="ddex_fb_vs2012_2.png" %})
+![image]({% include post_ilink post=page name="ddex_fb_vs2012_2.png" %})
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {% include post_id_link id="228661" %}
+[2]: {% include post_link id="228661" %}
 [3]: http://firebird.svn.sourceforge.net/viewvc/firebird/NETProvider/trunk/DataDesignerExtensibility/ReadMe.txt?view=markup

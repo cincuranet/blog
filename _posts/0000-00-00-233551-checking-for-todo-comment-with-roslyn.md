@@ -87,4 +87,4 @@ I'm trying to find first solution file and then C# project file in current direc
 
 And there you have it. Take it, use it, change it. Enjoy.
 
-[1]: {% include post_id_link id="233548" %}
+[1]: {% include post_link id="233548" %}

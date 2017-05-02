@@ -16,6 +16,6 @@ Today the same idea popped in my head again and I decided to quickly jump into a
 Head to [NuoDb.Data.Client's NuGet page][4] and download, install, enjoy.
 
 [1]: http://www.nuodb.com
-[2]: {% include post_id_link id="233385" %}
+[2]: {% include post_link id="233385" %}
 [3]: http://www.nuget.org
 [4]: http://www.nuget.org/packages/NuoDb.Data.Client/

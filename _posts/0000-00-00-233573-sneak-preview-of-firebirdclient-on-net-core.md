@@ -16,7 +16,7 @@ I know a lot of people asked me about .NET Core version of FirebirdClient. Unfor
 
 Without further ado, here's the picture (worth a thousand words).
 
-[![FirebirdClient on .NET Core]({% include post_i_link post=page name="net-core_thumb.png" %})]({% include post_i_link post=page name="net-core.png" %})
+[![FirebirdClient on .NET Core]({% include post_ilink post=page name="net-core_thumb.png" %})]({% include post_ilink post=page name="net-core.png" %})
 
 It's still pretty early and there's still some work to do. Also as I was going through the whole code base I've found some not-so-nice code and some inconsistencies, which I decided to fix as well. No reason to postpone, at this point (and also the non-Core version will benefit as well).
 

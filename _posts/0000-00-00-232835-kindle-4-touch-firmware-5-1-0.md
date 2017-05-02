@@ -18,5 +18,5 @@ And finally the new homescreen isn't looking bad either. At least initially (you
 
 Good right? Sad think is, there's currently nothing I'd like to see, so I have nothing to look forward to in next version. 8-)
 
-[1]: {% include post_id_link id="232642" %}
+[1]: {% include post_link id="232642" %}
 [2]: http://www.amazon.com/gp/help/customer/display.html/ref=hp_200529680_touchupdate?nodeId=200790650

@@ -12,4 +12,4 @@ This time it's about views in Entity Framework. If you add a view into your mode
 
 Anyway, now I know also the B > A way, which is even better as it was my personal experience.
 
-[1]: {% include post_id_link id="230207" %}
+[1]: {% include post_link id="230207" %}

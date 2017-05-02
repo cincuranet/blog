@@ -18,6 +18,6 @@ First you have to see FB provider in list - if not, the registry file isn't impo
 
 Well, nothing painfull, isn't it? DDEX, Vista (64-bit), Firebird, Visual Studio 2005; everything works fine. To prove, I'm not cheating :) look (ok you can say, that it's mounting, but I'm not so patient to do this):
 
-![image]({% include post_i_link post=page name="226062.png" %})
+![image]({% include post_ilink post=page name="226062.png" %})
 
-[1]: {% include post_id_link id="7471" %}
+[1]: {% include post_link id="7471" %}

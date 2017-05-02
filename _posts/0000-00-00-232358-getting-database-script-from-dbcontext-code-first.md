@@ -21,9 +21,9 @@ public static string CreateDatabaseScript(this DbContext context)
 
 Hope the questioner will find this blog post.
 
-[1]: {% include post_id_link id="232308" %}
+[1]: {% include post_link id="232308" %}
 [2]: http://www.firebirdsql.org/index.php?op=files&id=netprovider
-[3]: {% include post_id_link id="230810" %}
+[3]: {% include post_link id="230810" %}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.aspx
 [6]: http://msdn.microsoft.com/en-us/library/system.data.entity.infrastructure.iobjectcontextadapter(v=vs.103).aspx

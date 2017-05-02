@@ -63,7 +63,7 @@ Then I have two implementations of `InterceptAsync`. One for `Task` and one for 
 
 It's really simple at the end. It just took a few tries (and errors) to figure out how to properly replace `ReturnValue` to not break `await`'s infrastructure.
 
-[1]: {% include post_id_link id="233447" %}
+[1]: {% include post_link id="233447" %}
 [2]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task(v=vs.110).aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.asyncstatemachineattribute(v=vs.110).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.continuewith(v=vs.110).aspx

@@ -16,5 +16,5 @@ The method also have new [SaveOptions][4] parameter. As it's enum we can expect 
 
 [1]: http://msdn.microsoft.com/en-us/library/dd395500(VS.100).aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectcontext.savingchanges.aspx
-[3]: {% include post_id_link id="229056" %}
+[3]: {% include post_link id="229056" %}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.objects.saveoptions(VS.100).aspx

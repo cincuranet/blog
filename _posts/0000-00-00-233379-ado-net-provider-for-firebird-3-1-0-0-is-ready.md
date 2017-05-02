@@ -28,7 +28,7 @@ You can get the bits from [NuGet][3] (recommended) or from [FirebirdSQL.org site
 
 Enjoy.
 
-[1]: {% include post_id_link id="233371" %}
+[1]: {% include post_link id="233371" %}
 [2]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&pid=10003&fixfor=10491
 [3]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [4]: http://www.firebirdsql.org/en/net-provider/

@@ -14,4 +14,4 @@ Musím přiznat, že tento obrat je skvělý a sám bych jej nevymyslel. Míč s
 
 _Pokud máte nějakou aplikaci, která by jeden menší server (1CPU, 1GB RAM, 30GB HDD) potřebovala, dejte mi klidně vědět._
 
-[1]: {% include post_id_link id="232935" %}
+[1]: {% include post_link id="232935" %}

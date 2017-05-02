@@ -36,4 +36,4 @@ SyntaxFactory.Block()
 A případně se podívat na property `ContainsAnnotations` u závorek.
 
 [1]: http://wug.cz/zlin/akce/763-Roslyn-Analyzatory-kodu-a-code-fixes
-[2]: {% include post_id_link id="233540" %}
+[2]: {% include post_link id="233540" %}
