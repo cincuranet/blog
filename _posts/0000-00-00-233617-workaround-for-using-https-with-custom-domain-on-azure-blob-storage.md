@@ -17,7 +17,7 @@ What to do about it? It's time for combining multiple services together and hopi
 
 #### Solution
 
-One service that allows using HTTPS with custom domain (and certificate) is Azure CDN (only Verizon currently). Although you can't upload your own certificate, you'll get a valid certificate from DigiCert for free once you enable HTTPS. Because you can put CDN in front of blob storage, it's almost solved.
+One service that allows using HTTPS with custom domain (and certificate) is [Azure CDN][5] (only Verizon currently). Although you can't upload your own certificate, you'll get a valid certificate from DigiCert for free once you enable HTTPS. Because you can put CDN in front of blob storage, it's almost solved.
 
 The [CDN pricing][2] is very similar to [blob storage pricing][1], thus from cost perspective it's not going to burn hole in your pocket.
 
@@ -37,3 +37,4 @@ If you can fit your needs in between the limitations, this might be viable solut
 [2]: https://azure.microsoft.com/en-us/pricing/details/cdn/
 [3]: https://feedback.azure.com/forums/217298-storage/suggestions/3007732-make-it-possible-to-use-ssl-on-blob-storage-using
 [4]: https://azure.microsoft.com/en-us/services/storage/blobs/
+[5]: https://azure.microsoft.com/en-us/services/cdn/
