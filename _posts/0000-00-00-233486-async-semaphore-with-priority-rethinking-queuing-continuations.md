@@ -39,7 +39,7 @@ As the comment says I'm calling the [`SetResult` method][2] using a `Task` to av
 
 I'm also calling [`Wait`][3] on the `Task`. My original reasoning was that I want to be sure the continuations are processed and I, if any, receive (don't loose) exceptions (although I'm not handling exception, I just want them to bubble up). <small>There was also a discussion about this in comments. Read it if you're interested.</small>
 
-Recently I was improviny my knowledge about `async`/`await` internals and threading/locking internals and decided to re-evaluate my original reasoning. After some testing I decided to change the method.
+Recently I was improving my knowledge about `async`/`await` internals and threading/locking internals and decided to re-evaluate my original reasoning. After some testing I decided to change the method.
 
 ```csharp
 public void Release()
