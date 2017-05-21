@@ -59,7 +59,7 @@ class CommentsWalker : CSharpSyntaxWalker
 }
 ```
 
-Yes. I was lazy to create a proper object for the list I was using and I used C# 7's tuples. The code is looking for `SingleLineCommentTrivia` or ` MultiLineCommentTrivia` and a token after. The token allows me to see where next code is. From that I'm just looking for the end of the comments block, ignoring any, basically, whitespaces. Empty line in comments doesn't make it two blocks of comments for me. With that I have ranges where the comments are and I can have some logic on top of it.
+Yes. I was lazy to create a proper object for the list I was using and I used C# 7's tuples. The code is looking for `SingleLineCommentTrivia` or `MultiLineCommentTrivia` and a token after. The token allows me to see where next code is. From that I'm just looking for the end of the comments block, ignoring any, basically, whitespaces. Empty line in comments doesn't make it two blocks of comments for me. With that I have ranges where the comments are and I can have some logic on top of it.
 
 ```csharp
 var workspace = MSBuildWorkspace.Create();
