@@ -32,7 +32,7 @@ ConversionStyle=chars
 8211=32
 ```
 
-The conversion table is just three lines in the `[Chars]` section. Rest is just a boilerplate. Besides the quotes I'm also fixing the dash character.
+The conversion table is just three (quotes only) lines in the `[Chars]` section. Rest is just a boilerplate. Besides the quotes I'm also fixing the dash character (last line).
 
 [1]: http://www.pspad.com/
 [2]: https://products.office.com/en/word
