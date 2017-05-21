@@ -27,7 +27,7 @@ option {
 }
 
 .accent {
-	font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Georgia", serif;
+	font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", serif;
 	font-style: italic;
 	font-weight: normal;
 	color: #666;
