@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&subset=latin-ext");
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 html {
-	font-family: "Georgia", "Times New Roman", serif;
+	font-family: "PT Serif", "Times New Roman", serif;
 	font-size: 16px;
 }
 
