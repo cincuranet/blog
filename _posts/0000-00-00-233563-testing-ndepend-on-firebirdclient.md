@@ -52,7 +52,7 @@ I know looking at the report that there are some _critical_ rules violated. Some
 [1]: http://www.ndepend.com/
 [2]: http://www.sms-timing.com/karting-software
 [3]: http://www.firebirdsql.org/en/net-provider/
-[4]: /i/233563/current/NDependOut/NDependReport.html
+[4]: {% include post_ilink post=page name="current/NDependOut/NDependReport.html" %}
 [5]: http://www.ndepend.com/default-rules/webframe.html
-[6]: /i/233563/compare/NDependOut/NDependReport.html
+[6]: {% include post_ilink post=page name="compare/NDependOut/NDependReport.html" %}
 [7]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/pulls

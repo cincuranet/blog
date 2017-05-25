@@ -10,9 +10,9 @@ When I first saw the news about new [Kindle][1] coming and being with touch supp
 
 Boring story for the beginning. :) Now about the Kindle 4 Touch itself.
 
-[![image]({% include post_ilink post=page name="kindle4touch_thumb.jpg" %})][2]
+[![image]({% include post_ilink post=page name="kindle4touch_thumb.jpg" %})]({% include post_ilink post=page name="kindle4touch.jpg" %})
 
-Although you can check the dimensions compared to [Kindle 3 Keyboard][3], something different is feeling. Yes, it feels smaller, but also - to me - little bit heavier and also thicker. The thickness is actually good. The previous Kindle was to thin for my hands. The new one is more comfortable to hold.
+Although you can check the dimensions compared to [Kindle 3 Keyboard][2], something different is feeling. Yes, it feels smaller, but also - to me - little bit heavier and also thicker. The thickness is actually good. The previous Kindle was to thin for my hands. The new one is more comfortable to hold.
 
 There are no buttons, except one, that brings you to home screen, every time. You're turning pages by touching right (approximately) two thirds of screen of one third on left side. Flipping also works. Touching about two centimeters on top shows you the menu (when reading a book). The touch layer is infrared layer above the screen. It has advantage of being able to register touches not only by finger, but also using i.e. pen. On the other hand, the display is little bit deeper in device (so if the light goes from side, there's a small shadow, that I find sometimes disturbing). Multitouch is also supported, so you can i.e. change the size of letters using pinch-to-zoom gesture. I'd like to see the display after few months of usage. More cleaning will be probably necessary. :) After few weeks of using, I don't see any problem using touch to turn pages. And because there are no buttons on sides, I can rest my thumbs on these margins without turning page accidentally from time to time as with Kindle 3.
 
@@ -27,5 +27,4 @@ Obbligato question at the end. Would I buy it again? Yes, I would. Do I regret i
 _If you have any question or something to try, feel free to ask in comments. I try to answer to my best._
 
 [1]: http://www.kindle.com
-[2]: /i/232642/kindle4touch.jpg
-[3]: {% include post_link id="232014" %}
+[2]: {% include post_link id="232014" %}

@@ -12,7 +12,7 @@ Nejprve obrázek.
 
 Porovnání Kindlu s běžnou kreditní kartou:
 
-[![Porovnání Kindlu s běžnou kreditní kartou]({% include post_ilink post=page name="kindle_1_thumb.jpg" %})][1]
+[![Porovnání Kindlu s běžnou kreditní kartou]({% include post_ilink post=page name="kindle_1_thumb.jpg" %})]({% include post_ilink post=page name="kindle_1.jpg" %})
 
 Kindle je jednoduchý – za dvě, tři hodiny zmáknete 99% funkcí, včetně vyzkoušení. Tlačítka jsou jasná a ovládání jednoduché, přímočaré. Žádné složité nastavování. Je třeba se připravit, že primárně je to zařízení „pro čtení", takže vše se točí kolem toho – nečekejte nic dalšího.
 
@@ -34,7 +34,7 @@ Jinak se Kindle nabijí přes USB (u mě asi 2,5 hodiny do plna, ale nebyl práz
 
 Po prvním dni nelituji koupi. Pokud rádi nebo hodně čtete, Kindle je jednoznačně dobrá volba. Uvidíme, co bude dál. :)
 
-Máte-li libovolný dotaz, využijte komentářů.  V případě, že budu znát odpověď (nebo to budu moci zkusit, vyfotit, ...), odpovím. A také můžete navštívit stránky [Kindle][2].
+Máte-li libovolný dotaz, využijte komentářů.  V případě, že budu znát odpověď (nebo to budu moci zkusit, vyfotit, ...), odpovím. A také můžete navštívit stránky [Kindle][1].
 
 Zobrazení kódu (původně byl barevný):
 
@@ -44,5 +44,4 @@ Obrázek (IE se Silverlight aplikací s tlačítky):
 
 ![Obrázek (IE se Silverlight aplikací s tlačítky)]({% include post_ilink post=page name="kindle_3.jpg" %})
 
-[1]: /i/230972/kindle_1.jpg
-[2]: http://www.amazon.com/kindle
+[1]: http://www.amazon.com/kindle

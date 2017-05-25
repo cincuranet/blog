@@ -138,8 +138,8 @@ Some ideas I have in my head:
 * Caching of some heavy reflection calls.
 * _Maybe_ (to make it extra interesting :)) ability to store the code of the routine in a table and compile and execute it on the fly (with some caching). 
 
-[1]: /i/233565/FbNetExternalEngine32.7z
-[2]: /i/233565/FbNetExternalEngine64.7z
+[1]: {% include post_ilink post=page name="FbNetExternalEngine32.7z" %}
+[2]: {% include post_ilink post=page name="FbNetExternalEngine64.7z" %}
 [3]: http://firebirdsql.org/
 [4]: https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx
 [5]: https://msdn.microsoft.com/en-us/library/dd386941(v=vs.110).aspx

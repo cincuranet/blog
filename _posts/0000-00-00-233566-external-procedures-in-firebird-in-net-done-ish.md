@@ -22,6 +22,6 @@ I'd like to get some feedback how it's used and what you'd like to have implemen
 
 _BTW if you look very closely you might find kind of easter egg. ;)_   
 
-[1]: /i/233566/FbNetExternalEngine32.7z
-[2]: /i/233566/FbNetExternalEngine64.7z
+[1]: {% include post_ilink post=page name="FbNetExternalEngine32.7z" %}
+[2]: {% include post_ilink post=page name="FbNetExternalEngine64.7z" %}
 [3]: {% include post_link id="233565" %}
