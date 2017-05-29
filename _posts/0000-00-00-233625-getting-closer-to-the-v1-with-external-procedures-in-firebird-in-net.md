@@ -10,7 +10,7 @@ tags:
   - SQL
 layout: post
 ---
-It's been a while since the [last time][4] I blogged about _FbNetExternalEngine_. That doesn't mean there was nothing happening. I was slowly working on it (really slowly, because of ... time), plus some companies took interest in it, confirming it's worth working on it and providing some feedback or nice-to-have features wishes (feel free to share your ideas in comments). So what's really new?
+It's been a while since the [last time][5] I blogged about _FbNetExternalEngine_. That doesn't mean there was nothing happening. I was slowly working on it (really slowly, because of ... time), plus some companies took interest in it, confirming it's worth working on it and providing some feedback or nice-to-have features wishes (feel free to share your ideas in comments). So what's really new?
 
 <!-- excerpt -->
 
