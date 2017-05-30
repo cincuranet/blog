@@ -6,6 +6,6 @@ layout: base
 	<h3><a href="{{ post.url }}/">{{ post.title | escape }}</a></h3>
 	{% include post_meta post=post %}
 	{{ post.excerpt }}
-	<p class="links"><a href="{{ post.url }}/">{{ site.excerpt_link_name }}</a><span class="divider"></span><a href="{{ post.url }}/#comments"><span class="fa fa-comments"></span>&nbsp;<span class="disqus-comment-count" data-disqus-url="http://{{ site.address }}{{ post.url }}/">&nbsp;</span></a></p>
+	<p class="links"><a href="{{ post.url }}/">{{ site.excerpt_link_name }}</a><span class="divider"></span><a href="{{ post.url }}/#comments"><span class="fa fa-comments" aria-label="Comments"></span>&nbsp;<span class="disqus-comment-count" data-disqus-url="http://{{ site.address }}{{ post.url }}/">&nbsp;</span></a></p>
 </article>
 {% endfor %}
