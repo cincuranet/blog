@@ -67,6 +67,10 @@ static class Program
 }
 ```
 
-Running this code with full optimizations (aka _Release_ build) it starts "failing" pretty quickly (just a few seconds on my machine). And on my machine the torn values are `2313682943` or `9999999997686317057`, of course yours will vary.
+Running this code with full optimizations (aka _Release_ build) it starts "failing" pretty quickly (just a few seconds on my machine). And on my machine the torn values are `2313682943` or `9999999997686317057` (yours might vary).
 
 At the time of writing it works successfully on good old .NET Framework `4.0.30319.42000` and also .NET Core `4.6.25009.03` using `netcoreapp1.1`.
+
+> [Follow-up post.][1]
+
+[1]: {% include post_link id="233626" %}
