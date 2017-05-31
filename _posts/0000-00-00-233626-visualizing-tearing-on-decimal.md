@@ -77,7 +77,7 @@ static class Program
 }
 ```
 
-Running this on .NET Core (but work fine on .NET as well) shows nicely the splitting happening (again full optimizations need to be turned on).
+Running this on .NET Core (but works fine on .NET as well) shows nicely the splitting happening (again full optimizations need to be turned on).
 
 ```text
 .NET Core 4.6.25211.01
