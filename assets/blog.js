@@ -3,11 +3,15 @@ var blog = (function() {
 		// should I do only 'article' links?
 		$('a').each(function(i, e) {
 			e = $(e);
-			if (!isLocalLink(e[0].href)) {
+			var href = e[0].href;
+			if (!isLocalLink(href)) {
 				e.attr('target', '_blank');
 			}
-			else if (isLocalImageLink(e[0].href)) {
+			else if (isLocalImageLink(href)) {
 				e.attr('target', '_blank');
+				e.click(function() {
+					ga('send', 'event', 'I-Link', 'click', href); 	
+				});
 			}
 		});
 		
