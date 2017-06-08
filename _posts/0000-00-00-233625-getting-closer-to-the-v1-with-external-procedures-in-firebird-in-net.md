@@ -23,7 +23,7 @@ public static IEnumerator<(int?, int?)> IncrementInteger(int? i)
 }
 ```
 
-Another big change - in fact it took a lot of try-error-repeat cycles, although the code is fairly straightforward at the end - is loading the assembly only when the execution is happening and releasing it right after. As you can probably guess, it is using [_application domains_][3]. What that means is that you can replace the assembly with your procedures on the fly without stopping the server. I'm really excited about this. Sadly it adds a little bit overhead with execution - about 10-15% in my quick testing - but I haven't jumped into performance optimizations yet (or possibly providing two execution models).
+Another big change - in fact it took a **lot of** try-error-repeat cycles, although the code is fairly straightforward at the end - is loading the assembly only when the execution is happening and releasing it right after. As you can probably guess, it is using [_application domains_][3]. What that means is that you can replace the assembly with your procedures on the fly without stopping the server. I'm really excited about this. Sadly it adds a little bit overhead with execution (because of the marshalling), but I haven't jumped into performance optimizations yet (or possibly providing two execution models).
 
 If you'd like to give it a try, download [32-bit][1] or [64-bit][2] build and enjoy. The package contains `plugins.conf` to help you register the plugin and also `Example.dll` (with source) and corresponding SQL script showing all supported datatypes on both sides.
 
