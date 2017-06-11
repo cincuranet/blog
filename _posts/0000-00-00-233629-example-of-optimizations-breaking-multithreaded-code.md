@@ -100,7 +100,7 @@ Although the assembly is slightly different now (the `x` variable is held in `ES
 00007FF800440626  je          00007FF800440622  
 ```
 
-The code is the same as in 32bit.Oonly the `x` was not completely eliminated, it's kept in `ECX` register, although never used. Hence the problem is still there, because the value is tested from register and never re-fetched from memory.
+The code is the same as in 32bit. Only the `x` was not completely eliminated, it's kept in `ECX` register, although never used. Hence the problem is still there, because the value is tested from register and never re-fetched from memory.
 
 Using the `x` makes the code basically the same as in 32bit.
 
