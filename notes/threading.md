@@ -30,11 +30,12 @@ And yes, I used some home-grown software to perform these measurements.
 A full fence takes around ten nanoseconds on a 2010-era desktop.
 
 The following implicitly generate full fences:
-C#'s lock statement (Monitor.Enter/Monitor.Exit)
-All methods on the Interlocked class (we'll cover these soon)
-Asynchronous callbacks that use the thread pool - these include asynchronous delegates, APM callbacks, and Task continuations
-Setting and waiting on a signaling construct
-Anything that relies on signaling, such as starting or waiting on a Task
+
+* C#'s lock statement (Monitor.Enter/Monitor.Exit)
+* All methods on the Interlocked class (we'll cover these soon)
+* Asynchronous callbacks that use the thread pool - these include asynchronous delegates, APM callbacks, and Task continuations
+* Setting and waiting on a signaling construct
+* Anything that relies on signaling, such as starting or waiting on a Task
 
 By virtue of that last point, the following is thread-safe:
 ```
