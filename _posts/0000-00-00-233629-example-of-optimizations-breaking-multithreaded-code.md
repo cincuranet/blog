@@ -141,7 +141,7 @@ The `ECX` register is no longer used and `ESI` is used instead, because the mess
 
 No surprise here. Still the same optimization. It's very close to the assembly the .NET Framework on 64bit with `x` used produced.
 
-You might also notice the `mov`-`mov`-`call` sequence there and wondering why it's there, what it's doing, what's at `00007FF84453DE80`? You're not alone. I ask the same questions. But my current knowledge and skills can't give me answers. According to debugger there's no code at `0x00007FF86294DE80`. Maybe somebody reading this can shed some light on it.
+You might also notice the `mov`-`mov`-`call` sequence there and wonder: Why it's there? What is doing? What's at `00007FF84453DE80`? You're not alone. I ask the same questions. But my current knowledge and skills can't give me answers. According to debugger there's no code at `0x00007FF86294DE80`. Maybe somebody reading this can shed some light on it.
 
 #### Conclusion
 
