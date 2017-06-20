@@ -27,9 +27,9 @@ ConversionStyle=chars
 
 [Chars]
 8217=39
-8222=34
 8220=34
-8211=32
+8221=34
+8211=45
 ```
 
 The conversion table is just three (quotes only) lines in the `[Chars]` section. Rest is just a boilerplate. Besides the quotes I'm also fixing the dash character (last line).
