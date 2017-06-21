@@ -5,7 +5,6 @@ date: 2011-03-14T04:03:28Z
 tags:
   - Databases in general
   - SQL
-layout: post
 ---
 I don't know why, but often I hear that the SQL commands are not type safe. That's kind of badly said. No it's wrong, without the proper context.
 

@@ -7,7 +7,6 @@ tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Roslyn
-layout: post
 ---
 [Task Parallel Library (TPL)][1] and [`async`/`await`][2] functionality completely changes the game we - developers - were playing last years. Because it changes the game so much there's quite some implementation details that, when you want to play A game, need to be considered. It's not that the implementation is wrong or attacking the problem from wrong direction. It's just a trade-off. Basically to make a A- game ready without any additional learning.    
 

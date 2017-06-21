@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - Programming in general
-layout: post
 ---
 It's a good practice to include parameter name when throwing [ArgumentException][1] (or similar). But I hate typing the parameter name as string. It's A) boring and B) dumb, because when you refactor the parameter name you have to manually also change this string.
 

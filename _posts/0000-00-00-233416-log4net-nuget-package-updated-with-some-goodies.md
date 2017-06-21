@@ -5,7 +5,6 @@ date: 2013-09-19T6:19:00Z
 tags:
   - Logging &amp; Tracing
   - NuGet
-layout: post
 ---
 > [Follow-up post.][1]
 

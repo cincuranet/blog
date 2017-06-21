@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Sync Framework
   - Visual Studio
-layout: post
 ---
 MS Sync Framework v1.0 is ready for [download][1].
 

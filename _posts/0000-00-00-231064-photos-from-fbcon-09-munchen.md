@@ -5,7 +5,6 @@ date: 2009-11-29T09:03:24Z
 tags:
   - Firebird
   - Photos
-layout: post
 ---
 Starter for (but not only) morning:
 

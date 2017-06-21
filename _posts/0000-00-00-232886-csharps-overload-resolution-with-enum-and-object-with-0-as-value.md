@@ -5,7 +5,6 @@ date: 2012-05-31T14:07:44Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 Today I faced surprising behavior once again. Completely off guard.
 

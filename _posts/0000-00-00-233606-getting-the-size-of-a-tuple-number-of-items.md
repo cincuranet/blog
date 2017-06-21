@@ -5,7 +5,6 @@ date: 2017-03-28T15:46:00Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 [Yesterday was a trip to the world of tuples and reflection][1] and today I'm going to continue on that note. [As previously][2], I needed something with tuples for [FbNetExternalEngine][3] - number of elements in whole tuple. I call it "size of tuple". 
 

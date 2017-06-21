@@ -6,7 +6,6 @@ tags:
   - C#
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 I have been scripting something in build process of one big project where to make the final binaries bunch of other tools need to be executed. Given that this was in pipeline where most of steps were asynchronous I was eager to have this non-blocking as well and possibly introduce parallelism.
 

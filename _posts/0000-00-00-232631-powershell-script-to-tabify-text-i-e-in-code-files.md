@@ -5,7 +5,6 @@ date: 2011-12-29T18:50:23Z
 tags:
   - C#
   - PowerShell
-layout: post
 ---
 Few weeks ago I needed to tabify (change spaces to tabs) in a C# files in a solution. I tested some plug-ins to Visual Studio, but none of them did what I wanted. I left the idea, as it was not that important to have consistent tabs/spaces. But a day or two ago I had some time and yen for to create simple [PowerShell][1] script to fix that for me. It simply replaces _x_ `spaces` taken from input parameter with tab(s). Text goes to `stdin` and result to `stdout`.
 

@@ -4,7 +4,6 @@ title: |-
 date: 2014-06-03T06:09:00Z
 tags:
   - Disaster recovery
-layout: post
 ---
 Last week was some weird week. A lot of downtimes in services I'm using and I was also struggling to implement a feature, that looked fairly straightforward, in [FirebirdClient][1]. But the downtimes and more specifically the time just after the downtime made me think.
 

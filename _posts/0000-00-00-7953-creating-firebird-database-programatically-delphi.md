@@ -5,7 +5,6 @@ date: 2006-04-18T12:45:00Z
 tags:
   - Delphi/Object Pascal/Pascal
   - Firebird
-layout: post
 ---
 Today my colleague asked me the question, "How to create FB database programatically from Delphi?". Well, the solution is very easy, just use the following code (it's using the InterBase Express components):
 

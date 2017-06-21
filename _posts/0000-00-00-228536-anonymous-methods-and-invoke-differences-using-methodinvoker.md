@@ -4,7 +4,6 @@ title: |-
 date: 2008-10-22T18:34:00Z
 tags:
   - .NET
-layout: post
 ---
 OK, let's start with some off topic paragraph. If you wanna to operate with some UI stuff from thread, you have to "push" the method processing into the UI thread. With .NET FW 2.0 and higher you can use [SynchronizationContext][1] class and let "the right" :) side to handle this. On the other hand, the classic (or older if you want) approach is to use Invoke method on some control, mainly Form (the problem here is, that the method have to know that's called from thread - but it's solvable too). 
 

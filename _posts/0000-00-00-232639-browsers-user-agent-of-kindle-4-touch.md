@@ -4,7 +4,6 @@ title: |-
 date: 2012-01-05T18:46:53Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 The [Kindle 4 Touch][1] has, as expected, new (improved) browser experience. It's pretty good in fact, for quick look and read on some pages or for reading articles in your [Instapaper][2].
 

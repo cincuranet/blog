@@ -4,7 +4,6 @@ title: |-
 date: 2009-11-02T15:01:01Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 Asi před týdnem jsem popisoval [první zkušenosti s Kindlem][1]. To jsem ho měl v ruce sotva den, takže všechny neduhy a neergonomické vlastnosti musely přijít logicky později.
 

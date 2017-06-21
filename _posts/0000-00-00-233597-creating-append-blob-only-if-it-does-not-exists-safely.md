@@ -5,7 +5,6 @@ date: 2017-03-01T17:58:00Z
 tags:
   - Azure
   - Azure Storage
-layout: post
 ---
 I'm working on a small side-project where I need some multiple-writers-safe storage for storing logging-like events. For this the Azure's [Append Blob][1] is a good match.
 

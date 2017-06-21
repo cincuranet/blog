@@ -6,7 +6,6 @@ tags:
   - Encryption
   - Cryptography
   - Best practice or not?
-layout: post
 ---
 What could possibly go wrong when you expect HTTPS for signing in... I was handling new version of my client's application which was hosted on [HostForLIFE.eu][1]. That just mean logging into the admin panel and uploading new deployment. Simple as that. As I was accessing the admin panel I spotted it's not running on HTTPS, which honestly is a big no-no for me in 2016. So I filled a support ticket an asked whether that would be possible. Maybe different URL or IP. What the brought is unbelievable.
 

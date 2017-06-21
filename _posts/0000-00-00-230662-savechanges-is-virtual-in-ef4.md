@@ -4,7 +4,6 @@ title: |-
 date: 2009-06-30T20:50:08Z
 tags:
   - Entity Framework
-layout: post
 ---
 I don't know whether I just noticed this too late, but the [SaveChanges][1] method in upcoming EF4 is virtual. This is a great small change.
 

@@ -5,7 +5,6 @@ date: 2016-02-04T15:21:00Z
 tags:
   - Firebird
   - .NET
-layout: post
 ---
 The `nbackup` tool and more importantly the `alter database [begin|end] backup` commands are a great way to do a quick backup of Firebird database. You just copy the file (or files if you're using database splitting) and you're done. The small problem is with restore.
 

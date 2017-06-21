@@ -5,7 +5,6 @@ date: 2011-05-21T12:50:50Z
 tags:
   - BlackBerry
   - BlackBerry PlayBook
-layout: post
 ---
 Similarly to my post about [Kindle's browser][1] I looked how the browser in PlayBook is identifying self.
 

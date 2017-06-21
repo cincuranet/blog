@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Firebird
   - Visual Studio
-layout: post
 ---
 Visual Studio hit the shelves few weeks ago and it would be nice to install DDEX provider into it, isn't it? Sadly, with the revamped setup experience some changes in configuration inside also came. Thus it's going to be manual process for now. I know there's an installer program for DDEX, but it's going to take some time before it's updated - I'm doing this in my free time and it's all about priorities (unless somebody with $$$ prioritizes its own request). Let's get into it.
 

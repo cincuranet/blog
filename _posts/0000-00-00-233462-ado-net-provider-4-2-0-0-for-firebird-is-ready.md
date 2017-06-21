@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 Firebird (2.5.2+) has finally [support][6] for creating backups and streaming these back to client via API (Services API). This release focuses mostly on implementing this feature. 
 

@@ -4,7 +4,6 @@ title: |-
 date: 2009-07-23T14:29:45Z
 tags:
   - MS SQL Server
-layout: post
 ---
 Shortly: Very.
 

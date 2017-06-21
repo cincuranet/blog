@@ -4,7 +4,6 @@ title: |-
 date: 2007-04-28T21:34:00Z
 tags:
   - .NET
-layout: post
 ---
 I'm writing a simple library for reading some data from one Firebird database, it's not important... For better readability I'm creating CommandText as a string on more lines with some formatting. Because the performance was one of the criterion, I was not so comfortable assigning selects like this (everybody knows, that StringBuilder class is a lot faster when concatenating strings). But as you can expect (and me too), smart compiler creates this string (there's no variable in it) during compile time as one big, isn't it? Yeah. However why not to calm down myself with a hundred percent proof?
 

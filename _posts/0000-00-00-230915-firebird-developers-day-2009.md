@@ -4,7 +4,6 @@ title: |-
 date: 2009-10-11T20:37:26Z
 tags:
   - Firebird
-layout: post
 ---
 Možná jste si všimli, že jste si nevšimli žádné upoutávky na letošní Firebird Developers‘ Day. Není to chyba na vašem přijímači. Zatím žádné takové oznámení nebylo.
 

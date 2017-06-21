@@ -8,7 +8,6 @@ tags:
   - Firebird
   - OData/Data Services (Astoria)
   - Sync Framework
-layout: post
 ---
 Astoria so called offline has been released while ago. But until now I have no time and yen for playing with it. When I first heard about offline support for Astoria I was thinking, hmm that's going to be cool and though that it will be build inside the client itself, with an option to store this information and do offline work when no connection is available - something like "we suppose the connection is mostly available, hence this is only for the few cases when not".
 

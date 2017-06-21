@@ -5,7 +5,6 @@ date: 2015-08-04T15:43:00Z
 tags:
   - NuGet
   - Entity Framework
-layout: post
 ---
 If you have been with Entity Framework long enough you remember it had quite a ride with versions. Let's have a small recap, shall we? That will give us some context for recent days.
 

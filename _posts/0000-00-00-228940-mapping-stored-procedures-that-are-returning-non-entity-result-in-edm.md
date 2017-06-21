@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Entity Framework
   - Visual Studio
-layout: post
 ---
 If you want to map stored procedure you have three options what the stored procedure can return. Nothing, some scalar value and entity. The problem is that sometimes you have SP that's returning some data, but not some entity. The way to solve this is to create entity with same shape as the SP is returning. But the problem is, that this entity type needs to be mapped to something, probably table. Else the model is not valid. The good message is, that you can create fake table in SSDL and use it. :) But it's a pain to create it, because you have to deal with XML directly and create not only the fake table with proper structure, but also entity set. When reading pre-prelease :) version of [Julie Lerman][1]'s wonderful book [Programming Entity Framework][2] there was a sigh about some tool to automate the process. Well today I have some time, to create rough tool to create some kind of this tool.
 

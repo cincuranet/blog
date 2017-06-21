@@ -7,7 +7,6 @@ tags:
   - Wi-Fi
   - Network
   - OpenELEC
-layout: post
 ---
 Simply speaking it works without a glitch. Plug in, boot, set up Wi-Fi network and done. Now it runs days without crashing, freezing or something like that.
 

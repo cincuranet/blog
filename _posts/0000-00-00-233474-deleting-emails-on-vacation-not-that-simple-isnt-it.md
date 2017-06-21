@@ -5,7 +5,6 @@ date: 2014-09-03T13:33:00Z
 tags:
   - Email
   - Life
-layout: post
 ---
 Spending last few days travelling I got into thinking about article I read week or two before about companies more and more deleting people's emails when they are on vacation. I think it's a great idea. But it's not black and white as it looks like.
 

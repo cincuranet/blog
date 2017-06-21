@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 I'm pleased to announce new version - version 4.5.0.0 - of [ADO.NET provider for Firebird][3]. This version provides improved support for Entity Framework 6 and also countless hours and builds has been spent on hunting some race conditions in "events" support. 
 

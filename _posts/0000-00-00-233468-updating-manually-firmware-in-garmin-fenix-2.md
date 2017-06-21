@@ -6,7 +6,6 @@ tags:
   - Garmin
   - Running
   - GPS
-layout: post
 ---
 Last week I noticed new firmware for Garmin fēnix 2 being available. I was eager to load it into watch because I was having problems lately with satellite reception. I was not happy to open Garmin Express to update the firmware. The watch works as a standard [USB Mass Storage][2] so why the vendor forces me to use this program is a mystery.
 

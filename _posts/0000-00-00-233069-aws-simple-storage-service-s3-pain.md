@@ -7,7 +7,6 @@ tags:
   - AWS
   - Cloud
   - Storage &amp; Backup
-layout: post
 ---
 When we worked together with [Aleš Roubíček][1] using Windows Azure cloud, we faced quite a few surprises with applications in cloud. Especially when the application isn't small and is using a lot of "cloud" services. Sometimes we used hashtag on Twitter for it: [_#cloudlife_][2].
 

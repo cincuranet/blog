@@ -8,7 +8,6 @@ tags:
   - NewSQL
   - NoSQL
   - NuoDB
-layout: post
 ---
 Today I'd like to talk about connection pooling. Something that's well known for a lot of people in (not only) ADO.NET world.
 

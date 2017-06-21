@@ -9,7 +9,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-layout: post
 ---
 As it turned out the I introduced regression in [3.0.1][1] while building .NET 3.5 version. It's now fixed in 3.0.2 and available on [NuGet][2] and [website][3]. [Link to tracker with details][4].
 

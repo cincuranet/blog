@@ -5,7 +5,6 @@ date: 2010-01-14T11:33:18Z
 tags:
   - LINQ
   - Entity Framework
-layout: post
 ---
 Yesterday I was creating extension method for `Skip` for `IQueryable`. I needed to accept the nullable integer and if null just skip any processing. Something like this:
 

@@ -6,7 +6,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Best practice or not?
   - Lessons learned
-layout: post
 ---
 I'm spending now a lot of time working with [`Timer`][1] object. It's a class with such a simple surface, but there's still a lot to learn. How it works internally, the scheduling, ... This time I learned, luckily not the hard way, just by studying, about interesting race condition, I never though about.
 

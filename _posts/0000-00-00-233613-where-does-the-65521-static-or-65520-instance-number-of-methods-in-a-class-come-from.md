@@ -5,7 +5,6 @@ date: 2017-04-14T19:55:00Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 If you have been following last two posts about the stack overflows ([post 1][1], [post 2][2]), you know I've hit some limits. The first was 65535 fields in a class. Which is easy to explain, because the number is actually the maximum value that fits into unsigned 16-bit integer. Makes sense. Then I've hit some weird number (or actually numbers) for number of methods. It took me quite a while, with some help, to understand, what the number is based on. 
 

@@ -9,7 +9,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-layout: post
 ---
 I'm happy to bring you early Christmas gift packed as ADO.NET provider for Firebird version 2.7. This version brings important bug fixes ([tracker.firebirdsql.org][1]) and [logging improvements][2].
 

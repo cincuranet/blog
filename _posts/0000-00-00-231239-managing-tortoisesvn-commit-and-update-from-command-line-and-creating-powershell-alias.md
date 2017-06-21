@@ -6,7 +6,6 @@ tags:
   - PowerShell
   - Subversion
   - TortoiseSVN
-layout: post
 ---
 I started to using [PowerShell][1] in my development environment simply to learn it a little bit more (though I'm still using the old command from cmd or UNIX) and also to get out of the stone aged cmd. And because I'm using the console a lot - yep, I get used to it on UNIX/Linux machines with terminal access) I was not happy to open explorer just to issue commit or update to/from [SVN][2] (these are most common commands I'm using, together with diff in commit window).
 And happily [TortoiseSVN][3] has a utility to manage most of the basic tasks. It's called TortoiseProc. To do commit or update in current directory, you'll simply execute:

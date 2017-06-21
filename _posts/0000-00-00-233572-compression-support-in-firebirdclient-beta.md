@@ -8,7 +8,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 As promised yesterday I have a beta of FirebirdClient with compression support (Firebird 3). It's available on [NuGet][1].
 

@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - MS SQL Server
-layout: post
 ---
 There's a lot of content for latest CTP, CTP4, for Entity Framework "new features". It's mainly focused on Code First stuff, that fills the triad with Database First and Model First. I like Code First but what I also like is maintainable code. Hence I was more trying not to use [convention-over-configuration][1], in opinion good for only small projects, and focus on specifying everything the way _I_ want it to be, especially with my database structure (yes, I'm data consistency and storage freak).
 

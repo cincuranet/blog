@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 With [yesterday's sources move][1] I have another good news. The version 3.1.0.0 of ADO.NET provider for Firebird is ready for your download!
 

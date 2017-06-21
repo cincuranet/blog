@@ -6,7 +6,6 @@ tags:
   - .NET
   - IL
   - Lessons learned
-layout: post
 ---
 I remember clearly the time I started writing the piece of code I'm going to talk about and thinking it might be a smart move. Of course writing a smart code is never a good idea (lesson learned, again and again and again). Writing simple code is a good idea.
 

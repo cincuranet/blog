@@ -10,7 +10,6 @@ tags:
   - Firebird
   - LINQ
   - MS SQL Server Compact Edition
-layout: post
 ---
 Scott Guthrie recently posted article about [New Embedded Database Support with ASP.NET][1]. This made me think about other options, [Firebird][2] in particular, and advantages and disadvantages. What I'm going to do is to very shortly introduce [Firebird Embedded][3] here and then compare it with features Scott wrote in his article.
 

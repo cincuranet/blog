@@ -5,7 +5,6 @@ date: 2017-02-26T16:45:00Z
 tags:
   - Azure
   - GitLab
-layout: post
 ---
 As usual the easiest things take a lot of time - or luck - to debug. Last few days I was trying to deploy this blog to a Azure Web App from [GitLab's CI][1] via good old FTP. The problem is the FTP username on Web App is always in the form of `web_app_name\$web_app_name`. So the backslash and dollar cannot be avoided i.e. by regenerating publishing credentials. And I don't have to explain to you these characters are often, in various environments, handled specifically.  
 

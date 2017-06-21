@@ -17,3 +17,9 @@ kramdown:
   input: GFM
   auto_ids: false
   syntax_highlighter: ""
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

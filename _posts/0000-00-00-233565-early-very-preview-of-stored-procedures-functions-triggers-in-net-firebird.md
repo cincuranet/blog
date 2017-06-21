@@ -8,7 +8,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 > [Follow-up post.][6]
 

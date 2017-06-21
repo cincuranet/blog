@@ -9,7 +9,6 @@ tags:
   - Firebird
   - LINQ
   - .NET
-layout: post
 ---
 > This post is outdated. Read the [updated version][5].
 

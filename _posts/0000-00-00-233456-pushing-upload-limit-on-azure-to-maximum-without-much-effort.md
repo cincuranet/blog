@@ -8,7 +8,6 @@ tags:
   - .NET
   - Storage &amp; Backup
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 Last week I had pretty straightforward task. Issue few simple SQL commands and then copy roughly 800MB of data to Azure Blob Storage. Everything happening inside Azure. And do it in under 30 seconds. Hard limit.
 

@@ -5,7 +5,6 @@ date: 2010-06-27T17:48:31Z
 tags:
   - Amazon Kindle
   - Apple iPhone/iPad/iPod
-layout: post
 ---
 Some time ago I [was writing about my thoughts about Kindle vs. iPad][1]. Information about [iPad][2] was based from different sources around internet. As my friend [Petr Kaleta][3] (Mac obsessed ;)) recently bought one and I was able to play with it for a short I would like to share some of my initial feelings.
 

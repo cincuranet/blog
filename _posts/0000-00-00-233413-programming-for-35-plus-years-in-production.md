@@ -4,7 +4,6 @@ title: |-
 date: 2013-09-13T6:45:00Z
 tags:
   - Programming in general
-layout: post
 ---
 As the news about [Voyager 1][1] leaving solar system passed around me, it got me thinking. This "stuff" is flying for 35+ years. It's more or less 35+ years in production. How do you design and develop for that?
 

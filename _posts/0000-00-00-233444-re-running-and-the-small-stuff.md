@@ -5,7 +5,6 @@ date: 2014-02-07T08:14:00Z
 tags:
   - Running
   - Life
-layout: post
 ---
 It's Monday and I finished my today's run. While on my back relaxing a little I found AJW's [Running And The Small Stuff article][1] in my queue (yes, I'm little behind). While he thinks about why distance runners and I think - given the article was on iRunFar - we can say ultra-runners, are better in basically dealing with daily "problems". Being better going with flow. Though I enjoyed reading the article, in my mind, the reason is elsewhere.
 

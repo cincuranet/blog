@@ -4,7 +4,6 @@ title: |-
 date: 2012-10-17T11:04:25Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 It has been few days with my [Kindle 5 Paperwhite][1]. I was curious about the new frontlight. I have to say I was happy with Kindle 4 Touch, as well with previous versions. But Amazon again came with something I had to see and try. And this one seemed pretty interesting (well as with the touch few years back ;)).
 

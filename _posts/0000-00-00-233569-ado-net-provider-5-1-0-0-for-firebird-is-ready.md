@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New 5.1.0.0 version of [ADO.NET provider for Firebird][1] is ready for download. Notable changes or improvements are [support for new fields in MON$ATTACHMENTS][5] and [support for "-skip_data" in backup/restore][6]. And finally some nice simple [performance tweak around `Charset` class][7].
 

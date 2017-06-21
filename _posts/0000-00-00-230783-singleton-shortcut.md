@@ -5,7 +5,6 @@ date: 2009-08-26T18:54:29Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 Probably every developer sometimes heard about the singleton pattern. I'll be not far from truth that you're probably writing it like this:
 

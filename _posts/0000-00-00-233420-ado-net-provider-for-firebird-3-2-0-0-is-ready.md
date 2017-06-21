@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 There's a new version of FirebirdClient waiting for you. Numbered 3.2.0.0. You can get the bits from [NuGet][1] ([EF6-ready version][2]) or from [FirebirdSQL.org site][3] (or [directly][4]).
 

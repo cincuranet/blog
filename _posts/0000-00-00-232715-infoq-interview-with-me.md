@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Entity Framework
   - Firebird
-layout: post
 ---
 I was recently interviewed for [InfoQ][1] article - [Q&A with Jiri Cincura of the Firebird Database Project][2]. We touched Firebird, ADO.NET, O/RMs, Entity Framework etc. If you have any questions, feel free to ask.
 

@@ -5,7 +5,6 @@ date: 2010-01-02T19:34:11Z
 tags:
   - Virtualization
   - Windows
-layout: post
 ---
 As I recently [switched from Virtual PC to VMWare Workstation][1] I wanted to upgrade my VMs to be able to use all cores I have and I granted. Machines I'm using most are Windows XPs and Windows 7. As the [Windows 7 migration failed][2] and I'm still about to install fresh W7 RTM, the challenge was XP.
 

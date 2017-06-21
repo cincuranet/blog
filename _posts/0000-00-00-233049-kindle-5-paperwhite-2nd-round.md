@@ -4,7 +4,6 @@ title: |-
 date: 2012-11-06T13:15:11Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 Few weeks back my Kindle 5 Paperwhite was delivered and I started exploring it. You can [read the initial review][1]. Some time has passed and now I can clearly say what has worked and what didn't.
 

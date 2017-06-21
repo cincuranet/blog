@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - LINQ
   - NHibernate
-layout: post
 ---
 I recently discovered nice feature of [NHibernate][1]. It's called [MultiQuery][2] (but the name doesn't matter). The idea behind is simple. Instead of sending multiple queries one by one and melting performance of your application in network latency, send all in one batch.
 

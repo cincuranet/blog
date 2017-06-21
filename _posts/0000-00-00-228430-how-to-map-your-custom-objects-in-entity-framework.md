@@ -8,7 +8,6 @@ tags:
   - Entity Framework
   - LINQ
   - Visual Studio
-layout: post
 ---
 Well, generating EDMX file from database and letting Visual Studio to generate all the objects is easy. But sometimes you have your custom objects with custom logic. How to solve this? In version 1 of Entity Framework this isn't easy. It's possible, but not easy. The good news is, that for version 2 there is huge amount of work on POCO (<u>P</u>lain <u>O</u>ld <u>C</u>LR <u>O</u>bjects) with persistence ignorance.
 

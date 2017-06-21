@@ -5,7 +5,6 @@ date: 2009-07-02T10:45:42Z
 tags:
   - Entity Framework
   - OData/Data Services (Astoria)
-layout: post
 ---
 I was punch directly to my face right now. Everytime I'm doing some ADO.NET Data Services (Astoria) speak I'm showing simple models, with almost no modifications. And everything works great. But I found, right now, that if you have entity in your model with property access getter or setter setted to anything except public, the service will not work. Grrr.
 

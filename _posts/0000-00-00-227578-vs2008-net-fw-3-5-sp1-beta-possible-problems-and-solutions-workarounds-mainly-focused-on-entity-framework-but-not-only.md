@@ -7,7 +7,6 @@ tags:
   - Entity Framework
   - Visual Studio
   - Windows
-layout: post
 ---
 Couple of links I've found during recent days:
 

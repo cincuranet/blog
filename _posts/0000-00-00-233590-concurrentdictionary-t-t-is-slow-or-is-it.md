@@ -6,7 +6,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - .NET
   - .NET Core
-layout: post
 ---
 On this year's [MS Fest][1] [Jarda Jirava][2] had a presentation about [Akka.Net][3]. I was interested in this topic, because the _actor model_ is one way (out if many - sadly no silver bullet yet) to tackle concurrency and parallelism problems. 
 

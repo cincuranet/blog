@@ -4,7 +4,6 @@ title: |-
 date: 2005-07-10T14:18:00Z
 tags:
   - .NET
-layout: post
 ---
 Here's easy function for creating icon from string. I'm using it for traybar icon and for showing some usefull information on my notebook, i.e. the battery life in minutes.
 

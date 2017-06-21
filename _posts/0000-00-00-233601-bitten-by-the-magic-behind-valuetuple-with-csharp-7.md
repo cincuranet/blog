@@ -7,7 +7,6 @@ tags:
   - .NET Core
   - C#
   - Roslyn
-layout: post
 ---
 I've had some spare time in between working on other items yesterday and I decided to explore how the [_FbNetExternalEngine_ plugin][3] would feel with new [tuples support in C# 7][2]. As it happens the sailing was not smooth and I was bitten by the magic the compiler does for us.
 

@@ -5,7 +5,6 @@ date: 2014-10-29T11:36:00Z
 tags:
   - C#                
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 > [Part 1 of this story.][1]
 

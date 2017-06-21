@@ -6,7 +6,6 @@ tags:
   - Databases in general
   - Entity Framework
   - LINQ
-layout: post
 ---
 Today I seen a code with good chance of hard to find mysterious bugs. Let's start with database table structure we're going to use for demonstration.
 

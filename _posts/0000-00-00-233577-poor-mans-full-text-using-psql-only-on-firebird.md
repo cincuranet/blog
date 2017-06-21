@@ -6,7 +6,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 I was presenting this idea on [this year's Firebird Conference][1]. It's an idea, working with some constraints of Firebird, but one can take it as an inspiration and maybe extend it to another usage on another platform. We had quite a productive discussion about possible improvements (I'll describe mines at the end), but unless the people will provide the ideas in comments here too, you'll have to use your own brain (you should've been there ;)).
 

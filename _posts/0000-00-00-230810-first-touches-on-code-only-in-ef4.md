@@ -7,7 +7,6 @@ tags:
   - Firebird
   - MS SQL Server
   - Visual Studio
-layout: post
 ---
 I finally got my hands on the new feature in EF4, Code Only. It's now available in [feature CTP][1]. What's the code only? Very shortly you write just a code and express your mapping in code as well. There's no model, no edmx file, no CSDL, MSL, SSDL files.
 

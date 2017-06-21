@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
-layout: post
 ---
 The Beta 1 of Entity Framework v4 ([confused with versions?][1]) is out for a while and you may be tempted to check the new features comming. And why not with Firebird.
 

@@ -8,7 +8,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 Because I can load any .NET code in [_FbNetExternalEngine_][1] I had and idea, probably since November last year, to try to load Firebird Embedded inside it all that in server (I know completely useless). So I did it.  
 

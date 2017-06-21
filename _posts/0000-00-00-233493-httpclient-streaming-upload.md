@@ -6,7 +6,6 @@ tags:
   - .NET
   - Performance
   - Network
-layout: post
 ---
 The requirement seemed simple. Get a stream of data and _upload_ it using HTTP to server. The stream might be possibly large so complete buffering is is not an option. Nothing special. 
 

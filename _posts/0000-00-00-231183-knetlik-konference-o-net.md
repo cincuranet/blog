@@ -5,7 +5,6 @@ date: 2010-01-21T12:54:02Z
 tags:
   - .NET
   - Presentations &amp; Speaking
-layout: post
 ---
 13. února 2010 (sobota) se koná zajímavá konference okolo .NETích témat s podtitulem "Bringing Good Software Architecture". Registrace je dostupná na [známém místě][1]. Program pak naleznete na [knetlik.cz][2].
 

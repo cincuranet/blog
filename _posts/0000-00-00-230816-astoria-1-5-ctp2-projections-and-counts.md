@@ -5,7 +5,6 @@ date: 2009-09-20T15:53:45Z
 tags:
   - Entity Framework
   - OData/Data Services (Astoria)
-layout: post
 ---
 CTP2 for Astoria 1.5 has been released some days ago and this version comes with couple of new features. You can read about the list on [http://blogs.msdn.com/adonet/archive/2009/09/01/ado-net-data-services-v1-5-ctp2-now-available.aspx][1]. For me, the projections support and count support are the most exciting.
 

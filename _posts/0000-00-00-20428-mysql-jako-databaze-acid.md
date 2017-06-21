@@ -4,7 +4,6 @@ title: |-
 date: 2006-10-01T10:30:00Z
 tags:
   - Databases in general
-layout: post
 ---
 Před několika dny mě ráno napadlo, jestli MySQL (tak masivně) využíváno vůbec podporuje základní koncept ACID. Dlouho jsem o tom nepřemýšlel, přestalo mě to bavit (asi hlavně kvůli tomu, že MySQL prostě nemusím). Nicméně odpoledne jsem měl schůzku s kolegou, který je velký znalec databází a mj. šéfredaktor dbsvet.cz. Během řečí se nějakým záhadným způsobem řeč dostala na téma MySQL & ACID. Po několika konstruktivních úvahách jsme odsouhlasili, že MySQL ACID neumí. 
 

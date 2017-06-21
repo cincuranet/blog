@@ -7,7 +7,6 @@ tags:
   - C#
   - Firebird
   - SQL
-layout: post
 ---
 The implementation of events via the `FbRemoteEvent` class was nor wrong nor correct. It was correct in a way that it did what it should do, but it was not clean and it was not guiding the developer into the _pit of success_, you had to know how it works under the covers to work with it properly. I decided to rewrite the implementation, fix some issues and more importantly give it more high-level feel, where you're actually using some infrastructure, instead of just close the raw implementation.
 

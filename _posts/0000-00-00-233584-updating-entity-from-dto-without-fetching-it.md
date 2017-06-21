@@ -4,7 +4,6 @@ title: |-
 date: 2016-11-11T09:04:00Z
 tags:
   - Entity Framework
-layout: post
 ---
 Last week I was talking with colleague and we went deep into using DTOs for showing data effectively and also updating such data back. This topic itself could be discussed for hours. But what got my attention was whether I could make the update back to database from DTO a little bit more like if the change tracking was kickin' in automatically on tracked object.
 

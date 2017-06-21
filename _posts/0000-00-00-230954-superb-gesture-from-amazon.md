@@ -5,7 +5,6 @@ date: 2009-10-22T14:42:16Z
 tags:
   - Amazon Kindle
   - Life
-layout: post
 ---
 Few days ago I bought [Amazon Kindle][1], the international version, as I'm not U.S.. The international version <del>is</del> was +$20 to the U.S. only version. And today I got email from Amazon saying that the price has been lowered to U.S. only price and that I'm getting my $20 back. 8)
 

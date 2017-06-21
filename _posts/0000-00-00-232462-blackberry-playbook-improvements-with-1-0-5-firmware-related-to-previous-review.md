@@ -5,7 +5,6 @@ date: 2011-06-08T10:11:08Z
 tags:
   - BlackBerry
   - BlackBerry PlayBook
-layout: post
 ---
 Few days ago I wrote "[BlackBerry PlayBook – review after some time][1]" and I mentioned two major pains I have. And guess what. There new firmware available during these days, version 1.0.5, and it solves pretty much the "power button issue" I was talking about.
 

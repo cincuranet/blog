@@ -4,7 +4,6 @@ title: |-
 date: 2017-03-20T10:22:00Z
 tags:
   - Visual Studio
-layout: post
 ---
 During my day and over a week I fire Visual Studio countless times. Well over half of these is because I need to test something, prototype some idea, try some API or library and so on. This is really throw away code that survives only one opening (OK, maybe few times I go back to this code later in the day/week). It's basically this flow: Open Visual Studio, create new application, write some code, close Visual Studio, delete the folder. Especially the last two steps seemed very tedious last, well, years. Thus I decided to do something with it.
 

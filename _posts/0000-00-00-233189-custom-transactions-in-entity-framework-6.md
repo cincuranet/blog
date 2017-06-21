@@ -5,7 +5,6 @@ date: 2013-03-13T14:58:05Z
 tags:
   - Databases in general
   - Entity Framework
-layout: post
 ---
 [Entity Framework 6 will come with a nice feature of being able to use custom transactions][1]. You can either manually start new one with some isolation level (in fact this was possible even before, just little bit more code) or - and this is really nice, because I had questions about this (and did some custom hacks in Firebird's provider) couple of times. So I like it. And I like it also because finally the transactions are (at least in my eyes) of same importance as connections (where the support was good before).
 

@@ -7,7 +7,6 @@ tags:
   - Entity Framework
   - LINQ
   - Visual Studio
-layout: post
 ---
 Jarek Kowalski napsal pěkné posty o tom, jak "vyrobit" transparent lazy loading v EF a připravil i prográmek pro generování kódu. Doporučuji minimálně omrkat.
 

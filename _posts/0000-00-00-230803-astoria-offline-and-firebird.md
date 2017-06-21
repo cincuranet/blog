@@ -7,7 +7,6 @@ tags:
   - Entity Framework
   - Firebird
   - OData/Data Services (Astoria)
-layout: post
 ---
 Few weeks ago I was playing (and I'm still about to continue playing) and [writing about Astoria offline][1]. I setted up some challenge for me to try to make it work with Firebird (as the big database, SQL CE still as local store). It looked like it should be plausible. But it's not. :)
 

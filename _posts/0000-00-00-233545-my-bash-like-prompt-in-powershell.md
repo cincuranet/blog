@@ -5,7 +5,6 @@ date: 2016-01-24T19:55:00Z
 tags:
   - PowerShell
   - Bash
-layout: post
 ---
 It all started with this [tweet][1]:
 

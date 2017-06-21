@@ -4,7 +4,6 @@ title: |-
 date: 2012-11-13T09:46:10Z
 tags:
   - OData/Data Services (Astoria)
-layout: post
 ---
 You can configure OData service so it itself limits (hard limit) to number of items it will ever return - [DataServiceConfiguration.MaxResultsPerCollection][1]. This limit is not the same as one that gives you URI with token added where you can ask for more. This is hard limit, which, if you go over it, produces error. Sadly the error in `<m:error>` is inside invalid XML. The XML is missing closing tag.
 

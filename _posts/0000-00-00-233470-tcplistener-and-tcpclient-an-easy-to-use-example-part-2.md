@@ -4,7 +4,6 @@ title: |-
 date: 2014-07-22T06:20:00Z
 tags:
   - .NET
-layout: post
 ---
 Back in 2005 I wrote a blogpost [TcpListener and TcpClient (an easy-to-use example)][1]. It was really just a piece of code I wrote to quickly finish what I was doing and I put it on my blog. The code was throwaway code, but even after the years it's still visited a lot on my blog. 
 

@@ -6,7 +6,6 @@ tags:
   - Windows
   - .NET
   - WinRT
-layout: post
 ---
 While digging into some background stuff in WinRT I found some mismatch in API. It's not something that's completely different. Both APIs deal with some background operations, both having same prefix "Background" (although in different namespace). Have a look yourself.
 

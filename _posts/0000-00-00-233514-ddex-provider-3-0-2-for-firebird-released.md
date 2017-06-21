@@ -7,7 +7,6 @@ tags:
   - Databases in general
   - Firebird
   - Visual Studio
-layout: post
 ---
 [Compared to Visual Studio 2013 this time I'm faster][2]. The 3.0.2 version of DDEX provider for Firebird brings support for Visual Studio 2015. The installer has been updated and also the `*.reg` files in sources in case you'd like to install manually.
 

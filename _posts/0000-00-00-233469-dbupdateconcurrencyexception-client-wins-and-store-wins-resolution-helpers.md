@@ -4,7 +4,6 @@ title: |-
 date: 2014-07-11T09:33:00Z
 tags:
   - Entity Framework
-layout: post
 ---
 Whenever I'm dealing with [`DbUpdateConcurrencyException`][1] I don't what is "client wins" and "store wins" look like. I can at the end figure it out because I know how the `ObjectStateManager`/`ChangeTracker` works and I kind of know where I'm heading. But going slowly though IntelliSense isn't what I like to do.
 

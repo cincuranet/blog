@@ -8,7 +8,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 Did you know you can store `NaN` value in Firebird? You don't? Me neither, until last week when [Slavomír Skopalík][1] showed me whole new world. It was in Delphi, so I was curious how it will turn out from .NET/[FirebirdClient][2].
 

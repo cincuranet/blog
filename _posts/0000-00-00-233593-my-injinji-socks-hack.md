@@ -4,7 +4,6 @@ title: |-
 date: 2017-02-21T17:29:00Z
 tags:
   - Running
-layout: post
 ---
 I like [Injinji socks][1]. I race in these as well as use them for every training run or outing I do. I like the fit and no chafing or blisters, so why try something else? But there's a problem with these. And I finally found a solution.
 

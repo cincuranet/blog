@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Entity SQL
   - LINQ
-layout: post
 ---
 From time to time you may need to compare only date part of datetime/timestamp field in your database i.e. for filtering. In EFv1 this is a little bit problem, in EFv4 (now beta 2) better.
 

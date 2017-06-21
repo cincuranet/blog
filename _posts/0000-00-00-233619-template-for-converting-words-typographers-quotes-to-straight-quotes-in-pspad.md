@@ -7,7 +7,6 @@ tags:
   - PSPad
   - Text
   - Markdown
-layout: post
 ---
 I write my posts in [Word][2], mostly. Because Word, with its superb proofing tools, it single handedly the best tool for that. But I also use [Markdown][3] to store the posts and I publish from it, because Markdown is just a plain text. The finishing touches code pasting and YAML editing I do in [PSPad][3]. Again, because it's the editor I like and used since forever. However, I use typographer's quotes in Word. Why wouldn't it? And although I can leave these in the final text, I prefer to use straight quotes and let these be processed in Markdown to HTML transformation.
 

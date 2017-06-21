@@ -5,7 +5,6 @@ date: 2017-06-19T12:39:00Z
 tags:
   - Presentations &amp; Speaking
   - Entity Framework
-layout: post
 ---
 O/R mappery jsou výborný sluha, ale špatný pán. Abych tak trochu parafrázoval známé přísloví. David Gešvindr dobře zachytil, že v rámci různých Entity Framework přednášek apod. trousím, často i jako odpovědi na otázky z davu, různá doporcučení co nedělat (nebo co naopak dělat). Drobečky jsou fajn, ale dát to trochu do kupy a celkově sjednotit není od věci. A o tom je tato přednáška. 
 

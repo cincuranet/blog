@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New version 5.9.0.0 of [ADO.NET provider for Firebird][1] is ready for download. Except for few bug fixes, the main focus was on re-implementing events.  
 

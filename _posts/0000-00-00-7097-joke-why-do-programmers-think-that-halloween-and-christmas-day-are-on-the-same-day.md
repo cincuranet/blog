@@ -4,7 +4,6 @@ title: |-
 date: 2006-01-04T15:50:00Z
 tags:
   - Uncategorized
-layout: post
 ---
 Because DEC 25 == OCT 31.
 

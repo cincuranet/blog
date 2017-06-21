@@ -5,7 +5,6 @@ date: 2007-07-02T09:32:00Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 From time to time there's a question about binding bool fields from Firebird into DataSet/DataTable. Because Firebird has no bool datatype people created a lot of workarounds. The most used way is to use CHAR(1) or SMALLINT as base type (or domain with check constraint). With integer, there's no problem. When you have 0/1 False/True it's trivial. But how to do this with char (or any other way you're using). Well, the solution is easy. I like this one.
 

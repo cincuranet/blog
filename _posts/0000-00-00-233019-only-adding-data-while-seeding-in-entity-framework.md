@@ -5,7 +5,6 @@ date: 2012-10-14T18:17:17Z
 tags:
   - Entity Framework
   - Expressions
-layout: post
 ---
 I was doing my Entity Framework course this week ([contact me][1], if you're interested) and at one point we were in [Migrations][2] and I was explaining the [Seed method][3]. Maybe you know, by default, there's a sample showing handy method `AddOrUpdate` being available. And I got I question whether there's some method to just "add only". So when the record is already there, nothing will be added. Inserted new otherwise.
 

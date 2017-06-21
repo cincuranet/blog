@@ -4,7 +4,6 @@ title: |-
 date: 2006-04-09T21:38:00Z
 tags:
   - Uncategorized
-layout: post
 ---
 V několika posledních týdnech jsem instaloval na některé stroje nové verze různého SW. A jak to při správném upgradu chodí, vždy něco nefungovalo.
 

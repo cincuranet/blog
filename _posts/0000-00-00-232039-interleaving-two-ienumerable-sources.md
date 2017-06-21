@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - LINQ
-layout: post
 ---
 > [Follow-up post.][1]
 

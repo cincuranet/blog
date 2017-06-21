@@ -4,7 +4,6 @@ title: |-
 date: 2005-12-21T21:24:00Z
 tags:
   - Firebird
-layout: post
 ---
 Nedávno se v diskuzi objevil dotaz, jak překlopit datum a čas na string, a zároveň část uříznout (konec - setiny, vteřiny, atp.). Vzpomněl jsem si na trik Ivana Přenosila s přiřazením a vyjímkou. Stačilo tedy napsat proceduru:
 

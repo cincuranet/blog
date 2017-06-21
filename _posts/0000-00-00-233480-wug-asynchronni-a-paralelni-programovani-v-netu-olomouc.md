@@ -5,7 +5,6 @@ date: 2014-10-06T18:10:00Z
 tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 Po [Brně][2] a [Praze][3] si "Asynchronní a paralelní programování v .NETu" střihneme v Olomouci. Jsem rád, že lidi toto zajímá. Je to téma co mě baví a rád o něm povídám. Klidně bych povídal a programoval a přemýšlel nad problémy co lidé přinesou hodiny. A když mě někdo poslouchá... :) 
 

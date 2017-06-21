@@ -7,7 +7,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-layout: post
 ---
 It may came as a shock but [Firebird][1] does not have direct support for neither bools nor guids. On the other hand people around Firebird are smart and came with more or less standard solutions for both. The bool is easy, just use number with constraint to 0 or 1. For guid we (ab)use special character set available in engine. It's called `OCTETS` and it's exactly what you think it is. Just a bunch of binary data, without any other interpretation from engine. That means `CHAR(16)` and the above character set is a perfect match for storing (not only) guids.
 

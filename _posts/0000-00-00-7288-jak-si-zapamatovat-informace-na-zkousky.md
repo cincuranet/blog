@@ -4,7 +4,6 @@ title: |-
 date: 2006-02-04T09:12:00Z
 tags:
   - Uncategorized
-layout: post
 ---
 Pročítal jsem RSS feed z MSDN blogů (který jsem mimochodem nechal téměř měsíc ležet, takže tam bylo přes 3000 položek) a mimo jiné jsem narazil v jednom blogu na zajímavé odkazy. Nakonec jsem se proklikal až na článek [How to... Remember Information for Exams][1]. Na stejné stránce najdete i zlepšováky jak zlepšit zapamatování na jiné věci. 
 

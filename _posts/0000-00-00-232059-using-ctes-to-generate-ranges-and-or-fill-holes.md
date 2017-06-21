@@ -6,7 +6,6 @@ tags:
   - Databases in general
   - Firebird
   - SQL
-layout: post
 ---
 [Common Table Expressions][1] are a tool to express things in SQL without need to write long queries or use procedural SQL. The ability to write recursive queries is even nicer and yesterday I had an idea how to use it little bit differently.
 

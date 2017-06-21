@@ -5,7 +5,6 @@ date: 2009-02-22T14:22:00Z
 tags:
   - Entity Framework
   - LINQ
-layout: post
 ---
 [Danny Simmons posted][1] small helper method for runnning queries against local cache (in ObjectContext). Many of you are probably using similar method. But I don't like to have to specify entity set as a string. That's a first step for refactoring problems. :)
 

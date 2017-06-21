@@ -4,7 +4,6 @@ title: |-
 date: 2017-05-04T10:33:00Z
 tags:
   - Lifehack
-layout: post
 ---
 I have a small lifehack that I'd like to share with you. The fact of today is that you can't life without an email. OK, maybe you can, but in my world, it would be pretty damn difficult and inconvenient. And so I have email always with me, on my phone. But what if you don't want to be email-able? Like on vacation?
 

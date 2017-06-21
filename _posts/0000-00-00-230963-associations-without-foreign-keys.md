@@ -4,7 +4,6 @@ title: |-
 date: 2009-10-23T09:00:54Z
 tags:
   - Entity Framework
-layout: post
 ---
 [Michal Bláha][1] asked me, before [my session][2] when I stopped in his office, whether it's possible to create associations in Entity Data Model without foreign keys in database, as he's not using FKs, he's enforcing referential integrity in application (yeah, if you're transaction guy like I am, your brain is about to blow).
 

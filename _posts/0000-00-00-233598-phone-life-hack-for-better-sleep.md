@@ -4,7 +4,6 @@ title: |-
 date: 2017-03-09T11:10:00Z
 tags:
   - Lifehack
-layout: post
 ---
 I'm charging my phone overnight on the floor next to my bed. Nothing special. Sometimes while slowly fading into sleep some email or something comes in, the screen lights up and in the dark room it's fairly noticeable. And I, being curious, check what's that and often also reply or do something. And I don't like it.
 

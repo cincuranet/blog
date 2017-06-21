@@ -5,7 +5,6 @@ date: 2006-04-10T20:01:00Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 A máme to tu zas. Mám na to prostě asi štěstí. Databáze "naklikávám" podle čmáranic v GUI (je to pohodlnější, neboť to umí ledacos doplnit). Jenže jak to něco doplňuje, něco se přehlédne.
 

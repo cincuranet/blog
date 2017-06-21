@@ -4,7 +4,6 @@ title: |-
 date: 2006-05-07T17:36:00Z
 tags:
   - .NET
-layout: post
 ---
 Tento čtvrtek (11.5.) se na [Fakultě Informatiky, MU Brno][1] uskuteční workshop (přednáška) na téma ADO.NET a použití ve WinForms.
 

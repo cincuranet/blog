@@ -5,7 +5,6 @@ date: 2010-07-23T03:49:08Z
 tags:
   - Databases in general
   - Programming in general
-layout: post
 ---
 Recently I've got to think about ER world and OO world. There's a lot of people around there who understand ER or OO world very deeply. In fact ER world is well formalized, described and has a strong mathematical background. A lot of theoretical work is behind OO as well. But what about ORMs?
 

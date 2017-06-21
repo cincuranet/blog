@@ -8,7 +8,6 @@ tags:
   - Best practice or not?
   - Cloud
   - Lessons learned
-layout: post
 ---
 Every entity in [Azure Table Storage][1] has `PartitionKey`, `RowKey` and `Timestamp` property. `PartitionKey` gives the "bucket" where the entity will be stored (entities in one partition can be on more machines, though). And the `RowKey` is simply the key of that row. Queries where you're matching both keys are fast. Matches inside partition (you know `PartitionKey` but only part (or none) of `RowKey`) are slower. Cross partition matches even slower. You get the idea. But what about the `Timestamp`?
 

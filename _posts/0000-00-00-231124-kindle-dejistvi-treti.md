@@ -4,7 +4,6 @@ title: |-
 date: 2009-12-31T16:41:20Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 [Nový firmware][1] už je na světě chvilku a tak si dovolím jej trochu zhodnotit. ;) Prvně baterie. Subjektivně se výdrž opravdu prodloužila. S vypnutou sítí jsem nemusel více jak měsíc nabíjet (naposledy [před konferencí v Mnichově][2] až do včerejška, kdy ale baterie zdaleka nebyla prázdná) a čtu vlastně každý den. Pro mě naprostá paráda. Dříve Kindle připojím k počítači, abych něco nahrál, než že mu dojde baterka.
 

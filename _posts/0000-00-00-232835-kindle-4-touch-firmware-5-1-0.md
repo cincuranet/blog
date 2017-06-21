@@ -4,7 +4,6 @@ title: |-
 date: 2012-05-17T04:55:29Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 When [I bought my Kindle 4 Touch][1] I was satisfied with it. But there were few pieces I was missing and previous versions have them. But with [firmware 5.1.0][2] it's running on full steam back again.
 

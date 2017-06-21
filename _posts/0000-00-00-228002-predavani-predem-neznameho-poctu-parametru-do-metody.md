@@ -4,7 +4,6 @@ title: |-
 date: 2008-07-26T21:51:00Z
 tags:
   - .NET
-layout: post
 ---
 Někdy se vám může stát, že chcete do metody předat předem neznámý počet parametrů. Vyřešit to můžete lehce předáním kolekce apod. Nicméně je zde ještě jedna možnost. Jedná se o klíčové slovo [params][1]. Tímto klíčovým slovem umožníte předat do metody parametry prostým zadáním a uvnitř je zpracovat jako kolekci. Výsledek pak vypadá takto:
 

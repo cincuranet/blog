@@ -4,7 +4,6 @@ title: |-
 date: 2011-07-18T10:00:05Z
 tags:
   - Presentations &amp; Speaking
-layout: post
 ---
 Je možné, že jste nestihli ["Entity Framework" přednášku na Gopas TechEdu][1] a dokonce ani [Entity Framework 4.1 – Code First][2] o chvíli později. Ale to vůbec nevadí, protože máte další šanci. Tentokrát v rámci [WUG][3]u v Praze.
 

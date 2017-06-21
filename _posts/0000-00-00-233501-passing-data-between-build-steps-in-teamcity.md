@@ -5,7 +5,6 @@ date: 2015-03-18T20:23:00Z
 tags:
   - TeamCity
   - Continuous Integration
-layout: post
 ---
 Recently I started automating crazy stuff on [TeamCity][1]. Basically everything that we were doing manually needs to be now automated. That brings challenges to itself as some "processes" are, well, crazy and I just needed to fit in. Unless I was up for complete rewrite (I was not).
 

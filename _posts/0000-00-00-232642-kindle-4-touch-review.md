@@ -4,7 +4,6 @@ title: |-
 date: 2012-01-05T18:44:27Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 When I first saw the news about new [Kindle][1] coming and being with touch support, I was calm. I didn't seen why would somebody need touching it. You know, I'm reading on my Kindle. And I'm reading a lot (in fact, I'm reading, except technical books and papers, as you'd expect also various different genres I wouldn't thought I'd ever read). Next page, sometimes previous page button. That's 99% of my "hardware" interaction with my Kindle. When it first came out, again nothing. Why should I buy new one, I thought. I don't know what happened after few weeks, but I found myself checking the new Kindle. Probably the most interesting piece for me was a missing keyboard. I'm typing probably only hundred or so characters in a month aka nothing.
 

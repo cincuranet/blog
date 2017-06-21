@@ -5,7 +5,6 @@ date: 2013-03-11T09:32:56Z
 tags:
   - Entity Framework
   - Firebird
-layout: post
 ---
 > [Follow-up post.][9]
 

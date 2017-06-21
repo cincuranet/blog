@@ -4,7 +4,6 @@ title: |-
 date: 2006-02-08T22:02:00Z
 tags:
   - Delphi/Object Pascal/Pascal
-layout: post
 ---
 Ačkoli zde se hodně mluví o Visual Studiu (a příslušenství), nedá mi to abych napsal pár slov.
 

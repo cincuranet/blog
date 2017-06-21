@@ -4,7 +4,6 @@ title: |-
 date: 2010-09-01T08:01:02Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 Last (almost) day I was playing with new [Kindle][1] 3<sup>rd</sup> generation and I'll share my initial thoughts. I'll came with more detailed observations later (i.e. battery life).
 

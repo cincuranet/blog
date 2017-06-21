@@ -4,7 +4,6 @@ title: |-
 date: 2011-11-19T11:00:46Z
 tags:
   - Presentations &amp; Speaking
-layout: post
 ---
 Rok se s rokem sešel a koná se další MS Fest. Tentokrát nabídnu něco alternativního. Podíváme se na databázový stroj Firebird. A protože Firebird nabízí i Embedded verzi, kterážto je velmi zajímavá, porovnáme ji i s konkurencí v podobě MS SQL Server CE.
 

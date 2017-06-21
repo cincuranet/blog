@@ -4,7 +4,6 @@ title: |-
 date: 2006-11-18T07:25:00Z
 tags:
   - Firebird
-layout: post
 ---
 Na konferenci jsem se dozvěděl, jaktože FB 1.5 občas správně provedl UPPER na národních znacích a někdy na to zarytě kašlal. Je to velice prosté - pokud je na sloupci definováno collate, funguje vše dobře. Když se použije defaultní, funkce UPPER nepřevede národní znaky dobře (no vlastně je nechá tak jak jsou ;-)). FB 2 už má toto samozřejmě opraveno.
 

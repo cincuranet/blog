@@ -5,7 +5,6 @@ date: 2017-05-16T07:48:00Z
 tags:
   - .NET
   - .NET Core
-layout: post
 ---
 I don't know why, but last week I decided to check whether the 2 seconds timeout for single finalizer and 40 seconds for all finalizers at the end of .NET application are still in place. If you haven't heard about these two numbers ever, don't worry. Because if you've ever hit one or the other you've been doing something seriously wrong. That's how I've got to learn about it as well. ;)
 

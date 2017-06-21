@@ -6,7 +6,6 @@ tags:
   - .NET Core
   - LXSS
   - Windows
-layout: post
 ---
 I'm playing a little with Windows Subsystem for Linux (also known as WSL or LXSS), mostly to see what's what and how it might be useful for my everyday usage. As I was reading some articles on how it's implemented and how it works inside I've got an idea. What if I create an application, in .NET Core, that uses some resource from kernel and I execute it both regular Windows session and in LXSS, will this resource be shared across?
 

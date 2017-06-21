@@ -4,7 +4,6 @@ title: |-
 date: 2007-12-06T10:53:00Z
 tags:
   - Databases in general
-layout: post
 ---
 * Use Firebird SQL Server, if you have the luxury to choose among many database systems. ([http://www.firebirdsql.org/][1])
 * If you want to deal with the COMPLEXITY, try PostgreSQL Server. ([http://www.postgresql.org/][2])

@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
-layout: post
 ---
 The [Entity Framework 6 Beta 1][1], depending on your timezone, was released today. This version brings some breaking changes for applications as well as provider writers.
 

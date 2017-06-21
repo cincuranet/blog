@@ -4,7 +4,6 @@ title: |-
 date: 2006-08-13T12:52:00Z
 tags:
   - Firebird
-layout: post
 ---
 Mějme takovéto zadání:
 

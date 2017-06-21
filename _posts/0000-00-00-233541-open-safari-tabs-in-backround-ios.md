@@ -4,7 +4,6 @@ title: |-
 date: 2016-01-07T17:26:00Z
 tags:
   - Apple iPhone/iPad/iPod
-layout: post
 ---
 When I'm browsing on my phone I either click on a link and open it in current tab or I want to open to it in background tab. There's maybe .1% occurrence when I don't want background tab. And ever since I remember tabs on iOS in Safari it was foreground tab. And I thought it's given.
 

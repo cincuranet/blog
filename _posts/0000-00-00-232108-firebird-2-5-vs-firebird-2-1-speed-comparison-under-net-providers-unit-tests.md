@@ -5,7 +5,6 @@ date: 2010-10-19T10:00:56Z
 tags:
   - Firebird
   - Test Driven Development (TDD)
-layout: post
 ---
 Recently I was running [NUnit][1] tests we're using for [.NET provider][2] and I got an idea to compare different [Firebird][3] versions. Not because it's any standard test (frankly it's way not), but because I have to run the tests against different Firebird versions anyway and I see the time. It's not about the time itself, rather about the performance improvement (or not) between two versions.
 

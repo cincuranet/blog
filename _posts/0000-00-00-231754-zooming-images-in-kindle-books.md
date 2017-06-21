@@ -4,7 +4,6 @@ title: |-
 date: 2010-07-18T08:31:44Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 Recently I was reading book with images at the end and I more or less accidentally pressed the 5-way joystick and got cursor near the image. What a surprise (for me; it's probably described in manual ;)):
 

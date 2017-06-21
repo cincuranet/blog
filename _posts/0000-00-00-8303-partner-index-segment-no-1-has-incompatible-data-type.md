@@ -4,7 +4,6 @@ title: |-
 date: 2006-06-02T10:33:00Z
 tags:
   - Firebird
-layout: post
 ---
 Pokud jste se setkali s tímto chybovým hlašením na Firebirdu nezoufejte. Je to sice nová hláška (FB 2.0), ale řešení je jednoduché. Na [dbsvet.cz][1] jsem [napsal jednohubku jak tomuto předejít resp. co je příčinou][2].
 

@@ -5,7 +5,6 @@ date: 2010-11-22T05:30:48Z
 tags:
   - Firebird
   - Open Source
-layout: post
 ---
 If you're expecting some sensation, I'll not make you happy. Shortly, yes, Firebird is free, completely. You can use it wherever you want and you don't have to pay anything nor release sources of your application nor ...
 

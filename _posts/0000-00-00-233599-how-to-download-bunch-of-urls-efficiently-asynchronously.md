@@ -6,7 +6,6 @@ tags:
   - C#
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 I'm getting such question fairly often when [teaching my "parallel/async/threading" course][3]. It's always about a collection of URLs and downloading these efficiently. Everybody needs that. 
 

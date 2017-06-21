@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - LINQ
-layout: post
 ---
 [Yesterday I needed][1] to put one element at beginning of the collection I already had. Some kind of [Concat][2] upside down. :) As you can use the Concat method, it looks weird when you see the code, because two items are actually swapped. So I created a simple extension method to do it for me.
 

@@ -4,7 +4,6 @@ title: |-
 date: 2005-06-21T11:22:00Z
 tags:
   - .NET
-layout: post
 ---
 > [Follow up post available.][1]
 

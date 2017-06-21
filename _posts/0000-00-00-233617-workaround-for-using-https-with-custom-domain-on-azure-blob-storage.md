@@ -7,7 +7,6 @@ tags:
   - Azure
   - Azure Storage
   - CDN
-layout: post
 ---
 [Azure Blob Storage][4] is my favorite cloud service in Azure. Among it's purpose of storing data, it allows you to set custom domain instead of using `<account>.blob.core.windows.net`. Which is handy. On the other hand it does not allow you (currently) to use it with HTTPS because you can't upload your own certificate, which sucks, sucks donkey balls.
 

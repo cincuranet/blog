@@ -5,7 +5,6 @@ date: 2011-02-28T05:13:04Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 From time to time I'm dealing with API that's using Expression<Func<TEntity, object>> as parameter, mainly to show property you want to deal with. And that's fine, if you need just the expression itself. But I often create my custom extensions, where I'm somehow working with the property itself or the result. And that's a problem, because I don't know any info about the type, it's just object.
 

@@ -5,7 +5,6 @@ date: 2008-10-20T17:24:00Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 I have implemented new feature available from FB2.0, it's [timeout for wait transaction][1]. It's a nice feature, 'cause you can specify how long do you wanna wait before getting deadlock error. Thanks also to Dmitry Yemanov for debug (that also revealed couple of new bugs; now already fixed).
 

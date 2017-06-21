@@ -5,7 +5,6 @@ date: 2010-03-01T08:58:47Z
 tags:
   - Email
   - Life
-layout: post
 ---
 Generally, I'm not recommending services I'm using here. But experience from today is just too great not to share it. I'm using Hosted Exchange from [Sherweb][1].
 

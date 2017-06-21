@@ -8,7 +8,6 @@ tags:
   - NewSQL
   - NoSQL
   - NuoDB
-layout: post
 ---
 In [previous post][1] I introduced you [NuoDB][2], the so-called _NewSQL_ database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)
 

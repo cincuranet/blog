@@ -5,7 +5,6 @@ date: 2008-07-23T08:52:00Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 Did you know, that you can use in [Firebird .NET Data Provider][1] more "firebirdish" connection strings?
 

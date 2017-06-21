@@ -4,7 +4,6 @@ title: |-
 date: 2010-04-10T19:37:20Z
 tags:
   - Entity Framework
-layout: post
 ---
 Entity Framework has a nice ability to wire up associations on both ends when the related entities come into context. This feature is handy and you can use it to simulate some scenarios, like [this][1]. But we're on EFv4 time, everybody is using POCO. ;)
 

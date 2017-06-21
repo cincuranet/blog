@@ -6,7 +6,6 @@ tags:
   - .NET
   - Firebird
   - Visual Studio
-layout: post
 ---
 Couple of weeks ago [Patrick Smacchia][1] reached to me and offered me a license for [NDepend][1]. At that time I was actually in some code cleanup in [Fast 5 software][2] and though it might be handy to try it. As usual a lot of other things took priority and only now I'm  able to start playing with it. Because I needed some codebase that's not huge and also not small, I took [FirebirdClient][3] (both ADO.NET provider as well as EF6 provider). It's open source so you can try it yourself and it contains some ~10 years old code so there will be something to look at, for sure.
 

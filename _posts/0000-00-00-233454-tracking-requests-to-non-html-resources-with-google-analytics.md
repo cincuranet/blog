@@ -5,7 +5,6 @@ date: 2014-05-05T15:37:00Z
 tags:
   - Google
   - Google Analytics
-layout: post
 ---
 I wanted to ditch the [PAD file][5] on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use. 
 

@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New 5.1.1.0 version of [ADO.NET provider for Firebird][1] is ready for download. It's a regular bugfix release. Also I want to release beta later this month with Firebird 3's compression support. So keep an eye on [FirebirdSql.Data.FirebirdClient][2] NuGet.
 

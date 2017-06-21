@@ -6,7 +6,6 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - .NET
   - C#
-layout: post
 ---
 After [my presentation this week on WUG][1] I got an interesting question. How to wrap [event-based asynchronous pattern (EAP)][2] into [task-based asynchronous pattern (TAP)][3]. Obviously my mind immediately picked up the [`TaskCompletetionSource<T>`][4] class as a viable solution.
 

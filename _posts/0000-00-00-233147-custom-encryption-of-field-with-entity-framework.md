@@ -6,7 +6,6 @@ tags:
   - Encryption
   - Entity Framework
   - Security
-layout: post
 ---
 Yesterday there was a good question on Twitter with [`#efhelp`][1] hashtag. The core is about using [Entity Framework][2] to store entities, that store the properties encrypted somehow. So it's custom encryption on client side (not on server). Of course, I could take Entity Framework sources and modify some file, but I wanted to do it with official release. The assumption I'm working with is that the entity itself knows how to encrypt and decrypt data (another valid approach might be that the [`DbContext`][3] does that).
 

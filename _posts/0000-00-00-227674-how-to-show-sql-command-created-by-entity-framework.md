@@ -6,7 +6,6 @@ tags:
   - .NET
   - Entity Framework
   - LINQ
-layout: post
 ---
 > [Updated version.][1]
 

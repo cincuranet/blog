@@ -5,7 +5,6 @@ date: 2006-04-22T15:44:00Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 A few days ago I was trying to deploy my web app, which is using Firebird .NET Data Provider with design time stuff too. There was some problem with this, so I've created small how-to.
 

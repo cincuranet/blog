@@ -4,7 +4,6 @@ title: |-
 date: 2012-06-21T14:23:49Z
 tags:
   - Čeština
-layout: post
 ---
 Občas potřebuji použít slovo _versus_ ve zkrácené podobě a dlouho jsem nevěděl jestli je správně _vs._ nebo _vs_, případně obojí. Až do nedávna jsem s tím žil a trochu to ignoroval. Avšak dobrá nálada či co a větší než obvyklá četnost použití v jednom dni mne donutily se tomu podívat na zoubek.
 

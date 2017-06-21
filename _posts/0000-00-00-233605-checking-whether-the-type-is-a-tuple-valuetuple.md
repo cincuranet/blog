@@ -5,7 +5,6 @@ date: 2017-03-27T18:45:00Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 Continuing with my tuples ([`ValueTuple<...>`][1] to be precise) [exploration][2] in C# I was in a need to check whether the type is a "tuple". The `(T, T, T, ...)` in C#. You can create `ValueTuple<...>` yourself manually, but you can also create something that's not a tuple - compiler wouldn't do it that way. 
 

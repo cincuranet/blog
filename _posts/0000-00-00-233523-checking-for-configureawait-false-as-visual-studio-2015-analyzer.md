@@ -7,7 +7,6 @@ tags:
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Roslyn
-layout: post
 ---
 Sometime ago I wrote - actually looking at the post date it's already a year, give or take - a [`ConfigureAwaitChecker` tool][1]. It was partly because I needed tool like that and also I wanted to investigate [Roslyn][2]. Perfect combination. 
 

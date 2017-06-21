@@ -5,7 +5,6 @@ date: 2008-07-29T12:14:00Z
 tags:
   - Entity Framework
   - LINQ
-layout: post
 ---
 Really good extension methods.
 

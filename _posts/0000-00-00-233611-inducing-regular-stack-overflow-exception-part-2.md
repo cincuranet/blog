@@ -5,7 +5,6 @@ date: 2017-04-08T10:22:00Z
 tags:
   - .NET
   - C#
-layout: post
 ---
 During, literally, writing yesterday's [Inducing "regular" stack overflow exception][1] I got an idea to try to induce the stack overflow using methods only, no arguments, and still without recursion. Can I do it? Am I going to hit some limits? Would I learn something new (as I did in "part 1")? Yes, yes and yes.
 

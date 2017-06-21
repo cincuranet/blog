@@ -5,7 +5,6 @@ date: 2008-12-09T22:34:00Z
 tags:
   - Databases in general
   - Firebird
-layout: post
 ---
 Today there was a question in [db section][1] in [builder.cz][2] forum. In essence, how to show people having birthday today or in couple of days if I have a birthdate. Well the solution I'll show you here is in Firebird syntax, but shouldn't be a problem to rewrite it to any other platform you like.
 

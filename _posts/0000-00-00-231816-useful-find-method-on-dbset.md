@@ -4,7 +4,6 @@ title: |-
 date: 2010-07-26T06:09:29Z
 tags:
   - Entity Framework
-layout: post
 ---
 The [ObjectStateManager][1] contains a lot of information about entities currently in context. In fact it contains complete entities too. So you can try to look into it before issuing query and use it as [local cache][2]. For some simple cases, like PK match, you can create extension method in no time.
 

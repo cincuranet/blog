@@ -7,7 +7,6 @@ tags:
   - Visual Studio
   - .NET
   - .NET Core
-layout: post
 ---
 Few weeks ago on my "parallel-async-threading" deep dive course somebody asked a question whether it's possible to make breakpoint work only on a specific thread. That's a pretty valid request, especially if we talk about running the same algorithm on a huge amount of data. Let's have a look at it.
 

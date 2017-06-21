@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New 4.8.1.0 version of [ADO.NET provider for Firebird][1] is ready for download. This release constains one high priority bug fix on found in 4.8.0.0.
 

@@ -4,7 +4,6 @@ title: |-
 date: 2009-07-20T20:42:34Z
 tags:
   - Databases in general
-layout: post
 ---
 I hate transactions, ACID and all the stuff. Really, I do. No, I don't, it's a great to have challenges with this kind of thinking. But in last two projects (in a row) I had similar problem and transactions were making it even more challenging.
 

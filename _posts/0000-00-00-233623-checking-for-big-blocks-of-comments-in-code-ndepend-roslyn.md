@@ -7,7 +7,6 @@ tags:
   - C#
   - Roslyn
   - NDepend
-layout: post
 ---
 I don't like comments. Most of the time information in comments is wrong and obsolete. I believe the code should be clear as a fresh snow. Most of the time. Some design decisions or measurements can be commented, but not the code itself. If it needs commenting, it should be rewritten.
 

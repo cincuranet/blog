@@ -13,7 +13,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New version 5.6.0.0 of [ADO.NET provider for Firebird][1] is ready for download. There's really only one new feature in this release - .NET Core support!
 

@@ -9,7 +9,6 @@ tags:
   - Entity SQL
   - LINQ
   - OData/Data Services (Astoria)
-layout: post
 ---
 Nice list at [http://blogs.msdn.com/adonet/archive/2009/10/19/vs2010-and-net-framework-beta-2-announced.aspx][1].
 

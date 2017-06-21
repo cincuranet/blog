@@ -6,7 +6,6 @@ tags:
   - .NET
   - Firebird
   - NuGet
-layout: post
 ---
 Yep, it's done. Now you can download [FirebirdClient][1] from [NuGet][2]. From [nuget.org/List/Packages/FirebirdSql.Data.FirebirdClient][3] to be precise.
 

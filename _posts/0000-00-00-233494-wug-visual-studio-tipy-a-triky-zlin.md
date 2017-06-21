@@ -6,7 +6,6 @@ tags:
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard
-layout: post
 ---
 Klávesnice je programátorova lopata. Nebo tak něco. No a Visual Studio může být třeba násada. :) Na lopatu nepotřebujete navěsit hromadu ozdob. Potřebujete se jen naučit ji pořádně používat. 
 

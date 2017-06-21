@@ -4,7 +4,6 @@ title: |-
 date: 2010-10-07T11:23:09Z
 tags:
   - LINQ
-layout: post
 ---
 If you're composing queries in LINQ on various places, utilizing the delayed execution, you might be surprised, that some of your dynamically added [OrderBy][1]s are not in final query.
 

@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 In last few months we have had good eyes on code and also some contributions. So the 4.1.5.0 version is now ready for you to download. There's no new features added, only bug fixes.
 

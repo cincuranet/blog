@@ -5,7 +5,6 @@ date: 2010-04-03T16:30:32Z
 tags:
   - .NET
   - Firebird
-layout: post
 ---
 The soon to be released Firebird 2.5 has a new ability to cancel running command (or any operation currently being processed by server) via API (in 2.1 you can do it via monitoring tables). This is a nice feature, interesting not only for database administration tools.
 

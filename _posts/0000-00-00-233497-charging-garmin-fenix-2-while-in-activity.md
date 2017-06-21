@@ -6,7 +6,6 @@ tags:
   - Garmin
   - Running
   - GPS
-layout: post
 ---
 I was recently reading the [Forerunner 920XT review][2]. The 920XT apparently does not allow you to charge the watch while in activity. I'm wondering who approved that? Even the old and cheaper series [410 allowed to do that as I wrote][1]. I know the watch is aimed at triathletes and the battery life is enough for even an Ironman triathlon if you're a bit trained, but there are longer races. Races I like participating in - ultra running (or ultra marathons if you wish). 
 

@@ -6,7 +6,6 @@ tags:
   - Azure
   - Cloud
   - Firebird
-layout: post
 ---
 Recently I was playing with [Amazon EC2][1] trying what I could use it for. I was playing with [Firebird][2] there as well. But in fact you have virtual machine you can use. So using Firebird there wasn't that hard. But I got and idea about [Azure][3], because it's more platform for applications than computers.
 

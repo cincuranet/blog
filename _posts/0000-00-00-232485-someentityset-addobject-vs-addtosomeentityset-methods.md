@@ -4,7 +4,6 @@ title: |-
 date: 2011-08-12T12:33:45Z
 tags:
   - Entity Framework
-layout: post
 ---
 Is it better to call `ObjectContext.SomeEntitySet.AddObject()` or `ObjectContext.AddToSomeEntitySet()`? Short answer is: It doesn't matter.
 

@@ -4,7 +4,6 @@ title: |-
 date: 2007-06-08T19:03:00Z
 tags:
   - Databases in general
-layout: post
 ---
 OK, not so describing title, but ...
 

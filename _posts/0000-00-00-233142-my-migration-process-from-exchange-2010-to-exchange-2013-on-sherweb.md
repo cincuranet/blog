@@ -4,7 +4,6 @@ title: |-
 date: 2013-01-17T11:10:56Z
 tags:
   - Email
-layout: post
 ---
 I'm a long time customer of [SherWeb][1]. I'm with them almost since they started offering hosted Exchange and I like it. Great service (uptime, antispam, performace, ...). I migrated from Exchange 2007 to 2010 and now the time brought me to 2013. Currently there's no automated click-in-admin-panel solution available, hence you have to do a lot of stuff "manually". And a lot of things can go wrong. If you're a huge company, with thousands of mailboxes, you'll probably need more advanced/automated process than me with few of mailboxes.
 

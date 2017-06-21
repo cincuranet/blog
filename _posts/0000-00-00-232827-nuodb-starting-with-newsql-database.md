@@ -7,7 +7,6 @@ tags:
   - NewSQL
   - NoSQL
   - NuoDB
-layout: post
 ---
 [NoSQL][1] is everywhere around us. And there's a new (well, it's here for a while, but still in beta stages of development) kind, it's called [NuoDB][2]. To be precise, NuoDB positions itself as NewSQL. It claims to be 100% SQL, 100% ACID and 100% elastically scalable. I was following it since early stages (original name was NimbusDB, if somebody remembers) and I'd like to show it to you quickly. In follow up posts I'll focus on using it from (mainly) .NET and some cloud scenarios ([Amazon AWS][3], [Windows Azure][4]).
 

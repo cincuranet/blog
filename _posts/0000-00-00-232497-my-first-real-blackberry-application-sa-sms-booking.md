@@ -5,7 +5,6 @@ date: 2011-08-16T05:17:42Z
 tags:
   - BlackBerry
   - BlackBerry WebWorks
-layout: post
 ---
 It has been few days [my first][1] [BlackBerry][2] application was approved in [AppWorld][3]. I'm trying to learn how things are done in this world and real world application is in my opinion best. In fact I had same application previously on my Windows Mobile devices, though only I and, I believe, one friend used it. Anyway because I knew what I want, it was good starting point and good motivation, because I'm and I'll be using it too.
 

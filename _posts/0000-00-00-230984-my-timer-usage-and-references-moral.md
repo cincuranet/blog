@@ -6,7 +6,6 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Programming in general
-layout: post
 ---
 Few minutes ago I got flash of intelligence. I'm using [Timer][1] in one of my windows service running simply 24×7. And I had a bug getting wrong data on server that I was not able to reproduce locally. Same data, same code, nothing. That was pretty weird, because after roughly four days I restarted the service and it started working correctly.
 

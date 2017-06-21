@@ -6,7 +6,6 @@ tags:
   - Presentations &amp; Speaking
   - Azure
   - Cloud
-layout: post
 ---
 Rok se s rokem sešel a blíží se opět [Global Azure Bootcamp][1]. Den plný všeho kolem (nejenom) Azure. Na tento rok jsem nachystal dvě témata.
 

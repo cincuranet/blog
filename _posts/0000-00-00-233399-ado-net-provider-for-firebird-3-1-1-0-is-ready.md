@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 We have here a small bugfix release after [3.1.0.0][1]. The version 3.1.1.0 contains only small fix in Entity Framework support. You can find more in [tracker][2].
 

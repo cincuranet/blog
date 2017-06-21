@@ -4,7 +4,6 @@ title: |-
 date: 2005-11-29T21:52:00Z
 tags:
   - Firebird
-layout: post
 ---
 Dovolím si udělat tu malou reklamu. A proč by ne, je to vlastně můj blog. :)
 

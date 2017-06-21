@@ -10,7 +10,6 @@ tags:
   - MS SQL Server
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Oracle Database
-layout: post
 ---
 From time to time I have to run two or more queries that I know will always be two or more - like some first/skip records and also total count. If you write it as two queries and execute, that means two round trips to database. Although it may not matter if the network latency is very small, why not to challenge myself and try to find some workarounds.
 

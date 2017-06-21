@@ -4,7 +4,6 @@ title: |-
 date: 2012-07-11T11:27:08Z
 tags:
   - Life
-layout: post
 ---
 Když jsem psal [předchozí příspěvek][1] čekal jsem jestli se něco stane. A stalo. Ne, problém se nevyřešil, ale celá věc dostala zajímavý spád. Řekl bych, že z toho pěkně vybruslili.
 

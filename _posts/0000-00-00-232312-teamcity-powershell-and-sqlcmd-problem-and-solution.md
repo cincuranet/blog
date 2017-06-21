@@ -6,7 +6,6 @@ tags:
   - Continuous Integration
   - MS SQL Server
   - PowerShell
-layout: post
 ---
 In my current project we're using [TeamCity][1] as a continuous integration server and [psake][2] to run all out build and deployment tasks. Part of the deployment is execution of SQL scripts to create database and create structures in it. And as a heavy-duty console user, I'm using sqlcmd to do all my work with database. So I simply called sqlcmd with according parameters and to execute the scripts. Sadly for some strange reason, the [PowerShell][3] runner in TeamCity kept running in a loop eventually ending with timeout. Even worse, running it locally directly in PowerShell was fine. After small research done by my [colleague][4] we found the reason is sqlcmd.
 

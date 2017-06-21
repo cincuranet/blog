@@ -4,7 +4,6 @@ title: |-
 date: 2005-09-03T16:58:00Z
 tags:
   - .NET
-layout: post
 ---
 Tak jsem si dneska opět krásně naběhl. Připravil jsem si vše pro připojení k Firebirdu a začal jsem psát takové ty kravinky pro buttony (na testování). Přidal jsem si tam:
 

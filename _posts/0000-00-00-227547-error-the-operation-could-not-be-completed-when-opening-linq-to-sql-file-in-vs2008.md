@@ -5,7 +5,6 @@ date: 2008-05-08T13:21:00Z
 tags:
   - LINQ
   - Visual Studio
-layout: post
 ---
 Today I get error `The operation could not be completed` when I was trying to open *.dbml LINQ to SQL file. I have this developement environment in virtual machine and I did no installs or updates. Event Log also wasn't saying anything that could help. First classic shoots like restart, cleaning all temps, caches etc. - nothing. Still same problem.
 

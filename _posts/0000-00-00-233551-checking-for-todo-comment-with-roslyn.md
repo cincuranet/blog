@@ -5,7 +5,6 @@ date: 2016-02-19T10:36:00Z
 tags:
   - Roslyn
   - C#
-layout: post
 ---
 This week I was [speaking at a local user group][1] and got a fairly interesting question for Roslyn analyzers - search for `// TODO: something` comments and do something with it. I think it's a great idea, because the comment is not a code exactly, but still Roslyn processes it. And to make it bit more interesting I decided not to sketch some analyzer for Visual Studio, but create just a raw console application that reports these comments, so anybody can tweak it for own needs (or eventually create a full blown analyzer from it, it's just a few lines of code).
 

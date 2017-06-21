@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - Programming in general
-layout: post
 ---
 Few days back [Aleš Roubíček][1] wrote an interesting article about, basically, needless code. You can read it [here][2], though in Czech.
 

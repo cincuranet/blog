@@ -5,7 +5,6 @@ date: 2015-05-10T11:40:00Z
 tags:
   - TeamCity
   - Continuous Integration
-layout: post
 ---
 I was moving our build server to new hardware and as I was checking whether everything works as expected - some builds have pretty complicated environment setup - I found issue or let's say behavior that might not be obvious related to [NuGet][2] handling on [TeamCity][1].
 

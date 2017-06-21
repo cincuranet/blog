@@ -5,7 +5,6 @@ date: 2012-06-14T10:45:17Z
 tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 When the [Task][1] and other related were introduced, there was behavior that informed you that you are possible doing something wrong. Yes, I'm talking about the exception being thrown from finalizer thread when your task completed as [Faulted][2] because of unhandled exception. I think this is absolutely correct behavior. If something as bas as unhandled exception happened I should take care of it no matter what. Because else I might corrupt some data or ... what's worse than corrupt data? ;)
 

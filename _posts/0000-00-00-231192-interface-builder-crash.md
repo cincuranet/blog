@@ -5,7 +5,6 @@ date: 2010-01-23T17:43:29Z
 tags:
   - Apple iPhone/iPad/iPod
   - Mac
-layout: post
 ---
 I think the whole iPhone SDK knows I'm from the other side of the barricade. :D What else would explain the error I faced today after less than a minute when working in Interface Builder.
 

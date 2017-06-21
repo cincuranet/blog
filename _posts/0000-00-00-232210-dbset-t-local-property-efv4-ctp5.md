@@ -4,7 +4,6 @@ title: |-
 date: 2010-12-09T13:19:15Z
 tags:
   - Entity Framework
-layout: post
 ---
 Currently latest CTP for Entity Framework, [CTP5][1], contains one new property on DbSet<T>. It's called `Local` and it's very useful when you wanna work with objects you have already in memory. So it's good for queries without hitting the database, like databinding.
 

@@ -5,7 +5,6 @@ date: 2017-04-02T16:41:00Z
 tags:
   - IoT
   - Electronics
-layout: post
 ---
 I like taking things apart. Or putting them together. New piece of furniture from IKEA is like a small Christmas. It's something different than programming, yet very similar, at least for me, in how the brain processes the (dis)assembling. Already as a child in school I liked learning how everyday objects work.
 

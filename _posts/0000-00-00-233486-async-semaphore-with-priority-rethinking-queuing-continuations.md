@@ -6,7 +6,6 @@ tags:
   - .NET
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 When [I wrote the AsyncPrioritySemaphore few months ago][1] I quickly found how the continuations are processed once "unleashed". Lately I was using the same class again and I was monitoring the behavior. That made me think about what could be done and how.
 

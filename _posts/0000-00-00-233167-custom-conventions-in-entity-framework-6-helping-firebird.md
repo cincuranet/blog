@@ -5,7 +5,6 @@ date: 2013-03-06T16:59:58Z
 tags:
   - Entity Framework
   - Firebird
-layout: post
 ---
 > [There's a part 2 of this story.][1]
 > [Follow-up post.][4]

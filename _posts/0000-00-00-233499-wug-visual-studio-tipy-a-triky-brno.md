@@ -6,7 +6,6 @@ tags:
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard
-layout: post
 ---
 Aby to nebylo Brnu líto dáme si opakování [zlínské "Visual Studio tipy a triky"][2]. 
 

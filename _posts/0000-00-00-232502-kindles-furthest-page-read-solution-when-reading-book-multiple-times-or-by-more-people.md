@@ -4,7 +4,6 @@ title: |-
 date: 2011-08-23T06:51:53Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 > [I wrote a follow up post.][1]
 

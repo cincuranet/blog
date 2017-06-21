@@ -6,7 +6,6 @@ tags:
   - C#
   - .NET
   - Windows Update
-layout: post
 ---
 Some time during last week I came across [this tweet][1] from [Peter Ritchie][2].
 

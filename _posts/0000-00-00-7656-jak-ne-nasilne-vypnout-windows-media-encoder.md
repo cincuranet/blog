@@ -5,7 +5,6 @@ date: 2006-03-15T13:17:00Z
 tags:
   - Windows
   - Windows Media Encoder
-layout: post
 ---
 Používám Windows Media Encoder k ukládání nějakých pořadů z TV karty, když nemám v tu chvíli čas na shlédnutí. Přes SDK ovládám celou tuhle "věc" v konzoli. Problem je, že mám udělány skripty, které vše zařídí, atp. Jsem (přirozeně) líný pokaždé editovat skripty a tak mám nastavenu délku záznamu na 4 hodiny. To většinou stačí (a to i když se seknu o hodinu při spuštění :)).
 

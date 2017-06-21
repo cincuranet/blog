@@ -7,7 +7,6 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
-layout: post
 ---
 Today, after some days/weeks, I finally created some noticable (= not only internals) progress with Entity Framework provider for Firebird.
 

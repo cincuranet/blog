@@ -8,7 +8,6 @@ tags:
   - Continuous Integration
   - Firebird
   - Test Driven Development (TDD)
-layout: post
 ---
 Recently I got a good [PR][1] changing the tests for [FirebirdClient][2]. Basically the suite is now executed for regular server as well as Embedded. Directly. You don't need to change configuration values and restart tests etc. Great idea. There's never enough tests. Especially as these are free. 
 

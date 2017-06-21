@@ -6,7 +6,6 @@ tags:
   - Storage &amp; Backup
   - Virtualization
   - Windows
-layout: post
 ---
 Let's call it a day. I'm now running my new Intel X25-M SSD for a little bit more than a day, but more importantly one working day. Shortly, I'm pleased.
 

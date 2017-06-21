@@ -6,7 +6,6 @@ tags:
   - C#
   - Lessons learned
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 .NET Framework has a nice new class for all sort of [HTTP][1] stuff called [`HttpClient`][2] (interesting the name wasn't taken before :)). And because it's I/O related it has also bunch on `XxxAsync` methods to nicely fit into C# 5's `async`/`await`.
 

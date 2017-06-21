@@ -7,7 +7,6 @@ tags:
   - .NET
   - Roslyn
   - Visual Studio
-layout: post
 ---
 The task was pretty simple. I had a solution with a lot of objects and the naming of fields was not nice. How can I solve that, preferably without too much manual labor? Of course, automate!
 

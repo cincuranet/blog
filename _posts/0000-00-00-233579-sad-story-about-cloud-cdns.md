@@ -7,7 +7,6 @@ tags:
   - CDN
   - Azure
   - AWS
-layout: post
 ---
 Yesterday I started a simple task. Or at least I thought it was simple. Basically I needed to prepend some CDN in front of a domain with static content. In what a hole I ended... 
 

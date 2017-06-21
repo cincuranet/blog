@@ -4,7 +4,6 @@ title: |-
 date: 2009-11-25T07:56:02Z
 tags:
   - Amazon Kindle
-layout: post
 ---
 This morning I looked to my RSSs and found post from [Scott Hanselman][1] about [new firmware][2] for Kindle. Although Scott was applying it manually, I got it through network immediately. After about 3 minutes Kindle rebooted and was ready to work.
 

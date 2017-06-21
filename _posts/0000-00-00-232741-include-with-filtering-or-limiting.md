@@ -6,7 +6,6 @@ tags:
   - Entity Framework
   - Expressions
   - LINQ
-layout: post
 ---
 Almost four years ago I wrote an article [Load with filtering or limiting][1]. You might want to do same stuff with [`Include`][2] method. It's not directly supported in this method but you can do it with anonymous object easily. There's only one catch, it's the anonymous object. That means, if you need the entities you need to manually select these out on [`IEnumerable<T>`][3] (doing it on query isn't going to work because [Entity Framework][4] will (correctly) figure out you're not using the pieces of anonymous object and will change the generated query appropriately).
 

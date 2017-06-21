@@ -9,7 +9,6 @@ tags:
   - Entity SQL
   - Firebird
   - LINQ
-layout: post
 ---
 The 2.7.7 version of ADO.NET provider for Firebird is ready for download. This version contains some bug fixes as well as new functionality.
 

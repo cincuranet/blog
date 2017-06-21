@@ -4,7 +4,6 @@ title: |-
 date: 2010-10-07T21:19:02Z
 tags:
   - Visual Studio
-layout: post
 ---
 More than a year ago I [wrote about tab closing button in Visual Studio 2010 making me crazy][1]. I still don't know whether the new placement is better or not. But it's same as in the most common tabbed applications - browsers. Probably in some scenarios it's better to have it in fixed place in upper right corner and other scenarios fit better for placing it to the tab.
 

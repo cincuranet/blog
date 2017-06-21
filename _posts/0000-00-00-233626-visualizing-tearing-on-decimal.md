@@ -7,7 +7,6 @@ tags:
   - .NET Core
   - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 Today, as I'm [teaching my][2] parallel/threading/async course, I was showing how the tearing on reads happens. I used the same [code I published couple of months ago][1]. And then idea came (yes, it happens sometimes ;)). I wanted to show that the `decimal`, being 128-bit structure, splits on underlying values. Here's the code.
 

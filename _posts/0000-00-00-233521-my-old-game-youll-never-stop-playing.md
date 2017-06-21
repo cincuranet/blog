@@ -6,7 +6,6 @@ tags:
   - C#
   - .NET
   - Games
-layout: post
 ---
 After [yesterday's post with I-don't-want-to-just-delete-this-code][1] I realized I have another code I'm keeping already for years. It's from my college years. At that time I was entering as much programming classes as I could - it was way easier than i.e. "Automata, Grammars, and Complexity" ;) (IB102 is the code in case you'd like to search catalog of [Faculty of Informatics Masaryk University][2]), it was fun and I liked it.
 

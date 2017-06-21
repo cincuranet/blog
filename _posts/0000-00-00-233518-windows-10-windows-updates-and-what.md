@@ -4,7 +4,6 @@ title: |-
 date: 2015-08-04T10:40:00Z
 tags:
   - Windows
-layout: post
 ---
 Why is there so much of talking about new Windows 10 Windows Updates installation procedure? My RSS reader is full of articles about it. You can't turn it off. And who cares? Not mentioning you can turn it off, it just takes more effort. 
 

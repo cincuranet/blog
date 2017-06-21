@@ -9,7 +9,6 @@ tags:
   - Firebird
   - LINQ
   - Visual Studio
-layout: post
 ---
 As it may look like nothing is going on, it's not true. Next to Firebird 2.5 new protocol features, I'm also working on Entity Framework v4 support. Before I go further, be sure, that all providers written for Entity Framework v1 are also working with v4.
 

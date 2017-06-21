@@ -9,7 +9,6 @@ tags:
   - Mac
   - Mono
   - MonoTouch
-layout: post
 ---
 During the Friday I realized, that I did a long time nothing with my iPhone & [MonoTouch][1] development environment and I should try something more challenging. As I'm still fighting with some good idea for real world test application and my UIs are looking weird, I decided to turn my attention not to iPhone app directly, but to MonoTouch capabilities.
 

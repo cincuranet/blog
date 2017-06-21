@@ -6,7 +6,6 @@ tags:
   - .NET
   - LINQ
   - Multithreading/Parallelism/Asynchronous/Concurrency
-layout: post
 ---
 > [Here's updated version of the method.][1]
 

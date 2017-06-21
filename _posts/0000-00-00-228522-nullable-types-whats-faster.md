@@ -4,7 +4,6 @@ title: |-
 date: 2008-10-20T16:00:00Z
 tags:
   - .NET
-layout: post
 ---
 Today I was working with nullable types - `short?` for my instance. I was wondering what's the fastest way of getting value and also testing whether the value is there.
 

@@ -12,7 +12,6 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
-layout: post
 ---
 New version 5.7.0.0 of [ADO.NET provider for Firebird][1] is ready for download. The previous one added .NET Core support and although on the outside not much changed, there was quite a storm inside. As you can guess some bugs slipped into the version. The 5.7.0.0 is thus full of bugfixes inside, without any visible changes outside. 
 

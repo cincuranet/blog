@@ -5,7 +5,6 @@ date: 2009-04-19T10:28:00Z
 tags:
   - Entity Framework
   - LINQ
-layout: post
 ---
 [Colin Meek][1] wrote extremely handy method for using it as Contains method we know it's on collections, but not supported in Entity Framework right now (v1/EF3.5). The method is called BuildContainsExpression. Today in MSDN forums I needed this, but negated. Thus I wrote the BuildNotContainsExpression. It's just small change of original Colin's method.
 

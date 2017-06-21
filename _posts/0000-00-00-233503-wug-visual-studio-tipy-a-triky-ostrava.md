@@ -6,7 +6,6 @@ tags:
   - Presentations &amp; Speaking
   - Visual Studio
   - Keyboard
-layout: post
 ---
 Slib je slib a proto si dáme klávesnicovou show v Ostravě.
 

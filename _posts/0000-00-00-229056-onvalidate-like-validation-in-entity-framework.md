@@ -5,7 +5,6 @@ date: 2009-02-24T04:57:00Z
 tags:
   - Entity Framework
   - LINQ
-layout: post
 ---
 Yesterday, while doing Entity Framework training, I got a good question. LINQ to SQL has a nice event called OnValidate, where you can validate your data. But Entity Framework classes don't. As the only one good point to do the validation of entities in Entity Framework is during in SaveChanges in SavingChanges event, we have to utilize this event and build validation there. 
 
