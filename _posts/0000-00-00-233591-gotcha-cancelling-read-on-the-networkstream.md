@@ -1,7 +1,7 @@
 ---
 title: |-
   Gotcha cancelling read on the NetworkStream
-date: 2017-01-15T09:3:00Z
+date: 2017-01-15T09:03:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - .NET

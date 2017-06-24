@@ -1,7 +1,7 @@
 ---
 title: |-
   log4net NuGet package updated with some goodies
-date: 2013-09-19T6:19:00Z
+date: 2013-09-19T06:19:00Z
 tags:
   - Logging &amp; Tracing
   - NuGet
