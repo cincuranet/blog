@@ -13,13 +13,13 @@ While writing [previous post][1] I realized the deconstruction to tuple can be a
 
 <!-- excerpt -->
 
-#### Deconstruction in C#
+#### Deconstruction in C\#
 
 To support deconstruction to tuple, C# compiler is looking for a `void Deconstruct(out T1 out1, out T2 out2, ...)` method. As I said it doesn't need to be instance method, extension method will do.
 
 For example, imagine classic `Point` class with `X` and `Y` properties. Then the method could be `void Deconstruct(out int x, out int y)`.
 
-#### Head and Tail for List<T> in C#
+#### Head and Tail for List\<T\> in C\#
 
 The `Head` method returns first element in the list, which is easy to do thanks to `FirstOrDefault` LINQ method. The `Tail` method returns the remaining. Although you can modify the list itself and return it back, I consider it bad practice and rather decided to construct a new one.
 
@@ -59,7 +59,7 @@ static void Main(string[] args)
 }
 ```
 
-#### What about F#
+#### What about F\#
 
 F#, being functional language, has a great support for pattern matching and hence I expected fairly succinct code.
 
