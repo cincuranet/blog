@@ -80,7 +80,7 @@ let main argv =
 
 Not bad.
 
-### What about Python
+#### What about Python
 
 Python is not a first-class functional language, although some syntax/features, especially for tuples, I like.
 
