@@ -1,1 +1,1 @@
-<p class="meta"><span class="fa fa-calendar" aria-hidden="true"></span> {{ include.post.date | date: "%-d %b %Y" }}<span class="divider"></span><span class="fa fa-tags" aria-hidden="true"></span> {{ include.post.tags | sort | join: ", " }}</p>
+<p class="meta"><span class="fa fa-calendar" aria-hidden="true"></span> {{ post.date | date: "d MMM yyyy" }}<span class="divider"></span><span class="fa fa-tags" aria-hidden="true"></span> {{ post.tags | sort | join: ", " }}</p>

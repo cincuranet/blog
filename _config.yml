@@ -2,9 +2,6 @@
 heading1_accent: "over"
 heading2: "Jiří {x2} Činčura"
 heading2_accent: "{x2}"
-permalink: "/:title"
-# env TZ=UTC on command line
-#timezone: UTC
 address: "www.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
 excerpt_link_name: "Continue reading..."
@@ -12,14 +9,3 @@ site_posts: 20
 feed_posts: 20
 feed: feed.xml
 sitemap: sitemap.xml
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: false
-  syntax_highlighter: ""
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
