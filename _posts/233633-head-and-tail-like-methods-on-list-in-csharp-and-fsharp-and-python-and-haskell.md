@@ -67,9 +67,9 @@ F#, being functional language, has a great support for pattern matching and henc
 open System
 
 let rec sum list =
-   match list with
-   | head :: tail -> head + sum tail
-   | [] -> 0
+    match list with
+    | head :: tail -> head + sum tail
+    | [] -> 0
 
 [<EntryPoint>]
 let main argv = 
