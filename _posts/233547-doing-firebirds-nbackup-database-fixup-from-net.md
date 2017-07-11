@@ -10,6 +10,8 @@ The `nbackup` tool and more importantly the `alter database [begin|end] backup` 
 
 <!-- excerpt -->
 
+> [Version for Firebird 3.][3]
+
 When you copy the backup to where it should be, Firebird will deny using it. Because the database is actually in "backup mode" (it was in that state as you copied it) and it's missing so-called "delta" file. The solution is to call [`nbackup -F`][1]. But what if you don't have `nbackup` available? Currently there's [no API to do that][2]. But nothing is lost.
 
 The `nbackup` is just physically accessing the file and flipping the state. Can that be done in .NET purely? Of course it can. Comparing the two files before and after "fixup" there's a change at offset `0x00002B`. So the code just needs to do that.
@@ -43,3 +45,4 @@ It's very raw approach. There's no other checking whether the file is really Fir
 
 [1]: http://www.firebirdsql.org/manual/nbackup-functions-params.html
 [2]: http://tracker.firebirdsql.org/browse/CORE-5085
+[3]: {% include post_link, id: "233634" %}
