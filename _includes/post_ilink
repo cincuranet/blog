@@ -1,1 +1,1 @@
-/i/{% include post_id, post: post %}/{{ name }}
+/i/{{ post.id }}/{{ name }}

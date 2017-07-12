@@ -1,1 +1,1 @@
-/id/{% include post_id, post: post %}/
+/id/{{ post.id }}/

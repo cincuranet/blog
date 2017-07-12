@@ -1,1 +1,1 @@
-{% for post in site.posts %}{% capture post_id %}{% include post_id, post: post %}{% endcapture %}{% if post_id == id %}{{ post.url }}/{% endif %}{% endfor %}
+{% for post in site.posts %}{% if post.id == id %}{{ post.url }}/{% break %}{% endif %}{% endfor %}
