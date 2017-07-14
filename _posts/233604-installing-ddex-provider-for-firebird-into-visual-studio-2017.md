@@ -60,7 +60,7 @@ Windows Registry Editor Version 5.00
 "Name"="Firebird Provider Object Factory"
 ```
 
-Merge this file using regedit and then unload the hive.
+Merge this file using `regedit` and then unload the hive.
 
 That's it and you can enjoy DDEX for Firebird in Visual Studio 2017.
 
