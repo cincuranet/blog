@@ -5,6 +5,7 @@ date: 2017-04-07T12:43:00Z
 tags:
   - .NET
   - C#
+  - Assembly
 ---
 I was watching a [recording from a WUG][1] where my friend [Robert Haken][2] explains memory internals and so on of .NET applications. At one point, while talking about the [stack][3], he said he never saw stack overflow exception other than from a bad recursion. Challenge accepted. :)
 
