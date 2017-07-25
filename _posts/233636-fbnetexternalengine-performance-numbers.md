@@ -10,7 +10,7 @@ Over the last few days I was working on performance of _FbNetExternalEngine_. Ba
 
 <!-- excerpt -->
 
-First I needed something to benchmark against. Currently only procedures are supported in _FbNetExternalEngine_, so something similar to this kind of execution. There isn't much to think about: PSQL procedures. Because I'm interested about the execution speed, not the code speed inside the procedure, I'm benchmarking empty procedures. To eliminate any network etc. slowdowns I'm doing a simple loop in `execute block`, that way I know everything is running completely on server. I took 100000 iterations to get some numbers one can measure. And as usual, it's running on my machine (Intel Core i5-7500) hence the actual numbers are not that important for you probably, rather the comparison is. 
+First I needed something to benchmark against. Currently only procedures are supported in _FbNetExternalEngine_, so something similar to this kind of execution. There isn't much to think about: PSQL procedures. Because I'm interested about the execution speed, not the code speed inside the procedure, I'm benchmarking empty procedures. To eliminate any network etc. slowdowns I'm doing a simple loop in `execute block`, that way I know everything is running completely on server. I took 100000 iterations to get some numbers one can measure. And as usual, it's running on my machine (Firebird 3.0.2 x64, Intel Core i5-7500) hence the actual numbers are not that important for you probably, rather the comparison is. 
 
 Looping with empty PSQL procedure took `0,21 s`. That's the baseline.
 
