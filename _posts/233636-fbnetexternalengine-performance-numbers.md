@@ -22,7 +22,7 @@ After this I started adding some classes and logic, but that was fairly boring, 
 
 With all that in place the time required to run 100000 the .NET procedure is `1,3 s`. That's a big jump. But all the previous pieces were just some hardcoded dummy or empty code. Now it's finally doing something.
 
-Maybe you remember from [previous post][1] that to support "live" updates of the assembly with procedures my plan was to use _AppDomains_. Although it was interesting to do it, it was a performance killer. All the cross-domain stuff was about 3 orders of magnitude slower than a single domain execution. Thus I decided to abandon _AppDomains_ and find a different way to achieve the "live" updates (more about that in next post). 
+Maybe you remember from [previous post][1] that to support "live" updates of the assembly with procedures my plan was to use _AppDomains_. Although it was interesting to do it, it was a performance killer. All the cross-domain stuff was about 3 orders of magnitude slower than a single domain execution. Thus I decided to abandon _AppDomains_ and find a different way to achieve the "live" updates (more about that in [next post][2]). 
 
 With all numbers in hand, let's do some math. The execution of .NET procedure is, with current version of the code, roughly 6 times slower compared to PSQL procedure and the execution of .NET procedure is in `0,013 ms` per call range.
 
@@ -38,5 +38,6 @@ ms/call: 0,013434364
 I'll leave that to you to decide whether that's fast enough for you or not. I'm working with initial partner [ElektLabs][3] to get some real feedback on what's fine and where some improvements need to be applied. If you'd like to share your thoughts, feel free to use comments below. If you'd like to do some tests yourself (and/or help moving this forward), [drop me a line][4].  
 
 [1]: {% include post_link, id: "233625" %}
+[2]: {% include post_link, id: "233637" %}
 [3]: http://www.elektlabs.cz/    
 [4]: /about/
