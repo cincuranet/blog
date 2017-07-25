@@ -6,7 +6,7 @@ tags:
   - C#
   - .NET
 ---
-As I said in [previous post][1] I had to drop [_AppDomains_][2] from my solution to allow replacing assembly while the _FbNetExternalEngine_ is running. Calls across _AppDomains_ are simply too slow (read I can't make it fast enough ;-)) for this kind of project. Why I even needed _AppDomains_? The specs are simple: Allow assembly replacing (rewrite) while it's loaded in [Firebird][3] via my _FbNetExternalEngine_. Can it be solved without _AppDomains_?
+As I said in [previous post][1] I had to drop [_AppDomains_][2] from my solution to allow replacing assembly while the _FbNetExternalEngine_ is running. Calls across _AppDomains_ are simply too slow (read: I can't make it fast enough. ;-)) for this kind of project. Why I even needed _AppDomains_? The specs are simple: Allow assembly replacing (rewrite) while it's loaded in [Firebird][3] via my _FbNetExternalEngine_. Can it be solved without _AppDomains_?
 
 <!-- excerpt -->
 
