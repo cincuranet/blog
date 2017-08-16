@@ -8,7 +8,7 @@
 	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="alternate" type="application/atom+xml" title="{% include title %}" href="/{{ site.feed }}" />
 
-	<link rel="stylesheet" href="/assets/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="/assets/style.css?v={% file_hash /assets/style.css %}" type="text/css" media="all" />
 	<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.min.css" type="text/css" media="all" />
 </head>
@@ -41,7 +41,7 @@
 
 <script type="text/javascript" src="/assets/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/fancybox/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="/assets/blog.js"></script>
+<script type="text/javascript" src="/assets/blog.js?v={% file_hash /assets/blog.js %}"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
