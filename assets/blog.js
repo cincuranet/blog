@@ -35,23 +35,6 @@ var blog = (function() {
 		});
 	}
 
-	function initTagsFilter() {
-		var tags = $('#archive_tags select');
-		var posts = $('#archive_posts li');
-		tags.change(function() {
-			var selected = tags.val();
-			posts.each(function(i, e) {
-				e = $(e);
-				if (e.data('tags').indexOf(selected) != -1 || !selected) {
-					e.show();
-				}
-				else {
-					e.hide();
-				}
-			});
-		});
-	}
-
 	function showArticleNicely() {
 		if (isLocalLink(document.referrer)) {
 			$(document).scrollTop($('article').offset().top);
@@ -89,9 +72,6 @@ var blog = (function() {
 		},
 		initContentPage: function() {
 		},
-		initArchivePage: function() {
-			initTagsFilter();
-		},
 		initPostPage: function() {
 			showArticleNicely();
 			initFullDisqus();
@@ -114,6 +94,4 @@ else {
 	blog.initContentPage();
 	if (/^\/$/.test(window.location.pathname))
 		blog.initPostsListPage();
-	else if (/^\/archive\/$/i.test(window.location.pathname))
-		blog.initArchivePage();
 }

@@ -2,19 +2,26 @@
 title: Archive
 layout: page
 ---
-<h3>Archive ({{ site.posts | size }} posts)</h3>
-<p id="archive_tags">
-	<select>
-		<option value="">All Tags</option>
-		{% assign sorted_tags = site.tags | sort %}
-		{% for tag in sorted_tags %}
-			{% assign posts = site.tags_posts[tag] %}
-		<option value='{{ tag | replace: "'","&#39;" }}'>{{ tag }} ({{ posts | size }} posts)</option>
+<h3>Archive by year</h3>
+	{% assign sorted_years = site.years %}
+	{% for year in sorted_years %}
+		{% assign posts = site.years_posts[year] %}
+	<h4>{{ year }} ({{ posts | size }})</h4>
+	<ul>
+		{% for post in posts %}
+		<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> ({{ post.date | date: "d MMM yyyy" }})</li>
 		{% endfor %}
-	</select>
-</p>
-<ul id="archive_posts">
-	{% for post in site.posts %}
-	<li data-tags='{{ post.tags | jsonify | replace: "'","&#39;" }}'><a href="{{ post.url }}/">{{ post.title | encode }}</a> ({{ post.date | date: "d MMM yyyy" }})</li>
+	</ul>
 	{% endfor %}
-</ul>
+
+<h3>Archive by tag</h3>
+	{% assign sorted_tags = site.tags | sort %}
+	{% for tag in sorted_tags %}
+		{% assign posts = site.tags_posts[tag] %}
+	<h4>{{ tag }} ({{ posts | size }})</h4>
+	<ul>
+		{% for post in posts %}
+		<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> ({{ post.date | date: "d MMM yyyy" }})</li>
+		{% endfor %}
+	</ul>
+	{% endfor %}
