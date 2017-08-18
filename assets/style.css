@@ -264,7 +264,8 @@ article ol {
 }
 
 article li {
-	padding-left: .5rem;
+	padding-left: 1.5rem;
+	text-indent: -1rem;
 	padding-right: .5rem;
 }
 article ul > li:before {
