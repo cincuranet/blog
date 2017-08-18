@@ -168,7 +168,7 @@ article p:last-child {
 	margin-bottom: 0;
 }
 
-article p.meta {
+article p.meta, article span.meta {
 	font-size: .9rem;
 	font-style: italic;
 	color: #666;

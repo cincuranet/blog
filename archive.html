@@ -10,7 +10,7 @@ layout: page
 <h4><span class="fa fa-calendar" aria-hidden="true"></span> {{ year }} ({{ posts | size }})</h4>
 <ul>
 	{% for post in posts %}
-	<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> ({{ post.date | date: "d MMM yyyy" }})</li>
+	<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> <span class="meta">({{ post.date | date: "d MMM yyyy" }})</span></li>
 	{% endfor %}
 </ul>
 {% endfor %}
@@ -21,7 +21,7 @@ layout: page
 <h4><span class="fa fa-tags" aria-hidden="true"></span> {{ tag }} ({{ posts | size }})</h4>
 <ul>
 	{% for post in posts %}
-	<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> ({{ post.date | date: "d MMM yyyy" }})</li>
+	<li><a href="{{ post.url }}/">{{ post.title | encode }}</a> <span class="meta">({{ post.date | date: "d MMM yyyy" }})</span></li>
 	{% endfor %}
 </ul>
 {% endfor %}
