@@ -1,6 +1,6 @@
 ---
 title: |-
-  ConcurrentDictionary<T, T> is slow. Or is it?
+  ConcurrentDictionary<TKey, TValue> is slow. Or is it?
 date: 2016-12-23T10:11:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
@@ -79,7 +79,7 @@ And finally, running the code shows that for _Monitor_ version the CPU is 100% u
 
 #### Reason
 
-If you look at the [`TryAddInternal` method][10] of `ConcurrentDictionary<T, T>` you'll see it's using `Node` class to handle the items. So that means allocations.
+If you look at the [`TryAddInternal` method][10] of `ConcurrentDictionary<TKey, TValue>` you'll see it's using `Node` class to handle the items. So that means allocations.
 
 Second clue is in [`GrowTable` method][11].  And it's doing quite a locking and shuffling of locks (and of course also the resizing).
 
@@ -91,7 +91,7 @@ Whoa. There's a lot of GC-ing happening. Theory confirmed. Then also running a p
 
 #### Solution
 
-Well, there's really none. In this specific edge case the single, hand crafted, `Monitor` will beat the `ConcurrentDictionary<T, T>`. But is it really a problem for a real world application?
+Well, there's really none. In this specific edge case the single, hand crafted, `Monitor` will beat the `ConcurrentDictionary<TKey, TValue>`. But is it really a problem for a real world application?
 
 The items are unique and just added as quickly as possible. It could be some _list_ or _bag_ implementations (i.e. [`ConcurrentBag<T>`][12]) might behave better for our case.
 
@@ -120,7 +120,7 @@ public void ConcurrentDictionary()
 }
 ```
 
-Running the code with this modification gives me comparable results for both versions. Using then `i % 100` as the index makes the `ConcurrentDictionary<T, T>` clear winner.
+Running the code with this modification gives me comparable results for both versions. Using then `i % 100` as the index makes the `ConcurrentDictionary<TKey, TValue>` clear winner.
 
 > What if I do some processing around?
 
