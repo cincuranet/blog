@@ -32,7 +32,7 @@ Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datov
 </table>
 
 [1]: /
-[2]: https://github.com/cincuranet/
+[2]: https://github.com/cincuranet
 [3]: /cv/#speaker-events
 [4]: /{{ site.feed }}
 [5]: https://twitter.com/cincura_net
