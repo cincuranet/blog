@@ -72,7 +72,7 @@ nav li {
 nav li:first-of-type {
 	padding-left: 0;
 }
-nav li:nth-last-of-type(1) {
+nav li.side {
 	float: right;
 }
 @media (max-width: 768px) {
