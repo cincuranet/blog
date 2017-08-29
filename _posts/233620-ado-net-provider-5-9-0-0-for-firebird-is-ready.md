@@ -26,5 +26,5 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2] and [Entity
 [1]: http://www.firebirdsql.org/en/net-provider/
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
-[4]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?styleName=Text&projectId=10003&version=10812
+[4]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10812
 [5]: {% include post_link, id: "233621" %}
