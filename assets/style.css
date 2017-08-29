@@ -74,6 +74,7 @@ nav li:first-of-type {
 }
 nav li.side {
 	float: right;
+	padding-left: 1rem;
 }
 @media (max-width: 768px) {
 	nav li {
