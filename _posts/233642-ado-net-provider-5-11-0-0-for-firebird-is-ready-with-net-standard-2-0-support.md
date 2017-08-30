@@ -4,9 +4,11 @@ title: |-
 date: 2017-08-30T05:41:00Z
 tags:
   - .NET
+  - .NET Standard
   - C#
   - Databases in general
   - Entity Framework
+  - Entity Framework Core
   - Entity SQL
   - Firebird
   - LINQ
