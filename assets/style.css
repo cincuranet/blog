@@ -12,12 +12,12 @@ html {
 
 body {
 	background: #fff;
-	color: #000;
+	color: #222;
 }
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #222;
 }
 
 a:hover {
@@ -55,7 +55,7 @@ option {
 /* nav */
 
 nav {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-bottom: .5rem;
@@ -92,7 +92,7 @@ nav a {
 /* header */
 
 header {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-top: 1rem;
@@ -119,7 +119,7 @@ header h2 {
 /* footer */
 
 footer {
-	border-top: 1px solid #000;
+	border-top: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-top: 1rem;
@@ -137,7 +137,7 @@ footer > p {
 /* article */
 
 article {
-	border-bottom: 1px dotted #000;
+	border-bottom: 1px dotted #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-top: 1rem;
@@ -302,7 +302,7 @@ article td:last-of-type {
 	padding-left: .5rem;
 	padding-right: .5rem;
 	overflow: hidden;
-	border-top: 1px solid #000;
+	border-top: 1px solid #222;
 }
 
 #disqus_thread {
