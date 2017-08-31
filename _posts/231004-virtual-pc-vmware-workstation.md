@@ -6,7 +6,7 @@ tags:
   - Virtualization
   - VMware
 ---
-I've been using Virtual PC (2007) for a quite while and very heavily. In fact my entire development environment is in VMs. But I was getting more and more upset with Virtual PC. The version 2007 SP1 is/was kind of old, missing some new features and improvements. When testing the new [Windows Virtual PC][1] I felt like it's focused more on standard users and mainly to run some XP applications in Windows 7, not as a full size virtualization tool for advanced users (but I may be wrong, it's just feeling).
+I've been using Virtual PC (2007) for a quite while and very heavily. In fact my entire development environment is in VMs. But I was getting more and more upset with Virtual PC. The version 2007 SP1 is/was kind of old, missing some new features and improvements. When testing the new [Windows Virtual PC][1] I felt like it's focused more on standard users and mainly to run some XP applications in Windows 7, not as a full size virtualization tool for advanced users (but I might be wrong, it's just a feeling).
 
 So I tested the [VMWare Workstation 7][2], couple of days ago. Shortly, I'm sold. It's much more mature (again my feeling), has really advanced features for geeks as me (like the snapshots – I created my own way with Virtual PC, but in VMWare Workstation it's much easier) and the Unity - I like it (I know Windows Virtual PC has this too, but VMWare Workstation seems to support more systems).
 
