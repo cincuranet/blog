@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-<h4>Mgr. Jiří Činčura</h4>
+### Mgr. Jiří Činčura
 
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
 
@@ -20,15 +20,30 @@ I would love it if you would subscribe to [my blog's feed][4]. I'm also on socia
 
 Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datové a business vrstvy, jazykové konstrukce, paralelizmus a databáze. Od roku 2009 působí jako odborný lektor Počítačové školy Gopas se specializací na Entity Framework, asynchronní a paralelní programování, cloud a Windows Azure. Je nositelem titulu Microsoft Most Valuable Professional. Jeho články, rady, tipy a triky si můžete přečíst na {{ site.address }}.
 
-<h4>More info</h4>
+#### More info
+
 <table>
-	<tr><td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td></tr>
-	<tr><td>CV:</td><td><a href="/cv/">https://{{ site.address }}/cv/</a></td></tr>
-	<tr><td>ID:</td><td>73563005 (Czech Republic, EU)</td></tr>
-	<tr><td>VAT:</td><td>CZ8303051218</td></tr>
-	<tr><td>Bank account:</td><td>2900324931/2010 (Fio banka)</td></tr>
-	<tr><td>IBAN:</td><td>CZ2120100000002900324931</td></tr>
-	<tr><td>SWIFT:</td><td>FIOBCZPPXXX</td></tr>
+	<tr>
+		<td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
+	</tr>
+	<tr>
+		<td>CV:</td><td><a href="/cv/">https://{{ site.address }}/cv/</a></td>
+	</tr>
+	<tr>
+		<td>ID:</td><td>73563005 (Czech Republic, EU)</td>
+	</tr>
+	<tr>
+		<td>VAT:</td><td>CZ8303051218</td>
+	</tr>
+	<tr>
+		<td>Bank account:</td><td>2900324931/2010 (Fio banka)</td>
+	</tr>
+	<tr>
+		<td>IBAN:</td><td>CZ2120100000002900324931</td>
+	</tr>
+	<tr>
+		<td>SWIFT:</td><td>FIOBCZPPXXX</td>
+	</tr>
 </table>
 
 [1]: /
