@@ -1236,7 +1236,7 @@ courses:
 		<td>2002 - 2005:</td><td>Applied Informatics, Faculty of Informatics (Bc. (BSc. equiv.)), Masaryk University</td>
 	</tr>
 	<tr>
-		<td>1997 - 2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tabor</td>
+		<td>1997 - 2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tábor</td>
 </table>
 
 #### Another education, courses, certificates:
@@ -1334,15 +1334,11 @@ courses:
 
 #### Publications, articles:
 
-<table>
-<tr><td colspan="2">blogging on <a href="/">{{ site.address }}</a></td></tr>
-{% for article in page.articles %}
-<tr>
-<td>{{ article.description }} (in {{ article.language }}) [{{ article.date }}]</td>
-<td><a href="{{ article.link }}">{{ article.title }}</a></td>
-</tr>
-{% endfor %}
-</table>
+* blogging on [{{ site.address }}](/)
+{%- for article in page.articles -%}
+* [{{ article.title }}]({{ article.link }}) ({{ article.date }}, in {{ article.language }})
+	* {{ article.description }}
+{%- endfor -%}
 
 #### Courses given (standard Gopas courses excluded):
 
