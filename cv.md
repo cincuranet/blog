@@ -1241,8 +1241,8 @@ courses:
 * Red Cross - first aid certification
 * H.P.I. - H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
-* Power Yoga instructor (MŠMT ČR (MEYS) certified)
-* Power Yoga advanced Vinyasa training
+* power yoga instructor (MŠMT ČR (MEYS) certified)
+* power yoga advanced vinyasa training
 * high level experiences from line of (mechanical) engineering/locksmithery
 * photography (2004 – 2005) (2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)
 * Fitbox Instructor Advanced
