@@ -1228,16 +1228,11 @@ courses:
 
 #### Education:
 
-<table>
-	<tr>
-		<td>2005&nbsp;-&nbsp;2008:</td><td>Applied Informatics specializing in Computer Systems, Faculty of Informatics (Mgr. (MSc. equiv.)), Masaryk University</td>
-	</tr>
-	<tr>
-		<td>2002&nbsp;-&nbsp;2005:</td><td>Applied Informatics, Faculty of Informatics (Bc. (BSc. equiv.)), Masaryk University</td>
-	</tr>
-	<tr>
-		<td>1997&nbsp;-&nbsp;2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tábor</td>
-</table>
+* 2005 - 2008:</td><td>Applied Informatics specializing in Computer Systems, Faculty of Informatics, Masaryk University
+	* Mgr. (MSc. equiv.) 
+* 2002 - 2005:</td><td>Applied Informatics, Faculty of Informatics, Masaryk University
+	* Bc. (BSc. equiv.) 
+* 1997 - 2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tábor
 
 #### Another education, courses, certificates:
 
