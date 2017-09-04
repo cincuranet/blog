@@ -1325,14 +1325,12 @@ courses:
 
 #### Speaker on conferences and other events:
 
-<table>
-{% for conference in page.conferences %}
-<tr>
-<td>{{ conference.title }} ({{ conference.date }})</td>
-<td>{{ conference.sessions | join:"<br />" }}<br />(in {{ conference.language }})</td>
-</tr>
-{% endfor %}
-</table>
+{%- for conference in page.conferences -%}
+* {{ conference.title }} ({{ conference.date }}, in {{ conference.language }})
+	{%- for session in conference.sessions -%}
+	* {{ session }}
+	{%- endfor -%}
+{%- endfor -%}
 
 #### Publications, articles:
 
