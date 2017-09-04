@@ -1242,12 +1242,11 @@ courses:
 #### Another education, courses, certificates:
 
 * English exam (corresponding to B2 level)
-* driving licence A, B
 * 2017: Microsoft Most Valuable Professional
-
+* driving licence A, B
 * Microsoft Certified Professional (70-583, 70-536)
 * 2006 – 2008: Microsoft Student Consultant/Microsoft Student Partner
-* Red Cross - first aid certified sanitarist
+* Red Cross - first aid certification
 * H.P.I. - H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
 * Power Yoga instructor (MŠMT ČR (MEYS) certified)
