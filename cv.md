@@ -1197,11 +1197,11 @@ courses:
   - date: 03/2009 
     company: PeopleWare
     country: Belgium
-    topic: 4 days training on Entity Framework
+    topic: Entity Framework
   - date: 02/2009 
     company: SMS-Timing
     country: Belgium
-    topic: 4 days training on Entity Framework
+    topic: Entity Framework
   - date: 11/2008
     company: Kros, a.s.
     country: Slovakia
@@ -1230,13 +1230,13 @@ courses:
 
 <table>
 	<tr>
-		<td>2005 - 2008:</td><td>Applied Informatics specializing in Computer Systems, Faculty of Informatics (Mgr. (MSc. equiv.)), Masaryk University</td>
+		<td>2005&nbsp;-&nbsp;2008:</td><td>Applied Informatics specializing in Computer Systems, Faculty of Informatics (Mgr. (MSc. equiv.)), Masaryk University</td>
 	</tr>
 	<tr>
-		<td>2002 - 2005:</td><td>Applied Informatics, Faculty of Informatics (Bc. (BSc. equiv.)), Masaryk University</td>
+		<td>2002&nbsp;-&nbsp;2005:</td><td>Applied Informatics, Faculty of Informatics (Bc. (BSc. equiv.)), Masaryk University</td>
 	</tr>
 	<tr>
-		<td>1997 - 2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tábor</td>
+		<td>1997&nbsp;-&nbsp;2002:</td><td>high school (gymnasium) Pierra de Coubertina, Tábor</td>
 </table>
 
 #### Another education, courses, certificates:
