@@ -1216,7 +1216,7 @@ courses:
 		<td>Name:</td><td>Jiri Cincura</td>
 	</tr>
 	<tr>
-		<td>Date of birth:</td><td>March 5<sup>th</sup> 1983</td>
+		<td>Date of birth:</td><td>March 5, 1983</td>
 	</tr>
 	<tr>
 		<td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
