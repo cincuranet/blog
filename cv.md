@@ -1221,9 +1221,6 @@ courses:
 	<tr>
 		<td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
 	</tr>
-	<tr>
-		<td>Phone:</td><td>+420 777 643 692</td>
-	</tr>
 </table>
 
 #### Education:
