@@ -1346,10 +1346,7 @@ courses:
 
 #### Courses given (standard Gopas courses excluded):
 
-<table>
-{% for course in page.courses %}
-<tr>
-<td>{{ course.date }}:</td><td>for {{ course.company }} ({{ course.country }}): {{ course.topic }}</td>
-</tr>
-{% endfor %}
-</table>
+{%- for course in page.courses -%}
+* {{ course.company }} ({{ course.country }}, {{ course.date }})
+	* {{ course.topic }} 
+{%- endfor -%}
