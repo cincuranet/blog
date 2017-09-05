@@ -1,5 +1,5 @@
 ---
-title: Curriculum Vitae – Mgr. Jiri Cincura
+title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
   - title: Talk @ Windows User Group
@@ -418,7 +418,7 @@ conferences:
     date: December 8, 2006
     language: Czech
     sessions:
-      - Working with data on .NET platform – ADO.NET
+      - Working with data on .NET platform - ADO.NET
 articles:
   - date: 08/2015
     description: Technical Reviewer of Book
@@ -439,12 +439,12 @@ articles:
     description: NuoDB's Techblog
     language: English
     link: http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-2
-    title: nopCommerce with NuoDB – Part 2
+    title: nopCommerce with NuoDB - Part 2
   - date: 5. 9. 2013
     description: NuoDB's Techblog
     language: English
     link: http://dev.nuodb.com/techblog/nopcommerce-nuodb-%E2%80%93-part-1
-    title: nopCommerce with NuoDB – Part 1
+    title: nopCommerce with NuoDB - Part 1
   - date: 22. 8. 2013
     description: NuoDB's Techblog
     language: English
@@ -479,22 +479,22 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2010010701
-    title: MS SQL 2008 – prostorová data počtvrté
+    title: MS SQL 2008 - prostorová data počtvrté
   - date: 1. 12. 2009
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2009120101
-    title: MS SQL 2008 – prostorová data potřetí
+    title: MS SQL 2008 - prostorová data potřetí
   - date: 21. 10. 2009
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2009102101
-    title: MS SQL 2008 – prostorová data podruhé
+    title: MS SQL 2008 - prostorová data podruhé
   - date: 12. 10. 2009
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2009101201
-    title: MS SQL 2008 – prostorová data poprvé
+    title: MS SQL 2008 - prostorová data poprvé
   - date: 7. 9. 2009
     description: vyvojar.cz
     language: Czech
@@ -584,7 +584,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/630-nepovinne-parametry-v-c-4-0-pouzivat-opatrne.aspx
-    title: Nepovinné parametry v C# 4.0 – používat opatrně
+    title: Nepovinné parametry v C# 4.0 - používat opatrně
   - date: 19. 1. 2009
     description: dbsvet.cz
     language: Czech
@@ -629,7 +629,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/614-ado-net-data-services-6-poskytovani-dat-bez-entity-frameworku.aspx
-    title: ADO.NET Data Services (6) – Poskytování dat bez Entity Frameworku
+    title: ADO.NET Data Services (6) - Poskytování dat bez Entity Frameworku
   - date: 16. 9. 2008
     description: vyvojar.cz
     language: Czech
@@ -639,7 +639,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/612-ado-net-data-services-5-zabezpeceni-a-modifikace-dotazu.aspx
-    title: ADO.NET Data Services (5) – Zabezpečení a modifikace dotazů
+    title: ADO.NET Data Services (5) - Zabezpečení a modifikace dotazů
   - date: 3. 9. 2008
     description: dbsvet.cz
     language: Czech
@@ -654,12 +654,12 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2008081201
-    title: Map&Reduce – jak to dělá Google?
+    title: Map&Reduce - jak to dělá Google?
   - date: 11. 8. 2008
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/606-ado-net-data-services-4-prace-s-daty-v-kodu.aspx
-    title: ADO.NET Data Services (4) – Práce s daty v kódu
+    title: ADO.NET Data Services (4) - Práce s daty v kódu
   - date: 5. 8. 2008
     description: dbsvet.cz
     language: Czech
@@ -669,7 +669,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/605-ado-net-data-services-3-zmeny-dat.aspx
-    title: ADO.NET Data Services (3) – Změny dat
+    title: ADO.NET Data Services (3) - Změny dat
   - date: 1. 8. 2008
     description: dbsvet.cz
     language: Czech
@@ -679,7 +679,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/604-ado-net-data-services-2-pokrocile-moznosti-nejen-dotazovani.aspx
-    title: ADO.NET Data Services (2) – Pokročilé možnosti (nejen) dotazování
+    title: ADO.NET Data Services (2) - Pokročilé možnosti (nejen) dotazování
   - date: 21. 7. 2008
     description: vyvojar.cz
     language: Czech
@@ -694,7 +694,7 @@ articles:
     description: vyvojar.cz
     language: Czech
     link: http://www.vyvojar.cz/Articles/599-lazy-eager-explicit-loading-o-co-jde.aspx
-    title: Lazy, eager, explicit loading – o co jde?
+    title: Lazy, eager, explicit loading - o co jde?
   - date: 2. 6. 2008
     description: dbsvet.cz
     language: Czech
@@ -729,7 +729,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2008040302
-    title: Launch nových MS produktů – ožije MS-DOS?
+    title: Launch nových MS produktů - ožije MS-DOS?
   - date: 3. 4. 2008
     description: dbsvet.cz
     language: Czech
@@ -829,7 +829,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2007121201
-    title: Seminář Firebird a FastReport – jaký byl?
+    title: Seminář Firebird a FastReport - jaký byl?
   - date: 10. 12. 2007
     description: vyvojar.cz
     language: Czech
@@ -984,7 +984,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2007041801
-    title: Osobnosti Firebirdu počtvrté – Ivan Přenosil
+    title: Osobnosti Firebirdu počtvrté - Ivan Přenosil
   - date: 10. 4. 2007
     description: dbsvet.cz
     language: Czech
@@ -994,7 +994,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2007031701
-    title: Osobnosti Firebirdu potřetí – Pavel Císař
+    title: Osobnosti Firebirdu potřetí - Pavel Císař
   - date: 5. 2. 2007
     description: vyvojar.cz
     language: Czech
@@ -1004,7 +1004,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2007012902
-    title: Osobnosti Firebirdu podruhé – Dmitry Yemanov
+    title: Osobnosti Firebirdu podruhé - Dmitry Yemanov
   - date: 16. 1. 2007
     description: vyvojar.cz
     language: Czech
@@ -1019,7 +1019,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2007010401
-    title: Osobnosti Firebirdu poprvé – Vlad Horsun
+    title: Osobnosti Firebirdu poprvé - Vlad Horsun
   - date: 7. 12. 2006
     description: dbsvet.cz
     language: Czech
@@ -1034,7 +1034,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2006100402
-    title: Novinka ve druhém Firebirdu – expression indexy
+    title: Novinka ve druhém Firebirdu - expression indexy
   - date: 13. 9. 2006
     description: dbsvet.cz
     language: Czech
@@ -1049,7 +1049,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2006071201
-    title: Opět – Oracle nebo Microsoft? Microsoft!
+    title: Opět - Oracle nebo Microsoft? Microsoft!
   - date: 27. 6. 2006
     description: dbsvet.cz
     language: Czech
@@ -1059,7 +1059,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2006060201
-    title: 25. jednohubka – Problém s referencemi u Firebirdu
+    title: 25. jednohubka - Problém s referencemi u Firebirdu
   - date: 27. 4. 2006
     description: dbsvet.cz
     language: Czech
@@ -1099,7 +1099,7 @@ articles:
     description: dbsvet.cz
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2005121301
-    title: 19. jednohubka – Proč Firebird/IB používají názvy gdsXXX?
+    title: 19. jednohubka - Proč Firebird/IB používají názvy gdsXXX?
   - date: 6. 12. 2005
     description: dbsvet.cz
     language: Czech
@@ -1207,13 +1207,13 @@ courses:
     country: Slovakia
     topic: ADO.NET and Firebird
 ---
-### Curriculum Vitae – Mgr. Jiri Cincura
+### Curriculum Vitae - Mgr. Jiří Činčura
 
 #### Basic data:
 
 <table>
 	<tr>
-		<td>Name:</td><td>Jiri Cincura</td>
+		<td>Name:</td><td>Jiří Činčura</td>
 	</tr>
 	<tr>
 		<td>Date of birth:</td><td>March 5, 1983</td>
@@ -1237,14 +1237,14 @@ courses:
 * 2017: Microsoft Most Valuable Professional
 * driving licence A, B
 * Microsoft Certified Professional (70-583, 70-536)
-* 2006 – 2008: Microsoft Student Consultant/Microsoft Student Partner
+* 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
 * Red Cross - first aid certification
 * H.P.I. - H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
 * power yoga instructor (MŠMT ČR (MEYS) certified)
 * power yoga advanced vinyasa training
 * high level experiences from line of (mechanical) engineering/locksmithery
-* photography (2004 – 2005) (2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)
+* photography (2004 - 2005) (2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)
 * Fitbox Instructor Advanced
 
 #### Skills:
