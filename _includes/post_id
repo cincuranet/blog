@@ -1,1 +1,0 @@
-{{ post.url | remove: "/" | split: "-" | first }}
