@@ -1,6 +1,5 @@
 var blog = (function() {
 	function initLinks() {
-		// should I do only 'article' links?
 		$('a').each(function(i, e) {
 			e = $(e);
 			var href = e[0].href;
