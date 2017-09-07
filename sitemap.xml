@@ -4,7 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	{% for doc in site.posts %}
 	<url>
-		<loc>https://{{ site.address }}{{ doc.url }}/</loc>
+		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
 	{% endfor %}
 	{% for doc in site.html_pages %}
@@ -12,11 +12,7 @@
 		{% continue %}
 	{% endif %}
 	<url>
-		{% assign slash = '/' %}
-		{% if doc.url == '/' %}
-			{% assign slash = '' %}
-		{% endif %}
-		<loc>https://{{ site.address }}{{ doc.url }}{{ slash }}</loc>
+		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
 	{% endfor %}
 </urlset> 

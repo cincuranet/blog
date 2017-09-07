@@ -1,1 +1,1 @@
-{% for post in site.posts %}{% if post.id == id %}{{ post.url }}/{% break %}{% endif %}{% endfor %}
+{% for post in site.posts %}{% if post.id == id %}{{ post.url }}{% break %}{% endif %}{% endfor %}
