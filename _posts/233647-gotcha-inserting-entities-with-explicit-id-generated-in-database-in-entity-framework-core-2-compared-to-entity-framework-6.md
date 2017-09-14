@@ -13,7 +13,7 @@ Yesterday I was rewriting some code from Entity Framework 6 to Entity Framework 
 
 #### Entity Framework 6
 
-In Entity Framework 6 you can create an entity and set the primary key property to whatever value you want, because in case the ID is generated in database (i.e. `identity` in MS SQL Server) the value will be overwritten anyway. And Entity Framework 6 will happily work with that scenario. You might as why would you set the property if it's going to be overwritten with real value? Probably not intentionally, but you might be getting the objects from other system or source and the values might be set or something like that.
+In Entity Framework 6 you can create an entity and set the primary key property to whatever value you want, because in case the ID is generated in database (i.e. `identity` in MS SQL Server) the value will be overwritten anyway. And Entity Framework 6 will happily work with that scenario. You might wonder why would you set the property if it's going to be overwritten with real value? Maybe not intentionally, but you might be getting the objects from other system or source and the values might be set or something like that. Or as [Frans Bouma reminded me on Twitter][2], sometimes temporary primary keys are used for binding.
 
 Simple program to try it.
 
@@ -163,3 +163,4 @@ WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
 More or less the same as Entity Framework 6.
 
 [1]: https://github.com/aspnet/EntityFrameworkCore/issues/703
+[2]: https://twitter.com/FransBouma/status/908251145348501505
