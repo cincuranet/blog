@@ -280,6 +280,7 @@ article ul > li:before {
 
 article table {
 	line-height: 1.6;
+	border-collapse: collapse;
 	margin-bottom: 1em;
 }
 
