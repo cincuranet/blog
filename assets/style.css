@@ -285,13 +285,17 @@ article table {
 }
 
 article td {
+	border: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 }
-article td:first-of-type {
+article table.layout td {
+	border: 0;
+}
+article table.layout td:first-of-type {
 	padding-left: 0;
 }
-article td:last-of-type {
+article table.layout td:last-of-type {
 	padding-right: 0;
 }
 

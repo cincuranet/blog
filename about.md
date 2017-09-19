@@ -22,7 +22,7 @@ Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datov
 
 #### More info
 
-<table>
+<table class="layout">
 	<tr>
 		<td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
 	</tr>

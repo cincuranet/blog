@@ -1211,7 +1211,7 @@ courses:
 
 #### Basic data:
 
-<table>
+<table class="layout">
 	<tr>
 		<td>Name:</td><td>Jiří Činčura</td>
 	</tr>
