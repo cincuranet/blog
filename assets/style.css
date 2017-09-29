@@ -282,18 +282,18 @@ article table {
 	margin-bottom: 1em;
 }
 
-article td {
+article td, article th {
 	border: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
 }
-article table.layout td {
+article table.layout td, article table.layout th {
 	border: 0;
 }
-article table.layout td:first-of-type {
+article table.layout td:first-of-type, article table.layout th:first-of-type {
 	padding-left: 0;
 }
-article table.layout td:last-of-type {
+article table.layout td:last-of-type, article table.layout th:last-of-type {
 	padding-right: 0;
 }
 
