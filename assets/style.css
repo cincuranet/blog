@@ -199,7 +199,7 @@ article code, article pre {
 article code {
 	padding-left: .2rem;
 	padding-right: .2rem;
-	word-wrap: break-word;
+	word-break: break-all;
 }
 
 article pre {
@@ -217,7 +217,7 @@ article pre {
 article pre code {
 	padding-left: 0; /* reset */
 	padding-right: 0; /* reset */
-	word-wrap: normal; /* reset */
+	word-break: normal;  /* reset */
 }
 
 /* article - images */
@@ -286,6 +286,7 @@ article td, article th {
 	border: 1px solid #222;
 	padding-left: .5rem;
 	padding-right: .5rem;
+	word-break: break-all;
 }
 article table.layout td, article table.layout th {
 	border: 0;
