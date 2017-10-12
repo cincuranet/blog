@@ -32,7 +32,7 @@ async def fetch(url, loop):
                                         return (url, duration)
                                 else:
                                         return (url, -1)
-                except:
+                except Exception:
                         return (url, -1)
 
 async def main(loop):
