@@ -9,7 +9,7 @@ I'm pretty sure you know what the red squiggle in Visual Studio means (correct, 
 
 <!-- excerpt -->
 
-Back to the purple color. If you use _Edit and Continue_ while debugging and you make so called unauthorized - basically changing structure of code not only code itself - the purple squiggle appears. Because you're in debugging your _Error List_ window is probably not visible, but Visual Studio tells you what happened.
+Back to the purple color. If you use _Edit and Continue_ while debugging and you make so called unauthorized edit - basically changing structure of the code, not only the code itself - the purple squiggle appears. Because you're in debugging your _Error List_ window is probably not visible, but Visual Studio tells you what happened.
 
 ![Error in Error List]({% include post_ilink, post: page, name: "error.png" %})
 
