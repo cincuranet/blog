@@ -3,6 +3,11 @@ title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
   - title: Talk @ Windows User Group
+    date: September 4, 2017
+    language: Czech
+    sessions:
+      - Common mistakes when using O/R mapper
+  - title: Talk @ Windows User Group
     date: June 27, 2017
     language: Czech
     sessions:
