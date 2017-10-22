@@ -1126,6 +1126,10 @@ articles:
     link: http://www.dbsvet.cz/view.php?cisloclanku=2005083101
     title: Jak k Firebirdu z .NET?
 courses:
+  - date: 09/2017
+    company: Continental Barum, s.r.o.
+    country: Czech Republic
+    topic: Parallel/asynchronous programming
   - date: 06/2017
     company: DC Concept a.s.
     country: Czech Republic
