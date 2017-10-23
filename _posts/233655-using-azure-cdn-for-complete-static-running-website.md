@@ -7,7 +7,7 @@ tags:
   - CDN
   - Cloud
 ---
-If you read the documentation etc. for Azure CDN, it often expects that you're going to use it on parts of your website and rest will be served directly from the original location. But if you have completely static (and currently running) website, like for example this blog, which is using the Azure CDN actually, you need to take a few specific steps to start using Azure CDN in such a setup and without downtime.
+If you read the documentation etc. for Azure CDN, it often expects that you're going to use it on parts of your website and rest will be served directly from the original location. But if you have completely static (and currently running) website, like for example this blog, which is using the Azure CDN actually, you need to take a few specific steps to start using Azure CDN in such setup and without downtime.
 
 <!-- excerpt -->
 
