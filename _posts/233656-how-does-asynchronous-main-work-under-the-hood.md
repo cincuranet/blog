@@ -60,7 +60,7 @@ I created an empty console application, with empty `static async Task Main(strin
 } // end of method Program::'<Main>'
 ```
 
-It generated new `<Main>(string[] args)` method and the body is simple `Program.Main(args).GetAwaiter().GetResult();`. If the `Main` returns `int`, then the method is basically the same, having explicit return of value from `GetResult`.
+It generated new `<Main>(string[] args)` method and the body is simple `Program.Main(args).GetAwaiter().GetResult();`. If the `Main` returns `int`, then the method is basically the same, only having explicit return of value from `GetResult`.
 
 #### Conclusion
 
