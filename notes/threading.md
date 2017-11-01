@@ -98,3 +98,9 @@ class OutOfProgramOrder
 #### Transistor
 
 22nm => 50 silicon atoms
+
+#### Links
+
+* [this]({% include post_link, id: "233433" %})
+* [this]({% include post_link, id: "233629" %})
+* [this]({% include post_link, id: "233626" %})
