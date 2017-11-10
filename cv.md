@@ -2,6 +2,12 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Corestart 
+    date: November 2-3, 2017
+    language: Czech
+    sessions:
+      - Entity Framework Core 2.0
+      - New features in C# 7 and 7.1/7.2
   - title: Talk @ Windows User Group
     date: September 4, 2017
     language: Czech
@@ -88,7 +94,7 @@ conferences:
     language: Czech
     sessions:
       - Asynchronous programming in .NET
-  - title: CoreStart
+  - title: Corestart
     date: August 18, 2016
     language: Czech
     sessions:
