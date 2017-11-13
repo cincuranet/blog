@@ -3,6 +3,13 @@ title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
   - title: Corestart 
+    date: November 13-14, 2017
+    language: Czech
+    sessions:
+      - NouDB - database that scales
+      - Why Python?
+      - Firebird: small, light and powerful database
+  - title: Corestart 
     date: November 2-3, 2017
     language: Czech
     sessions:
