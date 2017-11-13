@@ -239,7 +239,8 @@ article blockquote {
 	margin-right: .5rem;
 	padding: .5rem;
 	margin-bottom: 1em;
-	border: 1px dashed #666;
+	border-left: .2em dashed #666;
+	color: #666;
 }
 
 /* article - lists */
