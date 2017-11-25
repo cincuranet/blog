@@ -135,7 +135,7 @@ footer > p {
 /* article */
 
 article {
-	border-bottom: 1px dashed #666;
+	border-bottom: 1px solid #eee;
 	padding-left: .5rem;
 	padding-right: .5rem;
 	padding-top: 1rem;
