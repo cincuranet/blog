@@ -99,6 +99,15 @@ class OutOfProgramOrder
 
 22nm => 50 silicon atoms
 
+#### Scheduling timeslices
+
+* Windows
+	* 10-120ms (when quanta can vary, has one of 2 values)
+	* reentrant and preemptible
+* Linux
+	* 10-200ms, default is 100ms (varies across entire range based on priority, which is based on interactivity level)
+	* reentrant and preemptible
+
 #### Links
 
 * [this]({% include post_link, id: "233433" %})
