@@ -33,7 +33,7 @@ option {
 	color: #666;
 }
 
-.divider:before {
+.divider::before {
 	content: "\00a0|\00a0";
 }
 
