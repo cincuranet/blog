@@ -2,11 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
-  - title: JavaDasy 2017 
+  - title: JavaDays 2017
     date: November 13-14, 2017
     language: Czech
     sessions:
-      - NouDB - database that scales
+      - NuoDB - database that scales
       - Why Python?
       - "Firebird: small, light and powerful database"
   - title: Corestart 
