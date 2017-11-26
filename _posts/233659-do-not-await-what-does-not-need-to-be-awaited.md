@@ -158,11 +158,11 @@ Next, I tested a call where some callback really happens. I used `Task.Delay(1)`
 | WithoutAwait | 15.62 ms | 0.0085 ms | 0.0079 ms |   1.00 |     312 B |
 |    WithAwait | 15.62 ms | 0.0096 ms | 0.0089 ms |   1.00 |     528 B |
 
-The execution speed here is the same because the execution itself is fully overruled by the duration of the asynchronous method itself (in this case the timer callback), as it should be. But there's a `216` bytes difference in allocation. Does it matter? In normal code probably not. But why to give something out when the "fix" is super easy and clean.
+The execution speed here is the same because the execution itself is fully overruled by the duration of the asynchronous method itself (in this case the timer callback), as it should be. But there's a `216` bytes difference in allocation (.NET Core 2.0.3, 64-bit RyuJIT). Does it matter? In normal code probably not. But why to give something out when the "fix" is super easy and clean.
 
 #### Summary
 
-Was this just my rambling about a problem that in real world doesn't matter that much. Yes, it was. Although sometimes I really need to connect the smallest dots and every clue matters.
+Was this just my rambling about a problem that in real world doesn't matter that much? Yes, it was. Although sometimes I really need to connect the smallest dots and every clue matters.
 
 And you don't write `array[index + 0]`, why would you do the `+ 0` with an extra `await`...
 
