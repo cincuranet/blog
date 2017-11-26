@@ -2,6 +2,16 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Faculty of Informatics Masaryk University
+    date: November 30, 2017
+    language: Czech
+    sessions:
+      - .NET Core
+  - title: HAVIT Vzdělávací okénko
+    date: November 23, 2017
+    language: Czech
+    sessions:
+      - IoC/DI proč a jak
   - title: JavaDays 2017
     date: November 13-14, 2017
     language: Czech
