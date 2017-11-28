@@ -8,7 +8,7 @@ tags:
   - .NET Core
   - Roslyn
 ---
-[C# 7.1][5] comes with option to use [asynchronous `Main` method][1]. That means now the `Main` can have `async` modifier and return any compatible type, i.e. `Task` or `Task<int>` for example. But how it works under the hood? Let's find out.
+[C# 7.1][5] comes with option to use [asynchronous `Main` method][1]. That means now the `Main` can have `async` modifier and return `Task` or `Task<int>`. But how it works under the hood? Let's find out.
 
 <!-- excerpt -->
 
