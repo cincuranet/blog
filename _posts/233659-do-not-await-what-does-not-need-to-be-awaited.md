@@ -80,7 +80,7 @@ public async Task FooBar()
 
 Can this be rewritten the way I showed before?
 
-No! When you swap the `async`/`await` for plain `return` the code will go over the `finally` block (from `using`) and will dispose the `Foo`, but the `SomethingAsync` might be still running and using it. _Queue dramatic explosion._
+No! When you swap the `async`/`await` for plain `return`, the code will go over the `finally` block (from `using`) and will dispose the `Foo`, but the `SomethingAsync` might be still running and using it. _Queue dramatic explosion._
 
 #### Some numbers
 
