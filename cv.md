@@ -2,6 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: December 12, 2017
+    language: Czech
+    sessions:
+      - Entity Framework Core 2.0
   - title: Faculty of Informatics Masaryk University
     date: November 30, 2017
     language: Czech
