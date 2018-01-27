@@ -8,7 +8,6 @@ tags:
   - .NET Standard
   - C#
 ---
-
 One of the few things I was missing when tuples were introduced was some way to generically work with unknown tuples. Mostly to be able to identify tuples, instead of using plain `object` and also work with items using index of some sort. Luckily, I was probably not the only one and starting .NET 4.7.1 new interesting interface - [`ITuple`][1] - was added (also available in .NET Core 2.0).
 
 <!-- excerpt -->
