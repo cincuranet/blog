@@ -10,7 +10,7 @@ As usual the easiest things take a lot of time - or luck - to debug. Last few da
 
 <!-- excerpt -->
 
-#### TL;DR
+#### tl;dr;
 
 Long story short, if you have dollar sign in a GitLab CI variable, you have to escape it by another `$`. In my example it would be `web_app_name\$$web_app_name`.
 
