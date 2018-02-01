@@ -2,6 +2,16 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: ShowIT 2018
+    date: January 30-2, 2018
+    language: Czech
+    sessions:
+      - Azure CosmosDB
+  - title: G2B•TechEd 2018
+    date: January 29-30, 2018
+    language: Czech
+    sessions:
+      - Azure CosmosDB
   - title: Talk @ Windows User Group
     date: December 12, 2017
     language: Czech
