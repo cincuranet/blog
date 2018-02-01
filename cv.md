@@ -1303,9 +1303,11 @@ courses:
 
 #### Professional career - Ongoing:
 
-* 04/2012 - present: architect, build/deploy & automation master, developer for SMS-Timing (Belgium)
-	* Firebird, LLBLGen Pro, Entity Framework, ASP.NET MVC, Azure, C#, .NET
-* 09/2009 - present: trainer for Gopas, a.s.
+* 11/2017 - present: developer for [Havit, s.r.o](http://www.havit.cz) (Czech Republic)
+	* C#, .NET, Azure
+* 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com) (Belgium)
+	* Firebird, LLBLGen Pro, C#, .NET
+* 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz) (Czech Republic)
 	* advanced trainings about Entity Framework
 	* advanced trainings about multithreaded and parallel programming
 	* advanced trainings about cloud and Windows Azure
@@ -1314,41 +1316,31 @@ courses:
 	* native ADO.NET data provider for Firebird database for .NET Framework
 	* Entity Framework support
 	* open-source project
-* 2005 - present: Journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/) (issuing local magazine focused on databases)
-* 2004 - present: Freelancer - developer, consultant
+* 2005 - present: journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/) (Czech Republic)
+* 2004 - present: freelancer - developer, consultant
 
 #### Professional career - Past:
 
-* 07/2014 - 07/2014: NuoDB, Inc
-	* Updating .NET driver for Entity Framework Code First Migrations.
+* 07/2014 - 07/2014: NuoDB, Inc.
+	* adding support for Entity Framework Code First Migrations into the NuoDB's driver
 	* C#, .NET, Entity Framework
-* 03/2014 - 04/2014: NuoDB, Inc
-	* Updating .NET driver for Entity Framework 6. Porting nopCommerce to new driver.
+* 03/2014 - 04/2014: NuoDB, Inc.
+	* Entity Framework 6 driver for NuoDB
 	* C#, .NET, ADO.NET, Entity Framework
-* 06/2013 - 07/2013: NuoDB, Inc
-	* Creating support for Entity Framework (v4, v5) in NuoDB's ADO.NET driver. Helping to improve NuoDB's ADO.NET driver ADO.NET compliance. Porting nopCommerce to NuoDB.
+* 06/2013 - 07/2013: NuoDB, Inc.
+	* Entity Framework (v4, v5) driver for NuoDB
 	* C#, .NET, ADO.NET, Entity Framework
 * 11/2010 - 04/2012: database architect, business layer developer for Nexum Trilog
-	* [Webmium](http://www.webmium.com) - Azure platforms usage, developing and maintaining Azure SQL databases, developing business layer, ASP.NET MVC
-	* Webmium won Microsoft's Azure Contest (2012) "Tvoje firma, Tvoje šance na úspěch"
-	* Azure (SQL, Tables, Queues, Blob Storage, Worker Roles), MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET
+	* Azure , MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET
 * 03/2009 - 10/2010: co-founder at Whitelements, database architect, business layer developer
-	* [www.honzovahypoteka.cz](http://www.honzovahypoteka.cz)
-	* [www.adexpres.com](http://www.adexpres.com)
-	* [www.wikireality.cz](http://www.wikireality.cz)
 	* MS SQL Server, Entity Framework, T-SQL, C#, .NET
-* 2008 - 2012: consultant for SMS-Timing, GOnline, B&MI (Belgium)
+* 2008 - 2012: consultant for SMS-Timing, GOnline, B&MI
 	* Firebird, C#, ADO.NET consultancy
 * 02/2009 - 2015: database architect, developer for Devmasters s.r.o. - external
-	* see 2007 - 2009: database architect, developer for Devmasters s.r.o.
-* 2007 - 02/2009: database architect, developer for Devmasters s.r.o..
-	* creating databases on mainly MS SQL Server (also Oracle)
-	* creating data access layers and business layers
-	* Windows Mobile client for [OnTheRoad](http://ontheroad.to) project
-	* T-Mobile CZ, Vodafone CZ, Telefonica O2 CZ, GTS Novera CZ, Ceske Radiokomunikace CZ - [PremiumServices.cz](http://www.premiumservices.cz): system for administering numbers for premium SMS' and audiotex services
-	* T-Mobile CZ - OpenNumbers: system for managing numbers (opening, closing, approving, managing document for numbers)
-	* DatabaseUpgrader - tool (assembly) for maintaining database upgrades from code
-* 2004 - 07/2012: Helpdesk operator, [PIPNI s.r.o.](http://www.pipni.cz/) (webhosting company).
+	* see below
+* 2007 - 02/2009: database architect, developer for Devmasters s.r.o.
+  * MS-SQL, ASP.NET, .NET, C#, Windows Mobile, Compact Framework
+* 2004 - 07/2012: helpdesk operator, PIPNI s.r.o.
 
 #### Languages:
 
@@ -1358,9 +1350,7 @@ courses:
 
 #### References:
 
-* Ing. Marek Kocan ([marek@kocan.cz](mailto:marek@kocan.cz))
-* Ing. Martin Šigut ([msigut@gmail.com](mailto:msigut@gmail.com))
-* Alexander Muylaert-Gelein ([alexander@gonline.be](mailto:alexander@gonline.be))
+* _on request only_
 
 #### Speaker on conferences and other events:
 
