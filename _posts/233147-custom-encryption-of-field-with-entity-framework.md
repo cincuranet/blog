@@ -132,7 +132,10 @@ What about reading. Here we don't have a directly one place where this happens. 
 
 Nothing magical, right? :) Feel free to comment and/or improve.
 
+> [Follow-up post with Entity Framework Core.][5]
+
 [1]: {% include post_link, id: "232567" %}
 [2]: http://msdn.com/ef
 [3]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx
 [4]: {% include post_link, id: "229056" %}
+[5]: {% include post_link, id: "233700" %}
