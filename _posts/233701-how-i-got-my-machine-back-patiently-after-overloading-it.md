@@ -9,7 +9,7 @@ tags:
   - Windows
   - Operating systems
 ---
-At the moment, one of my explorations is how the system (Windows) handles more-than-number-of-CPUs threads (all ready to run) under full load (from these threads). Don't worry, I'll blog about it soon, hopefully. And because I'm out of office, I access my workstation remotely (using [TeamViewer][1], in case you're wondering).
+At the moment, one of my explorations is how the system (Windows) handles more-than-number-of-CPUs threads (all ready to run) under full load (from these threads). And because I'm out of office, I access my workstation remotely (using [TeamViewer][1], in case you're wondering).
 
 <!-- excerpt -->
 
