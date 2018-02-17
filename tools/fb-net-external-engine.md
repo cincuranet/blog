@@ -117,7 +117,7 @@ The optional `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql`
 
 ##### `net$update`
 
-Allows *hot swapping* of assemblies *from SQL* without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disc and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
+Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disc and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
 
 The assembly is not locked on disc, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
 
