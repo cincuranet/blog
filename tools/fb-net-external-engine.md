@@ -38,17 +38,19 @@ FbNetExternalEngineManagement.pdb (optional)
 * Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below) or `void`.
 * Input arguments have to from set of supported types (see below).
 * No overload resolution (method names have to be unique).
+* `VARCHAR(n)` has to be `UTF-8` (can be defined on parameter).
 
 ##### Supported types (C# terminology)
 
 `int?`, `string`, `short?`, `long?`, `DateTime?`, `TimeSpan?`, `bool?`, `float?`, `double?`, `decimal?`, `byte[]`
+
+The mapping from/to database types should be self explanatory. 
 
 Database `NULL` maps to C# `null`.
 
 ##### Limitations on types (C# terminology)
 
 * `BLOB SUB_TYPE TEXT` is not supported (maps to `byte[]`).
-* `VARCHAR(n)` should be `UTF-8`.
 * `VARCHAR(n) CHARACTER SET OCTETS` is not supported.
 
 ##### Exceptions
