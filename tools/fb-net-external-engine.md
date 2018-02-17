@@ -123,7 +123,7 @@ The assembly is not locked on disc, thus you can replace it directly manually as
 
 #### Performance
 
-Single procedure call is about 3,54× slower compared to PSQL. That's about 0,008ms/call on my machine. The fetch from stored procedure is about 1,34× slower compared to PSQL.
+Single procedure call is about 3,54× slower compared to PSQL. That's about 0,008 ms per call on my machine. The fetch from stored procedure is about 1,34× slower compared to PSQL.
 
 #### Download
 
