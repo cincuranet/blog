@@ -150,8 +150,15 @@ article h3 {
 	padding-bottom: .2rem
 }
 
-article h4, article h5, article h6 {
+article h4 {
 	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-bottom: .4em;
+}
+
+article h5 {
+	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.6em;
 	margin-bottom: .4em;

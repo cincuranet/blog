@@ -32,34 +32,34 @@ FbNetExternalEngineManagement.pdb (optional)
 
 #### Stored procedures
 
-Requirements (C# terminology):
+##### Requirements (C# terminology)
 
 * Method has to be static.
 * Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below) or `void`.
 * Input arguments have to from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 
-Supported types (C# terminology):
+##### Supported types (C# terminology)
 
 `int?`, `string`, `short?`, `long?`, `DateTime?`, `TimeSpan?`, `bool?`, `float?`, `double?`, `decimal?`, `byte[]`
 
 Database `NULL` maps to C# `null`.
 
-Limitations on types (C# terminology):
+##### Limitations on types (C# terminology)
 
 * `BLOB SUB_TYPE TEXT` is not supported (maps to `byte[]`).
 * `VARCHAR(n)` should be `UTF-8`.
 * `VARCHAR(n) CHARACTER SET OCTETS` is not supported.
 
-Exceptions:
+##### Exceptions
 
 Any exception thrown from the code is converted to `FbException` with _status vector_ `isc_arg_gds` being `isc_random` and `isc_arg_string` being `Exception.ToString()` from .NET.
 
-SQL definition:
+##### SQL definition
 
 The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
 
-Example:
+##### Example
 
 C# code is compiled into `Example.dll`.
 
@@ -97,7 +97,7 @@ Not yet supported.
 
 The optional `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` companion) assembly contains some useful helpers for managing the plugin.
 
-* `net$update`
+##### `net$update`
 
 Allows *hot swapping* of assemblies *from SQL* without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disc and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
 
