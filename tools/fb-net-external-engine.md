@@ -85,6 +85,22 @@ external name 'Example!Example.Procedures.IncrementInteger'
 engine FbNetExternalEngine;
 ```
 
+Then you can call this procedure.
+
+```text
+SQL> select * from increment_integer(-20);
+
+    ORIGINAL          NEW
+============ ============
+         -20          -19
+
+SQL> execute procedure increment_integer(6);
+
+    ORIGINAL          NEW
+============ ============
+           6            7
+```
+
 More examples in `Example.dll` and `Procedures.cs`/`Procedures.sql`.
 
 #### Functions
