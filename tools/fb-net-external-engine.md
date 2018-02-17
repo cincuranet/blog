@@ -91,7 +91,7 @@ More examples in `Example.dll` and `Procedures.cs`/`Procedures.sql`.
 
 Not yet supported.
 
-#### Triggeres
+#### Triggers
 
 Not yet supported.
 
