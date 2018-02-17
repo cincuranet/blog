@@ -7,7 +7,7 @@ layout: page
 
 #### Introduction
 
-FirebirdDbComparer is pure managed .NET library that allows comparing of two Firebird databases and producing alter script to get the source database to the target's structure.
+_FirebirdDbComparer_ is pure managed .NET library that allows comparing of two Firebird databases and producing alter script to get the source database to the target's structure.
 
 #### Versions supported
 
