@@ -85,7 +85,7 @@ external name 'Example!Example.Procedures.IncrementInteger'
 engine FbNetExternalEngine;
 ```
 
-More examples in `Example.dll` and `Procedures.cs`/Procedures.sql`.
+More examples in `Example.dll` and `Procedures.cs`/`Procedures.sql`.
 
 #### Functions
 
