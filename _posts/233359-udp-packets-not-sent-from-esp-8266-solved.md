@@ -37,6 +37,6 @@ client.endPacket();
 yield();
 ```
 
-With this change the code now works like a charm. I don't understand the real reason deep behind, but that's the beauty of learning. Also now thinking about it. I'm not sure it should be _logically_ after sending the packet of before entering deep sleep. Let me know if you understand it.
+With this change the code now works like a charm. I don't understand the real reason deep behind, but that's the beauty of learning. Also now thinking about it. I'm not sure it should be _logically_ after sending the packet or before entering deep sleep. Let me know if you understand it.
 
 [1]: http://www.wemos.cc/Products/d1_mini.html
