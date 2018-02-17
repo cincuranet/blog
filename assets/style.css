@@ -219,10 +219,14 @@ article pre {
 	overflow: auto;
 }
 
-article pre code {
+article pre > code {
 	padding-left: 0; /* reset */
 	padding-right: 0; /* reset */
 	word-wrap: normal;  /* reset */
+}
+
+article h4 > code, article h5 > code {
+	font-size: inherit;	
 }
 
 /* article - images */
