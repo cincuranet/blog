@@ -69,10 +69,12 @@ On the other hand, this gives you the option to use different keys (i.e. `int`),
 
 #### Summary
 
-For me both options look the same in terms of effort. But I wouldn't use the interning, because it's a hack and I don't want that in my code, especially in multithreaded code. However. What about the performance? Next section dives into performance (available next week).
+For me both options look the same in terms of effort. But I wouldn't use the interning, because it's a hack and I don't want that in my code, especially in multithreaded code. However. What about the performance? [Next section dives into performance.][5]
+
+> [Performance][5]
 
 [1]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.monitor?view=netframework-4.7.1
 [2]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphore?view=netframework-4.7.1
 [3]: https://en.wikipedia.org/wiki/String_interning
 [4]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=netframework-4.7.1
-[5]: {% include post_link, id: "233703" %}
+[5]: {% include post_link, id: "233704" %}
