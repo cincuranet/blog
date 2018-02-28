@@ -3,6 +3,7 @@ title: |-
   .NET.CZ Podcast o C# a programovacích jazycích obecně
 date: 2018-02-28T10:13:00Z
 tags:
+  - Interview
   - .NET
   - .NET Core
   - C#

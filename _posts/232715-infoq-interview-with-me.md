@@ -3,6 +3,7 @@ title: |-
   InfoQ interview with me
 date: 2012-01-24T08:50:12Z
 tags:
+  - Interview
   - .NET
   - Databases in general
   - Entity Framework
