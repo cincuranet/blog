@@ -7,6 +7,8 @@ tags:
 ---
 Few days ago, I learned new thing about C#. Apparently, there are "true" and "false" operators and you can overload these. But I also wanted to know what are these good for, given I've never heard about these. 
 
+<!-- excerpt -->
+
 Let's start with simple (and dummy) code to see what's what.
 
 ```csharp
