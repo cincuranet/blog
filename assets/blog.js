@@ -68,15 +68,13 @@ var blog = (function() {
 			initLinks();
 			initImageTitles();
 			initImageBox();
+			initDisqusCounts();
 		},
 		initContentPage: function() {
 		},
 		initPostPage: function() {
 			showArticleNicely();
 			initFullDisqus();
-		},
-		initPostsListPage: function() {
-			initDisqusCounts();
 		}
 	};
 })();
@@ -91,6 +89,4 @@ if (/^\/\d+-.+\/$/.test(window.location.pathname)) {
 }
 else {
 	blog.initContentPage();
-	if (/^\/$/.test(window.location.pathname))
-		blog.initPostsListPage();
 }

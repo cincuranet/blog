@@ -1,1 +1,7 @@
-<p class="meta"><span class="fa fa-calendar" aria-hidden="true"></span> {{ post.date | date: "d MMM yyyy" }}<span class="divider"></span><span class="fa fa-tags" aria-hidden="true"></span> {{ post.tags | sort | join: ", " }}</p>
+<p class="meta">
+	<span class="fa fa-calendar" aria-hidden="true"></span> {{ post.date | date: "d MMM yyyy" }}
+	<span class="divider"></span>
+	<span class="fa fa-comments" aria-label="Comments"></span> <span class="disqus-comment-count" data-disqus-url="http://{{ site.address }}{{ post.url }}">&nbsp;</span>
+	<span class="divider"></span>
+	<span class="fa fa-tags" aria-hidden="true"></span> {{ post.tags | sort | join: ", " }}
+</p>
