@@ -2,6 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: April 5, 2018
+    language: Czech
+    sessions:
+      - C# 7, 7.1, 7.2 a 7.3/8.0
   - title: ShowIT 2018
     date: January 30-2, 2018
     language: Czech
