@@ -2,6 +2,13 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: WUG Days 2018
+    date: April 7-8, 2018
+    language: Czech
+    sessions:
+      - Defensice programming
+      - New features in C# 7.x-9
+      - What to expect in Entity Framework Core 2.1
   - title: Talk @ Windows User Group
     date: April 5, 2018
     language: Czech
