@@ -34,11 +34,11 @@ conferences:
     language: Czech
     sessions:
       - .NET Core
-  - title: HAVIT Vzdělávací okénko
+  - title: HAVIT Education Window
     date: November 23, 2017
     language: Czech
     sessions:
-      - IoC/DI proč a jak
+      - IoC/DI why and how
   - title: JavaDays 2017
     date: November 13-14, 2017
     language: Czech
