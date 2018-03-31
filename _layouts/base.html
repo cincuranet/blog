@@ -24,8 +24,8 @@
 	</nav>
 
 	<header>
-		{% capture heading1_accent %}<span class="accent">{{ site.heading1_accent }}</span>{% endcapture %}
-		{% capture heading2_accent %}<span class="accent">{{ site.heading2_accent }}</span>{% endcapture %}
+		{%- capture heading1_accent -%}<span class="accent">{{ site.heading1_accent }}</span>{%- endcapture -%}
+		{%- capture heading2_accent -%}<span class="accent">{{ site.heading2_accent }}</span>{%- endcapture -%}
 		<h1><a href="/">{{ site.heading1 | replace: site.heading1_accent,heading1_accent }}</a></h1>
 		<h2><span class="accent">by</span> {{ site.heading2 | replace: site.heading2_accent,heading2_accent }}</h2>
 	</header>

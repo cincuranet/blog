@@ -4,15 +4,15 @@ layout: page
 ---
 <h3>Archive ({{ site.posts | size }} posts)</h3>
 
-{% assign sorted_years = site.years %}
-{% for year in sorted_years %}
-	{% assign posts = site.years_posts[year] %}
+{%- assign sorted_years = site.years -%}
+{%- for year in sorted_years -%}
+	{%- assign posts = site.years_posts[year] -%}
 <h4><span class="fa fa-calendar" aria-label="Published"></span> {{ year }} ({{ posts | size }})</h4>
 <ul>
-	{% for post in posts %}
+	{%- for post in posts -%}
 	<li><a href="{{ post.url }}">{{ post.title | encode }}</a> <span class="meta">({{ post.date | date: "d MMM yyyy" }})</span></li>
-	{% endfor %}
+	{%- endfor -%}
 </ul>
-{% endfor %}
+{%- endfor -%}
 
 <h4><span class="fa fa-tags" aria-label="Tags"></span> {{ site.tags | sort | join: ", " }}</h4>

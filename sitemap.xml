@@ -2,17 +2,17 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	{% for doc in site.posts %}
+	{%- for doc in site.posts -%}
 	<url>
 		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
-	{% endfor %}
-	{% for doc in site.html_pages %}
-	{% if doc.no_page %}
-		{% continue %}
-	{% endif %}
+	{%- endfor -%}
+	{%- for doc in site.html_pages -%}
+	{%- if doc.no_page -%}
+		{%- continue -%}
+	{%- endif -%}
 	<url>
 		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
-	{% endfor %}
+	{%- endfor -%}
 </urlset> 
