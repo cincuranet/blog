@@ -7,7 +7,7 @@
 	<link href="https://{{ site.address }}"/>
 	<updated>{{ site.time | date: "yyy-MM-ddTHH:mm:ssZ" }}</updated>
 	<author>
-		<name>{%- include title -%}</name>
+		<name>{% include title %}</name>
 	</author>
 	<id>http://{{ site.address }}/</id>
 
