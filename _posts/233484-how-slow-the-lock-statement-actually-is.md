@@ -75,7 +75,7 @@ class Program
 
 Really nothing special (I hope I haven't overlooked something important). I get some stopwatch to measure the time, warm up the methods and start running in a loop. I did few test runs (discarding numbers that were very off) without debugger attached and (of course) with optimizations turned on. I also tried how the 32bit vs 64bit ("Prefer 32-bit" checkbox) affects the result.
 
-So what's the numbers? As expected using the [`Monitor.Enter`][3] and [`Monitor.Exit`][4] is faster than using `lock` statement. I saw numbers between 15&nbsp;% and 17&nbsp;%. With "Prefer 32-bit" turned on. Surprisingly with "Prefer 32-bit" turned off (and on a 64bit OS) the difference was only about between <1&nbsp;% and 3&nbsp;%. Pretty interesting.
+So what's the numbers? As expected using the [`Monitor.Enter`][3] and [`Monitor.Exit`][4] is faster than using `lock` statement. I saw numbers between 15 % and 17 %. With "Prefer 32-bit" turned on. Surprisingly with "Prefer 32-bit" turned off (and on a 64bit OS) the difference was only about between <1 % and 3 %. Pretty interesting.
 
 There's one catch, though. The `lock` statement translation is not what I wrote in `MonitorTest` method (among the `try`-`finally`). It actually uses the [`Monitor.Enter` overload with the `ref bool lockTaken` parameter][5]. So the method would rather be.
 
@@ -92,7 +92,7 @@ static void MonitorTest()
 }
 ```
 
-Is there a change in results now? Yes, a bit. Again the 32bit first. Now it was between about 17&nbsp;% and 18&nbsp;%. But the 64bit was between 0&nbsp;% (few times the `lock` was even faster, though it was on a measurement error boundary) and 2&nbsp;%.
+Is there a change in results now? Yes, a bit. Again the 32bit first. Now it was between about 17 % and 18 %. But the 64bit was between 0 % (few times the `lock` was even faster, though it was on a measurement error boundary) and 2 %.
 
 Now you might think that few percent difference on a μs operation is not important. Sure. But also take into account that when you start writing some locking or synchronization you want it to be fast. To utilize all resources you have available for getting the result. That means (not only) getting in and out the lock as fast as you can. 
 
