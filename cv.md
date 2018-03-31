@@ -46,7 +46,7 @@ conferences:
       - NuoDB - database that scales
       - Why Python?
       - "Firebird: small, light and powerful database"
-  - title: Corestart 
+  - title: Corestart
     date: November 2-3, 2017
     language: Czech
     sessions:
@@ -1253,11 +1253,11 @@ courses:
     company: Martin Tláskal
     country: Czech Republic
     topic: Firebird and ASP.NET
-  - date: 03/2009 
+  - date: 03/2009
     company: PeopleWare
     country: Belgium
     topic: Entity Framework
-  - date: 02/2009 
+  - date: 02/2009
     company: SMS-Timing
     country: Belgium
     topic: Entity Framework
@@ -1285,9 +1285,9 @@ courses:
 #### Education:
 
 * 2005 - 2008: Applied Informatics specializing in Computer Systems, Faculty of Informatics, Masaryk University
-	* Mgr. (MSc. equiv.) 
+	* Mgr. (MSc. equiv.)
 * 2002 - 2005: Applied Informatics, Faculty of Informatics, Masaryk University
-	* Bc. (BSc. equiv.) 
+	* Bc. (BSc. equiv.)
 * 1997 - 2002: high school (gymnasium) Pierra de Coubertina, Tábor
 
 #### Another education, courses, certificates:
@@ -1385,5 +1385,5 @@ courses:
 
 {%- for course in page.courses -%}
 * {{ course.company }} ({{ course.country }}, {{ course.date }})
-	* {{ course.topic }} 
+	* {{ course.topic }}
 {%- endfor -%}
