@@ -24,7 +24,6 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
-		$.fancybox.defaults.loop = false;
 		var items = $('article a:has(img)');
 		items.each(function(i, e) {
 			e = $(e);
