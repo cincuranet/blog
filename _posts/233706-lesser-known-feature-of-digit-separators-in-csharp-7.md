@@ -11,7 +11,7 @@ As [I was on the .NET.CZ podcast][1] I realized there's maybe a one specific beh
 
 #### Digit separators in C# 7
 
-_Digit separators_ was [introduced in C# 7][2] and allows you to separate digits with `_` (underscore) character. Together with _binary literals_ (not only) this allows you to logically space some groups (4 bits, 8 bits, ...). Here's a small example with hexadecimal constant: `var foo = 0xFF_00_DD;`.
+_Digit separators_ were [introduced in C# 7][2] and allows you to separate digits with `_` (underscore) character. Together with _binary literals_ (not only) this allows you to logically space some groups (4 bits, 8 bits, ...). Here's a small example with hexadecimal constant: `var foo = 0xFF_00_DD;`.
 
 This feature was [improved in C # 7.2][3] allowing you to have leading underscores. Building on previous example, this is allowed in C# 7.2: `var foo = 0x_FF_00_DD;`.
 
