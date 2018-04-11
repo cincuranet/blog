@@ -5,7 +5,7 @@ heading2_accent: "{x2}"
 address: "www.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
 excerpt_link_name: "Continue reading..."
-site_posts: 20
-feed_posts: 20
+site_posts: 60
+feed_posts: 60
 feed: feed.xml
 sitemap: sitemap.xml
