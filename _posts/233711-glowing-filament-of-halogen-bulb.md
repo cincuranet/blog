@@ -13,4 +13,4 @@ And what a stunning view it was. It's like it being disassembled in front of you
 
 [![Filament]({% include post_ilink, post: page, name: "filament_thumb.jpg" %})]({% include post_ilink, post: page, name: "filament.jpg" %})  
 
-I know I can take a picture of the filament using my DSLR and use filters and huge F stop and short time, but this was using just my eyes (although for you it's only a picture).
+I know I can take a picture of the filament using my DSLR and use filters and huge F-stop and short time, but this was using just my eyes (although for you it's only a picture).
