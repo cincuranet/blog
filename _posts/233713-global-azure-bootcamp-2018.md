@@ -7,13 +7,11 @@ tags:
   - Azure
   - CDN
 ---
-Global Azure Bootcamp 2018. Jeden den, Azure po cem světě. A taky [v Čechách, v Praze][1].
+Global Azure Bootcamp 2018. Jeden den, Azure po celém světě. A taky [v Čechách, v Praze][1]. I já přispěju svojí troškou do mlýna a povím vám něco o Azure CDN v přednášce "Azure CDN a jak ji začít rozumně používat".
 
 <!-- excerpt -->
 
 ![Leták]({% include post_ilink, post: page, name: "letak.png" %}) 
-
-I já přispěju svojí troškou do mlýna a povím vám něco o Azure CDN v přednášce "Azure CDN a jak ji začít rozumně používat".
 
 > CDNka na Azure je možná trochu opomíjená funkce a přitom může některé problémy krásně vyřešit. Podíváme se společně jak na klasické využití pro statický obsah, tak i nově pro akceleraci dynamického obsahu.
 
