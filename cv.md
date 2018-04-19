@@ -2,6 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Global Azure Bootcamp - Prague
+    date: April 21, 2017
+    language: Czech
+    sessions:
+      - Azure CDN
   - title: WUG Days 2018
     date: April 7-8, 2018
     language: Czech
@@ -1181,6 +1186,10 @@ articles:
     link: http://www.dbsvet.cz/view.php?cisloclanku=2005083101
     title: Jak k Firebirdu z .NET?
 courses:
+  - date: 04/2018
+    company: Kros, a.s.
+    country: Slovakia
+    topic: Parallel/asynchronous programming, proper IDisposable implementation
   - date: 09/2017
     company: Continental Barum, s.r.o.
     country: Czech Republic
