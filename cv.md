@@ -73,7 +73,7 @@ conferences:
     language: Czech
     sessions:
       - IDisposable - implementation and myths
-  - title: Azure Global Bootcamp - Brno
+  - title: Global Azure Bootcamp - Brno
     date: April 22, 2017
     language: Czech
     sessions:
@@ -150,7 +150,7 @@ conferences:
       - Azure Blob Storage
       - Entity Framework Core 1.0
       - Use VS debugger like a Pro
-  - title: Azure Global Bootcamp - Brno
+  - title: Global Azure Bootcamp - Brno
     date: April 16, 2016
     language: Czech
     sessions:
@@ -205,7 +205,7 @@ conferences:
       - C# 6 and Roslyn
       - Introduction to Git
       - Entity Framework 7
-  - title: Azure Global Bootcamp - Brno
+  - title: Global Azure Bootcamp - Brno
     date: April 25, 2015
     language: Czech
     sessions:
