@@ -1187,6 +1187,10 @@ articles:
     title: Jak k Firebirdu z .NET?
 courses:
   - date: 04/2018
+    company: Pregis, a.s.
+    country: Czech Republic
+    topic: Parallel/asynchronous programming
+  - date: 04/2018
     company: Kros, a.s.
     country: Slovakia
     topic: Parallel/asynchronous programming, proper IDisposable implementation
