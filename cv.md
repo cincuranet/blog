@@ -2,6 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: May 2, 2018
+    language: Czech
+    sessions:
+      - C# 7, 7.1, 7.2 a 7.3/8.0
   - title: Global Azure Bootcamp - Prague
     date: April 21, 2017
     language: Czech
