@@ -1342,7 +1342,7 @@ courses:
 	* advanced trainings about multithreaded and parallel programming
 	* advanced trainings about cloud and Windows Azure
 * 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database engine](http://www.firebirdsql.org/)
-	* from 2008 team lead for project
+	* from 2008 leading the project
 	* native ADO.NET data provider for Firebird database for .NET Framework
 	* Entity Framework support
 	* open-source project
