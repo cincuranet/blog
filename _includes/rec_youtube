@@ -1,1 +1,1 @@
-> [Video](https://youtu.be/{{ id }})
+> [Video <span class="fa fa-file-video-o" aria-hidden="true"></span>](https://youtu.be/{{ id }})
