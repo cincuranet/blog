@@ -13,7 +13,7 @@ My house has a [load management][3] switch (we call it HDO here), which means th
 
 Because some wall sockets in the house are switched by the load management switch I knew I can plug something into this socket and I have the "data". The problem is, when the socket goes off, the device will go off as well. I needed at least few seconds of battery backup to be able to send the change in state.
 
-First I bought a flood sensor ([Hank Flood Sensor][4]). It is battery powered and has two contacts that report, when connected - usually by water. Now it was just a question of connecting these contacts together when the wall socket is on. Obviously, I can't put 230V onto the sensor contacts. So I bought a [5V relay on a board with optocoupler][1] and used an 5V power supply (regular phone charger) to switch on the relay. The 5V switches the relay directly, no GPIO, etc. And subsequently the relay switches flood sensor's contacts.
+First I bought a flood sensor ([Hank Flood Sensor][4]). It is battery powered and has two contacts that, when connected - usually by water, report the status. Now it was just a question of connecting these contacts together when the wall socket is on. Obviously, I can't put 230V onto the sensor contacts. So I bought a [5V relay on a board with optocoupler][1] and used an 5V power supply (regular phone charger) to switch on the relay. The 5V switches the relay directly, no GPIO, etc. And subsequently the relay switches flood sensor's contacts (I cut out the probe and used the wires directly).
 
 Then I used an electrical box I had lying around and placed it inside. It looks like this (the box has normally lid on).
 
