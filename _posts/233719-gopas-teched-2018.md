@@ -5,7 +5,7 @@ date: 2018-04-30T15:28:00Z
 tags:
   - Presentations &amp; Speaking
 ---
-Přestože web hlásí vyprodáno, dovolím si udělat nezbytnou reklamu na svoje přednášky na [letošním TechEdu][1]. Připravil jsem dvě:
+Web hlásí vyprodáno, takže budu asi lákat především ty, kteří si vstup už urvali. Na [letošní TechEd][1] jsem připravil dvě přednášky:
 
 * IDisposable - implementace a mýty
 * Co je nového v Entity Framework 2.0 a 2.1
