@@ -133,6 +133,9 @@ Id: 1 | Secret: Hello world!
 
 Although I was fine with the way I did it in Entity Framework, I have to say, in Entity Framework Core it's nicer and feels very integrated without any special code.
 
+> [Another approach using value converters in Entity Framework Core 2.1.][4]
+
 [1]: {% include post_link, id: "233147" %}
 [2]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.mutablepropertybaseextensions.setpropertyaccessmode?view=efcore-2.0
 [3]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.propertyaccessmode?view=efcore-2.0
+[4]: {% include post_link, id: "233708" %}
