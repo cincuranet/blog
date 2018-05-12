@@ -50,10 +50,6 @@ var blog = (function() {
 		(d.head || d.body).appendChild(s);
 	}
 
-	function initDisqusCounts() {
-		$('body').append('<script id="dsq-count-scr" src="//blogcincuranet.disqus.com/count.js" async></script>');
-	}
-
 	function isLocalLink(link) {
 		return link.indexOf(window.location.host) != -1;
 	}
@@ -67,7 +63,6 @@ var blog = (function() {
 			initLinks();
 			initImageTitles();
 			initImageBox();
-			initDisqusCounts();
 		},
 		initContentPage: function() {
 		},
