@@ -47,9 +47,9 @@ T=1
 1: T=5, V=2, AL=1, TL=0
 ```
 
-The value of `_variable` is `2` because that's the last value we set before the operation outputs something. Clear. The `_asyncLocal` contains expected value(s). As you start asynchronous operation the current state is captured and then it's passes along as the operation is executing. And then again for next operation. Even if you'd set the value after the `Output("2")` call (which thanks to the delay would really happen before showing the value), the value for that operation is unchanged. Finally the `_threadLocal`, which contains always value `0`, because each operation runs in new thread (although it might be same thread for both - try few runs and you'll be able to hit that case).
+The value of `_variable` is `2` because that's the last value we set before the operation outputs something. Clear. The `_asyncLocal` contains expected value(s). As you start asynchronous operation the current state is captured and then it's passed along as the operation is executing. And then again for next operation. Even if you'd set the value after the `Output("2")` call (which thanks to the delay would really happen before showing the value), the value for that operation is unchanged. Finally the `_threadLocal`, which contains always value `0`, because each operation runs in new thread (although it might be same thread for both - try few runs and you'll be able to hit that case).
 
-`AsyncLocal<T>` has also an event to get notification when the value was changed (or if `ExecutionContext` was changed, in which case the ` ThreadContextChanged` is `true`).
+`AsyncLocal<T>` has also an event to get notification when the value was changed (or if `ExecutionContext` was changed, in which case the `ThreadContextChanged` is `true`).
 
 If you're wondering how it works under the hood, it's no magic. There's already a concept for it surfaced in [`ExecutionContext` class][3]. And that's exactly what's used.
 
