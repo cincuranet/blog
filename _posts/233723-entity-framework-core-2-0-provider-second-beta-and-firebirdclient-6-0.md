@@ -17,7 +17,7 @@ It has been a while since I posted new version/beta of FirebirdClient 6.0 and th
 
 <!-- excerpt -->
 
-But this all changes today, as I'm releasing the second beta. Improvements and bug fixes happened in Entity Framework Core support as well as FirebirdClient itself. And although the work is never done, unless some serious issue is found, this version will be followed by final version soon. 
+But this all changes today, as I'm releasing the second beta. Improvements and bug fixes happened in Entity Framework Core support as well as FirebirdClient itself. And although the work is never done, unless some serious issue is found, this version will be followed by a final version soon. 
 
 To start, download the [`FirebirdSql.EntityFrameworkCore.Firebird`][1] and [`FirebirdSql.Data.FirebirdClient`][2] `beta2` NuGet packages. Small sample can be found in [previous post][4].
 
