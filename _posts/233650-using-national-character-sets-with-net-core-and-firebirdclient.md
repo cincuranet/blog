@@ -11,7 +11,7 @@ If you want to use any national characters set (i.e. `windows-1250`) on .NET Cor
 
 <!-- excerpt -->
 
-First you need to install [`System.Text.Encoding.CodePages` package][1], but that's not enough. You then need to call `Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);` before you plan to use new encodings. In case of _FirebirdClient_ before using i.e. `FbConnection` (or related classes).
+First you need to install [`System.Text.Encoding.CodePages` package][1], but that's not enough. You then need to call `Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);` before you plan to use new encodings. In case of FirebirdClient before using i.e. `FbConnection` (or related classes).
 
 Without this your selection is limited (_UTF-8_, _US-ASCII_, _UTF-16[BE]_ to name a few).
 

@@ -28,7 +28,7 @@ Then install provider. Here you need to be careful and install the "EF6 version"
 install-package FirebirdSql.Data.FirebirdClient-EF6
 ```
 
-Now you need to tell Entity Framework to know about `FirebirdClient`. You need to add record into `DbProviderFactories`. This references `FirebirdSql.Data.FirebirdClient.FirebirdClientFactory`. And then you need to register the provider `entityFramework` section in `providers`. This references `FirebirdSql.Data.FirebirdClient.FbProviderServices`. The standard config file with these changes made follows.
+Now you need to tell Entity Framework to know about FirebirdClient. You need to add record into `DbProviderFactories`. This references `FirebirdSql.Data.FirebirdClient.FirebirdClientFactory`. And then you need to register the provider `entityFramework` section in `providers`. This references `FirebirdSql.Data.FirebirdClient.FbProviderServices`. The standard config file with these changes made follows.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

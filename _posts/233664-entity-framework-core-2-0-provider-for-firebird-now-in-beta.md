@@ -23,7 +23,7 @@ To start, download the [`FirebirdSql.EntityFrameworkCore.Firebird`][1] and [`Fir
 
 Migrations and scaffolding are still not included in this version (and very likely will land in next version).
 
-Also make sure to understand [breaking changes in v6 of `FirebirdClient`][3], which has been released as well.
+Also make sure to understand [breaking changes in v6 of FirebirdClient][3], which has been released as well.
 
 [1]: https://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/6.0.0-beta1
 [2]: https://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/6.0.0-beta1
