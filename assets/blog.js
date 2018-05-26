@@ -78,9 +78,11 @@ var disqus_config = function() {
 };
 
 blog.initGeneral();
-if (/^\/\d+-.+\/$/.test(window.location.pathname)) {
-	blog.initPostPage();
-}
-else {
-	blog.initContentPage();
+if (!(typeof is_404 !== 'undefined' && is_404)) {
+	if (/^\/\d+-.+\/$/.test(window.location.pathname)) {
+		blog.initPostPage();
+	}
+	else {
+		blog.initContentPage();
+	}
 }
