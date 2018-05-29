@@ -68,7 +68,7 @@ The code above is not the only way to archive the same result. It's just one, fa
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.threadpool%28v=vs.110%29.aspx
 [2]: https://msdn.microsoft.com/en-us/library/system.threading.semaphoreslim%28v=vs.110%29.aspx 
-[3]: /about/
+[3]: /about
 [4]: https://msdn.microsoft.com/en-us/library/system.net.servicepointmanager.defaultconnectionlimit%28v=vs.110%29.aspx
 [5]: https://msdn.microsoft.com/en-us/library/system.threading.semaphoreslim.waitasync(v=vs.110).aspx
 [6]: https://msdn.microsoft.com/en-us/library/system.threading.semaphoreslim.wait(v=vs.110).aspx

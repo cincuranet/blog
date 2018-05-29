@@ -40,4 +40,4 @@ I'll leave that to you to decide whether that's fast enough for you or not. I'm 
 [1]: {% include post_link, id: "233625" %}
 [2]: {% include post_link, id: "233637" %}
 [3]: http://www.elektlabs.cz/    
-[4]: /about/
+[4]: /about

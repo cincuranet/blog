@@ -29,7 +29,7 @@ Jiří Činčura is an independent developer focusing on data and business layer
 		<td>Email:</td><td><a href="mailto:jiri@cincura.net">jiri@cincura.net</a></td>
 	</tr>
 	<tr>
-		<td>CV:</td><td><a href="/cv/">https://{{ site.address }}/cv/</a></td>
+		<td>CV:</td><td><a href="/cv">https://{{ site.address }}/cv</a></td>
 	</tr>
 	<tr>
 		<td>ID:</td><td>73563005 (Czech Republic, EU)</td>
@@ -50,9 +50,9 @@ Jiří Činčura is an independent developer focusing on data and business layer
 
 [1]: /
 [2]: https://github.com/cincuranet
-[3]: /cv/#speaker-events
+[3]: /cv#speaker-events
 [4]: /{{ site.feed }}
 [5]: https://twitter.com/cincura_net
 [6]: mailto:jiri@cincura.net
 [7]: http://www.id3renamer.com
-[8]: /cv/
+[8]: /cv

@@ -12,4 +12,4 @@ Místo a čas: učebna B117, 18:00
 Pozn.: Jedná se o cyklus více přednášek, takže pokud bude zájem, uskuteční se i další.
 
 [1]: http://www.fi.muni.cz
-[2]: /about/
+[2]: /about

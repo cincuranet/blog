@@ -129,4 +129,4 @@ Single procedure call is about 3,54× slower compared to PSQL. That's about 0,00
 
 The plugin is now on-request only. [Contact me][1] if you're interested, with some description of your project.
 
-[1]: /about/
+[1]: /about

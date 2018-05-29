@@ -1,1 +1,1 @@
-/id/{{ post.id }}/
+/id/{{ post.id }}

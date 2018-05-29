@@ -13,5 +13,5 @@ After some poking around, research etc. I found that there's indeed a limitation
 
 Wondering how's possible I never thought about this myself before??? :)
 
-[1]: /about/
+[1]: /about
 [2]: http://msdn.microsoft.com/en-us/library/system.data.services.mimetypeattribute.aspx

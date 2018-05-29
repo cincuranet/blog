@@ -79,7 +79,7 @@ var disqus_config = function() {
 
 blog.initGeneral();
 if (!(typeof is_404 !== 'undefined' && is_404)) {
-	if (/^\/\d+-.+\/$/.test(window.location.pathname)) {
+	if (/^\/\d+-.+$/.test(window.location.pathname)) {
 		blog.initPostPage();
 	}
 	else {
