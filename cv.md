@@ -1372,7 +1372,7 @@ courses:
 	* Entity Framework (v4, v5) driver for NuoDB
 	* C#, .NET, ADO.NET, Entity Framework
 * 11/2010 - 04/2012: database architect, business layer developer for Nexum Trilog
-	* Azure , MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET
+	* Azure, MS SQL Server, Entity Framework, ASP.NET MVC, C#, .NET
 * 03/2009 - 10/2010: co-founder at Whitelements, database architect, business layer developer
 	* MS SQL Server, Entity Framework, T-SQL, C#, .NET
 * 2008 - 2012: consultant for SMS-Timing, GOnline, B&MI
