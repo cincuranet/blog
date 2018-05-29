@@ -1393,8 +1393,7 @@ courses:
 
 * _on request only_
 
-<span id="speaker-events"></span>
-#### Speaker on conferences and other events:
+#### Speaker on conferences and other events:<span id="speaker-events"></span>
 
 {%- for conference in page.conferences -%}
 * {{ conference.title }} ({{ conference.date }}, in {{ conference.language }})
