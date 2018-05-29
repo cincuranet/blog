@@ -1393,6 +1393,7 @@ courses:
 
 * _on request only_
 
+<span id="speaker-events"></span>
 #### Speaker on conferences and other events:
 
 {%- for conference in page.conferences -%}
