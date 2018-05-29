@@ -2,6 +2,17 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: NT konferenca 2018
+    date: May 22-24, 2018
+    language: English
+    sessions:
+      - What's new in Entity Framework Core 2.0 and 2.1
+  - title: Gopas TechEd 2018
+    date: May 14-17, 2018
+    language: Czech
+    sessions:
+      - What's new in Entity Framework Core 2.0 and 2.1
+      - IDisposable - implementation and myths
   - title: Talk @ Windows User Group
     date: May 2, 2018
     language: Czech
