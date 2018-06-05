@@ -12,5 +12,5 @@ layout: base
 </div>
 
 <script type="text/javascript">
-	var disqus_url = 'http://{{ site.address }}{% include post_permalink, post: page %}';
+	var disqus_url = '{% include post_uri, post: page %}';
 </script>

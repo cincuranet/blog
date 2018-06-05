@@ -16,7 +16,7 @@
 		<title><![CDATA[{{ post.title }}]]></title>
 		<link href="https://{{ site.address }}{{ post.url }}?utm_source=feed"/>
 		<updated>{{ post.date | date: "yyy-MM-ddTHH:mm:ssZ" }}</updated>
-		<id>http://{{ site.address }}{{ post.url }}</id>
+		<id>{% include post_uri, post: post %}</id>
 		<content type="html"><![CDATA[{{ post.excerpt }}<p><a href="https://{{ site.address }}{{ post.url }}?utm_source=feed">{{ site.excerpt_link_name }}</a></p>]]></content>
 	</entry>
 	{%- endfor -%}

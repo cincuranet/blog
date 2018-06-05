@@ -1,0 +1,1 @@
+http://{{ site.address }}{% include post_permalink, post: post %}
