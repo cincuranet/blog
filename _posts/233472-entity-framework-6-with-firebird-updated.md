@@ -10,6 +10,8 @@ tags:
   - LINQ
   - .NET
 ---
+> This post is outdated. Read the [updated version][5].
+
 With [today's release of .NET provider for Firebird][1] the [Entity Framework][2] (version 6) support got even better. But given we're 3<sup>rd</sup> party provider, there's always some steps involved. I created a sample project that shows both approaches to working with Entity Framework - Code First manually and EDMX using wizard (or course you can mix these two together too).
 
 <!-- excerpt -->
@@ -36,3 +38,4 @@ If you'd like to see the both methods in action, check the [`EF6_Firebird` repos
 [2]: http://msdn.com/ef
 [3]: http://www.firebirdsql.org/en/additional-downloads/
 [4]: https://github.com/cincuranet/EF6_Firebird
+[5]: {% include post_link, id: "233727" %}
