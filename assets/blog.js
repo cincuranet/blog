@@ -5,6 +5,11 @@ var blog = (function() {
 			var href = e[0].href;
 			if (!isLocalLink(href)) {
 				e.attr('target', '_blank');
+				e.attr('rel', function(_, v) {
+					return v !== undefined
+						? v + ' ' + 'noopener'
+						: 'noopener';
+			  });
 			}
 			else if (isLocalImageLink(href)) {
 				e.attr('target', '_blank');
