@@ -1,6 +1,6 @@
 var blog = (function() {
 	function initLinks() {
-		$('a').each(function(i, e) {
+		$('a').each(function(_, e) {
 			e = $(e);
 			var href = e[0].href;
 			if (!isLocalLink(href)) {
@@ -25,7 +25,7 @@ var blog = (function() {
 
 	function initImageBox() {
 		var items = $('article a:has(img)');
-		items.each(function(i, e) {
+		items.each(function(_, e) {
 			e = $(e);
 			e.attr('data-img-gallery', '');
 			e.attr('data-fancybox', 'gallery');
