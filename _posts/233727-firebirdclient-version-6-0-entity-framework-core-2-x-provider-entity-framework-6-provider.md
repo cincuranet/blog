@@ -40,7 +40,7 @@ Only Entity Framework 6 is now supported and new namespaces are used (`EntityFra
 
 #### Documentation
 
-To help you started with usage, I created documents for [ADO.NET][9], [Entity Framework Core][7] and [Entity Framework 6][8]. At the moment I went with the simplest solution, plain Markdown files [in docs folder][10] the repository, and let's see where that ends. Feel free to contribute.    
+To help you started with usage, I created documents for [ADO.NET][9], [Entity Framework Core][7] and [Entity Framework 6][8]. At the moment I went with the simplest solution, plain Markdown files [in docs folder][10] in the repository, and let's see where that ends. Feel free to contribute.    
 
 #### Getting the bits
 
