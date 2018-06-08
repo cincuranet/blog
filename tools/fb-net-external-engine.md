@@ -35,8 +35,8 @@ FbNetExternalEngineManagement.pdb (optional)
 ##### Requirements (C# terminology)
 
 * Method has to be static.
-* Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below) or `void`.
-* Input arguments have to from set of supported types (see below).
+* Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below). Or `void`.
+* Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * `VARCHAR(n)` has to be `UTF-8` (can be defined on parameter).
 
