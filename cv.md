@@ -2,6 +2,16 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: June 12, 2018
+    language: Czech
+    sessions:
+      - Entity Framework Core 2.1
+  - title: "Update Days: Legacy Apps"
+    date: May 28-29, 2018
+    language: Czech
+    sessions:
+      - New C# features and Roslyn for better codebase
   - title: NT konferenca 2018
     date: May 22-24, 2018
     language: English
