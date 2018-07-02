@@ -10,7 +10,7 @@ I'm working on a small side-project where I need some multiple-writers-safe stor
 
 <!-- excerpt -->
 
-But the blob itself is limited in size and number of blocks. Thus I have to, from time to time, create a new one. And I decided to do it regularly. Every month in my case. Only problem is how to reliably create these blob... The container has a handy [`CreateIfNotExistsAsync`][2] method. But [`AppendBlob`][3] has only [`CreateOrReplaceAsync`][4] and for my scenario the "replace" part is really not desired. Although I can use the [`ExistsAsync`][5] method, the race condition alarm triggers immediately.
+But the blob itself is limited in size and number of blocks. Thus I have to, from time to time, create a new one. And I decided to do it regularly. Every month in my case. Only problem is how to reliably create these blobs... The container has a handy [`CreateIfNotExistsAsync`][2] method. But [`AppendBlob`][3] has only [`CreateOrReplaceAsync`][4] and for my scenario the "replace" part is really not desired. Although I can use the [`ExistsAsync`][5] method, the race condition alarm triggers immediately.
 
 Luckily there's a way to do kind of [optimistic locking][8]. I can use the [`CreateOrReplaceAsync` overload with `AccessCondition`][6] and use [`GenerateIfNotExistsCondition`][7]. That way I'll get an exception, which I can handle, when the blob already exists and it will not be replaced.
 
