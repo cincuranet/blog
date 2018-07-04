@@ -1327,7 +1327,7 @@ courses:
 	* Mgr. (MSc. equiv.)
 * 2002 - 2005: Applied Informatics, Faculty of Informatics, Masaryk University
 	* Bc. (BSc. equiv.)
-* 1997 - 2002: high school (gymnasium) Pierra de Coubertina, Tábor
+* 1997 - 2002: Grammar School of Pierre de Coubertin
 
 #### Another education, courses, certificates:
 
