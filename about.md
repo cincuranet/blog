@@ -6,7 +6,7 @@ layout: page
 
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
 
-I write code in exchange for money because that pays the bills. I also contribute to open-source software. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework and DDEX) for Firebird (the database). I'm also helping with .NET provider for NuoDB. From 2017 I'm Microsoft Most Valuable Professional.
+I write code in exchange for money because that pays the bills. I also contribute to open-source software. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework and DDEX) for Firebird (the database). I'm also helping with .NET provider for NuoDB. Since 2017 I'm Microsoft Most Valuable Professional.
 
 You can find a lot of free code [here on the blog][1] and on my [GitHub][2]. My application [ID3 renamer][7] might help you to keep your MP3 files in order.
 
@@ -15,6 +15,8 @@ When not writing code I'm [speaking][3], teaching and [writing][1] about topics 
 And finally I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. 
 
 I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
+
+![MVP Logo][9]
 
 <h4 id="bio">Bio</h4>
 
@@ -56,3 +58,4 @@ Jiří Činčura is an independent developer focusing on data and business layer
 [6]: mailto:jiri@cincura.net
 [7]: http://www.id3renamer.com
 [8]: /cv
+[9]: /assets/mvp_logo.png
