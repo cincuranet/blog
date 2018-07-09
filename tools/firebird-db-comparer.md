@@ -23,7 +23,7 @@ Explore the [`TestApp`][2] to see it in action.
 
 #### Getting it
 
-[Available on NuGet.][1] 
+[Available on NuGet.][1]
 
 #### Details
 
@@ -32,6 +32,10 @@ The alter script is aimed to use only what Firebird permits (no direct changes i
 Because it's a library you can take the output, which is structured (not a single string), and do whatever you need to - save to file, execute one by one, etc.
 
 The library is heavily tested with hundreds of tests and used in production since 2015, giving us confidence it works in wide range of scenarios.
+
+#### Code
+
+[Available on GitHub.][6]
 
 #### Keep it working
 
@@ -50,3 +54,4 @@ It took a lot of man-days to have the library in the current state. Although the
 [3]: http://www.sms-timing.com/
 [4]: https://github.com/cincuranet/FirebirdDbComparer/blob/master/src/FirebirdDbComparer/Compare/ComparerSettings.cs
 [5]: https://github.com/cincuranet/FirebirdDbComparer/blob/master/src/FirebirdDbComparer/Compare/CompareResult.cs
+[6]: https://github.com/cincuranet/FirebirdDbComparer
