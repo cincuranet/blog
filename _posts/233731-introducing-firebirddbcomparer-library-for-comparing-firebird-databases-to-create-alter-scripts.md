@@ -18,7 +18,5 @@ In SMS-Timing the library was used since 2015/2016 extensively, in 2017 we had t
 
 Hence if you need to compare to Firebird databases and generate alter scripts - both in text only as well as structured output you can process in your application further - this library is for you. Head to the [_FirebirdDbComparer_ page][2], read more technical text, get it and contribute if you find it useful.
 
-I'm excited to find out where this library will get...
-
 [1]: https://www.strava.com/activities/1009527699
 [2]: /tools/firebird-db-comparer
