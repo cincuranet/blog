@@ -46,7 +46,7 @@ It took a lot of man-days to have the library in the current state. Although the
 </form>
 
 [1]: https://www.nuget.org/packages/FirebirdDbComparer
-[2]: https://github.com/cincuranet/FirebirdDbComparerer/blob/master/src/FirebirdDbComparer.TestApp/Program.cs
+[2]: https://github.com/cincuranet/FirebirdDbComparer/blob/master/src/FirebirdDbComparer.TestApp/Program.cs
 [3]: http://www.sms-timing.com/
 [4]: https://github.com/cincuranet/FirebirdDbComparer/blob/master/src/FirebirdDbComparer/Compare/ComparerSettings.cs
 [5]: https://github.com/cincuranet/FirebirdDbComparer/blob/master/src/FirebirdDbComparer/Compare/CompareResult.cs
