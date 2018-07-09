@@ -13,7 +13,7 @@ _FirebirdDbComparer_ is pure managed .NET library that allows comparing of two F
 
 Firebird 2.5 (any edition) is supported. Firebird 3.0 (any edition) is supported, but from new features only _functions_ work at the moment.
 
-The library targets .NET 4.5.2 and NET Standard 2.0.
+The library targets .NET 4.5.2 and .NET Standard 2.0.
 
 #### Usage
 
