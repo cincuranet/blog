@@ -11,12 +11,6 @@ var blog = (function() {
 						: 'noopener';
 			  });
 			}
-			else if (isLocalImageLink(href)) {
-				e.attr('target', '_blank');
-				e.click(function() {
-					ga('send', 'event', 'I-Link', 'click', href); 	
-				});
-			}
 		});
 		
 		$('a[rel~="bookmark"]').click(function(e) {
@@ -57,10 +51,6 @@ var blog = (function() {
 
 	function isLocalLink(link) {
 		return link.indexOf(window.location.host) != -1;
-	}
-
-	function isLocalImageLink(link) {
-		return isLocalLink(link) && link.indexOf('/i/') != -1;
 	}
 
 	return {
