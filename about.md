@@ -16,7 +16,7 @@ And finally I also run and do yoga. I like running long, so called ultra, distan
 
 I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
 
-![MVP Logo][9]
+[![MVP Logo][9]][10]
 
 <h4 id="bio">Bio</h4>
 
@@ -59,3 +59,4 @@ Jiří Činčura is an independent developer focusing on data and business layer
 [7]: http://www.id3renamer.com
 [8]: /cv
 [9]: /assets/mvp_logo.png
+[10]: https://mvp.microsoft.com/en-us/PublicProfile/5002423
