@@ -12,9 +12,9 @@ var blog = (function() {
 			  });
 			}
 		});
-		
+
 		$('a[rel~="bookmark"]').click(function(e) {
-			e.preventDefault();			
+			e.preventDefault();
 		});
 	}
 
@@ -26,9 +26,12 @@ var blog = (function() {
 		var items = $('article a:has(img)');
 		items.each(function(_, e) {
 			e = $(e);
-			e.attr('data-img-gallery', '');
-			e.attr('data-fancybox', 'gallery');
-			e.attr('title', e.find('img').attr('title'));
+			var link = e.attr('href');
+			if (getLinkFileExtensions(link).match(/(jpg|jpeg|gif|png|svg)/)) {
+				e.attr('data-img-gallery', '');
+				e.attr('data-fancybox', 'gallery');
+				e.attr('title', e.find('img').attr('title'));
+			}
 		});
 	}
 
@@ -51,6 +54,14 @@ var blog = (function() {
 
 	function isLocalLink(link) {
 		return link.indexOf(window.location.host) != -1;
+	}
+
+	function getLinkFileExtensions(link) {
+		var part = link.split(/(\?|#)/)[0];
+		var split = part.split('.');
+		return split.length != 1
+			? split[split.length - 1]
+			: '';
 	}
 
 	return {
