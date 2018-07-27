@@ -3,6 +3,11 @@ title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
   - title: Talk @ Windows User Group
+    date: July 19, 2018
+    language: Czech
+    sessions:
+      - Entity Framework Core 2.1
+  - title: Talk @ Windows User Group
     date: June 12, 2018
     language: Czech
     sessions:
