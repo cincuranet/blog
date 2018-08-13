@@ -7,6 +7,7 @@ tags:
   - .NET Core
   - JIT
   - RyuJIT
+  - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
 I'm always drawn into disassembling stuff and learning how something works under the hood. The `Thread.SpinWait` is something I'm going to explore. Because .NET Core is open source I can attack this from side of both sources as well as pure disassembly.
 
