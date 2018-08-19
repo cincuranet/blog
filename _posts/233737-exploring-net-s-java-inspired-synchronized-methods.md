@@ -28,7 +28,7 @@ The `synchronized` keyword is what's interesting. In simple language it means, t
 
 #### C#
 
-Although there's no `synchronized` keyword in C#, it exists in IL. The chapter "II.15.4.3.3 Implementation information" of ECMA 335 specification lists attributes that the method can have and the meaning. The `synchronized` is declared as follows. 
+Although there's no `synchronized` keyword in C#, it exists in IL. The chapter "II.15.4.3.3 Implementation information" of [ECMA 335 specification][2] lists attributes that the method can have and the meaning. The `synchronized` is declared as follows. 
 
 > synchronized specifies that the whole body of the method shall be single-threaded. If this method is an instance or virtual method, a lock on the object shall be obtained before the method is entered. If this method is a static method, a lock on the closed type shall be obtained before the method is entered. If a lock cannot be obtained, the requesting thread shall not proceed until it is granted the lock. This can cause deadlocks. The lock is released when the method exits, either through a normal return or an exception.  Exiting a synchronized method using a tail. call shall be implemented as though the tail. had not been specified.
 
