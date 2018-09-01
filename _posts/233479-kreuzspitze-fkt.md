@@ -9,7 +9,7 @@ Two years ago I first hiked the [Kreuzspitze][3]. The Kreuzspitze in [Ötztal Al
 
 <!-- excerpt -->
 
-The idea was in my head until last week. I packed basically my shoes and head Vent with option to try set FKT on Kreuzspitze. In this case it will be also First Known Time (pun intended) as my researched felt short on discovering some time for ascent and descent.
+The idea was in my head until last week. I packed basically my shoes and head Vent with option to try set FKT on Kreuzspitze. In this case it will be also First Known Time (pun intended) as my research felt short on discovering some time for ascent and descent.
 
 September 29<sup>th</sup> (2014) looked pretty good and after a breakfast I started running. To make it somewhat comparable for the future I decided to not cut any switchbacks and follow completely the marking (if you know exactly where you're heading I believe you can run slightly shorter though steeper, direct, path). I started in front of log cabin, on a fork of Marzellweg and Spiegelbachweg.
 
