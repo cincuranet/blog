@@ -1,0 +1,30 @@
+---
+title: |-
+  ADO.NET provider 6.3.0.0 for Firebird is ready
+date: 2018-09-04T08:04:00Z
+tags:
+  - .NET
+  - C#
+  - Databases in general
+  - Entity Framework
+  - Entity SQL
+  - Firebird
+  - LINQ
+  - SQL
+  - Visual Studio
+---
+New version 6.3.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This version had a single focus and that was seemingly random exceptions, usually around blobs. It took me almost 4 days of trying and debugging, time supported by company behind [Bauradar][6] for which I'm thankful, to hunt down the [issue][7].
+
+<!-- excerpt -->
+
+Overview of all the changes can be found in [tracker][5].
+
+You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2], [EntityFramework.Firebird][3] and [FirebirdSql.EntityFrameworkCore.Firebird][4] (or from [firebirdsql.org][1]).
+
+[1]: http://www.firebirdsql.org/en/net-provider/
+[2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
+[3]: http://www.nuget.org/packages/EntityFramework.Firebird/
+[4]: http://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/
+[5]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10882
+[6]: http://www.bauradar.at/
+[7]: http://tracker.firebirdsql.org/browse/DNET-847
