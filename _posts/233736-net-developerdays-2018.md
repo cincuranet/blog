@@ -17,6 +17,8 @@ I have prepared two sessions. First one is [Entity Framework Core 2+ - What's Ne
 
 > Visual Studio has a overwhelming number of shortcuts and debugging features. Careful usage of these can make your life easier and allow you to work faster. I'll show you the most useful shortcuts and debugging features. After this will no longer move you hand between keyboard and mouse nor you'll consider any code navigation or manipulation extensions.
 
+> [Entity Framework Core session demos]({% include post_ilink, post: page, name: "efcore_demos.7z" %})
+
 [1]: http://net.developerdays.pl/
 [2]: http://net.developerdays.pl/#speakers
 [3]: http://net.developerdays.pl/schedule/entity-framework-core-2-whats-new-and-how-to-use-it/
