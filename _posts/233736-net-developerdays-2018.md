@@ -19,7 +19,10 @@ I have prepared two sessions. First one is [Entity Framework Core 2+ - What's Ne
 
 > [Entity Framework Core session demos.]({% include post_ilink, post: page, name: "efcore_demos.7z" %})
 
+> [Related post.][5]
+
 [1]: http://net.developerdays.pl/
 [2]: http://net.developerdays.pl/#speakers
 [3]: http://net.developerdays.pl/schedule/entity-framework-core-2-whats-new-and-how-to-use-it/
 [4]: http://net.developerdays.pl/schedule/turn-on-turbo-mode-for-your-visual-studio-usage-and-debugging-200/
+[5]: {% include post_link, id: "233741" %}
