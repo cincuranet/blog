@@ -8,7 +8,7 @@ tags:
 ---
 I had [PlayBook][1] in my hands for almost two days. So I think it's time to share some first impressions.
 
-First the size and weight. It's smaller than well known iPad, you can get that from specifications. It's roughly the size of [Kindle 3<sup>rd</sup> generation][2]. The weight is officially 425g, but I care more about how it feels. And being used to Kindle (very light) and having two or three times iPad in my hands (first time I almost dropped it, how heavy it was) it's what I expected. Thanks to the size, you can hold it in one hand and do stuff. And also hold it in almost every position you want (including lying for a decent amount of time) without being quickly tired. It fits my usage perfectly.
+First the size and weight. It's smaller than well known iPad, you can get that from specifications. It's roughly the size of [Kindle 3^rd^ generation][2]. The weight is officially 425g, but I care more about how it feels. And being used to Kindle (very light) and having two or three times iPad in my hands (first time I almost dropped it, how heavy it was) it's what I expected. Thanks to the size, you can hold it in one hand and do stuff. And also hold it in almost every position you want (including lying for a decent amount of time) without being quickly tired. It fits my usage perfectly.
 
 [![image]({% include post_ilink, post: page, name: "playbook_kindle3_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_kindle3.jpg" %})
 

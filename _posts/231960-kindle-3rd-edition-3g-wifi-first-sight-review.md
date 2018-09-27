@@ -5,7 +5,7 @@ date: 2010-09-01T08:01:02Z
 tags:
   - Amazon Kindle
 ---
-Last (almost) day I was playing with new [Kindle][1] 3<sup>rd</sup> generation and I'll share my initial thoughts. I'll came with more detailed observations later (i.e. battery life).
+Last (almost) day I was playing with new [Kindle][1] 3^rd^ generation and I'll share my initial thoughts. I'll came with more detailed observations later (i.e. battery life).
 
 Let's start with pictures. Kindle 3rd generation compared to Kindle 2nd generation.
 
@@ -21,7 +21,7 @@ If you look at image above, you can see the difference between displays. The new
 
 The new Kindle has also new browser based on [WebKit][3]. With [non-restricted browsing even outside USA][4] it's a useful improvement. I checked only couple of pages (including homepage of my blog) and everything renders quickly, looking same as using desktop browsers (including JavaScript rendered pieces). With this browser I'll read more articles on Kindle than previously, I feel it.
 
-The WiFi, new feature in 3<sup>rd</sup> generation, simply works. In "Settings" you see networks available, select one a optionally provide credentials. You can connect to networks 802.11b or 802.11g standard with support for WEP, WPA and WPA2 security using password authentication.
+The WiFi, new feature in 3^rd^ generation, simply works. In "Settings" you see networks available, select one a optionally provide credentials. You can connect to networks 802.11b or 802.11g standard with support for WEP, WPA and WPA2 security using password authentication.
 
 As a second to last paragraph, I'll mention the migration. Shortly it wasn't bad, though I was expecting it easier. I was expecting turning it on and after a while having the new Kindle in with same content as in old one, with books at same pages. Nope. First you have to manually redownload all books from "Archived Items" and then resynchronize collections. Then when you open the book you will get the standard message about "Sync to Furthest Page Read". As a result your new Kindle will be sooner or later as old one. Sure own content you have uploaded via USB you have to upload manually again and similarly you have to push samples to new one again as well.
 

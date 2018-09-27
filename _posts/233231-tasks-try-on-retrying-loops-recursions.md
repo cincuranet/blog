@@ -11,7 +11,7 @@ My mind today was in weird shape (again). I blame Friday. What that means is, th
 
 <!-- excerpt -->
 
-The set up was simple. I had a [`Task`][1] that was returning `bool`; `true` if succeeded, `false` otherwise. Because the code was interacting with 3<sup>rd</sup> party system it was desired to retry if the call didn't succeeded.
+The set up was simple. I had a [`Task`][1] that was returning `bool`; `true` if succeeded, `false` otherwise. Because the code was interacting with 3^rd^ party system it was desired to retry if the call didn't succeeded.
 
 Looking at it in front of me I realized I'll be probably able to (ab)use the [`ContinueWith`][2] method and recursion. When I wrote it I realized there's a room for refactoring. And then I realized I might create and extension method from it. Already half way in hell. :)
 

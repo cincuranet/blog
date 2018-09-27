@@ -36,7 +36,7 @@ using (FbConnection conn = new FbConnection("database=localhost:rrr.fdb;user=sys
 
 Despite the frustration I found couple of new interesting extension methods (in Microsoft.Data.Objects, also ContextBuilder sits there). One of these is CreateDatabaseScript. This method works not only with Code Only created ObjectContext, but on every ObjectContext. So you can create your database creation script during runtime even if you're using i.e. EDMX file easily. I'm also seeing great opportunity for this with Code Only setup during runtime. You can have different builds with different setups and create script for users based on selection. And by the way, there's also CreateDatabase method available. But again right now works only with MS SQL only. But I know other databases will be supported as well, I have tested some pieces already.
 
-I like the Code Only feature, maybe more than Model First (probably because I'm using ERD tools to model my databases). And I'm looking forward to see more progress on it, and also the model for 3<sup>rd</sup> party providers.
+I like the Code Only feature, maybe more than Model First (probably because I'm using ERD tools to model my databases). And I'm looking forward to see more progress on it, and also the model for 3^rd^ party providers.
 
 [1]: http://blogs.msdn.com/adonet/archive/2009/06/22/announcing-entity-framework-feature-ctp-1.aspx
 [2]: http://blogs.msdn.com/efdesign/archive/2009/06/10/code-only.aspx

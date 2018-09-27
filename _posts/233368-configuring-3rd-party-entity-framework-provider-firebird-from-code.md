@@ -7,7 +7,7 @@ tags:
   - Firebird
   - NuoDB
 ---
-When you're using Entity Framework 6 with some 3<sup>rd</sup> party provider - i.e. [EntityFramework.Firebird][1] or [EntityFramework.NuoDb][2] (disclaimer: I'm author of both) - you need to give Entity Framework few hints where to find some methods and classes. Maybe you've seen classes like `DbProviderFactory` or `DbProviderServices`. Often when you install the provider, your `app.config` is updated accordingly. But you might want to do it in code. Either because you want to to have it strongly typed or because you don't want to think about what project, that's using the DAL project, is going to be executed and so on.
+When you're using Entity Framework 6 with some 3^rd^ party provider - i.e. [EntityFramework.Firebird][1] or [EntityFramework.NuoDb][2] (disclaimer: I'm author of both) - you need to give Entity Framework few hints where to find some methods and classes. Maybe you've seen classes like `DbProviderFactory` or `DbProviderServices`. Often when you install the provider, your `app.config` is updated accordingly. But you might want to do it in code. Either because you want to to have it strongly typed or because you don't want to think about what project, that's using the DAL project, is going to be executed and so on.
 
 <!-- excerpt -->
 

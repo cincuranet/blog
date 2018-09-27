@@ -31,7 +31,7 @@ class SelfRef
 }
 ```
 
-Now the mapping. The "trick" here is to realize, that we have not only child->parent association, but also parent->children. The other one is implied from the first one. Hence every child item has optional parent. If the child item has no parent, it is actually a 1<sup>st</sup> level child, aka child of (invisible) "root" (`NULL` parent). That also means you can map it from both directions and result will be the same. Here's the example <small>(it's explicit a little more)</small> with both mappings (you can use both declarations together without any problem):
+Now the mapping. The "trick" here is to realize, that we have not only child->parent association, but also parent->children. The other one is implied from the first one. Hence every child item has optional parent. If the child item has no parent, it is actually a 1^st^ level child, aka child of (invisible) "root" (`NULL` parent). That also means you can map it from both directions and result will be the same. Here's the example <small>(it's explicit a little more)</small> with both mappings (you can use both declarations together without any problem):
 
 ```csharp
 class SelfRefConfiguration : EntityTypeConfiguration<SelfRef>

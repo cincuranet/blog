@@ -50,7 +50,7 @@ public static void RemoveUsingStub3<TEntity>(this DbContext dbContext, params ob
 }
 ```  	
 
-The code firsts gets the key names for given entity and then sets the values on that properties to a values received in 2<sup>nd</sup> parameter. Finally it uses the same approach as the first method to [`Attach`][7] and `Remove` the stub. Of course using the approach from second method is possible as well.
+The code firsts gets the key names for given entity and then sets the values on that properties to a values received in 2^nd^ parameter. Finally it uses the same approach as the first method to [`Attach`][7] and `Remove` the stub. Of course using the approach from second method is possible as well.
 
 At the end I have a mixed feelings. I'm glad it was fairly easy to dig out what was needed. But on the other hand I'd like the method to be on `DbSet` or rather [`IDbSet`][8], but then the method, as I wrote above, needs to use reflection to get some internal fields and that's not nice, I think. I would use it only as  a last chance. Anyway I was a nice brain training. If you think you'd use it, be my guest.
 
