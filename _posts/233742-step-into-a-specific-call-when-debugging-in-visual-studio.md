@@ -30,7 +30,7 @@ static int Baz() => 2;
 
 And the debugger is on the `Foo(Bar(), Baz())` statement. Now if you want to step into `Foo` function, you probably press `F11` (please don't say you'd use the button on the toolbar...). But that will jump into the `Bar` function. If you're bit shortcut-geeky, you'd press `Shift-F11` to jump out of it and then continue doing the same with `Baz`. Not bad. But there's a better way.
 
-Let's enter `Alt-Shift-F11` world. Pressing this key combination is going to give you menu (at the location where your mouse is) with functions (or properties, etc.) that you can step into (in the order of calling) and you can directly select (using arrow keys of, obviously ;)) the function you're interested in, skipping the rest.
+Let's enter `Alt-Shift-F11` world. Pressing this key combination is going to give you menu (at the location where your mouse is) with functions (or properties, etc.) that you can step into (in the order of calling) and you can directly select (using arrow keys, obviously ;)) the function you're interested in, skipping the rest.
 
 ![Alt-Shift-F11 menu]({% include post_ilink, post: page, name: "debugging_menu.png" %}) 
 
