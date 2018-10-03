@@ -21,7 +21,7 @@ Ctrl-Alt-Up:
 
 So here are the shorcuts, without description, thus you have to try them, hopefully learning some during. ;) 
 
-```plain
+```text
 Win-<number>
 Win-Alt-<number>
 Win-Shift-<number>
