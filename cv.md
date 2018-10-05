@@ -2,6 +2,22 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group Slovakia
+    date: October 9, 2018
+    language: Czech
+    sessions:
+      - Asynchronous and parallel programming
+  - title: DotNET Talks, vol.1
+    date: October 4, 2018
+    language: Czech
+    sessions:
+      - Testing with Entity Framework Core
+  - title: .NET Developer Days
+    date: September 18-19, 2018
+    language: English
+    sessions:
+      - Entity Framework Core 2+ – What's New And How To Use It
+      - Turn On Turbo Mode for Your Visual Studio Usage and Debugging
   - title: Talk @ Windows User Group
     date: August 21, 2018
     language: Czech
@@ -1227,6 +1243,10 @@ articles:
     link: http://www.dbsvet.cz/view.php?cisloclanku=2005083101
     title: Jak k Firebirdu z .NET?
 courses:
+  - date: 10/2018
+    company: Ants, s.r.o.
+    country: Czech Republic
+    topic: REST API, testing, IoC/DI
   - date: 04/2018
     company: Pregis, a.s.
     country: Czech Republic
