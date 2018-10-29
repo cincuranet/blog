@@ -14,7 +14,7 @@ While I was reviewing some code week or two back, I got idea to test what's the 
 
 #### Setup
 
-Obviously, the problem is that the outcome is very likely dependent on the string being processed and unless I want to test all possible combinations I have to choose some subset. My first, self-imposed, constraint was to consider only strings containing `A` to `Z`, `a` to `z` and `0` to `9`, basically only letters and numbers from ASCII. Once you start mixing in national characters it's really a different game and this comparison starts to fall apart. From these characters I made strings of length between 1 to 10 and then 100 and 255. I made bunch of permutations from these and used the trusty [BenchmarkDotNet][2] to execute it multiple times to get even more data averaging all the results at the end (one run took almost 3 hours). Thus for i.e. strings of length 1 I ended up testing these: `6`, `8`, `E`, `f`, `H`, `I`, `P`, `Q`, `r`, `U`.
+Obviously, the problem is that the outcome is very likely dependent on the string being processed and unless I want to test all possible combinations I have to choose some subset. My first, self-imposed, constraint was to consider only strings containing `A` to `Z`, `a` to `z` and `0` to `9`, basically only letters and numbers from ASCII. Once you start mixing in national characters it's really a different game and this comparison starts to fall apart. From these characters I made strings of length between 1 to 10 and then 100 and 255. I made bunch of permutations from these and used the trusty [BenchmarkDotNet][1] to execute it multiple times to get even more data averaging all the results at the end (one run took almost 3 hours). Thus for i.e. strings of length 1 I ended up testing these: `6`, `8`, `E`, `f`, `H`, `I`, `P`, `Q`, `r`, `U`.
 
 The CPU was Intel Xeon E5-2673 v3 2.40GHz. The .NET Framework used was `.NET Framework 4.7.2 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3163.0` and .NET Core was `.NET Core 2.1.4 (CoreCLR 4.6.26814.03, CoreFX 4.6.26814.02), 64bit RyuJIT`. All times are in `ns`.
 
@@ -62,9 +62,8 @@ The memory allocations seem to be same for both .NET Framework and .NET Core for
 
 #### Summary
 
-I remember reading quite some years ago, I think it was in [Jeffrey Richter's book CLR via C#][1], that `ToUpper` is faster than its lowercase counterpart and should be used whenever possible. And based on the numbers here he was/is right. The invariant versions are not that different, but I don't see a reason to not stick with uppercase versions. For the sake of consistency.
+Given the speed of the method also depends on the string itself I don't think we can come to a one-size-fits-all conclusion. But as long as you have a choice, in general, avoiding `ToLower` seems to be a safe bet. Especially given that string comparisons in upper case are preferred (but one should not forget about case insensitive string handling in the first place).
 
 Now I have the temptation to explore where does the speed difference come from (but I have a feeling I would burn a lot of time exploring that). Or, if you know, teach me in the comments.
 
-[1]: https://www.amazon.com/CLR-via-C-Developer-Reference-ebook-dp-B00JDMQJKQ/dp/B00JDMQJKQ/ref=mt_kindle?_encoding=UTF8&me=&qid=
-[2]: https://benchmarkdotnet.org/
+[1]: https://benchmarkdotnet.org/
