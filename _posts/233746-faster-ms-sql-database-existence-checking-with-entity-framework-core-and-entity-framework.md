@@ -42,7 +42,7 @@ using (var db = new MyContext())
 
 Without the `ConnectRetryCount=0` we can roughly 10 seconds delay first during `EnsureDeleted`, because the database does not exist and then in second batch during `EnsureCreated`, for the same reason. 
 
-```plain
+```text
 Deleting
 00:00:11.3410613
 Creating
