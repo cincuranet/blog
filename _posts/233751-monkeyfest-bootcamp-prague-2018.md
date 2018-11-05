@@ -3,6 +3,7 @@ title: |-
   MonkeyFest Bootcamp Prague 2018
 date: 2018-11-04T17:53:00Z
 tags:
+  - Presentations &amp; Speaking
   - Xamarin
   - C#
 ---
