@@ -6,7 +6,7 @@ tags:
   - Presentations &amp; Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
-I almost forgot to tell you about this. This week, Thursday, I'm speaking at [ICTech Day][1] in Belgium. And about the topics I'm very passionate about. First session is ["Tasks and Await from the ground up"][2] and other is ["Async and Await"][3]. If you're in the area, maybe you can still try to make time and come. 
+I almost forgot to tell you about this. This week, Thursday, I'm speaking at [ICTech Day][1] in Belgium. And about the topics I'm very passionate about. First session is ["Tasks and Await from the ground up"][2] and other is ["Async and Await"][3]. If you're in the area, maybe you can still try to make time and come (you have to be a guest of somebody from PeopleWare or Elmos). 
 
 <!-- excerpt -->
 
