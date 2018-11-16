@@ -179,6 +179,15 @@ article p.meta, article span.meta {
 	color: #666;
 }
 
+article p.bio {
+	font-size: .9rem;
+	font-style: italic;
+	color: #666;
+}
+article p.bio img {
+	float: left;
+}
+
 article a {
 	text-decoration: underline;
 }

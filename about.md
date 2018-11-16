@@ -20,9 +20,9 @@ I would love it if you would subscribe to [my blog's feed][4]. I'm also on socia
 
 <h4 id="bio">Bio</h4>
 
-Jiří Činčura je nezávislý vývojář a konzultant se zaměřením na datové a business vrstvy, jazykové konstrukce, paralelizmus a databáze. Od roku 2009 působí jako odborný lektor Počítačové školy Gopas se specializací na Entity Framework, asynchronní a paralelní programování, cloud a Azure. Je nositelem titulu Microsoft Most Valuable Professional. Jeho články, rady, tipy a triky si můžete přečíst na {{ site.address }}.
+{% include bio_en %}
 
-Jiří Činčura is an independent developer focusing on data and business layers, language constructs, parallelism and databases. Specifically Entity Framework, asynchronous and parallel programming, cloud and Azure. He's Microsoft Most Valuable Professional and you can read his articles, guides, tips and tricks at {{ site.address }}.
+{% include bio_cz %}
 
 #### More info
 
