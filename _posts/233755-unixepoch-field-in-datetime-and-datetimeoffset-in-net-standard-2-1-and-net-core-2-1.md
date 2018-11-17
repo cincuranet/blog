@@ -12,7 +12,7 @@ When I need to put some default value somewhere, I often use Unix epoch. It's mo
 
 Let's first do a small recap what a Unix epoch is. The Unix epoch is date and time from which Unix (and other related systems) count time and date (usually by number of seconds elapsed). It's `1970-01-01T00:00:00Z`.
 
-I like the value because it's reasonable date, yet for a lot of line-of-business systems it's clear that this is not a real value. Hence, I often used it, but because there was no field for it, I had to create it always myself. I.e. by using `new DateTime(1970, 0, 0, 0, 0, 0, DateTimeKind.Utc)`. But starting with .NET Core 2.1 and more importantly for me as a library writer with .NET Standard 2.1 it's available as a predefined field for both [`DateTime`][2] as well as [`DateTimeOffset`][3].
+I like the value because it's reasonable date, yet for a lot of line-of-business systems it's clear that this is not a real value. Hence, I often used it, but because there was no field for it, I had to create it always myself. I.e. by using `new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)`. But starting with .NET Core 2.1 and more importantly for me as a library writer with .NET Standard 2.1 it's available as a predefined field for both [`DateTime`][2] as well as [`DateTimeOffset`][3].
 
 Now to just wait for .NET Standard 2.1 to become "the norm". 
 
