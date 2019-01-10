@@ -9,6 +9,12 @@ layout: page
 
 _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored procedures, functions (not yet) and triggers (not yet) in any .NET language. There's no limitation on what you can or cannot do in the code. Full power of .NET and .NET eco-system is available for you.
 
+#### Price and download
+
+_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates in major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not contain _Management procedures_ (see below).
+
+You can place the order [here][1]. If you'd like to support the work on _FbNetExternalEngine_ even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
+
 #### Instalation
 
 1. Add these lines into `plugins.conf`.
@@ -38,20 +44,19 @@ FbNetExternalEngineManagement.pdb (optional)
 * Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below). Or `void`.
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
-* `VARCHAR(n)` has to be `UTF-8` (can be defined on parameter).
+* `VARCHAR(n)`/`CHAR(n)`/`BLOB SUB_TYPE TEXT` has to be `UTF-8` (charset can be defined on PSQL parameter).
 
 ##### Supported types (C# terminology)
 
 `int?`, `string`, `short?`, `long?`, `DateTime?`, `TimeSpan?`, `bool?`, `float?`, `double?`, `decimal?`, `byte[]`
 
-The mapping from/to database types should be self explanatory. 
+The mapping from/to database types should be self explanatory.
 
 Database `NULL` maps to C# `null`.
 
 ##### Limitations on types (C# terminology)
 
-* `BLOB SUB_TYPE TEXT` is not supported (maps to `byte[]`).
-* `VARCHAR(n) CHARACTER SET OCTETS` is not supported.
+* `VARCHAR(n) CHARACTER SET OCTETS`/`CHAR(n) CHARACTER SET OCTETS` is not supported.
 
 ##### Exceptions
 
@@ -125,8 +130,23 @@ The assembly is not locked on disc, thus you can replace it directly manually as
 
 Single procedure call is about 3,54× slower compared to PSQL. That's about 0,008 ms per call on my machine. The fetch from stored procedure is about 1,34× slower compared to PSQL.
 
-#### Download
+#### Next steps
 
-The plugin is now on-request only. [Contact me][1] if you're interested, with some description of your project.
+These ideas, in no particular order, is what I (or people/companies supporting the plugin) have in mind for the future.
 
-[1]: /about
+* Add support for functions.
+	* Why: Because functions are useful.
+* Create support for executing SQL commands inside C# code in the same context (same transaction) as the currently running code.
+	* Why: Because it's possible and in some situations it's needed.
+* Explore posibilities of using .NET Core.
+	* Why: Because that would allow using _FbNetExternalEngine_ on Linux servers as well.
+* Add support for `CHARACTER SET OCTETS`.
+	* Why: Because it might be useful for certain scenarios.
+
+#### Notable sponsors
+
+* SMS-Timing ([www.sms-timing.com](http://www.sms-timing.com/))
+* Elekt Labs ([www.elektlabs.cz](http://www.elektlabs.cz/))
+
+[1]: https://portal.fbnetexternalengine.com/Order
+[2]: https://portal.fbnetexternalengine.com/DownloadFree
