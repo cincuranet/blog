@@ -142,6 +142,8 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 	* Why: Because that would allow using _FbNetExternalEngine_ on Linux servers as well.
 * Add support for `CHARACTER SET OCTETS`.
 	* Why: Because it might be useful for certain scenarios.
+* Add support for `async` methods.
+	* Why: Because it will be convenient.
 
 #### Notable sponsors
 
