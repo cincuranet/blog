@@ -2,6 +2,32 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Microsoft Developer Days & Azure DevOps Bootcamp 2018
+    date: November 12, 2018
+    language: Czech
+    sessions:
+      - Azure CosmosDB
+  - title: MonkeyFest Bootcamp Prague 2018
+    date: November 10, 2018
+    language: Czech
+    sessions:
+      - Co čekat od C# 7, 7.1, 7.2, 7.3 a 8.0
+  - title: PeopleWare TechDay
+    date: November 8, 2018
+    language: English
+    sessions:
+      - Tasks and Await from the ground up
+      - Async and await
+  - title: GET.NET conference
+    date: October 27, 2018
+    language: English
+    sessions:
+      - Await and tasks from the ground up
+  - title: Talk @ Windows User Group
+    date: October 25, 2018
+    language: Czech
+    sessions:
+      - C# 7, 7.1, 7.2, 7.3 a 8.0
   - title: Talk @ Windows User Group Slovakia
     date: October 9, 2018
     language: Czech
