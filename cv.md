@@ -17,7 +17,7 @@ conferences:
     language: English
     sessions:
       - Tasks and Await from the ground up
-      - Async and await
+      - Async and Await
   - title: GET.NET conference
     date: October 27, 2018
     language: English
