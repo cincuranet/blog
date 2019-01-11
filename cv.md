@@ -11,7 +11,7 @@ conferences:
     date: November 10, 2018
     language: Czech
     sessions:
-      - Co čekat od C# 7, 7.1, 7.2, 7.3 a 8.0
+      - What to expect from C# 7, 7.1, 7.2, 7.3 and 8.0
   - title: PeopleWare TechDay
     date: November 8, 2018
     language: English
@@ -27,7 +27,7 @@ conferences:
     date: October 25, 2018
     language: Czech
     sessions:
-      - C# 7, 7.1, 7.2, 7.3 a 8.0
+      - C# 7, 7.1, 7.2, 7.3 and 8.0
   - title: Talk @ Windows User Group Slovakia
     date: October 9, 2018
     language: Czech
@@ -84,7 +84,7 @@ conferences:
     date: May 2, 2018
     language: Czech
     sessions:
-      - C# 7, 7.1, 7.2 a 7.3/8.0
+      - C# 7, 7.1, 7.2 and 7.3/8.0
   - title: Global Azure Bootcamp - Prague
     date: April 21, 2018
     language: Czech
@@ -101,7 +101,7 @@ conferences:
     date: April 5, 2018
     language: Czech
     sessions:
-      - C# 7, 7.1, 7.2 a 7.3/8.0
+      - C# 7, 7.1, 7.2 and 7.3/8.0
   - title: ShowIT 2018
     date: January 30-2, 2018
     language: Czech
