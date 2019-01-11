@@ -86,7 +86,7 @@ conferences:
     sessions:
       - C# 7, 7.1, 7.2 a 7.3/8.0
   - title: Global Azure Bootcamp - Prague
-    date: April 21, 2017
+    date: April 21, 2018
     language: Czech
     sessions:
       - Azure CDN
