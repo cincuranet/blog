@@ -10,7 +10,7 @@ I'm so excited to finally reach point where I can call [_FbNetExternalEngine_][1
 
 <!-- excerpt --> 
 
-> _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored procedures, functions (not yet) and triggers (not yet) in any .NET language. There's no limitation on what you can or cannot do in the code. Full power of .NET and .NET eco-system is available for you.
+> _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored procedures, functions (not yet) and triggers (not yet) in any .NET language (instead of PSQL). There's no limitation on what you can or cannot do in the code. Full power of .NET and .NET eco-system is available for you.
 
 If you are keen to start, just go to [this page][1] where you will find all the documentation, including examples, performance numbers and what's coming. Eagerly awaiting your feedback. 
 
