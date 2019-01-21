@@ -1,0 +1,1 @@
+> [{{ description }} <span class="fa fa-file-text-o" aria-hidden="true"></span>]({% include post_ilink, post: post, name: name %})
