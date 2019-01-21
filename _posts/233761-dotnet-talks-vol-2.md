@@ -11,6 +11,7 @@ Ups. Úplně jsem zapomněl na [druhou edici DotNET Talks][1]. Akce se koná dne
 <!-- excerpt -->
 
 {% include attachment, post: page, name: "DotNETTalks2.pdf", description: "Prezentace" %}
+
 {% include attachment, post: page, name: "Demo.cs", description: "Kód" %}
 
 [1]: https://www.dotnettalks.cz/
