@@ -15,6 +15,10 @@ But having to type it in correct order was apparently pain in the ass and so in 
 
 ![interpolated verbatim string in VS 2019 Preview]({% include post_ilink, post: page, name: "string.gif" %})
 
+##### Update
+
+Visual Studio 2019 starting with Preview 2 contains auto-fixer to replace `@$"` with `$@"`.
+
 [1]: {% include post_link, id: "233761" %}
 [2]: https://sharplab.io/#v2:EYLgtghgzgLgpgJwDQxAN0QSwGYE8A+AAgAwAEhAjANwCwAUPQHYRhxQAOEAxnKQMowEmRgHMAcizace9AN71Si8gCZyFAOwKl8ukr1qAbOQAspALIRhACkrEA2gF1SEBCKgBKLftI7v3tC6kUBSkALzkhAAkAETwsHIAIhDwACqYrAB0ZsIAahAANgCucAC+0bS6fnoBCEGq4ZGEhLFsMInJcGmZ2Yx5RaXlXvolQyN0Y0A
 [3]: {% include post_link, id: "233755" %}
