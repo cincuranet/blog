@@ -1429,7 +1429,7 @@ courses:
 	* Entity Framework support
 	* open-source project
 * 2005 - present: journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/) (Czech Republic)
-* 2004 - present: freelancer - developer, consultant
+* 2004 - present: freelancer - developer, consultant, speaker
 
 #### Professional career - Past:
 
