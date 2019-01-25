@@ -1393,7 +1393,7 @@ courses:
 #### Another education, courses, certificates:
 
 * English exam (corresponding to B2 level)
-* 2017: Microsoft Most Valuable Professional
+* 2017 - ...: Microsoft Most Valuable Professional
 * driving licence A, B
 * Microsoft Certified Professional (70-583, 70-536)
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
@@ -1409,30 +1409,39 @@ courses:
 #### Skills:
 
 * Actively using:
-	* .NET Framework/C#, cloud (Microsoft Azure, AWS), databases (relational (Firebird, MS SQL, Oracle, MySQL), newSQL (NuoDB)), PowerShell, Python, unit testing/TDD, Continuous Integration, Continuous Delivery, Win32 API, Windows (client) administration, UNIX/Linux usage & shell scripting, source control (SVN, Git)</li>
+	* .NET Framework/.NET Core/C#, cloud (Microsoft Azure, AWS), databases (relational (Firebird, MS SQL, Oracle, MySQL), newSQL (NuoDB)), PowerShell, Python, Lua, unit testing/TDD, Continuous Integration, Continuous Delivery, Win32 API, Windows (client) administration, UNIX/Linux usage & shell scripting, source control (SVN, Git)
 * Passively using:
 	* PHP, Java, C, C++, Delphi/Object Pascal/Pascal, x86 assembly, XML/XSLT, (X)HTML/CSS, JavaScript, Windows Server administration
 
 #### Professional career - Ongoing:
 
-* 11/2017 - present: developer for [Havit, s.r.o](http://www.havit.cz) (Czech Republic)
+* 11/2017 - present: software & cloud architect for [Havit, s.r.o](http://www.havit.cz)
 	* C#, .NET, Azure
-* 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com) (Belgium)
+* 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
 	* Firebird, LLBLGen Pro, C#, .NET
-* 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz) (Czech Republic)
+* 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz)
 	* advanced trainings about Entity Framework
-	* advanced trainings about multithreaded and parallel programming
+	* advanced trainings about Entity Framework Core
+	* advanced trainings about multithreading, parallel and asynchronous programming
 	* advanced trainings about cloud and Windows Azure
 * 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database engine](http://www.firebirdsql.org/)
 	* from 2008 leading the project
 	* native ADO.NET data provider for Firebird database for .NET Framework
 	* Entity Framework support
+	* Entity Framework Core support
 	* open-source project
-* 2005 - present: journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/) (Czech Republic)
+* 2005 - present: journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/)
 * 2004 - present: freelancer - developer, consultant, speaker
 
 #### Professional career - Past:
 
+* 01/2018 - 01/2018: Integrative Enneagram Solutions
+	* building templating engine for reports, emails, CMS
+	* C#, .NET Core
+* 08/2017 - 08/2017: Integrative Enneagram Solutions
+	* migration to ASP.NET Core
+	* database migration
+	* C#, .NET Core, MS SQL, Firebird, ADO.NET
 * 07/2014 - 07/2014: NuoDB, Inc.
 	* adding support for Entity Framework Code First Migrations into the NuoDB's driver
 	* C#, .NET, Entity Framework
