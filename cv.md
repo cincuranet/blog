@@ -1416,8 +1416,9 @@ courses:
 #### Professional career - Ongoing:
 
 * 11/2017 - present: software & cloud architect for [Havit, s.r.o](http://www.havit.cz)
-	* C#, .NET, Azure
+	* debugging issues, DAL design, Azure solution designs, API integrations
 * 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
+	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI, modifying to-release executables using IL  
 	* Firebird, LLBLGen Pro, C#, .NET
 * 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz)
 	* advanced trainings about Entity Framework
@@ -1426,7 +1427,7 @@ courses:
 	* advanced trainings about cloud and Windows Azure
 * 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database engine](http://www.firebirdsql.org/)
 	* from 2008 leading the project
-	* native ADO.NET data provider for Firebird database for .NET Framework
+	* native ADO.NET data provider for Firebird database (and P/Invoke for Firebird Embedded) for .NET Framework/.NET Core
 	* Entity Framework support
 	* Entity Framework Core support
 	* open-source project
@@ -1436,10 +1437,10 @@ courses:
 #### Professional career - Past:
 
 * 01/2018 - 01/2018: Integrative Enneagram Solutions
-	* building templating engine for reports, emails, CMS
+	* building templating engine for reports, emails, CMS, SSO consultancy, migration to ASP.NET Core 2
 	* C#, .NET Core
 * 08/2017 - 08/2017: Integrative Enneagram Solutions
-	* migration to ASP.NET Core
+	* migration to ASP.NET Core 1
 	* database migration
 	* C#, .NET Core, MS SQL, Firebird, ADO.NET
 * 07/2014 - 07/2014: NuoDB, Inc.
@@ -1475,20 +1476,40 @@ courses:
 
 #### Speaker on conferences and other events:<span id="speaker-events"></span>
 
-{%- for conference in page.conferences -%}
+10 most recent:
+
+{%- for conference in page.conferences limit: 10 -%}
 * {{ conference.title }} ({{ conference.date }}, in {{ conference.language }})
 	{%- for session in conference.sessions -%}
 	* {{ session }}
 	{%- endfor -%}
 {%- endfor -%}
 
+<a href="#" data-expand="conferences-expand">{{ page.conferences | size | minus: 10 }} more conferences and other events...</a>
+<div id="conferences-expand">
+
+{%- for conference in page.conferences offset: 10 -%}
+* {{ conference.title }} ({{ conference.date }}, in {{ conference.language }})
+	{%- for session in conference.sessions -%}
+	* {{ session }}
+	{%- endfor -%}
+{%- endfor -%}
+
+</div>
+
 #### Publications, articles:
 
-* blogging on [{{ site.address }}](/)
+* blogging on [{{ site.address }}](/) ({{ site.posts | size }} posts in total)
+* <a href="#" data-expand="articles-expand">{{ page.articles | size }} articles or publications in total</a>
+
+<div id="articles-expand">
+
 {%- for article in page.articles -%}
 * [{{ article.title }}]({{ article.link }}) ({{ article.date }}, in {{ article.language }})
 	* {{ article.description }}
 {%- endfor -%}
+
+</div>
 
 #### Courses given (standard Gopas courses excluded):
 

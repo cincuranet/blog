@@ -13,8 +13,8 @@ var blog = (function() {
 			}
 		});
 
-		$('a[rel~="bookmark"]').click(function(e) {
-			e.preventDefault();
+		$('a[rel~="bookmark"]').click(function(event) {
+			event.preventDefault();
 		});
 	}
 
@@ -32,6 +32,18 @@ var blog = (function() {
 				e.attr('data-fancybox', 'gallery');
 				e.attr('title', e.find('img').attr('title'));
 			}
+		});
+	}
+
+	function initExpand() {
+		$('[data-expand]').each(function(_, e) {
+			e = $(e);
+			var target = e.data('expand');
+			e.click(function(event) {
+				event.preventDefault();
+				$('#' + target).toggle();
+			});
+			e.click();
 		});
 	}
 
@@ -71,6 +83,7 @@ var blog = (function() {
 			initImageBox();
 		},
 		initContentPage: function() {
+			initExpand();
 		},
 		initPostPage: function() {
 			showArticleNicely();
