@@ -1424,8 +1424,8 @@ courses:
 	* advanced trainings about Entity Framework
 	* advanced trainings about Entity Framework Core
 	* advanced trainings about multithreading, parallel and asynchronous programming
-	* advanced trainings about cloud and Windows Azure
-* 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database engine](http://www.firebirdsql.org/)
+	* advanced trainings about cloud and Azure
+* 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database](http://www.firebirdsql.org/)
 	* from 2008 leading the project
 	* native ADO.NET data provider for Firebird database (and P/Invoke for Firebird Embedded) for .NET Framework/.NET Core
 	* Entity Framework support
