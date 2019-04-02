@@ -98,7 +98,10 @@ Note: You can also notice that the `LEN` call is not correct and the value there
 
 Although I was pretty happy with the previous version, using the converter is cleaner and more readable. And I think converters will allow for a lot of new possibilities, especially for non-common datatypes either on database- or on code-side.
 
+> [Follow-up post.][5]
+
 [1]: https://docs.microsoft.com/en-us/ef/core/modeling/value-conversions
 [2]: {% include post_link, id: "233700" %}
 [3]: {% include post_link, id: "233147" %}
-[4]: https://github.com/aspnet/EntityFrameworkCore/issues/11347 
+[4]: https://github.com/aspnet/EntityFrameworkCore/issues/11347
+[5]: {% include post_link, id: "233774" %}
