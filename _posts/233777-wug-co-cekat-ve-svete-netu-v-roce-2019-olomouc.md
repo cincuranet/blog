@@ -1,7 +1,7 @@
 ---
 title: |-
   WUG: Co čekat ve světě .NETu v roce 2019 (Olomouc)
-date: 2019-04-24T15:23:00Z
+date: 2019-04-22T15:23:00Z
 tags:
   - Presentations &amp; Speaking
   - C#
