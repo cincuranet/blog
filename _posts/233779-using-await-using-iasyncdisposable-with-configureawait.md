@@ -32,7 +32,7 @@ The `ConfigureAwait` extension method exists for `IAsyncDisposable`, thus it can
 ```csharp
 async Task FooBar()
 {
-	await using (new AwaitUsingConfigureAwaitTest().ConfigureAwait(false))
+	await using (var test = new AwaitUsingConfigureAwaitTest().ConfigureAwait(false))
 	{
 		test.Dummy();
 	}
@@ -54,6 +54,9 @@ async Task FooBar()
 
 Not as succinct as I'd like (not that `ConfigureAwait` is smooth either). But all is not lost. At the time of writing, the C# 8 isn't final yet, so at the end [compiler might do some magic for us][3].
 
+By the way, support in ConfigureAwaitChecker is already [planned][4], if you'd like to ask.
+
 [1]: https://source.dot.net/#System.Private.CoreLib/shared/System/IAsyncDisposable.cs,4f4bd6a091aeee8b
 [2]: https://source.dot.net/#System.Private.CoreLib/shared/System/Threading/Tasks/TaskExtensions.cs,4fb149a851c809fb
 [3]: https://github.com/dotnet/roslyn/issues/34953
+[4]: https://github.com/cincuranet/ConfigureAwaitChecker/issues/24
