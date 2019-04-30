@@ -1,1 +1,1 @@
-/i/{{ post.id }}/{{ name }}
+https://{{ site.iaddress }}/{{ post.id }}/{{ name }}
