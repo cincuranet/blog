@@ -10,5 +10,7 @@ Ačkoli jsou prázdniny klidnější období v IT, WUG Ostrava a Praha nezahál�
 
 > Současně s novou verzí .NET Core 2.1 byla uvolněna i nová verze EF Core 2.1. Co je tedy v EF Core 2.1 nového? Proč všichni o 2.1. mluví? Da se již 2.1 reálné použít nebo jsou ještě oblasti, které pokulhávají?   
 
+{% include rec_wug, id: "474-Entity-Framework-Core-2-1" %}
+
 [1]: https://www.wug.cz/ostrava/akce/1075-Entity-Framework-Core-2-1
 [2]: https://www.wug.cz/praha/akce/1073-Entity-Framework-Core-2-1
