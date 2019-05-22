@@ -11,7 +11,7 @@ _FirebirdDbComparer_ is pure managed .NET library that allows comparing of two F
 
 #### Versions supported
 
-Firebird 2.5 (any edition) is supported. Firebird 3.0 (any edition) is supported with exception of DDL triggers and identity column type.
+Firebird 2.5 (any edition) is supported. Firebird 3.0 (any edition) is supported.
 
 The library targets .NET 4.5.2 and .NET Standard 2.0.
 
