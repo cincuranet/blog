@@ -2,6 +2,65 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: "Update Days: Corestart 3.0"
+    date: June 6-7, 2019
+    language: English
+    sessions:
+      - C# 8
+      - Entity Framework Core 3.0
+  - title: Cloud DeveloperDays
+    date: May 28-29, 2019
+    language: English
+    sessions:
+      - Azure Cosmos DB
+      - High availability tools in Azure
+  - title: NT konferenca
+    date: May 21-23, 2019
+    language: English
+    sessions:
+      - Entity Framework Core 3.0
+  - title: Global Azure Bootcamp - Prague
+    date: April 27, 2019
+    language: Czech
+    sessions:
+      - Azure Cosmos DB
+  - title: Talk @ Windows User Group
+    date: April 25, 2019
+    language: Czech
+    sessions:
+      - What to expect in the world of .NET in 2019
+  - title: HAVIT Education Window
+    date: March 28, 2018
+    language: Czech
+    sessions:
+      - C# ref-returns
+  - title: Talk @ Windows User Group
+    date: February 21, 2019
+    language: Czech
+    sessions:
+      - What to expect in the world of .NET in 2019
+  - title: ShowIT 2019
+    date: February 5-7, 2019
+    language: Czech
+    sessions:
+      - .NET Core 3.0 and why it's the biggest change since .NET Core
+      - Overview of performance improvements in .NET Core
+  - title: G2B•TechEd 2019
+    date: February 4-5, 2019
+    language: Czech
+    sessions:
+      - Developer Keynote - .NET Core 3.0 and why it's the biggest change since .NET Core
+      - Lua for C# developers
+  - title: DotNET Talks, vol.2
+    date: January 17, 2019
+    language: Czech
+    sessions:
+      - C# 8.0 features in a nutshell
+  - title: Talk @ Windows User Group
+    date: January 15, 2019
+    language: Czech
+    sessions:
+      - What to expect in the world of .NET in 2019
   - title: Microsoft Developer Days & Azure DevOps Bootcamp 2018
     date: November 12, 2018
     language: Czech
@@ -1268,103 +1327,6 @@ articles:
     language: Czech
     link: http://www.dbsvet.cz/view.php?cisloclanku=2005083101
     title: Jak k Firebirdu z .NET?
-courses:
-  - date: 10/2018
-    company: Ants, s.r.o.
-    country: Czech Republic
-    topic: REST API, testing, IoC/DI
-  - date: 04/2018
-    company: Pregis, a.s.
-    country: Czech Republic
-    topic: Parallel/asynchronous programming
-  - date: 04/2018
-    company: Kros, a.s.
-    country: Slovakia
-    topic: Parallel/asynchronous programming, proper IDisposable implementation
-  - date: 09/2017
-    company: Continental Barum, s.r.o.
-    country: Czech Republic
-    topic: Parallel/asynchronous programming
-  - date: 06/2017
-    company: DC Concept a.s.
-    country: Czech Republic
-    topic: Parallel/asynchronous programming
-  - date: 06/2017
-    company: AXA Česká republika, s.r.o.
-    country: Czech Republic
-    topic: Entity Framework, Firebird encryption
-  - date: 07/2016
-    company: Actum, s.r.o.
-    country: Czech Republic
-    topic: Roslyn
-  - date: 06/2016
-    company: HAVIT, s.r.o.
-    country: Czech Republic
-    topic: Entity Framework
-  - date: 01/2015
-    company: Kros, a.s.
-    country: Slovakia
-    topic: Firebird
-  - date: 05/2014
-    company: LUXART, s.r.o.
-    country: Czech Republic
-    topic: Firebird
-  - date: 01-02/2014
-    company: ASD Software, s.r.o.
-    country: Czech Republic
-    topic: Parallel programming, Entity Framework
-  - date: 01/2014
-    company: ACP Traductera, a.s.
-    country: Czech Republic
-    topic: Firebird
-  - date: 06/2013
-    company: Inel Holding, a.s.
-    country: Czech Republic
-    topic: Firebird
-  - date: 05/2013
-    company: AXA Česká republika, s.r.o.
-    country: Czech Republic
-    topic: Entity Framework
-  - date: 03/2012
-    company: AXA Česká republika, s.r.o.
-    country: Czech Republic
-    topic: Firebird
-  - date: 07/2011
-    company: SoLOGtion GmbH
-    country: Germany
-    topic: ADO.NET and ADO.NET (incl. Entity Framework) with Firebird
-  - date: 06/2011
-    company: ICZ, a.s.
-    country: Slovakia
-    topic: Entity Framework
-  - date: 07/2010
-    company: Kros, a.s.
-    country: Slovakia
-    topic: Firebird
-  - date: 06/2010
-    company: Softip, a.s.
-    country: Slovakia
-    topic: Entity Framework
-  - date: 06/2009
-    company: INISOFT, s.r.o.
-    country: Czech Republic
-    topic: .NET training (moving from Delphi) - "complete start up guide", databases in .NET, ...
-  - date: 03/2009
-    company: Martin Tláskal
-    country: Czech Republic
-    topic: Firebird and ASP.NET
-  - date: 03/2009
-    company: PeopleWare
-    country: Belgium
-    topic: Entity Framework
-  - date: 02/2009
-    company: SMS-Timing
-    country: Belgium
-    topic: Entity Framework
-  - date: 11/2008
-    company: Kros, a.s.
-    country: Slovakia
-    topic: ADO.NET and Firebird
 ---
 ### Curriculum Vitae - Mgr. Jiří Činčura
 
@@ -1510,10 +1472,3 @@ courses:
 {%- endfor -%}
 
 </div>
-
-#### Courses given (standard Gopas courses excluded):
-
-{%- for course in page.courses -%}
-* {{ course.company }} ({{ course.country }}, {{ course.date }})
-	* {{ course.topic }}
-{%- endfor -%}
