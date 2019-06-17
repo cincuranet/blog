@@ -122,13 +122,13 @@ The optional `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql`
 
 ##### `net$update`
 
-Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disc and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
+Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disk and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
 
-The assembly is not locked on disc, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
+The assembly is not locked on disk, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
 
 #### Performance
 
-Single procedure call is about 3,54× slower compared to PSQL. That's about 0,008 ms per call on my machine. The fetch from stored procedure is about 1,34× slower compared to PSQL.
+Single dummy procedure call is about 3,25× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 0,0077 ms per call on my machine. The fetch from stored procedure is about 1,25× slower compared to PSQL. As the procedure in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
 
 #### Next steps
 
