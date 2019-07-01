@@ -15,7 +15,7 @@ I'm always drawn into disassembling stuff and learning how something works under
 
 #### Sources
 
-Let's start simply from sources. Following where the `Thread.SpinWait` goes, I eventually ended up in `internal` (yes, `internal`) class `Thread`, that derives from `RuntimeThread`, where the [`SpinWait` method][1]. This method calls `SpinWaitInternal`, that is conveniently right above. That's where the C# code ends and we need to go lower (in this case the "VM").
+Let's start simply from sources. Following where the `Thread.SpinWait` goes, I eventually ended up in `internal` (yes, `internal`) class `Thread`, that derives from `RuntimeThread`, where the [`SpinWait` method][1] is. This method calls `SpinWaitInternal`, that is conveniently right above. That's where the C# code ends and we need to go lower (in this case the "VM").
 
 The implementation is in [`comsynchronizable.cpp` file, using the FCIMPL1 macro][3] (which I think is an abbreviation for "`fastcall` function implementation with one argument"). It simply checks what the number of iterations is. If it's over 100000 the preemptive mode is used to avoid stalling a GC, else the code stays in cooperative mode. In both cases the `YieldProcessorNormalized` is called passing result from `YieldProcessorNormalizationInfo`.
 
