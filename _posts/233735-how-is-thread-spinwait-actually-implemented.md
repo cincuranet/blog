@@ -27,7 +27,7 @@ Looks like I have the implementation. On platforms where I'm running my code mos
 
 All the above is nice, but what if I've made some mistake? I should be able to see the result in pure disassembly, right? 
 
-I compiled a simple .NET Framework (non-Core) console application with full optimizations enabled and loaded it into WinDbg. Using the _Disassembly_ and _F11_ went deeper and deeper into the code. Eventually I ended in this piece of code for 32bit.
+I compiled a simple .NET Framework (non-Core) console application with full optimizations enabled and loaded it into _WinDbg_. Using the _Disassembly_ and _F11_ went deeper and deeper into the code. Eventually I ended in this piece of code for 32bit.
 
 ```asm
 7217f56c 8bf1            mov     esi,ecx
