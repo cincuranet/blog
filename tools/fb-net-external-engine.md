@@ -36,16 +36,6 @@ FbNetExternalEngineManagement.dll (optional)
 FbNetExternalEngineManagement.pdb (optional)
 ```
 
-#### Stored procedures
-
-##### Requirements (C# terminology)
-
-* Method has to be static.
-* Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see below). Or `void`.
-* Input arguments have to be from set of supported types (see below).
-* No overload resolution (method names have to be unique).
-* `VARCHAR(n)`/`CHAR(n)`/`BLOB SUB_TYPE TEXT` has to be `UTF-8` (charset can be defined on PSQL parameter).
-
 ##### Supported types (C# terminology)
 
 `int?`, `string`, `short?`, `long?`, `DateTime?`, `TimeSpan?`, `bool?`, `float?`, `double?`, `decimal?`, `byte[]`
@@ -65,6 +55,19 @@ Any exception thrown from the code is converted to `FbException` with _status ve
 ##### SQL definition
 
 The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
+
+#### Common requirements  (C# terminology)
+
+* Method has to be static.
+* Input arguments have to be from set of supported types (see below).
+* No overload resolution (method names have to be unique).
+* `VARCHAR(n)`/`CHAR(n)`/`BLOB SUB_TYPE TEXT` has to be `UTF-8` (charset can be defined on PSQL parameter).
+
+#### Stored procedures
+
+##### Requirements (C# terminology)
+
+* Return type has to be `IEnumerator<(T1, T2, ..., Tn)>` (or `IEnumerator<ValueTuple<T1, T2, ..., Tn>>`), where `Tx` is from set of supported types (see above). Or `void`.
 
 ##### Example
 
@@ -110,7 +113,51 @@ More examples in `Example.dll` and `Procedures.cs`/`Procedures.sql`.
 
 #### Functions
 
-Not yet supported.
+##### Requirements (C# terminology)
+
+* Return type has to be `T`, where `T` is from set of supported types (see above).
+
+##### Example
+
+C# code is compiled into `Example.dll`.
+
+```csharp
+namespace Example
+{
+	public static class Functions
+	{
+		public static int? IncrementInteger(int? i)
+		{
+			return i + 1;
+		}
+	}
+}
+```
+
+```sql
+create function increment_integer(input int)
+returns int
+external name 'Example!Example.Functions.IncrementInteger'
+engine FbNetExternalEngine;
+```
+
+Then you can call this function.
+
+```text
+SQL> select increment_integer(-20) from rdb$database;
+
+INCREMENT_INTEGER
+=================
+              -19
+
+SQL> select increment_integer(6) from rdb$database;
+
+INCREMENT_INTEGER
+=================
+                7
+```
+
+More examples in `Example.dll` and `Functions.cs`/`Functions.sql`.
 
 #### Triggers
 
@@ -122,20 +169,24 @@ The optional `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql`
 
 ##### `net$update`
 
-Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` will replace it on the disk and invalidate internal caches. It can be called while other _FbNetExternalEngine_ pieces are executing code.
+Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` parameter will replace it on the disk and invalidate internal caches. It can be safely called while other _FbNetExternalEngine_ pieces are executing code.
 
 The assembly is not locked on disk, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
 
 #### Performance
 
-Single dummy procedure call is about 3,25× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 0,0077 ms per call on my machine. The fetch from stored procedure is about 1,25× slower compared to PSQL. As the procedure in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
+Dummy procedure call is about 2,89× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 6,5 μs per call on my machine. The fetch from stored procedure's result set is about 1,18× slower compared to PSQL. 
+
+Dummy function call is about 2,63× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,6 μs per call on my machine.
+
+Concurrent execution adds about 4% per extra thread.
+
+As the procedure or function in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
 
 #### Next steps
 
 These ideas, in no particular order, is what I (or people/companies supporting the plugin) have in mind for the future.
 
-* Add support for functions.
-	* Why: Because functions are useful.
 * Create support for executing SQL commands inside C# code in the same context (same transaction) as the currently running code.
 	* Why: Because it's possible and in some situations it's needed.
 * Explore posibilities of using .NET Core.
