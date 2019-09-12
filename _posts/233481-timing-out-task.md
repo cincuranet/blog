@@ -14,10 +14,15 @@ I knew the method call should take in worst case scenario a minute or so. So som
 ```csharp
 public static async Task Timeout(this Task operation, TimeSpan timeout)
 {
-	var timeoutTask = Task.Delay(timeout);
-	var any = await Task.WhenAny(new[] { timeoutTask, operation }).ConfigureAwait(false);
-	if (any == timeoutTask)
-		throw new TimeoutException();
+	using (var cts = new CancellationTokenSource())
+	{
+		var timeoutTask = Task.Delay(timeout, cts.Token);
+		var any = await Task.WhenAny(new[] { timeoutTask, operation }).ConfigureAwait(false);
+		if (any == timeoutTask)
+			throw new TimeoutException();
+		else
+			cts.Cancel();
+	}
 }
 ```
 
