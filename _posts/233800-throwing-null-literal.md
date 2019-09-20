@@ -46,3 +46,9 @@ static void Test3()
 Basically "sometimes" my code returns `null` and that is then thrown. Discussion whether that is a bug or not is another discussion.
 
 When I first saw (and it was in reference assemblies) the `throw null` I was perplexed. But trying it and then thinking about it in broader context, I realized it's just a valid (but pretty stupid, don't do it) code stripped to absolute minimum.
+
+##### Update (based on comment below)
+
+This, exactly, is part of the [specification][1].
+
+[1]: https://github.com/dotnet/csharplang/blob/master/spec/statements.md#the-throw-statement
