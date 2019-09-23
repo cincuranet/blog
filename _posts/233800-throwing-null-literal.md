@@ -7,6 +7,8 @@ tags:
 ---
 "Every" week I discover something new (and I'm not afraid to share it). Today isn't any different. Apparently, C# compiler is fine with code throwing `null` literal. Yes, it looks weird, but if you think about it, it makes sense. Let me show you.
 
+<!-- excerpt -->
+
 The code below compiles fine and results in `NullReferenceException` being thrown.
 
 ```csharp
