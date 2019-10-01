@@ -11,7 +11,7 @@ _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored 
 
 #### Price and download
 
-_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not contain _Management procedures_ (see below).
+_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not contain _Integration interfaces_ and _Management procedures_ (see below).
 
 You can place the order [here][1]. If you'd like to support the work on _FbNetExternalEngine_ even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
 
@@ -32,6 +32,8 @@ FbNetExternalEnginePlugin.dll
 FbNetExternalEnginePlugin.pdb (optional)
 FbNetExternalEngineManaged.dll
 FbNetExternalEngineManaged.pdb (optional)
+FbNetExternalEngineIntegration.dll (optional)
+FbNetExternalEngineIntegration.pdb (optional)
 FbNetExternalEngineManagement.dll (optional)
 FbNetExternalEngineManagement.pdb (optional)
 ```
@@ -44,24 +46,26 @@ The mapping from/to database types should be self explanatory.
 
 Database `NULL` maps to C# `null`.
 
-##### Limitations on types (C# terminology)
-
-* `VARCHAR(n) CHARACTER SET OCTETS`/`CHAR(n) CHARACTER SET OCTETS` is not supported.
-
-##### Exceptions
-
-Any exception thrown from the code is converted to `FbException` with _status vector_ `isc_arg_gds` being `isc_random` and `isc_arg_string` being `Exception.ToString()` from .NET.
-
-##### SQL definition
-
-The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
-
 #### Common requirements  (C# terminology)
 
 * Method has to be static.
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * `VARCHAR(n)`/`CHAR(n)`/`BLOB SUB_TYPE TEXT` has to be `UTF-8` (charset can be defined on PSQL parameter).
+
+##### SQL definition
+
+The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
+
+##### Limitations on types (C# terminology)
+
+* `VARCHAR(n) CHARACTER SET OCTETS`/`CHAR(n) CHARACTER SET OCTETS` is not supported.
+
+##### Exceptions
+
+Any exception thrown from the code is converted to Firebird's `FbException` with _status vector_ `isc_arg_gds` being `isc_random` and `isc_arg_string` being `Exception.ToString()` from .NET.
+
+Other exceptions in managed code are or derive from `ArgumentException`.
 
 #### Stored procedures
 
@@ -163,9 +167,36 @@ More examples in `Example.dll` and `Functions.cs`/`Functions.sql`.
 
 Not yet supported.
 
+#### Integration interfaces
+
+The extra `FbNetExternalEngineIntegration.dll` contains interfaces to integrate with the _FbNetExternalEngine_.
+
+##### `IExecutionContext`
+
+The last parameter of the procedure or function can be of type `IExecutionContext`. If so, such instance is provided. The interface contains multiple overloads of `Execute` method that allows executing SQL commands **within the context (transaction)** of currently running procedure or function.
+
+```csharp
+public static long? FullSelectFunction(IExecutionContext context)
+{
+	var data = context.Execute<int?, string>("select mon$attachment_id, mon$remote_process from mon$attachments").ToList();
+	return data.LongCount();
+}
+```
+
+```sql
+recreate function full_select_function
+returns bigint
+external name 'Example!Example.ExecutionContext.FullSelectFunction'
+engine FbNetExternalEngine;
+```
+
+At the moment input parameters are not supported (values have to be hardcoded) and at most 32 columns can be selected with `Execute` method.
+
+More examples in `Example.dll` and `ExecutionContext.cs`/`ExecutionContext.sql`.
+
 #### Management procedures
 
-The optional `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` companion) assembly contains some useful helpers for managing the plugin.
+The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` companion) assembly contains useful helpers for managing the plugin.
 
 ##### `net$update`
 
@@ -175,9 +206,9 @@ The assembly is not locked on disk, thus you can replace it directly manually as
 
 #### Performance
 
-Dummy procedure call is about 2,89× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 6,5 μs per call on my machine. The fetch from stored procedure's result set is about 1,18× slower compared to PSQL. 
+Dummy procedure call is about 2,55× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 6,0 μs per call on my machine. The fetch from stored procedure's result set is about 1,18× slower compared to PSQL.
 
-Dummy function call is about 2,63× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,6 μs per call on my machine.
+Dummy function call is about 2,19× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,5 μs per call on my machine.
 
 Concurrent execution adds about 4% per extra thread.
 
@@ -187,8 +218,6 @@ As the procedure or function in .NET becomes more complex the perfomance goes in
 
 These ideas, in no particular order, is what I (or people/companies supporting the plugin) have in mind for the future.
 
-* Create support for executing SQL commands inside C# code in the same context (same transaction) as the currently running code.
-	* Why: Because it's possible and in some situations it's needed.
 * Explore posibilities of using .NET Core.
 	* Why: Because that would allow using _FbNetExternalEngine_ on Linux servers as well.
 * Add support for `CHARACTER SET OCTETS`.
