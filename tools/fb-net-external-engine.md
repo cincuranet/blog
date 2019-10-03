@@ -11,7 +11,7 @@ _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored 
 
 #### Price and download
 
-_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not contain _Integration interfaces_ and _Management procedures_ (see below).
+_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not support _Integration interfaces_ and _Management procedures_ (see below).
 
 You can place the order [here][1]. If you'd like to support the work on _FbNetExternalEngine_ even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
 
