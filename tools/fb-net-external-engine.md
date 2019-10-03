@@ -32,7 +32,7 @@ FbNetExternalEnginePlugin.dll
 FbNetExternalEnginePlugin.pdb (optional)
 FbNetExternalEngineManaged.dll
 FbNetExternalEngineManaged.pdb (optional)
-FbNetExternalEngineIntegration.dll (optional)
+FbNetExternalEngineIntegration.dll
 FbNetExternalEngineIntegration.pdb (optional)
 FbNetExternalEngineManagement.dll (optional)
 FbNetExternalEngineManagement.pdb (optional)
