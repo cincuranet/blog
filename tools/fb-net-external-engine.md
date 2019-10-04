@@ -210,8 +210,6 @@ Dummy procedure call is about 2,55× slower compared to PSQL (the plugin infrast
 
 Dummy function call is about 2,19× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,5 μs per call on my machine.
 
-Concurrent execution adds about 4% per extra thread.
-
 As the procedure or function in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
 
 #### Next steps
