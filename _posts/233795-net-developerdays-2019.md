@@ -13,11 +13,13 @@ First, obviously, it's the main keynote speaker - Scott Guthrie. I think it's an
 
 Then, to not dismiss other great [speakers][2]. We'll try to pass as much great content as possible. Hopefully demo gods will be with us.
 
-I have two sessions in the [agenda][3] - [Most Common Mistakes in Using Tasks and in Asynchronous Code][5] and [From Zero to Hero With Entity Framework Core][4].
+I have three sessions in the [agenda][3] - [Most Common Mistakes in Using Tasks and in Asynchronous Code][5], [From Zero to Hero With Entity Framework Core][4] and [Using Roslyn to improve your codebase][6].
 
 > Asynchronous code with async and await is everywhere nowadays. And although C# makes it very easy to write such code, it's not always smooth sailing. In this session I'll show the most common traps and gotchas and how to avoid them.
 
 > In this 60 minute session you'll jump start your Entity Framework Core knowledge. We'll start by looking at the how all the pieces fit together and then go deeper and learn about majority of the features. After this session you'll be able to understand how "it" works, but also quickly use it.
+
+> Roslyn is not a black box compiler, but not only has a lot of extension points, but also lot of pieces and places you can use to analyze and understand your code. Not only that, you can also parse and modify or generate code safely with it.
 
 Last but not least, the conference has a great evening event, which I highly recommend not skipping. It's fun and great place to talk with others.
 
@@ -28,3 +30,4 @@ Hope to meet all of you there.
 [3]: https://net.developerdays.pl/#agenda
 [4]: https://net.developerdays.pl/from-zero-to-hero-with-entity-framework-core/
 [5]: https://net.developerdays.pl/most-common-mistakes-in-using-tasks-and-in-asynchronous-code/
+[6]: https://net.developerdays.pl/using-roslyn-to-improve-your-codebase/
