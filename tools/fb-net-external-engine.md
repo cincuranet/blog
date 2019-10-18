@@ -222,6 +222,8 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 	* Why: Because it might be useful for certain scenarios.
 * Add support for `async` methods.
 	* Why: Because it will be convenient.
+* Automatic registration based on metadata using i.e. `net$register`.
+	* Why: Because the metadata in .NET is quite rich and it will be convenient. 
 
 #### Notable sponsors
 
