@@ -7,7 +7,7 @@ tags:
   - .NET Core
   - C#
 ---
-Have you ever looked how anonymous classes are implemented? If you did, you know it's a generated generic class. And if you didn't, you know now. Either way, you can find more details below. But also building on top of [previous post about generic parameters limit in generic classes], where's the limit here? It surely cannot be higher.
+Have you ever looked how anonymous classes are implemented? If you did, you know it's a generated generic class. And if you didn't, you know now. Either way, you can find more details below. But also building on top of [previous post about generic parameters limit in generic classes][1], where's the limit here? It surely cannot be higher.
 
 <!-- excerpt -->
 
