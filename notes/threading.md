@@ -38,7 +38,8 @@ The following implicitly generate full fences:
 * Anything that relies on signaling, such as starting or waiting on a Task
 
 By virtue of that last point, the following is thread-safe:
-```
+
+```csharp
 int x = 0;
 Task t = Task.Factory.StartNew (() => x++);
 t.Wait();
@@ -47,7 +48,7 @@ Console.WriteLine (x);    // 1
 
 #### Thread
 
-```
+```text
 TKO => x86 ~700b; x64 ~1240b; IA64 ~2500b
 TEB => 4 KB on x86 and x64 CPUs, 8 KB on an IA64 CPU
 Kernel Mode Stack => 12kB x86; 24kB x64
@@ -55,7 +56,7 @@ Kernel Mode Stack => 12kB x86; 24kB x64
 
 #### Out of program order
 
-```
+```csharp
 class OutOfProgramOrder 
 { 
 	private Int32 m_flag = 0; 
@@ -75,7 +76,7 @@ class OutOfProgramOrder
 }
 ```
 
-```
+```csharp
 class OutOfProgramOrder 
 { 
 	private Int32 m_flag = 0; 
@@ -107,6 +108,48 @@ class OutOfProgramOrder
 * Linux
 	* 10-200ms, default is 100ms (varies across entire range based on priority, which is based on interactivity level)
 	* reentrant and preemptible
+
+#### Crazy async/await
+
+```csharp
+using System;
+using System.Runtime.CompilerServices;
+
+public class var
+{
+	async async async(async async) => await async;
+}
+
+[AsyncMethodBuilder(typeof(builder))]
+class async
+{
+	public awaiter GetAwaiter() => throw null;
+}
+class await
+{
+	public awaiter GetAwaiter() => throw null;
+}
+
+class awaiter : INotifyCompletion
+{
+	public bool IsCompleted => true;
+	public void GetResult() { }
+	public void OnCompleted(Action continuation) { }
+}
+
+class builder
+{
+	public builder() { }
+	public static builder Create() => throw null;
+	public void SetResult() { }
+	public void SetException(Exception e) { }
+	public void Start<TStateMachine>(ref TStateMachine stateMachine) where TStateMachine : IAsyncStateMachine => throw null;
+	public async Task => throw null;
+	public void AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : INotifyCompletion where TStateMachine : IAsyncStateMachine => throw null;
+	public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : ICriticalNotifyCompletion where TStateMachine : IAsyncStateMachine => throw null;
+	public void SetStateMachine(IAsyncStateMachine stateMachine) => throw null;
+}
+```
 
 #### Links
 
