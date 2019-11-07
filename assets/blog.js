@@ -55,7 +55,7 @@ var blog = (function() {
 
 	function initFullDisqus() {
 		disqus_config = function() {
-			this.page.url = disqus_url;
+			this.page.url = comments_id;
 		};
 
 		var d = document, s = d.createElement('script');
