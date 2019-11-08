@@ -25,6 +25,18 @@ Last but not least, the conference has a great evening event, which I highly rec
 
 Hope to meet all of you there.
 
+{% include attachment, post: page, name: "async.pdf", description: "Most Common Mistakes in Using Tasks and in Asynchronous Code - Slides" %}
+
+{% include attachment, post: page, name: "async-demos.7z", description: "Most Common Mistakes in Using Tasks and in Asynchronous Code - Code" %}
+
+{% include attachment, post: page, name: "ef.pdf", description: "From Zero to Hero With Entity Framework Core - Slides" %}
+
+{% include attachment, post: page, name: "ef-demos.7z", description: "From Zero to Hero With Entity Framework Core - Code" %}
+
+{% include attachment, post: page, name: "roslyn.pdf", description: "Using Roslyn to improve your codebase - Slides" %}
+
+{% include attachment, post: page, name: "roslyn-demos.7z", description: "Using Roslyn to improve your codebase - Code" %}
+
 [1]: https://net.developerdays.pl/
 [2]: https://net.developerdays.pl/#speakers
 [3]: https://net.developerdays.pl/#agenda
