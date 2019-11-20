@@ -115,19 +115,18 @@ class OutOfProgramOrder
 using System;
 using System.Runtime.CompilerServices;
 
-public class var
+class await
 {
-	async async async(async async) => await async;
+	async async async(async async) => await async(async(async));
 }
 
 [AsyncMethodBuilder(typeof(builder))]
-class async
+delegate async async(async async);
+
+static class util
 {
-	public awaiter GetAwaiter() => throw null;
-}
-class await
-{
-	public awaiter GetAwaiter() => throw null;
+	public static awaiter GetAwaiter(this await a) => throw null;
+	public static awaiter GetAwaiter(this async a) => throw null;
 }
 
 class awaiter : INotifyCompletion
@@ -143,10 +142,17 @@ class builder
 	public static builder Create() => throw null;
 	public void SetResult() { }
 	public void SetException(Exception e) { }
-	public void Start<TStateMachine>(ref TStateMachine stateMachine) where TStateMachine : IAsyncStateMachine => throw null;
+	public void Start<TStateMachine>(ref TStateMachine stateMachine)
+		where TStateMachine : IAsyncStateMachine => throw null;
 	public async Task => throw null;
-	public void AwaitOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : INotifyCompletion where TStateMachine : IAsyncStateMachine => throw null;
-	public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(ref TAwaiter awaiter, ref TStateMachine stateMachine) where TAwaiter : ICriticalNotifyCompletion where TStateMachine : IAsyncStateMachine => throw null;
+	public void AwaitOnCompleted<TAwaiter, TStateMachine>(
+		ref TAwaiter awaiter, ref TStateMachine stateMachine)
+		where TAwaiter : INotifyCompletion
+		where TStateMachine : IAsyncStateMachine => throw null;
+	public void AwaitUnsafeOnCompleted<TAwaiter, TStateMachine>(
+		ref TAwaiter awaiter, ref TStateMachine stateMachine)
+		where TAwaiter : ICriticalNotifyCompletion
+		where TStateMachine : IAsyncStateMachine => throw null;
 	public void SetStateMachine(IAsyncStateMachine stateMachine) => throw null;
 }
 ```
