@@ -2,9 +2,57 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Java Days 2019
+    date: November 11-12, 2019
+    language: Czech
+    sessions:
+      - Azure Cosmos DB
+  - title: Dotnet Days
+    date: November 2-3, 2019
+    language: Czech
+    sessions:
+      - Entity Framework Core 3.0
+  - title: .NET Developer Days
+    date: October 23-25, 2019
+    language: English
+    sessions:
+      - Using Roslyn to Improve Your Codebase
+      - Most Common Mistakes in Using Tasks and in Asynchronous Code
+      - From Zero to Hero With Entity Framework Core
+  - title: Firebird Conference 2019
+    date: October 17-19, 2019
+    language: English
+    sessions:
+      - What's new in .NET driver for Firebird
+      - Using Firebird with .NET Core and Entity Framework Core
+      - FbNetExternalEngine
+      - Comparing Firebird databases with FirebirdDbComparer
+  - title: HAVIT Education Window
+    date: September 25, 2019
+    language: English
+    sessions:
+      - Most common mistakes in using Tasks and in asynchronous code
+  - title: WUG Days 2019
+    date: September 14-15, 2019
+    language: Czech
+    sessions:
+      - .NET Core 3.0 and why it's the biggest change since .NET Core
+      - How to measure .NET code performance correctly
+      - Nullable reference types in C# 8 deep dive
+      - Most common mistakes in using Tasks and in asynchronous code
+  - title: SQL Server Bootcamp 2019
+    date: August 21, 2019
+    language: Czech
+    sessions:
+      - Entity Framework vs SQL Server - what you could and did not do; and what you shouldn't do and still did (with Vladimir Muzny)
+  - title: Talk @ Windows User Group Slovakia
+    date: June 18, 2019
+    language: Czech
+    sessions:
+      - C# 8, 7.x, .NET Core 3 and other new stuff
   - title: "Update Days: Corestart 3.0"
     date: June 6-7, 2019
-    language: English
+    language: Czech
     sessions:
       - C# 8
       - Entity Framework Core 3.0
@@ -19,6 +67,13 @@ conferences:
     language: English
     sessions:
       - Entity Framework Core 3.0
+  - title: Gopas TechEd 2019
+    date: May 13-16, 2019
+    language: Czech
+    sessions:
+      - .NET Core 3.0 and why it's the biggest change since .NET Core
+      - Entity Framework vs SQL Server - what you could and did not do; and what you shouldn't do and still did (with Vladimir Muzny)
+      - How to measure .NET code performance correctly
   - title: Global Azure Bootcamp - Prague
     date: April 27, 2019
     language: Czech
@@ -1380,7 +1435,7 @@ articles:
 * 11/2017 - present: software & cloud architect for [Havit, s.r.o](http://www.havit.cz)
 	* debugging issues, DAL design, Azure solution designs, API integrations
 * 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
-	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI, modifying to-release executables using IL  
+	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI, modifying to-release executables using IL
 	* Firebird, LLBLGen Pro, C#, .NET
 * 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz)
 	* advanced trainings about Entity Framework
@@ -1393,7 +1448,6 @@ articles:
 	* Entity Framework support
 	* Entity Framework Core support
 	* open-source project
-* 2005 - present: journalist for [AVRE Publishing.cz](http://www.dbsvet.cz/)
 * 2004 - present: freelancer - developer, consultant, speaker
 
 #### Professional career - Past:
@@ -1424,6 +1478,7 @@ articles:
 	* see below
 * 2007 - 02/2009: database architect, developer for Devmasters s.r.o.
   * MS-SQL, ASP.NET, .NET, C#, Windows Mobile, Compact Framework
+* 2005 - 2010: journalist for AVRE Publishing
 * 2004 - 07/2012: helpdesk operator, PIPNI s.r.o.
 
 #### Languages:
