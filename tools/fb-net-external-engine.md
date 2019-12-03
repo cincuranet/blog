@@ -51,7 +51,6 @@ Database `NULL` maps to C# `null`.
 * Method has to be static.
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
-* `VARCHAR(n)`/`CHAR(n)`/`BLOB SUB_TYPE TEXT` has to be `UTF-8` (charset can be defined on PSQL parameter).
 
 ##### SQL definition
 
