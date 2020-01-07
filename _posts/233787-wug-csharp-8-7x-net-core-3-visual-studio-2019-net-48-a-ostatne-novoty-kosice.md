@@ -7,6 +7,8 @@ tags:
 ---
 V .NETu se dějou v posledních měsích velké změny. Trochu toho zmatku si srovnáme na WUGu v Košicích 18.6.2019 of 17:00. Tak neváhejte a doražte. Beztak bude pršet a Tatry jsou daleko. ;)
 
+<!-- excerpt -->
+
 {% include attachment, post: page, name: "slides.pdf", description: "Prezentace" %}
 
 {% include attachment, post: page, name: "csharp8.cs", description: "C# 8.0 dema" %}
