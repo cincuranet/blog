@@ -8,7 +8,6 @@ tags:
   - LINQ
   - MS SQL Server
   - Spatial data
-  - T-SQL
 ---
 [Julie Lerman created a post][1] about spatial data usage in Entity Framework. Her conclusions are correct. But because from last three projects I did on Entity Framework two of them are working with spatial data (every customer wants a Google Maps or Bing Maps on website, it's like cup holders in cars) I would like share my solution as well some ideas behind why I used this approach.
 
