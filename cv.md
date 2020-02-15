@@ -27,7 +27,7 @@ conferences:
       - Using Firebird with .NET Core and Entity Framework Core
       - FbNetExternalEngine
       - Comparing Firebird databases with FirebirdDbComparer
-  - title: HAVIT Education Window
+  - title: HAVIT Educational Window
     date: September 25, 2019
     language: English
     sessions:
@@ -84,7 +84,7 @@ conferences:
     language: Czech
     sessions:
       - What to expect in the world of .NET in 2019
-  - title: HAVIT Education Window
+  - title: HAVIT Educational Window
     date: March 28, 2018
     language: Czech
     sessions:
@@ -163,7 +163,7 @@ conferences:
     language: Czech
     sessions:
       - Entity Framework Core 2.1
-  - title: HAVIT Education Window
+  - title: HAVIT Educational Window
     date: August 21, 2018
     language: Czech
     sessions:
@@ -236,7 +236,7 @@ conferences:
     language: Czech
     sessions:
       - .NET Core
-  - title: HAVIT Education Window
+  - title: HAVIT Educational Window
     date: November 23, 2017
     language: Czech
     sessions:
