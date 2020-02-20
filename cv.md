@@ -2,6 +2,11 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: January 8, 2020
+    language: Czech
+    sessions:
+      - Entity Framework vs SQL Server - what you could and did not do; and what you shouldn't do and still did (with Vladimir Muzny)
   - title: Java Days 2019
     date: November 11-12, 2019
     language: Czech
