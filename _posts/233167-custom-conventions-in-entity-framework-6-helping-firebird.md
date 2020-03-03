@@ -7,6 +7,7 @@ tags:
   - Firebird
 ---
 > [There's a part 2 of this story.][1]
+
 > [Follow-up post.][4]
 
 The next version of Entity Framework, version 6, has a nice new feature [Custom Code First Conventions][2]. In short you can create your own conventions and using these together with the default ones (these were there before). Does you primary key column/property always ends up `_PK`? You can create convention for that and completely remove bunch of `HasKey()` lines. But that's not what I'm going to talk about, if you want to know more follow the link above.

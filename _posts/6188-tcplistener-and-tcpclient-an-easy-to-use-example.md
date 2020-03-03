@@ -5,7 +5,7 @@ date: 2005-06-21T11:22:00Z
 tags:
   - .NET
 ---
-> [Follow-up post available.][1]
+> [Follow-up post.][1]
 
 During the weekend I needed some tool: Have to be able to listen on some port and to do something "useful". First I was trying to use sockets. But I've found useful classes: `TcpListener` and `TcpClient`. It was exactly what I was looking for. Here you can "taste" the example.
 
