@@ -130,6 +130,9 @@ I want to spend more time in this language. And quick googling shows [it might b
 
 I was trying to recall where I've got the idea for `Head`- and `Tail`-like methods in C#, but my memory failed me. Never mind. It was fun anyway. Especially checking other languages. And especially Haskell. I'm definitely going to explore `hs-dotnet` more one day.
 
+> [Related post.][4]
+
 [1]: {% include post_link, id: "233632" %}
 [2]: https://www.python.org/dev/peps/pep-3132/
 [3]: https://hackage.haskell.org/package/hs-dotnet
+[4]: {% include post_link, id: "233813" %}
