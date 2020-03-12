@@ -208,6 +208,7 @@ article code, article pre {
 	font-family: "Consolas", "Courier New", monospace;
 	line-height: 1.2em;
 	font-size: .9rem;
+	font-variant-ligatures: none;
 	background-color: #eee;
 }
 
