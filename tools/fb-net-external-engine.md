@@ -38,6 +38,12 @@ FbNetExternalEngineManagement.dll (optional)
 FbNetExternalEngineManagement.pdb (optional)
 ```
 
+#### Common requirements (C# terminology)
+
+* Method has to be static.
+* Input arguments have to be from set of supported types (see below).
+* No overload resolution (method names have to be unique).
+
 ##### Supported types (C# terminology)
 
 `int?`, `string`, `short?`, `long?`, `DateTime?`, `TimeSpan?`, `bool?`, `float?`, `double?`, `decimal?`, `byte[]`
@@ -46,17 +52,11 @@ The mapping from/to database types should be self explanatory.
 
 Database `NULL` maps to C# `null`.
 
-#### Common requirements  (C# terminology)
-
-* Method has to be static.
-* Input arguments have to be from set of supported types (see below).
-* No overload resolution (method names have to be unique).
-
 ##### SQL definition
 
 The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
 
-##### Limitations on types (C# terminology)
+##### Limitations on types
 
 * `VARCHAR(n) CHARACTER SET OCTETS`/`CHAR(n) CHARACTER SET OCTETS` is not supported.
 
