@@ -11,38 +11,22 @@ _FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored 
 
 #### Price and download
 
-_FbNetExternalEngine_ has a single price of €99, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not support _Integration interfaces_ and _Management procedures_ (see below).
+_FbNetExternalEngine_ has a single price of €199, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not support _Integration interfaces_ and _Management procedures_ (see below).
 
 You can place the order [here][1]. If you'd like to support the work on _FbNetExternalEngine_ even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
 
 #### Instalation
 
-1. Add these lines into `plugins.conf`.
-
-```text
-Plugin = FBNETEXTERNALENGINE {
-	Module = $(dir_plugins)/FbNetExternalEnginePlugin
-}
-```
-
-2. Copy these files into `plugins` directory.
-
-```text
-FbNetExternalEnginePlugin.dll
-FbNetExternalEnginePlugin.pdb (optional)
-FbNetExternalEngineManaged.dll
-FbNetExternalEngineManaged.pdb (optional)
-FbNetExternalEngineIntegration.dll
-FbNetExternalEngineIntegration.pdb (optional)
-FbNetExternalEngineManagement.dll (optional)
-FbNetExternalEngineManagement.pdb (optional)
-```
+1. Locate `plugins.conf` file in the `examples` directory from the distribution package and append the content to the end of the `plugins.conf` in Firebird installation.
+2. Copy complete `FbNetExternalEngine` directory (directory itself included) from the distribution package into `plugins` directory in Firebird installation. You can optionally remove the `pdb` files, if you're trying to save space.
 
 #### Common requirements (C# terminology)
 
+* Assembly (and dependencies) needs to be loadable by .NET 3.1 (.NET Standard 2.0/2.1 assembly is recommended).
 * Method has to be static.
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
+* "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]).
 
 ##### Supported types (C# terminology)
 
@@ -112,7 +96,7 @@ SQL> execute procedure increment_integer(6);
            6            7
 ```
 
-More examples in `Example.dll` and `Procedures.cs`/`Procedures.sql`.
+More examples in `examples` and `Procedures.cs`/`Procedures.sql`.
 
 #### Functions
 
@@ -160,7 +144,7 @@ INCREMENT_INTEGER
                 7
 ```
 
-More examples in `Example.dll` and `Functions.cs`/`Functions.sql`.
+More examples in `examples` and `Functions.cs`/`Functions.sql`.
 
 #### Triggers
 
@@ -191,7 +175,7 @@ engine FbNetExternalEngine;
 
 At the moment input parameters are not supported (values have to be hardcoded) and at most 32 columns can be selected with `Execute` method.
 
-More examples in `Example.dll` and `ExecutionContext.cs`/`ExecutionContext.sql`.
+More examples in `examples` and `ExecutionContext.cs`/`ExecutionContext.sql`.
 
 #### Management procedures
 
@@ -199,15 +183,15 @@ The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` co
 
 ##### `net$update`
 
-Allows **hot swapping** of assemblies **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` parameter will replace it on the disk and invalidate internal caches. It can be safely called while other _FbNetExternalEngine_ pieces are executing code.
+Allows **hot swapping** of assemblies (dependencies excluded) **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` parameter will replace it on the disk and invalidate internal caches. It can be safely called while other _FbNetExternalEngine_ pieces are executing code.
 
-The assembly is not locked on disk, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
+The assembly (dependencies excluded) is not locked on disk, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
 
 #### Performance
 
-Dummy procedure call is about 2,55× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 6,0 μs per call on my machine. The fetch from stored procedure's result set is about 1,18× slower compared to PSQL.
+Dummy procedure call is about 2,14× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 4,8 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
 
-Dummy function call is about 2,19× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,5 μs per call on my machine.
+Dummy function call is about 1,83× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,0 μs per call on my machine.
 
 As the procedure or function in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
 
@@ -215,8 +199,6 @@ As the procedure or function in .NET becomes more complex the perfomance goes in
 
 These ideas, in no particular order, is what I (or people/companies supporting the plugin) have in mind for the future.
 
-* Explore posibilities of using .NET Core.
-	* Why: Because that would allow using _FbNetExternalEngine_ on Linux servers as well.
 * Add support for `CHARACTER SET OCTETS`.
 	* Why: Because it might be useful for certain scenarios.
 * Add support for `async` methods.
@@ -231,3 +213,5 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 
 [1]: https://portal.fbnetexternalengine.com/Order
 [2]: https://portal.fbnetexternalengine.com/DownloadFree
+[3]: https://aka.ms/vs/16/release/vc_redist.x64.exe
+[4]: https://aka.ms/vs/16/release/vc_redist.x86.exe
