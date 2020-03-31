@@ -27,7 +27,7 @@ You can place the order [here][1]. If you'd like to support the work on _FbNetEx
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * Method names are considered case insensitive.
-* "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]).
+* "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]) (or you can put the files into `FbNetExternalEngine` directory).
 
 ##### Supported types (C# terminology)
 
