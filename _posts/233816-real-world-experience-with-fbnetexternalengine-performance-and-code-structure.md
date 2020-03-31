@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-I'm now going through piece of SQL code that contains a lot of stored procedures from over the years and lately also functions (in last year the migration to Firebird 3 really began) and looking into the code to identify functions and procedures to start the rewriting with using FbNetExternalEngine. I'm at the beginning, but I have some interesting piece I'd like to show.
+I'm now going through piece of SQL code that contains a lot of stored procedures from over the years and lately also functions (in last year the migration to Firebird 3 really began) and looking into the code to identify functions and procedures to start the rewriting with using [_FbNetExternalEngine_][3]. I'm at the beginning, but I have some interesting piece I'd like to show.
 
 <!-- excerpt -->
 
@@ -143,3 +143,4 @@ By doing this I learned two pieces I want to take away from this. First is that 
 
 [1]: {% include post_link, id: "233815" %}
 [2]: https://firebirdsql.org/en/downloads/
+[3]: /tools/fb-net-external-engine
