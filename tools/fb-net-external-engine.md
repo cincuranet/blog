@@ -153,7 +153,7 @@ Not yet supported.
 
 #### Integration interfaces
 
-The extra `FbNetExternalEngineIntegration.dll` contains interfaces to integrate with the _FbNetExternalEngine_.
+The extra `FbNetExternalEngineIntegration.dll` (also available on NuGet as [`FbNetExternalEngine.Integration`][5]) contains interfaces to integrate with the _FbNetExternalEngine_.
 
 ##### `IExecutionContext`
 
@@ -190,9 +190,9 @@ The assembly (dependencies excluded) is not locked on disk, thus you can replace
 
 #### Performance
 
-Dummy procedure call is about 2,14× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 4,8 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
+Dummy procedure call is about 2,09× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 4,8 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
 
-Dummy function call is about 1,83× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,0 μs per call on my machine.
+Dummy function call is about 1,78× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,0 μs per call on my machine.
 
 As the procedure or function in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
 
@@ -216,3 +216,4 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 [2]: https://portal.fbnetexternalengine.com/DownloadFree
 [3]: https://aka.ms/vs/16/release/vc_redist.x64.exe
 [4]: https://aka.ms/vs/16/release/vc_redist.x86.exe
+[5]: https://www.nuget.org/packages/FbNetExternalEngine.Integration
