@@ -24,6 +24,7 @@ You can place the order [here][1]. If you'd like to support the work on _FbNetEx
 
 * Assembly (and dependencies) needs to be loadable by .NET Core 3.1 (.NET Standard 2.0/2.1 assembly is recommended) (the runtime is included with the plugin and .NET Core does not need to be installed separately).
 * Method has to be static.
+* Method and class has to be public.
 * Input arguments have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * Method names, classes and namespaces are considered case insensitive.
@@ -39,7 +40,7 @@ Database `NULL` maps to C# `null`.
 
 ##### SQL definition
 
-The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `plugins` directory.
+The _external name_ is in a form `<assembly>!<namespace>...<class>.<method>`, where the _assembly_ can be absolute or relative path without extension (`.dll`). Relative path is resolved from the `FbNetExternalEngine` directory (inside `plugins`).
 
 ##### Limitations on types
 
