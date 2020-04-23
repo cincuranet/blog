@@ -25,7 +25,7 @@ You can place the order [here][1]. If you'd like to support the work on _FbNetEx
 * Assembly (and dependencies) needs to be loadable by .NET Core 3.1 (.NET Standard 2.0/2.1 assembly is recommended) (the runtime is included with the plugin and .NET Core does not need to be installed separately).
 * Method has to be static.
 * Method and class has to be public.
-* Input arguments have to be from set of supported types (see below).
+* Input parameters have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * Method names, classes and namespaces are considered case insensitive.
 * "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]) (or you can put the files into `FbNetExternalEngine` directory).
@@ -183,11 +183,13 @@ More examples in `examples` and `ExecutionContext.cs`/`ExecutionContext.sql`.
 
 The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` companion) assembly contains useful helpers for managing the plugin.
 
-##### `net$update`
+##### `net$clean`
 
-Allows **hot swapping** of assemblies (dependencies excluded) **from SQL** without restarting the server. Calling this procedure with new assembly data in `data` parameter will replace it on the disk and invalidate internal caches. It can be safely called while other _FbNetExternalEngine_ pieces are executing code.
+_FbNetExternalEngine_ is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
 
-The assembly (dependencies excluded) is not locked on disk, thus you can replace it directly manually as well. Then call the procedure with `data` set to `null`.
+##### `net$declarations`
+
+This procedure shows definitions for all functions or procedures found in assembly passed as a parameter (same rules as for _external name_ apply) which helps validating what the plugin sees and also serves as a helper how the declaration looks (should look) like. To tweak the output `SqlRoutine`, `SqlParameter` and `SqlReturnParameter` attributes are provided in `FbNetExternalEngine.Integration`. Usage examples in `examples`. 
 
 #### Performance
 
@@ -205,8 +207,6 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 	* Why: Because it might be useful for certain scenarios.
 * Add support for `async` methods.
 	* Why: Because it will be convenient.
-* Automatic registration based on metadata using i.e. `net$register`.
-	* Why: Because the metadata in .NET is quite rich and it will be convenient. 
 
 #### Notable sponsors
 
