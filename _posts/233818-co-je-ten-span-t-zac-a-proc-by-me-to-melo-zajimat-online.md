@@ -15,4 +15,6 @@ Když už teď IT, webkamerky a mikrofony drží pro většinu lidí soustruhy v
 
 {% include attachment, post: page, name: "weewx.7z", description: "Zdrojové CSV" %}
 
+{% include rec_wug, id: "610-Co-je-ten-Span-T-zac-a-proc-by-me-to-melo-zajimat" %}
+
 [1]: https://www.wug.cz/online/akce/1109-Co-je-ten-Span-T-zac-a-proc-by-me-to-melo-zajimat
