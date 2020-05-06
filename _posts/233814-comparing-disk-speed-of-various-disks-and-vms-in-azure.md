@@ -119,7 +119,7 @@ Same story, first place for NVMe. Who would have thought, right? :) Now at least
 
 #### Summary
 
-Different workloads have different needs, so measure yourself. Frankly switching between VMs isn't that difficult, so you can change your mind later if needed. And if you relies on best IO subsystem possible, get the Lsv2 and use the NVMe disk available.
+Different workloads have different needs, so measure yourself. Frankly switching between VMs isn't that difficult, so you can change your mind later if needed. And if you relies on best IO subsystem possible, get the Lsv2 and use the NVMe disk available (and also make sure you understand it's an ephemeral disk).
 
 [1]: https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series
 [2]: https://crystalmark.info/en/software/crystaldiskmark/
