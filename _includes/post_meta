@@ -1,5 +1,7 @@
 <p class="meta">
 	<span class="fa fa-calendar" aria-label="Published"></span> {{ post.date | date: "d MMM yyyy" }}
 	<span class="divider"></span>
+	<span class="fa fa-clock-o" aria-label="Time to read"></span> {{ post.TTR }} mins
+	<span class="divider"></span>
 	<span class="fa fa-tags" aria-label="Tags"></span> {{ post.tags | sort | join: ", " }}
 </p>
