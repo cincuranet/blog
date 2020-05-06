@@ -3,7 +3,7 @@ layout: base
 ---
 {%- for post in site.posts limit: site.site_posts -%}
 <article>
-	<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	<h3><a href="{{ post.url }}">{{ post.title | encode }}</a></h3>
 	{% include post_meta, post: post %}
 	{{ post.excerpt }}
 </article>
