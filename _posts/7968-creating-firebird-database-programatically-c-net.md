@@ -22,4 +22,4 @@ static void CreateFBDatabase(string host, string fileName, string user, string p
 }
 ```
 
-[1]: {% include post_link, id: "7953" %}
+[1]: {{ include "post_link" 7953 }}

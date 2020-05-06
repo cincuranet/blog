@@ -11,10 +11,10 @@ You know that feeling. You're working in a project, hammering awesome code line 
 
 Right-click on a solution node and select _Set StartUp Projects..._. The small little radio button on top, called _Current selection_ is your target.
 
-![Current selection]({% include post_ilink, post: page, name: "current_selection.png" %})
+![Current selection]({{ include "post_ilink" page "current_selection.png" }})
 
 From now on, whatever file is opened in editor or whatever file (or any node) is selected in the _Solution Explorer_, marks the corresponding project as a startup project. Here you can see it in action.
 
-![Demo]({% include post_ilink, post: page, name: "demo.gif" %})
+![Demo]({{ include "post_ilink" page "demo.gif" }})
 
 Given that all of this can be done easily using a keyboard, I think, in skilled hands, it can be a good timesaver.

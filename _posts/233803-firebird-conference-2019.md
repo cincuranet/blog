@@ -27,12 +27,12 @@ I'll have 4 sessions, all related to .NET and Firebird. What else, right? Here's
 
 Although the [conference][1] is close, you can still [register][1] and enjoy the content.
 
-{% include attachment, post: page, name: "whats_new.pdf", description: "What's new in .NET driver for Firebird presentation" %}
+{{ include "attachment" page "whats_new.pdf" "What's new in .NET driver for Firebird presentation" }}
 
-{% include attachment, post: page, name: "core.pdf", description: "Using Firebird with .NET Core and Entity Framework Core presentation" %}
+{{ include "attachment" page "core.pdf" "Using Firebird with .NET Core and Entity Framework Core presentation" }}
 
-{% include attachment, post: page, name: "fbnee.pdf", description: "FbNetExternalEngine presentation" %}
+{{ include "attachment" page "fbnee.pdf" "FbNetExternalEngine presentation" }}
 
-{% include attachment, post: page, name: "firebirddbcomparer.pdf", description: "Comparing Firebird databases with FirebirdDbComparer presentation" %}
+{{ include "attachment" page "firebirddbcomparer.pdf" "Comparing Firebird databases with FirebirdDbComparer presentation" }}
 
 [1]: https://firebirdsql.org/en/firebird-conference-2019/

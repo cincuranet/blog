@@ -12,11 +12,11 @@ Azure VMs are great for developers for testing stuff, not only running servers. 
 
 If you go to the VM's blade, then on the left side you can find "Auto-shutdown".
 
-![Auto-shutdown]({% include post_ilink, post: page, name: "001.png" %})
+![Auto-shutdown]({{ include "post_ilink" page "001.png" }})
 
 Clicking on that allows you to specify time when the VM should the turned off (with optional time zone). How convenient is that? 
 
-![Auto-shutdown]({% include post_ilink, post: page, name: "002.png" %})
+![Auto-shutdown]({{ include "post_ilink" page "002.png" }})
 
 You can also specify webhook that the infrastructure will call 15 minutes before the action happens.
 

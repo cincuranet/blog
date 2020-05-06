@@ -2,22 +2,22 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{%- include title -%}</title>
+	<title>{{ include "title" }}</title>
 	<link href="https://{{ site.address }}/{{ site.feed }}" rel="self"/>
 	<link href="https://{{ site.address }}"/>
-	<updated>{{ site.time | date: "yyy-MM-ddTHH:mm:ssZ" }}</updated>
+	<updated>{{ site.time | blog.dt_string "yyyy-MM-ddTHH:mm:ssZ" }}</updated>
 	<author>
-		<name>{% include title %}</name>
+		<name>{{ include "title" }}</name>
 	</author>
 	<id>http://{{ site.address }}/</id>
 
-	{%- for post in site.posts limit: site.feed_posts -%}
+	{{~ for post in site.posts limit: site.feed_posts ~}}
 	<entry>
-		<title>{{ post.title | encode }}></title>
+		<title>{{ post.title | blog.escape }}></title>
 		<link href="https://{{ site.address }}{{ post.url }}?utm_source=feed"/>
-		<updated>{{ post.date | date: "yyy-MM-ddTHH:mm:ssZ" }}</updated>
-		<id>{% include post_uri, post: post %}</id>
+		<updated>{{ post.date | blog.dt_string "yyyy-MM-ddTHH:mm:ssZ" }}</updated>
+		<id>{{ include "post_uri" post }}</id>
 		<content type="html"><![CDATA[{{ post.excerpt }}]]></content>
 	</entry>
-	{%- endfor -%}
+	{{~ end ~}}
 </feed>

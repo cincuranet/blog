@@ -23,5 +23,5 @@ I'm pretty sure this not the last bug there. It's just embarrassing because I kn
 
 The changes are in already released [version 1.1.0][2].
 
-[1]: {% include post_link, id: "233581" %}
+[1]: {{ include "post_link" 233581 }}
 [2]: https://www.nuget.org/packages/SingleExecutable/1.1.0

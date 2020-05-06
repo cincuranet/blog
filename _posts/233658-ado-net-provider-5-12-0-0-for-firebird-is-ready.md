@@ -25,4 +25,4 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2] and [Entity
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
 [4]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10854
-[5]: {% include post_link, id: "233653" %}
+[5]: {{ include "post_link" 233653 }}

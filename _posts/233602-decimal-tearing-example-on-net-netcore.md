@@ -73,4 +73,4 @@ At the time of writing it works successfully on good old .NET Framework `4.0.303
 
 > [Follow-up post.][1]
 
-[1]: {% include post_link, id: "233626" %}
+[1]: {{ include "post_link" 233626 }}

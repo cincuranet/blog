@@ -21,9 +21,9 @@ Here's the [link to Strava][1].
 
 Few images I snapped on top before running down.
 
-[![Kreuzspitze 1]({% include post_ilink, post: page, name: "001_thumb.jpg" %})]({% include post_ilink, post: page, name: "001.jpg" %})
+[![Kreuzspitze 1]({{ include "post_ilink" page "001_thumb.jpg" }})]({{ include "post_ilink" page "001.jpg" }})
 
-[![Kreuzspitze 2]({% include post_ilink, post: page, name: "002_thumb.jpg" %})]({% include post_ilink, post: page, name: "002.jpg" %})
+[![Kreuzspitze 2]({{ include "post_ilink" page "002_thumb.jpg" }})]({{ include "post_ilink" page "002.jpg" }})
 
 Gear used:
 

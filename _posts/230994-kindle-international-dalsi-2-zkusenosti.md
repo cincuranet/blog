@@ -33,4 +33,4 @@ Systém placení bych řekl je nastaven rozumně, aspoň co jsem mohl vyzkoušet
 
 Pokud máte dotaz, opět jsou komentáře k dispozici.
 
-[1]: {% include post_link, id: "230972" %}
+[1]: {{ include "post_link" 230972 }}

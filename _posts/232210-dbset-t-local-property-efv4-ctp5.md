@@ -62,7 +62,7 @@ As always, nothing huge, but nice, handy.
 PS: Did you noticed, I'm using [Firebird][5]? ;)
 
 [1]: http://www.microsoft.com/downloads/en/details.aspx?FamilyID=35adb688-f8a7-4d28-86b1-b6235385389d
-[2]: {% include post_link, id: "231816" %}
-[3]: {% include post_link, id: "229047" %}
+[2]: {{ include "post_link" 231816 }}
+[3]: {{ include "post_link" 229047 }}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx
 [5]: http://www.firebirdsql.org/

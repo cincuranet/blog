@@ -189,8 +189,8 @@ engine FbNetExternalEngine;
 
 Right now I want to gather some feedback from you, work on some easy performance gains and start on functions. All this, at least now, will be _v1_ in my mind.
 
-[1]: {% include post_ilink, post: page, name: "FbNetExternalEngine32.7z" %}
-[2]: {% include post_ilink, post: page, name: "FbNetExternalEngine64.7z" %}
+[1]: {{ include "post_ilink" page "FbNetExternalEngine32.7z" }}
+[2]: {{ include "post_ilink" page "FbNetExternalEngine64.7z" }}
 [3]: https://msdn.microsoft.com/en-us/library/2bh4z9hs(v=vs.110).aspx
 [4]: https://docs.microsoft.com/en-us/dotnet/articles/csharp/whats-new/csharp-7
-[5]: {% include post_link, id: "233566" %}
+[5]: {{ include "post_link" 233566 }}

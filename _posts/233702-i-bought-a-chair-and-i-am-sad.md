@@ -16,4 +16,4 @@ And why sad? I always had (and kind of still have) the feeling that standing was
 
 I have to confront the struggle. This post was written completely while sitting.
 
-[1]: {% include post_link, id: "233442" %}
+[1]: {{ include "post_link" 233442 }}

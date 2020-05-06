@@ -1,1 +1,6 @@
-> [{{ description }} <span class="fa fa-file-text-o" aria-hidden="true"></span>]({% include post_ilink, post: post, name: name %})
+{{- 
+	post = $1
+	name = $2
+	description = $3 
+-}}
+> [{{ description }} <span class="fa fa-file-text-o" aria-hidden="true"></span>]({{ include "post_ilink" post name }})

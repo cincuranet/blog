@@ -176,6 +176,6 @@ I hope you enjoyed this quick overview of NuoDB's Entity Framework support and y
 > Written for [NuoDB's Techblog][4].
 
 [1]: http://www.nuodb.com/devcenter/
-[2]: {% include post_link, id: "232841" %}
+[2]: {{ include "post_link" 232841 }}
 [3]: http://msdn.com/ef
 [4]: http://www.nuodb.com/techblog/2013/08/01/nuodb-dotnet-driver-offers-entity-framework-support/

@@ -132,7 +132,7 @@ I was trying to recall where I've got the idea for `Head`- and `Tail`-like metho
 
 > [Related post.][4]
 
-[1]: {% include post_link, id: "233632" %}
+[1]: {{ include "post_link" 233632 }}
 [2]: https://www.python.org/dev/peps/pep-3132/
 [3]: https://hackage.haskell.org/package/hs-dotnet
-[4]: {% include post_link, id: "233813" %}
+[4]: {{ include "post_link" 233813 }}

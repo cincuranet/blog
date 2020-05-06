@@ -71,6 +71,6 @@ internal static IEnumerable<ParallelProjectionResult<TSource, TResult>> Parallel
 #endregion
 ```
 
-[1]: {% include post_link, id: "231850" %}
+[1]: {{ include "post_link" 231850 }}
 [2]: http://msdn.microsoft.com/en-us/library/system.aggregateexception.aspx
-[3]: {% include post_link, id: "231850" %}
+[3]: {{ include "post_link" 231850 }}

@@ -32,6 +32,6 @@ And although 15 is impressive, 19 is even better. And it looks like this: `from 
 
 Anybody with way too much free time going to crack 20? ;)
 
-[1]: {% include post_link, id: "233768" %}
+[1]: {{ include "post_link" 233768 }}
 [2]: https://www.reddit.com/user/CaptainAdjective
 [3]: https://porg.es/

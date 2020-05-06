@@ -28,4 +28,4 @@ Also make sure to understand [breaking changes in v6 of FirebirdClient][3], whic
 [1]: https://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/6.0.0-beta1
 [2]: https://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/6.0.0-beta1
 [3]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10850
-[4]: {% include post_link, id: "233653" %}
+[4]: {{ include "post_link" 233653 }}

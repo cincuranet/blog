@@ -26,4 +26,4 @@ Enjoy.
 [3]: http://www.firebirdsql.org/en/net-provider/
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/3.2.0/
 [5]: http://tracker.firebirdsql.org/secure/ReleaseNote.jspa?version=10571&styleName=Text&projectId=10003&Create=Create
-[6]: {% include post_link, id: "233412" %}
+[6]: {{ include "post_link" 233412 }}

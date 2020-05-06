@@ -20,9 +20,9 @@ I would love it if you would subscribe to [my blog's feed][4]. I'm also on socia
 
 <h4 id="bio">Bio</h4>
 
-{% include bio_en %}
+{{ include "bio_en" }}
 
-{% include bio_cz %}
+{{ include "bio_cz" }}
 
 #### More info
 

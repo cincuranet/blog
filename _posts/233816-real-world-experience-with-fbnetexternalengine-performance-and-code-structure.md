@@ -141,6 +141,6 @@ From talking with developers, I know, the main hassle is keeping these in sync w
 
 By doing this I learned two pieces I want to take away from this. First is that some code can be easily shared from inside the application all the way into the database, without any manual or scripted synchronization. The other is that the performance is really close to PSQL for real code and as a bonus you have all the .NET libraries at your disposal, not mentioning, in my opinion, nicer language and tooling.
 
-[1]: {% include post_link, id: "233815" %}
+[1]: {{ include "post_link" 233815 }}
 [2]: https://firebirdsql.org/en/downloads/
 [3]: /tools/fb-net-external-engine

@@ -24,6 +24,6 @@ Done. Build and use. And if you want to have it without work, grab [this file wi
 
 [1]: http://code.msdn.microsoft.com/EdmGen2
 [2]: http://msdn.microsoft.com/en-us/library/bb387165.aspx
-[3]: {% include post_link, id: "228787" %}
+[3]: {{ include "post_link" 228787 }}
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.design.aspx
 [5]: http://cid-bdb67deba4c656e5.skydrive.live.com/self.aspx/Ve%c5%99ejn%c3%a9/EdmGen2^_EF4/EdmGen2^_EF4.7z

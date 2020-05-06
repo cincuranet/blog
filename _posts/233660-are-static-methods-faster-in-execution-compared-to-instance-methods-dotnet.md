@@ -79,4 +79,4 @@ Does this all mean one should start writing everything in static methods? Absolu
 [1]: https://twitter.com/RobertHaken/status/928796434257891328
 [2]: https://twitter.com/cincura_net/status/928875934673002496
 [3]: https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.methodimploptions.noinlining?view=netframework-4.7
-[4]: {% include post_link, id: "233661" %}
+[4]: {{ include "post_link" 233661 }}

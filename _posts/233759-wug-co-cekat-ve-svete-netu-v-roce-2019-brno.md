@@ -28,8 +28,8 @@ Podíváme se zhruba - možná něco navíc, možná o něco méně - na tato t�
 > * VS Live Share
 > * Xamarin.Forms 4.0  
 
-{% include attachment, post: page, name: "CoCekatNET2019.pdf", description: "Prezentace" %}
+{{ include "attachment" page "CoCekatNET2019.pdf" "Prezentace" }}
 
-{% include rec_wug, id: "518-Co-cekat-ve-svete-NETu-v-roce-2019" %}
+{{ include "rec_wug" "518-Co-cekat-ve-svete-NETu-v-roce-2019" }}
 
 [1]: https://www.wug.cz/brno/akce/1122-Co-cekat-ve-svete-NETu-v-roce-2019

@@ -41,4 +41,4 @@ using (FbConnection conn = new FbConnection(connectionStringBuilder.ToString()))
 }
 ```
 
-[1]: {% include post_link, id: "225918" %}
+[1]: {{ include "post_link" 225918 }}

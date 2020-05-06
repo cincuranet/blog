@@ -118,7 +118,7 @@ Sadly, although I was able to create type with more than `65535` generic paramet
 
 Surprisingly _ildasm_ shows the type. And _ILSpy_ wraps over the `2^16` and shows just two generic arguments for my type with 65538 of these.
 
-![Type with 65538 generic arguments in ildasm]({% include post_ilink, post: page, name: "65538_generics.png" %})
+![Type with 65538 generic arguments in ildasm]({{ include "post_ilink" page "65538_generics.png" }})
 
 #### Closing
 

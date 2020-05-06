@@ -11,8 +11,8 @@ I don't know how long this feature is in Visual Studio - maybe because I'm more 
 
 If you hover the mouse over a lambda or a local function the hint shows variables captured. This is _so_ useful, especially if you're in a performance sensitive code and you don't want to create (or minimize creating) closures. 
 
-![Captured variables in lambda]({% include post_ilink, post: page, name: "captured_lambda.png" %})
+![Captured variables in lambda]({{ include "post_ilink" page "captured_lambda.png" }})
 
-![Captured variables in local function]({% include post_ilink, post: page, name: "captured_localfunc.png" %})
+![Captured variables in local function]({{ include "post_ilink" page "captured_localfunc.png" }})
 
 This works in my Visual Studio 2017 15.8.0 (latest at the time of writing) and 15.7.something (don't remember exactly, because I updated that machine to 15.8.0 in the meantime).

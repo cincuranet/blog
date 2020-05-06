@@ -67,4 +67,4 @@ Few lines of code and the work is done.
 [3]: http://nlog-project.org/
 [4]: http://en.wikipedia.org/wiki/Aspect-oriented_programming
 [5]: http://docs.castleproject.org/Windsor.Registering-Interceptors-ProxyOptions.ashx
-[6]: {% include post_link, id: "233489" %}
+[6]: {{ include "post_link" 233489 }}

@@ -14,5 +14,5 @@ Also because I learned something about feedback - basically you only hear from p
 
 Enjoy. Issue pull requests.
 
-[1]: {% include post_link, id: "233416" %}
+[1]: {{ include "post_link" 233416 }}
 [2]: https://github.com/cincuranet/log4net-nuget

@@ -101,7 +101,7 @@ Although I was pretty happy with the previous version, using the converter is cl
 > [Follow-up post.][5]
 
 [1]: https://docs.microsoft.com/en-us/ef/core/modeling/value-conversions
-[2]: {% include post_link, id: "233700" %}
-[3]: {% include post_link, id: "233147" %}
+[2]: {{ include "post_link" 233700 }}
+[3]: {{ include "post_link" 233147 }}
 [4]: https://github.com/aspnet/EntityFrameworkCore/issues/11347
-[5]: {% include post_link, id: "233774" %}
+[5]: {{ include "post_link" 233774 }}

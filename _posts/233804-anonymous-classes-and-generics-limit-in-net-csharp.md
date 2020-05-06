@@ -129,9 +129,9 @@ At this time, instead of wasting time (I could instead do some PRs on Roslyn opt
 
 What we can take from this exercise? First, don't write crazy shit. Compilers, although written by smart people, play on the same field as all of us. Then, unbounded recursion might kill your application (sometimes [tail-call optimization][6] can save you), because stack is limited. Think about edge cases and when or if these will be hit.
 
-[1]: {% include post_link, id: "233802" %}
-[2]: {% include post_ilink, post: page, name: "AnonymousClass.cs" %}
+[1]: {{ include "post_link" 233802 }}
+[2]: {{ include "post_ilink" page "AnonymousClass.cs" }}
 [3]: https://github.com/dotnet/roslyn/blob/41548da4df58e5cab883111567160a70827a01cf/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs#L1311
-[4]: {% include post_ilink, post: page, name: "csc.exe" %}
-[5]: {% include post_ilink, post: page, name: "32767.7z" %}
+[4]: {{ include "post_ilink" page "csc.exe" }}
+[5]: {{ include "post_ilink" page "32767.7z" }}
 [6]: https://en.wikipedia.org/wiki/Tail_call

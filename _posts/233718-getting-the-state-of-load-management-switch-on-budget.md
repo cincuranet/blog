@@ -17,11 +17,11 @@ First I bought a flood sensor ([Hank Flood Sensor][4]). It is battery powered an
 
 Then I used an electrical box I had lying around and placed it inside. It looks like this (the box has normally lid on).
 
-![Relay and flood sensor in the electrical box]({% include post_ilink, post: page, name: "box.jpg" %})
+![Relay and flood sensor in the electrical box]({{ include "post_ilink" page "box.jpg" }})
 
 The flood sensor is a simple switch in Domoticz, thus I have a nice graph with history, I can send notifications, etc.
 
-![Graph in Domoticz]({% include post_ilink, post: page, name: "graph.png" %})
+![Graph in Domoticz]({{ include "post_ilink" page "graph.png" }})
 
 Now I can program scenarios to turn devices on and off based on this switch and I can, hopefully, understand a little what's happening in the grid around my house. 8-)
 

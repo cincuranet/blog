@@ -71,4 +71,4 @@ So what to use? I think it's question of personal preferences (and just to be co
 
 _What's your preference?_
 
-[1]: {% include post_link, id: "8310" %}
+[1]: {{ include "post_link" 8310 }}

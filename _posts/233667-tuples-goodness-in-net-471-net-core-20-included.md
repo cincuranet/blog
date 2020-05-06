@@ -37,6 +37,6 @@ static void FooBar(ITuple tuple)
 Sadly, at the moment, the `ITuple` is not part of .NET Standard (2.0), [yet][4].
 
 [1]: https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.ituple%28v=vs.110%29.aspx
-[2]: {% include post_link, id: "233601" %}
-[3]: {% include post_link, id: "233606" %}
+[2]: {{ include "post_link" 233601 }}
+[3]: {{ include "post_link" 233606 }}
 [4]: https://github.com/dotnet/standard/issues/628

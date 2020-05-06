@@ -26,4 +26,4 @@ In case you're you'd like to know what desk I bought, it's [Hobis MS 1400][1] ([
 
 [1]: http://www.hobis.cz/cz/vyskove-stavitelne-stoly-motion-300/elektricky-stav-stul-delky-140-cm-ms-1400
 [2]: http://www.hobis.cz/en/motion-300-adjustable-height-desks/height-adjustable-desk-140cm-ms-1400
-[3]: {% include post_link, id: "233702" %}
+[3]: {{ include "post_link" 233702 }}

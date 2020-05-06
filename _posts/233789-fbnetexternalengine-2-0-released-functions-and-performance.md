@@ -19,5 +19,5 @@ Documentation, examples and performance numbers are available on [this page][1].
 Last but not least big thanks to [SMS-Timing][3] for sponsoring my work on the plugin.
 
 [1]: /tools/fb-net-external-engine
-[2]: {% include post_link, id: "233788" %}
+[2]: {{ include "post_link" 233788 }}
 [3]: http://www.sms-timing.com/

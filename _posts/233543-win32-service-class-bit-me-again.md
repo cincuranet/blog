@@ -14,6 +14,6 @@ After previous trip to wonderland I was taking extra caution when doing anything
 
 I have a feeling this is not the last confusion I'll face.
 
-[1]: {% include post_link, id: "233538" %}
+[1]: {{ include "post_link" 233538 }}
 [2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa389390(v=vs.85).aspx
 [3]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa394418(v=vs.85).aspx

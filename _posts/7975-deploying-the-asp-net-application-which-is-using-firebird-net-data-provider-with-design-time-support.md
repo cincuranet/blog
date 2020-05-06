@@ -28,4 +28,4 @@ After adding this, your app should be able to use not only "code time" Firebird,
 
 If you have any perception to this topic, let me know!
 
-[1]: {% include post_link, id: "7471" %}
+[1]: {{ include "post_link" 7471 }}

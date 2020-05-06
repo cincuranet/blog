@@ -10,5 +10,5 @@ Few days ago we [started using `#efhelp` hashtag for Entity Framework related qu
 
 To make it little bit more pleasant for people interested in `#efhelp`, I created a simple bot, that retweets everything with `#efhelp` under [@EFHelp][2] account. Hence now you can follow this account to be in picture. Also note that posting to that account does nothing because it's not actively monitored.
 
-[1]: {% include post_link, id: "232561" %}
+[1]: {{ include "post_link" 232561 }}
 [2]: http://twitter.com/EFHelp

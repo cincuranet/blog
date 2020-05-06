@@ -59,7 +59,7 @@ All this together, it's clear why the static method is fastest and virtual call 
 
 As I said at the beginning I'm not an expert in processors, JIT or assembly. I was connecting the dots and trying how changing this changes that and whether I can pair it with some other stuff I already knew. At the end this isn't useful for day to day .NET programming, but, hey, the road to the knowledge was an absolute blast.
 
-[1]: {% include post_link, id: "233660" %}
+[1]: {{ include "post_link" 233660 }}
 [2]: https://en.wikipedia.org/wiki/X86_calling_conventions#Microsoft_fastcall
 [3]: https://en.wikipedia.org/wiki/X86_calling_conventions#Microsoft_x64_calling_convention
 [4]: https://en.wikipedia.org/wiki/Segmentation_fault

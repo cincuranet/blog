@@ -10,11 +10,11 @@ Last week I was doing fairly simple change in a project I'm currently working on
 
 First: 
 
-![image]({% include post_ilink, post: page, name: "csharp_crash.png" %})
+![image]({{ include "post_ilink" page "csharp_crash.png" }})
 
 Quickly followed by: 
 
-![image]({% include post_ilink, post: page, name: "csharp_crash2.png" %})
+![image]({{ include "post_ilink" page "csharp_crash2.png" }})
 
 Well, let's try some basic healing steps. Restarting Visual Studio (2012); no luck. Deleting all `bin`, `obj` etc. and restarting Visual Studio; no luck either. OK, time to use big guns. Restarting complete machine; no luck.
 

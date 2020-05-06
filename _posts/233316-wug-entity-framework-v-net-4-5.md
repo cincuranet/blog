@@ -14,7 +14,7 @@ Zaměřím se na ne tak běžné věci, např.: detailní popisy mapováni v Cod
 
 [Link na registraci.][3]
 
-> [Slajdy]({% include post_ilink, post: page, name: "wug-ef5-6.pdf" %}) a [zdrojáky]({% include post_ilink, post: page, name: "ConsoleApplication2.7z" %}).
+> [Slajdy]({{ include "post_ilink" page "wug-ef5-6.pdf" }}) a [zdrojáky]({{ include "post_ilink" page "ConsoleApplication2.7z" }}).
 
 [1]: http://msdn.com/ef
 [2]: http://www.wug.cz

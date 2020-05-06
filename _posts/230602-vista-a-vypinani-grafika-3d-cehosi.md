@@ -13,4 +13,4 @@ Vzal jsem první WPF sample s pěknou 3D animací a udělal z toho aplikaci, bez
 
 Zde je vidět desktop s běžící aplikací:
 
-![image]({% include post_ilink, post: page, name: "desktop_CubeAnimation.jpg" %})
+![image]({{ include "post_ilink" page "desktop_CubeAnimation.jpg" }})

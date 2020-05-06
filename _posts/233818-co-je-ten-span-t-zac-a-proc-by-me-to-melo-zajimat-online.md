@@ -11,10 +11,10 @@ Když už teď IT, webkamerky a mikrofony drží pro většinu lidí soustruhy v
 
 > Span<T> přišel z ničeho nic a je opředen tajemstvím. Co se za ním vlastně skrývá a co vlastně reprezentuje pro běžného vývojáře?
 
-{% include attachment, post: page, name: "Program.cs", description: "Kód" %}
+{{ include "attachment" page "Program.cs" "Kód" }}
 
-{% include attachment, post: page, name: "weewx.7z", description: "Zdrojové CSV" %}
+{{ include "attachment" page "weewx.7z" "Zdrojové CSV" }}
 
-{% include rec_wug, id: "610-Co-je-ten-Span-T-zac-a-proc-by-me-to-melo-zajimat" %}
+{{ include "rec_wug" "610-Co-je-ten-Span-T-zac-a-proc-by-me-to-melo-zajimat" }}
 
 [1]: https://www.wug.cz/online/akce/1109-Co-je-ten-Span-T-zac-a-proc-by-me-to-melo-zajimat

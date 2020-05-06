@@ -14,4 +14,4 @@ function fn_update($path = ".") {tortoiseproc /command:update /path:$path}
 function fn_commit($path = ".") {tortoiseproc /command:commit /path:$path}
 ```
 
-[1]: {% include post_link, id: "231239" %}
+[1]: {{ include "post_link" 231239 }}

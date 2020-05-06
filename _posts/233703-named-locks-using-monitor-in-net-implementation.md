@@ -77,4 +77,4 @@ For me both options look the same in terms of effort. But I wouldn't use the int
 [2]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.semaphore?view=netframework-4.7.1
 [3]: https://en.wikipedia.org/wiki/String_interning
 [4]: https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=netframework-4.7.1
-[5]: {% include post_link, id: "233704" %}
+[5]: {{ include "post_link" 233704 }}

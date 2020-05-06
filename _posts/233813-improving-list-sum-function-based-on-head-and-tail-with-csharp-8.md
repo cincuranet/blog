@@ -109,6 +109,6 @@ int Sum(List<int> list) => list switch
 
 I am happy with it. I think this is as good as it gets right now. Or is it?
 
-[1]: {% include post_link, id: "233633" %}
+[1]: {{ include "post_link" 233633 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching#var-declarations-in-case-expressions
 [3]: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#property-patterns

@@ -23,5 +23,5 @@ Console.WriteLine(((ObjectQuery)q).ToTraceString());
 
 This will show you the query, that's sent to store you're using (mainly relational database). Neat and easy.
 
-[1]: {% include post_link, id: "233077" %}
+[1]: {{ include "post_link" 233077 }}
 [2]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectquery.totracestring.aspx

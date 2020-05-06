@@ -11,13 +11,13 @@ Global Azure Bootcamp 2018. Jeden den, Azure po celém světě. A taky [v Čech�
 
 <!-- excerpt -->
 
-![Leták]({% include post_ilink, post: page, name: "letak.png" %}) 
+![Leták]({{ include "post_ilink" page "letak.png" }}) 
 
 > CDNka na Azure je možná trochu opomíjená funkce a přitom může některé problémy krásně vyřešit. Podíváme se společně jak na klasické využití pro statický obsah, tak i nově pro akceleraci dynamického obsahu.
 
 Registrace [zde][2].
 
-{% include rec_youtube, id: "15E7dqkwM9A" %}
+{{ include "rec_youtube" "15E7dqkwM9A" }}
 
 [1]: http://www.azurebootcamp.cz/
 [2]: https://www.geekcore.cz/events/6107

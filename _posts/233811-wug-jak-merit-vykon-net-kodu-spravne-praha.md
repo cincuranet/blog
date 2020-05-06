@@ -11,10 +11,10 @@ Každý potřebuje občas měřit rychlost kódu, že jo? Někdy pro porovnání
 
 > Ačkoli obyčejné stopky a spuštění "konzolovky" může vypadat jako dobrý nápad pro měření výkonu, není to tak. .NET aplikace mají plno koleček, které se točí. Jak tedy korektně změřit a porovnat výkon kódu? Kde jsou chytáky? 
 
-{% include attachment, post: page, name: "benchmarking.pdf", description: "Prezentace" %}
+{{ include "attachment" page "benchmarking.pdf" "Prezentace" }}
 
-{% include attachment, post: page, name: "LoopFun.7z", description: "Kód 1" %}
+{{ include "attachment" page "LoopFun.7z" "Kód 1" }}
 
-{% include attachment, post: page, name: "SomeBenchmarks.7z", description: "Kód 2" %}
+{{ include "attachment" page "SomeBenchmarks.7z" "Kód 2" }}
 
 [1]: https://www.wug.cz/praha/akce/1253-Jak-merit-vykon-NET-kodu-spravne

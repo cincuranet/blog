@@ -13,6 +13,6 @@ The _Run to Cursor_ feature (shortcut `Ctrl-F10`) is my favorite feature. It all
 
 As you're debugging, very likely you're stepping into some functions (`F11`) and going deeper and deeper. Once you nailed it or fixed it, you might want to jump out of this hole and continue where you started. You can do bunch of `Shift-F11`s to jump out of the function(s), but you can do better. Right click on a frame in _Call Stack_ window and voilà, the _Run to Cursor_ (same `Ctrl-F10` shortcut) is there. Although same result can be achieve using different steps too, this one is very smooth.
 
-![Run To Cursor in Call Stack window]({% include post_ilink, post: page, name: "run_to_cursor_call_stack.png" %})
+![Run To Cursor in Call Stack window]({{ include "post_ilink" page "run_to_cursor_call_stack.png" }})
 
 Another tool into my, and your, toolbelt to be efficient while debugging.

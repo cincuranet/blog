@@ -96,5 +96,5 @@ With that in place I can easily catch big blocks of comments so it is caught eve
 As usual with such tools, this is not perfect. One can outsmart it easily. And I don't want to make it super smart. Then it becomes a cat vs mouse fight instead of a safety net for clean(er) code. I'm trying to teach people that everybody will benefit from clean code at the end (failing so far, if you'd like to ask).
 
 [1]: http://www.ndepend.com/docs/code-metrics#NbLinesOfComment
-[2]: {% include post_link, id: "233551" %}
+[2]: {{ include "post_link" 233551 }}
 [3]: https://confluence.jetbrains.com/display/TCD10/Build+Script+Interaction+with+TeamCity#BuildScriptInteractionwithTeamCity-ReportingBuildProblems

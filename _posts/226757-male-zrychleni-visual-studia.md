@@ -11,4 +11,4 @@ Tools > Options > Text Editor > Track Changes.
 
 Používá někdo z vás tuto "lištu" vedomě?
 
-[1]: {% include post_link, id: "8358" %}
+[1]: {{ include "post_link" 8358 }}

@@ -138,4 +138,4 @@ This finally makes SQL Server unhappy and results in an exception telling me `Th
 This was a nice play with expressions. And as I'm finishing writing this post I'm thinking whether the fact that Entity Framework generates the `IN` clause with values, and goes into the hassle of escaping, instead of parameters has something to do with this limit. 🤔
 
 [1]: https://en.wikipedia.org/wiki/Closure_(computer_programming)
-[2]: {% include post_link, id: "233630" %}
+[2]: {{ include "post_link" 233630 }}

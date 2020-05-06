@@ -33,7 +33,7 @@ class FooBar
 }
 ```
 
-[1]: {% include post_link, id: "227674" %}
+[1]: {{ include "post_link" 227674 }}
 [2]: http://msdn.microsoft.com/en-us/library/system.data.entity.dbcontext(v=vs.103).aspx
 [3]: http://msdn.microsoft.com/en-us/library/gg679233(v=vs.103).aspx
 [4]: http://msdn.microsoft.com/en-us/library/system.data.entity.infrastructure.dbquery.tostring(v=vs.103).aspx

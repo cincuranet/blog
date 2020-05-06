@@ -27,6 +27,6 @@ Podíváme se zhruba - možná něco navíc, možná o něco méně - na tato t�
 > * .NET Foundation
 > * VS Live Share  
 
-{% include attachment, post: page, name: "CoCekatNET2019.pdf", description: "Prezentace" %}
+{{ include "attachment" page "CoCekatNET2019.pdf" "Prezentace" }}
 
 [1]: https://wug.cz/zlin/akce/1129-Co-cekat-ve-svete-NETu-v-roce-2019

@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{% if page.title %}{{ page.title }} | {% endif %}{% include title %}</title>
+	<title>{{ if page.title }}{{ page.title }} | {{ end }}{{ include "title" }}</title>
 	<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-	<link rel="alternate" type="application/atom+xml" title="{% include title %}" href="/{{ site.feed }}" />
+	<link rel="alternate" type="application/atom+xml" title="{{ include "title" }}" href="/{{ site.feed }}" />
 
-	<link rel="stylesheet" href="/assets/style.v__{% file_hash /assets/style.css %}.css" media="all" />
-	<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.v__{% file_hash /assets/font-awesome/css/font-awesome.min.css %}.css" media="all" />
-	<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.min.v__{% file_hash /assets/fancybox/jquery.fancybox.min.css %}.css" media="all" />
+	<link rel="stylesheet" href="/assets/style.v__{{ blog.file_hash "/assets/style.css" }}.css" media="all" />
+	<link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.v__{{ blog.file_hash "/assets/font-awesome/css/font-awesome.min.css" }}.css" media="all" />
+	<link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.min.v__{{ blog.file_hash "/assets/fancybox/jquery.fancybox.min.css" }}.css" media="all" />
 </head>
 <body>
 <div id="wrapper">
@@ -25,10 +25,10 @@
 	</nav>
 
 	<header>
-		{%- capture heading1_accent -%}<span class="accent">{{ site.heading1_accent }}</span>{%- endcapture -%}
-		{%- capture heading2_accent -%}<span class="accent">{{ site.heading2_accent }}</span>{%- endcapture -%}
-		<h1><a href="/">{{ site.heading1 | replace: site.heading1_accent,heading1_accent }}</a></h1>
-		<h2><span class="accent">by</span> {{ site.heading2 | replace: site.heading2_accent,heading2_accent }}</h2>
+		{{- capture heading1_accent -}}<span class="accent">{{ site.heading1_accent }}</span>{{ end }}
+		{{- capture heading2_accent -}}<span class="accent">{{ site.heading2_accent }}</span>{{ end }}
+		<h1><a href="/">{{ site.heading1 | string.replace site.heading1_accent heading1_accent }}</a></h1>
+		<h2><span class="accent">by</span> {{ site.heading2 | string.replace site.heading2_accent heading2_accent }}</h2>
 	</header>
 
 	<main>
@@ -40,9 +40,9 @@
 	</footer>
 </div>
 
-<script type="text/javascript" src="/assets/jquery/jquery.min.v__{% file_hash /assets/jquery/jquery.min.js %}.js"></script>
-<script type="text/javascript" src="/assets/fancybox/jquery.fancybox.min.v__{% file_hash /assets/fancybox/jquery.fancybox.min.js %}.js"></script>
-<script type="text/javascript" src="/assets/blog.v__{% file_hash /assets/blog.js %}.js"></script>
+<script type="text/javascript" src="/assets/jquery/jquery.min.v__{{ blog.file_hash "/assets/jquery/jquery.min.js" }}.js"></script>
+<script type="text/javascript" src="/assets/fancybox/jquery.fancybox.min.v__{{ blog.file_hash "/assets/fancybox/jquery.fancybox.min.js" }}.js"></script>
+<script type="text/javascript" src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
 
 <script type="text/javascript">
 var appInsights=window.appInsights||function(a){

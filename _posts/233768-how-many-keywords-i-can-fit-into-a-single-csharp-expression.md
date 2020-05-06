@@ -31,5 +31,5 @@ The `case null when await this is false` is the answer. At this point I ran out 
 
 > [Related post.][2]
 
-[1]: {% include post_link, id: "233767" %}
-[2]: {% include post_link, id: "233771" %}
+[1]: {{ include "post_link" 233767 }}
+[2]: {{ include "post_link" 233771 }}

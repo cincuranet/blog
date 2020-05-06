@@ -45,4 +45,4 @@ It's very raw approach. There's no other checking whether the file is really Fir
 
 [1]: http://www.firebirdsql.org/manual/nbackup-functions-params.html
 [2]: http://tracker.firebirdsql.org/browse/CORE-5085
-[3]: {% include post_link, id: "233634" %}
+[3]: {{ include "post_link" 233634 }}

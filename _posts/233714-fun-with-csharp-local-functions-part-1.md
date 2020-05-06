@@ -70,5 +70,5 @@ public static void FooBar(int x)
 
 Well, that works. In this particular piece of code, it's not that difficult to see where the trick is, but I'm sure one can come up with elaborate way(s) to hide it into regular code. ;)
 
-[1]: {% include post_link, id: "233715" %}
+[1]: {{ include "post_link" 233715 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions

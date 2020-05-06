@@ -26,7 +26,7 @@ The graphs show comparison where `> 0%` means `ConcurrentDictionary<TKey, TValue
 
 Well, with one lock it's questionable whether you need named locks, but let's take it as an edge case and starting point.
 
-![Locks=1]({% include post_ilink, post: page, name: "L1.svg" %})
+![Locks=1]({{ include "post_ilink" page "L1.svg" }})
 
 For one lock the string interning is winner for small number of accesses, although it's starting to lose its edge once number of accesses starts growing. The numbers for number of tasks are not smooth, yet one can see small trend across.
 
@@ -34,7 +34,7 @@ For one lock the string interning is winner for small number of accesses, althou
 
 This number of locks (together with 100) I consider as something most developers would need. Not a huge number where I would start thinking about different solution (and maybe even distributed locks).
 
-![Locks=20]({% include post_ilink, post: page, name: "L20.svg" %})
+![Locks=20]({{ include "post_ilink" page "L20.svg" }})
 
 The graph has similar shape as the previous one, but smoother (also the range is different). Somewhere around 20 accesses the `ConcurrentDictionary<TKey, TValue>` starts to clearly win. I hope for 100 locks the results will be similar, because that would validate my `ConcurrentDictionary<TKey, TValue>` preference. :)
 
@@ -42,7 +42,7 @@ The graph has similar shape as the previous one, but smoother (also the range is
 
 As I said in paragraph for 20 locks, this number of locks feels like a good fit for the solution we're talking here about.
 
-![Locks=100]({% include post_ilink, post: page, name: "L100.svg" %})
+![Locks=100]({{ include "post_ilink" page "L100.svg" }})
 
 For one access the drop continues, but again around 20 accesses the `ConcurrentDictionary<TKey, TValue>` starts to win. And the trend continues. I like that. :)
 
@@ -50,7 +50,7 @@ For one access the drop continues, but again around 20 accesses the `ConcurrentD
 
 Mostly to see whether there will be some drop, I tested also 1000 locks. 
 
-![Locks=1000]({% include post_ilink, post: page, name: "L1000.svg" %})
+![Locks=1000]({{ include "post_ilink" page "L1000.svg" }})
 
 Luckily, the results are not surprising and follow the trend started in previous instances.
 
@@ -493,4 +493,4 @@ class InternLock : ILockTester
 }
 ```
 
-[1]: {% include post_link, id: "233703" %}
+[1]: {{ include "post_link" 233703 }}

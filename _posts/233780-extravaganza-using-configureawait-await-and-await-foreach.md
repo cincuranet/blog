@@ -83,5 +83,5 @@ class Test : IAsyncDisposable
 }
 ```
 
-[1]: {% include post_link, id: "233779" %}
+[1]: {{ include "post_link" 233779 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams

@@ -53,5 +53,5 @@ bool FixupImpl(string database, long position, byte lockedByte, byte unlockedByt
 
 Let's hope the [API][2] will be available in Firebird 4 and I'll be able to delete the code. :) 
 
-[1]: {% include post_link, id: "233547" %}
+[1]: {{ include "post_link" 233547 }}
 [2]: http://tracker.firebirdsql.org/browse/CORE-5085

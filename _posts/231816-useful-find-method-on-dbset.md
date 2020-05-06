@@ -31,5 +31,5 @@ using (testEntities ent = new testEntities())
 It's nothing from what you'll be excited couple of hours, but every little counts.
 
 [1]: http://msdn.microsoft.com/en-us/library/system.data.objects.objectstatemanager.aspx
-[2]: {% include post_link, id: "229047" %}
+[2]: {{ include "post_link" 229047 }}
 [3]: http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=4e094902-aeff-4ee2-a12d-5881d4b0dd3e

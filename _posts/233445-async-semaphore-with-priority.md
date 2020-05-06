@@ -106,4 +106,4 @@ Enjoy. Improvements are welcome.
 [3]: http://blogs.msdn.com/b/pfxteam/archive/2012/02/12/10266983.aspx
 [4]: http://msdn.microsoft.com/en-us/library/hh462723(v=vs.110).aspx
 [5]: http://msdn.microsoft.com/en-us/library/dd449202(v=vs.110).aspx
-[6]: {% include post_link, id: "233486" %}
+[6]: {{ include "post_link" 233486 }}

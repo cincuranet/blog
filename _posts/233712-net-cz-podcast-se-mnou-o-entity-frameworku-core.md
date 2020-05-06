@@ -11,5 +11,5 @@ Fíha, to byl ale hektický závěr týdne. Ve čtvrtek, ještě před [WUGem][3
 
 [1]: https://soundcloud.com/msimecek/sets/net-cz-podcast
 [2]: https://soundcloud.com/msimecek/dotnet-cz-episode-24
-[3]: {% include post_link, id: "233709" %}
-[4]: {% include post_link, id: "233710" %}
+[3]: {{ include "post_link" 233709 }}
+[4]: {{ include "post_link" 233710 }}

@@ -36,7 +36,7 @@ And now in mapping you'll just use the expressions.
 
 Nice isn't it? It's separated (kind of - you can't have entity classes in one assembly and the expressions in other) and it's strongly typed.
 
-[1]: {% include post_link, id: "232147" %}
+[1]: {{ include "post_link" 232147 }}
 [2]: http://blogs.msdn.com/b/adonet/archive/2012/02/09/ef-4-3-released.aspx
 [3]: http://nuget.org/packages/Mono.Linq.Expressions
-[4]: {% include post_link, id: "232147" %}
+[4]: {{ include "post_link" 232147 }}

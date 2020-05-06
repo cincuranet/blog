@@ -67,5 +67,5 @@ Shift-Alt-F11
 >
 ```
 
-[1]: {% include post_link, id: "233262" %}
+[1]: {{ include "post_link" 233262 }}
 [2]: http://www.teched.cz

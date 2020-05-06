@@ -13,7 +13,7 @@ The [Multisensor 6 from Aeotec][2] is a nice little device. I have three of thes
 
 It's mostly related to negative values, because that's where the values fall appart. Let's take the example from documentation. Setting the offset to -2,5 °C. That's `256 - 25`. `231` in dec or `E7` in hex. Thus, the final value is `0xE701` (for °C). This is `59137` in dec. Sadly, typing this as a configuration value was not working for me (with the current version of Domoticz). I had to put `‭-6399‬`. That's the same value, but converted to `short` (compared to `ushort`). You can get the value simply by subtracting `65536` from the value you computed (i.e. `59137`). Also you can switch the calculator in Windows, in _Programmer_ mode, to `WORD` size and you'll get the same value in `DEC` row.
 
-![WORD value in calculator]({% include post_ilink, post: page, name: "calc.png" %})
+![WORD value in calculator]({{ include "post_ilink" page "calc.png" }})
 
 More examples (all for °C): 
 

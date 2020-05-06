@@ -11,10 +11,10 @@ I'm pretty sure you know what the red squiggle in Visual Studio means (correct, 
 
 Back to the purple color. If you use _Edit and Continue_ while debugging and you make so called unauthorized edit - basically changing structure of the code, not only the code itself - the purple squiggle appears. Because you're in debugging your _Error List_ window is probably not visible, but Visual Studio tells you what happened.
 
-![Error in Error List]({% include post_ilink, post: page, name: "error.png" %})
+![Error in Error List]({{ include "post_ilink" page "error.png" }})
 
 If such purple squiggle is in your code path, you have to restart your debugging session.
 
 Wanna see it with your own eyes? Here's a simple example.
 
-![Purple squiggle in action]({% include post_ilink, post: page, name: "purple_squiggle.gif" %})
+![Purple squiggle in action]({{ include "post_ilink" page "purple_squiggle.gif" }})

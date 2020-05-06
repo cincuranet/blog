@@ -20,5 +20,5 @@ I simply pre-generated these blobs for next 20 years. Solved. The application ca
 So, what's the lesson? If you can (use common sense) pre-generate it, pre-generate it. Like this blog, for example. :)
 
 [1]: https://docs.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs#about-append-blobs
-[2]: {% include post_link, id: "233597" %}
+[2]: {{ include "post_link" 233597 }}
 [3]: https://azure.microsoft.com/en-us/services/application-insights/

@@ -32,4 +32,4 @@ internal static IEnumerable<T> Interleave<T>(this IEnumerable<T> first, IEnumera
 
 It keeps reading elements from the first stream and if there's enough in the second stream then interleave. If the second one isn't "long" enough, it'll keep returning only items from first one. If the second one is "longer", it'll stop when the first one is empty. If you need handle these cases differently, you can either change the method or preprocess the streams before using this method.
 
-[1]: {% include post_link, id: "233517" %}
+[1]: {{ include "post_link" 233517 }}

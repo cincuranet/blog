@@ -2,15 +2,15 @@
 layout: base
 ---
 <article>
-	<h3>{{ page.title | encode }} <a href="{% include post_permalink, post: page %}" rel="bookmark nofollow" title="Permalink"><span class="fa fa-link" aria-label="Permalink"></span></a></h3>
-	{% include post_meta, post: page %}
+	<h3>{{ page.title | blog.escape }} <a href="{{ include "post_permalink" page }}" rel="bookmark nofollow" title="Permalink"><span class="fa fa-link" aria-label="Permalink"></span></a></h3>
+	{{ include "post_meta" page }}
 {{ content }}
 </article>
 
 <article>
 	<p class="bio">
 		<a href="/about"><img src="/assets/bio_image.png" alt="Profile Picture" /></a>
-		{% include bio_en %}
+		{{ include "bio_en" }}
 	</p>
 </article>
 
@@ -19,6 +19,6 @@ layout: base
 </div>
 
 <script type="text/javascript">
-	var comments_id = '{% include post_uri, post: page %}';
+	var comments_id = '{{ include "post_uri" page }}';
 	var is_post = true;
 </script>

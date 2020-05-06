@@ -41,6 +41,6 @@ Although a lot of articles mentions this with respect to video, it applies to au
 
 Now I can nicely enjoy my music and relax. 
 
-[1]: {% include post_link, id: "233491" %}
+[1]: {{ include "post_link" 233491 }}
 [2]: http://kodi.wiki/view/HOW-TO:Modify_the_video_cache#Cache_settings
 [3]: http://kodi.wiki/view/Advancedsettings.xml

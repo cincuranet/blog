@@ -1,1 +1,1 @@
-http://{{ site.address }}{% include post_permalink, post: post %}
+http://{{ site.address }}{{ include "post_permalink" $1 }}

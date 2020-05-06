@@ -12,7 +12,7 @@ Zanedlouho, konkrétně 28.5.-29.5., se uskuteční zajímavá konference nazvan
 
 Já vám povím o tom, jak využít nejen nových vlastností C#, ale i kompilátoru Roslyn pro zjednodušení práce. Protože méně manuálně napsaných řádků, je méně možných chyb.
 
-![Banner]({% include post_ilink, post: page, name: "banner.jpg" %})
+![Banner]({{ include "post_ilink" page "banner.jpg" }})
 
 > Nové verze C#, ačkoli se většinou mluví o hlavních novinkách, přinášejí také malé syntaktické vychytávky. A právě tyto mohou pomoci zjednodušit kód či nahradit hromadu helper funkcí. A co lepšího pro codebase udělat, než smazat řádky kódu. Ukážu vám ty, které jsem na vlastní klávesnici použil a které mohou být zajímavé i pro vás.
 

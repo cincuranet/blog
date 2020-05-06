@@ -1,1 +1,1 @@
-{% for post in site.posts %}{% if post.id == id %}{{ post.url }}{% break %}{% endif %}{% endfor %}
+{{ site.posts_by_id[$1].url }}

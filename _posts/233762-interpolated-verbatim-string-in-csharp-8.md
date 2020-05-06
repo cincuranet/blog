@@ -13,12 +13,12 @@ Today, if you want to use interpolated verbatim string, you have to place the `$
 
 But having to type it in correct order was apparently pain in the ass and so in C# 8 the order will not matter. You can try that in i.e. preview of VS 2019 or [here][2].
 
-![interpolated verbatim string in VS 2019 Preview]({% include post_ilink, post: page, name: "string.gif" %})
+![interpolated verbatim string in VS 2019 Preview]({{ include "post_ilink" page "string.gif" }})
 
 ##### Update
 
 Visual Studio 2019 starting with Preview 2 contains auto-fixer to replace `@$"` with `$@"`.
 
-[1]: {% include post_link, id: "233761" %}
+[1]: {{ include "post_link" 233761 }}
 [2]: https://sharplab.io/#v2:EYLgtghgzgLgpgJwDQxAN0QSwGYE8A+AAgAwAEhAjANwCwAUPQHYRhxQAOEAxnKQMowEmRgHMAcizace9AN71Si8gCZyFAOwKl8ukr1qAbOQAspALIRhACkrEA2gF1SEBCKgBKLftI7v3tC6kUBSkALzkhAAkAETwsHIAIhDwACqYrAB0ZsIAahAANgCucAC+0bS6fnoBCEGq4ZGEhLFsMInJcGmZ2Yx5RaXlXvolQyN0Y0A
-[3]: {% include post_link, id: "233755" %}
+[3]: {{ include "post_link" 233755 }}

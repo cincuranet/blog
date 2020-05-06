@@ -20,7 +20,7 @@ In your PowerShell profile (`$PROFILE`) you can specify `Prompt` function and ha
 
 Here's how it looks like.
 
-![image]({% include post_ilink, post: page, name: "prompt.png" %})
+![image]({{ include "post_ilink" page "prompt.png" }})
 
 So my `Prompt` function look like this.
 

@@ -19,5 +19,5 @@ Pokud to shrnu a porovnám s [loňským][1] ročníkem, musím konstatovat, že 
 
 <small>Pozn.: Fotky by se měly objevit na dbsvet.cz (dříve či později).</small>
 
-[1]: {% include post_link, id: "146047" %}
+[1]: {{ include "post_link" 146047 }}
 [2]: http://www.dbsvet.cz/view.php?cisloclanku=2007103101

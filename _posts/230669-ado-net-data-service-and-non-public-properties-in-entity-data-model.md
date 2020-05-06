@@ -13,4 +13,4 @@ I understand that hiding setter causes the updates or inserts to stop working. B
 Anyway it was really "interesting" ;) to find this out.
 
 [1]: http://msdn.microsoft.com/en-us/library/system.data.services.entitysetrights.aspx
-[2]: {% include post_link, id: "230674" %}
+[2]: {{ include "post_link" 230674 }}

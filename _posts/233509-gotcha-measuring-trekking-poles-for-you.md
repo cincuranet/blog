@@ -15,7 +15,7 @@ Order placed and I was awaiting the package. When it arrived and I unfolded the 
 
 The measuring and selecting is little tricky. As it turned out the length of the pole is length or complete pole. From tip to the end of the handle. But your hand is holding the handle bit below the edge. So you really need to measure the hand to the very top and maybe even add one or two centimeters when comparing the length declared by manufacturer. I.e. this image - from [Black Diamond][1] as I was buying Black Diamond poles - is pretty off.
 
-![Measuring Poles]({% include post_ilink, post: page, name: "bd-poles-measuring.png" %})
+![Measuring Poles]({{ include "post_ilink" page "bd-poles-measuring.png" }})
 
 Hope it helps you to select proper length on a first try. In case you're wandering what I've got it's [Distance Carbon Z Trekking Poles][2].
 

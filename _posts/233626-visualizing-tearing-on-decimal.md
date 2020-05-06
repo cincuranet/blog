@@ -101,6 +101,6 @@ Running this on .NET Core (but works fine on .NET as well) shows nicely the spli
 
 What a nice result. The [underlying values][3] are clearly visible (the boundaries between them). 
 
-[1]: {% include post_link, id: "233602" %}
+[1]: {{ include "post_link" 233602 }}
 [2]: /about
 [3]: https://referencesource.microsoft.com/#mscorlib/system/decimal.cs,145

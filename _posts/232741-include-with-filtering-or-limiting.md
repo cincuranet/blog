@@ -69,11 +69,11 @@ context.EntitySet
 
 That's all. 8-)
 
-[1]: {% include post_link, id: "229660" %}
+[1]: {{ include "post_link" 229660 }}
 [2]: http://msdn.microsoft.com/en-us/library/bb738708.aspx
 [3]: http://msdn.microsoft.com/en-us/library/9eekhta0.aspx
 [4]: http://msdn.microsoft.com/en-us/data/aa937723
-[5]: {% include post_link, id: "229660" %}
+[5]: {{ include "post_link" 229660 }}
 [6]: http://msdn.microsoft.com/en-us/library/9eekhta0.aspx
 [7]: http://blogs.msdn.com/b/meek/archive/2008/05/02/linq-to-entities-combining-predicates.aspx
 [8]: http://nuget.org/packages/Mono.Linq.Expressions

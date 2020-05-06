@@ -13,4 +13,4 @@ tags:
 You can download it from [FirebirdSQL.org site][1].
 
 [1]: http://www.firebirdsql.org/en/net-provider/
-[2]: {% include post_link, id: "233441" %}
+[2]: {{ include "post_link" 233441 }}

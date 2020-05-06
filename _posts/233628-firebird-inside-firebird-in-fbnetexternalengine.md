@@ -163,7 +163,7 @@ Rows as expected. This I think is very useful scenario. One can easily load or d
 
 What I like is that with the _FbNetExternalEngine_ you have a lot of options, whole .NET Framework ecosystem is available with little effort directly from SQL. Looking forward to see what people will do (and what crazy idea I'll get). 
 
-[1]: {% include post_link, id: "233625" %}
+[1]: {{ include "post_link" 233625 }}
 [2]: https://firebirdsql.org/
 [3]: https://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [4]: https://azure.microsoft.com/en-us/services/sql-database/?v=16.50

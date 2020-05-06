@@ -15,4 +15,4 @@ Hope it speeds up some of your testing.
 
 [1]: https://firebirdsql.org/file/documentation/release_notes/html/en/3_0/rnfb30-apiods.html#rnfb30-apiods-transaclimit
 [2]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient
-[3]: {% include post_ilink, post: page, name: "tx.7z" %}
+[3]: {{ include "post_ilink" page "tx.7z" }}

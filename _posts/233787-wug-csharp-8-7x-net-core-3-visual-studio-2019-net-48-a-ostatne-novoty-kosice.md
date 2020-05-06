@@ -9,8 +9,8 @@ V .NETu se dějou v posledních měsích velké změny. Trochu toho zmatku si sr
 
 <!-- excerpt -->
 
-{% include attachment, post: page, name: "slides.pdf", description: "Prezentace" %}
+{{ include "attachment" page "slides.pdf" "Prezentace" }}
 
-{% include attachment, post: page, name: "csharp8.cs", description: "C# 8.0 dema" %}
+{{ include "attachment" page "csharp8.cs" "C# 8.0 dema" }}
 
 [1]: https://www.wug.sk/?name=events&e=262

@@ -10,5 +10,5 @@ tags:
 
 The Prague Post je [k dispozici][2] pro Kindle. Stále jsou to sice anglicky psané noviny. Ne masové jako třeba lidovky, ale každý malý krok se počítá.
 
-[1]: {% include post_link, id: "231124" %}
+[1]: {{ include "post_link" 231124 }}
 [2]: http://www.amazon.com/The-Prague-Post/dp/B002R5BF50/ref=sr_1_1?ie=UTF8&s=digital-text&qid=1262461201&sr=1-1

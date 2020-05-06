@@ -10,7 +10,7 @@ Last week, as we were wrapping the first day of [.NET Developer Days conference]
 
 <!-- excerpt -->
 
-[![Me having a beer with Kendra Havens]({% include post_ilink, post: page, name: "twitter_kendra_beer_thumb.jpg" %})]({% include post_ilink, post: page, name: "twitter_kendra_beer.jpg" %})
+[![Me having a beer with Kendra Havens]({{ include "post_ilink" page "twitter_kendra_beer_thumb.jpg" }})]({{ include "post_ilink" page "twitter_kendra_beer.jpg" }})
 
 Let's imagine you have this code.
 
@@ -32,10 +32,10 @@ And the debugger is on the `Foo(Bar(), Baz())` statement. Now if you want to ste
 
 Let's enter `Alt-Shift-F11` world. Pressing this key combination is going to give you menu (at the location where your mouse is) with functions (or properties, etc.) that you can step into (in the order of calling) and you can directly select (using arrow keys, obviously ;)) the function you're interested in, skipping the rest.
 
-![Alt-Shift-F11 menu]({% include post_ilink, post: page, name: "debugging_menu.png" %}) 
+![Alt-Shift-F11 menu]({{ include "post_ilink" page "debugging_menu.png" }}) 
 
 Isn't that great little hidden nugget? I use that quite often and it saved me plenty of time, especially when the calls are nested a lot (which I consider fine if it doesn't hurt readability). Did you know about it? Let me know in the comments.
 
-[1]: {% include post_link, id: "233736" %}
+[1]: {{ include "post_link" 233736 }}
 [2]: https://twitter.com/gotheap
 [3]: https://twitter.com/gotheap/status/1042064995528392704

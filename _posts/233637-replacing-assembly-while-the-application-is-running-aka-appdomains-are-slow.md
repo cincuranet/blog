@@ -30,7 +30,7 @@ When I first saw the numbers for cross _AppDomains_ calls I was scared. I had no
 
 Although it's not the same as pure unloading and loading again, I think it's a perfectly viable solution for a lot of cases where the "assembly refresh" is required. Hope it helps somebody fishing in similar waters.   
 
-[1]: {% include post_link, id: "233636" %}
+[1]: {{ include "post_link" 233636 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/framework/app-domains/application-domains
 [3]: https://www.firebirdsql.org/
 [4]: https://blogs.msdn.microsoft.com/jasonz/2004/05/31/why-isnt-there-an-assembly-unload-method/

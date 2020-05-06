@@ -159,7 +159,7 @@ class builder
 
 #### Links
 
-* [this]({% include post_link, id: "233433" %})
-* [this]({% include post_link, id: "233629" %})
-* [this]({% include post_link, id: "233626" %}) 
-* [this]({% include post_link, id: "233735" %})
+* [this]({{ include "post_link" 233433 }})
+* [this]({{ include "post_link" 233629 }})
+* [this]({{ include "post_link" 233626 }}) 
+* [this]({{ include "post_link" 233735 }})

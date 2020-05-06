@@ -27,6 +27,6 @@ Podíváme se zhruba - možná něco navíc, možná o něco méně - na tato t�
 > * Azure Functions + Python  
 > * .NET Foundation  
 
-{% include attachment, post: page, name: "CoCekatNET2019.pdf", description: "Prezentace" %}
+{{ include "attachment" page "CoCekatNET2019.pdf" "Prezentace" }}
 
 [1]: https://www.wug.cz/olomouc/akce/1135-Co-cekat-ve-svete-NETu-v-roce-2019

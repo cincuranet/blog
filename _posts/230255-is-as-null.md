@@ -35,4 +35,4 @@ else
 
 Osobně používam druhý způsob, opět spíše pocitově něž pro nějaký fakt (myslím, že z toho `is` je výsledek mého snažení lépe čitelný). A co vy? Případně máte nějaký argument proč používat jedno nebo druhé?
 
-[1]: {% include post_link, id: "230213" %}
+[1]: {{ include "post_link" 230213 }}

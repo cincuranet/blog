@@ -15,5 +15,5 @@ tags:
 > [Záznam z akce.][3]
 
 [1]: http://wug.cz/brno/akce/888-Tasky-a-await-pekne-od-zakladu-a-jednoduse
-[2]: {% include post_link, id: "233574" %}
+[2]: {{ include "post_link" 233574 }}
 [3]: http://wug.cz/zaznamy/350-Tasky-a-await-pekne-od-zakladu-a-jednoduse

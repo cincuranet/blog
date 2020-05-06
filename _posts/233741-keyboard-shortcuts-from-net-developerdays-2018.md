@@ -13,11 +13,11 @@ But, first thing first. The Ctrl-Alt-Down and Ctrl-Alt-Up shortcuts were not wor
 
 Ctrl-Alt-Down:
 
-![Ctrl-Alt-Down]({% include post_ilink, post: page, name: "ctrl-alt-down.gif" %})
+![Ctrl-Alt-Down]({{ include "post_ilink" page "ctrl-alt-down.gif" }})
 
 Ctrl-Alt-Up:
 
-![Ctrl-Alt-Up]({% include post_ilink, post: page, name: "ctrl-alt-up.gif" %})    
+![Ctrl-Alt-Up]({{ include "post_ilink" page "ctrl-alt-up.gif" }})    
 
 So here are the shorcuts, without description, thus you have to try them, hopefully learning some during. ;) 
 
@@ -66,5 +66,5 @@ F10, F11
 Ctrl-F10
 ```
 
-[1]: {% include post_link, id: "233736" %}
+[1]: {{ include "post_link" 233736 }}
 [2]: https://twitter.com/cincura_net/status/1042008849484525570

@@ -18,4 +18,4 @@ Luckily in .NET 4.6 the before `internal` [`Task.CompletedTask`][1] property is 
 Now to just wait for .NET 4.6 to RTM.
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.completedtask%28v=vs.110%29.aspx
-[2]: {% include post_link, id: "233455" %}
+[2]: {{ include "post_link" 233455 }}

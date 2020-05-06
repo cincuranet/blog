@@ -56,12 +56,12 @@ As you can see it's not magic, if you know where to look at. Because the `Table`
 
 With this conventions, hopefully, all the tables and columns, except specified explicitly, will be renamed to "common" [Firebird][8] naming.
 
-[1]: {% include post_link, id: "233167" %}
+[1]: {{ include "post_link" 233167 }}
 [2]: http://blog.oneunicorn.com/
 [3]: http://msdn.com/ef
-[4]: {% include post_link, id: "230583" %}
-[5]: {% include post_link, id: "231942" %}
+[4]: {{ include "post_link" 230583 }}
+[5]: {{ include "post_link" 231942 }}
 [6]: http://msdn.microsoft.com/en-us/library/system.data.metadata.edm.metadataitem.metadataproperties.aspx
 [7]: http://entityframework.codeplex.com/workitem/681
 [8]: http://www.firebirdsql.org
-[9]: {% include post_link, id: "233488" %}
+[9]: {{ include "post_link" 233488 }}

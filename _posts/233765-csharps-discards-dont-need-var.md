@@ -51,4 +51,4 @@ Which obviously is shorter and more succinct. And I like succinct code.
 Now I have to go through all of my code, change it and pretend I knew from beginning. ;)
 
 [1]: https://docs.microsoft.com/en-us/dotnet/csharp/discards
-[2]: {% include post_link, id: "233470" %}
+[2]: {{ include "post_link" 233470 }}

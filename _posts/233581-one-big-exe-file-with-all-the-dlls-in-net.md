@@ -231,4 +231,4 @@ The complete code is available in [this repository][5]. Feel free to contribute 
 [6]: http://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/
 [7]: http://ilspy.net/
 [8]: https://www.postsharp.net/
-[9]: {% include post_link, id: "233585" %}
+[9]: {{ include "post_link" 233585 }}

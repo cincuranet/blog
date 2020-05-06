@@ -14,4 +14,4 @@ Za necelý týden se koná akce s názvem [MonkeyFest Bootcamp Prague 2018][1], 
 > C# v poslední době velmi rychle přidává nové funkce. Malé funkce v minor verzích, ale připravuji se i velké změny do major verze (verzí). Co je tedy dostupné v C# 7, 7.1, 7.2, 7.3 a jak to začít používat. A co nás čeká dál a hlavně ve verzi 8.0? 
 
 [1]: https://xmdg.cz/monkeyfest
-[2]: {% include post_link, id: "233713" %}
+[2]: {{ include "post_link" 233713 }}

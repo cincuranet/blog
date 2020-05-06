@@ -37,7 +37,7 @@ ms/call: 0,013434364
 
 I'll leave that to you to decide whether that's fast enough for you or not. I'm working with initial partner [ElektLabs][3] to get some real feedback on what's fine and where some improvements need to be applied. If you'd like to share your thoughts, feel free to use comments below. If you'd like to do some tests yourself (and/or help moving this forward), [drop me a line][4].  
 
-[1]: {% include post_link, id: "233625" %}
-[2]: {% include post_link, id: "233637" %}
+[1]: {{ include "post_link" 233625 }}
+[2]: {{ include "post_link" 233637 }}
 [3]: http://www.elektlabs.cz/    
 [4]: /about

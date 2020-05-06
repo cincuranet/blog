@@ -60,5 +60,5 @@ Does this work? No. Same error. The "reachability" graph clearly works.
 
 Although this was a one-minute fun during my talk, I have a feeling it's not over and I'll spend trying to access that variable in the future. :)
 
-[1]: {% include post_link, id: "233714" %}
+[1]: {{ include "post_link" 233714 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions

@@ -28,4 +28,4 @@ Migrations and scaffolding are still not included in this version.
 [1]: https://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/6.0.0-beta2
 [2]: https://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/6.0.0-beta2
 [3]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10850
-[4]: {% include post_link, id: "233653" %}
+[4]: {{ include "post_link" 233653 }}

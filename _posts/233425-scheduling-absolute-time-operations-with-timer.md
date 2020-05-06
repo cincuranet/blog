@@ -101,7 +101,7 @@ static class DailyHourMinuteTimerHelper
 [2]: http://msdn.microsoft.com/en-us/library/274eh01d.aspx
 [3]: http://msdn.microsoft.com/en-us/library/system.threading.timer.aspx
 [4]: http://msdn.microsoft.com/en-us/library/317hx6fa.aspx
-[5]: {% include post_link, id: "232782" %}
+[5]: {{ include "post_link" 232782 }}
 [6]: http://msdn.microsoft.com/en-us/library/system.threading.timercallback.aspx
 [7]: http://msdn.microsoft.com/en-us/library/hh244323(v=vs.103).aspx
 [8]: http://msdn.microsoft.com/en-us/library/hh229176(v=vs.103).aspx

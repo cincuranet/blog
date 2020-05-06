@@ -11,7 +11,7 @@ Zajímá-li vás co je nového v Entity Frameworku (aktuálně verze 4.1), nezap
 
 Registrace na [wug.cz][4].
 
-[1]: {% include post_link, id: "232308" %}
-[2]: {% include post_link, id: "232317" %}
+[1]: {{ include "post_link" 232308 }}
+[2]: {{ include "post_link" 232317 }}
 [3]: http://www.wug.cz
 [4]: http://www.wug.cz/praha/akce/409-Entity-Framework-co-je-noveho

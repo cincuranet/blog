@@ -42,6 +42,6 @@ public int GetSizeTest(Type tuple)
 
 I opted for slightly longer code but more readable code, instead of having it on just two lines.  
 
-[1]: {% include post_link, id: "233605" %}
-[2]: {% include post_link, id: "233601" %}
-[3]: {% include post_link, id: "233566" %}
+[1]: {{ include "post_link" 233605 }}
+[2]: {{ include "post_link" 233601 }}
+[3]: {{ include "post_link" 233566 }}

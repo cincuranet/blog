@@ -20,4 +20,4 @@ Yup. Pretty confusing. I was not expecting that. I'd really like to know the rea
 
 [1]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa394418(v=vs.85).aspx
 [2]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa389390(v=vs.85).aspx
-[3]: {% include post_link, id: "233543" %}
+[3]: {{ include "post_link" 233543 }}

@@ -15,5 +15,5 @@ Letošní [CORESTART 2.0][2] (2. - 3. listopadu) naváže na [loňskou][1] "edic
 * Entity Framework Core 2
 > Entity Framework Core 2.0 byl představen nedávno společně s .NET Core 2 a ASP.NET Core 2. Co nového přináší? Jaké jsou změny oproti verzi 1.0/1.1? Má smysl verzi 2.0 používat? Jaké jsou pokročilejší features, jaká jsou její omezení... A co například použití s jinými databázemi než jen MS SQL Server?
 
-[1]: {% include post_link, id: "233367" %}
+[1]: {{ include "post_link" 233367 }}
 [2]: https://www.corestart.cz/

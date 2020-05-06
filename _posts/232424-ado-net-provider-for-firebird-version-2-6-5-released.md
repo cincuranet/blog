@@ -28,7 +28,7 @@ You can download it at [http://sourceforge.net/projects/firebird/files/firebird-
 Hope you'll enjoy the release.
 
 [1]: http://tracker.firebirdsql.org/secure/IssueNavigator.jspa?reset=true&&pid=10003&fixfor=10400&sorter/field=issuekey&sorter/order=DESC
-[2]: {% include post_link, id: "232218" %}
-[3]: {% include post_link, id: "232387" %}
+[2]: {{ include "post_link" 232218 }}
+[3]: {{ include "post_link" 232387 }}
 [4]: http://sourceforge.net/projects/firebird/files/firebird-net-provider/2.6.5/
 [5]: http://www.firebirdsql.org/en/net-provider/

@@ -112,6 +112,6 @@ The code is pretty simple. It just goes to thru the file and changes what needs 
 
 If you want to change also names of properties you can either tweak the code yourself or ask in comments, if I found some time, I'll extend it. And of course, if you have some special naming convention in your company (i.e. every table has `T_` prefix), just change the `transformation` function.
 
-[1]: {% include post_link, id: "233202" %}
+[1]: {{ include "post_link" 233202 }}
 [2]: http://www.alberton.info/dbms_identifiers_and_case_sensitivity.html
 [3]: http://www.sms-timing.com/

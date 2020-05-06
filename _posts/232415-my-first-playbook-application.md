@@ -16,27 +16,27 @@ Following screens will walk you through the application - it's a simple [eBay][4
 
 Home screen - before starting the application:
 
-[![Home screen - before starting the application]({% include post_ilink, post: page, name: "playbook_1app_01_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_01.png" %})
+[![Home screen - before starting the application]({{ include "post_ilink" page "playbook_1app_01_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_01.png" }})
 
 Application is starting:
 
-[![Application is starting]({% include post_ilink, post: page, name: "playbook_1app_02_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_02.png" %})
+[![Application is starting]({{ include "post_ilink" page "playbook_1app_02_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_02.png" }})
 
 Ready to do the search:
 
-[![Ready to do the search]({% include post_ilink, post: page, name: "playbook_1app_03_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_03.png" %})
+[![Ready to do the search]({{ include "post_ilink" page "playbook_1app_03_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_03.png" }})
 
 Search in progress (take notice of super cool throbber 8)):
 
-[![Search in progress (take notice of super cool throbber 8))]({% include post_ilink, post: page, name: "playbook_1app_04_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_04.png" %})
+[![Search in progress (take notice of super cool throbber 8))]({{ include "post_ilink" page "playbook_1app_04_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_04.png" }})
 
 Results...:
 
-[![Results...]({% include post_ilink, post: page, name: "playbook_1app_05_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_05.png" %})
+[![Results...]({{ include "post_ilink" page "playbook_1app_05_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_05.png" }})
 
 Application while switching to another application:
 
-[![Application while switching to another application]({% include post_ilink, post: page, name: "playbook_1app_06_thumb.jpg" %})]({% include post_ilink, post: page, name: "playbook_1app_06.png" %})
+[![Application while switching to another application]({{ include "post_ilink" page "playbook_1app_06_thumb.jpg" }})]({{ include "post_ilink" page "playbook_1app_06.png" }})
 
 Cannot say I like the development process, but who knows where it ends (I end).
 

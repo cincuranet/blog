@@ -9,7 +9,7 @@ There's a lot of new stuff coming with the [Entity Framework June 2011 CTP][1] -
 
 Previously, the designer settings, like positions of lines for associations, sizes of entities and even zoom level were stored directly in EDMX file. Hence possibly creating changes in it even if you only read it. But the new CTP solves it. The designer's content is now in a separate file. So if you're about to commit to [VCS][2] you can much better see what was really changed - whether then model itself or only the designer (and you can ignore designer changes if you want).
 
-![image]({% include post_ilink, post: page, name: "ef42_junectp_designerfile.png" %})
+![image]({{ include "post_ilink" page "ef42_junectp_designerfile.png" }})
 
 Nice isn't it? Pity that this "bug" made it to the first release. 8-)
 

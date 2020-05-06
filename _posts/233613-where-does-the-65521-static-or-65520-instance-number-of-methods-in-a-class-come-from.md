@@ -111,8 +111,8 @@ The limit is really 65535 methods in one class. But some spots are already occup
 
 I know this has probably no usage for a real world programming in .NET and it's a pure geekiness, but it was fun nonetheless. Trying to get some sense from what I knew (or was able to prove) or was able to collect. 
 
-[1]: {% include post_link, id: "233610" %}
-[2]: {% include post_link, id: "233611" %}
+[1]: {{ include "post_link" 233610 }}
+[2]: {{ include "post_link" 233611 }}
 [3]: http://referencesource.microsoft.com/#mscorlib/system/object.cs,d9262ceecc1719ab
 [4]: https://github.com/dotnet/coreclr
 [5]: https://github.com/dotnet/coreclr/blob/ad8afe4f8c9537e8652ae35b301366d737bc1e04/src/vm/methodtable.h#L1483

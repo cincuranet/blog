@@ -85,7 +85,7 @@ Second clue is in [`GrowTable` method][11].  And it's doing quite a locking and 
 
 It must be GC. I'm pretty sure. Let's test it. I'll use the _Diagnostic Tools_ window in Visual Studio.
 
-![Process Memory and GC]({% include post_ilink, post: page, name: "monitor_concurrent_gc.png" %})
+![Process Memory and GC]({{ include "post_ilink" page "monitor_concurrent_gc.png" }})
 
 Whoa. There's a lot of GC-ing happening. Theory confirmed. Then also running a profiler shows a hot spot in `GrowTable` method. As expected. We're adding a lot of items.
 

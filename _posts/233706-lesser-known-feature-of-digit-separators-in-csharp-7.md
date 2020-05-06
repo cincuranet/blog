@@ -42,6 +42,6 @@ We all lived without a digit separators feature, but I see it as a welcoming for
 
 Did you know about this?
 
-[1]: {% include post_link, id: "233705" %}
+[1]: {{ include "post_link" 233705 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#numeric-literal-syntax-improvements
 [3]: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-2#leading-underscores-in-numeric-literals

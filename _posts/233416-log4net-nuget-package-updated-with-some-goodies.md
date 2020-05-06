@@ -16,5 +16,5 @@ Now it adds default configuration into your `app.config`/`web.config` and also d
 
 Feedback is welcome.
 
-[1]: {% include post_link, id: "233419" %}
+[1]: {{ include "post_link" 233419 }}
 [2]: http://www.nuget.org/packages/log4net

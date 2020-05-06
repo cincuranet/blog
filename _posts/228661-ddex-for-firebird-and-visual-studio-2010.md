@@ -10,4 +10,4 @@ What's better than finding what you need to fix for upcoming release of product?
 
 Check this out. Nice, isn't it? :-)
 
-![image]({% include post_ilink, post: page, name: "228661.png" %})
+![image]({{ include "post_ilink" page "228661.png" }})
