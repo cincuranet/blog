@@ -20,7 +20,7 @@ Originally my email - long before Gmail, if you'd like to ask (yes, I'm not youn
 
 Then IM became more popular. Basically, everybody here was using ICQ. That was good, as again, you could reach whoever you wanted without too much hassle.
 
-As ICQ was getting out of usage other platforms came, I remember AIM, Yahoo Messenger, Google Talk and eventually pure Jabber. Some people were on AIM, some on Google Talk and so on. Luckily multiplatform client programs we available, I personally remember Pidgin, Psi and Trillian. It was bit of a mess, true. Eventually, at least in technical rings, Jabber became de-facto standard and everything was more or less fine. Plus, email was still working.
+As ICQ was getting out of usage other platforms came, I remember AIM, Yahoo Messenger, Google Talk and eventually pure Jabber. Some people were on AIM, some on Google Talk and so on. Luckily multiplatform client programs were available, I personally remember Pidgin, Psi and Trillian. It was bit of a mess, true. Eventually, at least in technical rings, Jabber became de-facto standard and everything was more or less fine. Plus, email was still working.
 
 Now we're getting into Skype era. Again, it mostly won at its time and was easy to reach people and people could reach you. In fact, Skype is my go-to "talking" platform even today.
 
