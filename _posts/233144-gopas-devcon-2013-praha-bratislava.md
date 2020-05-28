@@ -3,7 +3,7 @@ title: |-
   Gopas DevCon 2013 (Praha, Bratislava)
 date: 2013-01-21T09:00:37Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Velmi jednoduše. Středa 23. ledna 2013 v Praze. A repete v Bratislavě čtvrtek 31. 1. 2013. [Více info][1].
 

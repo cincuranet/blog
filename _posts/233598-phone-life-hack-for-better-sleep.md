@@ -1,6 +1,6 @@
 ---
 title: |-
-  Phone (life)hack for better sleep 
+  Phone (life)hack for better sleep
 date: 2017-03-09T11:10:00Z
 tags:
   - Lifehack

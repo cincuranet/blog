@@ -8,7 +8,7 @@ tags:
   - .NET
   - Photos
 ---
-I like my files organized. Heck. I like everything organized. In order. And as I take some pictures, today mostly with my phone, I upload these files into specific folder. But the files has whatever name the photo or uploading application decides. Not good for my obsession with order. Because these files are simply some snaps of world around me, I name these based on date and time. Pretty simple. 
+I like my files organized. Heck. I like everything organized. In order. And as I take some pictures, today mostly with my phone, I upload these files into specific folder. But the files has whatever name the photo or uploading application decides. Not good for my obsession with order. Because these files are simply some snaps of world around me, I name these based on date and time. Pretty simple.
 
 <!-- excerpt -->
 
@@ -24,7 +24,7 @@ param([string]$file)
 function GetTakenData($image) {
 	try {
 		return $image.GetPropertyItem(36867).Value
-	}	
+	}
 	catch {
 		return $null
 	}
@@ -50,10 +50,10 @@ I saved that into `exif-datetaken.ps1` and when I need rename files in folder I 
 
 ```powershell
 gci *.jpg | foreach {
-	Write-Host "$_`t->`t" -ForegroundColor Cyan -NoNewLine 
+	Write-Host "$_`t->`t" -ForegroundColor Cyan -NoNewLine
 	$date = (.\exif-datetaken.ps1 $_.FullName)
 	if ($date -eq $null) {
-		Write-Host '{ No ''Date Taken'' in Exif }' -ForegroundColor Cyan	
+		Write-Host '{ No ''Date Taken'' in Exif }' -ForegroundColor Cyan
 		return
 	}
 	$newName = $date.ToString('yyyy-MM-dd HH.mm.ss') + '.jpg'
@@ -61,7 +61,7 @@ gci *.jpg | foreach {
 	Write-Host $newName -ForegroundColor Cyan
 	mv $_ $newName
 }
-``` 
+```
 
 My prefered format for files is `yyyy-MM-dd hh.mm.ss` but you can change it easily, if you want.
 

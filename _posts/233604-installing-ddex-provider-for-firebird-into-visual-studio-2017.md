@@ -66,7 +66,7 @@ That's it and you can enjoy DDEX for Firebird in Visual Studio 2017.
 
 ![DDEX for Firebird in Visual Studio 2017]({{ include "post_ilink" page "ddex_vs2017.png" }})
 
-> I'm planning to change the DDEX provider from installer, which was acceptable with Visual Studio 2005 (yes, you can still use it there), to VSIX. That will not only make easier to install but also easier to manage. Because my free time is limited it's not going to be immediate (you can [help][4]). 
+> I'm planning to change the DDEX provider from installer, which was acceptable with Visual Studio 2005 (yes, you can still use it there), to VSIX. That will not only make easier to install but also easier to manage. Because my free time is limited it's not going to be immediate (you can [help][4]).
 
 [1]: https://raw.githubusercontent.com/cincuranet/FirebirdSql.Data.FirebirdClient/master/DDEX/readme.txt
 [2]: https://raw.githubusercontent.com/cincuranet/FirebirdSql.Data.FirebirdClient/master/DDEX/reg_files/VS2015/FirebirdDDEXProvider64.reg

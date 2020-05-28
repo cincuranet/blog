@@ -7,7 +7,7 @@ tags:
   - C#
   - Entity Framework
   - Multithreading/Parallelism/Asynchronous/Concurrency
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Visual Studio
 ---
 Letošní [MS Fest][1] je opravdu nabitý. Tento rok ve třech městech (Brno, Praha, Ostrava), takže už se nemůžete vymlouvat, že jste nemohli přijít. :) Moje přednášky můžete letos poslechnout v Brně (3) a v Praze (2).

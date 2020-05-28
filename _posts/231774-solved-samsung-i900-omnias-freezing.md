@@ -3,7 +3,7 @@ title: |-
   Solved Samsung i900 Omnia's freezing
 date: 2010-07-23T15:21:09Z
 tags:
-  - Storage &amp; Backup
+  - Storage & Backup
   - Windows Mobile/Windows Phone
 ---
 I had problem with my Samsung i900 Omnia phone being stuck in stand by mode for no obvious reason, except I discovered applications doing this. I was living with that some time until I finally jumped into the problem.

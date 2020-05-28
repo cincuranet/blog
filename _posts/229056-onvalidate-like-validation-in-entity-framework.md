@@ -6,9 +6,9 @@ tags:
   - Entity Framework
   - LINQ
 ---
-Yesterday, while doing Entity Framework training, I got a good question. LINQ to SQL has a nice event called OnValidate, where you can validate your data. But Entity Framework classes don't. As the only one good point to do the validation of entities in Entity Framework is during in SaveChanges in SavingChanges event, we have to utilize this event and build validation there. 
+Yesterday, while doing Entity Framework training, I got a good question. LINQ to SQL has a nice event called OnValidate, where you can validate your data. But Entity Framework classes don't. As the only one good point to do the validation of entities in Entity Framework is during in SaveChanges in SavingChanges event, we have to utilize this event and build validation there.
 
-And as we have access to our ObjectContext, we can get information from ObjectStateManager about, for us, interesting entities and do some validation. Good practice is to put your validation inside the object. To simplify the work with these objects, we can implement in partial classes some interface with i.e. IsValid property. Then before sending data to the database we can easily perform the validation. 
+And as we have access to our ObjectContext, we can get information from ObjectStateManager about, for us, interesting entities and do some validation. Good practice is to put your validation inside the object. To simplify the work with these objects, we can implement in partial classes some interface with i.e. IsValid property. Then before sending data to the database we can easily perform the validation.
 
 First create some interface:
 

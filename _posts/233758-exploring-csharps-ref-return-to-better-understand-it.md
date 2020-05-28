@@ -133,7 +133,7 @@ struct Test2_5
 }
 ```
 
-Works. Even though the field is declared in a `struct`, it's going to be allocated on the heap, because it's `static` (on a so called _High Frequency Heap_).  
+Works. Even though the field is declared in a `struct`, it's going to be allocated on the heap, because it's `static` (on a so called _High Frequency Heap_).
 
 #### #3
 
@@ -225,4 +225,4 @@ Yeah, works, same output. Everything is fine. :)
 
 This was very nice exploration. All I needed was few moments of playing with the code and exploring basics and seeing what's allowed and what's not - and thinking why - and building on top of that. Hope this raw brain dump is going to help you as well.
 
-[1]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/ref-returns 
+[1]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/ref-returns

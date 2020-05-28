@@ -3,7 +3,7 @@ title: |-
   WUG: Zkušenosti s tvorbou a provozem aplikací na Windows Azure
 date: 2012-06-05T10:00:32Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Cloud (Azure) je super. Ale tupý vstup do toho světa je téměř jistě recept na neúspěch. Pokud vás zajímají některé koncepty, které je třeba podchytit a případně slepé cesty, [přijďte][1].
 

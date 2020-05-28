@@ -14,4 +14,4 @@ The battery life I can judge now. But anything that improves the batter life, ev
 [![image]({{ include "post_ilink" page "kindle_update1_thumb.jpg" }})]({{ include "post_ilink" page "kindle_update1.jpg" }})
 
 [1]: http://www.hanselman.com/blog/ScreenshotsAmazonKindle2GetsBetterBatteryLifeAndNativePDFSupport.aspx
-[2]: http://www.amazon.com/gp/help/customer/display.html?nodeId=200324680 
+[2]: http://www.amazon.com/gp/help/customer/display.html?nodeId=200324680

@@ -8,7 +8,7 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Roslyn
 ---
-Sometime ago I wrote - actually looking at the post date it's already a year, give or take - a [`ConfigureAwaitChecker` tool][1]. It was partly because I needed tool like that and also I wanted to investigate [Roslyn][2]. Perfect combination. 
+Sometime ago I wrote - actually looking at the post date it's already a year, give or take - a [`ConfigureAwaitChecker` tool][1]. It was partly because I needed tool like that and also I wanted to investigate [Roslyn][2]. Perfect combination.
 
 I used the tool quite a few times, but it was not smooth. Going out of Visual Studio, running it and then manually finding the errors in source code back in Visual Studio. Not a best experience. I think sometimes I even skipped using my own tool because of this. When Visual Studio started having final shape the concept of _analyzers_ (and also _code fixes_) was introduced ([[1][3]], [[2][4]]). The idea of NuGet distribution looked nice, better than VSIX (expecially if you want to have it per project and for everybody in particular project). I was sold.
 
@@ -24,7 +24,7 @@ Here's how it looks like in real.
 
 ![ConfigureAwaitChecker analyzer]({{ include "post_ilink" page "cac.png" }})
 
-Also some a small caveat. There's a `ConfigureAwaitChecker` package available. It's a fork of my original code (using the console app, just plugged into Visual Studio). I think it would be nice to use this package ID (even though the name containing "Analyzer" explicitly states what it is - I don't know, let me know) I tried contacting the author already few weeks ago, but so far no reply. 
+Also some a small caveat. There's a `ConfigureAwaitChecker` package available. It's a fork of my original code (using the console app, just plugged into Visual Studio). I think it would be nice to use this package ID (even though the name containing "Analyzer" explicitly states what it is - I don't know, let me know) I tried contacting the author already few weeks ago, but so far no reply.
 
 [1]: {{ include "post_link" 233476 }}
 [2]: https://github.com/dotnet/roslyn

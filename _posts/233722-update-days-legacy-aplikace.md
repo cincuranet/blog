@@ -3,7 +3,7 @@ title: |-
   Update Days: Legacy aplikace
 date: 2018-05-21T07:06:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - C#
 ---
 Zanedlouho, konkrétně 28.5.-29.5., se uskuteční zajímavá konference nazvaná "[Update Days: Legacy aplikace][1]". Proč zajímavá? Protože často se na konferencích řeší novinky, fičurky atp., ale ne na každém projektu je čas a prostředky na implementaci posledních výstřelků (které ještě případně po dvou letech upadnou v zapomnění) a tato konference není o novinkách; je o tom co dělat s existující aplikací, jak ji posunout dál, co funguje a má smysl.

@@ -7,7 +7,7 @@ tags:
   - .NET
   - LINQ
 ---
-I hate seeing `Count > 0` when doing code reviews. And I always recommend using `Any` instead. It shows the intention, hence makes the code more readable, I think. 
+I hate seeing `Count > 0` when doing code reviews. And I always recommend using `Any` instead. It shows the intention, hence makes the code more readable, I think.
 
 Although I would always choose readability over performance - unless in some very specific cases, with well-defined numbers - at one point I wondered whether there's a cost in using `Any`. Speed? Allocations?
 

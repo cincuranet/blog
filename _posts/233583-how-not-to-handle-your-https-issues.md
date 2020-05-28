@@ -17,7 +17,7 @@ Here's the screenshot of that ticket.
 
 What? I mean WHAAAT? It's fucking not! It's a good old `<form>` that is `POST`ing the values to the server. Every script kiddie can handle that.
 
-With that "solution" in my hands I turned over, moved the website to my own server and cancelled the account. This is not an inconvenience. It's a pure ignorance. Wrong attitude. 
+With that "solution" in my hands I turned over, moved the website to my own server and cancelled the account. This is not an inconvenience. It's a pure ignorance. Wrong attitude.
 
 Eventually they told me I can access it via HTTPS, although I would have to accept self-signed certificate (without at least trying to send me the fingerprint for manual validation (not that it matters because the support platform was on plain HTTP anyway)). Hard to chew that if you can get free certificate from Let's Encrypt.
 

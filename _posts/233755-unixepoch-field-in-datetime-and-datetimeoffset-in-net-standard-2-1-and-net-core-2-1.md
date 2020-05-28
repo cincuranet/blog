@@ -6,7 +6,7 @@ tags:
   - .NET Core
   - .NET Standard
 ---
-When I need to put some default value somewhere, I often use Unix epoch. It's more reasonable, in my eyes, than [`DateTime.MinValue`][1]. But there's no field for that value thus I always had to create it "manually". Well, not anymore. 
+When I need to put some default value somewhere, I often use Unix epoch. It's more reasonable, in my eyes, than [`DateTime.MinValue`][1]. But there's no field for that value thus I always had to create it "manually". Well, not anymore.
 
 <!-- excerpt -->
 
@@ -14,7 +14,7 @@ Let's first do a small recap what a Unix epoch is. The Unix epoch is date and ti
 
 I like the value because it's reasonable date, yet for a lot of line-of-business systems it's clear that this is not a real value. Hence, I often used it, but because there was no field for it, I had to create it always myself. I.e. by using `new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)`. But starting with .NET Core 2.1 and more importantly for me as a library writer with .NET Standard 2.1 it's available as a predefined field for both [`DateTime`][2] as well as [`DateTimeOffset`][3].
 
-Now to just wait for .NET Standard 2.1 to become "the norm". 
+Now to just wait for .NET Standard 2.1 to become "the norm".
 
 [1]: https://docs.microsoft.com/en-us/dotnet/api/system.datetime.minvalue?view=netcore-2.1
 [2]: https://apisof.net/catalog/System.DateTime.UnixEpoch

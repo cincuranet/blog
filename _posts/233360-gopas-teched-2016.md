@@ -3,7 +3,7 @@ title: |-
   Gopas TechEd 2016
 date: 2016-05-11T20:29:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 A jako každý rok výborný lokální [Gopas TechEd][1] se přiblížil. Pohled na [program][1] dává tušit nabitý program. Já svou troškou přispěji v podobě:
 

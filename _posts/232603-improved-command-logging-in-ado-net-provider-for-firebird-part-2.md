@@ -5,7 +5,7 @@ date: 2011-12-19T09:29:43Z
 tags:
   - .NET
   - Firebird
-  - Logging &amp; Tracing
+  - Logging & Tracing
 ---
 [Previous version][1] of [ADO.NET provider for Firebird][2] brought us a support for command tracing. Although it was good, it could be done better. Few interesting scenarios came back to as a valuable feedback and with the old implementation it was hard to do it.
 

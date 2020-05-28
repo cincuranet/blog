@@ -1,4 +1,4 @@
-﻿---
+---
 title: |-
   Changing paths in PDB files for source files (and PDB file path in DLL as well)
 date: 2017-12-02T19:26:01Z

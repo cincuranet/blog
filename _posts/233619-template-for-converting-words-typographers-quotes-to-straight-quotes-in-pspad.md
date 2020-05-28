@@ -1,6 +1,6 @@
 ---
 title: |-
-  Template for converting Word's typographer's quotes to straight quotes in PSPad  
+  Template for converting Word's typographer's quotes to straight quotes in PSPad
 date: 2017-05-04T11:02:00Z
 tags:
   - Word

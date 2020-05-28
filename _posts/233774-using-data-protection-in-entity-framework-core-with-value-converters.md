@@ -106,4 +106,4 @@ using (var ctx = ActivatorUtilities.CreateInstance<MyContext>(services))
 
 That's it. Hope it helps.
 
-[1]: {{ include "post_link" 233708 }} 
+[1]: {{ include "post_link" 233708 }}

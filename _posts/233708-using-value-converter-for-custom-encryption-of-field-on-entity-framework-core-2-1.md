@@ -80,19 +80,19 @@ You can use the same test code [from previous post][2] to see it does what's exp
 
 #### Querying
 
-Previously, because all the transformations were done without Entity Framework Core's notice in the entity itself, you had to do all the transformations in query parameters yourself. Not anymore. Entity Framework Core handles that for you transparently now. Well, at least the transformation part. Not the logical part. Let me explain. 
+Previously, because all the transformations were done without Entity Framework Core's notice in the entity itself, you had to do all the transformations in query parameters yourself. Not anymore. Entity Framework Core handles that for you transparently now. Well, at least the transformation part. Not the logical part. Let me explain.
 
 Imagine you want to query all the entities ending with `world!` (beucase my code saved `Hello world!` in `Secret`). Then you simply write `db.Set<FooBar>().Where(x => x.Secret.EndsWith("world!"))`. And Entity Framework Core will translate that for you correctly.
 
 ```sql
 SELECT [x].[Id], [x].[Secret]
 FROM [FooBar] AS [x]
-WHERE RIGHT([x].[Secret], LEN(N'world!')) = N'!dlrow' 
+WHERE RIGHT([x].[Secret], LEN(N'world!')) = N'!dlrow'
 ```
 
 The value that's used for comparison, `!dlrow`, is correct. Not the operations. Given the logic in the converter you actually have to use `StartsWith` in this case. However you and only you understand the logic in the converter and you haveto do the appropriate adjustments.
 
-Note: You can also notice that the `LEN` call is not correct and the value there should be converted as well ([more info][4]). 
+Note: You can also notice that the `LEN` call is not correct and the value there should be converted as well ([more info][4]).
 
 #### Summary
 

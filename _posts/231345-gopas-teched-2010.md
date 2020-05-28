@@ -3,7 +3,7 @@ title: |-
   Gopas TechEd 2010
 date: 2010-04-26T20:03:37Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Úplně bych zapomněl na letošní [Gopas TechEd][1]. Vlastně už začal, takže jsem pozadu. Nicméně to nejlepší teprve přijde. ;)
 

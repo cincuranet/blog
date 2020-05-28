@@ -72,7 +72,7 @@ let rec sum list =
     | [] -> 0
 
 [<EntryPoint>]
-let main argv = 
+let main argv =
     let list = [10; 20; 100]
     Console.WriteLine(sum list)
     0
@@ -89,7 +89,7 @@ def sum(list):
 	if len(list) == 0:
 		return 0;
 	else:
-		head, *tail = list	
+		head, *tail = list
 		return head + sum(tail)
 
 list = [10, 20, 100]
@@ -100,10 +100,10 @@ I'd say, about as good as in C#. Notable piece is the `head, *tail = list` where
 
 #### What about Haskell
 
-Last time I used Haskell for anything real was when I was at university. Thus, when I saw the `Prelude>` it brought back some memories. 
+Last time I used Haskell for anything real was when I was at university. Thus, when I saw the `Prelude>` it brought back some memories.
 
 ```haskell
-module Main(main) where 
+module Main(main) where
 
 list = [10,20,100]
 

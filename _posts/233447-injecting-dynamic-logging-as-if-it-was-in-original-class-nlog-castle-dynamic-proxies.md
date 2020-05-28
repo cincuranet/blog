@@ -4,7 +4,7 @@ title: |-
 date: 2014-04-07T08:58:00Z
 tags:
   - .NET
-  - Logging &amp; Tracing
+  - Logging & Tracing
   - Aspect Oriented Programming (AOP)
   - Castle Windsor
   - Inversion of Control (IoC)

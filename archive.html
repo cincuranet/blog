@@ -14,4 +14,4 @@ layout: page
 </ul>
 {{~ end ~}}
 
-<h4><span class="fa fa-tags" aria-label="Tags"></span> {{ site.tags | array.sort | array.join ", " }}</h4>
+<h4><span class="fa fa-tags" aria-label="Tags"></span> {{ site.tags | blog.escape_list | array.sort | array.join ", " }}</h4>

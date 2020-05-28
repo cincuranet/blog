@@ -1,4 +1,4 @@
-﻿---
+---
 title: |-
   Calibrating Aeotec Multisensor 6's temperature using OpenZWave (in Domoticz)
 date: 2017-11-06T19:29:00Z
@@ -15,7 +15,7 @@ It's mostly related to negative values, because that's where the values fall app
 
 ![WORD value in calculator]({{ include "post_ilink" page "calc.png" }})
 
-More examples (all for °C): 
+More examples (all for °C):
 
 * `-0.6` → `-1535`
 * `-0.5` → `-1279`

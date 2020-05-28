@@ -13,13 +13,13 @@ tags:
   - SQL
   - Visual Studio
 ---
-Firebird (2.5.2+) has finally [support][6] for creating backups and streaming these back to client via API (Services API). This release focuses mostly on implementing this feature. 
+Firebird (2.5.2+) has finally [support][6] for creating backups and streaming these back to client via API (Services API). This release focuses mostly on implementing this feature.
 
 <!-- excerpt -->
 
 In `FirebirdSql.Data.Services` you can find two new classes called `FbStreamingBackup` and `FbStreamingRestore`. These work mostly as `FbBackup` and `FbRestore` you only need to set valid stream (like [`FileStream`][7] or [`MemoryStream`][8]) into `OutputStream` or `InnerStream` respectively. The rest is same as if you're using `fbsvcmgr`.
 
-This feature was sponsored by [SMS-Timing][9] as they allowed me to implement it during my work hours. Also thanks to Ivan Arabadzhiev who helped me to test this.  
+This feature was sponsored by [SMS-Timing][9] as they allowed me to implement it during my work hours. Also thanks to Ivan Arabadzhiev who helped me to test this.
 
 You can get the bits from [NuGet][1] ([EF6-ready version][2]) (also [FirebirdSQL.org site][3]).
 

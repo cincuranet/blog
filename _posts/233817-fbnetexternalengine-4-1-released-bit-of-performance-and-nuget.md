@@ -10,7 +10,7 @@ tags:
 
 <!-- excerpt -->
 
-The already mentioned performance improves performance little bit and reduces some unnecessary allocation in the execution path. Less allocations reduce GC pressure and might improve GC pauses.  
+The already mentioned performance improves performance little bit and reduces some unnecessary allocation in the execution path. Less allocations reduce GC pressure and might improve GC pauses.
 
 If you're using `FbNetExternalEngineIntegration.dll`, you can now get it from NuGet as a [`FbNetExternalEngine.Integration`][2], simplifying referencing it.
 

@@ -6,7 +6,7 @@ tags:
   - Programming in general
   - Firebird
 ---
-Last week I had bit of free time during afternoons and I was working on compression support in [FirebirdClient][1]. My initial code I've put together couple of weeks before was straightforward but eventually everything started to fall through cracks of edge cases and I had dig deeper and provide a lot more implementation than I'd like to. 
+Last week I had bit of free time during afternoons and I was working on compression support in [FirebirdClient][1]. My initial code I've put together couple of weeks before was straightforward but eventually everything started to fall through cracks of edge cases and I had dig deeper and provide a lot more implementation than I'd like to.
 
 <!-- excerpt -->
 
@@ -16,6 +16,6 @@ Although I consider myself quite fluent with debugger, sometimes it's too much t
 
 ![Bytes on paper]({{ include "post_ilink" page "bytes.jpg" }})
 
-I started comparing runs without compression and with compression, inflating the compressed data in helper code and trying to spot the difference. Luckily for me it was not far from beginning and I was able to find it quickly. Then it was just head-down-march-to-the-finish and moving onto the next problem.   
+I started comparing runs without compression and with compression, inflating the compressed data in helper code and trying to spot the difference. Luckily for me it was not far from beginning and I was able to find it quickly. Then it was just head-down-march-to-the-finish and moving onto the next problem.
 
 [1]: http://www.firebirdsql.org/en/net-provider/

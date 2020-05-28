@@ -23,7 +23,7 @@ This will help us verify the domain later on, while the CDN is still being creat
 
 #### Step 2
 
-Create an CDN profile in Azure and create an endpoint. While setting up the endpoint, use custom origin and `example.azurewebsites.net` as an origin. Use `Host` header depends on your configuration, i.e. redirects. Generally, `www.example.com`. 
+Create an CDN profile in Azure and create an endpoint. While setting up the endpoint, use custom origin and `example.azurewebsites.net` as an origin. Use `Host` header depends on your configuration, i.e. redirects. Generally, `www.example.com`.
 
 This might look weird, because a lot of tutorials etc. will tell you to use the `www.example.com` domain as an origin (or select from the menu correct Web App). Because we want to use CDN for the whole domain, you can't use the domain as origin. The fetching would then end up in an infinite loop.
 

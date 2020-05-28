@@ -9,7 +9,7 @@ I don't know how long this feature is in Visual Studio - maybe because I'm more 
 
 <!-- excerpt -->
 
-If you hover the mouse over a lambda or a local function the hint shows variables captured. This is _so_ useful, especially if you're in a performance sensitive code and you don't want to create (or minimize creating) closures. 
+If you hover the mouse over a lambda or a local function the hint shows variables captured. This is _so_ useful, especially if you're in a performance sensitive code and you don't want to create (or minimize creating) closures.
 
 ![Captured variables in lambda]({{ include "post_ilink" page "captured_lambda.png" }})
 

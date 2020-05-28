@@ -3,7 +3,7 @@ title: |-
   Konference CORESTART 2.0
 date: 2017-09-20T08:34:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Letošní [CORESTART 2.0][2] (2. - 3. listopadu) naváže na [loňskou][1] "edici", tentokrát samozřejmě se zaměřením na .NET Core 2.0 a všeho okolo něj. Verze 2.0 už opravdu něco umí a jde na ní solidně stavět. Kromě zahraničních speakerů, přispěji i já svou troškou do mlýna dvěma přednáškami - jedna kolem Entity Frameworku Core 2.0 a druhá kolem novinek v C# 7 a dál. Novinek je hodně a program stojí za to. Přijďte, nebudete litovat.
 

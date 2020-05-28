@@ -15,7 +15,7 @@ The upload is obviously done in slices into blocks. At one part I'm looping thou
 
 Luckily for me I knew the size cannot change as I'm having exclusive lock on the file. I extracted it into local variable and tested. Not only it worked slightly faster (at this stage of coding every small speedup matters for me), but it also finished without an exception.
 
-Although the `FileStream.Length` property behavior is completely clear I haven't thought about it until I experienced it. I love when something that obvious connects dots in my head.  
+Although the `FileStream.Length` property behavior is completely clear I haven't thought about it until I experienced it. I love when something that obvious connects dots in my head.
 
 [1]: http://msdn.microsoft.com/en-us/library/system.io.filestream%28v=vs.110%29.aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.io.filestream.length(v=vs.110).aspx

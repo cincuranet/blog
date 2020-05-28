@@ -10,7 +10,7 @@ Spending last few days travelling I got into thinking about article I read week 
 
 <!-- excerpt -->
 
-Because I'm a freelancer I don't have strict separation of work email and personal email my usage might be a little out of sync with world in companies, but I still think it's an interesting challenge in general. 
+Because I'm a freelancer I don't have strict separation of work email and personal email my usage might be a little out of sync with world in companies, but I still think it's an interesting challenge in general.
 
 How for instance the "logging" emails will be handled? For example every transaction on my bank account ultimately generates email with some information. So I know what I've paid (or what invoice was paid), how much money is left on my account and so on. Similar to some notifications from services - database backup was corrupted, I reached some point on my cloud services, bug report was created, ..., you get the idea. If you simply delete all emails and send notification to sender - which is often useless on these emails - how are you going to know what happened?
 

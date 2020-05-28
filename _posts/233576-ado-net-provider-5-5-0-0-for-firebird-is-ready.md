@@ -13,9 +13,9 @@ tags:
   - SQL
   - Visual Studio
 ---
-I'm going to be honest with you. I'm a bit disappointed. About a month ago I [asked][5] for help with testing the upcoming version of FirebirdClient. The compression support needed quite some work in internals (obviously affecting not only the compression path) and although I tested it left and right the chances for something failing in some corner cases were high. And I could really just use fingers on one hand, and still have a spare, to count people reaching to me and providing feedback. Bit of discrepancy compared to how much emails I get asking for this or that feature being supported. Thanks to those few who did tested it. 
-  
-<!-- excerpt --> 
+I'm going to be honest with you. I'm a bit disappointed. About a month ago I [asked][5] for help with testing the upcoming version of FirebirdClient. The compression support needed quite some work in internals (obviously affecting not only the compression path) and although I tested it left and right the chances for something failing in some corner cases were high. And I could really just use fingers on one hand, and still have a spare, to count people reaching to me and providing feedback. Bit of discrepancy compared to how much emails I get asking for this or that feature being supported. Thanks to those few who did tested it.
+
+<!-- excerpt -->
 
 It's time to release it.
 

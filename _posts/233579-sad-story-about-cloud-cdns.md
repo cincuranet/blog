@@ -8,7 +8,7 @@ tags:
   - Azure
   - AWS
 ---
-Yesterday I started a simple task. Or at least I thought it was simple. Basically I needed to prepend some CDN in front of a domain with static content. In what a hole I ended... 
+Yesterday I started a simple task. Or at least I thought it was simple. Basically I needed to prepend some CDN in front of a domain with static content. In what a hole I ended...
 
 <!-- excerpt -->
 
@@ -16,7 +16,7 @@ My immediate attempt was targeted towards Azure. I have a couple of projects the
 
 Alrighty.
 
-So what about AWS. The CloudFront, from the start, felt solid. I felt it's going to happen here. I first created _Distribution_ without certificate, just to get started. Then I tried creating one with SSL certificate, which I previously saw was there. Quick jump to _Certificate Manager_ to import the certificate. Click, click. 
+So what about AWS. The CloudFront, from the start, felt solid. I felt it's going to happen here. I first created _Distribution_ without certificate, just to get started. Then I tried creating one with SSL certificate, which I previously saw was there. Quick jump to _Certificate Manager_ to import the certificate. Click, click.
 
 ```text
 The private key length is not supported. Only 1024-bit and 2048-bit are allowed. Choose Previous button below and fix it.
@@ -24,6 +24,6 @@ The private key length is not supported. Only 1024-bit and 2048-bit are allowed.
 
 Really? This is where it ends?
 
-It's difficult to wrap my head around, why my simple - custom domain and SSL (of course) - needs are so difficult even for two biggest cloud providers, where I would expect the best support for everything. So, defeated, I'm searching for other providers. 
+It's difficult to wrap my head around, why my simple - custom domain and SSL (of course) - needs are so difficult even for two biggest cloud providers, where I would expect the best support for everything. So, defeated, I'm searching for other providers.
 
 [1]: https://feedback.azure.com/forums/169397-cdn/suggestions/1332683-allow-https-for-custom-cdn-domain-names

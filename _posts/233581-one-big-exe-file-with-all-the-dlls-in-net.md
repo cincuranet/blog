@@ -120,7 +120,7 @@ static class InjectMe
 
 #### Copying the assembly loading code
 
-I thought it will be "just copying it". In fact it needed some processing around as well. Importing into modules. Handling names, because, similar to the resources, I used the same prefix to minimize collisions. 
+I thought it will be "just copying it". In fact it needed some processing around as well. Importing into modules. Handling names, because, similar to the resources, I used the same prefix to minimize collisions.
 
 It took me a while to figure everything out. Mostly by trial and error, comparing the IL a lot in [`ILSpy`][7] and thinking about errors from `Mono.Cecil`. Through it was tedious, I liked it! So much of new stuff (like module imports)!
 
@@ -219,7 +219,7 @@ static ExceptionHandler DuplicateExceptionHandler(ExceptionHandler eh, MethodDef
 
 It was a joy to work on something simple and straightforward from outside, learning more about the internals of `IL` and .NET. I could get used to it. :)
 
-The complete code is available in [this repository][5]. Feel free to contribute and improve it. 
+The complete code is available in [this repository][5]. Feel free to contribute and improve it.
 
 > [Related story.][9]
 

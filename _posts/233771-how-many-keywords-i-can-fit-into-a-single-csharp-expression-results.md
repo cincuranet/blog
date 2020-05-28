@@ -18,7 +18,7 @@ not exp log srand xor s qq qx xor s x x length uc ord and print chr ord for qw q
 
 This Perl piece, posted by user [CaptainAdjective][2], prints "just another perl hacker", when you execute it. And although I programmed in Perl for a very, very short time and I know it's a powerful language, this is nuts.
 
-But back to the C#. The easiest one, which I missed and I'm pretty mad at myself, is adding casting to my original expression: `case null when await this as object is false`. This brings us to 9. 
+But back to the C#. The easiest one, which I missed and I'm pretty mad at myself, is adding casting to my original expression: `case null when await this as object is false`. This brings us to 9.
 
 Some people found that you can do the casting, for example, indefinitely and get infinite amount of "blue words", I don't consider (and you might disagree and I'm fine with that) repetition as a valid solution.
 

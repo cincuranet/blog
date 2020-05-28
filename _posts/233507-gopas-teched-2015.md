@@ -3,11 +3,11 @@ title: |-
   Gopas TechEd 2015
 date: 2015-05-15T14:29:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
-Striktně vzato, pokud teď opravdu poprvé slyšíte o [Gopas TechEdu 2015][5], nemáte moc času to napravit. Ale šance ještě je. 
+Striktně vzato, pokud teď opravdu poprvé slyšíte o [Gopas TechEdu 2015][5], nemáte moc času to napravit. Ale šance ještě je.
 
-Tak jako tak, jestliže se chystáte, chtěl bych vás nalákat na svoje přednášky. 
+Tak jako tak, jestliže se chystáte, chtěl bych vás nalákat na svoje přednášky.
 
 * [Entity Framework 7 – velká tlustá černá čára za jednou érou][1]
 * [Jemný úvod do Continuous Integration][2]

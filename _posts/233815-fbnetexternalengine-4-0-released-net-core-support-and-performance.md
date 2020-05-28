@@ -14,7 +14,7 @@ Let's start with the .NET Core migration. Your code now runs on top of .NET Core
 
 Stability improvement has been done around `IExecutionContext`.
 
-And finally the performance. As with every release, performance improved. About 15% across the execution spectrum. 
+And finally the performance. As with every release, performance improved. About 15% across the execution spectrum.
 
 Documentation (requirements, installation steps, ...), examples and performance numbers are available on [this page][1].
 

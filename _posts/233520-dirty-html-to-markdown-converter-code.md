@@ -11,7 +11,7 @@ Few weeks ago I decided to convert some old posts on this blog to [Markdown][1] 
 
 <!-- excerpt -->
 
-The code below is not perfect nor converts every possible HTML to Markdown. It's a piece I wrote to help me with most cases I knew I had and the rest was done manually. Whatever it doesn't convert stays in HTML and it's up to you to finish it. Actually even the resulting Markdown might need some minor formatting tweaks. 
+The code below is not perfect nor converts every possible HTML to Markdown. It's a piece I wrote to help me with most cases I knew I had and the rest was done manually. Whatever it doesn't convert stays in HTML and it's up to you to finish it. Actually even the resulting Markdown might need some minor formatting tweaks.
 
 I was just felt sorry to throw it away :) so I'm archiving it here.
 

@@ -18,7 +18,7 @@ My fear whether it will work with my Raspberry Pi B+ and OpenELEC was short live
 
 I'm not going to post any speed tests because it greatly depends on environment. So it's useless, I think.
 
-Good work on all sides. I'm pleased. Also I suppose all the TL-WN72x should work the same way. 
+Good work on all sides. I'm pleased. Also I suppose all the TL-WN72x should work the same way.
 
 [1]: http://www.raspberrypi.org/products/model-b-plus/
 [2]: http://openelec.tv/

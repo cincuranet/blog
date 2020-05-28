@@ -5,7 +5,7 @@ date: 2011-11-14T18:55:22Z
 tags:
   - Life
   - Network Attached Storage (NAS)
-  - Storage &amp; Backup
+  - Storage & Backup
   - Synology
 ---
 I'm not writing often about services I use etc. But from time to time I'm extremely pleased with some and that's worth mentioning. This time it's [Synology][1]. I'm using Synology NAS boxes for a many years and in my opinion these are the best. But that's not what I like to talk about.

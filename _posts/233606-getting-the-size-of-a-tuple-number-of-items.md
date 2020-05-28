@@ -6,7 +6,7 @@ tags:
   - .NET
   - C#
 ---
-[Yesterday was a trip to the world of tuples and reflection][1] and today I'm going to continue on that note. [As previously][2], I needed something with tuples for [FbNetExternalEngine][3] - number of elements in whole tuple. I call it "size of tuple". 
+[Yesterday was a trip to the world of tuples and reflection][1] and today I'm going to continue on that note. [As previously][2], I needed something with tuples for [FbNetExternalEngine][3] - number of elements in whole tuple. I call it "size of tuple".
 
 <!-- excerpt -->
 
@@ -40,7 +40,7 @@ public int GetSizeTest(Type tuple)
 }
 ```
 
-I opted for slightly longer code but more readable code, instead of having it on just two lines.  
+I opted for slightly longer code but more readable code, instead of having it on just two lines.
 
 [1]: {{ include "post_link" 233605 }}
 [2]: {{ include "post_link" 233601 }}

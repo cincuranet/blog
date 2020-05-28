@@ -3,10 +3,10 @@ title: |-
   Firebird Conference 2019
 date: 2019-10-12T14:05:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Firebird
 ---
-After a small pause in every-year Firebird conferences, filled with few "seminars", the Firebird Conference is back. This year in Berlin, Germany. 
+After a small pause in every-year Firebird conferences, filled with few "seminars", the Firebird Conference is back. This year in Berlin, Germany.
 
 <!-- excerpt -->
 

@@ -22,6 +22,6 @@ Here are some picture (excuse my sloppy soldering job):
 
 [![Relay - side-front]({{ include "post_ilink" page "relay03_thumb.jpg" }})]({{ include "post_ilink" page "relay03.jpg" }})
 
-To my surprise even the real life "implementation" of relay (alright, this is a cheap 4 dollar relay, not rated for high current, precise switching times, etc.) is pretty much the same as the basic concept. There's a coil, some contacts and one of them is on a preloaded piece of metal acting as a spring. 
+To my surprise even the real life "implementation" of relay (alright, this is a cheap 4 dollar relay, not rated for high current, precise switching times, etc.) is pretty much the same as the basic concept. There's a coil, some contacts and one of them is on a preloaded piece of metal acting as a spring.
 
-Can't be any simpler. How cool is that? 
+Can't be any simpler. How cool is that?

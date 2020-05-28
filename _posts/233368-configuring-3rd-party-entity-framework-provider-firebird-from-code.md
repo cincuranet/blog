@@ -17,14 +17,14 @@ The classes mentioned above were not random choice. The fact is these two you ne
 
 ```csharp
 SetProviderServices(FirebirdSql.Data.EntityFramework6.FbProviderServices.ProviderInvariantName, FirebirdSql.Data.EntityFramework6.FbProviderServices.Instance);
-SetProviderFactory(FirebirdSql.Data.EntityFramework6.FbProviderServices.ProviderInvariantName, FirebirdSql.Data.FirebirdClient.FirebirdClientFactory.Instance);            
+SetProviderFactory(FirebirdSql.Data.EntityFramework6.FbProviderServices.ProviderInvariantName, FirebirdSql.Data.FirebirdClient.FirebirdClientFactory.Instance);
 ```
 
 The `ProviderInvariantName` field is a constant `"FirebirdSql.Data.FirebirdClient"`, so you don't have to type it yourself and be sure the classes are matching the provider.
 
 Finally put the [`DbConfigurationType` attribute][6] on your context and specify the name of `DbConfiguration` class you created above.
 
-And that's it. Just a few lines of code and the DAL project is now self contained without the need to have some external configuration. 
+And that's it. Just a few lines of code and the DAL project is now self contained without the need to have some external configuration.
 
 [1]: https://www.nuget.org/packages/EntityFramework.Firebird
 [2]: https://www.nuget.org/packages/EntityFramework.NuoDb

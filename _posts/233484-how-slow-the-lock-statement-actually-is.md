@@ -3,7 +3,7 @@ title: |-
   How slow the "lock" statement actually is?
 date: 2014-10-26T08:27:00Z
 tags:
-  - C#                
+  - C#
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
 When I'm teaching my ["parallel-threading-asynchronous-locking-synchronization" course][1] I discuss the [`lock` statement][2] a lot. Not only because it's probably the most widely used "lock", but also because it's pretty easy to fall into a trap if you don't know what's going on behind the scenes and around you.
@@ -94,7 +94,7 @@ static void MonitorTest()
 
 Is there a change in results now? Yes, a bit. Again the 32bit first. Now it was between about 17 % and 18 %. But the 64bit was between 0 % (few times the `lock` was even faster, though it was on a measurement error boundary) and 2 %.
 
-Now you might think that few percent difference on a μs operation is not important. Sure. But also take into account that when you start writing some locking or synchronization you want it to be fast. To utilize all resources you have available for getting the result. That means (not only) getting in and out the lock as fast as you can. 
+Now you might think that few percent difference on a μs operation is not important. Sure. But also take into account that when you start writing some locking or synchronization you want it to be fast. To utilize all resources you have available for getting the result. That means (not only) getting in and out the lock as fast as you can.
 
 As usual the decision is on you.
 

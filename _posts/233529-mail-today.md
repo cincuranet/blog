@@ -21,7 +21,7 @@ Thunderbird was next. I knew the development was no longer priority for Mozilla.
 
 Who would have thought that in 2015 there will be shortage on email clients on such an internet-born technology field as email? Weird and depressing together.
 
-At the end I'm using the web interface (as probably the majority of normal users). It's not best (if you're power user), especially the offline experience, but it sucks the least from all the other options. 
+At the end I'm using the web interface (as probably the majority of normal users). It's not best (if you're power user), especially the offline experience, but it sucks the least from all the other options.
 
 Funny that the best email client today, I currently use, is the default Mail app one on my iPhone. And it has CardDAV and CalDAV support.
 

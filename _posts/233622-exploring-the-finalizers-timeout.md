@@ -45,7 +45,7 @@ This code, in _Release_ build, puts in most cases `19` on the console as a last 
 
 #### Multiple finalizers
 
-For total time I just need to allocate enough object to potentially go over 40 seconds and have some shared counter. 
+For total time I just need to allocate enough object to potentially go over 40 seconds and have some shared counter.
 
 ```csharp
 class Program
@@ -89,7 +89,7 @@ Finally what about .NET Core? Does the same apply there? Nope. Both examples abo
 
 #### Closing
 
-During the normal life of the application all finalizers are of course executed no matter what. The timeout is only for shutdown on .NET. Easy to confirm by adding these two lines after the allocations (and again, these methods shouldn't be in in production code ever). 
+During the normal life of the application all finalizers are of course executed no matter what. The timeout is only for shutdown on .NET. Easy to confirm by adding these two lines after the allocations (and again, these methods shouldn't be in in production code ever).
 
 ```csharp
 GC.Collect();

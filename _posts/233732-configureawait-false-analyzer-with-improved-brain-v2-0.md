@@ -8,7 +8,7 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Roslyn
 ---
-The original [`ConfigureAwaitChecker` tool][1] I wrote was just a concept and I knew it had a lots of limitations. Luckily it idea was not completely dumb (even [Jon Skeet thinks so][2]) and hence when ideas for improvements came in, I was not skipping on these. And because these improvements become quite big, I'm releasing today version 2.0. 
+The original [`ConfigureAwaitChecker` tool][1] I wrote was just a concept and I knew it had a lots of limitations. Luckily it idea was not completely dumb (even [Jon Skeet thinks so][2]) and hence when ideas for improvements came in, I was not skipping on these. And because these improvements become quite big, I'm releasing today version 2.0.
 
 <!-- excerpt -->
 

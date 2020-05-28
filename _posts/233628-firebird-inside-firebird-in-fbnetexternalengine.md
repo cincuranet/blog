@@ -9,7 +9,7 @@ tags:
   - Firebird
   - SQL
 ---
-Because I can load any .NET code in [_FbNetExternalEngine_][1] I had and idea, probably since November last year, to try to load Firebird Embedded inside it all that in server (I know completely useless). So I did it.  
+Because I can load any .NET code in [_FbNetExternalEngine_][1] I had and idea, probably since November last year, to try to load Firebird Embedded inside it all that in server (I know completely useless). So I did it.
 
 <!-- excerpt -->
 
@@ -38,7 +38,7 @@ public static IEnumerator<ValueTuple<string>> NetworkSelect(string connectionStr
 		}
 	}
 }
-``` 
+```
 
 ```sql
 recreate procedure network_select(connection_string varchar(1000), command varchar(1000))
@@ -49,7 +49,7 @@ engine FbNetExternalEngine;
 
 I made the `NetworkSelect` procedure open with parameters to be able to play with it a little. I did simple test running `select * from network_select('database=localhost:ext;user=sysdba;password=masterkey', 'select * from mon$attachments');`.
 
-With `SET LIST ON` is received this nice result.  
+With `SET LIST ON` is received this nice result.
 
 ```text
 ITEM                            51|8480|0|C:\USERS\JIRI\DOCUMENTS\DEVEL\BIN\FBNETEXTERNALENGINE\EXT|Cache Writer|||||0|30.05.2017 10:15:26|1||14||||||1
@@ -161,7 +161,7 @@ Rows as expected. This I think is very useful scenario. One can easily load or d
 
 #### Closing
 
-What I like is that with the _FbNetExternalEngine_ you have a lot of options, whole .NET Framework ecosystem is available with little effort directly from SQL. Looking forward to see what people will do (and what crazy idea I'll get). 
+What I like is that with the _FbNetExternalEngine_ you have a lot of options, whole .NET Framework ecosystem is available with little effort directly from SQL. Looking forward to see what people will do (and what crazy idea I'll get).
 
 [1]: {{ include "post_link" 233625 }}
 [2]: https://firebirdsql.org/

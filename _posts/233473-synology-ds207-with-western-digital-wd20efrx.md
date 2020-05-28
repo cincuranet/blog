@@ -15,7 +15,7 @@ Because the box is outdated I'm always a bit nervous with new drives. Of course 
 
 I suppose it should work also with newer, though still outdated, models like x08 etc.
 
-Hope it helps.  
+Hope it helps.
 
 [1]: https://www.synology.com/en-global/
 [2]: http://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1

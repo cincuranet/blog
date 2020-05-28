@@ -13,7 +13,7 @@ At the moment, one of my explorations is how the system (Windows) handles more-t
 
 <!-- excerpt -->
 
-As I was hammering the machine with threads and fully (or rather overly) utilizing the CPU, I realized the test-bench I had, is going to take a while to complete. So, I closed my connection and let it run. Unfortunately, I miscomputed the time (or rather the size of the task) and it was not finishing after almost 24 hours. It was time to kill it and start over. 
+As I was hammering the machine with threads and fully (or rather overly) utilizing the CPU, I realized the test-bench I had, is going to take a while to complete. So, I closed my connection and let it run. Unfortunately, I miscomputed the time (or rather the size of the task) and it was not finishing after almost 24 hours. It was time to kill it and start over.
 
 The (first) problem was, the machine was so hammered, I couldn't connect back. TeamViewer was not able to respond quickly enough to the connection request. I had to patiently keep trying, until I was lucky enough the TeamViewer's thread(s) were scheduled at the correct time and had enough CPU quota to respond. Love to the scheduler, priority boost and who knows what was kicking in at that time.
 

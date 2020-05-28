@@ -6,7 +6,7 @@ tags:
   - .NET
   - C#
 ---
-If you have been following last two posts about the stack overflows ([post 1][1], [post 2][2]), you know I've hit some limits. The first was 65535 fields in a class. Which is easy to explain, because the number is actually the maximum value that fits into unsigned 16-bit integer. Makes sense. Then I've hit some weird number (or actually numbers) for number of methods. It took me quite a while, with some help, to understand, what the number is based on. 
+If you have been following last two posts about the stack overflows ([post 1][1], [post 2][2]), you know I've hit some limits. The first was 65535 fields in a class. Which is easy to explain, because the number is actually the maximum value that fits into unsigned 16-bit integer. Makes sense. Then I've hit some weird number (or actually numbers) for number of methods. It took me quite a while, with some help, to understand, what the number is based on.
 
 <!-- excerpt -->
 
@@ -26,7 +26,7 @@ This one is easy to crack. Every instance class has a constructor. Even if you d
 
 #### Remaining methods idea #1 (wrong)
 
-Because of the constructor, I thought, what if there are some methods inherited from parent object taking up the spots? The parent object, unless explicitly specified is `System.Object`. Thanks to the available sources, I can easily investigate. 
+Because of the constructor, I thought, what if there are some methods inherited from parent object taking up the spots? The parent object, unless explicitly specified is `System.Object`. Thanks to the available sources, I can easily investigate.
 
 Quick looks into [sources][3] shows there's indeed some methods that could be somehow taking up some spots. There are the well known ones like `ToString`, `GetType`, `GetHashCode` and even the constructor. But there's more: `Equals` (2x), `ReferenceEquals`, `Finalize` (`~Object`), `MemberwiseClone`, `FieldSetter`, `FieldGetter`, `GetFieldInfo`. Looking at the list, it looks like it might be it. Sadly it's only 12 methods. That's not enough.
 
@@ -39,7 +39,7 @@ Maybe something is injected by JIT for internal use? Time for _WinDbg_. Dumping 
 71cd5c78 719779b0 PreJIT System.Object.Finalize()
 ```
 
-This got me nowhere. Here I also realized I could have tested it way easier by creating my own base class with bunch of methods to go over the limit, while keeping the `BigAssClass` in the limit. In fact I did that later, out of curiosity (yes it works fine, if you'd like to ask).     
+This got me nowhere. Here I also realized I could have tested it way easier by creating my own base class with bunch of methods to go over the limit, while keeping the `BigAssClass` in the limit. In fact I did that later, out of curiosity (yes it works fine, if you'd like to ask).
 
 #### Remaining methods idea #2 (even more wrong)
 
@@ -47,7 +47,7 @@ I decided to zoom out a little and look at the numbers. The 65520 is `0xFFF0`, i
 
 #### Remaining methods idea #3 - time to get deeper
 
-Since the previous two attempts brought me nowhere close to the understanding, I made a decision to be methodical. Let's first try to find the message somewhere in the [CoreCLR sources][4]. Although I was running on standard .NET a quick test on .NET Core proved it's happening there as well and with the same exception. The message comes from `IDS_CLASSLOAD_TOO_MANY_METHODS` which is, sadly, used on multiple places. 
+Since the previous two attempts brought me nowhere close to the understanding, I made a decision to be methodical. Let's first try to find the message somewhere in the [CoreCLR sources][4]. Although I was running on standard .NET a quick test on .NET Core proved it's happening there as well and with the same exception. The message comes from `IDS_CLASSLOAD_TOO_MANY_METHODS` which is, sadly, used on multiple places.
 
 Maybe with the underlying unmanaged exception and some PDBs I could get closer to what I'm looking for.
 
@@ -82,13 +82,13 @@ ChildEBP RetAddr  Caller, Callee
 0070e59c 72e2c46d clr!EEHeapFreeInProcessHeap+0x2f, calling clr!EEHeapFree
 ```
 
-I wouldn't say it helped a much. I have the `clrjit.dll!Compiler::impImportBlockCode`, `clrjit.dll!Compiler::impResolveToken` and `clr!CEEInfo::resolveToken` to look at and around. 
+I wouldn't say it helped a much. I have the `clrjit.dll!Compiler::impImportBlockCode`, `clrjit.dll!Compiler::impResolveToken` and `clr!CEEInfo::resolveToken` to look at and around.
 
 Methodical approach out of the window, let's jump around in the memory in _WinDbg_ and hope for the best. Yep, I'm getting desperate.
 
-#### Remaining methods idea #4 - solution, finally 
+#### Remaining methods idea #4 - solution, finally
 
-As I was jumping around in the memory in _method tables_ and _method descriptors_ I realized something. With the class as big as possible while still being able to load it, the _WinDbg_ says `Slots in VTable: 65525`. Wait a minute. 
+As I was jumping around in the memory in _method tables_ and _method descriptors_ I realized something. With the class as big as possible while still being able to load it, the _WinDbg_ says `Slots in VTable: 65525`. Wait a minute.
 
 There are some methods from `System.Object`. Remember?
 
@@ -97,7 +97,7 @@ There are some methods from `System.Object`. Remember?
 71ce9dd0 7197797c PreJIT System.Object.Equals(System.Object)
 71d9d8a0 7197799c PreJIT System.Object.GetHashCode()
 71cd5c78 719779b0 PreJIT System.Object.Finalize()
-```  
+```
 
 I was onto something in the first attempt. What these methods have in common? Except for the `Finalize` (which has special syntax in C# anyway), all are virtual. That makes sense. I can do the same with my own base class, where base class virtual methods take up the spots in derived class.
 
@@ -107,9 +107,9 @@ Defeated  I reached to Jan Kotas from Core CLR team (As it turned out he's from 
 
 #### Summary
 
-The limit is really 65535 methods in one class. But some spots are already occupied. For instance class one spot is taken by constructor. Another three spots are taken by virtual methods from `System.Object`. One by the `Finalize` method. And 10 spots are reserved. Together that's 15 spots taken. 65520 + 15 = 65535. Nice! 
+The limit is really 65535 methods in one class. But some spots are already occupied. For instance class one spot is taken by constructor. Another three spots are taken by virtual methods from `System.Object`. One by the `Finalize` method. And 10 spots are reserved. Together that's 15 spots taken. 65520 + 15 = 65535. Nice!
 
-I know this has probably no usage for a real world programming in .NET and it's a pure geekiness, but it was fun nonetheless. Trying to get some sense from what I knew (or was able to prove) or was able to collect. 
+I know this has probably no usage for a real world programming in .NET and it's a pure geekiness, but it was fun nonetheless. Trying to get some sense from what I knew (or was able to prove) or was able to collect.
 
 [1]: {{ include "post_link" 233610 }}
 [2]: {{ include "post_link" 233611 }}

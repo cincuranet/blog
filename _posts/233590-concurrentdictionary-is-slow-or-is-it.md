@@ -7,7 +7,7 @@ tags:
   - .NET
   - .NET Core
 ---
-On this year's [MS Fest][1] [Jarda Jirava][2] had a presentation about [Akka.Net][3]. I was interested in this topic, because the _actor model_ is one way (out if many - sadly no silver bullet yet) to tackle concurrency and parallelism problems. 
+On this year's [MS Fest][1] [Jarda Jirava][2] had a presentation about [Akka.Net][3]. I was interested in this topic, because the _actor model_ is one way (out if many - sadly no silver bullet yet) to tackle concurrency and parallelism problems.
 
 While showing some _actor_ demos there was a nice comparison with home made solutions. So you don't have to go to full framework to try thinking in _actors_. The demo was just storing some key and value into a _hashtable_. The hand made was first [using][4] just plain old [`Dictionary<int, int>`][6] with [`lock`][8]/[`Monitor`][9] and then [using][5] [`ConcurrentDictionary<int, int>`][7]. To mine (and Jarda's surprise too) the `ConcurrentDictionary<int, int>` was slower. So I started digging into it and looking for a reason. Because I was confident the `ConcurrentDictionary<int, int>` should be faster compared to only single `Monitor`.
 
@@ -71,7 +71,7 @@ So why is this?
 
 #### Thinking
 
-Looking at the code, you clearly spot two interesting pieces. The code is adding unique keys to the dictionary. Thus there will be no updates of values and it will be just inserting new items. 
+Looking at the code, you clearly spot two interesting pieces. The code is adding unique keys to the dictionary. Thus there will be no updates of values and it will be just inserting new items.
 
 Also, there's nothing happening around. It's just adding the items as quickly as possible. Hammering the locking. That's far from regular case.
 

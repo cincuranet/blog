@@ -9,7 +9,7 @@ tags:
 ---
 After [yesterday's post with I-don't-want-to-just-delete-this-code][1] I realized I have another code I'm keeping already for years. It's from my college years. At that time I was entering as much programming classes as I could - it was way easier than i.e. "Automata, Grammars, and Complexity" ;) (IB102 is the code in case you'd like to search catalog of [Faculty of Informatics Masaryk University][2]), it was fun and I liked it.
 
-Anyway I entered also the newly created class related to CLR, .NET, C# etc. and we had weekly seminars where we actually did the programming. At one point in this seminar I wrote the code below. I don't know whether it was just some fun project because I had time to do it or some spin-up from assignment we had to do. 
+Anyway I entered also the newly created class related to CLR, .NET, C# etc. and we had weekly seminars where we actually did the programming. At one point in this seminar I wrote the code below. I don't know whether it was just some fun project because I had time to do it or some spin-up from assignment we had to do.
 
 <!-- excerpt -->
 
@@ -26,7 +26,7 @@ Of course there are some rough edges. What you expect from one hour project?
 
 And of course the code could use some love as well.
 
-The code below is intentionally just one file so you can just grab it, compile it and have fun.  
+The code below is intentionally just one file so you can just grab it, compile it and have fun.
 
 ```csharp
 using System;

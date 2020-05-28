@@ -4,7 +4,7 @@ title: |-
 date: 2013-10-18T07:01:00Z
 tags:
   - Entity Framework
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Pokud jste nestihli/nestihnete letošní [MSFest][1] nebo [TechEd][2] a zajímá vás (především) Entity Framework 6 mohla by vám přijít vhod akce [WUG][3]u ve Zlíně.
 

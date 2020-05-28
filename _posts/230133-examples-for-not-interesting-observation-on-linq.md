@@ -5,9 +5,9 @@ date: 2009-05-03T11:06:00Z
 tags:
   - LINQ
 ---
-After the post [(Not) interesting observation on LINQ][1] was out [Michal Blaha][2] asked me to show some example to show what I'm talking about. :) 
+After the post [(Not) interesting observation on LINQ][1] was out [Michal Blaha][2] asked me to show some example to show what I'm talking about. :)
 
-OK, here it is. This example shows the first observation from second paragraph (yep, it's second ;)). I'm using only Where, for the sake of simplicity. 
+OK, here it is. This example shows the first observation from second paragraph (yep, it's second ;)). I'm using only Where, for the sake of simplicity.
 
 ```csharp
 class Program
@@ -30,9 +30,9 @@ class Class1
 }
 ```
 
-No IQueryable, no querying provider stuff, etc. Compiles without problems, and runs without complaining. No magic, right? 
+No IQueryable, no querying provider stuff, etc. Compiles without problems, and runs without complaining. No magic, right?
 
-Now the third (last) paragraph. 
+Now the third (last) paragraph.
 
 ```csharp
 class Program

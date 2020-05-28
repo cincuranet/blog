@@ -22,9 +22,9 @@ Few minutes of magic with [Sysinternals tools][3] and [VMware Workstation][4] vi
 * Unplug the watch. It should (re)start and start updating.
 * Done.
 
-There's no data nor settings lost during the update (similar to "regular" update). As I said, that's what I found and what works for me. Do it at your own risk. No warranty. 8-) 
+There's no data nor settings lost during the update (similar to "regular" update). As I said, that's what I found and what works for me. Do it at your own risk. No warranty. 8-)
 
-Hope Garmin will not change the procedure or will not hide the download location. Not that it would stop me, but it would be another work. :) 
+Hope Garmin will not change the procedure or will not hide the download location. Not that it would stop me, but it would be another work. :)
 
 [1]: http://www8.garmin.com/support/download_details.jsp?id=6929
 [2]: http://en.wikipedia.org/wiki/USB_mass_storage_device_class

@@ -93,7 +93,7 @@ static Task WrapEapToTap<TObject, TEventHandler, TEventArgs, TResult>(TObject ob
 	eapAction(obj, tcs);
 	return tcs.Task;
 }
-``` 
+```
 
 If you'd like to use this method to wrap the `SmtpClient` example it looks like this.
 
@@ -111,7 +111,7 @@ using (var client = new SmtpClient())
 }
 ```
 
-Anyway I believe you should first try wrapping [asynchronous programming model (APM)][10] (that's the one with `BeginXxx` and `EndXxx` methods) using `FromAsync` method. This model is kind of less hacky and closer to the metal. And any good component should have first and foremost APM and maybe EAP. 
+Anyway I believe you should first try wrapping [asynchronous programming model (APM)][10] (that's the one with `BeginXxx` and `EndXxx` methods) using `FromAsync` method. This model is kind of less hacky and closer to the metal. And any good component should have first and foremost APM and maybe EAP.
 
 If you're stuck with EAP, I hope the code above helps.
 

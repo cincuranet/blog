@@ -15,6 +15,6 @@ Well test on my notebook on .NET FW 3.5 in VPC, optimization turned on shows tha
 
 Here I didn't measured any difference. And the code is pretty much same. It's not exhaustive testing (and you know - I believe only in stats I adulterated ;)).
 
-I did about 10 runs for each test and looked to IL (it's fastest way to prove your idea is wrong or not). 
+I did about 10 runs for each test and looked to IL (it's fastest way to prove your idea is wrong or not).
 
 What about you? Similar results?

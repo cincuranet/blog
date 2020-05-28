@@ -3,7 +3,7 @@ title: |-
   Global Azure Bootcamp 2019
 date: 2019-04-20T12:21:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Azure
   - Azure Cosmos DB
 ---

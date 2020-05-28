@@ -11,7 +11,7 @@ The `finally` block has a little unknown feature, that frankly isn't even remote
 
 <!-- excerpt -->
 
-The `finally` block is guaranteed to run completely. In other words, it cannot be interrupted using regular outside code (you can still interrupt it yourself). This is important, because there's a little nasty exception named [`ThreadAbortException`][1]. This can erupt basically anywhere anytime. But for some very reliable pieces of code, like synchronization primitives, this isn't what you want to hear. 
+The `finally` block is guaranteed to run completely. In other words, it cannot be interrupted using regular outside code (you can still interrupt it yourself). This is important, because there's a little nasty exception named [`ThreadAbortException`][1]. This can erupt basically anywhere anytime. But for some very reliable pieces of code, like synchronization primitives, this isn't what you want to hear.
 
 Related to this are also [_constrained execution regions_][6] or [`CriticalFinalizerObject`][7]. Moreover, .NET Core doesn't support `Thread.Abort` anymore (and JIT is smart [about it][12]).
 
@@ -39,7 +39,7 @@ In [`ProducerConsumerQueues.cs`][2] and [`SemaphoreSlim.cs`][3] it's "regular" s
 > Take a lock to ensure only one thread can restore the details
 > at a time against this exception object that could have
 > multiple ExceptionDispatchInfo instances associated with it.
-> 
+>
 > We do this inside a finally clause to ensure ThreadAbort cannot
 > be injected while we have taken the lock. This is to prevent
 > unrelated exception restorations from getting blocked due to TAE.
@@ -78,7 +78,7 @@ In CoreFX I decided to skip `System.Data.OleDb`, `System.Data.Odbc`, `System.Dat
 * [`VirtualHeap.cs#L101`](http://github.com/dotnet/corefx/blob/a1940826/src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/VirtualHeap.cs#L101)
 * [`WindowsRuntimeBuffer.cs#L164`](http://github.com/dotnet/corefx/blob/a1940826/src/System.Runtime.WindowsRuntime/src/System/Runtime/InteropServices/WindowsRuntime/WindowsRuntimeBuffer.cs#L164)
 
-First (ab)use of `finally` that caught my eye is in [`SharedPerformanceCounter.cs`][8], because I don't usually think about shared state across processes. Another interesting is in [`FileSystemWatcher.Linux.cs`][9], talking about the tradeoffs done to make the `FileSystemWatcher` on Linux	 work. 
+First (ab)use of `finally` that caught my eye is in [`SharedPerformanceCounter.cs`][8], because I don't usually think about shared state across processes. Another interesting is in [`FileSystemWatcher.Linux.cs`][9], talking about the tradeoffs done to make the `FileSystemWatcher` on Linux	 work.
 
 Not exactly usage of `finally` block, but interesting nonetheless is object I found while looking at [`PinnedObject.cs`][10] named [`CriticalDisposableObject.cs`][11] (it's not public). It derives from well known (public) [`CriticalFinalizerObject`][7] and provides a simple template. The `Release` method reminds me all of the different ways that were used decade or more ago for "disposing" - `Release`, `Dispose`, `Close`, `Free`, etc. methods, some of them still in place today (yes, I'm looking at you `Stream` class).
 

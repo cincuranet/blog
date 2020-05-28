@@ -7,7 +7,7 @@ tags:
   - Azure Storage
   - Cloud
   - Lessons learned
-  - Storage &amp; Backup
+  - Storage & Backup
 ---
 Last week I spent fair amount of time with error `The specified blob or block content is invalid.` while uploading to Azure blob in blocks. If you do a quick googling you'll find a lot of resources about fact that the block IDs need to be same of length. With maybe more googling you'll find error codes and find [`InvalidBlockId`][1] might seem more appropriate for this. But this is a false path. While going through first results you'll sooner or later find quite [good article][2].
 

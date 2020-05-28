@@ -13,7 +13,7 @@ tags:
   - SQL
   - Visual Studio
 ---
-New version 5.10.0.0 of [ADO.NET provider for Firebird][1] is ready for download. Apart from regular bugfixes some new features are available. Notably, `FbTrace` now supports new format of Firebird 3 and then `DefaultFbMigrationSqlGeneratorBehavior` allows easier customization in case you want specific behavior for Entity Framework Migrations.   
+New version 5.10.0.0 of [ADO.NET provider for Firebird][1] is ready for download. Apart from regular bugfixes some new features are available. Notably, `FbTrace` now supports new format of Firebird 3 and then `DefaultFbMigrationSqlGeneratorBehavior` allows easier customization in case you want specific behavior for Entity Framework Migrations.
 
 <!-- excerpt -->
 

@@ -3,7 +3,7 @@ title: |-
   Gopas TechEd 2013
 date: 2013-05-13T10:00:32Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Rok se s rokem sešel a máme tu další ročník [Gopas TechEd-u][1]. Nejprve doporučuji prostudovat samozřejmě [program][2], protože obsahu je opravdu mraky.
 

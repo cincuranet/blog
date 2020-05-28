@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
 	httpd = make_server('', 6600, wsgi_app)
 	httpd.serve_forever()
-``` 
+```
 
 The whole is [`app.py`][13] in [my repository][7].
 
@@ -46,7 +46,7 @@ Done. Now if you wait a few seconds for deployment to happen and head to your UR
 
 Check the [cherrypy.azurewebsites.net][8] to see the code from my repository running. You can also see the current Python and CherryPy versions (3.4.1 and 3.6.0 respectively in time of writing).
 
-Nothing difficult really. I was just following breadcrumbs and putting together A and B. Also happy to see I can play with Python on different "places". 
+Nothing difficult really. I was just following breadcrumbs and putting together A and B. Also happy to see I can play with Python on different "places".
 
 [1]: http://www.cherrypy.org/
 [2]: http://azure.microsoft.com/

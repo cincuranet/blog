@@ -3,7 +3,7 @@ title: |-
   Gopas TechEd 2012
 date: 2012-04-02T10:00:45Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 I letos se koná [Gopas TechEd][1] a i letos si budete moci přijít prohlédnout jednoho podivného vývojáře. :) Pokud čtete můj blog alespoň více než jednou ročně, víte co mě zajímá. Takže přednášky nebudou o ničem nečekaném.
 

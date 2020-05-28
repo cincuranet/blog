@@ -25,4 +25,4 @@ struct Program
 
 Trying to compile this simple piece of code works like a charm. Are you asking what this might be useful for? I don't have an answer. I think it does not have any real useful application. But this made me look up ["specification" of what _main method_ should look like][1], at least.
 
-[1]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/main-and-command-args/index#overview 
+[1]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/main-and-command-args/index#overview

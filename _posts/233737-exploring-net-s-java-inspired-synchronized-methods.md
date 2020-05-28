@@ -24,11 +24,11 @@ public synchronized void foo() {
 }
 ```
 
-The `synchronized` keyword is what's interesting. In simple language it means, the `foo` method can be executed only by one thread at any given time. Complete description, i.e. memory ordering, can be found in the [docs][1]. 
+The `synchronized` keyword is what's interesting. In simple language it means, the `foo` method can be executed only by one thread at any given time. Complete description, i.e. memory ordering, can be found in the [docs][1].
 
 #### C#
 
-Although there's no `synchronized` keyword in C#, it exists in IL. The chapter "II.15.4.3.3 Implementation information" of [ECMA 335 specification][2] lists attributes that the method can have and the meaning. The `synchronized` is declared as follows. 
+Although there's no `synchronized` keyword in C#, it exists in IL. The chapter "II.15.4.3.3 Implementation information" of [ECMA 335 specification][2] lists attributes that the method can have and the meaning. The `synchronized` is declared as follows.
 
 > synchronized specifies that the whole body of the method shall be single-threaded. If this method is an instance or virtual method, a lock on the object shall be obtained before the method is entered. If this method is a static method, a lock on the closed type shall be obtained before the method is entered. If a lock cannot be obtained, the requesting thread shall not proceed until it is granted the lock. This can cause deadlocks. The lock is released when the method exits, either through a normal return or an exception.  Exiting a synchronized method using a tail. call shall be implemented as though the tail. had not been specified.
 
@@ -122,13 +122,13 @@ Using `Monitor`/`lock`.
 00007ff9`dea72acb 488d6500        lea     rsp,[rbp]
 00007ff9`dea72acf 5d              pop     rbp
 00007ff9`dea72ad0 c3              ret
-```     
+```
 
 The first code is calling `JIT_MonEnterWorker_Portable` and `JIT_MonExitWorker_Portable`. The other code is using `JIT_MonReliableEnter_Portable` and `JIT_MonExit_Portable`. The "enter" methods are defined in `jithelpers.cpp` [here][3] and [here][4] respectively. These methods do basically the same logic, minus some structural differences. The `lock` version is obviously bit longer with some additional logic (i.e. conditional `ThrowLockTakenException`) because that's how `lock` is compiled.
 
 #### Summary
 
-The "synchronized" method is - for outside observer - same as using the `Monitor`/`lock`. No magic here. It's also nice to see how the same pieces are reused in different layers.  
+The "synchronized" method is - for outside observer - same as using the `Monitor`/`lock`. No magic here. It's also nice to see how the same pieces are reused in different layers.
 
 [1]: https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html
 [2]: https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf

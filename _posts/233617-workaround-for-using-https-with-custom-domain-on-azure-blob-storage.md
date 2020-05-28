@@ -12,7 +12,7 @@ tags:
 
 <!-- excerpt -->
 
-What to do about it? It's time for combining multiple services together and hoping it fits. Of course I don't want to put i.e. Web App in front of it because that's another piece to take care about. I want something Azure manages for me. 
+What to do about it? It's time for combining multiple services together and hoping it fits. Of course I don't want to put i.e. Web App in front of it because that's another piece to take care about. I want something Azure manages for me.
 
 #### Solution
 

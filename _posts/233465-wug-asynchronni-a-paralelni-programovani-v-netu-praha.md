@@ -3,7 +3,7 @@ title: |-
   WUG: Asynchronní a paralelní programování v .NETu (Praha)
 date: 2014-07-02T12:33:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
 Pro velký úspěch v Brně si zopakujeme [Asynchronní a paralelní programování v .NETu][2] pro Prahu. :)

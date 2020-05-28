@@ -33,7 +33,7 @@ lock (string.Intern(name))
 
 Where the `name` is your string you want the lock to be bound to.
 
-Does it have some drawbacks? Well, first, the interning was not designed for locking. It's just plain abuse of this behavior. Also, although improbable, the implementation can change and then you're in trouble. Among these philosophical concerns, there's one (at least) from real world. In case some other piece of code in your application uses the same technique over the same string content, deadlocks or contentions can occur. And you can't spot these easily. 
+Does it have some drawbacks? Well, first, the interning was not designed for locking. It's just plain abuse of this behavior. Also, although improbable, the implementation can change and then you're in trouble. Among these philosophical concerns, there's one (at least) from real world. In case some other piece of code in your application uses the same technique over the same string content, deadlocks or contentions can occur. And you can't spot these easily.
 
 So, although it's very straightforward, it's also pretty dangerous.
 
@@ -63,7 +63,7 @@ lock (locker[name])
 
 Where the `locker` is instance of `NamedMonitor` and `name` is your string you want the lock to be bound to.
 
-Does this have some drawbacks? Obviously, it's something you have to write, test and "maintain" it.  Additionally, you have to keep the instance around and accessible. 
+Does this have some drawbacks? Obviously, it's something you have to write, test and "maintain" it.  Additionally, you have to keep the instance around and accessible.
 
 On the other hand, this gives you the option to use different keys (i.e. `int`), plus different pieces of code can use different instances. You can even add a method to remove the object from the collection (although special care has to be taken because the object might be in use).
 

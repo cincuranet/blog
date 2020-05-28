@@ -7,7 +7,7 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
-.NET 4.6 contains new handy [class `AsyncLocal<T>`][1]. It's something like thread-local or TLS. Basically the value you set continues with the asynchronous operation even if you change it as the operation is running. 
+.NET 4.6 contains new handy [class `AsyncLocal<T>`][1]. It's something like thread-local or TLS. Basically the value you set continues with the asynchronous operation even if you change it as the operation is running.
 
 <!-- excerpt -->
 
@@ -39,7 +39,7 @@ static async Task Output(string name)
 }
 ```
 
-When you run it you'll see the difference in values (and probably thread IDs). 
+When you run it you'll see the difference in values (and probably thread IDs).
 
 ```text
 T=1

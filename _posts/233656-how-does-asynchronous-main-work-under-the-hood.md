@@ -12,7 +12,7 @@ tags:
 
 <!-- excerpt -->
 
-Given this feature is available from C# 7.1 it's clearly just compiler feature not relying on anything from say CLR. Thus the compiler is doing "just" some transformation. 
+Given this feature is available from C# 7.1 it's clearly just compiler feature not relying on anything from say CLR. Thus the compiler is doing "just" some transformation.
 
 #### History
 
@@ -43,7 +43,7 @@ These two approaches are not exactly the same, in particular concerning exceptio
 I created an empty console application, with empty `static async Task Main(string[] args)` and added `<LangVersion>7.1</LangVersion>` to the `csproj`. Opened good old [`ildasm`][6] and here's the result.
 
 ```text
-.method private hidebysig specialname static 
+.method private hidebysig specialname static
         void  '<Main>'(string[] args) cil managed
 {
   .entrypoint

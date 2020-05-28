@@ -3,7 +3,7 @@ title: |-
   .NET DeveloperDays 2018
 date: 2018-07-27T06:34:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 In less than two months the [.NET DeveloperDays 2018][1] conference will happen. According to the organizers it's "the biggest event in Central and Eastern Europe dedicated exclusively to application development on the .NET platform" and I'm excited to speak there together with other great [speakers][2].
 

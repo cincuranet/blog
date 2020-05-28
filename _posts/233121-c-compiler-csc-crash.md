@@ -8,11 +8,11 @@ tags:
 ---
 Last week I was doing fairly simple change in a project I'm currently working on daily. Added a controller, model, few DTOs and orchestrated all this together using some methods from "library". I had clean focus what to do and some pieces of new methods I already had in existing methods. So I partly also did small refactoring. While typing the code I noticed the red squiggles etc. are behaving weird already. When I was done with change I invoked build process and suddenly everything went wrong.
 
-First: 
+First:
 
 ![image]({{ include "post_ilink" page "csharp_crash.png" }})
 
-Quickly followed by: 
+Quickly followed by:
 
 ![image]({{ include "post_ilink" page "csharp_crash2.png" }})
 

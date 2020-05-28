@@ -5,7 +5,7 @@ date: 2015-08-04T10:40:00Z
 tags:
   - Windows
 ---
-Why is there so much of talking about new Windows 10 Windows Updates installation procedure? My RSS reader is full of articles about it. You can't turn it off. And who cares? Not mentioning you can turn it off, it just takes more effort. 
+Why is there so much of talking about new Windows 10 Windows Updates installation procedure? My RSS reader is full of articles about it. You can't turn it off. And who cares? Not mentioning you can turn it off, it just takes more effort.
 
 Except some really special cases, which really doesn't matter for 99,999% users (yes, even developers), it is just common sense. Or at least I think. You need to have an up-to-date system. I implemented same rule in my home network. Every computer, except few (explained below), installs updates automatically.
 

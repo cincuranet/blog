@@ -16,9 +16,9 @@ In 2007 then Principal Software Architect on Data Programmability team Mike Pizz
 
 The `DefiningQuery` is long forgotten and probably only few people on the planet know about it (not that it was that known at that time). But one feature in "new" Entity Framework Core, brings that feel back to me. It's [Query Types] (or [Keyless Entity Types in upcoming Entity Framework Core 3.0][3]). It's not the same feature, but the versatility of Query Types is something that's often overlooked.
 
-Let me tell you why. Although there's bunch of usages, and you can see those in documentation, one in particular I like to show. Whenever I'm teaching one of my Entity Framework (Core) courses or speaking on a conference, I'm trying to tell people that the ORM is not the single path they have to choose. For two reasons. 
+Let me tell you why. Although there's bunch of usages, and you can see those in documentation, one in particular I like to show. Whenever I'm teaching one of my Entity Framework (Core) courses or speaking on a conference, I'm trying to tell people that the ORM is not the single path they have to choose. For two reasons.
 
-Nothing beats handcrafted SQL query in terms of performance or feature availability from the database engine itself. And understanding, at least on a basic level, SQL and execution plans helps preventing performance issues with using ORM. And once you are in a need for performance and/or some database engine feature (which usually goes hand in hand with performance) you can do it with Query Types. 
+Nothing beats handcrafted SQL query in terms of performance or feature availability from the database engine itself. And understanding, at least on a basic level, SQL and execution plans helps preventing performance issues with using ORM. And once you are in a need for performance and/or some database engine feature (which usually goes hand in hand with performance) you can do it with Query Types.
 
 Just take raw handcrafted SQL and "map" it to the result.
 

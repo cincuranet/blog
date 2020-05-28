@@ -5,7 +5,7 @@ date: 2013-11-27T12:28:00Z
 tags:
   - Best practice or not?
   - Multithreading/Parallelism/Asynchronous/Concurrency
-  - Storage &amp; Backup
+  - Storage & Backup
   - AWS
   - Cloud
 ---

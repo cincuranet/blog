@@ -1,6 +1,6 @@
 ---
 title: |-
-  Visualizing tearing on decimal 
+  Visualizing tearing on decimal
 date: 2017-05-30T15:03:00Z
 tags:
   - .NET
@@ -99,7 +99,7 @@ Running this on .NET Core (but works fine on .NET as well) shows nicely the spli
 00:00:01.4071562: 79228162495817593519834398720 00000000FFFFFFFF0000000000000000
 ```
 
-What a nice result. The [underlying values][3] are clearly visible (the boundaries between them). 
+What a nice result. The [underlying values][3] are clearly visible (the boundaries between them).
 
 [1]: {{ include "post_link" 233602 }}
 [2]: /about

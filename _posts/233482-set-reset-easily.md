@@ -11,7 +11,7 @@ Maybe you remember this from good old Delphi or WinForms days. Set the title of 
 
 <!-- excerpt -->
 
-What I hate is creating variable to store old value and then set it back. It's like too much manual work. 
+What I hate is creating variable to store old value and then set it back. It's like too much manual work.
 
 ```csharp
 var oldValue = instance.Property;
@@ -89,7 +89,7 @@ using (SetResetHelper.SetReset(() => ServicePointManager.ServerCertificateValida
 {
 	// ...
 }
-```  
+```
 
 ```csharp
 var instance = new Foo();
@@ -101,7 +101,7 @@ using (SetResetHelper.SetReset(instance, x => x.FooBar, 20))
 Console.WriteLine(instance.FooBar);
 ```
 
-I'm pretty sure somebody did this before me. I just did it as a small mental training. And also because I needed it. :)     
+I'm pretty sure somebody did this before me. I just did it as a small mental training. And also because I needed it. :)
 
 [1]: http://msdn.microsoft.com/en-us/library/b1yfkh5e(v=vs.110).aspx
 [2]: http://msdn.microsoft.com/en-us/library/system.linq.expressions(v=vs.110).aspx

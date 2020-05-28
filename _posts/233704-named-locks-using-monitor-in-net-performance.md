@@ -12,7 +12,7 @@ One thing remaining from [last week's exploration of named locks][1] is performa
 
 #### What to measure?
 
-I can measure how long does it take to get a lock using one or the other method, but that might be misleading. Both methods need to keep collection of "locks" and look up the one requested. This might have a different complexity (the infamous big-O) based on number of items. Similarly, both methods are, given we're talking about multithreaded usage here, "thread safe", thus accessing from multiple threads might change (i.e. internal locking or thread/CPU/bucket/... affinity) the outcome. And finally, the first access might be (or not) more costly (because the item is created) compared to subsequent ones. 
+I can measure how long does it take to get a lock using one or the other method, but that might be misleading. Both methods need to keep collection of "locks" and look up the one requested. This might have a different complexity (the infamous big-O) based on number of items. Similarly, both methods are, given we're talking about multithreaded usage here, "thread safe", thus accessing from multiple threads might change (i.e. internal locking or thread/CPU/bucket/... affinity) the outcome. And finally, the first access might be (or not) more costly (because the item is created) compared to subsequent ones.
 
 Although you can throw into the mix more variables, these three - number of locks, number of threads and number of lock accesses - are the ones I'll use to get the numbers. The last two, and especially the last one, are very synthetic in my test. Because in real code other factors affect the speed (like CPU cache hits or thrashing).
 
@@ -48,7 +48,7 @@ For one access the drop continues, but again around 20 accesses the `ConcurrentD
 
 #### 1000 locks
 
-Mostly to see whether there will be some drop, I tested also 1000 locks. 
+Mostly to see whether there will be some drop, I tested also 1000 locks.
 
 ![Locks=1000]({{ include "post_ilink" page "L1000.svg" }})
 
@@ -56,7 +56,7 @@ Luckily, the results are not surprising and follow the trend started in previous
 
 #### Summary
 
-I prefer clean code over some smart (ab)use and `ConcurrentDictionary<TKey, TValue>` fits into this box perfectly. Usually this is tied to some small (performance) tradeoffs (Ever seen heavily optimized code?). However, I'm happy to see in this case clean code and performance go hand in hand. 
+I prefer clean code over some smart (ab)use and `ConcurrentDictionary<TKey, TValue>` fits into this box perfectly. Usually this is tied to some small (performance) tradeoffs (Ever seen heavily optimized code?). However, I'm happy to see in this case clean code and performance go hand in hand.
 
 As a bonus `ConcurrentDictionary<TKey, TValue>` gives you more options - different lock types, different keys, ... Looks like sometimes we can have nice things.
 

@@ -28,7 +28,7 @@ Looking at the IL code it's clearly visible. It's accessing the `Rest` and then 
 
 Why does this even matter? In my case in _FbNetExternalEngine_ I'm fetching the values the callee returned using reflection (currently). Although in the code I can use the `Item10` (for example) and it looks like a regular field, the reflection code will not be able to find such field.
 
-It makes perfect sense, given the behavior I described above. It's just something that looks like it's straightforward, but it isn't. It makes me kind of sad. Or maybe it is because last two days I spent beating my head with race conditions and isolation levels in databases, and my brain is beaten and I just wanted something straightforward. Anyway, good to know.  
+It makes perfect sense, given the behavior I described above. It's just something that looks like it's straightforward, but it isn't. It makes me kind of sad. Or maybe it is because last two days I spent beating my head with race conditions and isolation levels in databases, and my brain is beaten and I just wanted something straightforward. Anyway, good to know.
 
 [1]: https://www.nuget.org/packages/System.ValueTuple/
 [2]: https://blogs.msdn.microsoft.com/dotnet/2017/03/09/new-features-in-c-7-0/

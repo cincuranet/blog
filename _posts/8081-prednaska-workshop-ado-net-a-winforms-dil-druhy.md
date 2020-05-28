@@ -7,7 +7,7 @@ tags:
 ---
 Tento čtvrtek (11.5.) se na [Fakultě Informatiky, MU Brno][1] uskuteční workshop (přednáška) na téma ADO.NET a použití ve WinForms.
 
-Máte-li zájem [napište][2]. 
+Máte-li zájem [napište][2].
 
 Místo a čas: učebna B117, 18:00
 

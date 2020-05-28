@@ -3,7 +3,7 @@ title: |-
   New SSD (Intel X25-M) - first feelings
 date: 2010-03-01T17:05:32Z
 tags:
-  - Storage &amp; Backup
+  - Storage & Backup
   - Windows
 ---
 It is couple of hours I'm using my new SSD – Intel X25-M. I ordered it to improve and speedup my working environment.

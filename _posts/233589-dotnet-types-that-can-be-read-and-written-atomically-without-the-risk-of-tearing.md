@@ -7,7 +7,7 @@ tags:
   - .NET
   - .NET Core
 ---
-I'm currently digging deep into memory models, processor architectures, kernels and so on. It's a fun stuff. I'm learning so much and my brain is working so hard. With that I'm also digging into some "concurrent" internals in .NET, in last few days the [`ConcurrentDictionary<TKey, TValue>` class][2]. As I was there I found something helpful. 
+I'm currently digging deep into memory models, processor architectures, kernels and so on. It's a fun stuff. I'm learning so much and my brain is working so hard. With that I'm also digging into some "concurrent" internals in .NET, in last few days the [`ConcurrentDictionary<TKey, TValue>` class][2]. As I was there I found something helpful.
 
 <!-- excerpt -->
 

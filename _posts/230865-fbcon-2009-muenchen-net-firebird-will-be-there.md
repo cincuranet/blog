@@ -8,7 +8,7 @@ tags:
   - Entity Framework
   - Firebird
   - LINQ
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Next Firebird conference is coming. This year in München, Germany. I've never been in München though it's pretty close to Czech Rep. thus I'm looking forward.
 

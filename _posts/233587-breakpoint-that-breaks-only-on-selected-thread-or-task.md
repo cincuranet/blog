@@ -20,7 +20,7 @@ One option is to create a conditional breakpoint. What's conditional breakpoint?
 
 I'm using the [`Thread.CurrentThread.ManagedThreadId` property][1] to break only on selected thread. For tasks I can use [`Task.CurrentId` value][2].
 
-Although this works fine, it has one problem. Every time you start your application the ID numbers are very likely going to differ. And you are going to spent few minutes fixing all of these breakpoints. Not fun. Of course one might build (or maybe there already is) an extension for that. But that's not necessary. 
+Although this works fine, it has one problem. Every time you start your application the ID numbers are very likely going to differ. And you are going to spent few minutes fixing all of these breakpoints. Not fun. Of course one might build (or maybe there already is) an extension for that. But that's not necessary.
 
 #### Using the `Break` method
 
@@ -52,9 +52,9 @@ Finally the `Break` method might be conditionally compiled out, so you can keep 
 
 #### Summary
 
-At the end both methods are basically the same. Same result, different approach. 
+At the end both methods are basically the same. Same result, different approach.
 
-Also bear in mind that extra code there (especially because of _volatile_ reads and writes) might affect how the code runs and thus some race conditions or deadlocks or ... might not happen. 
+Also bear in mind that extra code there (especially because of _volatile_ reads and writes) might affect how the code runs and thus some race conditions or deadlocks or ... might not happen.
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.thread.managedthreadid(v=vs.110).aspx
 [2]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.currentid(v=vs.110).aspx

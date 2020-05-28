@@ -21,7 +21,7 @@ public static void RemoveUsingStub1<TEntity>(this IDbSet<TEntity> dbSet, TEntity
 	dbSet.Attach(stub);
 	dbSet.Remove(stub);
 }
-```  
+```
 
 If you rather like to trick "change tracker", you can.
 
@@ -48,7 +48,7 @@ public static void RemoveUsingStub3<TEntity>(this DbContext dbContext, params ob
 	dbContext.Set<TEntity>().Attach(stub);
 	dbContext.Set<TEntity>().Remove(stub);
 }
-```  	
+```
 
 The code firsts gets the key names for given entity and then sets the values on that properties to a values received in 2^nd^ parameter. Finally it uses the same approach as the first method to [`Attach`][7] and `Remove` the stub. Of course using the approach from second method is possible as well.
 

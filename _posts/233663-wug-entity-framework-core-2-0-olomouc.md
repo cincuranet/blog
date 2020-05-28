@@ -3,7 +3,7 @@ title: |-
   WUG: Entity Framework Core 2.0 (Olomouc)
 date: 2017-12-05T08:42:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Entity Framework
 ---
 WUGy v Olomouci opět oživly a můžeme se tedy podívat společně na Entity Framework Core 2.0.

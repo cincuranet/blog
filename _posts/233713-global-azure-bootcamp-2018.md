@@ -3,7 +3,7 @@ title: |-
   Global Azure Bootcamp 2018
 date: 2018-04-11T12:21:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Azure
   - CDN
 ---
@@ -11,7 +11,7 @@ Global Azure Bootcamp 2018. Jeden den, Azure po celém světě. A taky [v Čech�
 
 <!-- excerpt -->
 
-![Leták]({{ include "post_ilink" page "letak.png" }}) 
+![Leták]({{ include "post_ilink" page "letak.png" }})
 
 > CDNka na Azure je možná trochu opomíjená funkce a přitom může některé problémy krásně vyřešit. Podíváme se společně jak na klasické využití pro statický obsah, tak i nově pro akceleraci dynamického obsahu.
 

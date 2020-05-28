@@ -9,7 +9,7 @@ tags:
 ---
 Some time during last week I came across [this tweet][1] from [Peter Ritchie][2].
 
-> Better granularity with @WindowsUpdate would be great, e.g. to be able to say auto install Defender Definition updates while choose others  
+> Better granularity with @WindowsUpdate would be great, e.g. to be able to say auto install Defender Definition updates while choose others
 — Peter Ritchie (@peterritchie) [November 2, 2013](https://twitter.com/peterritchie/statuses/396693697577775106)
 
 I had and have exactly same feeling.

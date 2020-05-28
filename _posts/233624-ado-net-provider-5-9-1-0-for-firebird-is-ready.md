@@ -13,7 +13,7 @@ tags:
   - SQL
   - Visual Studio
 ---
-New version 5.9.1.0 of [ADO.NET provider for Firebird][1] is ready for download. Only one small new feature was added - support for `[CREATE|ALTER|DROP] FUNCTION` in `FirebirdSql.Data.Isql` for Firebird 3. 
+New version 5.9.1.0 of [ADO.NET provider for Firebird][1] is ready for download. Only one small new feature was added - support for `[CREATE|ALTER|DROP] FUNCTION` in `FirebirdSql.Data.Isql` for Firebird 3.
 
 <!-- excerpt -->
 

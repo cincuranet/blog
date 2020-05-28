@@ -1,6 +1,6 @@
 ---
 title: |-
-  Přednáška ADO.NET Entity Framework - MFF UK, Praha    
+  Přednáška ADO.NET Entity Framework - MFF UK, Praha
 date: 2009-10-24T10:00:31Z
 tags:
   - .NET
@@ -8,7 +8,7 @@ tags:
   - Entity SQL
   - LINQ
   - OData/Data Services (Astoria)
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Pokud jste nestihli první [pražskou][1] nebo [brněnskou][2] přednášku, máte v Praze další šanci. 3.11.2009 (úterý) od 17:20 v rámci programátorských večerů na MFF UK.
 

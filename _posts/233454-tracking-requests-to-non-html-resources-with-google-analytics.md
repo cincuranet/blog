@@ -6,11 +6,11 @@ tags:
   - Google
   - Google Analytics
 ---
-I wanted to ditch the [PAD file][5] on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use. 
+I wanted to ditch the [PAD file][5] on [ID3 renamer's][1] website. It was maybe cool five years ago, but I don't think it's now. But I wanted at least some confidence that this file is really used sporadically. Not cutting out something in use.
 
 <!-- excerpt -->
 
-First I thought I will add some logging into the method that generates this file (yep, it's generated on request, I'm not writing it manually ;)) and later process the data. But that looked like unnecessary work especially because the site uses [Google Analytics][2] anyway. Only problem was how to push data to Google Analytics if the result is plain XML file and not an HTML page. 
+First I thought I will add some logging into the method that generates this file (yep, it's generated on request, I'm not writing it manually ;)) and later process the data. But that looked like unnecessary work especially because the site uses [Google Analytics][2] anyway. Only problem was how to push data to Google Analytics if the result is plain XML file and not an HTML page.
 
 Some API must be there, was my feeling. And indeed it is. Some googling and [Measurement Protocol Developer Guide][4] or [Measurement Protocol Parameter Reference][3] respectively was what I needed. Simple `HTTP POST` endpoint to where you push URL encoded parameters. Sweet!
 
@@ -41,7 +41,7 @@ static async Task<bool> SendPageviewRequestAsync(bool isNonInteractive, string t
 static FormUrlEncodedContent CreateContent(bool isNonInteractive, string trackingId, string documentLocation, string usersIpAddress, string userAgent, string documentReferrer, Guid? clientId = null)
 {
 	return new FormUrlEncodedContent(new Dictionary<string, string>()
-	{ 
+	{
 		{ "v", "1" },
 		{ "t", "pageview" },
 		{ "ni", isNonInteractive ? "1" : "0" },
@@ -55,9 +55,9 @@ static FormUrlEncodedContent CreateContent(bool isNonInteractive, string trackin
 }
 ```
 
-Getting the information from HTTP request is left for you as an exercise. ;) 
+Getting the information from HTTP request is left for you as an exercise. ;)
 
-Use it, change it - as you wish. 
+Use it, change it - as you wish.
 
 [1]: http://www.id3renamer.com
 [2]: http://www.google.com/analytics/

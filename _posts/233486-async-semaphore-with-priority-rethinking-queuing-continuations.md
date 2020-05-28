@@ -34,7 +34,7 @@ public void Release()
 }
 ```
 
-As the comment says I'm calling the [`SetResult` method][2] using a `Task` to avoid stack overflows. The `SetResult` call the continuations synchronously, hence if you have a deep chain of methods waiting on the semaphore you'll run out of stack. 
+As the comment says I'm calling the [`SetResult` method][2] using a `Task` to avoid stack overflows. The `SetResult` call the continuations synchronously, hence if you have a deep chain of methods waiting on the semaphore you'll run out of stack.
 
 I'm also calling [`Wait`][3] on the `Task`. My original reasoning was that I want to be sure the continuations are processed and I, if any, receive (don't loose) exceptions (although I'm not handling exception, I just want them to bubble up). <small>There was also a discussion about this in comments. Read it if you're interested.</small>
 

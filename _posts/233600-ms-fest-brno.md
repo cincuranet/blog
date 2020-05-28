@@ -3,7 +3,7 @@ title: |-
   MS Fest (Brno)
 date: 2017-03-14T07:06:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Z Brna se stává konferenční hub. Je to jasný. Tedy alespoň v mé sociální bublině. To máme [WUG Days][1], [G2B•TechEd][2], teď [MS Fest][3] v rychlém časovém sledu. A to je teprve březen. Až uvidíte co se ještě chystá...
 

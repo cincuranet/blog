@@ -79,7 +79,7 @@ static void Main(string[] args)
 }
 ```
 
-This code simply looks for entity you specified and makes the appropriate items in SSDL. It's very rough, especially datatypes for table are scamped ;), but you can extend it youself with your favourites. Or maybe better use some information from store provider. Anyway the basic idea is here, if you extend dataypes, it will work well for this stuff. Mapping should be done by you in designer, although because column names are same as entity's, you only need to choose right table name, rest will be done by the designer. And of course, when updating model from database, these changes are lost. 
+This code simply looks for entity you specified and makes the appropriate items in SSDL. It's very rough, especially datatypes for table are scamped ;), but you can extend it youself with your favourites. Or maybe better use some information from store provider. Anyway the basic idea is here, if you extend dataypes, it will work well for this stuff. Mapping should be done by you in designer, although because column names are same as entity's, you only need to choose right table name, rest will be done by the designer. And of course, when updating model from database, these changes are lost.
 
 Comments are welcome.
 

@@ -29,7 +29,7 @@ static Task<int> await(Task t)
 }
 ```
 
-This is perfectly valid C# 4 code, isn't it? Yes, naming the method `await` does not match generally used formatting, but who cares? 
+This is perfectly valid C# 4 code, isn't it? Yes, naming the method `await` does not match generally used formatting, but who cares?
 
 Now imagine C# 5 with just `await` keyword. Compiling this code would result in different behavior. Either the compiler could complain about collision on `await` method or silently compile it one ot the other way. Not good. You'd have to change your code to reach the behavior you wanted (or use some crazy switches). But if you actually try to compile this code using C# 5 it works fine.
 
@@ -46,7 +46,7 @@ See the change? The `async` keyword. Now _you_ actually changed the code and you
 
 So what the `async` actually did? It just tells the compiler: "If you see `await` consider it keyword.". And because _you_ did the change, you're changing the code and so the forward compatibility is not broken.
 
-No magic. Sorry.   
+No magic. Sorry.
 
 [1]: http://msdn.microsoft.com/en-us/library/hh156513.aspx
 [2]: http://msdn.microsoft.com/en-us/library/hh156528.aspx

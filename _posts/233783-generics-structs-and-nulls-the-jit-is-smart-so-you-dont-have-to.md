@@ -39,23 +39,23 @@ If you're here and still remember the title of this post you can probably see wh
 As you undoubtedly guessed, the JIT is doing that. Trying the fully optimized build, without (initially) debugger attached, with `MyGeneric<DateTime>` and `MyGeneric<object>` gives these assembly instructions (.NET Core 2.2.4, 64bit RyuJIT).
 
 ```asm
-00007FFA256115C0  movsx       rax,byte ptr [rcx]  
-00007FFA256115C4  mov         rax,21739033068h  
-00007FFA256115CE  mov         rax,qword ptr [rax]  
-00007FFA256115D1  ret  
+00007FFA256115C0  movsx       rax,byte ptr [rcx]
+00007FFA256115C4  mov         rax,21739033068h
+00007FFA256115CE  mov         rax,qword ptr [rax]
+00007FFA256115D1  ret
 ```
 
 ```asm
-00007FFA256115F0  cmp         qword ptr [rcx+8],0  
-00007FFA256115F5  jne         00007FFA25611605  
-00007FFA256115F7  mov         rax,21739033070h  
-00007FFA25611601  mov         rax,qword ptr [rax]  
-00007FFA25611604  ret  
-00007FFA25611605  mov         rax,21739033068h  
-00007FFA2561160F  mov         rax,qword ptr [rax]  
+00007FFA256115F0  cmp         qword ptr [rcx+8],0
+00007FFA256115F5  jne         00007FFA25611605
+00007FFA256115F7  mov         rax,21739033070h
+00007FFA25611601  mov         rax,qword ptr [rax]
+00007FFA25611604  ret
+00007FFA25611605  mov         rax,21739033068h
+00007FFA2561160F  mov         rax,qword ptr [rax]
 00007FFA25611612  ret
 ```
 
-The second assembly clearly has the `if` (`cmp` and `jne`) logic compared to the first one that does not. Less instructions: ✓; less branching: ✓. All this is done conveniently for you. You don't have to think about it (unless you're actually part of the JIT team, of course) yet the code is "optimal". 
+The second assembly clearly has the `if` (`cmp` and `jne`) logic compared to the first one that does not. Less instructions: ✓; less branching: ✓. All this is done conveniently for you. You don't have to think about it (unless you're actually part of the JIT team, of course) yet the code is "optimal".
 
 Plus, few of us can geek about it. Happy geeking.

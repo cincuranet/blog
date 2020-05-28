@@ -5,7 +5,7 @@ date: 2011-05-19T18:34:30Z
 tags:
   - .NET
   - Firebird
-  - Logging &amp; Tracing
+  - Logging & Tracing
 ---
 I recently improved the command logging in [ADO.NET provider for Firebird][1]. Let me start with little bit of history and then you'll see the motivation and current improvements.
 

@@ -3,7 +3,7 @@ title: |-
   .NET DeveloperDays 2019
 date: 2019-08-31T07:14:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 If you're not yet registed for this year's [.NET Developer Days][1], where I'll be speaking, you're going to regret it. Here are (my) 3 reasons.
 

@@ -17,7 +17,7 @@ New version 6.4.0.0 of [ADO.NET provider for Firebird][1] is ready for download.
 
 <!-- excerpt -->
 
-When the providers talks to the server there's a lot of numbers read. And all these numbers are coming as 4 bytes (for 32-bit integers), hence 4 bytes buffer is needed. But it would make sense to reuse it, right? And that's exactly what has been done. The buffer is kept in memory and being reused for `Int32`s and `Int64`s. To measure the impact I did fairly synthetic test of fetching 200k rows with just one number column and the _Gen0_ allocations went down from 41000 to 22500 and allocated memory from ~124MB to ~68MB. I think that's worth having 8 bytes "dangling" in the memory. 8-)  
+When the providers talks to the server there's a lot of numbers read. And all these numbers are coming as 4 bytes (for 32-bit integers), hence 4 bytes buffer is needed. But it would make sense to reuse it, right? And that's exactly what has been done. The buffer is kept in memory and being reused for `Int32`s and `Int64`s. To measure the impact I did fairly synthetic test of fetching 200k rows with just one number column and the _Gen0_ allocations went down from 41000 to 22500 and allocated memory from ~124MB to ~68MB. I think that's worth having 8 bytes "dangling" in the memory. 8-)
 
 Overview of all the changes can be found in [tracker][5].
 

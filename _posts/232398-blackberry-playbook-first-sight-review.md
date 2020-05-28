@@ -29,7 +29,7 @@ And there's one nice feature I'd like to talk about. You can turn on WiFi sharin
 I don't know what to say more. I'm so far, pleased with it. Fulfilled my expectations. If you want to ask something, do it in comments, I'll try my best to provide you with an answer. Later, I'll, for sure, write some deeper observations as I gain some.
 
 [1]: http://us.blackberry.com/playbook-tablet/
-[2]: {{ include "post_link" 231960 }} 
+[2]: {{ include "post_link" 231960 }}
 [3]: http://www.webkit.org/
 [4]: {{ include "post_link" 232392 }}
 [5]: http://hootsuite.com

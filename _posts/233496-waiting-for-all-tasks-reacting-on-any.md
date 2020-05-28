@@ -5,12 +5,12 @@ date: 2015-01-26T07:06:00Z
 tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
-About a week ago I needed to wait on all tasks to complete and also do some side processing as any completes. Sure I could wrap it using [`ContinueWith`][2] or something like that, but I made it from other way around. 
+About a week ago I needed to wait on all tasks to complete and also do some side processing as any completes. Sure I could wrap it using [`ContinueWith`][2] or something like that, but I made it from other way around.
 
 I called my method `WhenAllOnAny` for lack of better ideas. The method ended up pretty straightforward. I'm doing [`WhenAny`][1] as long as there's at least one task still running. When one completes I fire the event.
- 
+
 <!-- excerpt -->
- 
+
 ```csharp
 public static async Task WhenAllOnAny(Task[] tasks, Action<Task> onAny)
 {

@@ -3,7 +3,7 @@ title: |-
   Update Days: Corestart 3.0
 date: 2019-05-06T14:34:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 .NET Core 3.0 se blíží a s ním i další várka změn a novinek. A protože jde o další major verzi, není toho málo. Tomáš Herceg a jeho team připravili konferenci [Update Days: Corestart 3.0][1], která se koná 6. - 7. června 2019.
 

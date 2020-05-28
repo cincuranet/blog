@@ -7,7 +7,7 @@ tags:
   - Delphi/Object Pascal/Pascal
   - Programming in general
 ---
-Občas vidím ve zdrojácích funkce s konstrukcí: 
+Občas vidím ve zdrojácích funkce s konstrukcí:
 
 ```text
 if (<condition>)
@@ -18,7 +18,7 @@ if (<condition>)
 return z;
 ```
 
-Což je víceméně to samé jako: 
+Což je víceméně to samé jako:
 
 ```text
 if (<condition>)
@@ -32,6 +32,6 @@ else
 }
 ```
 
-Osobně používám druhý zápis. Přijde mi o něco přehlednější a explicitnější. Pravděpodobně vliv Delphi/ObjectPascalu. 
+Osobně používám druhý zápis. Přijde mi o něco přehlednější a explicitnější. Pravděpodobně vliv Delphi/ObjectPascalu.
 
 Je však v těchto zápisech nějaký rozdíl? Nějaký praktický aspekt, který mi uniká?

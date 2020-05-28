@@ -3,7 +3,7 @@ title: |-
   Cloud DeveloperDays 2019
 date: 2019-04-18T07:45:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Cloud
   - Azure
   - Azure Cosmos DB

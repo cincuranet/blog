@@ -11,6 +11,6 @@ I was testing dimmer during the weekend and I used halogen lamp in my garage. Th
 
 And what a stunning view it was. It's like it being disassembled in front of you. And I like disassembling.
 
-[![Filament]({{ include "post_ilink" page "filament_thumb.jpg" }})]({{ include "post_ilink" page "filament.jpg" }})  
+[![Filament]({{ include "post_ilink" page "filament_thumb.jpg" }})]({{ include "post_ilink" page "filament.jpg" }})
 
 I know I can take a picture of the filament using my DSLR and use filters and huge F-stop and short time, but this was using just my eyes (although for you it's only a picture).

@@ -13,7 +13,7 @@ You know Injinji are inherently left and right foot specific. So when one sock f
 
 Because my unprepared leaving for mountains (my training sucked, if you'd like to ask) I took off with two left socks. There I was, left with a choice to run without socks (fine for me, though in sub-zero (Celsius) temperatures not much fun, but my wife wasn't into this idea strictly) or finding a solution. Little bit of looking at the sock and rotating it over x-axis and y-axis and z-axis I finally saw it!
 
-I can just _turn the sock inside out_ and that's it! The [Run Lightweight Mini-Crew][2] I'm using the most are basically same inside as outside. No chafing or hot spots possible. 
+I can just _turn the sock inside out_ and that's it! The [Run Lightweight Mini-Crew][2] I'm using the most are basically same inside as outside. No chafing or hot spots possible.
 
 Problem solved. OK, problem hacked. How the hell I didn't realize it sooner?
 

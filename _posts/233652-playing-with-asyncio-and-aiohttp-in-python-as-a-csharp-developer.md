@@ -1,6 +1,6 @@
 ---
 title: |-
-  Playing with asyncio and aiohttp in Python as a C# developer  
+  Playing with asyncio and aiohttp in Python as a C# developer
 date: 2017-10-12T05:16:00Z
 tags:
   - Python
@@ -52,13 +52,13 @@ loop.run_until_complete(main(loop))
 
 First thing to test was whether it's really asynchronous aka not creating any extra threads. Of course, it is. Otherwise I'm sure I wouldn't be the first one to notice it.
 
-The "magic" keywords are same as in C# - `async` and `await`. The `async` marks method where the `await` will be used and `await` is where the magic happens. 
+The "magic" keywords are same as in C# - `async` and `await`. The `async` marks method where the `await` will be used and `await` is where the magic happens.
 
 One thing to notice is the `async with` statement. The context manager needs to be able to suspend and resume the execution inside the `with` block.
 
 The plumbing is done with `asyncio`, i.e. in C# we have [`Task.WhenAll`][3] and here it is [`asyncio.gather`][4] (although there's also [`asyncio.wait`][5] with bunch of options).
 
-What's most interesting is the need to use _event loop_. In C# if you're writing i.e. _WinForms_ the concept of event loop (or _message pumping_ in more low-level terms) is well known. But it's not explicit and for example console applications don't have such thing (even the abstraction - the [`SynchronizationContext`][6] - is `null` in console applications). Here, though my script is basically a console application, I had to specify it and specify it explicitly. 
+What's most interesting is the need to use _event loop_. In C# if you're writing i.e. _WinForms_ the concept of event loop (or _message pumping_ in more low-level terms) is well known. But it's not explicit and for example console applications don't have such thing (even the abstraction - the [`SynchronizationContext`][6] - is `null` in console applications). Here, though my script is basically a console application, I had to specify it and specify it explicitly.
 
 From what I understood the _event loop_ is where the calls and most importantly callbacks (and hence resumes) happen. I think about it as a _scheduler_ and _IO completion ports_ (in Windows terms). My understanding is, I'm sure, clear on high level, but the rubber meets the road when you dive deep.
 

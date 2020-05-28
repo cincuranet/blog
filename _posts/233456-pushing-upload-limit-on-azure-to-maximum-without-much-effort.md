@@ -6,7 +6,7 @@ tags:
   - Azure
   - Azure Storage
   - .NET
-  - Storage &amp; Backup
+  - Storage & Backup
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
 Last week I had pretty straightforward task. Issue few simple SQL commands and then copy roughly 800MB of data to Azure Blob Storage. Everything happening inside Azure. And do it in under 30 seconds. Hard limit.
@@ -15,9 +15,9 @@ My first shot with straight-to-the-case solution was looking promising. On avera
 
 <!-- excerpt -->
 
-Simple timing and I knew SQL commands are not a problem. These were done in under 500ms. The upload was taking majority of the time. The upload was happening inside Azure in same datacenter/region. I also checked _affinity group_, because that's very important, but currently Azure Websites do not support it, so that was "just in case". 
+Simple timing and I knew SQL commands are not a problem. These were done in under 500ms. The upload was taking majority of the time. The upload was happening inside Azure in same datacenter/region. I also checked _affinity group_, because that's very important, but currently Azure Websites do not support it, so that was "just in case".
 
-So I was left with the upload itself. My feeling was that I'm not maxing out the "line" by just one stream. I might be able to squeeze few percent and get reliably under 30s. I wasn't in a mood to start writing my own asynchronous chunked upload and luckily the Azure Storage Client library already contains similar functionality. 
+So I was left with the upload itself. My feeling was that I'm not maxing out the "line" by just one stream. I might be able to squeeze few percent and get reliably under 30s. I wasn't in a mood to start writing my own asynchronous chunked upload and luckily the Azure Storage Client library already contains similar functionality.
 
 The [`BlobRequestOptions`][1] class has [`ParallelOperationThreadCount`][2] and [`SingleBlobUploadThresholdInBytes`][3]. I quickly tried parallel upload with 2 with big chunks (64MB in my case) and I was slightly faster indeed. Of course not an order of magnitude faster, but just few percent as I expected. But that was exactly what I needed.
 

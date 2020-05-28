@@ -73,7 +73,7 @@ NaN
 -?
 ```
 
-I suppose the `-double.NaN` is `NaN` anyway, that's why the sign was "lost". 
+I suppose the `-double.NaN` is `NaN` anyway, that's why the sign was "lost".
 
 And from `isql`, to make sure it's really there and Firebird understands it (the missing sign for negative infinity in `isql`'s output is a [known issue][3]).
 
@@ -88,7 +88,7 @@ SQL> select * from test;
                Infinity
 ```
 
-And there you have it. I hope I never encounter such value in the database myself, as I can imagine a lot of fun it provides. 
+And there you have it. I hope I never encounter such value in the database myself, as I can imagine a lot of fun it provides.
 
 Nonetheless, if `NULL` is not enough for you, this is an escape plan. Now only the [`undefined`][4] is missing (because [`UNKNOWN`][5] is already there), then the hell can really begin. :-)
 

@@ -18,7 +18,7 @@ public void Apply(EdmProperty item, DbModel model)
 {
 	item.Name = MakeUpperCase(item.Name);
 }
-```  
+```
 
 For tables I need to dig into [`EntitySet`][6] type aka `IStoreModelConvention<EntitySet>`. Not a problem either.
 
@@ -53,7 +53,7 @@ public class UpperCaseConvention : IStoreModelConvention<EntitySet>, IStoreModel
 
 I also made `MakeUpperCase` method virtual in case somebody would like to make slightly different implementation, simple subclassing it is.
 
-With this it shouldn't take long to create bunch of custom conventions (and combine these) to match naming conventions - like `T_<tablename>`, `F_<columnname>` or `PropertyName` -> `PROPERTY_NAME`.  
+With this it shouldn't take long to create bunch of custom conventions (and combine these) to match naming conventions - like `T_<tablename>`, `F_<columnname>` or `PropertyName` -> `PROPERTY_NAME`.
 
 [1]: {{ include "post_link" 233167 }}
 [2]: {{ include "post_link" 233174 }}

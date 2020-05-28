@@ -21,6 +21,6 @@ I tested it on Visual Studio 2017, because that's what I have and use. Feel free
 
 By the way the nice icon comes from [ButterflyTronics][3].
 
-[1]: https://marketplace.visualstudio.com/vsgallery/ba7029c3-3719-4533-862a-b6de3c85eee0 
+[1]: https://marketplace.visualstudio.com/vsgallery/ba7029c3-3719-4533-862a-b6de3c85eee0
 [2]: https://github.com/cincuranet/CloseAndDelete
 [3]: http://butterflytronics.eu/icons.php

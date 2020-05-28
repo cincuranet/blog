@@ -9,9 +9,9 @@ tags:
   - Windows Scripting Host
   - PowerShell
 ---
-I have - or rather I've had - bunch of Excel files and I needed these in PDF. If I would be just five or so of these I would do it manually in Excel. But there was bit over 200 files. Doable but not fun. 
-  
-<!-- excerpt --> 
+I have - or rather I've had - bunch of Excel files and I needed these in PDF. If I would be just five or so of these I would do it manually in Excel. But there was bit over 200 files. Doable but not fun.
+
+<!-- excerpt -->
 
 So I started scripting. Some quick search on the internet brought some examples using Word in `WSH`. With that in my hands it was just a matter of firing `Excel.Application` ActiveX and going though the [documentation][1] gluing it together. I've spent few minutes looking for proper file type for `SaveAs` method, finding eventually the PDF (`xlTypePDF`) is `57`.
 
@@ -25,18 +25,18 @@ var pdfPath = filePath.replace(/\.xlsx$/i, '.pdf');
 var objExcel = null;
 try {
 	WScript.Echo(pdfPath);
-	
+
 	objExcel = new ActiveXObject('Excel.Application');
 	objExcel.Visible = false;
-	
+
 	var objWorkbook = objExcel.Workbooks.Open(filePath);
-	
+
 	WScript.Echo('  saving');
-	
+
 	var xlTypePDF = 57;
 	objWorkbook.SaveAs(pdfPath, xlTypePDF);
 	objWorkbook.Close(false);
-	
+
 	WScript.Echo('  done');
 }
 finally {

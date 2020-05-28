@@ -4,7 +4,7 @@ title: |-
 date: 2014-11-18T07:47:00Z
 tags:
   - .NET
-  - Logging &amp; Tracing
+  - Logging & Tracing
   - Aspect Oriented Programming (AOP)
 ---
 In [Injecting dynamic logging as if it was in original class (NLog, Castle Dynamic Proxies)][1] I created simple helpers for logging to be injected into proxy classes used as actual implementation. This "aspects" work great until you start using `async` methods.

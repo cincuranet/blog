@@ -3,7 +3,7 @@ title: |-
   Gopas TechEd 2014
 date: 2014-05-14T09:44:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Příští týden vypadá nabitě. Minimálně pro Brno a Prahu. Koná se každoroční konference [Gopas TechEd 2014][5] a nesmím opomenout ani [pondělní WUG v Brně][4].
 

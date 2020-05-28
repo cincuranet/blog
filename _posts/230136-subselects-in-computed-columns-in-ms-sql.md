@@ -8,7 +8,7 @@ tags:
 ---
 I found nice hack on MS SQL. On Firebird I'm using sometimes computed column(s) with select in definition. It can be performance (or concurrency) problem, but if you use it carefully it's helpful. And I was missing this feature on MS SQL. But accidentally I found solution/workaround.
 
-You can create a function, that will do the select and return the value you need. The only problem is, that you're creating dependency between the column and the function. 
+You can create a function, that will do the select and return the value you need. The only problem is, that you're creating dependency between the column and the function.
 
 You can create function for instance:
 

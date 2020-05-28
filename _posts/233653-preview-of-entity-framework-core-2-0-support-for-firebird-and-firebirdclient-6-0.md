@@ -23,13 +23,13 @@ Let's start with the facts. This is a `alpha1` version, which means things can g
 
 Entity Framework Core 2.0 support works in the basic scenarios. I still need to polish some edge cases add more tests and of course there's always room for improvements (like batching which is currently not supported). Of course I'd be glad if you report pieces where it falls flat so for final version everything will be smooth. [Get it from NuGet][1] while it's hot.
 
-Two big features are missing - migrations and scaffolding. These will come in next version/preview. 
+Two big features are missing - migrations and scaffolding. These will come in next version/preview.
 
 This feature could not happen without support from [Integrative9 Enneagram Solutions][4] and contributions by [@ralmsdeveloper][6] and [@souchprod][5].
 
 A small demo, to give you a head start, is provided below.
 
-#### FirebirdClient 6.0 
+#### FirebirdClient 6.0
 
 The next big version of FirebirdClient is going to be [version 6.0][2]. It contains quite a few breaking changes and also improvements (some for EF Core support too (so you need this version if you plan to test EF Core)). I'm providing it in preview so you can test it and prepare for the upgrade. All the changes are continuously tracked in the [6.0.0.0 version][3] in the tracker (the list might grow before the final release).
 

@@ -3,7 +3,7 @@ title: |-
   Global Azure Bootcamp 2017
 date: 2017-04-13T13:56:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Azure
   - Cloud
 ---

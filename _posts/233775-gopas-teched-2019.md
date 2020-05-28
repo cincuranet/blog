@@ -3,14 +3,14 @@ title: |-
   Gopas TechEd 2019
 date: 2019-04-10T11:56:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Web ještě nehlásí vyprodáno, takže je stále možnost urvat vstup. Na [letošní TechEd][1] jsem připravil tři přednášky:
 
 * .NET Core 3.0, .NET Framework 4.8 a proč vše kolem je největší změna od zrodu .NETu
 * Jak měřit výkon .NET kódu správně
 * Entity Framework vs. SQL Server - co jste mohli udělat a neudělali; a co jste dělat neměli a přesto udělali
- 
+
 <!-- excerpt -->
 
 > V roce 2019 nás čeká plno novinek. Od již vydaného VS 2019 až po .NET Standard 2.1. Ale co jiné věci? Jak vůbec všechna kolečka zapadají do sebe? A jsou nějaké velké změny (spoiler: jsou) na obzoru?

@@ -5,7 +5,7 @@ date: 2018-03-15T15:13:00Z
 tags:
   - C#
 ---
-Few days ago, I learned new thing about C#. Apparently, there are "true" and "false" operators and you can overload these. But I also wanted to know what are these good for, given I've never heard about these. 
+Few days ago, I learned new thing about C#. Apparently, there are "true" and "false" operators and you can overload these. But I also wanted to know what are these good for, given I've never heard about these.
 
 <!-- excerpt -->
 
@@ -70,4 +70,4 @@ What to do with this knowledge? I don't know. I'll shelve it into the corner of 
 
 [1]: https://www.microsoft.com/en-us/download/details.aspx?id=7029
 [2]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/true-operator
-[3]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/false-operator 
+[3]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/false-operator

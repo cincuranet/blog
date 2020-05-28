@@ -3,17 +3,17 @@ title: |-
   Gopas TechEd 2011 - mé přednášky
 date: 2011-04-20T10:00:01Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Tento rok, podobně jako v předchozích letech, se uskuteční velká akce s názvem Gopas TechEd. Konkrétně 2.-5. května. [Celý program][1] je již dostupný na webu. Nicméně já bych vám doporučil středu 12:45 - 14:00 a 15:45 - 17:00. ;)
 
-První přednáška nese název "Entity Framework Futures" a jde o představení novinek od vydání Entity Frameworku 4.0. Především tedy Code First, DbContext API atp. 
+První přednáška nese název "Entity Framework Futures" a jde o představení novinek od vydání Entity Frameworku 4.0. Především tedy Code First, DbContext API atp.
 
 Celá anotace:
 
 > Entity Framework verze 4 se ještě nestihl ohřát a již se můžeme podívat, jakým směrem je budou další verze vyvíjet. Jednou z nejvíce skloňovaných novinek je Code First přístup. Ale nejen to. Podpora pro Table-Valued funkce, migrace DB, zjednodušený databinding, lokální dotazy, ..., abych vyjmenoval některé. Prozkoumejme společně tyto připravované novinky.
 
-Druhá v pořadí je přednáška s názvem "Task Parallel Library". Moc originální název to není, prostě název balíku vylepšení v .NET Frameworku 4, které ulehčují psaní paralelních programů, především těch, které využívají fine-grained paralelismus. 
+Druhá v pořadí je přednáška s názvem "Task Parallel Library". Moc originální název to není, prostě název balíku vylepšení v .NET Frameworku 4, které ulehčují psaní paralelních programů, především těch, které využívají fine-grained paralelismus.
 
 Celá anotace:
 

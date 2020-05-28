@@ -3,7 +3,7 @@ title: |-
   Cloud DeveloperDays 2020 (online)
 date: 2020-05-25T06:38:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Starting tomorrow, for two days, the [Cloud Developer Days][1] is going to be held online. And it's free. I was lucky to have two sessions selected and I hope to meet you on chat.
 
@@ -15,6 +15,6 @@ First session is _What Azure Front Door can provide for your applications_.
 
 And other is _Azure Storage (maybe) hidden features_.
 
-> Azure Storage is a basic tool for storing your data in Azure. But it has more features than just simply that. In this session we'll check some, maybe hidden ones, that might become handy in some scenarios. 
+> Azure Storage is a basic tool for storing your data in Azure. But it has more features than just simply that. In this session we'll check some, maybe hidden ones, that might become handy in some scenarios.
 
 [1]: http://cloud.developerdays.pl/

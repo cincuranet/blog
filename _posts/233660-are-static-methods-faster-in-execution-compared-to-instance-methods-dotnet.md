@@ -33,7 +33,7 @@ class FooBar : IFooBar
 }
 ```
 
-As you can see I applied the [`MethodImplOptions.NoInlining` flag][3] to really measure the _execution_ speed as it would be in regular business-layer-type methods (these are generally not worth inlining). I also created one version without any arguments and one with two `int` arguments, just in case passing reasonable number of arguments would make a significant difference. 
+As you can see I applied the [`MethodImplOptions.NoInlining` flag][3] to really measure the _execution_ speed as it would be in regular business-layer-type methods (these are generally not worth inlining). I also created one version without any arguments and one with two `int` arguments, just in case passing reasonable number of arguments would make a significant difference.
 
 The instance is then held in `readonly` property typed as an interface (that's why the dummy class implements even more dummy `IFooBar`), as it would be in a typical line-of-business application. The creation of the instance is not counted towards the execution time.
 

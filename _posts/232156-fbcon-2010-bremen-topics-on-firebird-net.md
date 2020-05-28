@@ -8,7 +8,7 @@ tags:
   - Firebird
   - LINQ
   - OData/Data Services (Astoria)
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 I almost forgot to announce the topics touching [ADO.NET provider for Firebird][1]. This year I have three sessions. You can find more info, and register, of course, at [firebird-conference.com][2]. Here's the list.
 

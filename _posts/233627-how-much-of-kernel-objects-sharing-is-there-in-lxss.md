@@ -32,7 +32,7 @@ var m2 = new Mutex(true, @"lxss", out var createdNew2);
 Console.WriteLine(createdNew2);
 ```
 
-Now it's time to run it. 
+Now it's time to run it.
 
 #### Both application instances in Windows session
 

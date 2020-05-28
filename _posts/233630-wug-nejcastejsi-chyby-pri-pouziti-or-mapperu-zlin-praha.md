@@ -3,10 +3,10 @@ title: |-
   WUG: Nejčastější chyby při použití O/R mapperu (Zlín + Praha)
 date: 2017-06-19T12:39:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Entity Framework
 ---
-O/R mappery jsou výborný sluha, ale špatný pán. Abych tak trochu parafrázoval známé přísloví. David Gešvindr dobře zachytil, že v rámci různých Entity Framework přednášek apod. trousím, často i jako odpovědi na otázky z davu, různá doporcučení co nedělat (nebo co naopak dělat). Drobečky jsou fajn, ale dát to trochu do kupy a celkově sjednotit není od věci. A o tom je tato přednáška. 
+O/R mappery jsou výborný sluha, ale špatný pán. Abych tak trochu parafrázoval známé přísloví. David Gešvindr dobře zachytil, že v rámci různých Entity Framework přednášek apod. trousím, často i jako odpovědi na otázky z davu, různá doporcučení co nedělat (nebo co naopak dělat). Drobečky jsou fajn, ale dát to trochu do kupy a celkově sjednotit není od věci. A o tom je tato přednáška.
 
 <!-- excerpt -->
 

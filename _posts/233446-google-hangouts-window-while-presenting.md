@@ -3,7 +3,7 @@ title: |-
   Google Hangouts' window while presenting
 date: 2014-03-25T06:36:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - IM
 ---
 Few weeks ago I stoped using Miranda, which I used for years, and installed [Hangouts][1] directly into my [Iron][2] (Chromium). I stopped using multiple IM networks few years back and I now use only Hangouts and only with my family. Last week while I was teaching my ["multithreading" course][3] I received a message, I saw it on my phone, and while the attendees were working on assignment I wanted to respond. And it didn't worked.

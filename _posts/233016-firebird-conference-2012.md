@@ -4,7 +4,7 @@ title: |-
 date: 2012-10-12T16:10:14Z
 tags:
   - Firebird
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 The [Firebird Conference 2012][1] is again going to happen in Luxembourg during October 26-27, 2012. And I'll be there. So if you have some questions about .NET provider for Firebird catch me.
 

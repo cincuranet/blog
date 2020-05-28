@@ -3,7 +3,7 @@ title: |-
   WUG: Asynchronní a paralelní programování v .NETu
 date: 2014-05-13T11:08:00Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
 Asynchronní proramování nabralo za posledních pár let na obrátkách a dostalo se do povědomí mnoha vývojářů. Ačkoli ve své podstatě se nejedná o nic nového, alespoň v systému Windows. Nicméně příchod C# 5 a, jistě nyní známých, klíčových slov `async` a `await` umožnil použití asynchronní programování bez dřiny.

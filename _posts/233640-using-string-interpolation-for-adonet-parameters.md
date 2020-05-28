@@ -1,6 +1,6 @@
 ---
 title: |-
-  Using string interpolation for ADO.NET parameters 
+  Using string interpolation for ADO.NET parameters
 date: 2017-08-16T07:30:00Z
 tags:
   - C#

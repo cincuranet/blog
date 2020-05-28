@@ -6,13 +6,13 @@ tags:
   - Entity Framework
   - LINQ
 ---
-Probably one of the first methods you've seen/wrote while playing with Entity Framework is IsDirty method. It's a great example how to use [ObjectStateManager][1]. While [doing consultancy work][2] I was asked to create method IsGraphDirty. Handy if you have i.e. some editing form with couple of related entities like Order and OrderLines. 
+Probably one of the first methods you've seen/wrote while playing with Entity Framework is IsDirty method. It's a great example how to use [ObjectStateManager][1]. While [doing consultancy work][2] I was asked to create method IsGraphDirty. Handy if you have i.e. some editing form with couple of related entities like Order and OrderLines.
 
-The problem itself can be divided into three parts. First you'll check the entity itself, of course. Then all the related enties and finally all the associations. Why the associations? 
+The problem itself can be divided into three parts. First you'll check the entity itself, of course. Then all the related enties and finally all the associations. Why the associations?
 
-The associations are first class citizens in EF. And when you i.e. assign one OrderLine to different Order, then the association is changed (in fact added and deleted), not the OrderLine (in database the OrderLine will be changed, but you're not thinking in behavior of store). 
+The associations are first class citizens in EF. And when you i.e. assign one OrderLine to different Order, then the association is changed (in fact added and deleted), not the OrderLine (in database the OrderLine will be changed, but you're not thinking in behavior of store).
 
-The method below is using exactly this way. When first dirty element is found, false is returned. Method is storing already checked entities in a collection to avoid spinning in a circle. 
+The method below is using exactly this way. When first dirty element is found, false is returned. Method is storing already checked entities in a collection to avoid spinning in a circle.
 
 ```csharp
 private static IEnumerable<ObjectStateEntry> GetObjectStateEntries(this ObjectStateManager osm)

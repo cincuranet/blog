@@ -26,9 +26,9 @@ Once the assembly is loaded only one final step is remaining. Because I use refl
 
 #### Summary
 
-When I first saw the numbers for cross _AppDomains_ calls I was scared. I had no idea how I would speed that up... Luckily my brain had a good day and I came with different solution which is fast enough (for today) and does feel reasonably solid (although I'm sure some corner cases will pop up, what you can do, #developerslife ;-)). 
+When I first saw the numbers for cross _AppDomains_ calls I was scared. I had no idea how I would speed that up... Luckily my brain had a good day and I came with different solution which is fast enough (for today) and does feel reasonably solid (although I'm sure some corner cases will pop up, what you can do, #developerslife ;-)).
 
-Although it's not the same as pure unloading and loading again, I think it's a perfectly viable solution for a lot of cases where the "assembly refresh" is required. Hope it helps somebody fishing in similar waters.   
+Although it's not the same as pure unloading and loading again, I think it's a perfectly viable solution for a lot of cases where the "assembly refresh" is required. Hope it helps somebody fishing in similar waters.
 
 [1]: {{ include "post_link" 233636 }}
 [2]: https://docs.microsoft.com/en-us/dotnet/framework/app-domains/application-domains

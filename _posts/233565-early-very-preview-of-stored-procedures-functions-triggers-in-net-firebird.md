@@ -35,7 +35,7 @@ Config = FBNETEXTERNALENGINE_config {
 }
 ```
 
-Obviously both files need to be in `plugins` directory. Once that's done you can start writing custom procedures in .NET. 
+Obviously both files need to be in `plugins` directory. Once that's done you can start writing custom procedures in .NET.
 
 Right now the rules are pretty relaxed and, as I said, very little validation is in place. All types need to be nullable and you common sense between mapping from/to database types to .NET types applies (see below for example with all types used). Currently the parameter names do not matter. Matching is done on position.
 
@@ -106,14 +106,14 @@ recreate procedure demo (
   in_double double precision = null,
   in_decimal decimal(18,4) = null,
   in_numeric numeric(18,4) = null
-) 
+)
 returns (
   out_int integer,
   out_s varchar(20),
   out_long bigint,
   out_short smallint,
   out_char char(20),
-  out_timestamp timestamp, 
+  out_timestamp timestamp,
   out_date date,
   out_time time,
   out_boolean boolean,
@@ -135,7 +135,7 @@ Some ideas I have in my head:
 * Allow the routine to attach to current transaction. So in the same as transaction as the routine is being executed one would be able to use regular `FbConnection` etc.
 * Load (and unload) the assembly with routines only when needed.
 * Caching of some heavy reflection calls.
-* _Maybe_ (to make it extra interesting :)) ability to store the code of the routine in a table and compile and execute it on the fly (with some caching). 
+* _Maybe_ (to make it extra interesting :)) ability to store the code of the routine in a table and compile and execute it on the fly (with some caching).
 
 [1]: {{ include "post_ilink" page "FbNetExternalEngine32.7z" }}
 [2]: {{ include "post_ilink" page "FbNetExternalEngine64.7z" }}

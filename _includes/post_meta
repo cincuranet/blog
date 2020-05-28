@@ -6,5 +6,5 @@
 	<span class="divider"></span>
 	<span class="fa fa-clock-o" aria-label="Time to read"></span> {{ post.TTR }} mins
 	<span class="divider"></span>
-	<span class="fa fa-tags" aria-label="Tags"></span> {{ post.tags | array.sort | array.join ", " }}
+	<span class="fa fa-tags" aria-label="Tags"></span> {{ post.tags | blog.escape_list | array.sort | array.join ", " }}
 </p>

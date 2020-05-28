@@ -10,7 +10,7 @@ tags:
 
 <!-- excerpt -->
 
-The SQL statement execution works by adding last parameter of type `IExecutionContext` (from `FbNetExternalEngineIntegration.dll`) to the procedure or function and using `Execute` method. This method allows you to execute either statements returning result sets (i.e. selects) or statements not returning anything. The statement is executed inside the same context (aka transaction) as the currently executing code. More information and examples can be found in [documentation][1]. 
+The SQL statement execution works by adding last parameter of type `IExecutionContext` (from `FbNetExternalEngineIntegration.dll`) to the procedure or function and using `Execute` method. This method allows you to execute either statements returning result sets (i.e. selects) or statements not returning anything. The statement is executed inside the same context (aka transaction) as the currently executing code. More information and examples can be found in [documentation][1].
 
 In performance area, by careful optimization using my knowledge of how .NET runtime works and avoiding some expensive calls in Firebird, I was able to squeeze about 16% speedup on function and about 12% speedup on procedures. I still have some ideas to try, that might turn out to shave additional time from the execution time. Also, I'm planning to compare not pure execution speed, but also code execution between PSQL and _FbNetExternalEngine_/.NET, because in real world some significant code is usually in the body. Stay tuned.
 

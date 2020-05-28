@@ -7,7 +7,7 @@ tags:
   - MSBuild
   - .NET Core
 ---
-If you're using the new `csproj` format maybe you noticed that the `OutputPath` has the last part automatically appended according to the framework you're targeting. For example targeting `netstandard1.6` would result in build results to be in `bin\[Debug|Release]\netstandard1.6`, for `net462` it would be `bin\[Debug|Release]\net462`. But what if you don't like this behavior? What if you want to specify the path exactly? 
+If you're using the new `csproj` format maybe you noticed that the `OutputPath` has the last part automatically appended according to the framework you're targeting. For example targeting `netstandard1.6` would result in build results to be in `bin\[Debug|Release]\netstandard1.6`, for `net462` it would be `bin\[Debug|Release]\net462`. But what if you don't like this behavior? What if you want to specify the path exactly?
 
 <!-- excerpt -->
 

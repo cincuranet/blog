@@ -54,4 +54,4 @@ You can see more uses in [`FbRemoteEventTests.cs`][1].
 I hope you'll enjoy the new `FbRemoteEvent` [in 5.9.0.0][2].
 
 [1]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/src/FirebirdSql.Data.UnitTests/FbRemoteEventTests.cs
-[2]: {{ include "post_link" 233620 }} 
+[2]: {{ include "post_link" 233620 }}

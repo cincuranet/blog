@@ -3,7 +3,7 @@ title: |-
   Přednáška "Entity Framework 4.1 - Code First"
 date: 2011-05-16T10:00:46Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 Ostrá verze je již dostupná, tak proč se nepodívat co nabízí? 23.5.2011 v 18:00 v Praze máte možnost nahlédnout pod kapotu Entity Frameworku 4.1. Nejen Code First, ale i nová třídy a zjednodušené API.
 

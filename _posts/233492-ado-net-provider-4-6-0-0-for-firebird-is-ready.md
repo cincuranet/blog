@@ -13,7 +13,7 @@ tags:
   - SQL
   - Visual Studio
 ---
-Maybe a bit late with Christmas gift. But better late than never, right? Also just before end of the year because what's a better plan than to update your production software last day of year. Go for it. :-P  
+Maybe a bit late with Christmas gift. But better late than never, right? Also just before end of the year because what's a better plan than to update your production software last day of year. Go for it. :-P
 
 Anyway, new 4.6.0.0 version of [ADO.NET provider for Firebird][1] is ready for download.
 

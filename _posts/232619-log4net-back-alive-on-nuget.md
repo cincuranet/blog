@@ -3,7 +3,7 @@ title: |-
   log4net (back) alive on NuGet
 date: 2011-12-21T17:11:19Z
 tags:
-  - Logging &amp; Tracing
+  - Logging & Tracing
   - NuGet
 ---
 It turned out, that the previous maintainer of [log4net NuGet package][1] [@dotnetjunky][2] was assigned mistakenly. So nobody was actually maintaining that package. After few messages with him, we decided, I'll take over the ownership and maintain it.

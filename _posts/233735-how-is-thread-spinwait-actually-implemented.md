@@ -25,7 +25,7 @@ Looks like I have the implementation. On platforms where I'm running my code mos
 
 #### Disassembly
 
-All the above is nice, but what if I've made some mistake? I should be able to see the result in pure disassembly, right? 
+All the above is nice, but what if I've made some mistake? I should be able to see the result in pure disassembly, right?
 
 I compiled a simple .NET Framework (non-Core) console application with full optimizations enabled and loaded it into _WinDbg_. Using the _Disassembly_ and _F11_ went deeper and deeper into the code. Eventually I ended in this piece of code for 32bit.
 
@@ -71,7 +71,7 @@ True, for day-to-day programming in .NET one does not need to know this, heck on
 ##### `YieldProcessor` macro etc. in `gcenv.base.h`
 
 ```c
-#if defined(_MSC_VER) 
+#if defined(_MSC_VER)
  #if defined(_ARM_)
 
   __forceinline void YieldProcessor() { }
@@ -90,12 +90,12 @@ True, for day-to-day programming in .NET one does not need to know this, heck on
   #define MemoryBarrier() { __dmb(_ARM64_BARRIER_SY); }
 
  #elif defined(_AMD64_)
-  
+
   extern "C" void
   _mm_pause (
       void
       );
-  
+
   extern "C" void
   _mm_mfence (
       void
@@ -103,12 +103,12 @@ True, for day-to-day programming in .NET one does not need to know this, heck on
 
   #pragma intrinsic(_mm_pause)
   #pragma intrinsic(_mm_mfence)
-  
+
   #define YieldProcessor _mm_pause
   #define MemoryBarrier _mm_mfence
 
  #elif defined(_X86_)
-  
+
   #define YieldProcessor() __asm { rep nop }
   #define MemoryBarrier() MemoryBarrierImpl()
   __forceinline void MemoryBarrierImpl()

@@ -32,7 +32,7 @@ And the debugger is on the `Foo(Bar(), Baz())` statement. Now if you want to ste
 
 Let's enter `Alt-Shift-F11` world. Pressing this key combination is going to give you menu (at the location where your mouse is) with functions (or properties, etc.) that you can step into (in the order of calling) and you can directly select (using arrow keys, obviously ;)) the function you're interested in, skipping the rest.
 
-![Alt-Shift-F11 menu]({{ include "post_ilink" page "debugging_menu.png" }}) 
+![Alt-Shift-F11 menu]({{ include "post_ilink" page "debugging_menu.png" }})
 
 Isn't that great little hidden nugget? I use that quite often and it saved me plenty of time, especially when the calls are nested a lot (which I consider fine if it doesn't hurt readability). Did you know about it? Let me know in the comments.
 

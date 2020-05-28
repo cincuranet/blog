@@ -3,7 +3,7 @@ title: |-
   What is new in .NET provider (trace support, cancellation and more) talk on Firebird Conference 2011
 date: 2011-11-04T11:00:16Z
 tags:
-  - Presentations &amp; Speaking
+  - Presentations & Speaking
 ---
 If you're using Firebird from .NET you should visit my talk on [Firebird Conference 2011][1]. This year it's in Luxembourg at November 25-26.
 

@@ -44,7 +44,7 @@ public static void FooBar()
 
 And it fails to compile. The error message is `Use of unassigned local variable 'i'`, which thinking about it makes sense. Of course, moving the `Test` call after `i` declaration and assignment makes the error disappear. Interesting to see the compiler has "reachability" (that's my term, I don't know how it's really called) graph that's not just local.
 
-But let's not give up too soon. Maybe I can access it via another local function defined before the `i`. 
+But let's not give up too soon. Maybe I can access it via another local function defined before the `i`.
 
 ```csharp
 public static void FooBar()

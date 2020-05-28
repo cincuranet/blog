@@ -10,7 +10,7 @@ tags:
 ---
 > I realized I have some pieces of code to show some specific behavior, mostly around threading and synchronization, all over my notes. Some of these pieces may be 10+ years old. I use these pieces during my "threading/parallel/async" course, but why not to share it publicly. Maybe I'll stumble on it after some years, maybe .NET will be history, and it will be interesting to re-read and re-think the code. The code isn't unique or something where I'm the first to realize it. It's really just an example code.
 
-Here's the most recent one. I wanted to show torn reads happening. So I took a `decimal` value, because it is 128-bit value it will not be atomic in any way, and started looping using plain reads and writes. 
+Here's the most recent one. I wanted to show torn reads happening. So I took a `decimal` value, because it is 128-bit value it will not be atomic in any way, and started looping using plain reads and writes.
 
 <!-- excerpt -->
 

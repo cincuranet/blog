@@ -10,7 +10,7 @@ tags:
 ---
 I don't like comments. Most of the time information in comments is wrong and obsolete. I believe the code should be clear as a fresh snow. Most of the time. Some design decisions or measurements can be commented, but not the code itself. If it needs commenting, it should be rewritten.
 
-One cardinal sin I can't live with is commenting out code, just because you might need it later or because it's being "refactored". Nonsense. Sadly, this is done so often in a team where I'm responsible for code quality. Lucky me. 
+One cardinal sin I can't live with is commenting out code, just because you might need it later or because it's being "refactored". Nonsense. Sadly, this is done so often in a team where I'm responsible for code quality. Lucky me.
 
 Thus, to prevent it I decided to test for big chunks of comments in the codebase using a code. More specifically NDepend or Roslyn. Whatever will do the job.
 
@@ -80,7 +80,7 @@ foreach (var document in documents)
             if (item.end - item.start + 1 >= CommentLinesLimit)
             {
                 var name = document.FilePath.Replace(SolutionDir, string.Empty);
-                Console.WriteLine($"##teamcity[buildProblem description='File {name} has {CommentLinesLimit} or more lines of comments starting on L{item.start + 1}-{item.end + 1}']"); 
+                Console.WriteLine($"##teamcity[buildProblem description='File {name} has {CommentLinesLimit} or more lines of comments starting on L{item.start + 1}-{item.end + 1}']");
             }
         }
     }
@@ -91,7 +91,7 @@ I open the solution using the `MSBuildWorkspace` and go through all of the files
 
 #### Final thoughts
 
-With that in place I can easily catch big blocks of comments so it is caught even before the code reviews time. Right now the `CommentLinesLimit` is `20`, which already uncovered complete classes being commented out and still in the code base. My plan is to slowly lower it down to probably `5`. Although I personally would be happy with even like `3`, people would start whining and arguing with me why this comment really needs to be there yadada. 
+With that in place I can easily catch big blocks of comments so it is caught even before the code reviews time. Right now the `CommentLinesLimit` is `20`, which already uncovered complete classes being commented out and still in the code base. My plan is to slowly lower it down to probably `5`. Although I personally would be happy with even like `3`, people would start whining and arguing with me why this comment really needs to be there yadada.
 
 As usual with such tools, this is not perfect. One can outsmart it easily. And I don't want to make it super smart. Then it becomes a cat vs mouse fight instead of a safety net for clean(er) code. I'm trying to teach people that everybody will benefit from clean code at the end (failing so far, if you'd like to ask).
 

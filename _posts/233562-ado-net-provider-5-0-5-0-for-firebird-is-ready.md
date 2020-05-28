@@ -15,7 +15,7 @@ tags:
 ---
 New 5.0.5.0 version of [ADO.NET provider for Firebird][1] is ready for download. As with every major release the changes of something going wrong are high. No exception here. Big thanks to people testing the provider and reporting bugs.
 
-Also as I was there, my brain being in high power state, I fixed some bugs (though it was only few, these span well in the codebase). 
+Also as I was there, my brain being in high power state, I fixed some bugs (though it was only few, these span well in the codebase).
 
 <!-- excerpt -->
 

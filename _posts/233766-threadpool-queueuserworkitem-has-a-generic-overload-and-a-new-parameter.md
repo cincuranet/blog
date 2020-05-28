@@ -13,7 +13,7 @@ Although nowadays people, including me, are working mostly with tasks and async/
 
 Since the very beginning the `ThreadPool.QueueUserWorkItem` took `object` as a state that was passed to the `WaitCallback` delegate provided. That means if you passed value type, it was boxed and you then had to cast it back in the delegate. Boxing is not a great for performance (allocations) and casting is easy to mess up, especially when refactoring.
 
-As it turned out, since in .NET Core 2.1 the method has a new generic overload [`bool QueueUserWorkItem<TState>(Action<TState> callBack, TState state, bool preferLocal)`][3]. In .NET Standard it's "only" starting from 2.1. Here is the [interesting commit][1] from [Stephen Toub][2]. This means both of the above-mentioned problems are not longer an issue. 
+As it turned out, since in .NET Core 2.1 the method has a new generic overload [`bool QueueUserWorkItem<TState>(Action<TState> callBack, TState state, bool preferLocal)`][3]. In .NET Standard it's "only" starting from 2.1. Here is the [interesting commit][1] from [Stephen Toub][2]. This means both of the above-mentioned problems are not longer an issue.
 
 What is the `preferLocal` parameter for? It allows you to queue the work item into thread pool thread's local queue compared to default behavior of going into global queue. That, in some scenarios, reduces contention on the global queue, improves cache locality or takes advantage of work stealing and probably some other things.
 

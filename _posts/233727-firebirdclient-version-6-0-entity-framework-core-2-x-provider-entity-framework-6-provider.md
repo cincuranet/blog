@@ -14,7 +14,7 @@ tags:
   - SQL
   - Visual Studio
 ---
-Yep, it's finally here. The big version, version 6.0, of FirebirdClient and providers for Entity Framework Core and Entity Framework 6. I think this is the biggest release ever. A lot of changes (some breaking). Let's take it one by one. 
+Yep, it's finally here. The big version, version 6.0, of FirebirdClient and providers for Entity Framework Core and Entity Framework 6. I think this is the biggest release ever. A lot of changes (some breaking). Let's take it one by one.
 
 <!-- excerpt -->
 
@@ -40,7 +40,7 @@ Only Entity Framework 6 is now supported and new namespaces are used (`EntityFra
 
 #### Documentation
 
-To help you started with usage, I created documents for [ADO.NET][9], [Entity Framework Core][7] and [Entity Framework 6][8]. At the moment I went with the simplest solution, plain Markdown files [in docs folder][10] in the repository, and let's see where that ends. Feel free to contribute.    
+To help you started with usage, I created documents for [ADO.NET][9], [Entity Framework Core][7] and [Entity Framework 6][8]. At the moment I went with the simplest solution, plain Markdown files [in docs folder][10] in the repository, and let's see where that ends. Feel free to contribute.
 
 #### Getting the bits
 
@@ -49,10 +49,10 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2], [FirebirdS
 [1]: http://www.firebirdsql.org/en/net-provider/
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
-[4]: http://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/ 
+[4]: http://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/
 [5]: http://tracker.firebirdsql.org/browse/DNET/fixforversion/10850
 [6]: http://tracker.firebirdsql.org/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?query=%23breaking&summary=true&pid=10003&fixfor=10850&tempMax=1000
 [7]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/entity-framework-core.md
 [8]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/entity-framework-6.md
-[9]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/ado-net.md 
-[10]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/ 
+[9]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/ado-net.md
+[10]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/

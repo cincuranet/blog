@@ -1,6 +1,6 @@
 ---
 title: |-
-  Open FileStream properly for asynchronous reading/writing 
+  Open FileStream properly for asynchronous reading/writing
 date: 2017-08-03T15:30:00Z
 tags:
   - .NET

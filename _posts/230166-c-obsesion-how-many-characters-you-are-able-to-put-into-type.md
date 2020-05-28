@@ -6,7 +6,7 @@ tags:
   - .NET
   - C#
 ---
-I was writing some return type from function when I got ~~brilliant~~ dumb idea to start playing with braces, question marks etc. :) And I came with some self-competition to write a lot of different characters into a valid type definition (in C#, of course). _And simple repeating doesn't count._ But why not to create this as a public competition. ;) 
+I was writing some return type from function when I got ~~brilliant~~ dumb idea to start playing with braces, question marks etc. :) And I came with some self-competition to write a lot of different characters into a valid type definition (in C#, of course). _And simple repeating doesn't count._ But why not to create this as a public competition. ;)
 
 With the short first try I ended up with this:
 

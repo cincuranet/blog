@@ -23,7 +23,7 @@ Firebird 3 came with wire encryption support, but until now it was not supported
 
 #### Other changes
 
-Overview of all the changes can be found in [tracker][5], but I'd like bring special attention to items marked with _#breaking_ in the title, because as you can guess, these might be breaking changes in some cases. Other worth mentioning are support for IPv6 in connection strings and URL-style connection string and support for "explain plan". 
+Overview of all the changes can be found in [tracker][5], but I'd like bring special attention to items marked with _#breaking_ in the title, because as you can guess, these might be breaking changes in some cases. Other worth mentioning are support for IPv6 in connection strings and URL-style connection string and support for "explain plan".
 
 You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2], [EntityFramework.Firebird][3] and [FirebirdSql.EntityFrameworkCore.Firebird][4] (or from [firebirdsql.org][1]).
 
