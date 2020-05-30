@@ -6,7 +6,7 @@ tags:
   - C#
   - Programming in general
 ---
-Few months ago [Miguel de Icaza][1] posted on Twitter message about explicitly stating your member private access modifier (or anything that's default) and that he doesn't understand it, the he wants his code be succinct.
+Few months ago [Miguel de Icaza][1] posted [message][3] on Twitter about explicitly stating your member private access modifier (or anything that's default) and that he doesn't understand it, the he wants his code be succinct.
 
 ```csharp
 class Foo
@@ -23,3 +23,4 @@ I'm now following this "rule" for every new code I'm writing. I like it when I s
 
 [1]: http://twitter.com/migueldeicaza
 [2]: http://www.id3renamer.com
+[3]: https://twitter.com/migueldeicaza/status/8403500450
