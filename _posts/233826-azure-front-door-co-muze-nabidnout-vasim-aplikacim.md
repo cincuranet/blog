@@ -5,7 +5,7 @@ date: 2020-05-28T18:36:00Z
 tags:
   - Presentations & Speaking
 ---
-Online akce teď na WUGu jedou a vypadá to, že se nebude polevovat. Takže, aby data tekla a linky se žhavily, připravte routery 2.6.2020 od 17:30. Povíme si něco o tom co je Azure Front Door a tak okolo.
+Online akce teď na WUGu jedou a vypadá to, že se nebude polevovat. Takže, aby data tekla a linky se žhavily, připravte routery [2.6.2020 od 17:30][1] na WUG. Povíme si něco o tom co je Azure Front Door a tak okolo.
 
 <!-- excerpt -->
 
