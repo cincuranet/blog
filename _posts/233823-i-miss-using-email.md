@@ -8,8 +8,6 @@ tags:
   - Teams
   - Skype
 ---
-I miss using email
-
 I miss good old email. You know the tool that anybody can reach you at, you can use any tool you want and basically can do anything with it yourself.
 
 Let me give you bit of "messaging" history from my own world and I'll circle back to email at the end.
