@@ -11,4 +11,6 @@ Tentokrát tu mám jednu pozvánku na akci, kterou si můžete trochu netradičn
 
 Pokusím se vám ukázat, že kód můžete dramaticky vylepšit i bez profilování, benchmarkování a podobných technik a nástrojů. Stačí znát pár základních běžných vlastností kolem .NETu a můžete jednoduše dosáhnout zlepšení rychlosti vašeho kódu.
 
+![Raňajky banner]({{ include "post_ilink" page "ranajky.png" }})
+
 [1]: https://gopas.sk/News/Ranajky-s-GOPASom--Optimalizacia--NET-(jednoducho-a-isto).aspx
