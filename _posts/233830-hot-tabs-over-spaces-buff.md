@@ -24,7 +24,7 @@ The buff is very light gray and the text is black and dark gray, basically same 
 
 If you'd like to have one - and seriously, who wouldn't 8-) -, send me an [email][2] (or [tweet][2]) with your address and I'll get back to you. I have an initial batch of 50 and I'll be giving these for free. But if you'd like to pay for one (or more), you can and I decided I'll donate all the money to [UNICEF][3].
 
-Now let's hope I'll run out quickly (and if that happens, I promise I'll create proper order page :-)). Olia already has one and I took one too. That means I have only 48 to sell...
+Now let's hope I'll run out quickly (and if that happens, I promise I'll create proper order page :-)). Olia already has one and I took one too. That means I have only 48 to give...
 
 [1]: https://www.buff.com
 [2]: /about
