@@ -22,7 +22,7 @@ Here it is. And as a first step into this world, I'm happy about the result.
 
 The buff is very light gray and the text is black and dark gray, basically same text as here in the header. Nothing else is there, I wanted to keep it clean and not "branded".
 
-If you'd like to have one - and seriously, who wouldn't 8-) -, send me an [email][2] (or [tweet][2]) with your address and I'll get back to you. I have an initial badge of 50 and I'll be giving these for free. But if you'd like to pay for one (or more), you can and I decided I'll donate all the money to [UNICEF][3].
+If you'd like to have one - and seriously, who wouldn't 8-) -, send me an [email][2] (or [tweet][2]) with your address and I'll get back to you. I have an initial batch of 50 and I'll be giving these for free. But if you'd like to pay for one (or more), you can and I decided I'll donate all the money to [UNICEF][3].
 
 Now let's hope I'll run out quickly (and if that happens, I promise I'll create proper order page :-)). Olia already has one and I took one too. That means I have only 48 to sell...
 
