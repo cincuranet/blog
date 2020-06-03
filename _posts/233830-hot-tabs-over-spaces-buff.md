@@ -4,6 +4,7 @@ title: |-
 date: 2020-06-03T06:37:00Z
 tags:
   - Merchandise
+  - Life
 ---
 Almost exactly a year ago I was sitting in a restaurant after _Update Days: Corestart 3.0_ conference with my _↹ over ␣ ␣ ␣_ shirt facing [Olia Gavrysh][4], Program Manager at .NET team in Microsoft. And she mentioned how she liked the shirt (and that [Immo Landwerth][5], another Program Manager in .NET team would like it too (maybe that was a sarcasm)) and that I should make the shirt available for buying. 
 
