@@ -2,6 +2,43 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Breakfast with Gopas
+    date: June 4, 2020
+    language: Czech
+    sessions:
+      - .NET code optimalization - simply and for sure
+  - title: Talk @ Windows User Group
+    date: June 2, 2020
+    language: Czech
+    sessions:
+      - What Azure Front Door can provide for your applications
+  - title: Cloud DeveloperDays
+    date: May 26-27, 2020
+    language: English
+    sessions:
+      - What Azure Front Door can provide for your applications
+      - Azure Storage (maybe) hidden features
+  - title: Kros Dev Meetup
+    date: May 19, 2020
+    language: Czech
+    sessions:
+      - Using Roslyn to Improve Your Codebase
+  - title: Gopas TechEd 2020
+    date: May 5-6, 2020
+    language: Czech
+    sessions:
+      - Most Common Mistakes in Using Tasks and in Asynchronous Code
+      - Comparing Firebird and MS SQL Server engines (with Vladimir Muzny)
+  - title: Talk @ Windows User Group
+    date: April 21, 2020
+    language: Czech
+    sessions:
+      - What is the Span<T> about and why should I care
+  - title: Talk @ Windows User Group
+    date: February 26, 2020
+    language: Czech
+    sessions:
+      - How to measure .NET code performance correctly
   - title: Talk @ Windows User Group
     date: January 8, 2020
     language: Czech
