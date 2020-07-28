@@ -1474,7 +1474,9 @@ articles:
 
 #### Professional career - Ongoing:
 
-* 11/2017 - present: software & cloud architect for [Havit, s.r.o](http://www.havit.cz)
+* 04/2020 - present: architect, developer for [Integrative Enneagram Solutions](https://www.integrative9.com)
+	* architecting LOB web applications
+* 11/2017 - present: external consultant for [Havit, s.r.o](http://www.havit.cz)
 	* debugging issues, DAL design, Azure solution designs, API integrations
 * 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
 	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI, modifying to-release executables using IL
@@ -1528,10 +1530,6 @@ articles:
 * Czech: native speaker
 * English: fluent speaking, writing (+ exam corresponding to B2 level)
 * German: average, need to refresh (especially IT terminology)
-
-#### References:
-
-* _on request only_
 
 #### Speaker on conferences and other events:<span id="speaker-events"></span>
 
