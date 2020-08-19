@@ -1,6 +1,5 @@
 ---
 title: Threading notes
-no_page: true
 layout: page
 ---
 #### Context switch

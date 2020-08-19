@@ -8,9 +8,6 @@
 	</url>
 	{{~ end ~}}
 	{{~ for doc in site.html_pages ~}}
-	{{~ if doc.no_page ~}}
-		{{~ continue ~}}
-	{{~ end ~}}
 	<url>
 		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>

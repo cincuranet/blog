@@ -1,6 +1,5 @@
 ---
 title: FirebirdDbComparer
-no_page: true
 layout: page
 ---
 ### FirebirdDbComparer
