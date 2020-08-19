@@ -8,6 +8,9 @@
 	</url>
 	{{~ end ~}}
 	{{~ for doc in site.html_pages ~}}
+	{{~ if doc.url == "/404" ~}}
+		{{~ continue ~}}
+	{{~ end ~}}
 	<url>
 		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
