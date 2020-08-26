@@ -20,5 +20,5 @@ Documentation (requirements, installation steps, ...), examples and performance 
 
 Thanks to [SMS-Timing][2] for sponsoring most of the work and providing infrastructure for load testing.
 
-[1]: /tools/fb-net-external-engine
+[1]: https://www.fbnetexternalengine.com
 [2]: http://www.sms-timing.com/

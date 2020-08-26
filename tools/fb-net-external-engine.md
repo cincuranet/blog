@@ -6,13 +6,13 @@ layout: page
 
 #### Introduction
 
-_FbNetExternalEngine_ is plugin for Firebird 3+ that allows you to write stored procedures, functions and triggers (not yet) in any .NET language (instead of PSQL). There's no limitation on what you can or cannot do in the code. Full power of .NET and .NET eco-system is available for you.
+[_FbNetExternalEngine_][6] is plugin for Firebird 3+ that allows you to write stored procedures, functions and triggers (not yet) in any .NET language (instead of PSQL). There's no limitation on what you can or cannot do in the code. Full power of .NET and .NET eco-system is available for you.
 
 #### Price and download
 
-_FbNetExternalEngine_ has a single price of €199, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not support _Integration interfaces_ and _Management procedures_ (see below).
+[_FbNetExternalEngine_][6] has a single price of €199, which gives you all the goodies described here and you can use it on as many servers as you have. Updates within major versions are included. There's also a [free version][2] which is limited to only one concurrently running execution at any given time and does not support _Integration interfaces_ and _Management procedures_ (see below).
 
-You can place the order [here][1]. If you'd like to support the work on _FbNetExternalEngine_ even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
+You can place the order [here][1]. If you'd like to support the work on [_FbNetExternalEngine_][6] even more - which would be greatly appreciated -, feel free to put your preferred amount into the note.
 
 #### Instalation
 
@@ -153,7 +153,7 @@ Not yet supported.
 
 #### Integration interfaces
 
-The extra `FbNetExternalEngineIntegration.dll` (also available on NuGet as [`FbNetExternalEngine.Integration`][5]) contains interfaces to integrate with the _FbNetExternalEngine_.
+The extra `FbNetExternalEngineIntegration.dll` (also available on NuGet as [`FbNetExternalEngine.Integration`][5]) contains interfaces to integrate with the [_FbNetExternalEngine_][6].
 
 ##### `IExecutionContext`
 
@@ -184,7 +184,7 @@ The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` co
 
 ##### `net$clean`
 
-_FbNetExternalEngine_ is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
+[_FbNetExternalEngine_][6] is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
 
 ##### `net$declarations`
 
@@ -196,7 +196,7 @@ Dummy procedure call is about 2,09× slower compared to PSQL (the plugin infrast
 
 Dummy function call is about 1,78× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,0 μs per call on my machine.
 
-As the procedure or function in .NET becomes more complex the perfomance goes in favor of _FbNetExternalEngine_.
+As the procedure or function in .NET becomes more complex the perfomance goes in favor of [_FbNetExternalEngine_][6].
 
 #### Next steps
 
@@ -217,3 +217,4 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 [3]: https://aka.ms/vs/16/release/vc_redist.x64.exe
 [4]: https://aka.ms/vs/16/release/vc_redist.x86.exe
 [5]: https://www.nuget.org/packages/FbNetExternalEngine.Integration
+[6]: https://www.fbnetexternalengine.com

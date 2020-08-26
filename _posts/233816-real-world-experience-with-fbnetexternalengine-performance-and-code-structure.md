@@ -143,4 +143,4 @@ By doing this I learned two pieces I want to take away from this. First is that 
 
 [1]: {{ include "post_link" 233815 }}
 [2]: https://firebirdsql.org/en/downloads/
-[3]: /tools/fb-net-external-engine
+[3]: https://www.fbnetexternalengine.com

@@ -14,4 +14,4 @@ The new `net$declarations` that allows you see how and what plugin sees in the a
 
 As usual check the [docs page][1] as well as the _examples_ directory.
 
-[1]: /tools/fb-net-external-engine
+[1]: https://www.fbnetexternalengine.com

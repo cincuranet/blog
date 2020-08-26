@@ -14,5 +14,5 @@ The already mentioned performance improves performance little bit and reduces so
 
 If you're using `FbNetExternalEngineIntegration.dll`, you can now get it from NuGet as a [`FbNetExternalEngine.Integration`][2], simplifying referencing it.
 
-[1]: /tools/fb-net-external-engine
+[1]: https://www.fbnetexternalengine.com
 [2]: https://www.nuget.org/packages/FbNetExternalEngine.Integration

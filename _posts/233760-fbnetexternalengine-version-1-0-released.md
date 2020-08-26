@@ -16,4 +16,4 @@ If you are keen to start, just go to [this page][1] where you will find all the 
 
 Also big thanks to two initial supporters - SMS-Timing and Elekt Labs. Without their support it would be difficult to reach version 1.0.
 
-[1]: /tools/fb-net-external-engine
+[1]: https://www.fbnetexternalengine.com
