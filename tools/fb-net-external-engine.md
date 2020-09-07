@@ -185,7 +185,7 @@ The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` co
 
 ##### `net$clean`
 
-[_FbNetExternalEngine_][6] is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
+[_FbNetExternalEngine_][6] is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - to reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
 
 ##### `net$declarations`
 
