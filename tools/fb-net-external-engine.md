@@ -28,6 +28,7 @@ You can place the order [here][1]. If you'd like to support the work on [_FbNetE
 * No overload resolution (method names have to be unique).
 * Method names, classes and namespaces are considered case insensitive.
 * "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]) (or you can put the files into `FbNetExternalEngine` directory).
+* Windows Server 2012 R2+ or Nano Server 1803+ or Windows Client 10 1607+, 7 SP1+, 8.1 on x64 or x86.
 
 ##### Supported types (C# terminology)
 
