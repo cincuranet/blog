@@ -9,6 +9,8 @@ I'm so looking forward to this year's [.NET Developer Days][1]. I think it's my 
 
 <!-- excerpt -->
 
+> **Update:** The conference will be online only, hence all the in-person stuff does not apply. But, not only the sessions will be online, also the workshops(!).
+
 This year I'll be doing special pre-con _Mastering Entity Framework Core_.
 
 > In this hands-on workshop we'll refresh some basics and then dive deep into all the mappings and variations you can do to either make the model, your classes, look the way you want or to match as nicely as possible existing database structure.
