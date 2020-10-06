@@ -11,4 +11,7 @@ I'll be talking about _Most Common Mistakes in Using Tasks and in Asynchronous C
 
 {{ include "attachment" page "presentation.pdf" "Presentation" }}
 
+
+{{ include "rec_youtube" "b16xIU04sIU" }}
+
 [1]: https://2event.com/en/events/1860273#/
