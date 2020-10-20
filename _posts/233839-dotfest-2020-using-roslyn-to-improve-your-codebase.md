@@ -13,5 +13,9 @@ You can register on the [site][2] and I hope to see you there.
 
 > Roslyn is not a black box compiler, but not only has a lot of extension points, but also lot of pieces and places you can use to analyze and understand your code. Not only that, you can also parse and modify or generate code safely with it. 
 
+{{ include "attachment" page "analyzers.pdf" "Slides" }}
+
+{{ include "attachment" page "demos.7z" "Demos" }}
+
 [1]: https://2020.dotfest.ru/lecture/12
 [2]: https://2020.dotfest.ru
