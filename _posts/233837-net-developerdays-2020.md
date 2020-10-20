@@ -33,6 +33,14 @@ Besides the pre-con and post-con I'll do also two sessions during [main conferen
 
 Last but not least, I'll have some [_tabs over spaces buffs_][2] with me 🙌, so first come (or reserve) first served!
 
+{{ include "attachment" page "efcore5.pdf" "Slides - Entity Framework Core 5.0" }}
+
+{{ include "attachment" page "EFCore5.7z" "Demos - Entity Framework Core 5.0" }}
+
+{{ include "attachment" page "csharp-generators.pdf" "Slides - C# Source Generators" }}
+
+{{ include "attachment" page "SourceGenerators.7z" "Demos - C# Source Generators" }}
+
 [1]: https://net.developerdays.pl/
 [2]: {{ include "post_link" 233830 }}
 [3]: https://net.developerdays.pl/s/jiri/
