@@ -33,7 +33,7 @@ Pro přehled čím se zabývám a s čím jsem schopen pomoci se doporučuji pod
 
 #### Cena
 
-Cena je 4 500 Kč při standardní délce 4 hodiny. Minuty neřeším, pokud budeme někdy diskutovat 5 hodin, budu jedině rád. Minimálně je možné koupit 3 setkání.
+Cena je 6 500 Kč při standardní délce 4 hodiny. Minuty neřeším, pokud budeme někdy diskutovat 5 hodin, budu jedině rád. Minimálně je možné koupit 3 setkání.
 
 Pokud vás služba [_Průvodce vývojářů_][1] zaujala, [napište mi email][2], promluvíme si a zjitíme jestli máme kompatibilní očekávání.
 
