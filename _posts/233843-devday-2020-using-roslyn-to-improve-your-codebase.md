@@ -17,5 +17,7 @@ You can register on the [site][2] and I hope to see you in the chat room. If you
 
 {{ include "attachment" page "demos.7z" "Demos" }}
 
+{{ include "rec_youtube" "FRvYr6eXiFk" }}
+
 [1]: https://devday.be/Sessions/Details/114?slug=using-roslyn-to-improve-your-codebase
 [2]: https://devday.be/ticket
