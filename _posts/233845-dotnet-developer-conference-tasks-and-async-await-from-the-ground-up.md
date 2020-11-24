@@ -15,5 +15,7 @@ More information about the workshop is available [here][2] and you can register 
 
 On a personal note, I hope in the future the conference will happen as an in-person event, because over last 5 or 6 years I flew to and from Köln Bonn airport numerous times for work (focused workdays (and some running) inside nature in Nationalpark Eifel). And I and my boss, who was usually picking me up, developed optimization strategy consisting of me taking shortest path to the predefined door (near the corner), him driving by, and me almost jumping into the moving car (that's why the door was near the corner). And same way on return trip. Great memories. :)
 
+{{ include "attachment" page "code.7z" "Code" }}
+
 [1]: https://www.dotnet-developer-conference.de/tickets-preise/
 [2]: https://www.dotnet-developer-conference.de/programm%202020/#/talk/tasks-and-async-await-from-the-ground-up
