@@ -55,4 +55,4 @@ You can get the bits from NuGet [FirebirdSql.Data.FirebirdClient][2], [FirebirdS
 [7]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/entity-framework-core.md
 [8]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/entity-framework-6.md
 [9]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/ado-net.md
-[10]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/blob/master/Provider/docs/
+[10]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/tree/master/Provider/docs
