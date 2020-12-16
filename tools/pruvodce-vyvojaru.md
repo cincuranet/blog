@@ -56,5 +56,5 @@ Ano i ne. Delší čas není problém (podle mých časových a kapacitních mo�
 [3]: /about
 [4]: /cv#speaker-events
 [5]: /
-[6]: https://twitter.com/search?q=%23MyYearInPocket%20(from%3Acincura_net)&f=live
+[6]: https://twitter.com/search?q=%23MyYearInPocket%20(from%3Acincura_net)
 [7]: https://mvp.microsoft.com/en-us/PublicProfile/5002423
