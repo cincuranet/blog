@@ -11,4 +11,10 @@ Máme tu rok 2021 a vypadá to, že se bez in-person akcí budeme muset ještě 
 
 > Event Countery v .NET (Core) nám umožňují jednoduché, rychlé, cross-platform, real-time měření všeho možného v naší aplikaci. Plno knihoven (i .NET) tyto signály poskytuje a je možné se podívat "co se děje vevnitř". Ale nejenom to. Můžeme si vytvářet vlastní a měřit a monitorovat výkon kódu, který nás zajímá, ve vlastním kódu. Tak se na to pojďme společně podívat. 
 
+{{ include "attachment" page "EventCountersDemo.7z" "Demo" }}
+
+{{ include "attachment" page "slides.pdf" "Prezentace" }}
+
+{{ include "rec_wug" "700-Monitoring-vykonu-aplikace-pomoci-Event-Counteru-v-NET-Core" }}
+
 [1]: https://www.wug.cz/online/akce/1365-Monitoring-vykonu-aplikace-pomoci-Event-Counteru-v-NET-Core
