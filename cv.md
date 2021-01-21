@@ -2,6 +2,66 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Talk @ Windows User Group
+    date: January 21, 2021
+    language: Czech
+    sessions:
+      - Application (performance) monitoring using Event Counters in .NET (Core)
+  - title: SMS-Timing Educational Window
+    date: January 13, 2021
+    language: English
+    sessions:
+      - Apple M1 and ARM introduction
+  - title: .NET Developer Conference
+    date: November 24, 2020
+    language: English
+    sessions:
+      - Tasks and async/await from the ground up
+  - title: DevDay.be
+    date: November 17, 2020
+    language: English
+    sessions:
+      - Using Roslyn to improve your codebase
+  - title: WUG Days 2020
+    date: October 21-23, 2020
+    language: Czech
+    sessions:
+      - .NET 5 - who, where, how and with whom
+      - C# 9 - what's new
+      - Entity Framework Core 5
+      - C# 9 source generators
+      - Using Roslyn to improve your codebase
+  - title: .NET DeveloperDays post-con workshop
+    date: October 22, 2020
+    language: English
+    sessions:
+      - Async/Await Understanding and Effective Usage
+  - title: .NET DeveloperDays 2020
+    date: October 20-21, 2020
+    language: English
+    sessions:
+      - C# Source Generators - let the machine do the programming
+      - EF Core 5.0 - what's new
+  - title: .NET DeveloperDays pre-con workshop
+    date: October 19, 2020
+    language: English
+    sessions:
+      - Mastering Entity Framework Core
+  - title: DotFest 2020
+    date: October 17, 2020
+    language: English
+    sessions:
+      - Using Roslyn to improve your codebase
+  - title: Svitla Smart Talk
+    date: September 22, 2020
+    language: English
+    sessions:
+      - Most Common Mistakes in Using Tasks and in Asynchronous Code
+  - title: SQL Server Bootcamp 2020
+    date: August 13, 2020
+    language: Czech
+    sessions:
+      - Comparison of Firebird and Microsoft SQL Server
   - title: Breakfast with Gopas
     date: June 4, 2020
     language: Czech
