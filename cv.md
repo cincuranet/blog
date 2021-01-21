@@ -1513,6 +1513,7 @@ articles:
 
 * English exam (corresponding to B2 level)
 * 2017 - ...: Microsoft Most Valuable Professional
+* 2021 - ...: Microsoft Certified Trainer
 * driving licence A, B
 * Microsoft Certified Professional (70-583, 70-536)
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
@@ -1534,8 +1535,6 @@ articles:
 
 #### Professional career - Ongoing:
 
-* 04/2020 - present: architect, developer for [Integrative Enneagram Solutions](https://www.integrative9.com)
-	* architecting LOB web applications
 * 11/2017 - present: external consultant for [Havit, s.r.o](http://www.havit.cz)
 	* debugging issues, DAL design, Azure solution designs, API integrations
 * 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
@@ -1556,6 +1555,8 @@ articles:
 
 #### Professional career - Past:
 
+* 04/2020 - 09/2020: architect, developer for [Integrative Enneagram Solutions](https://www.integrative9.com)
+	* architecting LOB web applications
 * 01/2018 - 01/2018: Integrative Enneagram Solutions
 	* building templating engine for reports, emails, CMS, SSO consultancy, migration to ASP.NET Core 2
 	* C#, .NET Core
