@@ -48,8 +48,7 @@ Console.WriteLine (x);    // 1
 #### Thread
 
 ```text
-TKO => x86 ~700b; x64 ~1240b; IA64 ~2500b
-TEB => 4 KB on x86 and x64 CPUs, 8 KB on an IA64 CPU
+TEB, _ETHREAD, _KTHREAD
 Kernel Mode Stack => 12kB x86; 24kB x64
 ```
 
