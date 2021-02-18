@@ -12,7 +12,7 @@ You can find a lot of free code [here on the blog][1] and on my [GitHub][2]. If 
 
 When not writing code I'm [speaking][3], teaching and [writing][1] about topics above. I speak at conferences, user groups, companies, ... and to whoever will listen. And write even for just a single reader. Because I like doing it.
 
-And finally I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. 
+And finally I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. But lately, I've been neglecting these hobbies. 
 
 I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
 
