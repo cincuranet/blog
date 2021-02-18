@@ -6,7 +6,7 @@ layout: page
 
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
 
-I write code in exchange for money because that pays the bills. I also contribute to open-source software. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework Core, Entity Framework and DDEX) for Firebird (the database). I helped with .NET and Entity Framework providers for NuoDB. Since 2017 I'm Microsoft Most Valuable Professional.
+I write code in exchange for money because that pays the bills. I also contribute to open-source software. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework Core, Entity Framework and DDEX) for Firebird (the database). I helped with .NET and Entity Framework providers for NuoDB. I'm Microsoft Most Valuable Professional and also Microsoft Certified Trainer.
 
 You can find a lot of free code [here on the blog][1] and on my [GitHub][2]. If you use Firebird and like .NET, you might be interested in [FbNetExternalEngine][12] project or [FirebirdDbComparer][13]. My application [ID3 renamer][7] might help you to keep your MP3 files in order.
 
