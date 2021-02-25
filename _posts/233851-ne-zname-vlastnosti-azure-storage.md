@@ -5,7 +5,7 @@ date: 2021-02-19T14:33:00Z
 tags:
   - Presentations & Speaking
 ---
-Azure Storage je tak nějak moje oblíbená služba. A za ty roky co existuje jsem nasbíral a taky náhodou objevil hromadu zajimavých vlastností, o kterých možná nevíte nebo nevíte jak je použít. No a tak se na ně podíváme na WUGu [25.2.2021 od 17:00][1].
+Azure Storage je tak nějak moje oblíbená služba. A za ty roky co existuje jsem nasbíral a taky náhodou objevil hromadu zajimavých vlastností, o kterých možná nevíte nebo nevíte jak je použít. No a tak se na ně podíváme na WUGu [18.3.2021 od 17:00][1].
 
 <!-- excerpt -->
 
