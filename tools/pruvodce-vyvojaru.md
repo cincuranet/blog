@@ -4,6 +4,8 @@ layout: page
 ---
 ### Průvodce vývojářů
 
+> Aktuálně je moje kapacita naplněna. Pokud máte zájem, mohu vás zařadit do fronty.
+
 #### Úvod
 
 Téměř 20 let se zabývám profesionálně vývojem a přes 10 let působím též jako konzultant, lektor a speaker na konferencích doma i v Evropě ([více zde][3]). Za tuto dobu jsem si všiml jednoho opakujícího se stavu ve vývojářských týmech (i u jednotlivců) - většina týmů nemá někoho kdo by jim naservíroval co se děje kolem nich z pohledu řešených problémů. Naservíroval technologické trendy, zajímavosti a odfiltroval technologické výstřelky od solidních technologií. Zasadil věci do kontextu nebo rychle něco poskládal a vyzkoušel. Někoho s kým by bylo možné probrat nápady nebo problémy a kdo může nabídnout jiný pohled (nebo více pohledů). A přesně tohle je to, co velkou část svého času dělám já.
