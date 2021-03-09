@@ -15,10 +15,15 @@ layout: base
 </article>
 
 <div id="comments">
-	<div id="disqus_thread"></div>
+<script src="https://utteranc.es/client.js"
+        repo="cincuranet/blog-comments"
+        issue-term="post_{{ post.id }}"
+        theme="boxy-light"
+        crossorigin="anonymous"
+        async>
+</script>
 </div>
 
 <script type="text/javascript">
-	var comments_id = '{{ include "post_uri" page }}';
 	var is_post = true;
 </script>

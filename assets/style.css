@@ -322,7 +322,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 	padding-right: 0;
 }
 
-/* disqus */
+/* comments */
 
 #comments {
 	margin-bottom: 2rem;
@@ -331,10 +331,6 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 	padding-right: .5rem;
 	overflow: hidden;
 	border-top: 1px solid #222;
-}
-
-#disqus_thread {
-	min-height: 325px;
 }
 
 /* fonts */

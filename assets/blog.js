@@ -53,17 +53,6 @@ var blog = (function() {
 		}
 	}
 
-	function initFullDisqus() {
-		disqus_config = function() {
-			this.page.url = comments_id;
-		};
-
-		var d = document, s = d.createElement('script');
-		s.src = '//blogcincuranet.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-	}
-
 	function isLocalLink(link) {
 		return link.indexOf(window.location.host) != -1;
 	}
@@ -87,14 +76,9 @@ var blog = (function() {
 		},
 		initPostPage: function() {
 			showArticleNicely();
-			initFullDisqus();
 		}
 	};
 })();
-
-var disqus_config = function() {
-	this.page.url = '';
-};
 
 blog.initGeneral();
 if (typeof is_post !== 'undefined' && is_post) {
