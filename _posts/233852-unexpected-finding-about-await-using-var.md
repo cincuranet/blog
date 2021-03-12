@@ -6,7 +6,7 @@ tags:
   - Roslyn
   - C#
 ---
-I'm now updating my [ConfigureAwaitChecker][1] to handle `await using` and `await foreach` (release soon, if you'd like to ask) and when trying to handle `await using var` I was surprised how the compiler interprets that.
+I'm now updating my [_ConfigureAwaitChecker_][1] to handle `await using` and `await foreach` (release soon, if you'd like to ask) and when trying to handle `await using var` I was surprised how the compiler interprets that.
 
 <!-- excerpt -->
 
@@ -47,9 +47,12 @@ Yet this code is completely different story. This is a [`LocalDeclarationStateme
 
 And now you know. But unless you deal with syntax trees, Roslyn and analyzers and/or code fixes, well, I don't know if this has any value.
 
+> [Related post.][7]
+
 [1]: https://github.com/cincuranet/ConfigureAwaitChecker
 [2]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.csharp.syntax.usingstatementsyntax?view=roslyn-dotnet
 [3]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.csharp.syntax.usingstatementsyntax.awaitkeyword?view=roslyn-dotnet#Microsoft_CodeAnalysis_CSharp_Syntax_UsingStatementSyntax_AwaitKeyword
 [4]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.csharp.syntax.localdeclarationstatementsyntax?view=roslyn-dotnet
 [5]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.csharp.syntax.localdeclarationstatementsyntax.awaitkeyword?view=roslyn-dotnet#Microsoft_CodeAnalysis_CSharp_Syntax_LocalDeclarationStatementSyntax_AwaitKeyword
 [6]: https://docs.microsoft.com/en-us/dotnet/api/microsoft.codeanalysis.csharp.syntax.localdeclarationstatementsyntax.usingkeyword?view=roslyn-dotnet#Microsoft_CodeAnalysis_CSharp_Syntax_LocalDeclarationStatementSyntax_UsingKeyword
+[7]: {{ include "post_link" 233854 }}
