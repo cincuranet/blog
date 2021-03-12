@@ -56,7 +56,10 @@ Not as succinct as I'd like (not that `ConfigureAwait` is smooth either). But al
 
 By the way, support in ConfigureAwaitChecker is already [planned][4], if you'd like to ask.
 
+> [Related post.][5]
+
 [1]: https://source.dot.net/#System.Private.CoreLib/shared/System/IAsyncDisposable.cs,4f4bd6a091aeee8b
 [2]: https://source.dot.net/#System.Private.CoreLib/shared/System/Threading/Tasks/TaskExtensions.cs,4fb149a851c809fb
 [3]: https://github.com/dotnet/roslyn/issues/34953
 [4]: https://github.com/cincuranet/ConfigureAwaitChecker/issues/24
+[5]: {{ include "post_link" 233854 }}
