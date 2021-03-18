@@ -11,4 +11,6 @@ Azure Storage je tak nějak moje oblíbená služba. A za ty roky co existuje js
 
 > Ukládání dat do Azure Storage je dnes už asi normální věcí i pro on-premise aplikace ;), ale víte, že Azure Storage není jen jedna služba, ale plno malých skrytých features, které mohou pomoci ušetřit, zrychlit aplikaci nebo prostě jen vyřešit nějaký problém jednodušeji? 
 
+{{ include "rec_wug" "708--Ne-Zname-vlastnosti-Azure-Storage" }}
+
 [1]: https://www.wug.cz/online/akce/1376--Ne-Zname-vlastnosti-Azure-Storage
