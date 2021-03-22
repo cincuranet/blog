@@ -1,8 +1,8 @@
 var blog = (function() {
 	function initLinks() {
 		$('a').each(function(_, e) {
+			var href = e.href;
 			e = $(e);
-			var href = e[0].href;
 			if (!isLocalLink(href)) {
 				e.attr('target', '_blank');
 				e.attr('rel', function(_, v) {
@@ -13,8 +13,13 @@ var blog = (function() {
 			}
 		});
 
-		$('a[rel~="bookmark"]').click(function(event) {
-			event.preventDefault();
+		$('a[rel~="bookmark"]').each(function(_, e) {
+			var href = e.href;
+			e = $(e);
+			e.click(function(event) {
+				event.preventDefault();
+				return navigator.clipboard.writeText(href);
+			});
 		});
 	}
 
@@ -23,11 +28,10 @@ var blog = (function() {
 	}
 
 	function initImageBox() {
-		var items = $('article a:has(img)');
-		items.each(function(_, e) {
+		$('article a:has(img)').each(function(_, e) {
+			var href = e.href;
 			e = $(e);
-			var link = e.attr('href');
-			if (getLinkFileExtensions(link).match(/(jpg|jpeg|gif|png|svg)/)) {
+			if (getLinkFileExtensions(href).match(/(jpg|jpeg|gif|png|svg)/)) {
 				e.attr('data-img-gallery', '');
 				e.attr('data-fancybox', 'gallery');
 				e.attr('title', e.find('img').attr('title'));
