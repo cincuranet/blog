@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 6.1.0.0 of [ADO.NET provider for Firebird][1] is ready for download. Visible change is support for `MERGE`, `CREATE PACKAGE` and `CREATE PACKAGE BODY` statements in `FbScript`.
 

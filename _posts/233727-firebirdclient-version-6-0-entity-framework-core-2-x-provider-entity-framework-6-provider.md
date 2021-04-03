@@ -8,11 +8,11 @@ tags:
   - C#
   - Databases in general
   - Entity Framework
-  - Entity Framework Core
   - Firebird
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 Yep, it's finally here. The big version, version 6.0, of FirebirdClient and providers for Entity Framework Core and Entity Framework 6. I think this is the biggest release ever. A lot of changes (some breaking). Let's take it one by one.
 

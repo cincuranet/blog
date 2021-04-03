@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 8.0.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This release is a big one. Huge.
 

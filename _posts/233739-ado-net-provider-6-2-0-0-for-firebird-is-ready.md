@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 6.2.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This version closes the gap with support for `DROP PACKAGE` and `DROP PACKAGE BODY`. And better support for encrypted databases - in services and creating databases.
 

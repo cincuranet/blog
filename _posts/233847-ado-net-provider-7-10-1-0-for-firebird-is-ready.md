@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 7.10.1.0 of [ADO.NET provider for Firebird][1] is ready for download. This a small fix for a bug that slipped through the [7.10.0 release][6].
 

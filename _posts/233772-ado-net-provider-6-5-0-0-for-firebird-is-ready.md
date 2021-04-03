@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 6.5.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This is a mostly release with bug fixes, although one new feature was added and that is support for [SourceLink][6].
 

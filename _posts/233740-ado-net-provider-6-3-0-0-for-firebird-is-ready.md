@@ -12,6 +12,7 @@ tags:
   - LINQ
   - SQL
   - Visual Studio
+  - Entity Framework Core
 ---
 New version 6.3.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This version had a single focus and that was seemingly random exceptions, usually around blobs. It took me almost 4 days of trying and debugging, time supported by company behind [Bauradar][6] for which I'm thankful, to hunt down the [issue][7].
 
