@@ -339,6 +339,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
   font-family: 'Cascadia Mono';
   src: local('Cascadia Mono'),
        url('./fonts/CascadiaMono.woff2') format('woff2');
+  font-display: swap;
 }
 
 /* open-sans-regular - latin-ext_latin */
@@ -348,6 +349,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
        url('./fonts/open-sans-v18-latin-ext_latin-regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 /* open-sans-italic - latin-ext_latin */
@@ -357,6 +359,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
   font-weight: 400;
   src: local('Open Sans Italic'), local('OpenSans-Italic'),
        url('./fonts/open-sans-v18-latin-ext_latin-italic.woff2') format('woff2');
+  font-display: swap;
 }
 
 /* open-sans-700 - latin-ext_latin */
@@ -366,6 +369,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'),
        url('./fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2');
+  font-display: swap;
 }
 
 /* open-sans-700italic - latin-ext_latin */
@@ -375,4 +379,5 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
   font-weight: 700;
   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
        url('./fonts/open-sans-v18-latin-ext_latin-700italic.woff2') format('woff2');
+  font-display: swap;
 }
