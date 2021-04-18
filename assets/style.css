@@ -248,7 +248,7 @@ article img {
 }
 
 
-article a[data-img-gallery] {
+article a[data-gallery] {
 	cursor: zoom-in;
 }
 

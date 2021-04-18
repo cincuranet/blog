@@ -1,93 +1,99 @@
 var blog = (function() {
 	function initLinks() {
-		$('a').each(function(_, e) {
-			var href = e.href;
-			e = $(e);
-			if (!isLocalLink(href)) {
-				e.attr('target', '_blank');
-				e.attr('rel', function(_, v) {
-					return v !== undefined
-						? v + ' ' + 'noopener'
-						: 'noopener';
-			  });
-			}
-		});
+		for (const e of document.querySelectorAll('a')) {
+			let href = e.href;
+			if (isLocalLink(href))
+				continue;
+			e.setAttribute('target', '_blank');
+			let rel = e.getAttribute('rel');
+			rel = rel !== null
+				? rel + ' ' + 'noopener'
+				: 'noopener'
+			e.setAttribute('rel', rel);
+		}
 
-		$('a[rel~="bookmark"]').each(function(_, e) {
-			var href = e.href;
-			e = $(e);
-			e.click(function(event) {
+		for (const e of document.querySelectorAll('a[rel~="bookmark"]')) {
+			let href = e.href;
+			e.addEventListener('click', async event => {
 				event.preventDefault();
-				return navigator.clipboard.writeText(href);
+				await navigator.clipboard.writeText(href);
 			});
-		});
+		}
 	}
 
 	function initImageTitles() {
-		$('article img[alt]').attr('title', function() { return $(this).attr('alt'); });
+		for (const e of document.querySelectorAll('article img[alt]')) {
+			let alt = e.getAttribute('alt');
+			e.setAttribute('title', alt);
+		}
 	}
 
 	function initImageBox() {
-		$('article a:has(img)').each(function(_, e) {
-			var href = e.href;
-			e = $(e);
-			if (getLinkFileExtensions(href).match(/(jpg|jpeg|gif|png|svg)/)) {
-				e.attr('data-img-gallery', '');
-				e.attr('data-fancybox', 'gallery');
-				e.attr('title', e.find('img').attr('title'));
-			}
-		});
+		let items = new Array();
+		for (const e of document.querySelectorAll('article a')) {
+			let img = e.querySelector('img');
+			if (img === null)
+				continue;
+			let href = e.href;
+			if (getLinkFileExtensions(href).match(/(jpg|jpeg|gif|png|svg)/) === null)
+				continue;
+			let title = img.getAttribute('title');
+			e.setAttribute('title', title);
+			e.setAttribute('data-gallery', '');
+			items.push(e);
+		}
+		new SimpleLightbox({elements: items});
 	}
 
 	function initExpand() {
-		$('[data-expand]').each(function(_, e) {
-			e = $(e);
-			var target = e.data('expand');
-			e.click(function(event) {
+		for (const e of document.querySelectorAll('[data-expand]')) {
+			let target = document.querySelector('#' + e.getAttribute('data-expand'));
+			e.addEventListener('click', event => {
 				event.preventDefault();
-				$('#' + target).toggle();
+				if (target.style.display === 'none') {
+					target.style.display = '';
+				}
+				else {
+					target.style.display = 'none';
+				}
 			});
 			e.click();
-		});
+		}
 	}
 
 	function showArticleNicely() {
 		if (isLocalLink(document.referrer)) {
-			$(document).scrollTop($('article').offset().top);
+			let article = document.querySelector('article');
+			article.scrollIntoView();
 		}
 	}
 
 	function isLocalLink(link) {
-		return link.indexOf(window.location.host) != -1;
+		return link.indexOf(window.location.host) !== -1;
 	}
 
 	function getLinkFileExtensions(link) {
-		var part = link.split(/(\?|#)/)[0];
-		var split = part.split('.');
-		return split.length != 1
+		let part = link.split(/(\?|#)/)[0];
+		let split = part.split('.');
+		return split.length !== 1
 			? split[split.length - 1]
 			: '';
 	}
 
 	return {
-		initGeneral: function() {
+		init: (isPost) => {
 			initLinks();
 			initImageTitles();
 			initImageBox();
-		},
-		initContentPage: function() {
-			initExpand();
-		},
-		initPostPage: function() {
-			showArticleNicely();
+			if (isPost) {
+				showArticleNicely();
+			}
+			else {
+				initExpand();
+			}
 		}
 	};
 })();
 
-blog.initGeneral();
-if (typeof is_post !== 'undefined' && is_post) {
-	blog.initPostPage();
-}
-else {
-	blog.initContentPage();
-}
+let isPost = typeof blog_isPost !== 'undefined' && blog_isPost;
+blog.init(isPost);
