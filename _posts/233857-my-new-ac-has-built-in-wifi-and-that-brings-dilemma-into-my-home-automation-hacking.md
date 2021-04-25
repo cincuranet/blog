@@ -10,7 +10,7 @@ Last week I had AC installed into my house and the unit has Wi-Fi module as a st
 
 <!-- excerpt -->
 
-You know, I'm a software guy. I know my way around things involving software. And hence I'm torn between going the infrared path and the Wi-Fi path. 
+You know, I'm a software guy. I know my way around things involving software. Hence, I'm torn between going the infrared path and the Wi-Fi path.
 
 #### Wi-Fi
 
@@ -24,7 +24,7 @@ I don't like dealing with hardware. I just don't. There's a ton of tutorials on 
 
 #### Solution (or not)
 
-I gravitate towards trying Wi-Fi first, mostly because I'm stronger in that area. If that fails switch to infrared. Fingers crossed that it either fails at the very beginning or it will work flawlessly, because I know how difficult it is to decide to cut the losses and start over.
+I gravitate towards trying Wi-Fi first, mostly because I'm stronger in that area. If that fails, I switch to infrared. Fingers crossed that it either fails at the very beginning or it will work flawlessly, because I know how difficult it is to decide to cut the losses and start over.
 
 I'll share my trials and tribulations (and eventual victories). And yes, I know, I'm making these problems, would I simply use the remote from the box - like my wife is going to - I would be perfectly fine.
 
