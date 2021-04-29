@@ -32,7 +32,7 @@ _Kingston HyperX Fury DDR4 64GB (Kit 2x32GB) 3200MHz CL16 DIMM 1.35V_. I wanted 
 
 #### SSD
 
-_Samsung 980 PRO 500GB NVMe M.2_ . Because it's PCIe 4.0. And although in last 10+ years I used _Intel_ SSDs, I think this is better option.
+_Samsung 980 PRO 500GB NVMe M.2_. Because it's PCIe 4.0. And although in last 10+ years I used _Intel_ SSDs, I think this is better option.
 
 #### Cooler
 
