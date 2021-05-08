@@ -28,4 +28,7 @@ I gravitate towards trying Wi-Fi first, mostly because I'm stronger in that area
 
 I'll share my trials and tribulations (and eventual victories). And yes, I know, I'm making these problems, would I simply use the remote from the box - like my wife is going to - I would be perfectly fine.
 
+> [Follow-up post.][2]
+
 [1]: https://github.com/tomikaa87/gree-remote
+[2]: {{ include "post_link" 233861 }}
