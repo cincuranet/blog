@@ -239,9 +239,9 @@ article h4 > code, article h5 > code {
 	font-size: inherit;
 }
 
-/* article - images */
+/* article - media */
 
-article img {
+article img, article p.video > :first-child {
 	padding-left: .5rem;
 	padding-right: .5rem;
 	max-width: calc(100% - .5rem - .5rem);
