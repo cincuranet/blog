@@ -54,9 +54,7 @@ With the code as is, you're going to see `Hello! ;)` twice. Switching to the lin
 
 I'm happy to understand this behavior now and one day I'll use it again, like a boss.
 
-<!--
 > [Follow-up post.][2]
--->
 
 [1]: https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext?view=net-5.0
-[2]: {{ include "post_link" 233870 }}
+[2]: {{ include "post_link" 233871 }}
