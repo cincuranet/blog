@@ -9,13 +9,13 @@ tags:
 
 <!-- excerpt -->
 
-First session is "[Performance with Span(T) for dummies][2]".
+First session is [_Performance with Span(T) for dummies_][2].
 
 > Span(T) is mentioned a lot these days. Maybe you've even tried it and got confused. In this session I'll get to basics, extract the core concepts and show you what's behind the Span using plain old C# code that you already know.
 
 ![Performance with Span(T) for dummies]({{ include "post_ilink" page "dwx21-span.jpg" }})
 
-Second session is "[Using Roslyn to improve your codebase][3]".
+Second session is [_Using Roslyn to improve your codebase_][3].
 
 > Roslyn is not a black box compiler, but not only has a lot of extension points, but also lot of pieces and places you can use to analyze and understand your code. Not only that, you can also parse and modify or generate code safely with it.
 

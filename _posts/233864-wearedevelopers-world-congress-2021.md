@@ -9,7 +9,7 @@ I'll be speaking at [WeAreDevelopers World Congress 2021][1] in two weeks (June 
 
 <!-- excerpt -->
 
-The session is called "C# 9 Source Generators - let the machine do the programming" and, you guessed it, is about Source Generators in C# 9.
+The session is called _C# 9 Source Generators - let the machine do the programming_ and, you guessed it, is about Source Generators in C# 9.
 
 > Source Generators are one of longest requested features in C# language. What is a source generator? What I can use it for? Also what I can't use it for? Answers to these and more in this session.
 
