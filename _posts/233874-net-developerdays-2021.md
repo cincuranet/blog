@@ -21,5 +21,19 @@ For the main conference I prepared three sessions. First is _Performance with Sp
 
 Fingers crossed the situation will not change and you and I will enjoy the conference as planned.
 
+{{ include "attachment" page "EFCore6.pdf" "Slides - What's new in Entity Framework Core 6" }}
+
+{{ include "attachment" page "EFCore6_demos.7z" "Demos - What's new in Entity Framework Core 6" }}
+
+{{ include "attachment" page "Span.pdf" "Slides - Performance with Span<T> for dummies (should I care?)" }}
+
+{{ include "attachment" page "Span_demos.7z" "Demos - Performance with Span<T> for dummies (should I care?)" }}
+
+{{ include "attachment" page "fbnee.pdf" "Slides - How I put .NET into Firebird database engine" }}
+
+{{ include "attachment" page "fbnee_demos.7z" "Demos - How I put .NET into Firebird database engine" }}
+
+{{ include "attachment" page "Workshop.7z" "End of the day code - Learn Entity Framework Core in 1 day" }}
+
 [1]: https://net.developerdays.pl/learn-entity-framework-core-in-1-day/
 [2]: https://net.developerdays.pl/
