@@ -21,14 +21,14 @@ You can place the order [here][1]. If you'd like to support the work on [_FbNetE
 
 #### Common requirements (C# terminology)
 
-* Assembly (and dependencies) needs to be loadable by .NET Core 3.1 (.NET Standard 2.0/2.1 assembly is recommended) (the runtime is included with the plugin and .NET Core does not need to be installed separately).
+* Assembly (and dependencies) needs to be loadable by .NET 6.0 (.NET Standard 2.0/2.1 assembly is recommended) (the runtime is included with the plugin and .NET does not need to be installed separately).
 * Method has to be static.
 * Method and class has to be public.
 * Input parameters have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * Method names, classes and namespaces are considered case insensitive.
 * "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]) (or you can put the files into `FbNetExternalEngine` directory).
-* Windows Server 2012 R2+ or Nano Server 1803+ or Windows Client 10 1607+, 7 SP1+, 8.1 on x64 or x86.
+* Windows Server (Core) 2012+ or Nano Server 1809+ or Windows Client 10 1607+, 7 SP1+ (with ESU), 8.1 on x64 or x86.
 
 ##### Supported types (C# terminology)
 
@@ -183,19 +183,15 @@ More examples in `examples` and `ExecutionContext.cs`/`ExecutionContext.sql`.
 
 The extra `FbNetExternalEngineManagement.dll` (and `ManagementProcedures.sql` companion) assembly contains useful helpers for managing the plugin.
 
-##### `net$clean`
-
-[_FbNetExternalEngine_][6] is **not locking** the assembly (dependencies excluded) on the disk and you **can update it** as you wish (even via SQL if you create a C# routine for it). To tell the plugin about the new version, call `net$clean`. That will force the plugin - by invalidating (all) internal caches - to reload the assembly from the disk on next execution. It's safe to call this function while other functions are running (although it's not recommeded to do this often because it has some impact on performance).  
-
 ##### `net$declarations`
 
 This procedure shows definitions for all functions or procedures found in assembly passed as a parameter (same rules as for _external name_ apply) which helps validating what the plugin sees and also serves as a helper how the declaration looks (should look) like. To tweak the output `SqlRoutine`, `SqlParameter` and `SqlReturnParameter` attributes are provided in `FbNetExternalEngine.Integration`. Usage examples in `examples`. 
 
 #### Performance
 
-Dummy procedure call is about 2,09× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,4× slowdown). That's about 4,8 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
+Dummy procedure call is about 1.96× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.4× slowdown). That's about 2.6 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
 
-Dummy function call is about 1,78× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1,2× slowdown). That's about 2,0 μs per call on my machine.
+Dummy function call is about 1.62× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.2× slowdown). That's about 1.1 μs per call on my machine.
 
 As the procedure or function in .NET becomes more complex the perfomance goes in favor of [_FbNetExternalEngine_][6].
 
@@ -205,8 +201,6 @@ These ideas, in no particular order, is what I (or people/companies supporting t
 
 * Add support for `CHARACTER SET OCTETS`.
 	* Why: Because it might be useful for certain scenarios.
-* Add support for `async` methods.
-	* Why: Because it will be convenient.
 
 #### Notable sponsors
 
