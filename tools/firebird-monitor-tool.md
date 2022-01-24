@@ -12,7 +12,7 @@ _FirebirdMonitorTool_ is a .NET library that allows parsing trace output message
 
 Firebird 2.5 (any edition) is supported. Firebird 3.0 (any edition) is supported.
 
-The library targets .NET Standard 2.1 and .NET 5.0. _ConsoleProfiler_ is currently provided for Windows x64 and Linux x64.
+The library targets .NET Standard 2.1 and .NET 6.0. _ConsoleProfiler_ is currently provided for Windows x64 and Linux x64.
 
 #### Profiler
 
