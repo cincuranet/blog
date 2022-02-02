@@ -3,6 +3,95 @@ title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
   - title: Talk @ Windows User Group
+    date: January 27, 2022
+    language: Czech
+    sessions:
+      - ".NET 6 extravaganza: Entity Framework Core 6"
+  - title: Talk @ Windows User Group
+    date: January 20, 2022
+    language: Czech
+    sessions:
+      - ".NET 6 extravaganza: .NET 6, BCL, ..."
+  - title: Talk @ Windows User Group
+    date: January 12, 2022
+    language: Czech
+    sessions:
+      - ".NET 6 extravaganza: C# 10"
+  - title: MS Dev Summit 2021
+    date: December 12, 2021
+    language: English
+    sessions:
+      - Azure Storage (maybe) hidden features
+  - title: .NET Developer Conference '21
+    date: December 01, 2021
+    language: English
+    sessions:
+      - C# Source Generators – let the machine do the programming
+  - title: SQL Server Bootcamp 2021
+    date: November 8, 2021
+    language: Czech
+    sessions:
+      - What to expect from Entity Framework Core 6
+  - title: Azure Community Conference 2021
+    date: October 29, 2021
+    language: English
+    sessions:
+      - Azure Storage (maybe) hidden features
+  - title: .NET DeveloperDays 2021
+    date: October 19-21, 2021
+    language: English
+    sessions:
+      - What's new in Entity Framework Core 6
+      - Performance with Span<T> for dummies (should I care?)
+      - How I put .NET into Firebird database engine
+  - title: .NET DeveloperDays pre-con workshop
+    date: October 19, 2021
+    language: English
+    sessions:
+      - Learn Entity Framework Core in 1 day
+  - title: Talk @ Windows User Group
+    date: October 14, 2021
+    language: Czech
+    sessions:
+      - What to expect from .NET 6 and C# 10
+  - title: Dotnetos Conference
+    date: October 5, 2021
+    language: English
+    sessions:
+      - How I put .NET into Firebird database engine
+  - title: WeAreDevelopers World Congress 2021
+    date: June 30, 2021
+    language: English
+    sessions:
+      - C# 9 Source Generators - let the machine do the programming
+  - title: Developer Week '21
+    date: June 29-01, 2021
+    language: English
+    sessions:
+      - Performance with Span<T> for dummies
+      - Using Roslyn to improve your codebase
+  - title: Gopas TechEd 2021
+    date: May 19, 2021
+    language: Czech
+    sessions:
+      - C# 9 Source Generators - let the machine do the programming
+      - Entity Framework Core 5 - what's new
+  - title: Talk @ Windows User Group
+    date: March 18, 2021
+    language: Czech
+    sessions:
+      - Azure Storage (maybe) hidden features
+  - title: .NET.CZ live on Clubhouse
+    date: February 22, 2021
+    language: Czech
+    sessions:
+      - Languages in .NET
+  - title: Svitla Smart Talk workshop
+    date: February 20, 2021
+    language: English
+    sessions:
+      - Mastering Entity Framework Core
+  - title: Talk @ Windows User Group
     date: January 21, 2021
     language: Czech
     sessions:
