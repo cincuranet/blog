@@ -5,7 +5,7 @@ date: 2022-02-18T14:08:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be speaking on [MS Stage][1] (online) February 25th. I'll show you what _Source Generators_ are and how to create one yourself.  
+I'll be speaking on [MS Stage][1] (online) ~~February 25th~~ April 1st. I'll show you what _Source Generators_ are and how to create one yourself.  
 
 <!-- excerpt -->
 
