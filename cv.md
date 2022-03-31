@@ -1640,7 +1640,7 @@ articles:
 	* Entity Framework support
 	* Entity Framework Core support
 	* open-source project
-* 2004 - present: freelancer - developer, consultant, speaker
+* 2004 - present: freelancer - consultant, architect, developer, speaker
 
 #### Professional career - Past:
 
