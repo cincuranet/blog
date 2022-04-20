@@ -35,7 +35,7 @@ Last, but not least, I'd like to thank [BMI Leisure][9] and [Vertec][10] for con
 [2]: http://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient/
 [3]: http://www.nuget.org/packages/EntityFramework.Firebird/
 [4]: http://www.nuget.org/packages/FirebirdSql.EntityFrameworkCore.Firebird/
-[5]: https://github.com/FirebirdSQL/NETProvider/issues?q=is%3Aissue+label%3A%22fix-version%3A+8.5.0.0%22
+[5]: https://github.com/FirebirdSQL/NETProvider/issues?q=is%3Aissue+label%3A%22fix-version%3A+9.0.0.0%22
 [6]: https://github.com/FirebirdSQL/NETProvider/blob/master/docs/batching.md
 [7]: https://github.com/FirebirdSQL/NETProvider/issues/1007
 [8]: https://github.com/FirebirdSQL/NETProvider/issues/877
