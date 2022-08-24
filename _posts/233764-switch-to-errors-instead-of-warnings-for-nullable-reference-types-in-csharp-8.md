@@ -60,5 +60,8 @@ static void Baz()
 
 The list of error codes on the link above contains all and one can surely include all. But it's also about understading and resolving the warnings/errors properly, not just making them dissappear with `!`s or `?`s.
 
+> [Follow-up post.][3]
+
 [1]: https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references
 [2]: https://github.com/dotnet/roslyn/blob/f74016a74c964faa446c9514d94af59af5fe24db/src/Compilers/CSharp/Portable/Errors/ErrorCode.cs#L1629
+[3]: {{ include "post_link" 233901 }}
