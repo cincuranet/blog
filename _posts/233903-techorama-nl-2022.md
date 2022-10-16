@@ -11,5 +11,9 @@ After the [Belgium version][1] Techorama is going to Netherlands, in October 10-
 
 > Source Generators are one of longest requested features in C# language. What is a source generator? What I can use it for? Also what I can't use it for? Answers to these and more in this session.
 
+{{ include "attachment" page "source-generators.pdf" "Slides" }}
+
+{{ include "attachment" page "demos.7z" "Demos" }}
+
 [1]: {{ include "post_link" 233894 }}
 [2]: https://techorama.nl/speakers/speaker/jiri-cincura/
