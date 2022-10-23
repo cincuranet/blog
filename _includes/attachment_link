@@ -1,0 +1,5 @@
+{{-
+	link = $1
+	description = $2
+-}}
+> [{{ description }} <span class="fa fa-file-text-o" aria-hidden="true"></span>]({{ link }})

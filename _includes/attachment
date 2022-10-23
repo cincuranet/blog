@@ -1,6 +1,9 @@
-{{- 
+{{-
 	post = $1
 	name = $2
-	description = $3 
+	description = $3
 -}}
-> [{{ description }} <span class="fa fa-file-text-o" aria-hidden="true"></span>]({{ include "post_ilink" post name }})
+{{-
+	link = include "post_ilink" post name
+-}}
+{{ include "attachment_link" link description }}
