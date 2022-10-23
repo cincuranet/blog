@@ -21,5 +21,16 @@ For the main conference two of my sessions were selected. First is _.NET 6 featu
 
 Hope you'll enjoy the conference (I know I will.) and let's have a chat.
 
+{{ include "attachment" page "NET6features.pdf" "Slides - .NET 6 features that they didn't tell you about" }}
+
+{{ include "attachment" page "NET6features_demos.7z" "Demos - .NET 6 features that they didn't tell you about" }}
+
+{{ include "attachment" page "AzureSpot.pdf" "Slides - Azure Spot instances as your secret weapon" }}
+
+{{ include "attachment" page "AzureSpot_demos.7z" "Demos - Azure Spot instances as your secret weapon" }}
+
+{{ include "attachment_link" "https://github.com/cincuranet/NETDD-Perf-Workshop" "Workshop" }}
+
 [1]: https://net.developerdays.pl/
 [2]: https://net.developerdays.pl/writing-and-measuring-high-performance-code-with-latest-net-and-c-features/
+
