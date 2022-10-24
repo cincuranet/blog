@@ -1676,8 +1676,8 @@ articles:
 #### Professional career - Ongoing:
 
 * 09/2022 - present: software engineer for [Microsoft](http://www.microsoft.com)
-	* in .NET Fundamentals
-	* in Developer Division
+	* .NET Performance Team
+	* Developer Division
 * 11/2017 - present: external consultant for [Havit, s.r.o](http://www.havit.cz)
 	* debugging issues, DAL design, Azure solution designs, API integrations
 * 09/2009 - present: external trainer for [Gopas, a.s.](http://www.gopas.cz)
