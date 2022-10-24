@@ -4,7 +4,7 @@ layout: page
 ---
 ### Mgr. Jiří Činčura
 
-Hello. My name is Jiří Činčura. And I write code - aka I'm a developer. 
+Hello. My name is Jiří Činčura. And I write code - aka I'm a developer.
 
 I write code in exchange for money because that pays the bills. I also contribute to open-source software. I've been doing both for over two decades. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework Core, Entity Framework and DDEX) for Firebird (the database). I'm Microsoft Most Valuable Professional and also Microsoft Certified Trainer.
 
