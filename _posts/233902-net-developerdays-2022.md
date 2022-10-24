@@ -9,7 +9,7 @@ Oh yeah. [.NET Developer Days 2022][1] is coming. Can't wait to be there. This y
 
 <!-- excerpt -->
 
-Let's talk about the workshop. I called it [_Writing and measuring high performance code with latest .NET and C# features _][2]. And it's all about the features that C# and .NET brought us in last 5 or so years. And not only that, it's also about how you can actually correctly measure and observe your optimization (performance). Go check the [detailed description][2] and register. At the end of the day, we all will be happy to sit with a beer and cool our heads.
+Let's talk about the workshop. I called it [_Writing and measuring high performance code with latest .NET and C# features_][2]. And it's all about the features that C# and .NET brought us in last 5 or so years. And not only that, it's also about how you can actually correctly measure and observe your optimization (performance). Go check the [detailed description][2] and register. At the end of the day, we all will be happy to sit with a beer and cool our heads.
 
 For the main conference two of my sessions were selected. First is _.NET 6 features that they didn't tell you about_, other is _Azure Spot instances as your secret weapon_.
 
