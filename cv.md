@@ -2,6 +2,57 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: .NET DeveloperDays - post-con workshop
+    date: Oct 20, 2022
+    language: English
+    sessions:
+      - Writing and measuring high performance code with latest .NET and C# features
+  - title: .NET DeveloperDays
+    date: Oct 18-19, 2022
+    language: English
+    sessions:
+      - .NET 6 features that they didn’t tell you about
+      - Azure Spot instances as your secret weapon
+  - title: Techorama (NL)
+    date: Oct 11-12, 2022
+    language: English
+    sessions:
+      - C# Source Generators – let the machine do the programming
+  - title: WUG Days 2022
+    date: September 13-15, 2022
+    language: Czech
+    sessions:
+      - What to expect from .NET 7
+      - What's new in C# 11
+      - What's new in Entity Framework Core 7
+  - title: SQL Server Bootcamp 2022
+    date: September 12, 2022
+    language: Czech
+    sessions:
+      - Autoincrement (identity) is not the only option for primary keys
+  - title: Talk @ Windows User Group
+    date: June 21, 2022
+    language: Czech
+    sessions:
+      - Smaller, but more interesting new features in .NET 6
+  - title: Techorama (BE)
+    date: May 24-25, 2022
+    language: English
+    sessions:
+      - C# Source Generators – let the machine do the programming
+      - Performance with Span<T> for dummies (should I care?)
+  - title: Gopas TechEd 2022
+    date: May 17-19, 2022
+    language: Czech
+    sessions:
+      - What's new in C# 10
+      - Azure Spot instances as your secret weapon
+      - How I put .NET into Firebird database engine
+  - title: "Gopas IT Morning #6"
+    date: April 20, 2022
+    language: Czech
+    sessions:
+      - New features in .NET 6 that you need to know about
   - title: Talk @ Windows User Group
     date: January 27, 2022
     language: Czech
