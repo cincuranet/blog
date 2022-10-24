@@ -1655,7 +1655,7 @@ articles:
 * 2017 - ...: Microsoft Most Valuable Professional
 * 2021 - ...: Microsoft Certified Trainer
 * driving licence A, B
-* Microsoft Certified Professional (70-583, 70-536)
+* Microsoft Certified Professional
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
 * Red Cross - first aid certification
 * H.P.I. - H.E.A.T Program Instructor level 4
@@ -1675,12 +1675,12 @@ articles:
 
 #### Professional career - Ongoing:
 
+* 09/2022 - present: software engineer for [Microsoft](http://www.microsoft.com)
+	* in .NET Fundamentals
+	* in Developer Division
 * 11/2017 - present: external consultant for [Havit, s.r.o](http://www.havit.cz)
 	* debugging issues, DAL design, Azure solution designs, API integrations
-* 04/2012 - present: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
-	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI, modifying to-release executables using IL
-	* Firebird, LLBLGen Pro, C#, .NET
-* 09/2009 - present: trainer for [Gopas, a.s.](http://www.gopas.cz)
+* 09/2009 - present: external trainer for [Gopas, a.s.](http://www.gopas.cz)
 	* advanced trainings about Entity Framework
 	* advanced trainings about Entity Framework Core
 	* advanced trainings about multithreading, parallel and asynchronous programming
@@ -1695,6 +1695,9 @@ articles:
 
 #### Professional career - Past:
 
+* 04/2012 - 09/2022: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
+	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI
+	* Firebird, LLBLGen Pro, C#, .NET
 * 04/2020 - 09/2020: architect, developer for [Integrative Enneagram Solutions](https://www.integrative9.com)
 	* architecting LOB web applications
 * 01/2018 - 01/2018: Integrative Enneagram Solutions
