@@ -66,9 +66,12 @@ It generated new `<Main>(string[] args)` method and the body is simple `Program.
 
 There you have it. Nothing special and absolutely straightforward. So even if you can't use C# 7.1, you can write this yourself without any real effort.
 
+> [Related post.][7]
+
 [1]: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-1#async-main
 [2]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task.wait?view=netframework-4.7.1#System_Threading_Tasks_Task_Wait
 [3]: https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task.getawaiter?view=netframework-4.7.1#System_Threading_Tasks_Task_GetAwaiter
 [4]: https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.taskawaiter.getresult?view=netframework-4.7.1#System_Runtime_CompilerServices_TaskAwaiter_GetResult
 [5]: https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7-1
 [6]: https://docs.microsoft.com/en-us/dotnet/framework/tools/ildasm-exe-il-disassembler
+[7]: {{ include "post_link" 233908 }}
