@@ -1678,8 +1678,6 @@ articles:
 * 09/2022 - present: software engineer for Microsoft
 	* .NET Performance Team
 	* Developer Division
-* 11/2017 - present: external consultant for Havit, s.r.o
-	* debugging issues, DAL design, Azure solution designs, API integrations
 * 09/2009 - present: external trainer for Gopas, a.s.
 	* advanced trainings about Entity Framework
 	* advanced trainings about Entity Framework Core
@@ -1698,6 +1696,8 @@ articles:
 * 04/2012 - 09/2022: architect, build/deploy & automation master, developer for SMS-Timing
 	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI
 	* Firebird, LLBLGen Pro, C#, .NET
+* 11/2017 - 02/2021: consultant for Havit, s.r.o
+	* debugging issues, DAL design, Azure solution designs, API integrations
 * 04/2020 - 09/2020: architect, developer for Integrative Enneagram Solutions
 	* architecting LOB web applications
 * 01/2018 - 01/2018: Integrative Enneagram Solutions
