@@ -1675,17 +1675,17 @@ articles:
 
 #### Professional career - Ongoing:
 
-* 09/2022 - present: software engineer for [Microsoft](http://www.microsoft.com)
+* 09/2022 - present: software engineer for Microsoft
 	* .NET Performance Team
 	* Developer Division
-* 11/2017 - present: external consultant for [Havit, s.r.o](http://www.havit.cz)
+* 11/2017 - present: external consultant for Havit, s.r.o
 	* debugging issues, DAL design, Azure solution designs, API integrations
-* 09/2009 - present: external trainer for [Gopas, a.s.](http://www.gopas.cz)
+* 09/2009 - present: external trainer for Gopas, a.s.
 	* advanced trainings about Entity Framework
 	* advanced trainings about Entity Framework Core
 	* advanced trainings about multithreading, parallel and asynchronous programming
 	* advanced trainings about cloud and Azure
-* 2006 - present: Firebird ADO.NET Data Provider developer for [Firebird database](http://www.firebirdsql.org/)
+* 2006 - present: Firebird ADO.NET Data Provider developer for Firebird database
 	* from 2008 leading the project
 	* native ADO.NET data provider for Firebird database (and P/Invoke for Firebird Embedded) for .NET Framework/.NET Core
 	* Entity Framework support
@@ -1695,10 +1695,10 @@ articles:
 
 #### Professional career - Past:
 
-* 04/2012 - 09/2022: architect, build/deploy & automation master, developer for [SMS-Timing](http://www.sms-timing.com)
+* 04/2012 - 09/2022: architect, build/deploy & automation master, developer for SMS-Timing
 	* WebAPI backends, scaling/parallelism, databases synchronization using ADO.NET and WebAPI
 	* Firebird, LLBLGen Pro, C#, .NET
-* 04/2020 - 09/2020: architect, developer for [Integrative Enneagram Solutions](https://www.integrative9.com)
+* 04/2020 - 09/2020: architect, developer for Integrative Enneagram Solutions
 	* architecting LOB web applications
 * 01/2018 - 01/2018: Integrative Enneagram Solutions
 	* building templating engine for reports, emails, CMS, SSO consultancy, migration to ASP.NET Core 2
