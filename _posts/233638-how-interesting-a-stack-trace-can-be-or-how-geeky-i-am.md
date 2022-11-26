@@ -88,8 +88,11 @@ Fascinating (the code, not my geekiness), isn't it? All these imaginary cogwheel
 
 > [Related post.][5]
 
+> [Related post.][6]
+
 [1]: https://github.com/nunit/docs/wiki/NUnitLite-Runner
 [2]: https://www.firebirdsql.org/pdfmanual/html/ufb-cs-embedded.html
 [3]: https://www.nuget.org/packages/FirebirdSql.Data.FirebirdClient
 [4]: https://msdn.microsoft.com/en-us/library/68td296t.aspx
 [5]: {{ include "post_link" 233628 }}
+[6]: {{ include "post_link" 233912 }}
