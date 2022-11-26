@@ -189,9 +189,9 @@ This procedure shows definitions for all functions or procedures found in assemb
 
 #### Performance
 
-Dummy procedure call is about 1.96× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.4× slowdown). That's about 2.6 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
+Dummy procedure call is about 1.83× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.4× slowdown). That's about 2.6 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
 
-Dummy function call is about 1.62× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.2× slowdown). That's about 1.1 μs per call on my machine.
+Dummy function call is about 1.55× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.2× slowdown). That's about 1.1 μs per call on my machine.
 
 As the procedure or function in .NET becomes more complex the perfomance goes in favor of [_FbNetExternalEngine_][6].
 
