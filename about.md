@@ -14,7 +14,7 @@ When not writing code I'm [speaking][3], teaching and [writing][1] about topics 
 
 And finally I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. But lately, I've been neglecting these hobbies. 
 
-I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
+I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Mastodon][14] or [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
 
 To support my work, including this blog and my open-source coding, [Github Sponsors][11] is one way to do it.
 
@@ -65,3 +65,4 @@ To support my work, including this blog and my open-source coding, [Github Spons
 [11]: https://github.com/sponsors/cincuranet
 [12]: /tools/fb-net-external-engine
 [13]: /tools/firebird-db-comparer
+[14]: https://mas.to/@cincura_net
