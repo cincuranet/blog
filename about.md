@@ -2,23 +2,23 @@
 title: About
 layout: page
 ---
-### Mgr. Jiří Činčura
+### Jiří Činčura
 
 Hello. My name is Jiří Činčura. And I write code - aka I'm a developer.
 
-I write code in exchange for money because that pays the bills. I also contribute to open-source software. I've been doing both for over two decades. Anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between. I'm a project lead for .NET provider (and related providers like Entity Framework Core, Entity Framework and DDEX) for Firebird (the database). I'm Microsoft Most Valuable Professional and also Microsoft Certified Trainer.
+I focus on anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between.
 
-You can find a lot of free code [here on the blog][1] and on my [GitHub][2]. If you use Firebird and like .NET, you might be interested in [FbNetExternalEngine][12] project or [FirebirdDbComparer][13]. My application [ID3 renamer][7] might help you to keep your MP3 files in order.
+I'm a long-time contributor to open-source. I've been doing it for over two decades. I'm a project lead for ADO.NET provider (and related providers like Entity Framework Core) for Firebird (the database). I work as a software engineer for Microsoft in .NET/performance area.
 
-When not writing code I'm [speaking][3], teaching and [writing][1] about topics above. I speak at conferences, user groups, companies, ... and to whoever will listen. And write even for just a single reader. Because I like doing it.
+When not writing code I'm [speaking][speak], teaching and [writing][blog] about topics above. I speak at conferences, user groups, companies, ... and to whoever will listen. And write even for just a single reader. Because I like doing it.
 
-And finally I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. But lately, I've been neglecting these hobbies. 
+You can find a lot of code [here on the blog][blog] and on [my GitHub][github]. If you use Firebird and like .NET, you might be interested in [FbNetExternalEngine][fbnetexternalengine] project or [FirebirdDbComparer][firebirddbcomparer]. My application [ID3 renamer][id3renamer] might help you to keep your MP3 files in order.
 
-I would love it if you would subscribe to [my blog's feed][4]. I'm also on social media, mostly [Mastodon][14] or [Twitter][5]. If you just want to email me, go ahead send your message to [jiri@cincura.net][6].
+And finally, I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. But lately, I've been neglecting these hobbies.
 
-To support my work, including this blog and my open-source coding, [Github Sponsors][11] is one way to do it.
+I would love it if you would subscribe to [my blog's feed][feed]. I'm also on social media, mostly [Mastodon][mastodon][~~Twitter~~][twitter]. If you just want to email me, go ahead send your message to [jiri@cincura.net][mail].
 
-[![MVP Logo][9]][10]
+To support my work, including this blog and my open-source efforts, [Github Sponsors][sponsor] is one way to do it.
 
 <h4 id="bio">Bio</h4>
 
@@ -52,17 +52,14 @@ To support my work, including this blog and my open-source coding, [Github Spons
 	</tr>
 </table>
 
-[1]: /
-[2]: https://github.com/cincuranet
-[3]: /cv#speaker-events
-[4]: /{{ site.feed }}
-[5]: https://twitter.com/cincura_net
-[6]: mailto:jiri@cincura.net
-[7]: http://www.id3renamer.com
-[8]: /cv
-[9]: /assets/mvp_logo.png
-[10]: https://mvp.microsoft.com/en-us/PublicProfile/5002423
-[11]: https://github.com/sponsors/cincuranet
-[12]: /tools/fb-net-external-engine
-[13]: /tools/firebird-db-comparer
-[14]: https://mas.to/@cincura_net
+[blog]: /
+[speak]: /cv#speaker-events
+[feed]: /{{ site.feed }}
+[mail]: mailto:jiri@cincura.net
+[github]: https://github.com/cincuranet
+[fbnetexternalengine]: /tools/fb-net-external-engine
+[firebirddbcomparer]: /tools/firebird-db-comparer
+[id3renamer]: http://www.id3renamer.com
+[twitter]: https://twitter.com/cincura_net
+[mastodon]: https://mas.to/@cincura_net
+[sponsor]: https://github.com/sponsors/cincuranet
