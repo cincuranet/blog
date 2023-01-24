@@ -58,10 +58,11 @@ Sum(list);
 
 Almost as nice as the _array_ version. In the wild the `ListRangeWrapper<T>` would probably be confusing to consumers. Maybe having the operators explicit and preparing overload with casting would help. But is it then still slick? You can comment below.
 
-Furthermore, as I was writing the code, I realized, there's another new feature in C# 11, that would allow me to have the method fully generic. Yes, it's [_generic math_][4]. I'll leave that for next blog post.
+Furthermore, as I was writing the code, I realized, there's another new feature in C# 11, that would allow me to have the method fully generic. Yes, it's [_generic math_][4]. I'll leave that for [next blog post][5].
 
 [1]: {{ include "post_link" 233813 }}
 [2]: {{ include "post_link" 233633 }}
 [3]: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns#list-patterns
 [4]: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#generic-math-support
+[5]: {{ include "post_link" 233915 }}
 
