@@ -1,4 +1,4 @@
-var blog = (function() {
+let blog = (function() {
 	function initLinks() {
 		for (const e of document.querySelectorAll('a')) {
 			let href = e.href;
