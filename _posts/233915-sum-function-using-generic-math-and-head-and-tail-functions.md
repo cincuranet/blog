@@ -1,7 +1,7 @@
 ---
 title: |-
   Sum function using "generic math" and head and tail functions
-date: 2023-01-17T12:35:00Z
+date: 2023-01-17T12:36:00Z
 tags:
   - C#
 ---
