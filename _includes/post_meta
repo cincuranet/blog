@@ -2,9 +2,9 @@
 	post = $1
 -}}
 <p class="meta">
-	<span class="fa-solid fa-calendar-days" aria-label="Published"></span> {{ post.date | blog.dt_string "d MMM yyyy" }}
+	<span title="Published"><span class="fa-solid fa-calendar-days" aria-hidden="true"></span> {{ post.date | blog.dt_string "d MMM yyyy" }}</span>
 	<span class="divider"></span>
-	<span class="fa-regular fa-clock" aria-label="Time to read"></span> {{ post.TTR }} mins
+	<span title="Time to read"><span class="fa-regular fa-clock" aria-hidden="true"></span> {{ post.TTR }} mins</span>
 	<span class="divider"></span>
-	<span class="fa-solid fa-tags" aria-label="Tags"></span> {{ post.tags | blog.escape_list | array.sort | array.join ", " }}
+	<span title="Tags"><span class="fa-solid fa-tags" aria-hidden="true"></span> {{ post.tags | blog.escape_list | array.sort | array.join ", " }}</span>
 </p>
