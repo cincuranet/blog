@@ -16,6 +16,8 @@ Then I had a issue with CCA. As it turned out, the CCA was faulty and replacemen
 
 And finally one of the optimizers was behaving strangely and I again contacted support. Although the issue turned out to be difficult and took longer to diagnose (see picture below), support really took the ownership of my problem. The engagement was beyond anything I've ever experienced.
 
+![Water dripping from TS4]({{ include "post_ilink" page "tigo.jpg" }})
+
 What's the conclusion? I really feel like a valued customer and would recommend [Tigo Energy][1] anytime. Big thanks to support team, especially Najeeb Alkish.
 
 [1]: https://www.tigoenergy.com/
