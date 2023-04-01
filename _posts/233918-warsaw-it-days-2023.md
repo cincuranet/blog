@@ -17,4 +17,6 @@ This Saturday I'll be speaking at [Warsaw IT Days 2023][1]. One sessions _What's
 
 ![C# Source Generators – let the machine do the programming banner]({{ include "post_ilink" page "source-generators.png" }})
 
+**Errata:** During my _What's new in C# 11_ session I incorrectly answered question, that `required` modifier can be applied to `private` properties. It _can't_. It doesn't make sense, `private` properties can't be set by caller.  
+
 [1]: https://warszawskiedniinformatyki.pl/en/
