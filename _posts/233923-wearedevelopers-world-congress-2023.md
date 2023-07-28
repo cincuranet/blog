@@ -13,4 +13,6 @@ I'll be at this year's [WeAreDevelopers World Congress][1]. I'm running a worksh
 
 Ping me if you want to chat.
 
+{{ include "attachment" page "demos.7z" "Demos" }}
+
 [1]: https://www.wearedevelopers.com/world-congress
