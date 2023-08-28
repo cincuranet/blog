@@ -2,6 +2,60 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: WeAreDevelopers World Congress 2023 - workshop
+    date: July 26-28, 2023
+    language: English
+    sessions:
+      - Writing and measuring high performance code with latest .NET and C# features
+  - title: .NET fwdays'23
+    date: June 17, 2023
+    language: English
+    sessions:
+      - Making boring old WinForms game fun and cool with latest .NET features and cloud
+  - title: Gopas TechEd 2023
+    date: May 23-25, 2023
+    language: Czech
+    sessions:
+      - What's new in C# 11
+      - Introduction to NativeAOT in .NET
+      - What's new in Entity Framework Core 7
+  - title: Techorama 2023
+    date: May 15-17, 2023
+    language: English
+    sessions:
+      - What's new in Entity Framework Core 7
+  - title: Techorama 2023 - workshop
+    date: May 15-17, 2023
+    language: English
+    sessions:
+      - Mastering Entity Framework Core
+  - title: ilionx DevDays 2023
+    date: May 12, 2023
+    language: English
+    sessions:
+      - C# Source Generators – let the machine do the programming
+  - title: Warsaw IT Days 2023
+    date: April 1, 2023
+    language: English
+    sessions:
+      - What's new in C# 11
+      - C# Source Generators – let the machine do the programming
+  - title: WUG Days 2023.1
+    date: January 30, 2023
+    language: Czech
+    sessions:
+      - What is QUIC protocol and how we can use it from .NET
+  - title: MS Tech Summit 2022
+    date: December 2, 2022
+    language: English
+    sessions:
+      - What's new in C# 11
+      - Azure Spot instances as your secret weapon
+  - title: Talk @ Windows User Group
+    date: December 1, 2022
+    language: Czech
+    sessions:
+      - What's new in .NET 7 and C# 11
   - title: .NET DeveloperDays - post-con workshop
     date: Oct 20, 2022
     language: English
