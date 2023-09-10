@@ -8,7 +8,7 @@ Hello. My name is Jiří Činčura. And I write code - aka I'm a developer.
 
 I focus on anything that spans data access layers, business layers, testing, databases, parallelism, debugging, operating system concepts, cloud and scaling, programming language constructs and whatever is in between.
 
-I'm a long-time contributor to open-source. I've been doing it for over two decades. I'm a project lead for ADO.NET provider (and related providers like Entity Framework Core) for Firebird (the database). I work as a software engineer for Microsoft in .NET/performance area.
+I'm a long-time contributor to open-source. I've been doing it for over two decades. I'm a project lead for ADO.NET provider (and related providers like Entity Framework Core) for Firebird (the database). I work as a senior software engineer for Microsoft in .NET/performance area.
 
 When not writing code I'm [speaking][speak], teaching and [writing][blog] about topics above. I speak at conferences, user groups, companies, ... and to whoever will listen. And write even for just a single reader. Because I like doing it.
 

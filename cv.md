@@ -1706,7 +1706,7 @@ articles:
 #### Another education, courses, certificates:
 
 * English exam (corresponding to B2 level)
-* 2017 - ...: Microsoft Most Valuable Professional
+* 2017 - 2023: Microsoft Most Valuable Professional
 * 2021 - ...: Microsoft Certified Trainer
 * driving licence A, B
 * Microsoft Certified Professional
@@ -1729,7 +1729,7 @@ articles:
 
 #### Professional career - Ongoing:
 
-* 09/2022 - present: software engineer for Microsoft
+* 09/2022 - present: senior software engineer for Microsoft
 	* .NET Performance Team
 	* Developer Division
 * 09/2009 - present: external trainer for Gopas, a.s.
