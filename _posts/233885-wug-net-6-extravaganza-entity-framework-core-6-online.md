@@ -11,6 +11,6 @@ Moje další přednáška ze série _.NET 6 extravaganza_, tentokrát o Entity F
 
 > V počtu verzí už Entity Framework Core dostihnul "tradiční" Entity Framework. Co je ale nového? Jsou někde mezery? Kam Entity Framework Core kráčí? 
 
-{{ include "rec_youtube" "-j-B_3nh27A" }}
+{{ include "embed_youtube" "-j-B_3nh27A" }}
 
 [1]: https://www.wug.cz/online/akce/1409--NET-6-extravaganza-Entity-Framework-Core-6

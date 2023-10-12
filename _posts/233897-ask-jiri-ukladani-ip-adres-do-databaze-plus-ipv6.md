@@ -15,6 +15,6 @@ Now, here's the recording:
 
 <!-- excerpt -->
 
-{{ include "rec_youtube" "fTVyXW69swk" }}
+{{ include "embed_youtube" "fTVyXW69swk" }}
 
 [1]: /about

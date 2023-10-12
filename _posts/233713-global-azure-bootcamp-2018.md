@@ -17,7 +17,7 @@ Global Azure Bootcamp 2018. Jeden den, Azure po celém světě. A taky [v Čech�
 
 Registrace [zde][2].
 
-{{ include "rec_youtube" "15E7dqkwM9A" }}
+{{ include "embed_youtube" "15E7dqkwM9A" }}
 
 [1]: http://www.azurebootcamp.cz/
 [2]: https://www.geekcore.cz/events/6107

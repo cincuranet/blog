@@ -13,6 +13,6 @@ Vypadá to, že místní svět si na remote spolupráci zvyká a přizpůsobují
 
 {{ include "attachment" page "roslyn.pdf" "Prezentace" }}
 
-{{ include "rec_youtube" "Rv90NaTxv0E" }}
+{{ include "embed_youtube" "Rv90NaTxv0E" }}
 
 [1]: https://blog.burgyn.online/2020/05/05/kros-dev-meetup-3

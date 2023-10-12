@@ -11,6 +11,6 @@ Můj výběr malých, ale přesto zajímavých, novinek v .NETu 6. Dnes [21.6.20
 
 > .NET 6, tak jako obvykle, přináší plno novinek a těch pár největších jste určitě už zahlédli. Ale je tady plno menších, leč možná i mnohem užitečnějších. A na tomto WUGu se na ně podíváme.  
 
-{{ include "rec_youtube" "7RrlRRtYS_A" }}
+{{ include "embed_youtube" "7RrlRRtYS_A" }}
 
 [1]: https://www.wug.cz/online/akce/1433-Mensi-ale-o-to-zajimavejsi-novinky-v-NET-6
