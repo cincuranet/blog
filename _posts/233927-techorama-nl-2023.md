@@ -29,7 +29,11 @@ But this just a subset of topics. Depending on questions (and time), we can (and
 
 > A lap around new features and performance improvements in Entity Framework Core 7.
 
-Hope to see you on my workshop or my sessions. 
+Hope to see you on my workshop or my sessions.
+
+{{ include "attachment" page "EFCore_Ids.pdf" "Slides - Autoincrement (identity) is not the only option for primary keys" }}
+
+{{ include "attachment" page "efcore7.pdf" "Slides - What's new in Entity Framework Core 7" }}
 
 [1]: {{ include "post_link" 233919 }}
 [2]: https://techorama.nl/workshops/mastering-entity-framework-core/
