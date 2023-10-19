@@ -2,6 +2,34 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Techorama (NL)
+    date: October 10-11, 2023
+    language: English
+    sessions:
+      - Autoincrement (identity) is not the only option for primary keys
+      - What's new in Entity Framework Core 7
+  - title: Techorama (NL) - workshop
+    date: October 9, 2023
+    language: English
+    sessions:
+      - Mastering Entity Framework Core
+  - title: Talk @ Windows User Group
+    date: September 27, 2023
+    language: Czech
+    sessions:
+      - What can I use Roslyn for?
+  - title: SQL Server Bootcamp 2023
+    date: September 13, 2023
+    language: Czech
+    sessions:
+      - What's new in Entity Framework Core 8
+  - title: WUG Days 2023.2
+    date: September 11-12, 2023
+    language: Czech
+    sessions:
+      - What's new in C# 12
+      - SIMD, vectorization - what it means and how to do it in .NET
+      - Dynamic PGO in .NET 8 and why you need to know about it
   - title: WeAreDevelopers World Congress 2023 - workshop
     date: July 26-28, 2023
     language: English
