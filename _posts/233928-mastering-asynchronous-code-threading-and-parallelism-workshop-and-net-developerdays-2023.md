@@ -1,6 +1,6 @@
 ---
 title: |-
-  .NET DeveloperDays 2023
+   Mastering asynchronous code, threading and parallelism workshop and .NET DeveloperDays 2023
 date: 2023-10-19T18:46:00Z
 tags:
   - Presentations & Speaking
