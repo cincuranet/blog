@@ -28,5 +28,7 @@ The session is _Debug like a pro in Visual Studio_.
 
 Hope you'll enjoy the conference. I know I will. I'll be happy to chat with you!
 
+{{ include "attachment_link" "https://github.com/cincuranet/NETDD-Async-Threading-Parallel-Workshop" "Workshop" }}
+
 [1]: https://net.developerdays.pl/
 [2]: https://net.developerdays.pl/post-cons/

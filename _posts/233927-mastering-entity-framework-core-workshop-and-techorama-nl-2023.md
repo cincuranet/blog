@@ -35,5 +35,7 @@ Hope to see you on my workshop or my sessions.
 
 {{ include "attachment" page "efcore7.pdf" "Slides - What's new in Entity Framework Core 7" }}
 
+{{ include "attachment_link" "https://github.com/cincuranet/TechoramaNL2023-EFCore-Workshop" "Workshop" }}
+
 [1]: {{ include "post_link" 233919 }}
 [2]: https://techorama.nl/workshops/mastering-entity-framework-core/
