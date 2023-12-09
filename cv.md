@@ -1809,7 +1809,7 @@ articles:
 * 2007 - 02/2009: database architect, developer for Devmasters s.r.o.
   * MS-SQL, ASP.NET, .NET, C#, Windows Mobile, Compact Framework
 * 2005 - 2010: journalist for AVRE Publishing
-* 2004 - 07/2012: helpdesk operator, PIPNI s.r.o.
+* 2004 - 07/2012: helpdesk operator, developer, PIPNI s.r.o.
 
 #### Languages:
 
