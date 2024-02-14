@@ -21,14 +21,14 @@ You can place the order [here][1]. If you'd like to support the work on [_FbNetE
 
 #### Common requirements (C# terminology)
 
-* Assembly (and dependencies) needs to be loadable by .NET 6.0 (.NET Standard 2.0/2.1 assembly is recommended) (the runtime is included with the plugin and .NET does not need to be installed separately).
+* Assembly (and dependencies) needs to be loadable by .NET 8.0 (the runtime is included with the plugin and .NET does not need to be installed separately).
 * Method has to be static.
 * Method and class has to be public.
 * Input parameters have to be from set of supported types (see below).
 * No overload resolution (method names have to be unique).
 * Method names, classes and namespaces are considered case insensitive.
 * "Visual C++ Redistributable" installed ([x64 link][3], [x86 link][4]) (or you can put the files into `FbNetExternalEngine` directory).
-* Windows Server (Core) 2012+ or Nano Server 1809+ or Windows Client 10 1607+, 7 SP1+ (with ESU), 8.1 on x64 or x86.
+* Windows Server (Core) 2012+ (with ESU) or Nano Server 1809+ or Windows 10 1607+ or Windows 11 22000+ on x64 or x86.
 
 ##### Supported types (C# terminology)
 
