@@ -9,4 +9,4 @@ Opět jsem se dozvě děl něco velice zajimavého. V matematice existuje tzv. P
 
 Pišvejcova konstata je totiž číslo, kterým násobíme číslo získané pro získání čísla žádaného. :-) Malý příklad: Jako výsledek experimentu/výpočtu vyšlo 20, my však potřebujeme výsledek 40, proto zvolíme jako Pišvejcovu konstantu číslo 2 a provedeme 20*2 ~> 40. A hotovo. :D
 
-_PS: Neznáte další podobné "konstanty"?
+PS: Neznáte další podobné "konstanty"?
