@@ -19,6 +19,14 @@ let blog = (function() {
 				await navigator.clipboard.writeText(href);
 			});
 		}
+
+		for (const e of document.querySelectorAll('h3[data-title]')) {
+			let text = e.innerText.trim();
+			e.addEventListener('click', async event => {
+				event.preventDefault();
+				await navigator.clipboard.writeText(text);
+			});
+		}
 	}
 
 	function initImageTitles() {
