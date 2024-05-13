@@ -16,6 +16,7 @@ let blog = (function() {
 			let href = e.href;
 			e.addEventListener('click', async event => {
 				event.preventDefault();
+				event.stopPropagation();
 				await navigator.clipboard.writeText(href);
 			});
 		}
@@ -24,6 +25,7 @@ let blog = (function() {
 			let text = e.innerText.trim();
 			e.addEventListener('click', async event => {
 				event.preventDefault();
+				event.stopPropagation();
 				await navigator.clipboard.writeText(text);
 			});
 		}
@@ -58,6 +60,7 @@ let blog = (function() {
 			let target = document.querySelector('#' + e.getAttribute('data-expand'));
 			e.addEventListener('click', event => {
 				event.preventDefault();
+				event.stopPropagation();
 				if (target.style.display === 'none') {
 					target.style.display = '';
 				}
