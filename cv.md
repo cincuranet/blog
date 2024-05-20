@@ -2,6 +2,66 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: ilionx DevDays 2024 - workshop
+    date: May 25, 2024
+    language: English
+    sessions:
+      - Async/await and threading
+  - title: ilionx DevDays 2024
+    date: May 24, 2024
+    language: English
+    sessions:
+      - Dynamic PGO in .NET 8 and why you need to know about it
+  - title: Gopas TechEd 2024
+    date: May 21-23, 2024
+    language: Czech
+    sessions:
+      - What's new in EF Core 8
+      - SIMD, vectorization - what it means and how to do it in .NET
+      - Dynamic PGO in .NET 8 and why you need to know about it
+      - Working with strings in .NET 8 and SearchValues
+  - title: Talk @ Windows User Group
+    date: May 02, 2024
+    language: Czech
+    sessions:
+      - Async and await from ground up
+  - title: Global Azure 2024
+    date: April 19, 2024
+    language: Czech
+    sessions:
+      - Azure Spot instances as your secret weapon
+  - title: Talk @ Windows User Group
+    date: April 16, 2024
+    language: Czech
+    sessions:
+      - Debug like a pro in Visual Studio
+      - Working with strings in .NET 8 and SearchValues
+  - title: Warsaw IT Days 2024
+    date: April 6, 2024
+    language: English
+    sessions:
+      - Dynamic PGO in .NET 8 and why you need to know about it
+      - What's new in C# 12
+  - title: WUG Dev Day 2024
+    date: March 4, 2024
+    language: Czech
+    sessions:
+      - Working with strings in .NET 8 and SearchValues
+  - title: .NET Conf watch party - member of expert panel
+    date: November 14, 2023
+    language: Czech
+    sessions:
+      - .NET 8
+  - title: .NET DeveloperDays - post-con workshop
+    date: October 26, 2023
+    language: English
+    sessions:
+      - Mastering asynchronous code, threading and parallelism
+  - title: .NET DeveloperDays
+    date: October 24-25, 2023
+    language: English
+    sessions:
+      - Debug like a pro in Visual Studio
   - title: Techorama (NL)
     date: October 10-11, 2023
     language: English
