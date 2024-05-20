@@ -20,6 +20,11 @@ conferences:
       - SIMD, vectorization - what it means and how to do it in .NET
       - Dynamic PGO in .NET 8 and why you need to know about it
       - Working with strings in .NET 8 and SearchValues
+  - title: .NET Data Community Standup
+    date: May 15, 2024
+    language: English
+    sessions:
+      - Harnessing the Power of Firebird in .NET
   - title: Talk @ Windows User Group
     date: May 02, 2024
     language: Czech
