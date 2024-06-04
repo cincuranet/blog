@@ -1,1 +1,1 @@
-> [Video <span class="fa-regular fa-file-video" aria-hidden="true"></span>](https://www.wug.cz/zaznamy/{{ $1 }})
+> <span class="fa-regular fa-file-video" aria-hidden="true"></span> [Video](https://www.wug.cz/zaznamy/{{ $1 }})

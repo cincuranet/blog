@@ -2,4 +2,4 @@
 	link = $1
 	description = $2
 -}}
-> [{{ description }} <span class="fa-regular fa-file-text" aria-hidden="true"></span>]({{ link }})
+> <span class="fa-regular fa-file-text" aria-hidden="true"></span> [{{ description }}]({{ link }})
