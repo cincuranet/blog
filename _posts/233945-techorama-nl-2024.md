@@ -19,5 +19,13 @@ And other one is _SIMD, vectorization - what it means and how to do it in .NET_.
 
 Hope to meet you there.
 
+{{ include "attachment" page "EFQueryCustomization.7z" "Demos - How to customize EF Core queries" }}
+
+{{ include "attachment" page "EFQueryCustomization.pdf" "Slides - How to customize EF Core queries" }}
+
+{{ include "attachment" page "MinMax.7z" "Demos - SIMD, vectorization - what it means and how to do it in .NET" }}
+
+{{ include "attachment" page "simd.pdf" "Slides - SIMD, vectorization - what it means and how to do it in .NET" }}
+
 [1]: https://techorama.nl/
 [2]: https://techorama.nl/speakers/speaker/jiri-cincura/
