@@ -21,5 +21,15 @@ Topics include (but are not limited to):
 * Custom mapping and custom functions
 * Change tracking, ID generation, transactions, concurrency, batching  
 
+{{ include "attachment" page "EFQueryCustomization.7z" "Demos - How to customize EF Core queries" }}
+
+{{ include "attachment" page "EFQueryCustomization.pdf" "Slides - How to customize EF Core queries" }}
+
+{{ include "attachment" page "strings.7z" "Demos - Working with strings in .NET 8 and SearchValues" }}
+
+{{ include "attachment" page "strings.pdf" "Slides - Working with strings in .NET 8 and SearchValues" }}
+
+{{ include "attachment_link" "https://github.com/cincuranet/NETDD2024-EFCore-Workshop" "Workshop" }}
+
 [1]: https://developerdays.eu/warsaw/
 [2]: https://developerdays.eu/warsaw/mastering-entity-framework-core/
