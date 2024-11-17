@@ -16,7 +16,7 @@ You can find a lot of code [here on the blog][blog] and on [my GitHub][github]. 
 
 And finally, I also run and do yoga. I like running long, so called ultra, distances. Preferably in the mountains. For yoga I'm practitioner of Ashtanga yoga, because I like the connection between physical and mental self. But lately, I've been neglecting these hobbies.
 
-I would love it if you would subscribe to [my blog's feed][feed]. I'm also on social media, mostly [Mastodon][mastodon][~~Twitter~~][twitter]. If you just want to email me, go ahead send your message to [jiri@cincura.net][mail].
+I would love it if you would subscribe to [my blog's feed][feed]. I'm also on social media, mostly [Bluesky][bluesky] or [Mastodon][mastodon] ~~or [Twitter][twitter]~~. If you just want to email me, go ahead send your message to [jiri@cincura.net][mail].
 
 To support my work, including this blog and my open-source efforts, [Github Sponsors][sponsor] is one way to do it.
 
@@ -61,5 +61,6 @@ To support my work, including this blog and my open-source efforts, [Github Spon
 [firebirddbcomparer]: /tools/firebird-db-comparer
 [id3renamer]: http://www.id3renamer.com
 [twitter]: https://twitter.com/cincura_net
+[bluesky]: https://bsky.app/profile/cincura.net
 [mastodon]: https://mas.to/@cincura_net
 [sponsor]: https://github.com/sponsors/cincuranet
