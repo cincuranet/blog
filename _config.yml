@@ -5,7 +5,7 @@ heading2_accent: "{x2}"
 address: "www.tabsoverspaces.com"
 iaddress: "i.tabsoverspaces.com"
 excerpt_separator: "<!-- excerpt -->"
-site_posts: 60
-feed_posts: 60
+site_posts: 30
+feed_posts: 30
 feed: feed.xml
 sitemap: sitemap.xml
