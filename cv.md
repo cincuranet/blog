@@ -1464,12 +1464,12 @@ articles:
 
 * English exam (corresponding to B2 level)
 * 2017 - 2023: Microsoft Most Valuable Professional
-* 2021 - ...: Microsoft Certified Trainer
+* 2021 - 2025: Microsoft Certified Trainer
 * driving licence A, B
 * Microsoft Certified Professional
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
 * Red Cross - first aid certification
-* H.P.I. - H.E.A.T Program Instructor level 4
+* H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
 * power yoga instructor (MŠMT ČR (MEYS) certified)
 * power yoga advanced vinyasa training
