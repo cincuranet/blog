@@ -2,6 +2,60 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: PV178 @ Faculty of Informatics Masaryk University
+    date: Apr 29, 2025
+    sessions:
+      - Performance in .NET
+  - title: PV260 @ Faculty of Informatics Masaryk University
+    date: Apr 2, 2025
+    sessions:
+      - Performance in .NET
+  - title: Microsoft MVP Summit 2025
+    date: Mar 25-27, 2025
+    sessions:
+      - What's next for Entity Framework Core and vector databases
+  - title: .NET Conf 2024
+    date: Nov 12-14, 2024
+    sessions:
+      - "What's New in .NET 9 for Data Access: From Document DBs to Vector DBs"
+  - title: HAVIT Educational Window
+    date: Nov 12, 2024
+    sessions:
+      - Autoincrement is not the only option for primary keys
+  - title: .NET DeveloperDays 2024
+    date: Oct 22-23, 2024
+    sessions:
+      - How to customize EF Core queries
+      - Working with strings in .NET 8 and SearchValues
+  - title: .NET DeveloperDays 2024 - pre-con workshop
+    date: Oct 21, 2024
+    sessions:
+      - Mastering Entity Framework Core
+  - title: Techorama (NL)
+    date: Oct 7-9, 2024
+    sessions:
+      - How to customize EF Core queries
+      - SIMD, vectorization – what it means and how to do it in .NET
+  - title: WUG Days 2024
+    date: Sep 5-6, 2024
+    sessions:
+      - What's new in C# 13
+      - How to customize EF Core queries
+      - Software Defined Home
+  - title: SQL Server Bootcamp 2024
+    date: Sep 4, 2024
+    sessions:
+      - Things you don't know EF Core can do
+      - SQL Server vector search and how to use it
+  - title: Talk @ DotNetDevs.at
+    date: Jun 27, 2024
+    sessions:
+      - Tips and tricks for VS debugger
+  - title: .NET DeveloperDays Berlin 2024
+    date: Jun 17-18, 2024
+    sessions:
+      - Autoincrement (identity) is not the only option for primary keys
+      - Working with strings in .NET 8 and SearchValues
   - title: ilionx DevDays 2024 - workshop
     date: May 25, 2024
     sessions:
