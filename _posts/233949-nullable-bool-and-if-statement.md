@@ -72,4 +72,4 @@ internal class Program
 }
 ```
 
-Thus, it is down to preference. And I prefer the use of null coalescing operator `??` more. Wanna prove me wrong? :-8
+Thus, it is down to preference. And I prefer the use of null coalescing operator `??` more. Wanna prove me wrong? 8-)
