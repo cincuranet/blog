@@ -19,4 +19,10 @@ Příští týden se bude konat [Gopas TechEd][1]. Letos jsem připravil 3 před
 
 > ConfigureAwait(false) je malá temná magie v systému .NET. Spolu se SynchronizationContext je často špatně chápána a používána. V tomto sezení si vybudujeme silné porozumění tomu, o co vlastně jde, a pak to budeme aplikovat na každodenní práci s asynchronními/čekacími funkcemi.
 
+{{ include "attachment" page "AI-RAG-demos.7z" "Dema - Malý úvod do AI, RAG a vektorových databází v prostředí .NET" }}
+
+{{ include "attachment" page "DBAs-love-EFCore-demos.7z" "Dema - Průvodce DBA, jak milovat EF Core" }}
+
+{{ include "attachment" page "SynchronizationContext-demos.7z" "Dema - SynchronizationContext a ConfigureAwait - více, než potřebujete vědět" }}
+
 [1]: http://www.teched.cz

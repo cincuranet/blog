@@ -19,5 +19,9 @@ And other one is _SynchronizationContext and ConfigureAwait - more than you need
 
 Hope to meet you there.
 
+{{ include "attachment" page "EF-updates-demos.7z" "Demos - Optimize your EF Core update actions" }}
+
+{{ include "attachment" page "SynchronizationContext-demos.7z" "Demos - SynchronizationContext and ConfigureAwait - more than you need to know" }}
+
 [1]: https://techorama.be/
 [2]: https://techorama.be/speakers/speaker/jiri-cincura/
