@@ -22,6 +22,14 @@ a:hover {
 	color: #0f83db;
 }
 
+a span.external-link-icon {
+	font-size: .5rem;
+	position: relative;
+	vertical-align: super;
+	left: .1rem;
+	padding-right: .1rem;
+}
+
 option {
 	font-weight: inherit;
 }

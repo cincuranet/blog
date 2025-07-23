@@ -12,6 +12,13 @@ let blog = (function() {
 			e.setAttribute('rel', rel);
 		}
 
+		for (const e of document.querySelectorAll('article a')) {
+			let href = e.href;
+			if (isLocalLink(href))
+				continue;
+			e.insertAdjacentHTML('beforeend', '<span class="fa-solid fa-arrow-up-right-from-square external-link-icon" aria-hidden="true"></span>');
+		}
+
 		for (const e of document.querySelectorAll('a[rel~="bookmark"]')) {
 			let href = e.href;
 			e.addEventListener('click', async event => {
@@ -80,7 +87,13 @@ let blog = (function() {
 	}
 
 	function isLocalLink(link) {
-		return link.indexOf(window.location.host) !== -1;
+		try {
+			const url = new URL(link, window.location.href);
+			return url.origin === window.location.origin;
+		}
+		catch {
+			return false;
+		}
 	}
 
 	function getLinkFileExtensions(link) {
