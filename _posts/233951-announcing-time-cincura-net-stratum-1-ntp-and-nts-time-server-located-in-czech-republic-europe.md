@@ -20,4 +20,4 @@ The project isn't finished - far from it - but it's at a stage where it's reliab
 
 [1]: https://time.cincura.net
 [2]: https://www.ntppool.org/scores/2001:67c:d74:66::71be
-[3]: https://www.ntppool.org/scores/85.163.168.227
+[3]: https://www.ntppool.org/scores/185.137.124.44

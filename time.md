@@ -53,6 +53,6 @@ Yes, the IPv6 address ends in `::71be` — a totally intentional (and slightly t
 
 [1]: https://www.u-blox.com/en/product/neo-f10t-module
 [2]: https://www.u-blox.com/en/product/ann-mb1-antenna
-[3]: https://www.ntppool.org/scores/85.163.168.227
+[3]: https://www.ntppool.org/scores/185.137.124.44
 [4]: https://www.ntppool.org/scores/2001:67c:d74:66::71be
 [5]: https://www.ntppool.org/
