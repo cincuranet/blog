@@ -1,3 +1,5 @@
+---
+---
 let blog = (function() {
 	function initLinks() {
 		for (const e of document.querySelectorAll('a')) {
@@ -46,6 +48,12 @@ let blog = (function() {
 	}
 
 	function initImageBox() {
+		let cssSimpleBox = document.createElement('link');
+		cssSimpleBox.rel = 'stylesheet';
+		cssSimpleBox.href = '/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.css" }}.css';
+		cssSimpleBox.media = 'screen';
+		document.head.appendChild(cssSimpleBox);
+
 		let items = new Array();
 		for (const e of document.querySelectorAll('article a')) {
 			let img = e.querySelector('img');

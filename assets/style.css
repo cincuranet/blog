@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: local('Cascadia Mono'),
+       url('/assets/fonts/CascadiaMono.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-700italic - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,7 +71,7 @@ a:hover {
 	color: #0f83db;
 }
 
-a span.external-link-icon {
+a .external-link-icon {
 	font-size: .5rem;
 	position: relative;
 	vertical-align: super;
@@ -337,53 +386,4 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 	padding-right: .5rem;
 	overflow: hidden;
 	border-top: 1px solid #222;
-}
-
-/* fonts */
-
-@font-face {
-  font-family: 'Cascadia Mono';
-  src: local('Cascadia Mono'),
-       url('./fonts/CascadiaMono.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* open-sans-regular - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('./fonts/open-sans-v18-latin-ext_latin-regular.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* open-sans-italic - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'),
-       url('./fonts/open-sans-v18-latin-ext_latin-italic.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* open-sans-700 - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url('./fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2');
-  font-display: swap;
-}
-
-/* open-sans-700italic - latin-ext_latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
-       url('./fonts/open-sans-v18-latin-ext_latin-700italic.woff2') format('woff2');
-  font-display: swap;
 }

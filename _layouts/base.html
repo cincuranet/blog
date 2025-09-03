@@ -7,12 +7,19 @@
 	<link rel="alternate" type="application/atom+xml" title="{{ include "title" }}" href="/{{ site.feed }}" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-	<link rel="stylesheet" href="/assets/style.v__{{ blog.file_hash "/assets/style.css" }}.css" media="all" />
-	<link rel="stylesheet" href="/assets/fa/css/fontawesome.min.v__{{ blog.file_hash "/assets/fa/css/fontawesome.min.css" }}.css" media="all" />
-	<link rel="stylesheet" href="/assets/fa/css/solid.min.v__{{ blog.file_hash "/assets/fa/css/solid.min.css" }}.css" media="all" />
-	<link rel="stylesheet" href="/assets/fa/css/regular.min.v__{{ blog.file_hash "/assets/fa/css/regular.min.css" }}.css" media="all" />
-	<link rel="stylesheet" href="/assets/fa/css/brands.min.v__{{ blog.file_hash "/assets/fa/css/brands.min.css" }}.css" media="all" />
-	<link rel="stylesheet" href="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.css" }}.css" media="all" />
+	<style>
+{{ include "/assets/style.css" }}
+	</style>
+
+	<script defer src="/assets/fa/js/solid.min.v__{{ blog.file_hash "/assets/fa/js/solid.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/regular.min.v__{{ blog.file_hash "/assets/fa/js/regular.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/brands.min.v__{{ blog.file_hash "/assets/fa/js/brands.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/fontawesome.min.v__{{ blog.file_hash "/assets/fa/js/fontawesome.min.js" }}.js"></script>
+
+	<script defer src="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js"></script>
+	<script defer src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
+
+	<script defer src="https://tinylytics.app/embed/FpAazqyMZHKuDKW6RUop/min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -44,10 +51,5 @@
 		<p><a href="/{{ site.sitemap }}" title="Sitemap"><span class="fa-solid fa-sitemap" aria-hidden="true"></span></a><span class="divider"></span>Copyright &copy; Jiří Činčura. All rights reserved.</p>
 	</footer>
 </div>
-
-<script src="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js"></script>
-<script src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
-<script src="https://tinylytics.app/embed/FpAazqyMZHKuDKW6RUop.js" defer></script>
-
 </body>
 </html>
