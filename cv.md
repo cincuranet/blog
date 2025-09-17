@@ -2,6 +2,27 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: WUG Days 2025
+    date: Sep 4-5, 2025
+    sessions:
+      - Primitive collections in EF Core – how to mess it up multiple times
+      - dotnet run Program.cs – what a crazy world
+      - Unsafe code in C# and how hard it can be to get it right
+  - title: SQL Server Bootcamp 2025
+    date: Sep 3, 2025
+    sessions:
+      - A short introduction to AI, RAG and vector databases in the .NET environment
+  - title: Techorama (BE)
+    date: May 27-28, 2025
+    sessions:
+      - SynchronizationContext and ConfigureAwait – more than you need to know
+      - Optimize your EF Core update actions
+  - title: Gopas TechEd 2025
+    date: May 20-22, 2025
+    sessions:
+      - SynchronizationContext and ConfigureAwait – more than you need to know
+      - A DBA's guide to loving EF Core
+      - A short introduction to AI, RAG and vector databases in the .NET environment
   - title: PV178 @ Faculty of Informatics Masaryk University
     date: Apr 29, 2025
     sessions:
