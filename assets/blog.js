@@ -88,7 +88,7 @@ let blog = (function() {
 	}
 
 	function showArticleNicely() {
-		if (isLocalLink(document.referrer)) {
+		if (document.referrer !== '' && isLocalLink(document.referrer)) {
 			let article = document.querySelector('article');
 			article.scrollIntoView();
 		}
