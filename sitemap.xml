@@ -1,0 +1,18 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{{~ for doc in site.posts ~}}
+	<url>
+		<loc>https://{{ site.address }}{{ doc.url }}</loc>
+	</url>
+	{{~ end ~}}
+	{{~ for doc in site.html_pages ~}}
+	{{~ if doc.url == "/404" ~}}
+		{{~ continue ~}}
+	{{~ end ~}}
+	<url>
+		<loc>https://{{ site.address }}{{ doc.url }}</loc>
+	</url>
+	{{~ end ~}}
+</urlset> 

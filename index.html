@@ -1,0 +1,13 @@
+---
+layout: base
+---
+{{~ for post in site.posts limit: site.site_posts ~}}
+<article>
+	<h3><a href="{{ post.url }}">{{ post.title | blog.escape }}</a></h3>
+	{{ include "post_meta" post }}
+	{{ post.excerpt }}
+</article>
+{{~ end ~}}
+<article>
+	<h3><a href="/archive">{{ site.posts.size - site.site_posts }} more posts in archive</a></h3>
+</article>

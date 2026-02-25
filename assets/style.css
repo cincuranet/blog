@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: local('Cascadia Mono'),
+       url('/assets/fonts/CascadiaMono.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-italic - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-700 - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* open-sans-700italic - latin-ext_latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700italic.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* --- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+body {
+	background: #fff;
+	color: #222;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+a:hover {
+	color: #0f83db;
+}
+
+a .external-link-icon {
+	font-size: .5rem;
+	position: relative;
+	vertical-align: super;
+	left: .1rem;
+	padding-right: .1rem;
+}
+
+option {
+	font-weight: inherit;
+}
+
+.accent {
+	font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", serif;
+	font-style: italic;
+	color: #666;
+}
+
+.divider::before {
+	content: "\00A0|\00A0";
+}
+
+/* wrapper */
+
+#wrapper {
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* nav */
+
+nav {
+	border-bottom: 1px solid #222;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-bottom: .5rem;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+	padding-left: 2rem;
+}
+nav li:first-of-type {
+	padding-left: 0;
+}
+nav li.side {
+	float: right;
+	padding-left: 1rem;
+}
+@media (max-width: 768px) {
+	nav li {
+		padding-left: .5rem;
+	}
+	nav li.side {
+		padding-left: .25rem;
+	}
+}
+
+nav a {
+	font-weight: bold;
+}
+
+/* header */
+
+header {
+	border-bottom: 1px solid #222;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	min-height: 8rem;
+}
+
+header a:hover {
+	color: inherit;
+}
+
+header h1 {
+	font-size: 2.2rem;
+	font-weight: bold;
+	line-height: .95em;
+	padding-bottom: 0.5rem
+}
+
+header h2 {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+/* footer */
+
+footer {
+	border-top: 1px solid #222;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	font-size: .9rem;
+}
+
+footer a {
+	font-weight: bold;
+}
+
+footer > p {
+	float: right;
+}
+
+/* article */
+
+article {
+	border-bottom: 1px solid #eee;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+article:last-of-type {
+	border-bottom: 0;
+}
+
+article h3 {
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding-bottom: .2rem
+}
+
+article h4 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-bottom: .4em;
+}
+
+article h5 {
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.6em;
+	margin-bottom: .4em;
+}
+
+article p {
+	line-height: 1.6em;
+	margin-bottom: 1em;
+	overflow: auto;
+}
+article p:last-child {
+	margin-bottom: 0;
+}
+
+article p.meta, article span.meta {
+	font-size: .9rem;
+	font-style: italic;
+	color: #666;
+}
+
+article p.bio {
+	font-size: .9rem;
+	font-style: italic;
+	color: #666;
+}
+article p.bio img {
+	float: left;
+}
+
+article a {
+	text-decoration: underline;
+}
+article a:hover {
+	text-decoration: none;
+}
+article h3 a {
+	text-decoration: inherit;
+}
+article p.links a {
+	font-weight: bold;
+	text-decoration: inherit;
+}
+
+/* article - code */
+
+article code, article pre {
+	font-family: "Cascadia Mono", monospace;
+	line-height: 1.2em;
+	font-size: .9rem;
+	font-variant-ligatures: none;
+	background-color: #eee;
+}
+
+article code {
+	padding-left: .2rem;
+	padding-right: .2rem;
+	word-wrap: break-word;
+}
+
+article pre {
+	margin-left: .5rem;
+	margin-right: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	margin-bottom: 1em;
+	overflow: auto;
+}
+
+article pre > code {
+	padding-left: 0; /* reset */
+	padding-right: 0; /* reset */
+	word-wrap: normal;  /* reset */
+}
+
+article h4 > code, article h5 > code {
+	font-size: inherit;
+}
+
+/* article - media */
+
+article img, article p.video > :first-child {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	max-width: calc(100% - .5rem - .5rem);
+}
+
+
+article a[data-gallery] {
+	cursor: zoom-in;
+}
+
+/* article - blockquote */
+
+article blockquote {
+	margin-left: .5rem;
+	margin-right: .5rem;
+	padding: .5rem;
+	margin-bottom: 1em;
+	border-left: .2em solid #666;
+	color: #666;
+}
+
+/* article - lists */
+
+article ul, article ol {
+	margin-left: .5rem;
+	margin-right: .5rem;
+	line-height: 1.6;
+}
+article > ul, article > ol {
+	margin-bottom: 1em;
+}
+
+article ul {
+	list-style-type: none;
+}
+
+article ol {
+	padding-left: 1.5rem;
+}
+
+article li {
+	padding-right: .5rem;
+}           
+article ul > li {
+	padding-left: 1.5rem;
+	text-indent: -1rem;
+}
+article ul > li:before {
+	content: '\21B9';
+	padding-right: .5rem;
+}
+
+/* article - table */
+
+article table {
+	line-height: 1.6;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	display: block;
+	max-width: 100%;
+	overflow: auto;
+}
+
+article td, article th {
+	border: 1px solid #222;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+article table.layout td, article table.layout th {
+	border: 0;
+}
+article table.layout td:first-of-type, article table.layout th:first-of-type {
+	padding-left: 0;
+}
+article table.layout td:last-of-type, article table.layout th:last-of-type {
+	padding-right: 0;
+}
+
+/* comments */
+
+#comments {
+	margin-bottom: 2rem;
+	padding-top: 1rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	overflow: hidden;
+	border-top: 1px solid #222;
+}

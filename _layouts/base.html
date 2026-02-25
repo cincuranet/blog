@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{ if page.title }}{{ page.title }} | {{ end }}{{ include "title" }}</title>
+	<link rel="alternate" type="application/atom+xml" title="{{ include "title" }}" href="/{{ site.feed }}" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<style>
+{{ include "/assets/style.css" }}
+	</style>
+
+	<script defer src="/assets/fa/js/solid.min.v__{{ blog.file_hash "/assets/fa/js/solid.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/regular.min.v__{{ blog.file_hash "/assets/fa/js/regular.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/brands.min.v__{{ blog.file_hash "/assets/fa/js/brands.min.js" }}.js"></script>
+	<script defer src="/assets/fa/js/fontawesome.min.v__{{ blog.file_hash "/assets/fa/js/fontawesome.min.js" }}.js"></script>
+
+	<script defer src="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js"></script>
+	<script defer src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
+
+	<script defer src="https://tinylytics.app/embed/FpAazqyMZHKuDKW6RUop/min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<nav>
+		<ul>
+			<li><a href="/" title="Home"><span class="fa-solid fa-house-chimney" aria-hidden="true"></span></a></li>
+			<li><a href="/archive">Archive</a></li>
+			<li><a href="/about">About</a></li>
+			<li class="side"><a href="/{{ site.feed }}" title="Feed"><span class="fa-solid fa-feed" aria-hidden="true"></span></a></li>
+			<li class="side"><a href="https://www.youtube.com/@cincura_net" rel="me" title="YouTube"><span class="fa-brands fa-youtube" aria-hidden="true"></span></a></li>
+			<li class="side"><a href="https://github.com/cincuranet" rel="me" title="GitHub"><span class="fa-brands fa-github" aria-hidden="true"></span></a></li>
+			<li class="side"><a href="https://bsky.app/profile/cincura.net" rel="me" title="Bluesky"><span class="fa-brands fa-bluesky" aria-hidden="true"></span></a></li>
+			<li class="side"><a href="https://mas.to/@cincura_net" rel="me" title="Mastodon"><span class="fa-brands fa-mastodon" aria-hidden="true"></span></a></li>
+		</ul>
+	</nav>
+
+	<header>
+		{{- capture heading1_accent -}}<span class="accent">{{ site.heading1_accent }}</span>{{ end }}
+		{{- capture heading2_accent -}}<span class="accent">{{ site.heading2_accent }}</span>{{ end }}
+		<h1><a href="/">{{ site.heading1 | string.replace site.heading1_accent heading1_accent }}</a></h1>
+		<h2><span class="accent">by</span> {{ site.heading2 | string.replace site.heading2_accent heading2_accent }}</h2>
+	</header>
+
+	<main>
+{{ content }}
+	</main>
+
+	<footer>
+		<p><a href="/{{ site.sitemap }}" title="Sitemap"><span class="fa-solid fa-sitemap" aria-hidden="true"></span></a><span class="divider"></span>Copyright &copy; Jiří Činčura. All rights reserved.</p>
+	</footer>
+</div>
+</body>
+</html>

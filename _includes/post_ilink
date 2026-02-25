@@ -1,0 +1,5 @@
+{{-
+	post = $1
+	name = $2
+-}}
+https://{{ site.iaddress }}/{{ post.id }}/{{ name }}

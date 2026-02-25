@@ -1,0 +1,1 @@
+{{ site.posts_by_id[$1].url }}

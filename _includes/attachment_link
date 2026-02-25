@@ -1,0 +1,5 @@
+{{-
+	link = $1
+	description = $2
+-}}
+> <span class="fa-regular fa-file-text" aria-hidden="true"></span> [{{ description }}]({{ link }})

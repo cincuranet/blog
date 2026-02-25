@@ -1,0 +1,39 @@
+---
+layout: base
+---
+<article>
+	<h3 data-title>{{ page.title | blog.escape }} <a href="https://{{ site.address}}{{ include "post_permalink" page }}" rel="bookmark nofollow" title="Permalink"><span class="fa-solid fa-link" aria-hidden="true"></span></a></h3>
+	{{ include "post_meta" page }}
+{{ content }}
+</article>
+
+<article>
+	<p class="bio">
+		<a href="/about"><img src="/assets/bio_image.png" alt="Profile Picture" /></a>
+		{{ include "bio_en" }}
+	</p>
+</article>
+
+<div id="comments">
+<script src="https://giscus.app/client.js"
+        data-repo="cincuranet/blog-comments"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzNDYyNTA3NzY="
+        data-category="Comments"
+        data-category-id="DIC_kwDOFKNeGM4CUHTO"
+        data-mapping="specific"
+        data-term="post_{{ post.id }}"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
+
+<script>
+	var blog_isPost = true;
+</script>

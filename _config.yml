@@ -1,0 +1,11 @@
+heading1: "tabs ↹ over ␣ ␣ ␣ spaces"
+heading1_accent: "over"
+heading2: "Jiří {x2} Činčura"
+heading2_accent: "{x2}"
+address: "www.tabsoverspaces.com"
+iaddress: "www.tabsoverspaces.com/iii"
+excerpt_separator: "<!-- excerpt -->"
+site_posts: 30
+feed_posts: 30
+feed: feed.xml
+sitemap: sitemap.xml

@@ -1,0 +1,12 @@
+---
+---
+[
+{{~ for post in site.posts ~}}
+	{{~ capture permalink ~}}{{ include "post_permalink" post }}{{~ end ~}}
+	{
+		"from": "{{ permalink }}",
+		"to": "{{ post.url }}"
+	}{{~ if !for.last ~}},{{~ end ~}}
+
+{{~ end ~}}
+]
