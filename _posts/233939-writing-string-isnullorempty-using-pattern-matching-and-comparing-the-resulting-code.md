@@ -1,6 +1,6 @@
 ---
 title: |-
-  Writing "string.IsNullOrEmpty" using pattern matching and comparing the resulting code 
+  Writing "string.IsNullOrEmpty" using pattern matching and comparing the resulting code
 date: 2024-05-13T11:55:00Z
 tags:
   - C#
