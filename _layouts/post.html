@@ -9,7 +9,7 @@ layout: base
 
 <article>
 	<p class="bio">
-		<a href="/about"><img src="/assets/bio_image.png" alt="Profile Picture" width="80" height="80" /></a>
+		<a href="/about"><img src="/assets/bio_image.jpg" alt="Profile Picture" width="80" height="80" /></a>
 		{{ include "bio_en" }}
 	</p>
 </article>
@@ -21,7 +21,7 @@ layout: base
         data-category="Comments"
         data-category-id="DIC_kwDOFKNeGM4CUHTO"
         data-mapping="specific"
-        data-term="post_{{ post.id }}"
+        data-term="post_{{ page.id }}"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
@@ -33,7 +33,3 @@ layout: base
         async>
 </script>
 </div>
-
-<script>
-	var blog_isPost = true;
-</script>

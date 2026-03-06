@@ -126,6 +126,3 @@ let blog = (function() {
 		}
 	};
 })();
-
-let isPost = typeof blog_isPost !== 'undefined' && blog_isPost;
-blog.init(isPost);

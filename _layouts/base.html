@@ -3,9 +3,25 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>{{ if page.title }}{{ page.title }} | {{ end }}{{ include "title" }}</title>
+	<title>{{ if page.title }}{{ page.title | blog.escape }} | {{ end }}{{ include "title" }}</title>
 	<link rel="alternate" type="application/atom+xml" title="{{ include "title" }}" href="/{{ site.feed }}" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="canonical" href="https://{{ site.address }}{{ page.url }}" />
+	<meta property="og:site_name" content="{{ include "title" }}" />
+	<meta property="og:title" content="{{ if page.title }}{{ page.title | blog.escape }}{{ else }}{{ include "title" }}{{ end }}" />
+	<meta property="og:url" content="https://{{ site.address }}{{ page.url }}" />
+	<meta property="og:image" content="https://{{ site.address }}/assets/og_image.jpg" />
+	{{~ if page.is_post ~}}
+	<meta property="og:type" content="article" />
+	<meta property="og:description" content="{{ page.excerpt | html.strip | string.replace "\"" "&quot;" }}" />
+	<meta property="article:published_time" content="{{ page.date | blog.dt_string "yyyy-MM-ddTHH:mm:ssZ" }}" />
+	<meta property="article:author" content="https://{{ site.address }}/about" />
+	{{~ for tag in page.tags ~}}
+	<meta property="article:tag" content="{{ tag | blog.escape }}" />
+	{{~ end ~}}
+	{{~ else ~}}
+	<meta property="og:type" content="website" />
+	{{~ end ~}}
 
 	<style>
 {{ include "/assets/style.css" }}
@@ -18,6 +34,9 @@
 
 	<script defer src="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js"></script>
 	<script defer src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => blog.init({{ page.is_post }}));
+	</script>
 
 	<script defer src="https://tinylytics.app/embed/FpAazqyMZHKuDKW6RUop/min.js"></script>
 </head>

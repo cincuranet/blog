@@ -4,7 +4,7 @@
 <p class="meta">
 	<span title="Published"><span class="fa-solid fa-calendar-days" aria-hidden="true"></span> {{ post.date | blog.dt_string "d MMM yyyy" }}</span>
 	<span class="divider"></span>
-	<span title="Time to read"><span class="fa-regular fa-clock" aria-hidden="true"></span> {{ post.TTR }} mins</span>
+	<span title="Time to read"><span class="fa-regular fa-clock" aria-hidden="true"></span> {{ post.ttr }} mins</span>
 	<span class="divider"></span>
 	<span title="Tags"><span class="fa-solid fa-tags" aria-hidden="true"></span> {{ post.tags | blog.escape_list | array.sort | array.join ", " }}</span>
 </p>
