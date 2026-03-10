@@ -2,14 +2,35 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: WUG Dev Day 2026
+    date: January 26, 2026
+    sessions:
+      - Lessons learned from translating parameterized collections in EF Core
+  - title: "CODECON #Žilina 2025"
+    date: November 27, 2025
+    sessions:
+      - How I put .NET into Firebird database engine
+  - title: .NET Developer Conference 2025
+    date: November 25-26, 2025
+    sessions:
+      - Autoincrement (identity) is not the only option for primary keys
+  - title: .NET DeveloperDays 2025
+    date: October 21-22, 2025
+    sessions:
+      - Optimize your EF Core update actions
+      - SynchronizationContext and ConfigureAwait – more than you need to know
+  - title: .NET DeveloperDays 2025 - pre-con workshop
+    date: October 20, 2025
+    sessions:
+      - Build your AI application(s) with .NET
   - title: WUG Days 2025
-    date: Sep 4-5, 2025
+    date: September 4-5, 2025
     sessions:
       - Primitive collections in EF Core – how to mess it up multiple times
       - dotnet run Program.cs – what a crazy world
       - Unsafe code in C# and how hard it can be to get it right
   - title: SQL Server Bootcamp 2025
-    date: Sep 3, 2025
+    date: September 3, 2025
     sessions:
       - A short introduction to AI, RAG and vector databases in the .NET environment
   - title: Techorama (BE)
@@ -24,56 +45,60 @@ conferences:
       - A DBA's guide to loving EF Core
       - A short introduction to AI, RAG and vector databases in the .NET environment
   - title: PV178 @ Faculty of Informatics Masaryk University
-    date: Apr 29, 2025
+    date: April 29, 2025
     sessions:
       - Performance in .NET
+  - title: Warsaw IT Days 2025
+    date: April 4-5, 2025
+    sessions:
+      - How to customize EF Core queries
   - title: PV260 @ Faculty of Informatics Masaryk University
-    date: Apr 2, 2025
+    date: April 2, 2025
     sessions:
       - Performance in .NET
   - title: Microsoft MVP Summit 2025
-    date: Mar 25-27, 2025
+    date: March 25-27, 2025
     sessions:
       - What's next for Entity Framework Core and vector databases
   - title: .NET Conf 2024
-    date: Nov 12-14, 2024
+    date: November 12-14, 2024
     sessions:
       - "What's New in .NET 9 for Data Access: From Document DBs to Vector DBs"
   - title: HAVIT Educational Window
-    date: Nov 12, 2024
+    date: November 12, 2024
     sessions:
       - Autoincrement is not the only option for primary keys
   - title: .NET DeveloperDays 2024
-    date: Oct 22-23, 2024
+    date: October 22-23, 2024
     sessions:
       - How to customize EF Core queries
       - Working with strings in .NET 8 and SearchValues
   - title: .NET DeveloperDays 2024 - pre-con workshop
-    date: Oct 21, 2024
+    date: October 21, 2024
     sessions:
       - Mastering Entity Framework Core
   - title: Techorama (NL)
-    date: Oct 7-9, 2024
+    date: October 7-9, 2024
     sessions:
       - How to customize EF Core queries
       - SIMD, vectorization – what it means and how to do it in .NET
   - title: WUG Days 2024
-    date: Sep 5-6, 2024
+    date: September 5-6, 2024
     sessions:
       - What's new in C# 13
       - How to customize EF Core queries
       - Software Defined Home
   - title: SQL Server Bootcamp 2024
-    date: Sep 4, 2024
+    date: September 4, 2024
     sessions:
       - Things you don't know EF Core can do
       - SQL Server vector search and how to use it
   - title: Talk @ DotNetDevs.at
-    date: Jun 27, 2024
+    date: June 27, 2024
     sessions:
       - Tips and tricks for VS debugger
   - title: .NET DeveloperDays Berlin 2024
-    date: Jun 17-18, 2024
+    date: June 17-18, 2024
     sessions:
       - Autoincrement (identity) is not the only option for primary keys
       - Working with strings in .NET 8 and SearchValues
@@ -198,16 +223,16 @@ conferences:
     sessions:
       - What's new in .NET 7 and C# 11
   - title: .NET DeveloperDays - post-con workshop
-    date: Oct 20, 2022
+    date: October 20, 2022
     sessions:
       - Writing and measuring high performance code with latest .NET and C# features
   - title: .NET DeveloperDays
-    date: Oct 18-19, 2022
+    date: October 18-19, 2022
     sessions:
       - .NET 6 features that they didn’t tell you about
       - Azure Spot instances as your secret weapon
   - title: Techorama (NL)
-    date: Oct 11-12, 2022
+    date: October 11-12, 2022
     sessions:
       - C# Source Generators – let the machine do the programming
   - title: WUG Days 2022
