@@ -21,7 +21,7 @@ You can place the order [here][1]. If you'd like to support the work on [_FbNetE
 
 #### Common requirements (C# terminology)
 
-* Assembly (and dependencies) needs to be loadable by .NET 8.0 (the runtime is included with the plugin and .NET does not need to be installed separately).
+* Assembly (and dependencies) needs to be loadable by .NET 10.0 (the runtime is included with the plugin and .NET does not need to be installed separately).
 * Method has to be static.
 * Method and class has to be public.
 * Input parameters have to be from set of supported types (see below).
@@ -189,11 +189,11 @@ This procedure shows definitions for all functions or procedures found in assemb
 
 #### Performance
 
-Dummy procedure call is about 1.83× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.4× slowdown). That's about 2.6 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
+Dummy procedure call is about 1.77× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.4× slowdown). That's about 2.3 μs per call on my machine. The fetch from stored procedure's result set is on par with PSQL.
 
-Dummy function call is about 1.55× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.2× slowdown). That's about 1.1 μs per call on my machine.
+Dummy function call is about 1.41× slower compared to PSQL (the plugin infrastructure in Firebird adds about 1.2× slowdown). That's about 1.0 μs per call on my machine.
 
-As the procedure or function in .NET becomes more complex the perfomance goes in favor of [_FbNetExternalEngine_][6].
+As the procedure or function in .NET becomes more complex the performance goes in favor of [_FbNetExternalEngine_][6].
 
 #### Next steps
 
