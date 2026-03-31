@@ -10,6 +10,42 @@ My goal with this server is to achieve the best possible accuracy (within reason
 
 It's also part of the [NTP Pool project][5], with public status pages for [IPv4][3] and [IPv6][4].
 
+#### Runtime info
+
+Below is a snapshot from Chrony's `tracking`, `serverstats`, `sources` and `sourcestats`. The data is collected every 5 minutes.
+
+<a href="#" data-expand="runtime-info-code">Click to view runtime info details</a>
+
+<div id="runtime-info-code">
+
+```text
+```
+```text
+```
+```text
+```
+```text
+```
+
+<script type="module">
+	async function fetchRuntimeInfo(info, index) {
+		const element = document.querySelectorAll('#runtime-info-code pre code')[index];
+		const response = await fetch(`https://time.cincura.net/api/${info}`);
+		if (!response.ok) {
+			element.textContent = 'Failed to load runtime info.';
+			return;
+		}
+		element.textContent = await response.text();
+	}
+
+	await Promise.all([
+		fetchRuntimeInfo('chrony_tracking.txt', 0),
+		fetchRuntimeInfo('chrony_serverstats.txt', 1),
+		fetchRuntimeInfo('chrony_sources.txt', 2),
+		fetchRuntimeInfo('chrony_sourcestats.txt', 3)]);
+</script>
+</div>
+
 #### Technical info
 
 > This isn't meant to be comprehensive guide. I do not consider myself an expert - just someone who did a bunch of experimentation and research.
