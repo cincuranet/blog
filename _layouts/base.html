@@ -34,8 +34,8 @@
 
 	<script defer src="/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js"></script>
 	<script defer src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => blog.init({{ page.is_post }}));
+	<script type="module">
+		blog.init({{ page.is_post }});
 	</script>
 
 	<script defer src="https://tinylytics.app/embed/FpAazqyMZHKuDKW6RUop/min.js"></script>
