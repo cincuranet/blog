@@ -48,12 +48,6 @@ let blog = (function() {
 	}
 
 	function initImageBox() {
-		let cssSimpleBox = document.createElement('link');
-		cssSimpleBox.rel = 'stylesheet';
-		cssSimpleBox.href = '/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.css" }}.css';
-		cssSimpleBox.media = 'screen';
-		document.head.appendChild(cssSimpleBox);
-
 		let items = new Array();
 		for (const e of document.querySelectorAll('article a')) {
 			let img = e.querySelector('img');
@@ -67,7 +61,21 @@ let blog = (function() {
 			e.setAttribute('data-gallery', '');
 			items.push(e);
 		}
-		new SimpleLightbox({elements: items});
+
+		if (items.length > 0) {
+			let cssSimpleBox = document.createElement('link');
+			cssSimpleBox.rel = 'stylesheet';
+			cssSimpleBox.href = '/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.css" }}.css';
+			cssSimpleBox.media = 'screen';
+			document.head.appendChild(cssSimpleBox);
+	
+			const scriptSimpleBox = document.createElement('script');
+			scriptSimpleBox.src = '/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.js" }}.js';
+			scriptSimpleBox.onload = () => {
+				new SimpleLightbox({ elements: items });
+			};
+			document.head.appendChild(scriptSimpleBox);
+		}
 	}
 
 	function initExpand() {
