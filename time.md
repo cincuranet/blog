@@ -14,20 +14,24 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 Below is a snapshot from Chrony's `tracking`, `serverstats`, `sources` and `sourcestats`. The data is collected every 5 minutes.
 
-<a href="#" data-expand="runtime-info-code">Click to view runtime info details</a>
+<a href="#" data-expand="runtime-info-code" data-expand-callback="fetchRuntimeInfos">Click to view runtime info details</a>
 
 <div id="runtime-info-code">
 
 ```text
+Loading...
 ```
 ```text
+Loading...
 ```
 ```text
+Loading...
 ```
 ```text
+Loading...
 ```
 
-<script type="module">
+<script>
 	async function fetchRuntimeInfo(info, index) {
 		const element = document.querySelectorAll('#runtime-info-code pre code')[index];
 		const response = await fetch(`https://time.cincura.net/api/${info}`);
@@ -38,11 +42,13 @@ Below is a snapshot from Chrony's `tracking`, `serverstats`, `sources` and `sour
 		element.textContent = await response.text();
 	}
 
-	await Promise.all([
-		fetchRuntimeInfo('chrony_tracking.txt', 0),
-		fetchRuntimeInfo('chrony_serverstats.txt', 1),
-		fetchRuntimeInfo('chrony_sources.txt', 2),
-		fetchRuntimeInfo('chrony_sourcestats.txt', 3)]);
+	async function fetchRuntimeInfos() {
+		await Promise.all([
+			fetchRuntimeInfo('chrony_tracking.txt', 0),
+			fetchRuntimeInfo('chrony_serverstats.txt', 1),
+			fetchRuntimeInfo('chrony_sources.txt', 2),
+			fetchRuntimeInfo('chrony_sourcestats.txt', 3)]);
+	}
 </script>
 </div>
 

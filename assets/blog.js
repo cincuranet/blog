@@ -73,11 +73,13 @@ let blog = (function() {
 	function initExpand() {
 		for (const e of document.querySelectorAll('[data-expand]')) {
 			let target = document.querySelector('#' + e.getAttribute('data-expand'));
-			e.addEventListener('click', event => {
+			let callbackName = e.getAttribute('data-expand-callback');
+			e.addEventListener('click', async event => {
 				event.preventDefault();
 				event.stopPropagation();
 				if (target.style.display === 'none') {
 					target.style.display = '';
+					await window[callbackName]?.();
 				}
 				else {
 					target.style.display = 'none';
@@ -116,13 +118,13 @@ let blog = (function() {
 		init: (isPost) => {
 			initLinks();
 			initImageTitles();
-			initImageBox();
 			if (isPost) {
 				showArticleNicely();
 			}
 			else {
 				initExpand();
 			}
+			initImageBox();
 		}
 	};
 })();
