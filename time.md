@@ -12,21 +12,12 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 #### Runtime info
 
-Below is a snapshot from Chrony's `tracking`, `serverstats`, `sources` and `sourcestats`. The data is collected every 5 minutes.
+Below is a snapshot from Chrony's `tracking`, `serverstats`, `sources`, `sourcestats` and `authdata`. The data is collected every 5 minutes.
 
 <a href="#" data-expand="runtime-info-code" data-expand-callback="fetchRuntimeInfos">Click to view runtime info details</a>
 
 <div id="runtime-info-code">
 
-```text
-Loading...
-```
-```text
-Loading...
-```
-```text
-Loading...
-```
 ```text
 Loading...
 ```
@@ -44,10 +35,7 @@ Loading...
 
 	async function fetchRuntimeInfos() {
 		await Promise.all([
-			fetchRuntimeInfo('chrony_tracking.txt', 0),
-			fetchRuntimeInfo('chrony_serverstats.txt', 1),
-			fetchRuntimeInfo('chrony_sources.txt', 2),
-			fetchRuntimeInfo('chrony_sourcestats.txt', 3)]);
+			fetchRuntimeInfo('chrony.txt', 0)]);
 	}
 </script>
 </div>
