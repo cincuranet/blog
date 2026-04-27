@@ -50,19 +50,15 @@ Time server uses multiple sources simultaneously. GPS is used from L1 C/A and L5
 
 QZSS and NAVIC are not used due to poor coverage in Europe (Czech Republic).
 
-GLONASS is excluded, as it doesn't add much benefit for timing beyond GPS, Galileo and BeiDou.
-
-Typically, around 14-18 satellites are in use.
-
 ##### Module and antenna
 
 The setup uses [u-blox NEO-F10T][1] together with a [u-blox ANN-MB1][2] antenna. The NEO-F10T supports nanosecond-level accuracy and includes TCXO.
 
-The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. A 10 m MRC-240 extension connects the antenna to the module. No extra ground plane is used (yet).
+The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. A 10 m MRC-240 extension connects the antenna to the module. ~20cm brass ground plane is used.
 
 ##### Configuration
 
-* The NEO-F10T is connected using UART (115200/8/1/n) directly to Raspberry Pi 4 Model B with 2 GB RAM.
+* The NEO-F10T is connected using UART (115200/8/1/n) directly to Raspberry Pi Compute Module 4 with 2 GB RAM.
 * PPS is connected to GPIO pin.
 * Antenna delay is set to 70 ns:
     * ANN-MB1 has 5 m RG-174 (VF 0.66) → ~25.3 ns.
@@ -75,14 +71,22 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 * GPSd handles communication with the module.
 * OS is Raspberry Pi OS Lite 64-bit.
 * SBAS is enabled (though mostly irrelevant for fixed-position timing).
-* Galileo OSNMA is not used (yet).
+* Galileo OSNMA is enabled (without trusted time enforcement).
+* `UBX-NAV-SIG`, `UBX-NAV-PVT` and `UBX-NAV-TIMEUTC` are enabled.
 
 #### Bonus
 
 Yes, the IPv6 address ends in `::71be` — a totally intentional (and slightly tortured) attempt to spell "time" in hex. Squint hard enough, believe in magic, and it's there.
+
+#### Blog posts
+
+* [{{ include "post_title" 233951 }}][blog1]
+* [{{ include "post_title" 233969 }}][blog2] 
 
 [1]: https://www.u-blox.com/en/product/neo-f10t-module
 [2]: https://www.u-blox.com/en/product/ann-mb1-antenna
 [3]: https://www.ntppool.org/scores/85.163.168.227
 [4]: https://www.ntppool.org/scores/2001:67c:d74:66::71be
 [5]: https://www.ntppool.org/
+[blog1]: {{ include "post_link" 233951 }}
+[blog2]: {{ include "post_link" 233969 }}
