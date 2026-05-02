@@ -81,13 +81,11 @@ let blog = (function() {
 	function initExpand() {
 		for (const e of document.querySelectorAll('[data-expand]')) {
 			let target = document.querySelector('#' + e.getAttribute('data-expand'));
-			let callbackName = e.getAttribute('data-expand-callback');
-			e.addEventListener('click', async event => {
+			e.addEventListener('click', event => {
 				event.preventDefault();
 				event.stopPropagation();
 				if (target.style.display === 'none') {
 					target.style.display = '';
-					await window[callbackName]?.();
 				}
 				else {
 					target.style.display = 'none';
@@ -123,7 +121,7 @@ let blog = (function() {
 	}
 
 	return {
-		init: (isPost) => {
+		init: isPost => {
 			initLinks();
 			initImageTitles();
 			if (isPost) {
@@ -133,6 +131,17 @@ let blog = (function() {
 				initExpand();
 			}
 			initImageBox();
+		},
+		fetchData: async url => {
+			try {
+				const response = await fetch(url);
+				if (!response.ok)
+					return null;
+				return await response.json();
+			}
+			catch {
+				return null;
+			}
 		}
 	};
 })();
