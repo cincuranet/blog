@@ -140,7 +140,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 
 ##### Configuration
 
-* The NEO-F10T is connected using UART (115200/8/1/n) directly to Raspberry Pi Compute Module 4 with 2 GB RAM.
+* The NEO-F10T is connected using UART (57600/8/1/n) directly to Raspberry Pi Compute Module 4 with 2 GB RAM.
 * PPS is connected to GPIO pin.
 * Antenna delay is set to 70 ns:
     * ANN-MB1 has 5 m RG-174 (VF 0.66) → ~25.3 ns.
