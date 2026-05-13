@@ -8,7 +8,7 @@ tags:
   - NTP
   - Homelab
 ---
-It's been almost a year since I put my NTP server on the public internet. Since then I've changed a few things, so I'm due for a write-up.
+It's been almost a year since I put [my NTP server][4] on the public internet. Since then I've changed a few things, so I'm due for a write-up.
 
 <!-- excerpt -->
 
