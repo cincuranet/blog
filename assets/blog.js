@@ -145,3 +145,7 @@ let blog = (function() {
 		}
 	};
 })();
+
+/* --- */
+
+{{ include "/assets/fa/js/all.min.js" }}

@@ -23,14 +23,7 @@
 	<meta property="og:type" content="website" />
 	{{~ end ~}}
 
-	<style>
-{{ include "/assets/style.css" }}
-	</style>
-
-	<script defer src="/assets/fa/js/solid.min.v__{{ blog.file_hash "/assets/fa/js/solid.min.js" }}.js"></script>
-	<script defer src="/assets/fa/js/regular.min.v__{{ blog.file_hash "/assets/fa/js/regular.min.js" }}.js"></script>
-	<script defer src="/assets/fa/js/brands.min.v__{{ blog.file_hash "/assets/fa/js/brands.min.js" }}.js"></script>
-	<script defer src="/assets/fa/js/fontawesome.min.v__{{ blog.file_hash "/assets/fa/js/fontawesome.min.js" }}.js"></script>
+	<link rel="stylesheet" href="/assets/style.v__{{ blog.file_hash "/assets/style.css" }}.css" type="text/css">
 
 	<script defer src="/assets/blog.v__{{ blog.file_hash "/assets/blog.js" }}.js"></script>
 	<script type="module">
