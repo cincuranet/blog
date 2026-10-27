@@ -53,16 +53,6 @@ Loading...
 
 </div>
 
-* <a href="#" data-expand="chronyc-serverstats-data">`chronyc serverstats`</a>
-
-<div id="chronyc-serverstats-data">
-
-```text
-Loading...
-```
-
-</div>
-
 * <a href="#" data-expand="chronyc-authdata-data">`chronyc authdata`</a>
 
 <div id="chronyc-authdata-data">
@@ -114,7 +104,6 @@ Loading...
 	document.querySelector('#chronyc-tracking-data pre code').textContent = data?.chrony?.tracking ?? problem;
 	document.querySelector('#chronyc-sources-data pre code').textContent = data?.chrony?.sources ?? problem;
 	document.querySelector('#chronyc-sourcestats-data pre code').textContent = data?.chrony?.sourcestats ?? problem;
-	document.querySelector('#chronyc-serverstats-data pre code').textContent = data?.chrony?.serverstats ?? problem;
 	document.querySelector('#chronyc-authdata-data pre code').textContent = data?.chrony?.authdata ?? problem;
 
 	document.querySelector('#ubx-nav-pvt-data pre code').textContent = data?.ubx?.['NAV-PVT'] ?? problem;
