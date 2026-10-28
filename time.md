@@ -20,6 +20,8 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 #### Statistics
 
+Last 30 hours, 5-minute samples, times in UTC.
+
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_offset.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_frequency.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_skew.svg"></object>
@@ -27,7 +29,7 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 #### Snapshot
 
-Below is a snapshot of runtime data. The data was last generated at <code id="last-generated">Loading...</code>.
+Below is a snapshot of runtime data. The data was last generated at <code id="last-generated">Loading...</code> (UTC).
 
 ##### Chrony
 
