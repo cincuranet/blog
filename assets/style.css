@@ -95,6 +95,10 @@ option {
 	content: "\00A0|\00A0";
 }
 
+.hidden {
+	display: none;
+}
+
 /* wrapper */
 
 #wrapper {

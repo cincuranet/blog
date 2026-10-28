@@ -84,14 +84,8 @@ let blog = (function() {
 			e.addEventListener('click', event => {
 				event.preventDefault();
 				event.stopPropagation();
-				if (target.style.display === 'none') {
-					target.style.display = '';
-				}
-				else {
-					target.style.display = 'none';
-				}
+				target.classList.toggle("hidden");
 			});
-			e.click();
 		}
 	}
 

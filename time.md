@@ -20,7 +20,7 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 #### Statistics
 
-Last 30 hours, 5-minute samples, times in UTC.
+Last 30 hours, 5-minute samples, times in UTC. Last plotted at <span id="statistics-last-plotted"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span>.
 
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_offset.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_frequency.svg"></object>
@@ -29,46 +29,42 @@ Last 30 hours, 5-minute samples, times in UTC.
 
 #### Snapshot
 
-Below is a snapshot of runtime data. The data was last generated at <code id="last-generated">Loading...</code> (UTC).
+Below is a snapshot of runtime data. The data was last generated at <span id="snapshot-last-generated"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span> (UTC).
 
 ##### Chrony
 
 * <a href="#" data-expand="chronyc-tracking-data">`chronyc tracking`</a>
 
-<div id="chronyc-tracking-data">
+<div id="chronyc-tracking-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 * <a href="#" data-expand="chronyc-sources-data">`chronyc sources`</a>
 
-<div id="chronyc-sources-data">
+<div id="chronyc-sources-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 * <a href="#" data-expand="chronyc-sourcestats-data">`chronyc sourcestats`</a>
 
-<div id="chronyc-sourcestats-data">
+<div id="chronyc-sourcestats-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 * <a href="#" data-expand="chronyc-authdata-data">`chronyc authdata`</a>
 
-<div id="chronyc-authdata-data">
+<div id="chronyc-authdata-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
@@ -77,39 +73,37 @@ Loading...
 
 * <a href="#" data-expand="ubx-nav-pvt-data">`UBX-NAV-PVT`</a>
 
-<div id="ubx-nav-pvt-data">
+<div id="ubx-nav-pvt-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 * <a href="#" data-expand="ubx-nav-timeutc-data">`UBX-NAV-TIMEUTC`</a>
 
-<div id="ubx-nav-timeutc-data">
+<div id="ubx-nav-timeutc-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 * <a href="#" data-expand="ubx-nav-sig-data">`UBX-NAV-SIG`</a>
 
-<div id="ubx-nav-sig-data">
+<div id="ubx-nav-sig-data" class="hidden">
 
 ```text
-Loading...
 ```
 
 </div>
 
 <script type="module">
-	const problem = 'Problem while loading.';
+	const problem = 'n/a';
 	const data = await blog.fetchData('https://time.cincura.net/api/stats.json');
 
-	document.getElementById('last-generated').textContent = data?.generated ?? problem;
+	document.getElementById('snapshot-last-generated').textContent = data?.generated ?? problem;
+	document.getElementById('statistics-last-plotted').textContent = data?.generated ?? problem;
 
 	document.querySelector('#chronyc-tracking-data pre code').textContent = data?.chrony?.tracking ?? problem;
 	document.querySelector('#chronyc-sources-data pre code').textContent = data?.chrony?.sources ?? problem;

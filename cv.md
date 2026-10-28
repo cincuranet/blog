@@ -1658,7 +1658,7 @@ articles:
 {{~ end ~}}
 
 <a href="#" data-expand="conferences-expand">{{ page.conferences.size | math.minus 10 }} more conferences and other events...</a>
-<div id="conferences-expand">
+<div id="conferences-expand" class="hidden">
 
 {{~ for conference in page.conferences offset: 10 ~}}
 * {{ conference.title }} ({{ conference.date }})
@@ -1674,7 +1674,7 @@ articles:
 * blogging on [{{ site.address }}](/) ({{ site.posts.size }} posts in total)
 * <a href="#" data-expand="articles-expand">{{ page.articles.size }} articles or publications in total</a>
 
-<div id="articles-expand">
+<div id="articles-expand" class="hidden">
 
 {{~ for article in page.articles ~}}
 * [{{ article.title }}]({{ article.link }}) ({{ article.date }})
