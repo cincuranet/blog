@@ -20,7 +20,7 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 
 #### Statistics
 
-Last 30 hours, 5-minute samples, times in UTC. Last plotted at <span id="statistics-last-plotted"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span>.
+Last 48 hours at 5-minute resolution, updated <span id="statistics-last-updated"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span> UTC.
 
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_offset.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/chrony_history_frequency.svg"></object>
@@ -29,7 +29,7 @@ Last 30 hours, 5-minute samples, times in UTC. Last plotted at <span id="statist
 
 #### Snapshot
 
-Below is a snapshot of runtime data. The data was last generated at <span id="snapshot-last-generated"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span> (UTC).
+Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-updated"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span> UTC.
 
 ##### Chrony
 
@@ -102,8 +102,8 @@ Below is a snapshot of runtime data. The data was last generated at <span id="sn
 	const problem = 'n/a';
 	const data = await blog.fetchData('https://time.cincura.net/api/stats.json');
 
-	document.getElementById('snapshot-last-generated').textContent = data?.generated ?? problem;
-	document.getElementById('statistics-last-plotted').textContent = data?.generated ?? problem;
+	document.getElementById('snapshot-last-updated').textContent = data?.generated ?? problem;
+	document.getElementById('statistics-last-updated').textContent = data?.generated ?? problem;
 
 	document.querySelector('#chronyc-tracking-data pre code').textContent = data?.chrony?.tracking ?? problem;
 	document.querySelector('#chronyc-sources-data pre code').textContent = data?.chrony?.sources ?? problem;
@@ -134,6 +134,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 ##### Configuration
 
 * The NEO-F10T is connected using UART (57600/8/1/n) directly to Raspberry Pi Compute Module 4 with 2 GB RAM.
+* All CPUs are pinned to 1.5 GHz (`force_turbo` boot config/`performance` scaling governor)
 * PPS is connected to GPIO pin.
 * Antenna delay is set to 70 ns:
     * ANN-MB1 has 5 m RG-174 (VF 0.66) → ~25.3 ns.
