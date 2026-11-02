@@ -89,6 +89,15 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 </div>
 
+* <a href="#" data-expand="ubx-nav-clock-data">`UBX-NAV-CLOCK`</a>
+
+<div id="ubx-nav-clock-data" class="hidden">
+
+```text
+```
+
+</div>
+
 * <a href="#" data-expand="ubx-nav-sig-data">`UBX-NAV-SIG`</a>
 
 <div id="ubx-nav-sig-data" class="hidden">
@@ -112,6 +121,7 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 	document.querySelector('#ubx-nav-pvt-data pre code').textContent = data?.ubx?.['NAV-PVT'] ?? problem;
 	document.querySelector('#ubx-nav-timeutc-data pre code').textContent = data?.ubx?.['NAV-TIMEUTC'] ?? problem;
+	document.querySelector('#ubx-nav-clock-data pre code').textContent = data?.ubx?.['NAV-CLOCK'] ?? problem;
 	document.querySelector('#ubx-nav-sig-data pre code').textContent = data?.ubx?.['NAV-SIG'] ?? problem;
 </script>
 
@@ -148,7 +158,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 * OS is Raspberry Pi OS Lite 64-bit.
 * SBAS is enabled (though mostly irrelevant for fixed-position timing).
 * Galileo OSNMA is enabled (without trusted time enforcement).
-* `UBX-NAV-SIG`, `UBX-NAV-PVT` and `UBX-NAV-TIMEUTC` are enabled.
+* `UBX-NAV-SIG`, `UBX-NAV-PVT`, `UBX-NAV-TIMEUTC` and `UBX-NAV-CLOCK` are enabled.
 
 #### Bonus
 
