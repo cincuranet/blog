@@ -69,7 +69,7 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 </div>
 
-##### NEO-F10T
+##### UBX
 
 * <a href="#" data-expand="ubx-nav-pvt-data">`UBX-NAV-PVT`</a>
 
