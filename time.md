@@ -156,7 +156,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 * Chrony handles clock disciplining, NTP and NTS.
 * GPSd handles communication with the module.
 * OS is Raspberry Pi OS Lite 64-bit.
-* SBAS is enabled (though mostly irrelevant for fixed-position timing).
+* SBAS is enabled.
 * Galileo OSNMA is enabled (without trusted time enforcement).
 * `UBX-NAV-SIG`, `UBX-NAV-PVT`, `UBX-NAV-TIMEUTC` and `UBX-NAV-CLOCK` are enabled.
 
