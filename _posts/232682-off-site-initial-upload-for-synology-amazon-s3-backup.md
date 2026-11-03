@@ -5,7 +5,7 @@ date: 2012-01-23T08:33:01Z
 tags:
   - AWS
   - Cloud
-  - Network Attached Storage (NAS)
+  - NAS
   - Storage & Backup
   - Synology
 ---

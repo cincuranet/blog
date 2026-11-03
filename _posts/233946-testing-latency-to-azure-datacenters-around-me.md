@@ -5,7 +5,7 @@ date: 2024-11-05T08:20:00Z
 tags:
   - Azure
   - Cloud
-  - Network
+  - Networking
 ---
 Purely out of curiosity I decided to test latencies to a few [Azure datacenters][2] around me. Specifically, Germany West Central (Frankfurt), Poland Central (Warsaw) and West Europe (Amsterdam). I wanted to test Azure DC in Austria as well, but it is not yet available.
 

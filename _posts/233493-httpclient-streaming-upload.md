@@ -5,7 +5,7 @@ date: 2015-01-15T10:34:00Z
 tags:
   - .NET
   - Performance
-  - Network
+  - Networking
 ---
 The requirement seemed simple. Get a stream of data and _upload_ it using HTTP to server. The stream might be possibly large so complete buffering is is not an option. Nothing special.
 

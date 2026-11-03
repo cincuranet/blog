@@ -6,7 +6,7 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - .NET
   - .NET Core
-  - Network
+  - Networking
 ---
 You know the feeling when you write some awesome code and then you find the underlying code or library does not do what you expect it to do? Well, that's exactly what happened to me with the [`NetworkStream`][1].
 

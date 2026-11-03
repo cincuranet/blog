@@ -5,7 +5,7 @@ date: 2014-12-06T08:17:00Z
 tags:
   - Raspberry Pi
   - Wi-Fi
-  - Network
+  - Networking
   - OpenELEC
 ---
 Simply speaking it works without a glitch. Plug in, boot, set up Wi-Fi network and done. Now it runs days without crashing, freezing or something like that.

@@ -7,7 +7,7 @@ tags:
   - .NET Standard
   - ADO.NET
   - C#
-  - Network
+  - Networking
 ---
 For a long time, I had a [ticket with "Connection resiliency" title][1] in the issue tracker. My idea was to provide a functionality to be able to recover from a broken connection. Why? Because when I reimplemented (and fixed) connection pool sometime around 4.x version I removed one questionable (to put it lightly) feature. That, and also because I introduced a small bug, surfaced a problem people had/have in the code.
 

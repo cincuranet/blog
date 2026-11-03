@@ -4,7 +4,7 @@ title: |-
 date: 2026-04-27T06:21:00Z
 tags:
   - Time
-  - Network
+  - Networking
   - NTP
   - Homelab
 ---

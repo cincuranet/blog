@@ -4,7 +4,7 @@ title: |-
 date: 2011-11-14T18:55:22Z
 tags:
   - Life
-  - Network Attached Storage (NAS)
+  - NAS
   - Storage & Backup
   - Synology
 ---

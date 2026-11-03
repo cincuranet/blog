@@ -4,7 +4,7 @@ title: |-
 date: 2025-11-19T08:48:00Z
 tags:
   - Time
-  - Network
+  - Networking
   - NTS
 ---
 As I'm running my [time.cincura.net][1] timeserver I have some monitoring in place. But one thing was missing: checking the certificate for NTS. Although the renewal is semi-automated, having an additional layer of verification provides peace of mind. The challenge is that most monitoring tools do not support NTS, so I decided to create my own tool - which you can now use as well.

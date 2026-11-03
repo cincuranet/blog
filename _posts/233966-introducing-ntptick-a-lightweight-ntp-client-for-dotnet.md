@@ -3,7 +3,7 @@ title: |-
   Introducing NtpTick: A lightweight NTP client for .NET
 date: 2026-03-24T12:06:00Z
 tags:
-  - Network
+  - Networking
   - NTP
   - Time
 ---
