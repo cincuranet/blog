@@ -23,9 +23,12 @@ It's also part of the [NTP Pool project][5], with public status pages for [IPv4]
 Last 48 hours at 5-minute resolution, updated <span id="statistics-last-updated"><span class="fa-regular fa-clock fa-spin-pulse" aria-label="Loading"></span></span> UTC.
 
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_offset.svg"></object>
+<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_root.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_frequency.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_skew.svg"></object>
-<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_root.svg"></object>
+<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_status.svg"></object>
+<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_satellites.svg"></object>
+<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_cno.svg"></object>
 
 #### Snapshot
 
