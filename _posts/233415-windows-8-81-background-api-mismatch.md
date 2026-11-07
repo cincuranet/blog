@@ -15,7 +15,7 @@ The first background operations is dealing with uploads and downloads. When you 
 
 The other one is dealing with background tasks. And when you want to all background tasks, you can call [`BackgroundTaskRegistration.AllTasks`][2]. This method returns simple `IReadOnlyDictionary<Guid, IBackgroundTaskRegistration>`. Aka it's synchronous and it's a property.
 
-Maybe I'm too pesky. But these are not that different from developer's point of view, isn't it? Why is then one method and other property? And why there's a mismatch between synchronous call and asynchronous call (though I _can_ imagine one is reading just some application's related piece of memory while the other one is doing some call though system to some "background transfer service", but still ...)?
+Maybe I'm too pesky. But these are not that different from developer's point of view, isn't it? Why is then one method and other property? And why there's a mismatch between synchronous call and asynchronous call (though I *can* imagine one is reading just some application's related piece of memory while the other one is doing some call though system to some "background transfer service", but still ...)?
 
 [1]: http://msdn.microsoft.com/en-US/library/windows/apps/br207128
 [2]: http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.backgroundtaskregistration.alltasks.aspx

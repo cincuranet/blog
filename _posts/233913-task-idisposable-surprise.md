@@ -27,7 +27,7 @@ using (Foo())
 }
 ```
 
-Can you see the problem? No? Neither did I. With this call, I'm disposing the _task_ (`Task` also implements `IDisposable`) that I just started/received, not the _disposable_ itself.
+Can you see the problem? No? Neither did I. With this call, I'm disposing the *task* (`Task` also implements `IDisposable`) that I just started/received, not the *disposable* itself.
 
 The correct code is like this.
 

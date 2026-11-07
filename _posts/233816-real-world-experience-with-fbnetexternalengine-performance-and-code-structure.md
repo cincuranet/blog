@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-I'm now going through piece of SQL code that contains a lot of stored procedures from over the years and lately also functions (in last year the migration to Firebird 3 really began) and looking into the code to identify functions and procedures to start the rewriting with using [_FbNetExternalEngine_][3]. I'm at the beginning, but I have some interesting piece I'd like to show.
+I'm now going through piece of SQL code that contains a lot of stored procedures from over the years and lately also functions (in last year the migration to Firebird 3 really began) and looking into the code to identify functions and procedures to start the rewriting with using [*FbNetExternalEngine*][3]. I'm at the beginning, but I have some interesting piece I'd like to show.
 
 <!-- excerpt -->
 
@@ -45,7 +45,7 @@ public static DateTime? AddTimeToTimestamp(TimeSpan? time, DateTime? datetime)
 
 Both functions are very simple, without any significant amount of logic or code. Still I thing that having tis logic in C# is more convenient than in PSQL.
 
-With both functions in dummy database I created a simple loop and measured the time using _isql_.
+With both functions in dummy database I created a simple loop and measured the time using *isql*.
 
 ```sql
 execute block
@@ -93,7 +93,7 @@ begin
 end
 ```
 
-Again, this is fairly simple function, but I selected it because I think in C#, especially with _switch expression_ the code can be really nicely written.
+Again, this is fairly simple function, but I selected it because I think in C#, especially with *switch expression* the code can be really nicely written.
 
 ```csharp
 public static string Concat(string left, string right, string splitter)

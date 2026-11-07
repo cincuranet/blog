@@ -194,7 +194,7 @@ internal static class $Program
 }
 ```
 
-Finally! Something interesting. The compiler is not creating instance field as I was expecting (and trying to force it), but it's creating a `struct` (a _value type_) instead and passing it around using `ref`.
+Finally! Something interesting. The compiler is not creating instance field as I was expecting (and trying to force it), but it's creating a `struct` (a *value type*) instead and passing it around using `ref`.
 
 What about some `unsafe` code? Let's start with "safe"-ish `Span<T>`.
 

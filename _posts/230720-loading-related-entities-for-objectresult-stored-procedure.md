@@ -14,7 +14,7 @@ From this few sentences you can guess that I like writing stored procedures. Bec
 
 So I started creating extension methods to get this solved in a little bit better way. My goal was to have one query for one related end for all items in result. Hence there will be only `x` additional queries. The result is here:
 
-_Disclaimer: The code is not general purpose and contains some assumptions based on my conditions and rules._
+*Disclaimer: The code is not general purpose and contains some assumptions based on my conditions and rules.*
 
 ```csharp
 public static IEnumerable<T> LoadRelated<T>(this ObjectResult<T> result, MergeOption mergeOption, params Func<T, IRelatedEnd>[] relatedEnds)

@@ -11,7 +11,7 @@ First thing first, I know there's an [`Enum.HasFlag` method][1], yet I'm not int
 
 <!-- excerpt -->
 
-I'm writing _better_, because I don't want to say faster, as other aspects of such primitive operation might affect the overall result (like code size, register usage, etc.).
+I'm writing *better*, because I don't want to say faster, as other aspects of such primitive operation might affect the overall result (like code size, register usage, etc.).
 
 #### Hypothesis
 
@@ -69,7 +69,7 @@ I could stop here and say that both are the same and use whatever I feel like us
 
 #### Where's the magic happening in RyuJIT
 
-I'm nowhere familiar of internals of RyuJIT, thus I had no idea where is this happening. Time for little thinking. I'm working with enums, but enums are just numbers, hence maybe the same behavior works for numbers too. That way I know whether to keep _grepping_ for something around enums or look for something more general.
+I'm nowhere familiar of internals of RyuJIT, thus I had no idea where is this happening. Time for little thinking. I'm working with enums, but enums are just numbers, hence maybe the same behavior works for numbers too. That way I know whether to keep *grepping* for something around enums or look for something more general.
 
 Sadly doing `(value & 0x02) == 0x02` and `(value & 0x02) != 0` (where `value` is plain `int`) shows same behavior. I'll spare you my two hours of semi-methodically (read randomly :)) walking through the RyuJIT's code and I'll jump right into the action.
 

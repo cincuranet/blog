@@ -16,7 +16,7 @@ The signature required me to return `List<T>`, but I started with testing arrays
 
 #### Array
 
-I used `new TestArray[0]` (_Ctor_), `new TestArray[] { }` (_CtorInit_), `Array.Empty<TestArray>()` (_ArrayEmpty_) and `Enumerable.Empty<TestArray>().ToArray()` (_EnumerableEmpty_).
+I used `new TestArray[0]` (*Ctor*), `new TestArray[] { }` (*CtorInit*), `Array.Empty<TestArray>()` (*ArrayEmpty*) and `Enumerable.Empty<TestArray>().ToArray()` (*EnumerableEmpty*).
 
 |          Method |      Mean |     Error |    StdDev | Ratio | RatioSD |  Gen 0 | Gen 1 | Gen 2 | Allocated |
 |---------------- |----------:|----------:|----------:|------:|--------:|-------:|------:|------:|----------:|
@@ -27,7 +27,7 @@ I used `new TestArray[0]` (_Ctor_), `new TestArray[] { }` (_CtorInit_), `Array.E
 
 As expected, the `Array.Empty` is clear winner. That makes sense, because it just returns a reference to a [static generic class with a static field holding the empty array][2]. 
 
-The _Ctor_ and _CtorInit_ are virually the same, because it's just a different syntax for same IL. The downside is obviously the allocation of the real array, there's no caching, etc.
+The *Ctor* and *CtorInit* are virually the same, because it's just a different syntax for same IL. The downside is obviously the allocation of the real array, there's no caching, etc.
 
 The `Enumerable.Empty` version is slowest, kind of expected. But surprisingly it does not allocate. The reason is the implementation behind it is `EmptyPartition<TElement>` with [specific `ToArray` implementation][3] where again `Array.Empty` is used. By the way, the file where `EmptyPartition<TElement>` is, is called `Partition.SpeedOpt.cs`.
 
@@ -35,7 +35,7 @@ OK, that was plain old array. But how about the list (that I actually needed)?
 
 #### List
 
-The list is different because there's no `List.Empty` or something like that. In the similar fashion I used `new List<TestList>()` (_Ctor_), `new List<TestList>(0)` (_Ctor0_), `Array.Empty<TestList>().ToList()` (_ArrayEmpty_) and `Enumerable.Empty<TestList>().ToList()` (_EnumerableEmpty_).
+The list is different because there's no `List.Empty` or something like that. In the similar fashion I used `new List<TestList>()` (*Ctor*), `new List<TestList>(0)` (*Ctor0*), `Array.Empty<TestList>().ToList()` (*ArrayEmpty*) and `Enumerable.Empty<TestList>().ToList()` (*EnumerableEmpty*).
 
 The first two look the same, but `Ctor0` has a a little bit more [code][4] to execute (including branching).
 
@@ -48,11 +48,11 @@ The first two look the same, but `Ctor0` has a a little bit more [code][4] to ex
 
 So, no matter the approach all allocate and allocate the same amount (the list itself, which in turn contains the array and 2 `int` fields).
 
-Surprisingly, the _Ctor_ compared to _Ctor0_ is about a half. I wasn't expecting that much of a difference. Learning new stuff...
+Surprisingly, the *Ctor* compared to *Ctor0* is about a half. I wasn't expecting that much of a difference. Learning new stuff...
 
-The _EnumerableEmpty_ is next and again relying on the `EmptyPartition<TElement>`'s [specific `ToList` implementation][5] (which in turn just does the same call as _Ctor_). 
+The *EnumerableEmpty* is next and again relying on the `EmptyPartition<TElement>`'s [specific `ToList` implementation][5] (which in turn just does the same call as *Ctor*). 
 
-Finally, the _ArrayEmpty_ is slowest because there's no specific optimization for this case.
+Finally, the *ArrayEmpty* is slowest because there's no specific optimization for this case.
 
 #### Summary
 

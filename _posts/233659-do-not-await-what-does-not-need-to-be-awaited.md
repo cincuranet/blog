@@ -42,7 +42,7 @@ public class Something : ISomething
 
 Nothing wrong, right?
 
-Absolutely. The code is fine and works as expected. But that doesn't mean something cannot be improved. The `await _service.FetchSomethingAsync()` expression forces compiler to create the _state machine_ that's behind this feature. And this code is not exactly small (see below for numbers).
+Absolutely. The code is fine and works as expected. But that doesn't mean something cannot be improved. The `await _service.FetchSomethingAsync()` expression forces compiler to create the *state machine* that's behind this feature. And this code is not exactly small (see below for numbers).
 
 #### The solution
 
@@ -80,13 +80,13 @@ public async Task FooBar()
 
 Can this be rewritten the way I showed before?
 
-No! When you swap the `async`/`await` for plain `return`, the code will go over the `finally` block (from `using`) and will dispose the `Foo`, but the `SomethingAsync` might be still running and using it. _Queue dramatic explosion._
+No! When you swap the `async`/`await` for plain `return`, the code will go over the `finally` block (from `using`) and will dispose the `Foo`, but the `SomethingAsync` might be still running and using it. *Queue dramatic explosion.*
 
 #### Some numbers
 
 All the above is a theory which can or not translate into some real hard cold numbers in the runtime. Benchmark time (using [BenchmarkDotNet][1]).
 
-First, let's check code size of resulting binary. Bare metal `netcoreapp2.0` console application having just one extra class with one asynchronous method is `6144` vs `5632` bytes on disk. OK, I agree not exactly a deal breaker, especially considering today's storage prices. Where does the difference come from? Well, it's from the generated _state machine_.
+First, let's check code size of resulting binary. Bare metal `netcoreapp2.0` console application having just one extra class with one asynchronous method is `6144` vs `5632` bytes on disk. OK, I agree not exactly a deal breaker, especially considering today's storage prices. Where does the difference come from? Well, it's from the generated *state machine*.
 
 ```csharp
 [CompilerGenerated]
@@ -142,14 +142,14 @@ private struct <Do>d__0 : IAsyncStateMachine
 
 And as my trusty [ILSpy][2] shows `// Code size 156 (0x9c)`. Does this affect the speed of execution or allocations?
 
-I first tested _fast path_ scenario, where the awaited task has already completed, using `Task.CompletedTask`.
+I first tested *fast path* scenario, where the awaited task has already completed, using `Task.CompletedTask`.
 
 |               Method |      Mean |     Error |    StdDev | Scaled | ScaledSD | Allocated |
 |--------------------- |----------:|----------:|----------:|-------:|---------:|----------:|
 | WithoutAwaitFastPath |  1.418 ns | 0.0237 ns | 0.0221 ns |   1.00 |     0.00 |       0 B |
 |    WithAwaitFastPath | 23.269 ns | 0.0503 ns | 0.0471 ns |  16.42 |     0.25 |       0 B |
 
-Well, that's quite a difference. Going through the `await` and _state machine_ in this _fast path_ scenario isn't cheap.
+Well, that's quite a difference. Going through the `await` and *state machine* in this *fast path* scenario isn't cheap.
 
 Next, I tested a call where some callback really happens. I used `Task.Delay(1)`, thus don't look at absolute numbers, but only at the difference.
 

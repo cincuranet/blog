@@ -13,7 +13,7 @@ Last week I spent fair amount of time with error `The specified blob or block co
 
 <!-- excerpt -->
 
-And you'll read (read: I read) the short version saying, at that time already known fact, that the block IDs need to be of same length. I read that couple of times, checked my code even more times and my block IDs were of same length, indeed. Only after few hours I read complete article including the "long version". And then it kicked me. My block IDs were of same length _in the current session/run of application_. But as I was debugging it, I also put there bunch of blocks with "random" IDs. These were different length. Silly me. I quickly comfirmed that fetching uncommitted blocks. Bang. Deleted the whole blob and started again. And it went smoothly now.
+And you'll read (read: I read) the short version saying, at that time already known fact, that the block IDs need to be of same length. I read that couple of times, checked my code even more times and my block IDs were of same length, indeed. Only after few hours I read complete article including the "long version". And then it kicked me. My block IDs were of same length *in the current session/run of application*. But as I was debugging it, I also put there bunch of blocks with "random" IDs. These were different length. Silly me. I quickly comfirmed that fetching uncommitted blocks. Bang. Deleted the whole blob and started again. And it went smoothly now.
 
 So there are two morals from this. Always read whole blog post (if you're here, good job :)). And always think outside the single "run" of application you're currently writing/debugging; the state might be there.
 

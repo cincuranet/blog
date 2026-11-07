@@ -62,7 +62,7 @@ The `Count() > 0` is there because it's the same for arrays and rest of the coll
  |        LinqAny | 1000000 | 12.0244 ns | 0.0565 ns | 0.0529 ns |      ? |        ? | 0.0102 |      32 B |
  |      LinqCount | 1000000 | 17.2599 ns | 0.0525 ns | 0.0491 ns |      ? |        ? |      - |       0 B |
 
-Without any surprise the property beats LINQ hard. Four orders of magnitude. For non-empty collections there's small allocation (_32B_) in `Any` in _Gen 0_. Across the array sizes the `Any` is roughly 1/3 faster than using `Count`.
+Without any surprise the property beats LINQ hard. Four orders of magnitude. For non-empty collections there's small allocation (*32B*) in `Any` in *Gen 0*. Across the array sizes the `Any` is roughly 1/3 faster than using `Count`.
 
 #### List (`List<int>`)
 
@@ -173,7 +173,7 @@ For hashsets the property again wins and the times are similar to what we can se
  |        LinqAny | 1000000 | 30.3330 ns | 0.0674 ns | 0.0598 ns | 104.92 |     1.61 | 0.0178 |      56 B |
  |      LinqCount | 1000000 | 10.9556 ns | 0.0344 ns | 0.0268 ns |  37.89 |     0.58 |      - |       0 B |
 
-This time, although the property again wins, it's not in hundredths of nanoseconds, but in tenths. LINQ is a bit faster than in hashsets, with `Any` being slower than `Count` (as with lists and hashsets), about 2,6×. The allocation raised to _56B_ (in _Gen 0_) across the sizes.
+This time, although the property again wins, it's not in hundredths of nanoseconds, but in tenths. LINQ is a bit faster than in hashsets, with `Any` being slower than `Count` (as with lists and hashsets), about 2,6×. The allocation raised to *56B* (in *Gen 0*) across the sizes.
 
 #### Summary
 

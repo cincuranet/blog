@@ -13,7 +13,7 @@ tags:
   - SQL
   - Visual Studio
 ---
-As I'm sweeping the corners, the work is less glamorous (read: close to zero outside contributions) and every move is harder and harder. But despite all of that, I'm glad to move one step closer to the RTM version of Entity Framework Core 2.0 provider for Firebird and jump to the _beta phase_.
+As I'm sweeping the corners, the work is less glamorous (read: close to zero outside contributions) and every move is harder and harder. But despite all of that, I'm glad to move one step closer to the RTM version of Entity Framework Core 2.0 provider for Firebird and jump to the *beta phase*.
 
 <!-- excerpt -->
 

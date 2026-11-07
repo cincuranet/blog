@@ -9,12 +9,12 @@ Velmi jednoduše. Středa 23. ledna 2013 v Praze. A repete v Bratislavě čtvrte
 
 <!-- excerpt -->
 
-Moje přednáška na téma _Entity Framework 5, 6 a dále - využijte nové možnosti naplno_.
+Moje přednáška na téma *Entity Framework 5, 6 a dále - využijte nové možnosti naplno*.
 > Entity Framework prošel v posledních měsících, možná i letech rychlým vývojem a přinesl mnoho nových, někdy i nečekaných funkcí. Nejen že se jedná o plnohodnotný OR mapper, ale začíná nabízet i mnoho „jemných" funkcí a funkcí, které doplňují celý vývojový cyklus spojený s databází. Zkusme se na ně společně podívat. Třeba zjistíte, že některé nástroje vůbec nepotřebujete a můžete využít přímo .NET Framework resp. Entity Framework.
 
 Budu se na vás těšit.
 
-_[Prezentace][2]_
+*[Prezentace][2]*
 
 [1]: http://gopas.cz/News/Vyvojari-zbystrete!-GOPAS-DevCon-2013-je-tady!.aspx
 [2]: http://static.ow.ly/docs/ef_10Mo.pdf

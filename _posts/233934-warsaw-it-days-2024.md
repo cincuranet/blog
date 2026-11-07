@@ -5,7 +5,7 @@ date: 2024-03-22T08:41:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be speaking at this years [Warsaw IT Days 2023][1]. One sessions _What's new in C# 12_ will be in-person in Warsaw, while other _Dynamic PGO in .NET 8 and why you need to know about it_ is VoD.
+I'll be speaking at this years [Warsaw IT Days 2023][1]. One sessions *What's new in C# 12* will be in-person in Warsaw, while other *Dynamic PGO in .NET 8 and why you need to know about it* is VoD.
 
 <!-- excerpt -->
 

@@ -10,7 +10,7 @@ OK, following log4net's versioning scheme [in NuGet package][1] wasn't a good id
 
 If you read my [previous log4net post][3] there's a solution with modifying `package.config` file, but... So to fix it package owners were forced to repack the dependencies to be `=`. Not good.
 
-So today I pushed version 2.0.0, which is actually 1.2.11 with new keys, and 1.2.11 was removed. So there's now on [NuGet][4] the new _major_ version and dependencies need to be explicitly stated to be compatible with it (again, it's 1.2.11 with new keys).
+So today I pushed version 2.0.0, which is actually 1.2.11 with new keys, and 1.2.11 was removed. So there's now on [NuGet][4] the new *major* version and dependencies need to be explicitly stated to be compatible with it (again, it's 1.2.11 with new keys).
 
 Fire is quenched, hopefully.
 

@@ -7,9 +7,9 @@ tags:
 ---
 After the [Belgium version][1] Techorama is going to Netherlands, in October 9-11. 
 
-I'll deliver [workshop][2] called _Mastering Entity Framework Core_ - basically in something like 8 hours I'll try to teach you Entity Framework Core all the way into "monk" level. It will be a lot of stuff, but also lot of fun.
+I'll deliver [workshop][2] called *Mastering Entity Framework Core* - basically in something like 8 hours I'll try to teach you Entity Framework Core all the way into "monk" level. It will be a lot of stuff, but also lot of fun.
 
-Besides the workshop, I'll also have two sessions _Autoincrement (identity) is not the only option for primary keys_ and _What's new in Entity Framework Core 7_ (abstracts below).
+Besides the workshop, I'll also have two sessions *Autoincrement (identity) is not the only option for primary keys* and *What's new in Entity Framework Core 7* (abstracts below).
 
 <!-- excerpt -->
 

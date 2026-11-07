@@ -17,8 +17,8 @@ The other thing I monitor is how long the pump runs. If it's running too long, i
 
 Finally, I can check whether the pump runs or rather does not run when nobody is at home. Because that would mean I have a leak somewhere.
 
-I'm doing all this (and one extra, see below) with a simple script (the actual implementation depends on your home controller software) and Fibaro Wall Plug. The script simply waits for an update from the plug on the active power (_W_) and if it's above 0 it flips virtual switch on. Given my pump eats around 1500 watts when running, this is pretty easy for the plug to notice. Once the value drops back to 0, I turn off the switch. The history of the switch gives me insights into all of the information I outlined above.
+I'm doing all this (and one extra, see below) with a simple script (the actual implementation depends on your home controller software) and Fibaro Wall Plug. The script simply waits for an update from the plug on the active power (*W*) and if it's above 0 it flips virtual switch on. Given my pump eats around 1500 watts when running, this is pretty easy for the plug to notice. Once the value drops back to 0, I turn off the switch. The history of the switch gives me insights into all of the information I outlined above.
 
 At the moment I check the history from time to time manually, but one can make it even smarter - i.e. if the pump is running too long, turn off the plug (and hence the water pump) to prevent more damage either to the pump or something where the water might be leaking.
 
-As a bonus, the plug gives me the energy consumed (_kWh_) and I can, more or less, check how much water I'm using. I don't get liters (and I don't think it can be inferred reliably), but I can still compare day to day or month to month usage.
+As a bonus, the plug gives me the energy consumed (*kWh*) and I can, more or less, check how much water I'm using. I don't get liters (and I don't think it can be inferred reliably), but I can still compare day to day or month to month usage.

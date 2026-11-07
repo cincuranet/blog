@@ -26,7 +26,7 @@ Also some metrics were collected. The 5.0.5.0 version has:
 
 All this in 213 source files. And there's much more in the generated [report][4].
 
-Then I found a feature to compare two versions of sources and draw some statistics from that. Very interesting are rules around [_API Breaking Changes_][5]. Although I'm trying to be pretty organized with FirebirdClient, especially when there's a breaking change it is discussed upfront, something might slip in. For big projects, this I see as a useful safety net.
+Then I found a feature to compare two versions of sources and draw some statistics from that. Very interesting are rules around [*API Breaking Changes*][5]. Although I'm trying to be pretty organized with FirebirdClient, especially when there's a breaking change it is discussed upfront, something might slip in. For big projects, this I see as a useful safety net.
 
 So. I took the version 4.0.0.0 and compared it with 5.0.5.0 (because I had that in hands already). Basically looking to see what changed between two major versions. Heck I don't even remember what was the major theme in 4.x anymore. :) [Here's][6] the report (this time only ADO.NET provider itself).
 
@@ -46,7 +46,7 @@ Third-party assemblies usages:
 
 ![Third-party assemblies usages]({{ include "post_ilink" page "compare/3usage.png" }})
 
-I know looking at the report that there are some _critical_ rules violated. Some might be right. Some (maybe even bigger part) not, in my opinion. Not that these rules are wrong. For generic code they make sense. Here's it's often enforced by environment. But if you feel like tackling some of them, feel free to [issue a PR][7].
+I know looking at the report that there are some *critical* rules violated. Some might be right. Some (maybe even bigger part) not, in my opinion. Not that these rules are wrong. For generic code they make sense. Here's it's often enforced by environment. But if you feel like tackling some of them, feel free to [issue a PR][7].
 
 [1]: http://www.ndepend.com/
 [2]: http://www.sms-timing.com/karting-software

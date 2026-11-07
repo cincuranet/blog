@@ -7,7 +7,7 @@ tags:
 ---
 More than a year ago I was blogging about [how to map private/protected/... properties in Code First CTP4][1] for the time being. Well it has been a long time and a lot of changed. The code there isn't absolutely up to date with current [Entity Framework 4.3][2].
 
-Although you can go raw and create the expression tree from i.e. string yourself ([Mono.Linq.Expressions][3] can be quite handy) it's not nice and more importantly it's not strongly typed. If you don't want to use data annotations or couple your configuration classes into entity classes you're still not lost. In the above linked post [in comments _Drew Jones_][4] came with a nice idea.
+Although you can go raw and create the expression tree from i.e. string yourself ([Mono.Linq.Expressions][3] can be quite handy) it's not nice and more importantly it's not strongly typed. If you don't want to use data annotations or couple your configuration classes into entity classes you're still not lost. In the above linked post [in comments *Drew Jones*][4] came with a nice idea.
 
 You entity classes will be partial classes and somewhere else you'll create second part of that class with the expressions needed to express the properties. Let's take a look at example (you can adjust access modifiers according to your needs and structure).
 

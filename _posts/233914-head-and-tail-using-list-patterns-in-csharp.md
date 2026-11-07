@@ -5,7 +5,7 @@ date: 2023-01-17T12:35:00Z
 tags:
   - C#
 ---
-Some time ago I wrote blog posts playing with [_head-_ and _tail-like_ functions][2] and implementing [_sum_ function in C# using these][1]. With the recent addition of [_list patterns_][3] into C# 11, I revisited that topic.
+Some time ago I wrote blog posts playing with [*head-* and *tail-like* functions][2] and implementing [*sum* function in C# using these][1]. With the recent addition of [*list patterns*][3] into C# 11, I revisited that topic.
 
 <!-- excerpt -->
 
@@ -19,9 +19,9 @@ int Sum(int[] list) => list switch
 };
 ```
 
-But I'm cheating here a bit. In my previous posts I used `List<int>` as my datatype, while here I'm using `int[]`. The problem is that `.. var tail` needs _indexer_ with support for `Range` and `List<T>` does not have support for that. I smell some challenge ahead.
+But I'm cheating here a bit. In my previous posts I used `List<int>` as my datatype, while here I'm using `int[]`. The problem is that `.. var tail` needs *indexer* with support for `Range` and `List<T>` does not have support for that. I smell some challenge ahead.
 
-So, can I make it work with vanilla `List<T>`? I need to somehow add `this[Range range]` into existing type. This would be a great place of _extension everything_ in C#, but we're not there yet. Time for `ListRangeWrapper<T>`.
+So, can I make it work with vanilla `List<T>`? I need to somehow add `this[Range range]` into existing type. This would be a great place of *extension everything* in C#, but we're not there yet. Time for `ListRangeWrapper<T>`.
 
 ```csharp
 class ListRangeWrapper<T>
@@ -43,7 +43,7 @@ class ListRangeWrapper<T>
 
 This wrapper (ab)uses implicit operators to get from `List<T>` into itself (and back to `List<T>`) and introduces the already mentioned `this[Range range]`. It also has `this[Index index]` and `Count` to make our pattern work completely.
 
-With that I can create the method and feed in _list_.
+With that I can create the method and feed in *list*.
 
 ```csharp
 int Sum(ListRangeWrapper<int> list) => list switch
@@ -56,9 +56,9 @@ var list = new List<int>() { 1, 2, 3 };
 Sum(list);
 ```
 
-Almost as nice as the _array_ version. In the wild the `ListRangeWrapper<T>` would probably be confusing to consumers. Maybe having the operators explicit and preparing overload with casting would help. But is it then still slick? You can comment below.
+Almost as nice as the *array* version. In the wild the `ListRangeWrapper<T>` would probably be confusing to consumers. Maybe having the operators explicit and preparing overload with casting would help. But is it then still slick? You can comment below.
 
-Furthermore, as I was writing the code, I realized, there's another new feature in C# 11, that would allow me to have the method fully generic. Yes, it's [_generic math_][4]. I'll leave that for [next blog post][5].
+Furthermore, as I was writing the code, I realized, there's another new feature in C# 11, that would allow me to have the method fully generic. Yes, it's [*generic math*][4]. I'll leave that for [next blog post][5].
 
 [1]: {{ include "post_link" 233813 }}
 [2]: {{ include "post_link" 233633 }}

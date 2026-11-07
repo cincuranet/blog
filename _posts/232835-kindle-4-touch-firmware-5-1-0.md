@@ -7,7 +7,7 @@ tags:
 ---
 When [I bought my Kindle 4 Touch][1] I was satisfied with it. But there were few pieces I was missing and previous versions have them. But with [firmware 5.1.0][2] it's running on full steam back again.
 
-What I like (and I was missing) in particular is _landscape mode_ and _highlighting across pages_. The _new homescreen layout_ is nice too.
+What I like (and I was missing) in particular is *landscape mode* and *highlighting across pages*. The *new homescreen layout* is nice too.
 
 Landscape mode isn't looking that intersting on a first sight, especially if you read ebooks only. But if you read also PDFs or ebooks with some graphs, tables or images, it's sometimes way easier to view these in landscape than to have it "overzoomed" in portrait and constantly jump right and left.
 

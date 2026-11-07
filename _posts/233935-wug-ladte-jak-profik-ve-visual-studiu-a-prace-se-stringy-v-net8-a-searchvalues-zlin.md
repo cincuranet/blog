@@ -5,7 +5,7 @@ date: 2024-03-26T13:19:00Z
 tags:
   - Presentations & Speaking
 ---
-16.4.2024 od 17:30 na [WUGu ve Zlíně][1] si dáme dvojpřednášku. _Laďte jak profík ve Visual Studiu_ a _Práce se stringy v .NET 8 a SearchValues_. 
+16.4.2024 od 17:30 na [WUGu ve Zlíně][1] si dáme dvojpřednášku. *Laďte jak profík ve Visual Studiu* a *Práce se stringy v .NET 8 a SearchValues*. 
 
 <!-- excerpt -->
 

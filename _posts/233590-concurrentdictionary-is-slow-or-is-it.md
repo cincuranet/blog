@@ -7,9 +7,9 @@ tags:
   - .NET
   - .NET Core
 ---
-On this year's [MS Fest][1] [Jarda Jirava][2] had a presentation about [Akka.Net][3]. I was interested in this topic, because the _actor model_ is one way (out if many - sadly no silver bullet yet) to tackle concurrency and parallelism problems.
+On this year's [MS Fest][1] [Jarda Jirava][2] had a presentation about [Akka.Net][3]. I was interested in this topic, because the *actor model* is one way (out if many - sadly no silver bullet yet) to tackle concurrency and parallelism problems.
 
-While showing some _actor_ demos there was a nice comparison with home made solutions. So you don't have to go to full framework to try thinking in _actors_. The demo was just storing some key and value into a _hashtable_. The hand made was first [using][4] just plain old [`Dictionary<int, int>`][6] with [`lock`][8]/[`Monitor`][9] and then [using][5] [`ConcurrentDictionary<int, int>`][7]. To mine (and Jarda's surprise too) the `ConcurrentDictionary<int, int>` was slower. So I started digging into it and looking for a reason. Because I was confident the `ConcurrentDictionary<int, int>` should be faster compared to only single `Monitor`.
+While showing some *actor* demos there was a nice comparison with home made solutions. So you don't have to go to full framework to try thinking in *actors*. The demo was just storing some key and value into a *hashtable*. The hand made was first [using][4] just plain old [`Dictionary<int, int>`][6] with [`lock`][8]/[`Monitor`][9] and then [using][5] [`ConcurrentDictionary<int, int>`][7]. To mine (and Jarda's surprise too) the `ConcurrentDictionary<int, int>` was slower. So I started digging into it and looking for a reason. Because I was confident the `ConcurrentDictionary<int, int>` should be faster compared to only single `Monitor`.
 
 <!-- excerpt -->
 
@@ -75,7 +75,7 @@ Looking at the code, you clearly spot two interesting pieces. The code is adding
 
 Also, there's nothing happening around. It's just adding the items as quickly as possible. Hammering the locking. That's far from regular case.
 
-And finally, running the code shows that for _Monitor_ version the CPU is 100% used (all cores) while for the _Concurrent_ it isn't.
+And finally, running the code shows that for *Monitor* version the CPU is 100% used (all cores) while for the *Concurrent* it isn't.
 
 #### Reason
 
@@ -83,7 +83,7 @@ If you look at the [`TryAddInternal` method][10] of `ConcurrentDictionary<TKey, 
 
 Second clue is in [`GrowTable` method][11].  And it's doing quite a locking and shuffling of locks (and of course also the resizing).
 
-It must be GC. I'm pretty sure. Let's test it. I'll use the _Diagnostic Tools_ window in Visual Studio.
+It must be GC. I'm pretty sure. Let's test it. I'll use the *Diagnostic Tools* window in Visual Studio.
 
 ![Process Memory and GC]({{ include "post_ilink" page "monitor_concurrent_gc.png" }})
 
@@ -93,7 +93,7 @@ Whoa. There's a lot of GC-ing happening. Theory confirmed. Then also running a p
 
 Well, there's really none. In this specific edge case the single, hand crafted, `Monitor` will beat the `ConcurrentDictionary<TKey, TValue>`. But is it really a problem for a real world application?
 
-The items are unique and just added as quickly as possible. It could be some _list_ or _bag_ implementations (i.e. [`ConcurrentBag<T>`][12]) might behave better for our case.
+The items are unique and just added as quickly as possible. It could be some *list* or *bag* implementations (i.e. [`ConcurrentBag<T>`][12]) might behave better for our case.
 
 #### Closer to the real world application?
 
@@ -161,7 +161,7 @@ This time the difference is not that significant (in real world it would depend 
 
 #### Conclusion
 
-During the presentation my guess was that there's some _false sharing_ and/or _trashing_ happening. I couldn't have been more wrong, as you can see from two modifications above. Testing concurrent performance with synthetic test is far from what the code will do in real, hence it's more than desired to run tests with as close to real setup as possible.
+During the presentation my guess was that there's some *false sharing* and/or *trashing* happening. I couldn't have been more wrong, as you can see from two modifications above. Testing concurrent performance with synthetic test is far from what the code will do in real, hence it's more than desired to run tests with as close to real setup as possible.
 
 As usual with this deep stuff. It has been a joy - for me - to dig into this problem and to start connecting the dots. And then slightly modifying the code to get to expected or desired behavior.
 

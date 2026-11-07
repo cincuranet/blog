@@ -19,11 +19,11 @@ New major version 9.0.0.0 of [ADO.NET provider for Firebird][1] is ready for dow
 
 First big feature is support for Entity Framework Core 6 (including new data types from .NET 6). 
 
-Second big feature is batching API support from Firebird 4. The current implementation focuses on having all the calls in place and I plan to later add some higher level APIs, something like i.e. _FbBulkCopy_, later when enough feedback is collected. The documentation for batching is [here][6].
+Second big feature is batching API support from Firebird 4. The current implementation focuses on having all the calls in place and I plan to later add some higher level APIs, something like i.e. *FbBulkCopy*, later when enough feedback is collected. The documentation for batching is [here][6].
 
 Finally, smaller, yet still important, improvements are available in this release. For example more detailed [logging][7], [statement timeouts][8] and more.   
 
-The major version is also expected to have some breaking changes and version 9.0 is no exception. Possible breaking changes are marked using _breaking_ tag.  
+The major version is also expected to have some breaking changes and version 9.0 is no exception. Possible breaking changes are marked using *breaking* tag.  
 
 Overview of all the changes can be found in [here][5].
 

@@ -11,11 +11,11 @@ One of my favourite conferences - .NET Developer Days - that happens in Warsaw i
 
 ![Banner]({{ include "post_ilink" page "banner.png" }})
 
-_Autoincrement (identity) is not the only option for primary keys_
+*Autoincrement (identity) is not the only option for primary keys*
 
 > A lot of applications is using "simple" autoincrement (identity) as a primary key. That's not bad. But there are other options for generated primary keys and some might be even better for your application. I'll show you some options, pros and cons and even apply that as a mapping for EF Core.
 
-_Working with strings in .NET 8 and SearchValues_
+*Working with strings in .NET 8 and SearchValues*
 
 > Working with strings is inherent in any program. But did you know that in .NET 8 you can work with strings differently? Better! Faster! You don't? Come and see.
 

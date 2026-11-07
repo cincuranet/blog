@@ -9,7 +9,7 @@ tags:
   - Castle Windsor
   - Inversion of Control (IoC)
 ---
-I needed to cache value from method. Simple. I know there's at least dozen of ready-made solutions, but I eventually decided to write my own _interceptor_, because the whole project is already using Castle Windsor and it seemed like a fun stuff to explore. There isn't really anything special about this code and I originally didn't want to blog about it, but [people on Twitter changed my mind][1].
+I needed to cache value from method. Simple. I know there's at least dozen of ready-made solutions, but I eventually decided to write my own *interceptor*, because the whole project is already using Castle Windsor and it seemed like a fun stuff to explore. There isn't really anything special about this code and I originally didn't want to blog about it, but [people on Twitter changed my mind][1].
 
 <!-- excerpt -->
 
@@ -27,7 +27,7 @@ public sealed class CachedAttribute : Attribute
 
 #### Aspect
 
-The interceptor, or _aspect_ as I think about it, needs to somehow create a key to get or store the return value. I simply use type name, method name and all arguments (converted to string) glued together with some separators. It's not absolutely bulletproof, but it's good enough and I know I can always refactor methods to fit this. Surely easier than trying to have perfect key generation story.
+The interceptor, or *aspect* as I think about it, needs to somehow create a key to get or store the return value. I simply use type name, method name and all arguments (converted to string) glued together with some separators. It's not absolutely bulletproof, but it's good enough and I know I can always refactor methods to fit this. Surely easier than trying to have perfect key generation story.
 
 Once I have the key, I look up the cache value and either set `ReturnValue`, never calling `Proceed` hence never really executing the or `Proceed`ing (See what I did? ;)) as usual and then storing the return value into the cache.
 

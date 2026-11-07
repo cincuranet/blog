@@ -5,7 +5,7 @@ date: 2025-11-07T10:11:00Z
 tags:
   - Presentations & Speaking
 ---
-Už za dvacet dní, přesně, se bude konat [CODECON #Žilina][1]. Nikdy jsem na této konferenci nebyl, ale Žilina je rozhodně město, které mám rád. A když vidím, na jakých místech se akce koná, nemůžu se dočkat. Moje session je _How I put .NET into Firebird database engine_. Ano, název je v angličtině (protože jsem hlupák a nedošlo mi, že CfP můžu vyplnit v češtině), ale jinak vám vše samozřejmě řeknu v češtině.  
+Už za dvacet dní, přesně, se bude konat [CODECON #Žilina][1]. Nikdy jsem na této konferenci nebyl, ale Žilina je rozhodně město, které mám rád. A když vidím, na jakých místech se akce koná, nemůžu se dočkat. Moje session je *How I put .NET into Firebird database engine*. Ano, název je v angličtině (protože jsem hlupák a nedošlo mi, že CfP můžu vyplnit v češtině), ale jinak vám vše samozřejmě řeknu v češtině.  
 
 <!-- excerpt -->
 

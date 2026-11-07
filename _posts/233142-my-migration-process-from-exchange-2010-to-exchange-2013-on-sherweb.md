@@ -14,7 +14,7 @@ My preparation took about two hours. And of course I wanted to do everything wit
 *	Create same users and mailboxes on 2013 as you had on 2010. You can do it manually or import from file in SherWeb's admin panel. I did it manually. Partly because I have few users and partly because I wanted to see whether is there something new to learn about.
 *	Log in to new mailboxes. Just to init everything.
 *	Then I disconnected all mobile devices. I simply removed the account. To start clear.
-*	I changed all DNS records, except the one for _autodiscover_.
+*	I changed all DNS records, except the one for *autodiscover*.
 *	Wait. :)
 *	In admin panel you can see number of items in mailbox for selected user. As the DNS records start propagating you'll emails coming to new mailbox (and you'll also see your old mailbox being silent). Give it a more time, just to be sure majority has new DNS records (this may be up to few days, based on your TTL and real refresh rate of other DNS servers).
 *	Export current mailbox(es) to PST. Close Outlook.
@@ -22,9 +22,9 @@ My preparation took about two hours. And of course I wanted to do everything wit
 *	Upload PST(s).
 *	Refresh the page mentioned in 7.
 *	Check the matching of filenames and users, correct if needed and start import. This will probably take a while. You could probably do it with Outlook as well, copying all items to new location, but I thought this could be faster.
-*	Change the DNS record for _autodiscover_ and wait again (or force your local DNS server to refresh, if you have one).
+*	Change the DNS record for *autodiscover* and wait again (or force your local DNS server to refresh, if you have one).
 *	Wait for import to finish.
-*	Delete the current profile for Outlook and add new. You'll get all the information from already available _autodiscover_.
+*	Delete the current profile for Outlook and add new. You'll get all the information from already available *autodiscover*.
 *	Outlook starts fetching emails from mailbox on 2013. And also the new emails are there waiting for you. :)
 
 Enjoy. After some testing (give it a few days) you can terminate your old Exchange 2010 contract.

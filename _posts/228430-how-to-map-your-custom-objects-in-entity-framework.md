@@ -114,7 +114,7 @@ The work on POCO and persistence ignorance in version 2 of Entity Framework will
 
 See also: [How to use custom objects with associations in Entity Framework][3]
 
-_Published on [Databazovy Svet][4]_
+*Published on [Databazovy Svet][4]*
 
 [1]: {{ include "post_link" 227892 }}
 [2]: http://msdn.microsoft.com/en-us/library/cc716756.aspx

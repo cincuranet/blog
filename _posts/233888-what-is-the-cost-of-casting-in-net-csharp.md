@@ -7,7 +7,7 @@ tags:
   - .NET
   - Performance
 ---
-As I was (at that moment) running out of ideas about optimizations in hot paths in [_FbNetExternalEngine_][1], I turned my attention into other parts of code. And one piece that was doing casting on every call caught my attention. Could I make the casting faster? What is actually the cost of casting? Does it matter? I had to dive into it.
+As I was (at that moment) running out of ideas about optimizations in hot paths in [*FbNetExternalEngine*][1], I turned my attention into other parts of code. And one piece that was doing casting on every call caught my attention. Could I make the casting faster? What is actually the cost of casting? Does it matter? I had to dive into it.
 
 <!-- excerpt -->
 
@@ -51,7 +51,7 @@ public ITuple RegularCastArgument(object o)
 
 The `?` denotes `null`, rest is regular `ValueTuple`s of various sizes.
 
-The _unsafe_ casting is, as expected, a clear winner. Looking at the disassembly makes it obvious.
+The *unsafe* casting is, as expected, a clear winner. Looking at the disassembly makes it obvious.
 
 ```asm
 mov       rax,rdx    
@@ -60,7 +60,7 @@ ret
 
 Could this be any smoother? :) 
 
-The _safe_ variant looks like this.
+The *safe* variant looks like this.
 
 ```asm
 sub       rsp,28

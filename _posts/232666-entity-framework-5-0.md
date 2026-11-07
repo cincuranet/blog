@@ -13,7 +13,7 @@ I'm a little bit perplexed. [Entity Framework 4.3 Beta 1][2] was just released. 
 
 > As soon as the next preview of the .NET Framework 4.5 is available we will be shipping EF 5.0 Beta 1, which will include all these new features.
 
-Does it mean that the version that will ship with .NET Framework 4.5 (the next version in time of writing this post) is going to be _5.0_? I still clearly recall the mess the _second_ version with version number _4.0_ created - a lot of people, on my trainings, talks, ..., confused. What happened to clear [versioning strategy][3]?
+Does it mean that the version that will ship with .NET Framework 4.5 (the next version in time of writing this post) is going to be *5.0*? I still clearly recall the mess the *second* version with version number *4.0* created - a lot of people, on my trainings, talks, ..., confused. What happened to clear [versioning strategy][3]?
 
 I hope it's just a small miss/typo and the version will be Entity Framework 4.5 and the following (additive) updates will be 4.5+n.
 

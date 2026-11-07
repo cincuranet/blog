@@ -9,7 +9,7 @@ tags:
 
 <!-- excerpt -->
 
-Sometimes you have task method that does not support any kind of cancellation, yet you still want to use it. The often-used approach is to use `Task.Delay` and plug it into `Task.WhenAny`. I created my own version quite some time ago [here][1]. The catch is to properly cancel the `Task.Delay` task in case the original task completed before timeout. Else the _timer queue_ might become bottleneck.
+Sometimes you have task method that does not support any kind of cancellation, yet you still want to use it. The often-used approach is to use `Task.Delay` and plug it into `Task.WhenAny`. I created my own version quite some time ago [here][1]. The catch is to properly cancel the `Task.Delay` task in case the original task completed before timeout. Else the *timer queue* might become bottleneck.
 
 However, starting with .NET 6 you can use the mentioned [`WaitAsync`][2] method to do the same. 
 

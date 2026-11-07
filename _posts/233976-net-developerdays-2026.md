@@ -9,7 +9,7 @@ Woohoo we're getting close to [.NET DeveloperDays][1] in Warsaw. I'm really exci
 
 <!-- excerpt -->
 
-This year, two of my sessions were selected - _Starting with Microsoft.Extensions.VectorData and RAG_ and _Weird C# features you (don't) need to know about_. 
+This year, two of my sessions were selected - *Starting with Microsoft.Extensions.VectorData and RAG* and *Weird C# features you (don't) need to know about*. 
 
 > LLMs are everywhere, but what if you don't want to build just a plain smart chat, but you want to infuse it with your internal data? And what if the data is changing fast? Microsoft.Extensions.VectorData and RAG might be the correct and easy path for you to solve this.
 

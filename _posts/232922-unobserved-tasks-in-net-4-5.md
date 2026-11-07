@@ -8,7 +8,7 @@ tags:
 ---
 When the [Task][1] and other related were introduced, there was behavior that informed you that you are possible doing something wrong. Yes, I'm talking about the exception being thrown from finalizer thread when your task completed as [Faulted][2] because of unhandled exception. I think this is absolutely correct behavior. If something as bas as unhandled exception happened I should take care of it no matter what. Because else I might corrupt some data or ... what's worse than corrupt data? ;)
 
-In .NET 4.5 this behavior changed. The [async/await][3] brings some interesting considerations. Anyway. The above mentioned behavior was changed. Simply the exception is no longer thrown from finalizer. Good, bad? No matter what, _I_ rather want my application to crash than to run happily next few hours and corrupt more data and do more mess.
+In .NET 4.5 this behavior changed. The [async/await][3] brings some interesting considerations. Anyway. The above mentioned behavior was changed. Simply the exception is no longer thrown from finalizer. Good, bad? No matter what, *I* rather want my application to crash than to run happily next few hours and corrupt more data and do more mess.
 
 Try to run this simple application (outside debugger, with optimization turned on):
 

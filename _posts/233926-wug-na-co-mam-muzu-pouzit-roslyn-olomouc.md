@@ -5,7 +5,7 @@ date: 2023-09-23T09:50:00Z
 tags:
   - Presentations & Speaking
 ---
-Pokud to nemáte do Olomouce daleko, můžeme se ve středu 27.9.2023 od 17:00 potkat na [WUGu][1] v Olomouci s tématem _Na co mám/můžu použít Roslyn_. 
+Pokud to nemáte do Olomouce daleko, můžeme se ve středu 27.9.2023 od 17:00 potkat na [WUGu][1] v Olomouci s tématem *Na co mám/můžu použít Roslyn*. 
 
 <!-- excerpt -->
 

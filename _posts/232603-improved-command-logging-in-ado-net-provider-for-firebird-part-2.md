@@ -9,7 +9,7 @@ tags:
 ---
 [Previous version][1] of [ADO.NET provider for Firebird][2] brought us a support for command tracing. Although it was good, it could be done better. Few interesting scenarios came back to as a valuable feedback and with the old implementation it was hard to do it.
 
-The new one builds on top of [`TraceSource` class][3] allowing you to handle different sources from trace messages easily and independently. The _what's_ logged is same, but now every message is traced through `FirebirdSql.Data.FirebirdClient` source, hence you can easily i.e. turn it of (and just these messages, without affecting other messages) or send it to i.e. console window. Just a few lines in `app.config` and you're done.
+The new one builds on top of [`TraceSource` class][3] allowing you to handle different sources from trace messages easily and independently. The *what's* logged is same, but now every message is traced through `FirebirdSql.Data.FirebirdClient` source, hence you can easily i.e. turn it of (and just these messages, without affecting other messages) or send it to i.e. console window. Just a few lines in `app.config` and you're done.
 
 ```xml
 <system.diagnostics>

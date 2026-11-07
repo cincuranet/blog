@@ -9,7 +9,7 @@ Dostalo se mi možnosti přednášet na [OSSConf v Žilině][1]. Tak se tam do t
 
 <!-- excerpt -->
 
-První je [_How vector databases work and what is it good for?_][3] a druhá [_The rabbit hole of building a GPS-synchronized time server_][2].
+První je [*How vector databases work and what is it good for?*][3] a druhá [*The rabbit hole of building a GPS-synchronized time server*][2].
 
 > Vector databases are the last hot topic. But what is a vector database? How it relates to LLMs? Why even traditional relational databases are gaining vector search capabilities?
 

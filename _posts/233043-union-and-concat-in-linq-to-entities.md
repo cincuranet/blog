@@ -71,7 +71,7 @@ UNION ALL
         FROM [dbo].[Test2] AS [Extent2]) AS [UnionAll1]
 ```
 
-Both queries are using `UNION ALL`. What's wrong? The key magic is in usage of `DISTINCT` keyword in first query. That basically turns `UNION ALL` into `UNION`. Because `UNION` is all rows from both sets _without_ duplicates. And `DISTINCT` will remove these duplicates.
+Both queries are using `UNION ALL`. What's wrong? The key magic is in usage of `DISTINCT` keyword in first query. That basically turns `UNION ALL` into `UNION`. Because `UNION` is all rows from both sets *without* duplicates. And `DISTINCT` will remove these duplicates.
 
 Yes, little bit hidden, but the semantic is kept.
 

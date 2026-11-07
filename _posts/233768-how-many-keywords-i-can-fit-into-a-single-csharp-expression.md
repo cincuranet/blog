@@ -27,7 +27,7 @@ class C
 }
 ```
 
-The `case null when await this is false` is the answer. At this point I ran out of time as I received a message from the garage that my car is ready. Maybe _you_ can come up with even longer solution and I'm eager to see it.
+The `case null when await this is false` is the answer. At this point I ran out of time as I received a message from the garage that my car is ready. Maybe *you* can come up with even longer solution and I'm eager to see it.
 
 > [Related post.][2]
 

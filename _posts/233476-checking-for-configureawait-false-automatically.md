@@ -14,7 +14,7 @@ tags:
 
 #### Background
 
-Let's talk for a while what `async`/`await` or actually just the `await` and compiler are doing. I'm going to simplify a bit, but the concept stays. When the compiler finds `await` it makes whatever follows so-called [_continuation_][3]. Once the code that followed `await` is done the continuation is queued for execution. That way the method (and ultimately the whole chain) never blocks. But where should the continuation run? Take a look at sample code.
+Let's talk for a while what `async`/`await` or actually just the `await` and compiler are doing. I'm going to simplify a bit, but the concept stays. When the compiler finds `await` it makes whatever follows so-called [*continuation*][3]. Once the code that followed `await` is done the continuation is queued for execution. That way the method (and ultimately the whole chain) never blocks. But where should the continuation run? Take a look at sample code.
 
 ```csharp
 var data = ComputeSomeData();
@@ -22,7 +22,7 @@ var result = await SendDataAsync(data);
 ProcessResult(result);
 ```
 
-This code looks familiar. It looks like it's sequential, although it's not. This familiarity allows for easy writing and more importantly reading of the code. Big win (compared to i.e. [APM][4]). But in sequential code the `ProcessResult` would run for sure on same thread as the previous lines. But now as the continuations is queued whatever thread is available (from "some" thread pool) might run it. That would create havoc in UI as you would likely try manipulate with UI elements. Yes, some threads are born as better breed. Welcome UI thread. But because in computed science we love abstractions and threads are implementation detail in .NET we have [`SynchronizationContext`][5]. In fact the `SynchronizationContext` is not tight to thread. It's higher level concept. But we can pretend, to not make it more difficult, it's wrapper around UI thread (if you want you can look at `AspNetSynchronizationContext`). In .NET the continuation is queued into the _Current_ `SynchronizationContext`. That way the code behaves as much as closely as sequential code.
+This code looks familiar. It looks like it's sequential, although it's not. This familiarity allows for easy writing and more importantly reading of the code. Big win (compared to i.e. [APM][4]). But in sequential code the `ProcessResult` would run for sure on same thread as the previous lines. But now as the continuations is queued whatever thread is available (from "some" thread pool) might run it. That would create havoc in UI as you would likely try manipulate with UI elements. Yes, some threads are born as better breed. Welcome UI thread. But because in computed science we love abstractions and threads are implementation detail in .NET we have [`SynchronizationContext`][5]. In fact the `SynchronizationContext` is not tight to thread. It's higher level concept. But we can pretend, to not make it more difficult, it's wrapper around UI thread (if you want you can look at `AspNetSynchronizationContext`). In .NET the continuation is queued into the *Current* `SynchronizationContext`. That way the code behaves as much as closely as sequential code.
 
 But often when you're not writing UI code and you're writing some library code you don't care about where the code will run - actually you shouldn't. Or you care a lot and then you're explicit about what you need - another story.
 
@@ -64,7 +64,7 @@ Sadly. You cannot change the default behavior on i.e. assembly level. Or for a w
 
 #### Solution
 
-Visual Studio is not going to help you with some magic squiggles. It does not know whether you want to continue on current context or not. But the hope is not lost. When the [Roslyn][7] got support for `await` I started small project that would help me keep my code in check. I call it [ConfigureAwaitChecker][8]. It's open source and _I'm happy to accept contributions_.
+Visual Studio is not going to help you with some magic squiggles. It does not know whether you want to continue on current context or not. But the hope is not lost. When the [Roslyn][7] got support for `await` I started small project that would help me keep my code in check. I call it [ConfigureAwaitChecker][8]. It's open source and *I'm happy to accept contributions*.
 
 Currently it's a library and simple console app that surfaces the results (plus PowerShell script `Check-Dir.ps1` to call the app on bunch of files). But as the Roslyn offers now also diagnostics API to plug into Visual Studio it might evolve that way as well.
 

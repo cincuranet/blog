@@ -5,7 +5,7 @@ date: 2021-12-07T15:20:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be speaking on [MS Dev Summit 2021][1] (online) this Friday about _Azure Storage (maybe) hidden features_. 
+I'll be speaking on [MS Dev Summit 2021][1] (online) this Friday about *Azure Storage (maybe) hidden features*. 
 
 <!-- excerpt -->
 

@@ -9,11 +9,11 @@ tags:
   - .NET
   - RyuJIT
 ---
-I felt a bit fuzzy on the topic of [_ref returns_ in C#][1]. I used it intuitively few times, but it felt I needed to fill some gaps and play with it in a little bit more structured way. This is my exploration of the topic. No particular order. No deep explanations. Just my thinking what should work and what not and trying it.
+I felt a bit fuzzy on the topic of [*ref returns* in C#][1]. I used it intuitively few times, but it felt I needed to fill some gaps and play with it in a little bit more structured way. This is my exploration of the topic. No particular order. No deep explanations. Just my thinking what should work and what not and trying it.
 
 <!-- excerpt -->
 
-I'm gonna use this simple `struct` (no reason, I just started with it and then for the convenience sake added the _implicit operator_).
+I'm gonna use this simple `struct` (no reason, I just started with it and then for the convenience sake added the *implicit operator*).
 
 ```csharp
 struct MyStruct
@@ -133,7 +133,7 @@ struct Test2_5
 }
 ```
 
-Works. Even though the field is declared in a `struct`, it's going to be allocated on the heap, because it's `static` (on a so called _High Frequency Heap_).
+Works. Even though the field is declared in a `struct`, it's going to be allocated on the heap, because it's `static` (on a so called *High Frequency Heap*).
 
 #### #3
 

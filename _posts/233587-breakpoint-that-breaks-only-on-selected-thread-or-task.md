@@ -46,7 +46,7 @@ public static class SimpleThreadBreakpoint
 
 With this class I can do `SimpleThreadBreakpoint.ThisThread` call whenever I want to select current thread (or task with a simple modification) as being the one where breakpoints will break. Then instead of (conditional) breakpoint (or regular [`Debugger.Break` call][3]) I'm going to use `SimpleThreadBreakpoint.Break`. Instant win!
 
-The call to `ThisThread` might be in my code on a place where I'm in a known state or simply while debugging, let's say from _Immediate Window_.
+The call to `ThisThread` might be in my code on a place where I'm in a known state or simply while debugging, let's say from *Immediate Window*.
 
 Finally the `Break` method might be conditionally compiled out, so you can keep the code there but not affecting the production builds.
 
@@ -54,7 +54,7 @@ Finally the `Break` method might be conditionally compiled out, so you can keep 
 
 At the end both methods are basically the same. Same result, different approach.
 
-Also bear in mind that extra code there (especially because of _volatile_ reads and writes) might affect how the code runs and thus some race conditions or deadlocks or ... might not happen.
+Also bear in mind that extra code there (especially because of *volatile* reads and writes) might affect how the code runs and thus some race conditions or deadlocks or ... might not happen.
 
 [1]: https://msdn.microsoft.com/en-us/library/system.threading.thread.managedthreadid(v=vs.110).aspx
 [2]: https://msdn.microsoft.com/en-us/library/system.threading.tasks.task.currentid(v=vs.110).aspx

@@ -12,7 +12,7 @@ The original [`ConfigureAwaitChecker` tool][1] I wrote was just a concept and I 
 
 <!-- excerpt -->
 
-The biggest change is that now the analyzer uses also _semantic model_, thus it's able to detect where the `ConfigureAwait` call is possible and where it's not. Below you can see that after upgrading to new version the green squiggle disappears on `Task.Yield()`, while it still works on `Task.Delay(100)`.
+The biggest change is that now the analyzer uses also *semantic model*, thus it's able to detect where the `ConfigureAwait` call is possible and where it's not. Below you can see that after upgrading to new version the green squiggle disappears on `Task.Yield()`, while it still works on `Task.Delay(100)`.
 
 ![ConfigureAwaitChecker analyzer]({{ include "post_ilink" page "cac.gif" }})
 

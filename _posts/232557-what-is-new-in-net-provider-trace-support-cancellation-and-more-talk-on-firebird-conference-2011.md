@@ -9,7 +9,7 @@ If you're using Firebird from .NET you should visit my talk on [Firebird Confere
 
 There's no schedule yet (in time of writing), but I can tell you, that my talk will be on Friday, for sure. Topics covered are obvious. Everything worth mentioning from last year or so in [.NET provider][2] development and also some future plans. Feel free to come and ask whatever .NET provider related (or Firebird) you want.
 
-_Would you be interested in picking up some Twitter questions during the talk?_
+*Would you be interested in picking up some Twitter questions during the talk?*
 
 [1]: http://www.firebirdsql.org/en/firebird-conference-2011/
 [2]: http://www.firebirdsql.org/en/net-provider/

@@ -20,4 +20,4 @@ Clicking on that allows you to specify time when the VM should the turned off (w
 
 You can also specify webhook that the infrastructure will call 15 minutes before the action happens.
 
-Although you can do the same with simple script and _Scheduled Tasks_ or _cron_, this is very easy way with literally no barrier to do it.
+Although you can do the same with simple script and *Scheduled Tasks* or *cron*, this is very easy way with literally no barrier to do it.

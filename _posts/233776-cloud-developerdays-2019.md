@@ -12,6 +12,6 @@ In less than two months (28th-29th of May 2019) the [Cloud DeveloperDays 2019][1
 
 <!-- excerpt -->
 
-First session is _Azure CosmosDB_ and the second is _High Availability Options in Azure PaaS_. If you see me, feel free to chat with me about whatever cloud/Azure/.NET related.
+First session is *Azure CosmosDB* and the second is *High Availability Options in Azure PaaS*. If you see me, feel free to chat with me about whatever cloud/Azure/.NET related.
 
 [1]: http://cloud.developerdays.pl/

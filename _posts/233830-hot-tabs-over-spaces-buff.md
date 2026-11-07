@@ -6,11 +6,11 @@ tags:
   - Merchandise
   - Life
 ---
-Almost exactly a year ago I was sitting in a restaurant after _Update Days: Corestart 3.0_ conference with my _↹ over ␣ ␣ ␣_ shirt facing [Olia Gavrysh][4], Program Manager at .NET team in Microsoft. And she mentioned how she liked the shirt (and that [Immo Landwerth][5], another Program Manager in .NET team would like it too (maybe that was a sarcasm)) and that I should make the shirt available for buying. 
+Almost exactly a year ago I was sitting in a restaurant after *Update Days: Corestart 3.0* conference with my *↹ over ␣ ␣ ␣* shirt facing [Olia Gavrysh][4], Program Manager at .NET team in Microsoft. And she mentioned how she liked the shirt (and that [Immo Landwerth][5], another Program Manager in .NET team would like it too (maybe that was a sarcasm)) and that I should make the shirt available for buying. 
 
 <!-- excerpt -->
 
-That struck me, because I though the _tabs over spaces_ was just my funny thing and nobody would be interested in buying such product. But it stuck in my head. It wasn't a bad idea. A small batch could be, in worst case, just a supply for me. But I didn't want a shirt. Shirts are dumb. I wanted something that I personally would like and find useful. Fast forward about two months back and I found it - tubular headband or scarf or buff (whatever you want to call it and use it as). The buff (I call it buff, because I became aware of such product years ago thanks to my ultrarunning thing and [BUFF][1] company/products) is my favourite "extra" piece of gear for running (or doing any activity for that matter).
+That struck me, because I though the *tabs over spaces* was just my funny thing and nobody would be interested in buying such product. But it stuck in my head. It wasn't a bad idea. A small batch could be, in worst case, just a supply for me. But I didn't want a shirt. Shirts are dumb. I wanted something that I personally would like and find useful. Fast forward about two months back and I found it - tubular headband or scarf or buff (whatever you want to call it and use it as). The buff (I call it buff, because I became aware of such product years ago thanks to my ultrarunning thing and [BUFF][1] company/products) is my favourite "extra" piece of gear for running (or doing any activity for that matter).
 
 Here it is. And as a first step into this world, I'm happy about the result. 
 

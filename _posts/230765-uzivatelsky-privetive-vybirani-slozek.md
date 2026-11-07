@@ -12,7 +12,7 @@ Právě něco jako shell tree používám v [ID3 renameru][1] a trochu se tam mi
 
 Přemýšlím proto o jiném přístupu k výběru složky ([ID3 renamer][2] se zaměřuje na dávkové zpracování, takže jednotlivé soubory nejsou ve většině případů pro výběr důležité). Stejně rozklikávat postupně strom nemusí být vždy nejrychlejší. Bohužel mě nic nenapadá – koukám na různé programy a nic. Je jasné, že vybraná cesta musí být viditelná, a to dobře a musí jít rychle a lehce změnit, hlavně takové ty změny „okolo" (jedna složka před a za, …).
 
-_Neřešil někdo podobný problém? Možná chytrá cesta využití standardních dialogů ... Možná něco vlastního, ale ultra jednoduchého, rychlého a účelného ..._
+*Neřešil někdo podobný problém? Možná chytrá cesta využití standardních dialogů ... Možná něco vlastního, ale ultra jednoduchého, rychlého a účelného ...*
 
 <small>Pozn.: Drag'n'Drop samozřejmě [ID3 renamer][3] podporuje, ale domnívám se, že to není všelék – musí být i možnost změny složky, se kterou chci pracovat i přímo z programu.</small>
 

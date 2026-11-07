@@ -15,7 +15,7 @@ For no particular reason and with no particular goal I decided to see how "fast"
 
 The file I chose was a 26143 bytes long C# text file (`FbMigrationSqlGenerator.cs` renamed to `test.txt`, to be exact). The file was always accessed using HTTPS from an Azure VM in DS3_v2 size in the same region (West Europe). All the above-mentioned services were in default configuration (Blob Storage container was public). I use Apache Bench tool (Apache 2.4.39 x64 OpenSSL 1.1.1 VC15) with various settings (see below). I know this is in no way comprehensive test, but I'd like to say before you steam into comments section, I'm interested more in comparison than in absolute numbers.
 
-The settings I used for Apache Bench all used _Keep Alive_ (`-k`) and I did runs with concurrency (`-c`) 6 and 1k requests (`-n`), concurrency 100 and 20k requests and finally concurrency 400 and 80k requests.
+The settings I used for Apache Bench all used *Keep Alive* (`-k`) and I did runs with concurrency (`-c`) 6 and 1k requests (`-n`), concurrency 100 and 20k requests and finally concurrency 400 and 80k requests.
 
 First let's look at requests per second.
 
@@ -25,7 +25,7 @@ First let's look at requests per second.
 | 20000R/100C | 6332         | 2253          | 2078          | 7032        | 7947          |
 | 80000R/400C | 6480         | 1365          | 1865          | 5600        | 6966          |
 
-With a small number of concurrent requests, the services are similar to each other (not sure why Blob Storage was doing bad with small concurrency and good with more concurrency, maybe some network glitch). As the load is added Blob Storage and both CDNs are fine (I was maxing-out VM's network (between 2.0-2.4 Gbps reported by _Task Manager_)).
+With a small number of concurrent requests, the services are similar to each other (not sure why Blob Storage was doing bad with small concurrency and good with more concurrency, maybe some network glitch). As the load is added Blob Storage and both CDNs are fine (I was maxing-out VM's network (between 2.0-2.4 Gbps reported by *Task Manager*)).
 
 Let's look at milliseconds per request now.
 

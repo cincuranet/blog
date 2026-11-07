@@ -11,7 +11,7 @@ tags:
 
 <!-- excerpt -->
 
-You might have heard about the _TreatWarningsAsErrors_ option, which basically promotes all warnings to errors (which is sometimes useful). But there's also _WarningsAsErrors_ option which is a list of warnings to be treated as errors (and that is subsequently passed to `csc`). With that we're half way there.
+You might have heard about the *TreatWarningsAsErrors* option, which basically promotes all warnings to errors (which is sometimes useful). But there's also *WarningsAsErrors* option which is a list of warnings to be treated as errors (and that is subsequently passed to `csc`). With that we're half way there.
 
 Sadly, there isn't only one warning for nullable references types, but because Roslyn is open source, we don't have to guess. In [`ErrorCode.cs`][2] we can see all and also guess from the name what's the issue covered.
 

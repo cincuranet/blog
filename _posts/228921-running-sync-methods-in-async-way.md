@@ -8,7 +8,7 @@ tags:
 ---
 Probably you heard about the very good library called [Power Threading Library][1]. Shortly, it allows you to run async methods in a near-sync-looking code (and besides provides some useful classes for working in multithreaded environment). But the problem is, that you have to use methods ready for async way. That easy for dtabase calls or web service calls. But you may have your own code and you want to utilize this library to really burn up your CPU.
 
-The obvious way is to define a delegate and use BeginInvoke/EndInvoke. However that's not what I was interested in. Thus I created some helper methods to use _any_ method you have in async way with [Power Threading Library][2]. Interesting fact is that's also faster than using delegate (Jeffrey mentioned, more info [here][3]).
+The obvious way is to define a delegate and use BeginInvoke/EndInvoke. However that's not what I was interested in. Thus I created some helper methods to use *any* method you have in async way with [Power Threading Library][2]. Interesting fact is that's also faster than using delegate (Jeffrey mentioned, more info [here][3]).
 
 ```csharp
 using System;

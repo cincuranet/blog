@@ -9,11 +9,11 @@ tags:
   - Firebird
   - SQL
 ---
-It's been a while since the [last time][5] I blogged about _FbNetExternalEngine_. That doesn't mean there was nothing happening. I was slowly working on it (really slowly, because of ... time), plus some companies took interest in it, confirming it's worth working on it and providing some feedback or nice-to-have features wishes (feel free to share your ideas in comments). So what's really new?
+It's been a while since the [last time][5] I blogged about *FbNetExternalEngine*. That doesn't mean there was nothing happening. I was slowly working on it (really slowly, because of ... time), plus some companies took interest in it, confirming it's worth working on it and providing some feedback or nice-to-have features wishes (feel free to share your ideas in comments). So what's really new?
 
 <!-- excerpt -->
 
-As the [C# 7 came out][4], I played with it and decided it's a nice fit for this project to provide results from procedures. Even if you're not yet ready to use C# 7, you can use the `ValueTuple` direcly and create _external procedures_ because C# 7 just adds syntax sugar on top of it. The idea still the same. Input parameters are regular parameters as you'd expect. The returned type needs to be `IEnumerator<(...)>`. Here's an example.
+As the [C# 7 came out][4], I played with it and decided it's a nice fit for this project to provide results from procedures. Even if you're not yet ready to use C# 7, you can use the `ValueTuple` direcly and create *external procedures* because C# 7 just adds syntax sugar on top of it. The idea still the same. Input parameters are regular parameters as you'd expect. The returned type needs to be `IEnumerator<(...)>`. Here's an example.
 
 ```csharp
 public static IEnumerator<(int?, int?)> IncrementInteger(int? i)
@@ -22,7 +22,7 @@ public static IEnumerator<(int?, int?)> IncrementInteger(int? i)
 }
 ```
 
-Another big change - in fact it took a **lot of** try-error-repeat cycles, although the code is fairly straightforward at the end - is loading the assembly only when the execution is happening and releasing it right after. As you can probably guess, it is using [_application domains_][3]. What that means is that you can replace the assembly with your procedures on the fly without stopping the server. I'm really excited about this. Sadly it adds a little bit overhead with execution (because of the marshalling), but I haven't jumped into performance optimizations yet (or possibly providing two execution models).
+Another big change - in fact it took a **lot of** try-error-repeat cycles, although the code is fairly straightforward at the end - is loading the assembly only when the execution is happening and releasing it right after. As you can probably guess, it is using [*application domains*][3]. What that means is that you can replace the assembly with your procedures on the fly without stopping the server. I'm really excited about this. Sadly it adds a little bit overhead with execution (because of the marshalling), but I haven't jumped into performance optimizations yet (or possibly providing two execution models).
 
 If you'd like to give it a try, download [32-bit][1] or [64-bit][2] build and enjoy. The package contains `plugins.conf` to help you register the plugin and also `Example.dll` (with source) and corresponding SQL script showing all supported datatypes on both sides.
 
@@ -187,7 +187,7 @@ external name 'Example!Example.Procedures.CurrentUtcTimestamp'
 engine FbNetExternalEngine;
 ```
 
-Right now I want to gather some feedback from you, work on some easy performance gains and start on functions. All this, at least now, will be _v1_ in my mind.
+Right now I want to gather some feedback from you, work on some easy performance gains and start on functions. All this, at least now, will be *v1* in my mind.
 
 [1]: {{ include "post_ilink" page "FbNetExternalEngine32.7z" }}
 [2]: {{ include "post_ilink" page "FbNetExternalEngine64.7z" }}

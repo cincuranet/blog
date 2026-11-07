@@ -18,15 +18,15 @@ Registrace začíná v 10.30 a vstup je zcela zdarma, podmínkou je pouze [regis
 
 * 10:30 - 11:00: Registrace
 * 11:00 - 11:05: Zahájení a úvodní slova
-* 11:05 - 11:35: Co nového okolo Firebirdu? [_Jiří Činčura, nezávislý IT specialista_]
-* 11:40 - 12:25: Optimalizace počítání řádků [_Ivan Přenosil, nezávislý IT specialista_]
-* 12:30 - 13:15: Základy instalace a optimalizace [_Slavomír Skopalik, Elekt Labs_]
+* 11:05 - 11:35: Co nového okolo Firebirdu? [*Jiří Činčura, nezávislý IT specialista*]
+* 11:40 - 12:25: Optimalizace počítání řádků [*Ivan Přenosil, nezávislý IT specialista*]
+* 12:30 - 13:15: Základy instalace a optimalizace [*Slavomír Skopalik, Elekt Labs*]
 * 13:15 - 13:30: Přestávka
-* 13:30 - 14:15: .NET Framework a Firebird (Firebird ADO.NET Data Provider) [_Jiří Činčura, nezávislý IT specialista_]
-* 14:20 - 15:00: Využití optimalizátoru v praxi [_Pavel Císař, IBPhoenix_]
+* 13:30 - 14:15: .NET Framework a Firebird (Firebird ADO.NET Data Provider) [*Jiří Činčura, nezávislý IT specialista*]
+* 14:20 - 15:00: Využití optimalizátoru v praxi [*Pavel Císař, IBPhoenix*]
 * 15:00 - 15:15: Přestávka
-* 15:15 - 15:40: Jak realizovat prostorová data nad Firebirdem? [_Lukáš Brůha, KAGK_]
-* 15:45 - 16:15: Slon nebo pták ohnivák? [_Zdeněk Kotala, Sun Microsystems_]
+* 15:15 - 15:40: Jak realizovat prostorová data nad Firebirdem? [*Lukáš Brůha, KAGK*]
+* 15:45 - 16:15: Slon nebo pták ohnivák? [*Zdeněk Kotala, Sun Microsystems*]
 * 16:15 - 16:20: Zakončení
 
 [1]: http://www.dbsvet.cz/sablony/fdd2007reg/index.html

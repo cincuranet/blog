@@ -18,7 +18,7 @@ Because I was rewriting the code from around .NET 2.0 era to something up to dat
 
 But it didn't. Something was not behaving correctly as I was testing it. Being in this business for a long time, I knew my code is obviously correct and there's a bug someplace else. Oh wait. No. The other way around.
 
-I started digging into [`corefx` sources][5] and found [this commit][6]. As you can see it's using the "old" `BeginXxx`/`EndXxx` (aka _APM_) methods and wrapping it into tasks (aka _TAP_). That's fine. But the `CancellationToken` there is not used inside the call. Looks weird. But there's a simple explanantion, as I was reminded by [Stephen Toub][7]. The `NetworkStream` uses the underlying `Socket` and the cancellation is not supported there (yet).
+I started digging into [`corefx` sources][5] and found [this commit][6]. As you can see it's using the "old" `BeginXxx`/`EndXxx` (aka *APM*) methods and wrapping it into tasks (aka *TAP*). That's fine. But the `CancellationToken` there is not used inside the call. Looks weird. But there's a simple explanantion, as I was reminded by [Stephen Toub][7]. The `NetworkStream` uses the underlying `Socket` and the cancellation is not supported there (yet).
 
 Here's a small code that shows the behavior.
 
@@ -75,7 +75,7 @@ class Program
 }
 ```
 
-The `ClientAsync` method never reaches the _Cancelled_ (or _Done_).
+The `ClientAsync` method never reaches the *Cancelled* (or *Done*).
 
 All right. Time to find another solution. Because that's what developers do, right?
 

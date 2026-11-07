@@ -24,7 +24,7 @@ static async Task Main(string[] args)
 }
 ```
 
-On the `SomeFunctionAsync` call you'll get a `CS4014` warning saying `Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.`. That's mostly helpful warning, but sometimes you _really_ want to do fire-and-forget (and you know what you're doing). Although there's multiple way to get that warning solved, one simple is assigning to a discard (Another approach can be found [here][2] with the `NoWarning` method.).
+On the `SomeFunctionAsync` call you'll get a `CS4014` warning saying `Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.`. That's mostly helpful warning, but sometimes you *really* want to do fire-and-forget (and you know what you're doing). Although there's multiple way to get that warning solved, one simple is assigning to a discard (Another approach can be found [here][2] with the `NoWarning` method.).
 
 ```csharp
 static async Task Main(string[] args)

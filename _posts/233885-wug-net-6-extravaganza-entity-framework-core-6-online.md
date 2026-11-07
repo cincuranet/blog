@@ -5,7 +5,7 @@ date: 2022-01-27T17:00:00Z
 tags:
   - Presentations & Speaking
 ---
-Moje další přednáška ze série _.NET 6 extravaganza_, tentokrát o Entity Framework Core 6. [27.1.2022 od 17:00][1].
+Moje další přednáška ze série *.NET 6 extravaganza*, tentokrát o Entity Framework Core 6. [27.1.2022 od 17:00][1].
 
 <!-- excerpt -->
 

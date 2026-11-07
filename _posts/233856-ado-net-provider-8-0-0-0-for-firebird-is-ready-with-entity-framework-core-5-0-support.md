@@ -26,7 +26,7 @@ I recommend using the `XxxAsync` methods whenever you care about performance, es
 
 Entity Framework Core 5.0 support should be pretty self-explanatory.
 
-The major version is also expected to have some breaking changes and version 8.0 is no exception. Possible breaking changes are marked _#breaking_ in the tracker.  
+The major version is also expected to have some breaking changes and version 8.0 is no exception. Possible breaking changes are marked *#breaking* in the tracker.  
 
 Overview of all the changes can be found in [tracker][5].
 

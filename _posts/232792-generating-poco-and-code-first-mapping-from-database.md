@@ -10,7 +10,7 @@ I like POCOs and Code First. Simply because that way I have everything under my 
 
 Apart from the option to write the tool to do it yourself, there was an "hack" to create a EDMX model and generate classes (easy) and mapping (little harder) from it. In fact there are some templates ready, so you don't have to start from scratch. But still, too much "problems".
 
-Luckily now there's a tool for that, that does all in one step. [EF Power Tools (currently Beta 2)][1]. When you right-click on project, you'll get _Entity Framework_ menu with _Reverse Engineer Code First_.
+Luckily now there's a tool for that, that does all in one step. [EF Power Tools (currently Beta 2)][1]. When you right-click on project, you'll get *Entity Framework* menu with *Reverse Engineer Code First*.
 
 ![image]({{ include "post_ilink" page "ef_power_tools_b2.png" }})
 
@@ -18,7 +18,7 @@ This will query the database similar as when using EDMX and spit out entity clas
 
 I tried it even with Firebird and worked as expected, probably any EF enabled provider will work.
 
-If you'd like to read more about features, check the [blog post on ADO.NET team blog][2]. Other are interesting too (like _View Entity Data Model (Read-only)_).
+If you'd like to read more about features, check the [blog post on ADO.NET team blog][2]. Other are interesting too (like *View Entity Data Model (Read-only)*).
 
 [1]: http://visualstudiogallery.msdn.microsoft.com/72a60b14-1581-4b9b-89f2-846072eff19d
 [2]: http://blogs.msdn.com/b/adonet/archive/2012/04/09/ef-power-tools-beta-2-available.aspx

@@ -107,7 +107,7 @@ using (var db = new MyContext())
 }
 ```
 
-The expression is not difficult to create. I first create the `Expression.Equal` part, which corresponds to `Person.DepartmentId == Closure.Id` roughly. Then I take this piece and glue it together 2098 times with `Expression.OrElse`. The `Closure` class is really a [_closure_][1] I had to manually create for integer variable I'm using in the equality expression.
+The expression is not difficult to create. I first create the `Expression.Equal` part, which corresponds to `Person.DepartmentId == Closure.Id` roughly. Then I take this piece and glue it together 2098 times with `Expression.OrElse`. The `Closure` class is really a [*closure*][1] I had to manually create for integer variable I'm using in the equality expression.
 
 ```csharp
 class Closure

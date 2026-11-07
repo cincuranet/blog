@@ -50,7 +50,7 @@ object
 object
 ```
 
-After searching for a while I found [Eric Lippert's post about it][1]. Basically there's something we can call _magic zero_ and this can be implicitly converted to any enum (even empty one or one without `0` value). That's the root cause of this behavior. Of course, when C# compiler sees this value in method call, it selects the more specific overload (the one with `TestEnum`) over the one with `object`.
+After searching for a while I found [Eric Lippert's post about it][1]. Basically there's something we can call *magic zero* and this can be implicitly converted to any enum (even empty one or one without `0` value). That's the root cause of this behavior. Of course, when C# compiler sees this value in method call, it selects the more specific overload (the one with `TestEnum`) over the one with `object`.
 
 Learning new stuff every day...
 

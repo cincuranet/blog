@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-[_FbNetExternalEngine_][1] version 4.1 is released. Although it might look odd having another release so close after the previous, it's not a bug-fix release. In fact when I released 4.0 I knew 4.1 is probably going to happen soon after. The reason is, I had some performance optimizations prepared, but didn't had enough numbers to safely put into production. Now I have.
+[*FbNetExternalEngine*][1] version 4.1 is released. Although it might look odd having another release so close after the previous, it's not a bug-fix release. In fact when I released 4.0 I knew 4.1 is probably going to happen soon after. The reason is, I had some performance optimizations prepared, but didn't had enough numbers to safely put into production. Now I have.
 
 <!-- excerpt -->
 

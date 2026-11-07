@@ -7,7 +7,7 @@ tags:
   - C++/CLI
   - .NET
 ---
-I was profiling _FbNetExternalEngine_ to squeeze a bit more performance from the code and as I was going through stack traces, hot paths and allocations, I realized (again), how geeky I am. I was looking into a stack trace and found it fascinating.
+I was profiling *FbNetExternalEngine* to squeeze a bit more performance from the code and as I was going through stack traces, hot paths and allocations, I realized (again), how geeky I am. I was looking into a stack trace and found it fascinating.
 
 <!-- excerpt -->
 
@@ -80,7 +80,7 @@ kernel32.dll!00007ff9aaa52774()	Unknown
 ntdll.dll!00007ff9ab6a0d51()	Unknown
 ```
 
-It is a console application using [NUnit Lite][1] to execute tests. It uses [Firebird Embedded][2] where _FbNetExternalEngine_ plugin is loaded and executing custom stored procedure written in C#.
+It is a console application using [NUnit Lite][1] to execute tests. It uses [Firebird Embedded][2] where *FbNetExternalEngine* plugin is loaded and executing custom stored procedure written in C#.
 
 Looking deeper under the covers is where I started smiling inside (and maybe even outside). So there's a managed console application with NUnit (I'm ignoring the loading of .NET/CLR). That's in turn running code that uses [FirebirdClient][3] and loads Firebird Embedded. It's done by generating dynamic assembly in memory where all the `DllImport` attributes are. Once the code jumps out of this code, it goes into native code in `fbembed.dll`/`fbclient.dll`. That in turn goes into `engine12.dll` (in case of Firebird 3), which, as you can guess, is the main Firebird engine. Engine loads my plugin library (`FbNetExternalEnginePlugin.dll`), which is still native code (partially, it's [C++/CLI][4]). My plugin then goes to managed code via `FbNextExternalEngineManaged.dll`. Yep, it's back in managed code. Finally, the actual procedure implementation is in `Example.dll` (managed) where the stack trace originates. Or in short: NUnit (managed) → FirebirdClient (managed) → generated assembly (managed) → Firebird Embedded (native) → `fbclient.dll` (native) → `engine12.dll` (native) → `FbNetExternalEnginePlugin.dll` (native) → `FbNetExternalEngineManaged.dll` (managed) → `Example.dll` (managed).
 

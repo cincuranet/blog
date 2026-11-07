@@ -9,7 +9,7 @@ tags:
 ---
 It's a good practice to include parameter name when throwing [ArgumentException][1] (or similar). But I hate typing the parameter name as string. It's A) boring and B) dumb, because when you refactor the parameter name you have to manually also change this string.
 
-But why not let the language constructs help us? 8-) If we capture the parameter as _expression_ we'll be able to use static typing and extract the name from the expression node.
+But why not let the language constructs help us? 8-) If we capture the parameter as *expression* we'll be able to use static typing and extract the name from the expression node.
 
 Shouldn't be that hard, I thought one afternoon, and here's the result (it really isn't).
 

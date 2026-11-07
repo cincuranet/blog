@@ -13,7 +13,7 @@ I was watching a [recording from a WUG][1] where my friend [Robert Haken][2] exp
 
 #### Background
 
-What is a stack? Stack is a piece of memory, where program stores some data (some other data might be on the heap). What probably most developers saw is that the stack contains _stack frames_ or _activation records_. These are put on the stack when method is called and removed when method returns (in general). On the lowest level it's the magic happening in `SP` (and `BP`) register(s) (on x86 architecture). What's also on the stack is arguments and local variables (again, in general, I don't want to go here into too much details). Hence for me to induce stack overflow ([`StackOverflowException`][4] in .NET) I need to either call a lot of methods or have/pass a lot of variables/arguments.
+What is a stack? Stack is a piece of memory, where program stores some data (some other data might be on the heap). What probably most developers saw is that the stack contains *stack frames* or *activation records*. These are put on the stack when method is called and removed when method returns (in general). On the lowest level it's the magic happening in `SP` (and `BP`) register(s) (on x86 architecture). What's also on the stack is arguments and local variables (again, in general, I don't want to go here into too much details). Hence for me to induce stack overflow ([`StackOverflowException`][4] in .NET) I need to either call a lot of methods or have/pass a lot of variables/arguments.
 
 The stack in .NET is by default 1MB in size (256KB in 32b ASP.NET and 512KB in 64b ASP.NET). It can be changed in PE header or i.e. in the constructor of the `Thread` class.
 
@@ -23,7 +23,7 @@ I wasn't sure I'll be able to do it, because I might hit some compiler or [JIT][
 
 Because I can't use recursion (that's what Robert saw already and I think he's not alone ;)), I'm left with a lot of arguments or local variables. Local variables might be, because these will be unused in my code, optimized away by the compiler, I decided to go with arguments.
 
-I started with a simple `struct` and generating a lot of fields. Because generating method with a lot of arguments seemed lame. The `struct` is a _value type_ thus it will be on the stack and I can use it multiple times if I need more space to be taken. The T4 file comes handy here. Being cocky I started with something like 100 000 fields. What could possibly go wrong...
+I started with a simple `struct` and generating a lot of fields. Because generating method with a lot of arguments seemed lame. The `struct` is a *value type* thus it will be on the stack and I can use it multiple times if I need more space to be taken. The T4 file comes handy here. Being cocky I started with something like 100 000 fields. What could possibly go wrong...
 
 ```csharp
 static void Test(BigAssStruct param = default(BigAssStruct))
@@ -95,7 +95,7 @@ And it executed just fine. I like when something works as expected.
 
 You can cause stack overflow just by "regular" code in C#, plenty of options for that without hitting any limits (like for example [here][7]). But the code is very likely not going to be written completely by hand, because any sane developer would spot the number of fields (either in the `struct` or in general) is going nuts and it should probably be refactored.
 
-Note: Be sure to be in _Release_ configuration (all optimizations turned on). Else you might see `System.InvalidProgramException: JIT Compiler encountered an internal limitation.`.
+Note: Be sure to be in *Release* configuration (all optimizations turned on). Else you might see `System.InvalidProgramException: JIT Compiler encountered an internal limitation.`.
 
 > [Part 2 of the story.][8]
 

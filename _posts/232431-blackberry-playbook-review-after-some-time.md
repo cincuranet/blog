@@ -31,7 +31,7 @@ The overall felling is very positive. And I still use [Windows Mobile][6] based 
 
 If you have any questions about BlackBerry PlayBook, feel free to use comments.
 
-_This post, except adding links, was completely written on PlayBook._
+*This post, except adding links, was completely written on PlayBook.*
 
 [1]: {{ include "post_link" 232398 }}
 [2]: http://us.blackberry.com/playbook-tablet/

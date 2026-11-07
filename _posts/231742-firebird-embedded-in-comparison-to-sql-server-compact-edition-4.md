@@ -15,11 +15,11 @@ Scott Guthrie recently posted article about [New Embedded Database Support with 
 
 Firebird Embedded, shortly, is Firebird database server in one DLL. No need to install etc., just load this DLL and use it. To be precise, there are some other DLLs, i.e. to support national charsets, but it's still in under 10MB all. The database itself is built from same sources as "full" server and it's not limited in any way.
 
-_Works with Existing Data APIs_ - as I said, Firebird Embedded is based on same codebase as "full" server, thus the SQL and API is same. And not only this, the ADO.NET provider for Firebird works with it and you're programming using same thinking.
+*Works with Existing Data APIs* - as I said, Firebird Embedded is based on same codebase as "full" server, thus the SQL and API is same. And not only this, the ADO.NET provider for Firebird works with it and you're programming using same thinking.
 
-_No Database Installation Required_ and _Database Files are Stored on Disk_ - databases created by Firebird Embedded are stored wherever you want, with any extension. Firebird itself doesn't have any `master` database, thus even the "full" server works with any (valid database) file.
+*No Database Installation Required* and *Database Files are Stored on Disk* - databases created by Firebird Embedded are stored wherever you want, with any extension. Firebird itself doesn't have any `master` database, thus even the "full" server works with any (valid database) file.
 
-_Shared Web Hosting Scenarios Are Now Supported with SQL CE 4_ - sure you don't need to install anything with Firebird Embedded, that's why it's called Embedded. And not only this, from version 2.5, you can open database from different processes, i.e. IIS worker process and Apache workers or some console application doing something in background.
+*Shared Web Hosting Scenarios Are Now Supported with SQL CE 4* - sure you don't need to install anything with Firebird Embedded, that's why it's called Embedded. And not only this, from version 2.5, you can open database from different processes, i.e. IIS worker process and Apache workers or some console application doing something in background.
 
 _ Visual Studio 2010 and Visual Web Developer 2010 Express Support_ - as the tool set for Firebird Embedded is exactly same as for "full" Firebird, you can use DDEX (aka Server Explorer support), Entity Framework (LINQ), ...
 

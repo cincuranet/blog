@@ -49,6 +49,6 @@ static void DoGotcha(IGotcha g)
 }
 ```
 
-If you answered _2x Gotcha_, you're right. What you might expect to get is _Gotcha and MoreGotcha_. But why is that not the correct answer? Because the `Gotcha.DoMoreGotcha` is not public (I intentionally made it implicit private in my example, but i.e., (explicit) internal would do the same and would be probably harder to spot.), it's not implementation of `IGotcha.DoMoreGotcha`. Makes absolute sense, right?
+If you answered *2x Gotcha*, you're right. What you might expect to get is *Gotcha and MoreGotcha*. But why is that not the correct answer? Because the `Gotcha.DoMoreGotcha` is not public (I intentionally made it implicit private in my example, but i.e., (explicit) internal would do the same and would be probably harder to spot.), it's not implementation of `IGotcha.DoMoreGotcha`. Makes absolute sense, right?
 
 Hope this realization saves you minutes (or hours) next time you have weird confusing behavior like this.

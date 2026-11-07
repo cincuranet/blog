@@ -69,6 +69,6 @@ No doubts, the code is same. :)
 
 So what to use? I think it's question of personal preferences (and just to be consistent in whole code). OK, maybe the `new ...` makes little bit more sense, because the IL code contains constructor. But...
 
-_What's your preference?_
+*What's your preference?*
 
 [1]: {{ include "post_link" 8310 }}

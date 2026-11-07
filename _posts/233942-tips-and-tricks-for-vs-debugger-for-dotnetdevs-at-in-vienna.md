@@ -5,7 +5,7 @@ date: 2024-06-24T09:13:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be speaking this Thursday about _Tips and tricks for VS debugger_ in Vienna for DotNetDevs.at. You can register [here][1].
+I'll be speaking this Thursday about *Tips and tricks for VS debugger* in Vienna for DotNetDevs.at. You can register [here][1].
 
 <!-- excerpt -->
 

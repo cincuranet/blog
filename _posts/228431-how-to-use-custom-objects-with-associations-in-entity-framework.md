@@ -96,7 +96,7 @@ Yet again, with POCO and persistence ignorance it will much easier. But it isn't
 
 See also: [How to map your custom objects in Entity Framework][2]
 
-_Published on [Databazovy Svet][3]_
+*Published on [Databazovy Svet][3]*
 
 [1]: {{ include "post_link" 228036 }}
 [2]: {{ include "post_link" 228430 }}

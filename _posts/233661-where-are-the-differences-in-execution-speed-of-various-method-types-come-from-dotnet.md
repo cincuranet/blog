@@ -14,7 +14,7 @@ In [previous post][1] I measured execution speed of static and instance methods.
 
 #### Thinking
 
-What's the main difference between static and instance method? Yes. The `this` parameter. And also whether the call is direct or indirect (aka _virtual_). Could these two pieces be the reason for the speed difference?
+What's the main difference between static and instance method? Yes. The `this` parameter. And also whether the call is direct or indirect (aka *virtual*). Could these two pieces be the reason for the speed difference?
 
 Passing the `this` argument is not eating too much of time as one can easily prove comparing times for `Static0` and `Static2` in [previous post][1]. These times are virtually the same (RyuJIT on .NET 64-bit times I consider being an exception rather than a rule). But the `this` argument also needs to be validated that it's not `null`. In case of virtual call, the address of method to be called needs to be found.
 
@@ -33,7 +33,7 @@ And compare this to direct instance method call.
 00007FF86D6204C6  call        00007FF86D6200B0
 ```
 
-Awesome. The `cmp [rcx], ecx` is clearly the validation of `this`. Looking at generated assembly for various method I'm pretty sure both CLR and CoreCLR are using [_fastcall_-like calling convention][2] (in the assembly snippet above [in 64-bit version][3]). In this convention the `RCX` register is first integer argument. In common languages that's where the `this` is. The result of `cmp` is not used, but that's fine. Just trying to dereference the `RCX` in case it's `null`/`0`, will raise [_segfault_][4] and subsequently [`NullReferenceException`][5]. Moving forward to virtual call.
+Awesome. The `cmp [rcx], ecx` is clearly the validation of `this`. Looking at generated assembly for various method I'm pretty sure both CLR and CoreCLR are using [*fastcall*-like calling convention][2] (in the assembly snippet above [in 64-bit version][3]). In this convention the `RCX` register is first integer argument. In common languages that's where the `this` is. The result of `cmp` is not used, but that's fine. Just trying to dereference the `RCX` in case it's `null`/`0`, will raise [*segfault*][4] and subsequently [`NullReferenceException`][5]. Moving forward to virtual call.
 
 ```asm
 00007FF86D6004C4  mov         r11,7FF86D500020h

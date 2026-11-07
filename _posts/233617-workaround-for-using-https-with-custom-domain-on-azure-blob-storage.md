@@ -22,9 +22,9 @@ The [CDN pricing][2] is very similar to [blob storage pricing][1], thus from cos
 
 #### Limitations
 
-The limitation is of course the nature of CDN - it's caching the data in _PoP_ locations. That means if your data is changing often you're pretty much out of luck.
+The limitation is of course the nature of CDN - it's caching the data in *PoP* locations. That means if your data is changing often you're pretty much out of luck.
 
-And similarly, if you're using _Shared Access Signatures_, it's not going to work well either.
+And similarly, if you're using *Shared Access Signatures*, it's not going to work well either.
 
 #### Summary
 

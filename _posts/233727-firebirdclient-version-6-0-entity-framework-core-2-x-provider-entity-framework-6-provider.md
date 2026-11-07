@@ -22,7 +22,7 @@ Yep, it's finally here. The big version, version 6.0, of FirebirdClient and prov
 
 Although only about 20 items were completed in this version, some have quite a big impact. Some sweeping also happened. For example item from 2013 - yes, that's five years - was finally resolved (it took so long because it's a huge breaking change). You can get overview of all changes from [tracker][5].
 
-Because some changes are (can be) breaking, all these items are [marked `#breaking` in tracker][6] for your convenience. You _should_ check your code before updating. To mention few important:
+Because some changes are (can be) breaking, all these items are [marked `#breaking` in tracker][6] for your convenience. You *should* check your code before updating. To mention few important:
 
 * Support for .NET 4.0 was dropped (DNET-774).
 * Only Entity Framework 6 is supported and Entity Framework provider is completely moved to separate assembly, using new namespaces (DNET-732).

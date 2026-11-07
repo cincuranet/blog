@@ -17,4 +17,4 @@ Dostal jsem několik zajímavých komentářů nejen tady, ale také mailem. Př
 
 Nikomu nenutím svůj názor - at si klidně na MySQL jede dál (a stejně to bude nejpoužívanější DB, spojení MySQL+PHP+Apache je neskutečně silné). Není to tak špatná DB, ale jsou lepší. ;)
 
-_Uff, musím se jít na chvíli zalogovat na FB. :)_
+*Uff, musím se jít na chvíli zalogovat na FB. :)*

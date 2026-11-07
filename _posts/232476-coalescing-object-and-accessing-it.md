@@ -33,7 +33,7 @@ And simple usage:
 Something x = a.ObjectCoalesce(y => y.FooBar, "FooBar");
 ```
 
-When it's nested in some calls, it really helped me to make my code shorter. You can also play (I did) with idea of having the _default_ parameter as delegate so it will be evaluated only if needed. In some cases it could make a huge difference (i.e. side-effects).
+When it's nested in some calls, it really helped me to make my code shorter. You can also play (I did) with idea of having the *default* parameter as delegate so it will be evaluated only if needed. In some cases it could make a huge difference (i.e. side-effects).
 
 [1]: http://twitter.com/#!/ShawnWildermuth/status/89422296879603713
 [2]: http://wildermuth.com/

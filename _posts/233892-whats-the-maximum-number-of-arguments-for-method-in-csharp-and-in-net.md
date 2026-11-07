@@ -10,7 +10,7 @@ Silly question, right? Whatever the limit is, it is surely beyond what one shoul
 
 <!-- excerpt -->
 
-Let's start with C# or IL respectively. For C# compiler to call method and pass an argument it needs to generate `ldarg` (or `ldarg.0`, `ldarg.1`, etc.). The [documentation][1] states, that the argument is _unsigned int16_. Thus, it should be impossible to go over this limit. Let's try it.
+Let's start with C# or IL respectively. For C# compiler to call method and pass an argument it needs to generate `ldarg` (or `ldarg.0`, `ldarg.1`, etc.). The [documentation][1] states, that the argument is *unsigned int16*. Thus, it should be impossible to go over this limit. Let's try it.
 
 ```text
 <#

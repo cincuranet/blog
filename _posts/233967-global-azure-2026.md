@@ -5,7 +5,7 @@ date: 2026-04-15T06:51:00Z
 tags:
   - Presentations & Speaking
 ---
-Tento týden v pátek, 17. dubna, se koná [Global Azure 2026][1] v Praze. I já přispěju trochu do mlýna s tématem _Cloud design patterns for better architecture (even without cloud)_.
+Tento týden v pátek, 17. dubna, se koná [Global Azure 2026][1] v Praze. I já přispěju trochu do mlýna s tématem *Cloud design patterns for better architecture (even without cloud)*.
 
 <!-- excerpt -->
 

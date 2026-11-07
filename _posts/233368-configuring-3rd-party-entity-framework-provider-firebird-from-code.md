@@ -13,7 +13,7 @@ When you're using Entity Framework 6 with some 3^rd^ party provider - i.e. [Enti
 
 Unsurprisingly the `app.config` is not the only option where you can do such configuration. You can create a class that inherits from [`DbConfiguration`][3] and do the same there. And not only this, although I'll focus only on task currently in hand.
 
-The classes mentioned above were not random choice. The fact is these two you need to configure (if you provide [`DbConnection`][5] to your [`DbContext`][4]). Thus for, for example, _Firebird_ you can put these two lines into the constructor.
+The classes mentioned above were not random choice. The fact is these two you need to configure (if you provide [`DbConnection`][5] to your [`DbContext`][4]). Thus for, for example, *Firebird* you can put these two lines into the constructor.
 
 ```csharp
 SetProviderServices(FirebirdSql.Data.EntityFramework6.FbProviderServices.ProviderInvariantName, FirebirdSql.Data.EntityFramework6.FbProviderServices.Instance);

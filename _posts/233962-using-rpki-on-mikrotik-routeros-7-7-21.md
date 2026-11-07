@@ -34,13 +34,13 @@ Note: There are public instances available - for example [RIPE is running Routin
 
 #### Step 2
 
-In _Routing_ > _RPKI_ (`/routing/rpki`) I added my Routinator instance. You need to provide a group name (opaque identifier), IP address and port (default is 3323, protocol  is called RPKI-to-Router (RTR)). I left the rest default.
+In *Routing* > *RPKI* (`/routing/rpki`) I added my Routinator instance. You need to provide a group name (opaque identifier), IP address and port (default is 3323, protocol  is called RPKI-to-Router (RTR)). I left the rest default.
 
 ```text
 /routing rpki add address=<IP address> disabled=no group=<name> port=<port>
 ```
 
-At this point if you switch to _Sessions_ (`session`) you should see active session there.
+At this point if you switch to *Sessions* (`session`) you should see active session there.
 
 
 #### Step 3

@@ -42,9 +42,9 @@ static async Task<int> Test()
 }
 ```
 
-See the change? The `async` keyword. Now _you_ actually changed the code and you are aware of behavior change (or you should be).
+See the change? The `async` keyword. Now *you* actually changed the code and you are aware of behavior change (or you should be).
 
-So what the `async` actually did? It just tells the compiler: "If you see `await` consider it keyword.". And because _you_ did the change, you're changing the code and so the forward compatibility is not broken.
+So what the `async` actually did? It just tells the compiler: "If you see `await` consider it keyword.". And because *you* did the change, you're changing the code and so the forward compatibility is not broken.
 
 No magic. Sorry.
 

@@ -6,13 +6,13 @@ tags:
   - C#
   - .NET
 ---
-As I said in [previous post][1] I had to drop [_AppDomains_][2] from my solution to allow replacing assembly while the _FbNetExternalEngine_ is running. Calls across _AppDomains_ are simply too slow (read: I can't make it fast enough. ;-)) for this kind of project. Why I even needed _AppDomains_? The specs are simple: Allow assembly replacing (rewrite) while it's loaded in [Firebird][3] via my _FbNetExternalEngine_. Can it be solved without _AppDomains_?
+As I said in [previous post][1] I had to drop [*AppDomains*][2] from my solution to allow replacing assembly while the *FbNetExternalEngine* is running. Calls across *AppDomains* are simply too slow (read: I can't make it fast enough. ;-)) for this kind of project. Why I even needed *AppDomains*? The specs are simple: Allow assembly replacing (rewrite) while it's loaded in [Firebird][3] via my *FbNetExternalEngine*. Can it be solved without *AppDomains*?
 
 <!-- excerpt -->
 
 Well, hardly. The only way to unload assembly is to unload the application domain. And the only way to unload application domain is to create new one in the first place (the first - default - application domain cannot be unloaded). If you're wondering why you can't just unload assembly, given you can load it, I recommend [this classic article][4].
 
-So I need application domain, right? But these are slow. Isn't this the deal breaker? Not in my case. Some outside the box thinking is required, though. What I really need is fast execution and option to load new assembly. See that? I _really_ don't need unload the assembly. I just need to work with latest version. And of course I need to load the assembly in such a way to not lock the file on the disk. Let's tackle one by one.
+So I need application domain, right? But these are slow. Isn't this the deal breaker? Not in my case. Some outside the box thinking is required, though. What I really need is fast execution and option to load new assembly. See that? I *really* don't need unload the assembly. I just need to work with latest version. And of course I need to load the assembly in such a way to not lock the file on the disk. Let's tackle one by one.
 
 #### Not locking the file on the disk
 
@@ -26,7 +26,7 @@ Once the assembly is loaded only one final step is remaining. Because I use refl
 
 #### Summary
 
-When I first saw the numbers for cross _AppDomains_ calls I was scared. I had no idea how I would speed that up... Luckily my brain had a good day and I came with different solution which is fast enough (for today) and does feel reasonably solid (although I'm sure some corner cases will pop up, what you can do, #developerslife ;-)).
+When I first saw the numbers for cross *AppDomains* calls I was scared. I had no idea how I would speed that up... Luckily my brain had a good day and I came with different solution which is fast enough (for today) and does feel reasonably solid (although I'm sure some corner cases will pop up, what you can do, #developerslife ;-)).
 
 Although it's not the same as pure unloading and loading again, I think it's a perfectly viable solution for a lot of cases where the "assembly refresh" is required. Hope it helps somebody fishing in similar waters.
 

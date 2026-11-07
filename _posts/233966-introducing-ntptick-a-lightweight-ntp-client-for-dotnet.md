@@ -11,13 +11,13 @@ Over the last couple of years, I've spent a lot of time studying, experimenting,
 
 <!-- excerpt -->
 
-As part of this journey - alongside running my public Stratum 1 NTP/NTS server at [time.cincura.net][1] - I decided to build my own NTP client implementation in C# and .NET, called [_NtpTick_][2].
+As part of this journey - alongside running my public Stratum 1 NTP/NTS server at [time.cincura.net][1] - I decided to build my own NTP client implementation in C# and .NET, called [*NtpTick*][2].
 
-The primary goal of _NtpTick_ is to better understand the [NTP protocol][3] from the inside out. A secondary goal was to explore more some of the lower-level features available in modern C#, such as _inline arrays_, _spans_ (obviously), and `System.Buffers.Binary`. Along the way, I focused on keeping the library simple, efficient, and dependency-free. The result is a lightweight NTP client with a clean and intuitive API, released under MIT license. It allows you to query NTP servers easily, while still giving you access to the raw NTP packet data if you want to dig deeper.
+The primary goal of *NtpTick* is to better understand the [NTP protocol][3] from the inside out. A secondary goal was to explore more some of the lower-level features available in modern C#, such as *inline arrays*, *spans* (obviously), and `System.Buffers.Binary`. Along the way, I focused on keeping the library simple, efficient, and dependency-free. The result is a lightweight NTP client with a clean and intuitive API, released under MIT license. It allows you to query NTP servers easily, while still giving you access to the raw NTP packet data if you want to dig deeper.
 
 I'm happy to say that version 1.0 is available today [on NuGet][4]. While this feels like a solid first milestone, there's more I'd like to explore - most notably adding support for NTS (Network Time Security) in the future.
 
-For now, _NtpTick_ is very much a product of curiosity and learning. We'll see where it goes next - but if this sounds interesting to you, give _NtpTick_ a try!
+For now, *NtpTick* is very much a product of curiosity and learning. We'll see where it goes next - but if this sounds interesting to you, give *NtpTick* a try!
 
 [1]: https://time.cincura.net
 [2]: https://github.com/cincuranet/NtpTick/

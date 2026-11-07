@@ -5,7 +5,7 @@ date: 2025-11-07T09:58:00Z
 tags:
   - Presentations & Speaking
 ---
-In about two weeks a [.NET Developer Conference][1] is going to happen in Köln. I'll have one session _Autoincrement (identity) is not the only option for primary keys_.
+In about two weeks a [.NET Developer Conference][1] is going to happen in Köln. I'll have one session *Autoincrement (identity) is not the only option for primary keys*.
 
 <!-- excerpt -->
 

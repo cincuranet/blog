@@ -9,11 +9,11 @@ After a lot of live and pre-recorded conference talks, I decided to try also liv
 
 <!-- excerpt -->
 
-In this livestream I decided to, kind of, showcase what you can do with [_FbNetExternalEngine_][1]. A quick and easy installation, simple function and a little procedure. Everything in command line and simple editor, no fancy tools. 
+In this livestream I decided to, kind of, showcase what you can do with [*FbNetExternalEngine*][1]. A quick and easy installation, simple function and a little procedure. Everything in command line and simple editor, no fancy tools. 
 
 {{ include "embed_youtube" "pTxEgI5070w" }}
 
-And that's the livestream. Like and [subscribe][2] (I am doing it right, right?). If you have some topic, you'd like me to cover, not necessarily _FbNetExternalEngine_ related, let me know below in comments and I might do a livestream about it.
+And that's the livestream. Like and [subscribe][2] (I am doing it right, right?). If you have some topic, you'd like me to cover, not necessarily *FbNetExternalEngine* related, let me know below in comments and I might do a livestream about it.
 
 [1]: https://www.fbnetexternalengine.com
 [2]: https://www.youtube.com/channel/UCXarBhaKyt19I_Rel4oHsWQ 

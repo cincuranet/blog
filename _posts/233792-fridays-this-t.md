@@ -11,7 +11,7 @@ Last week on Friday I was working on some code, I don't even remember what it wa
 
 I wrote it in few minutes, just for fun. I don't claim it's correct or useful.
 
-Oh, and yes. The `Τhis` property is (ab)using Unicode because it is using `U+03A4` for _T_.
+Oh, and yes. The `Τhis` property is (ab)using Unicode because it is using `U+03A4` for *T*.
 
 ```csharp
 public class This<T> where T : class
@@ -32,4 +32,4 @@ public class This<T> where T : class
 }
 ```
 
-One interesting thing from this exercise - I realized I can use _expression body_ for constructor.
+One interesting thing from this exercise - I realized I can use *expression body* for constructor.

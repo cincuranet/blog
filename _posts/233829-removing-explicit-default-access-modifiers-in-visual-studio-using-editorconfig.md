@@ -7,7 +7,7 @@ tags:
   - .NET
   - Visual Studio
 ---
-Almost five years ago I wrote post [_Removing explicit default access modifiers (Roslyn analyzer and codefix)_][1] and it was a great exercise and I still prefer to have code without all the `private`, etc. noise. But also nowadays [Visual Studio supports all sorts of code style rules via EditorConfig file][2]. Can I teach Visual Studio to actually suggest removing explicit default access modifiers?
+Almost five years ago I wrote post [*Removing explicit default access modifiers (Roslyn analyzer and codefix)*][1] and it was a great exercise and I still prefer to have code without all the `private`, etc. noise. But also nowadays [Visual Studio supports all sorts of code style rules via EditorConfig file][2]. Can I teach Visual Studio to actually suggest removing explicit default access modifiers?
 
 <!-- excerpt -->
 

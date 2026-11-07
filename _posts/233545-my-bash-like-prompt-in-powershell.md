@@ -45,7 +45,7 @@ function Prompt {
 
 No colors as you can see (not much to choose from in [`ConsoleColor` enum][5]).
 
-That's mostly the visual part. Now the behavior. For a long time I'm using [PSReadLine][3], which is, by the way, in Windows 10 directly. I'm quite happy with defaults (`Cmd` mode). So I'm only tweaking the _bell_ and mapping Ctrl-D to closing the shell. Other shortcuts I'm often using, the Esc and Ctrl-R, have the default functions as I like it already (and I would remap these if not).
+That's mostly the visual part. Now the behavior. For a long time I'm using [PSReadLine][3], which is, by the way, in Windows 10 directly. I'm quite happy with defaults (`Cmd` mode). So I'm only tweaking the *bell* and mapping Ctrl-D to closing the shell. Other shortcuts I'm often using, the Esc and Ctrl-R, have the default functions as I like it already (and I would remap these if not).
 
 ```powershell
 Set-PSReadlineKeyHandler -Chord 'Ctrl+d' -Function DeleteCharOrExit

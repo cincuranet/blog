@@ -10,7 +10,7 @@ As I speculated in my [previous post][2], I eventually decided to try the Wi-Fi 
 
 <!-- excerpt -->
 
-My unit is _Sinclair ASH-09BIF2_ and the first step was connecting the module to home Wi-Fi. My original plan was to use the mobile app to do that and then block the unit from internet access on firewall. But the mobile app wanted me to sign in first, before doing anything and I didn't want to do that. 
+My unit is *Sinclair ASH-09BIF2* and the first step was connecting the module to home Wi-Fi. My original plan was to use the mobile app to do that and then block the unit from internet access on firewall. But the mobile app wanted me to sign in first, before doing anything and I didn't want to do that. 
 
 #### Connect to Wi-Fi
 
@@ -283,9 +283,9 @@ public class SinclairService
 }
 ```
 
-I'm using new feature from C# 9 called records (record/class named `Status`). That allows me to have succinct _data object_ implementation and it feels like a great fit here.
+I'm using new feature from C# 9 called records (record/class named `Status`). That allows me to have succinct *data object* implementation and it feels like a great fit here.
 
-Although I originally had all the messages created using plain string interpolation, it felt too fragile. Thus, I used _Newtonsoft.Json_ and kind of abused anonymous classes to together create the JSONs for sending. But with proper serialization instead of blindly composing strings.
+Although I originally had all the messages created using plain string interpolation, it felt too fragile. Thus, I used *Newtonsoft.Json* and kind of abused anonymous classes to together create the JSONs for sending. But with proper serialization instead of blindly composing strings.
 
 #### Summary
 

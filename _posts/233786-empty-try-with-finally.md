@@ -13,7 +13,7 @@ The `finally` block has a little unknown feature, that frankly isn't even remote
 
 The `finally` block is guaranteed to run completely. In other words, it cannot be interrupted using regular outside code (you can still interrupt it yourself). This is important, because there's a little nasty exception named [`ThreadAbortException`][1]. This can erupt basically anywhere anytime. But for some very reliable pieces of code, like synchronization primitives, this isn't what you want to hear.
 
-Related to this are also [_constrained execution regions_][6] or [`CriticalFinalizerObject`][7]. Moreover, .NET Core doesn't support `Thread.Abort` anymore (and JIT is smart [about it][12]).
+Related to this are also [*constrained execution regions*][6] or [`CriticalFinalizerObject`][7]. Moreover, .NET Core doesn't support `Thread.Abort` anymore (and JIT is smart [about it][12]).
 
 Putting these two together, this is solvable. And it's nicely visible in i.e. CoreCLR or CoreFX. To find these instances I wrote a small tool using Roslyn. It's basically going through all the files and checking for empty `try` block with non-empty `finally` block. Here's the skeleton of the code.
 

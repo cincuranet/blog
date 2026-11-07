@@ -69,9 +69,9 @@ namespace StaticCtorALC
 }
 ```
 
-Because the dependencies are shared, the `Hello! ;)` is printed only once. But if I load the _StaticCtorALC.dll_ manually explicitly into my _Test_ `AssemblyLoadContext` (the commented-out line) I get `Hello! ;)` again twice. 
+Because the dependencies are shared, the `Hello! ;)` is printed only once. But if I load the *StaticCtorALC.dll* manually explicitly into my *Test* `AssemblyLoadContext` (the commented-out line) I get `Hello! ;)` again twice. 
 
-In above case I controlled all the loading. In real world you might not have complete control and complete picture. You can go further and start thinking about what happens when you load the _StaticCtorALC.dll_ later and even putting next `AssemblyLoadContext` into the mix - suddenly the `cctors` calls depend on order of loads into other `AssemblyLoadContext`s. Still deterministic, but one extra call can change the order (and behavior) dramatically. Queue head explosion.
+In above case I controlled all the loading. In real world you might not have complete control and complete picture. You can go further and start thinking about what happens when you load the *StaticCtorALC.dll* later and even putting next `AssemblyLoadContext` into the mix - suddenly the `cctors` calls depend on order of loads into other `AssemblyLoadContext`s. Still deterministic, but one extra call can change the order (and behavior) dramatically. Queue head explosion.
 
 All this reminds me precautions when dealing with multi-threaded behavior or locking. Extremely easy to crumple everything down with almost invisible change too. Let's hope I'll make it through all the ins and outs of `AssemblyLoadContext` in the future.
 

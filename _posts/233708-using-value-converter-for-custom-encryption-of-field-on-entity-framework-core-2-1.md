@@ -13,7 +13,7 @@ In February I wrote [Custom encryption of field with Entity Framework Core][2] p
 
 #### Introduction
 
-The feature that makes all this happen is called [_Value Conversions_][1]. Simply speaking whenever the value is read or written your function is called and can do whatever transformation it wants. The wiring happens in `HasConversion` method in `OnModelCreating`. Alternatively, an instance of `ValueConverter` can be created and the whole logic is encapsulated there. The examples in above linked documentation show the basics.
+The feature that makes all this happen is called [*Value Conversions*][1]. Simply speaking whenever the value is read or written your function is called and can do whatever transformation it wants. The wiring happens in `HasConversion` method in `OnModelCreating`. Alternatively, an instance of `ValueConverter` can be created and the whole logic is encapsulated there. The examples in above linked documentation show the basics.
 
 #### Code
 

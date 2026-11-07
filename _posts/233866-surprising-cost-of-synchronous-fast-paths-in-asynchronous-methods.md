@@ -202,7 +202,7 @@ public async ValueTask<FooBar> Foo()
 }
 ```
 
-Finally, you might be wondering why the `ValueTask` versions are consistently slower than `Task` versions. Shouldn't it be faster, especially in fast-paths? Yes. But not in this simple sequential benchmark. The `Task` is quickly allocated and then collected from _Gen 0_, which is fairly cheap.  Also, the code for `ValueTask` is bigger (_Code Size_ column) with more stuff happening - bigger structure, more copying, runtime checks around `null`, `IValueTaskSource<T>` and even `Task<T>`. But once you put bit more pressure onto GC, for example in highly concurrent scenarios (you can try that with simple `Parallel.For` in _DirectPathWithTask_ and _DirectPathWithValueTask_), the numbers flip in favor of `ValueTask`.
+Finally, you might be wondering why the `ValueTask` versions are consistently slower than `Task` versions. Shouldn't it be faster, especially in fast-paths? Yes. But not in this simple sequential benchmark. The `Task` is quickly allocated and then collected from *Gen 0*, which is fairly cheap.  Also, the code for `ValueTask` is bigger (*Code Size* column) with more stuff happening - bigger structure, more copying, runtime checks around `null`, `IValueTaskSource<T>` and even `Task<T>`. But once you put bit more pressure onto GC, for example in highly concurrent scenarios (you can try that with simple `Parallel.For` in *DirectPathWithTask* and *DirectPathWithValueTask*), the numbers flip in favor of `ValueTask`.
 
 #### Summary
 

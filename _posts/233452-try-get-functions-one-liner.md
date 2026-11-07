@@ -10,7 +10,7 @@ You know these Try-Get methods that return `bool` when the action was succesful 
 
 <!-- excerpt -->
 
-I knew I wanted something on "one line", without all the noise around. Also in case the Try-Get returns `false` I need to have some reasonable default value, preferably configurable. After maybe an hour of some prototyping I came with a solution that's pleasing for _my_ eye and meets my quality ;) standards.
+I knew I wanted something on "one line", without all the noise around. Also in case the Try-Get returns `false` I need to have some reasonable default value, preferably configurable. After maybe an hour of some prototyping I came with a solution that's pleasing for *my* eye and meets my quality ;) standards.
 
 First I needed to somehow capture the Try-Get method, which has `out` parameter. That's not going to work directly with [`Func<T>`][2]. Time for custom delegate. Ahh. Haven't written these for months.
 

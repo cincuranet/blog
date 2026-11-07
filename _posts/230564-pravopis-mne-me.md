@@ -9,4 +9,4 @@ Nejsem žádný purista co se týká jazyka. Sám jej slušně przním anglický
 
 Co je tak těžkého na rozlišení mně a mě? Hlavně správné použití mně. Když napíšu "Mě se to líbí.", je to špatně, špatně, špatně. Má být "Mně se to líbí.".
 
-Když něco píšete, snažte se aspoň trochu nad výsledkem zamyslet. _Tak a doufám, že tu nemám hrubku. ;)_
+Když něco píšete, snažte se aspoň trochu nad výsledkem zamyslet. *Tak a doufám, že tu nemám hrubku. ;)*

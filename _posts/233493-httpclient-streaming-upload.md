@@ -7,7 +7,7 @@ tags:
   - Performance
   - Networking
 ---
-The requirement seemed simple. Get a stream of data and _upload_ it using HTTP to server. The stream might be possibly large so complete buffering is is not an option. Nothing special.
+The requirement seemed simple. Get a stream of data and *upload* it using HTTP to server. The stream might be possibly large so complete buffering is is not an option. Nothing special.
 
 But I was banging my head for last day (actually two times half of the day) solving it. The problem was I had to (and wanted to) use [`HttpClient`][1] because that was what I was using in the rest of the code I have for talking to my API. And `HttpClient` was fighting a little.
 

@@ -19,7 +19,7 @@ Then I went to slightly polish it and make it 100%-ish reliable, else it's just 
 
 If you want to have "nightly" build to test something new you can get it from [here][4]. And if you issue PR you don't need to run all tests (although you should ;)), the machine will do it (and you can eventually fix what's broken).
 
-<small>So why _almost_ full CI stack? Well, first we're not building all the packages with binaries, NuGet packages and installers. Would you like these? And also the tests are running only one type (SC, SS, CS) and version of server. Normally, before a release, I do kind of a matrix. Although it's doable, given how long it takes to execute everything on AppVeyor currently (~20 minutes), I doubt it's worth adding it and having the whole process take couple of hours. Or is it?</small>
+<small>So why *almost* full CI stack? Well, first we're not building all the packages with binaries, NuGet packages and installers. Would you like these? And also the tests are running only one type (SC, SS, CS) and version of server. Normally, before a release, I do kind of a matrix. Although it's doable, given how long it takes to execute everything on AppVeyor currently (~20 minutes), I doubt it's worth adding it and having the whole process take couple of hours. Or is it?</small>
 
 [1]: https://github.com/cincuranet/FirebirdSql.Data.FirebirdClient/pull/27
 [2]: http://www.firebirdsql.org/en/net-provider/

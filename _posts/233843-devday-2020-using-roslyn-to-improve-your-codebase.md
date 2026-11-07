@@ -5,7 +5,7 @@ date: 2020-11-09T07:15:00Z
 tags:
   - Presentations & Speaking
 ---
-I have to say, Belgium has a special place in my heart, so when my session for DevDay.be was accepted, I was happy. I would be happier if the conference would be in-person, but 2020 is what it is. Anyway. I'll be [talking about _Using Roslyn to improve your codebase_][1]. Basically taking advantage of Roslyn's open design where you can use various pieces of the whole compiler platform and create your own tools with the full power of "compiler" i.e. sematic analysis.
+I have to say, Belgium has a special place in my heart, so when my session for DevDay.be was accepted, I was happy. I would be happier if the conference would be in-person, but 2020 is what it is. Anyway. I'll be [talking about *Using Roslyn to improve your codebase*][1]. Basically taking advantage of Roslyn's open design where you can use various pieces of the whole compiler platform and create your own tools with the full power of "compiler" i.e. sematic analysis.
 
 <!-- excerpt -->
 

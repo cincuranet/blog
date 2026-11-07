@@ -9,6 +9,6 @@ I'm charging my phone overnight on the floor next to my bed. Nothing special. So
 
 <!-- excerpt -->
 
-Few weeks back, basically by accident, I found a simple solution. While I was plugging the charger, I placed the phone screen down. And that's the trick. _Place the phone screen down._  That way, when some message comes in (I have sound turned on for extremely limited set of apps - definitely not email or IM.), the screen shines into the carpet, thus it's not visible at all. And I can continue fading into sleep, without being disturbed (or in a temptation to check it).
+Few weeks back, basically by accident, I found a simple solution. While I was plugging the charger, I placed the phone screen down. And that's the trick. *Place the phone screen down.*  That way, when some message comes in (I have sound turned on for extremely limited set of apps - definitely not email or IM.), the screen shines into the carpet, thus it's not visible at all. And I can continue fading into sleep, without being disturbed (or in a temptation to check it).
 
 What a stupidly simple trick to trick (see what I did here ;)) me.

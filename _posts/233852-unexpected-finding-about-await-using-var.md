@@ -6,7 +6,7 @@ tags:
   - Roslyn
   - C#
 ---
-I'm now updating my [_ConfigureAwaitChecker_][1] to handle `await using` and `await foreach` (release soon, if you'd like to ask) and when trying to handle `await using var` I was surprised how the compiler interprets that.
+I'm now updating my [*ConfigureAwaitChecker*][1] to handle `await using` and `await foreach` (release soon, if you'd like to ask) and when trying to handle `await using var` I was surprised how the compiler interprets that.
 
 <!-- excerpt -->
 

@@ -7,6 +7,6 @@ tags:
 ---
 Na konferenci Databazový svět byly vyhlášeny výsledky Databázového produktu roku aspol.
 
-Firebird 2 se umístil na _třetím místě_. Myslím, ze můžeme celému projektu Firebird pogratulovat.
+Firebird 2 se umístil na *třetím místě*. Myslím, ze můžeme celému projektu Firebird pogratulovat.
 
 Pozn.: 1. místo MS SQL, 2. místo Oracle.

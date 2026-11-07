@@ -12,7 +12,7 @@ I don't know why, but last week I decided to check whether the 2 seconds timeout
 
 #### Background
 
-Any object in .NET can have a finalizer. That's the method that has the same name as the object itself prepended by `~`. This method should be used to clean up some unmanaged resources as a last resort (although the [`SafeHandle`][1] and related should be probably used in the first place). Whenever the _garbage collector_ finds this object to be ready to be cleaned up, it puts it into _finalization queue_ and later _finalizer thread_ will go through this queue and call the finalizer for every object there. Same logic applies when application is closing, at least in .NET (more info further), with only one difference. Single finalizer can run at most 2 seconds and total time for all finalizers can't exceed 40 seconds. It's easy to see why. Without any limits the application could stuck there forever.
+Any object in .NET can have a finalizer. That's the method that has the same name as the object itself prepended by `~`. This method should be used to clean up some unmanaged resources as a last resort (although the [`SafeHandle`][1] and related should be probably used in the first place). Whenever the *garbage collector* finds this object to be ready to be cleaned up, it puts it into *finalization queue* and later *finalizer thread* will go through this queue and call the finalizer for every object there. Same logic applies when application is closing, at least in .NET (more info further), with only one difference. Single finalizer can run at most 2 seconds and total time for all finalizers can't exceed 40 seconds. It's easy to see why. Without any limits the application could stuck there forever.
 
 #### Single finalizer
 
@@ -41,7 +41,7 @@ class FinalizeSingle
 }
 ```
 
-This code, in _Release_ build, puts in most cases `19` on the console as a last number. Which confirms the 2 seconds limit is there.
+This code, in *Release* build, puts in most cases `19` on the console as a last number. Which confirms the 2 seconds limit is there.
 
 #### Multiple finalizers
 

@@ -18,6 +18,6 @@ You might argue that email is not dashboard or status report. I agree. But it's 
 
 I'd like to be without some emails on my vacation. No question. I just don't think it's that easy. Email today is more than just a tool for exchanging letters.
 
-Self-discipline is also interesting idea, isn't it? Just don't open the email you don't have to read while you're on vacation. _It's not that urgent._ Something I learned over the years. It might be challenging because you often cannot get the emails out of you eyes completely. But. If it's really urgent they will call you or text you or send you another email (very likely you'll be back from vacation at that time).
+Self-discipline is also interesting idea, isn't it? Just don't open the email you don't have to read while you're on vacation. *It's not that urgent.* Something I learned over the years. It might be challenging because you often cannot get the emails out of you eyes completely. But. If it's really urgent they will call you or text you or send you another email (very likely you'll be back from vacation at that time).
 
 I'd like to hear your solutions to getting rid of email on vacation.

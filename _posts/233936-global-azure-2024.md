@@ -5,7 +5,7 @@ date: 2024-04-18T07:44:00Z
 tags:
   - Presentations & Speaking
 ---
-Zítra, 19. dubna, se koná globalní akce [Global Azure 2024][1]. I já přispěju trochu do mlýna s tématem _Azure Spot instances as your secret weapon_.
+Zítra, 19. dubna, se koná globalní akce [Global Azure 2024][1]. I já přispěju trochu do mlýna s tématem *Azure Spot instances as your secret weapon*.
 
 <!-- excerpt -->
 

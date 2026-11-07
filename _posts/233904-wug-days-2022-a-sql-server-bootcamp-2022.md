@@ -7,7 +7,7 @@ tags:
 ---
 Tento týden se konají dvě akce, kde budete mít možnost poslechnout si několik mých přednášek.
 
-První v pořadí je [SQL Server Bootcamp 2022][1], kde si budete moci poslechnout _Autoincrement (identity) není jediná možnost jak generovat PK_. Následovat bude [WUG Days 2022][2], kde mám _Entity Framework Core 7 - Co nás čeká_, _Co čekat od .NET 7_ a _C# 11 – Co nás čeká_.
+První v pořadí je [SQL Server Bootcamp 2022][1], kde si budete moci poslechnout *Autoincrement (identity) není jediná možnost jak generovat PK*. Následovat bude [WUG Days 2022][2], kde mám *Entity Framework Core 7 - Co nás čeká*, *Co čekat od .NET 7* a *C# 11 – Co nás čeká*.
 
 <!-- excerpt -->
 

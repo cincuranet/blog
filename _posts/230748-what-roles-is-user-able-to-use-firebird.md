@@ -14,7 +14,7 @@ select rdb$relation_name as "Role", rdb$user as "User" from rdb$user_privileges
 where rdb$privilege = 'M' and rdb$user_type = 8 and rdb$object_type = 13;
 ```
 
-The `rdb$privilege = 'M'` is to get all _member of_ privileges, the `rdb$user_type = 8` is about getting records for _users_ and finally `rdb$object_type = 13` filters only for _roles_ records.
+The `rdb$privilege = 'M'` is to get all *member of* privileges, the `rdb$user_type = 8` is about getting records for *users* and finally `rdb$object_type = 13` filters only for *roles* records.
 
 The `rdb$user_privileges` table contains all privileges defined for the database - tables, stored procedures, triggers, roles, ..., but also take into account that current versions of Firebird (<3.0) are storing users (only, not roles) in system wide security database.
 

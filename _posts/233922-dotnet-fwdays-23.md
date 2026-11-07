@@ -5,7 +5,7 @@ date: 2023-06-06T08:12:00Z
 tags:
   - Presentations & Speaking
 ---
-[.NET fwdays'23][1] is happening 17 June and I'll have one session there [_Making boring old WinForms game fun and cool with latest .NET features and cloud_][2].
+[.NET fwdays'23][1] is happening 17 June and I'll have one session there [*Making boring old WinForms game fun and cool with latest .NET features and cloud*][2].
 
 <!-- excerpt -->
 

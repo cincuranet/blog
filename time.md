@@ -154,7 +154,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
     * Extension is 10 m MRC-240 (VF 0.84) → ~41.7 ns.
     * Added 3 ns for active antenna characteristics.
 * PPS is 1 Hz, rising edge, 10000 µs pulse (4 mA), with 0 user delay.
-* The module is in _timing_ mode, with fixed (stationary) position.
+* The module is in *timing* mode, with fixed (stationary) position.
     * The position was determined using Survey-In with < 50 cm accuracy (1 m ≈ 3.3 ns).
 * Chrony handles clock disciplining, NTP and NTS.
 * GPSd handles communication with the module.

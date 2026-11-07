@@ -122,4 +122,4 @@ private string GetSavingPath
 }
 ```
 
-_Note: This is part of my own provider (to understand some 'ID3 renamer' strings) used in my ID3 renamer application (which is now in "to .NET rewriting" phase). :-)_
+*Note: This is part of my own provider (to understand some 'ID3 renamer' strings) used in my ID3 renamer application (which is now in "to .NET rewriting" phase). :-)*

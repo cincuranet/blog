@@ -5,7 +5,7 @@ date: 2021-11-07T20:14:00Z
 tags:
   - Presentations & Speaking
 ---
-Na [letošní SQL Server Bootcamp][1], který se koná online, jsem připravil přednášku na téma _Co nás čeká v Entity Framework Core 6_.  
+Na [letošní SQL Server Bootcamp][1], který se koná online, jsem připravil přednášku na téma *Co nás čeká v Entity Framework Core 6*.  
 
 <!-- excerpt -->
 

@@ -9,9 +9,9 @@ It's again that time of the year when my favorite conference is about to happen.
 
 <!-- excerpt -->
 
-Let's first talk about the workshop. I called it [_Learn Entity Framework Core in 1 day_][1] and really during one heck of a day, I'll show you 90% of Entity Framework Core's features. Crazy amount of model customization, understanding and more. Go check the [detailed description][1] and register. I promise, you'll not regret it. At the end of the day, we all will be happy to sit with a beer and cool our heads.
+Let's first talk about the workshop. I called it [*Learn Entity Framework Core in 1 day*][1] and really during one heck of a day, I'll show you 90% of Entity Framework Core's features. Crazy amount of model customization, understanding and more. Go check the [detailed description][1] and register. I promise, you'll not regret it. At the end of the day, we all will be happy to sit with a beer and cool our heads.
 
-For the main conference I prepared three sessions. First is _Performance with Span<T> for dummies (should I care?)_, other is _How I put .NET into Firebird database engine_ and last is _What's new in Entity Framework Core 6_.
+For the main conference I prepared three sessions. First is *Performance with Span<T> for dummies (should I care?)*, other is *How I put .NET into Firebird database engine* and last is *What's new in Entity Framework Core 6*.
 
 > Span<T>, although not exactly brand new, is still new kind on the block. In this session I'll show you what the Span<T> (and Memory<T>) is, how it works and the concepts behind. All explained using plain simple C# constructs.
 

@@ -10,7 +10,7 @@ tags:
   - Multithreading/Parallelism/Asynchronous/Concurrency
   - Java
 ---
-I was recently talking about first versions of .NET, C# and the world of development technologies of that time. As I briefly touched J# (anybody remembers?) I realized there's one Java feature that was added to C# because of inspiration by Java and I wanted to explore it. It's not much used or even known in C#, but it's still there. And because it's about "threading and synchronization" I couldn't resist and immediately jumped in. It's _synchronized_ methods.
+I was recently talking about first versions of .NET, C# and the world of development technologies of that time. As I briefly touched J# (anybody remembers?) I realized there's one Java feature that was added to C# because of inspiration by Java and I wanted to explore it. It's not much used or even known in C#, but it's still there. And because it's about "threading and synchronization" I couldn't resist and immediately jumped in. It's *synchronized* methods.
 
 <!-- excerpt -->
 

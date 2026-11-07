@@ -13,7 +13,7 @@ Sadly there's nothing in the .NET available right now (my hopes are high for .NE
 
 <!-- excerpt -->
 
-There are some products on the market you can use - like [_ILMerge_][1], [_SmartAssembly_][2] or [_PostSharp_][8]. In fact we used _SmartAssembly_, but lately it was getting more into our way instead of helping us. Thus decision has been made to replace it - and to my pleasure - replace it with something I'll create. :)
+There are some products on the market you can use - like [*ILMerge*][1], [*SmartAssembly*][2] or [*PostSharp*][8]. In fact we used *SmartAssembly*, but lately it was getting more into our way instead of helping us. Thus decision has been made to replace it - and to my pleasure - replace it with something I'll create. :)
 
 The path I chose, because I used it manually couple fo times before, was to use [`AppDomain.AssemblyResolve` event][3]. Handling this event you can load assembly the way you want. In my case from resources. The rest is just a glue. I also wanted to have a tool that will be fully autonomous and independent from the application itself.
 
@@ -69,7 +69,7 @@ I inject the simple `call` instruction at the beginning and that's it.
 
 Because I didn't wanted to generate everything in IL manually I opted for compiling the actual code into my executable and then "just copying it" to the executable I'm processing.
 
-The code is in a class in a shape I'd like to have it in the entry point's class at the end. And it's trying to use as less C# features as possible to make the copying simple. For example _lambdas_ often create _closures_, which are classes in `IL` and that increases the complexity. But because the code is really not long, sticking to basic C# is fine for me.
+The code is in a class in a shape I'd like to have it in the entry point's class at the end. And it's trying to use as less C# features as possible to make the copying simple. For example *lambdas* often create *closures*, which are classes in `IL` and that increases the complexity. But because the code is really not long, sticking to basic C# is fine for me.
 
 ```csharp
 static class InjectMe

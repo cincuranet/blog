@@ -8,7 +8,7 @@ tags:
 ---
 Few days ago I got interesing information that IBM in [AppScan Standard Edition][1] is using [Firebird][2] database and [FirebirdClient][3] as .NET provider. It's a great finding where all is Firebird used.
 
-_Do you have any interesting usage of Firebird and/or FirebirdClient? Let [us][4] (or [me][5]) know._
+*Do you have any interesting usage of Firebird and/or FirebirdClient? Let [us][4] (or [me][5]) know.*
 
 [1]: http://www.ibm.com/software/awdtools/appscan/standard/
 [2]: http://www.firebirdsql.org

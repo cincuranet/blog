@@ -43,7 +43,7 @@ class C
 }
 ```
 
-See how in the first example the method declarations look consistent? The other example is not. Or is it? In these simple example it really does like it's inconsistent. But once you start adding other modifiers like `static`, `async` or simply `protected internal` it's back to inconsistent _look_. Good, back to coding.
+See how in the first example the method declarations look consistent? The other example is not. Or is it? In these simple example it really does like it's inconsistent. But once you start adding other modifiers like `static`, `async` or simply `protected internal` it's back to inconsistent *look*. Good, back to coding.
 
 For the analyzer the biggest challenge was to detect all the possible elements and defaults - you have classes, structs, interfaces, fields and events, properties, methods and constructors, delegates plus some could be nested. Should be it (let me know if not).
 

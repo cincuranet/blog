@@ -108,7 +108,7 @@ static void Main(string[] args)
 }
 ```
 
-The code is pretty simple. It just goes to thru the file and changes what needs to be changed. Mainly CSDL and MSL parts. Changes in designer part are not necessary, but you'll lose positions etc. when you don't do it. _This is kind of this-afternoon-code - maybe I forgot something, maybe the RE is matching too much... Feel free to report problems in comments._
+The code is pretty simple. It just goes to thru the file and changes what needs to be changed. Mainly CSDL and MSL parts. Changes in designer part are not necessary, but you'll lose positions etc. when you don't do it. *This is kind of this-afternoon-code - maybe I forgot something, maybe the RE is matching too much... Feel free to report problems in comments.*
 
 If you want to change also names of properties you can either tweak the code yourself or ask in comments, if I found some time, I'll extend it. And of course, if you have some special naming convention in your company (i.e. every table has `T_` prefix), just change the `transformation` function.
 

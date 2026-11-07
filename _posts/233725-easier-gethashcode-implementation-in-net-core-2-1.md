@@ -24,7 +24,7 @@ class Person
 }
 ```
 
-That's all I have to do! _Proper_ hash code implementation. I don't have to care about `null`s, distribution, uniqueness, speed, ... Of course one should, for solid code, also provide `Equals` override (and maybe also `IEquatable<T>` implementation).
+That's all I have to do! *Proper* hash code implementation. I don't have to care about `null`s, distribution, uniqueness, speed, ... Of course one should, for solid code, also provide `Equals` override (and maybe also `IEquatable<T>` implementation).
 
 Sadly this `struct` is not part of .NET Framework 4.7.2 (or any older) nor it's available on NuGet. Not talking about .NET Standard 2.0 (or 2.1?). But hope is not lost. It might become available [on NuGet as an OOB package][4].
 

@@ -11,7 +11,7 @@ I'm researching some spin locks stuff last few days. That led to checking also `
 
 #### #1
 
-If you look at the _opcode_ for `NOP`, you'll find it's `0x90`. So far so good. But `XCHG EAX, EAX` is `0x90` as well on Intel x86. Interesting! `XCHG EAX, EAX` is doing "nothing", so, I think architects just reused it. Certainly, I'm not the first one to realize this, it's described in the documentation (i.e. [here][1]), but who reads it, right?
+If you look at the *opcode* for `NOP`, you'll find it's `0x90`. So far so good. But `XCHG EAX, EAX` is `0x90` as well on Intel x86. Interesting! `XCHG EAX, EAX` is doing "nothing", so, I think architects just reused it. Certainly, I'm not the first one to realize this, it's described in the documentation (i.e. [here][1]), but who reads it, right?
 
 #### #2
 

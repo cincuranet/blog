@@ -23,7 +23,7 @@ The rest of Kindle properties are still there. Great display, easy to read. Simp
 
 Obbligato question at the end. Would I buy it again? Yes, I would. Do I regret it? No, I don't.
 
-_If you have any question or something to try, feel free to ask in comments. I try to answer to my best._
+*If you have any question or something to try, feel free to ask in comments. I try to answer to my best.*
 
 [1]: http://www.kindle.com
 [2]: {{ include "post_link" 232014 }}

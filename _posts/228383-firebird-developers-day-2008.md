@@ -23,16 +23,16 @@ Po vlastním programu bude následovat neformální setkání přednášejícíc
 
 * 10:00 - 10:30: Registrace
 * 10:30 - 10:35: Zahájení a úvodní slova
-* 10:35 - 11:05: Co nového okolo Firebirdu? [_Jiří Činčura, nezávislý IT specialista_]
-* 11:10 - 11:40: The Crash - krátké pojednání o jednom přechodu z VMware na fyzické železo [_Slavomír Skopalik, Elekt Labs_]
-* 11:45 - 12:35: Firebird a Python [_Pavel Císař, IBPhoenix_]
+* 10:35 - 11:05: Co nového okolo Firebirdu? [*Jiří Činčura, nezávislý IT specialista*]
+* 11:10 - 11:40: The Crash - krátké pojednání o jednom přechodu z VMware na fyzické železo [*Slavomír Skopalik, Elekt Labs*]
+* 11:45 - 12:35: Firebird a Python [*Pavel Císař, IBPhoenix*]
 * 12:35 - 13:00: Přestávka
-* 13:00 - 13:30: 11 let s "Ptákem Ohnivákem" – případová studie nasazení databáze Firebird v ERP systémech firmy ABRA Software [_Martin Shayna, ABRA Software _]
-* 13:35 - 14:25: Entity Framework a FirebirdClient [_Jiří Činčura, nezávislý IT specialista_]
-* 14:30 - 15:00: OLAP - Jak postupovat při návrhu OLAP dotazů tak, aby byly efektivní (krátký úvod do problematiky, úzká místa, sestavení dotazu) [_Pavel Mazáč, Elekt Labs_]
+* 13:00 - 13:30: 11 let s "Ptákem Ohnivákem" – případová studie nasazení databáze Firebird v ERP systémech firmy ABRA Software [*Martin Shayna, ABRA Software*]
+* 13:35 - 14:25: Entity Framework a FirebirdClient [*Jiří Činčura, nezávislý IT specialista*]
+* 14:30 - 15:00: OLAP - Jak postupovat při návrhu OLAP dotazů tak, aby byly efektivní (krátký úvod do problematiky, úzká místa, sestavení dotazu) [*Pavel Mazáč, Elekt Labs*]
 * 15:00 - 15:30: Přestávka
-* 15:30 - 16:20: Zálohování Firebird databází - desetkrát a pokaždé jinak [_Ivan Přenosil, nezávislý IT specialista_]
-* 16:25 - 17:05: PostgreSQL v roce 2008 [_Pavel Stěhule, nezávislý IT specialista_]
+* 15:30 - 16:20: Zálohování Firebird databází - desetkrát a pokaždé jinak [*Ivan Přenosil, nezávislý IT specialista*]
+* 16:25 - 17:05: PostgreSQL v roce 2008 [*Pavel Stěhule, nezávislý IT specialista*]
 * 17:10 - 17:45: Panelová diskuse na téma Firebird a bezpečnost
 * 17:45 - 17:55: Losování cen, zakončení
 

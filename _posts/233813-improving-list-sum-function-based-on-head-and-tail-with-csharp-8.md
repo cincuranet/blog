@@ -6,7 +6,7 @@ tags:
   - C#
   - Functional programming
 ---
-Some time back I wrote about [Head- and Tail-like methods in C# (and F# and Python and Haskell)][1]. For some strange reasons I came across the `Sum` method I wrote there and I thought maybe I can rewrite it with _switch expression_ now available in C# and have a nicer looking code. I mean I'm a big fan of succinct (yet still readable) code. But I had no idea what a journey it will be.
+Some time back I wrote about [Head- and Tail-like methods in C# (and F# and Python and Haskell)][1]. For some strange reasons I came across the `Sum` method I wrote there and I thought maybe I can rewrite it with *switch expression* now available in C# and have a nicer looking code. I mean I'm a big fan of succinct (yet still readable) code. But I had no idea what a journey it will be.
 
 <!-- excerpt -->
 
@@ -26,7 +26,7 @@ int Sum(List<int> list)
 }
 ```
 
-Fairly simple, right? Shouldn't be difficult to rewrite it using the _switch expression_. Err. The `default` clause contains a block and not an expression. Something like this is not going to go through the C# compiler.
+Fairly simple, right? Shouldn't be difficult to rewrite it using the *switch expression*. Err. The `default` clause contains a block and not an expression. Something like this is not going to go through the C# compiler.
 
 ```csharp
 int Sum(List<int> list) => list.Count switch
@@ -75,7 +75,7 @@ int Sum(List<int> list)
 }
 ```
 
-It's time to think outside the box. And then it hit me. I can probably go one step higher and work from there. Because then I can use [_`var` declarations_][2] in the cases.
+It's time to think outside the box. And then it hit me. I can probably go one step higher and work from there. Because then I can use [*`var` declarations*][2] in the cases.
 
 ```csharp
 int Sum(List<int> list) => list switch
@@ -85,7 +85,7 @@ int Sum(List<int> list) => list switch
 };
 ```
 
-Not sure if it's more readable, but it's succinct. _Expression body_, check; _switch expression_ check. The only problem I have is the first clause. It's kind of weird, isn't it? I can probably improve it by not introducing a new variable.
+Not sure if it's more readable, but it's succinct. *Expression body*, check; *switch expression* check. The only problem I have is the first clause. It's kind of weird, isn't it? I can probably improve it by not introducing a new variable.
 
 ```csharp
 int Sum(List<int> list) => list switch
@@ -97,7 +97,7 @@ int Sum(List<int> list) => list switch
 
 That's slightly better. But still, meh.
 
-And then I saw it! The [_property pattern_][3] is going to help me be more declarative.
+And then I saw it! The [*property pattern*][3] is going to help me be more declarative.
 
 ```csharp
 int Sum(List<int> list) => list switch

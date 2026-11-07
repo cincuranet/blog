@@ -9,9 +9,9 @@ During my day and over a week I fire Visual Studio countless times. Well over ha
 
 <!-- excerpt -->
 
-I decided to write an extension for Visual Studio to help me automate these last two steps. Since Visual Studio 2005 I wrote less than five "VSIXes" (Roslyn analyzers excluded), so it was a good experience as well. The extension is called _CloseAndDelete_ and you can [download][1] it from Visual Studio gallery.
+I decided to write an extension for Visual Studio to help me automate these last two steps. Since Visual Studio 2005 I wrote less than five "VSIXes" (Roslyn analyzers excluded), so it was a good experience as well. The extension is called *CloseAndDelete* and you can [download][1] it from Visual Studio gallery.
 
-It's stupidly simple. It adds new _Close and Delete Solution_ item into _File_ menu of Visual Studio. After clicking it, and confirming prompt, the current solution will be closed and the whole solution folder will be deleted. Nothing more, nothing less. The default shortcut is `Alt+4, Alt+4`, similar to `Alt+F4` to quickly close Visual Studio if wanted.
+It's stupidly simple. It adds new *Close and Delete Solution* item into *File* menu of Visual Studio. After clicking it, and confirming prompt, the current solution will be closed and the whole solution folder will be deleted. Nothing more, nothing less. The default shortcut is `Alt+4, Alt+4`, similar to `Alt+F4` to quickly close Visual Studio if wanted.
 
 You can see it in action here (yes, it's an animated gif :)):
 

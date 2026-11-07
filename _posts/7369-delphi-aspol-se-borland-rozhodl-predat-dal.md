@@ -15,6 +15,6 @@ Co se stane s Delphi a vůbec celou partou, nikdo nemůže vědět. Jisté je, �
 
 A InterBase? Ať je Firebirdem totálně převálcován. ;)
 
-_PS: Zajímavé bylo dnes sledovat 300% aktivitu na Borland Blogging Community. :)_
+*PS: Zajímavé bylo dnes sledovat 300% aktivitu na Borland Blogging Community. :)*
 
 EDIT: Dnes je u mě asi do 2 hodin v noci, takže proto říkam dnes i když je už 2 minuty zítra (to zní divně).

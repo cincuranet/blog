@@ -15,7 +15,7 @@ I'll show you the initial idea with some simple speed improvement of PSQL code i
 
 #### Motivation
 
-The whole idea came from the need to do _something like_ full-text fuzzy in [Fast 5][2] software. The basic `LIKE '%<something>%'` was OK-ish (with `UPPER`), but damn slow. It's slow because Firebird cannot use index for this type of match and because we are searching in a lot of fields (to make it simple for clients) `OR`-ing them together. Some real full-text solution with dictionaries and stop words and synonyms and fuzzy search was thrown over the board, because we wanted something easy to maintain. The `LIKE '%<something>%'` is actually OK _for us_, it just needed to be faster.
+The whole idea came from the need to do *something like* full-text fuzzy in [Fast 5][2] software. The basic `LIKE '%<something>%'` was OK-ish (with `UPPER`), but damn slow. It's slow because Firebird cannot use index for this type of match and because we are searching in a lot of fields (to make it simple for clients) `OR`-ing them together. Some real full-text solution with dictionaries and stop words and synonyms and fuzzy search was thrown over the board, because we wanted something easy to maintain. The `LIKE '%<something>%'` is actually OK *for us*, it just needed to be faster.
 
 #### Expectations
 

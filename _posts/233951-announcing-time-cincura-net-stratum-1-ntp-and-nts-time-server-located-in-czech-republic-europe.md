@@ -8,7 +8,7 @@ tags:
   - NTP
   - Homelab
 ---
-Ever since I started building my homelab and started playing with networking I wanted to give something back. Something that's a valuable service. And although I'm self-hosting a bunch of my websites and providing data from my weather stations publicly, it was not _it_. Until I stumbled upon timekeeping and time servers.
+Ever since I started building my homelab and started playing with networking I wanted to give something back. Something that's a valuable service. And although I'm self-hosting a bunch of my websites and providing data from my weather stations publicly, it was not *it*. Until I stumbled upon timekeeping and time servers.
 
 <!-- excerpt -->
 

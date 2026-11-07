@@ -5,7 +5,7 @@ date: 2022-01-20T13:17:00Z
 tags:
   - Presentations & Speaking
 ---
-Moje další přednáška ze série _.NET 6 extravaganza_, tentokrát o .NET 6, BCL a dalších. [20.1.2022 od 17:00][1].
+Moje další přednáška ze série *.NET 6 extravaganza*, tentokrát o .NET 6, BCL a dalších. [20.1.2022 od 17:00][1].
 
 <!-- excerpt -->
 

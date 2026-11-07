@@ -30,7 +30,7 @@ Because of the constructor, I thought, what if there are some methods inherited 
 
 Quick looks into [sources][3] shows there's indeed some methods that could be somehow taking up some spots. There are the well known ones like `ToString`, `GetType`, `GetHashCode` and even the constructor. But there's more: `Equals` (2x), `ReferenceEquals`, `Finalize` (`~Object`), `MemberwiseClone`, `FieldSetter`, `FieldGetter`, `GetFieldInfo`. Looking at the list, it looks like it might be it. Sadly it's only 12 methods. That's not enough.
 
-Maybe something is injected by JIT for internal use? Time for _WinDbg_. Dumping the _method table_ reveals I'm not on the right path. Except for my methods, there's only some of these.
+Maybe something is injected by JIT for internal use? Time for *WinDbg*. Dumping the *method table* reveals I'm not on the right path. Except for my methods, there's only some of these.
 
 ```text
 71cfccf8 71977974 PreJIT System.Object.ToString()
@@ -84,11 +84,11 @@ ChildEBP RetAddr  Caller, Callee
 
 I wouldn't say it helped a much. I have the `clrjit.dll!Compiler::impImportBlockCode`, `clrjit.dll!Compiler::impResolveToken` and `clr!CEEInfo::resolveToken` to look at and around.
 
-Methodical approach out of the window, let's jump around in the memory in _WinDbg_ and hope for the best. Yep, I'm getting desperate.
+Methodical approach out of the window, let's jump around in the memory in *WinDbg* and hope for the best. Yep, I'm getting desperate.
 
 #### Remaining methods idea #4 - solution, finally
 
-As I was jumping around in the memory in _method tables_ and _method descriptors_ I realized something. With the class as big as possible while still being able to load it, the _WinDbg_ says `Slots in VTable: 65525`. Wait a minute.
+As I was jumping around in the memory in *method tables* and *method descriptors* I realized something. With the class as big as possible while still being able to load it, the *WinDbg* says `Slots in VTable: 65525`. Wait a minute.
 
 There are some methods from `System.Object`. Remember?
 

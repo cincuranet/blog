@@ -12,7 +12,7 @@ Although you can disable PDB files generation altogether, it's good idea to have
 
 For such scenario `PathMap` variable is available in `csproj`, where you can specify mapping from original path to new path.
 
-Building some application and opening the PDB file in i.e. _Notepad_, easily shows the paths are there. And these paths will be in exception's stack trace for example. As expected.
+Building some application and opening the PDB file in i.e. *Notepad*, easily shows the paths are there. And these paths will be in exception's stack trace for example. As expected.
 
 Let's modify the `csproj` file by adding these lines (I created the `AppOutputBase` variable for better readability).
 

@@ -6,7 +6,7 @@ tags:
   - IoT
   - Home Automation
 ---
-Last week I had AC installed into my house and the unit has Wi-Fi module as a standard option. That brings dilemma to my inner geekiness. As you might expect from me, I want to control the unit remotely my own way. Would the unit have only infrared remote control I would take some ESP8266 board (_Wemos D1 Mini Pro_ is my favorite) and hack together my own infrared remote with simple API over the Wi-Fi. Because that would be the only way. But now I have two options. Oh my.
+Last week I had AC installed into my house and the unit has Wi-Fi module as a standard option. That brings dilemma to my inner geekiness. As you might expect from me, I want to control the unit remotely my own way. Would the unit have only infrared remote control I would take some ESP8266 board (*Wemos D1 Mini Pro* is my favorite) and hack together my own infrared remote with simple API over the Wi-Fi. Because that would be the only way. But now I have two options. Oh my.
 
 <!-- excerpt -->
 
@@ -14,7 +14,7 @@ You know, I'm a software guy. I know my way around things involving software. He
 
 #### Wi-Fi
 
-After the quick initial research, it _looks like_ my unit is based on (or maybe it's just a simple white label) Gree hardware. Which is nice, because somebody already did the work and the more or less complete protocol/API description/implementation is available [here][1]. I'm wondering why the protocol/API works the way it works (i.e. UDP), but hey, I never programmed API for AC unit.
+After the quick initial research, it *looks like* my unit is based on (or maybe it's just a simple white label) Gree hardware. Which is nice, because somebody already did the work and the more or less complete protocol/API description/implementation is available [here][1]. I'm wondering why the protocol/API works the way it works (i.e. UDP), but hey, I never programmed API for AC unit.
 
 This would be my no-thinking choice would I know everything is going to work as described (maybe my unit has some custom modifications, you never know) and would I know the unit would be fine when I cut it from internet access altogether (because I'm paranoid).
 

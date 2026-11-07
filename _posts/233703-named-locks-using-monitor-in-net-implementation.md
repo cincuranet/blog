@@ -12,7 +12,7 @@ The `Monitor` class in .NET might be the most often used "locking" mechanism in 
 
 #### What is a `Monitor`?
 
-[`Monitor`][1] has these four fundamental features: mutual exclusivity, recursion, thread ownership and spinning. _Mutual exclusivity_ guarantees that code "locked" using `Monitor` is executed always in single thread at any given time. Critical section in other words. _Recursion_ means that from the same thread you can "enter" the `Monitor` multiple times (and you have to also "exit" it the same amount of times). _Thread ownership_ supports the previous behavior and also enforces that the thread "entering" the `Monitor` is the thread "exiting" it (otherwise an exception is thrown).  Thread affinity in other words. _Spinning_ means, because `Monitor` can be put in _hybrid locks_ category, that for a short amount of time the `Monitor` will try to acquire the lock by trying in a loop, hence spinning, before giving up and blocking regularly, giving up the CPU.
+[`Monitor`][1] has these four fundamental features: mutual exclusivity, recursion, thread ownership and spinning. *Mutual exclusivity* guarantees that code "locked" using `Monitor` is executed always in single thread at any given time. Critical section in other words. *Recursion* means that from the same thread you can "enter" the `Monitor` multiple times (and you have to also "exit" it the same amount of times). *Thread ownership* supports the previous behavior and also enforces that the thread "entering" the `Monitor` is the thread "exiting" it (otherwise an exception is thrown).  Thread affinity in other words. *Spinning* means, because `Monitor` can be put in *hybrid locks* category, that for a short amount of time the `Monitor` will try to acquire the lock by trying in a loop, hence spinning, before giving up and blocking regularly, giving up the CPU.
 
 #### Why?
 
@@ -22,7 +22,7 @@ Let's imagine you have a bunch of counters. And these counters are modified from
 
 #### Using string interning
 
-[_String interning_][3] is a feature in .NET that allows you to place a string into a table and whenever you intern the same string (same content) the reference to the string in that table is returned. That allows you to have an object (`string` is an object) that you can always get and always get the same one, if you have an appropriate string content. How it would look like?
+[*String interning*][3] is a feature in .NET that allows you to place a string into a table and whenever you intern the same string (same content) the reference to the string in that table is returned. That allows you to have an object (`string` is an object) that you can always get and always get the same one, if you have an appropriate string content. How it would look like?
 
 ```csharp
 lock (string.Intern(name))

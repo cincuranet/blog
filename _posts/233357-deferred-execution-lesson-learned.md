@@ -65,7 +65,7 @@ False, False, False
 
 It may look obvious now, given the post's title. But I'm telling you I was confused. I even fired up `ildasm` and started hunting. I was so sure it's some deep, weird C# behavior. Obviously it isn't. The `ForEachB` is turned into enumerator and until somebody really goes through it, nothing is executed - deferred execution at it's best (more detailed info [here][1] or [here][2]). Silly me.
 
-Of course I can merge these together, but the `ForEachA` (or the `ForEach` in original code) needs to _just_ really iterate over the result of `ForEachB`. Next time I'll first try to do some basic debugging, before diving straight into IL. Lesson learned.
+Of course I can merge these together, but the `ForEachA` (or the `ForEach` in original code) needs to *just* really iterate over the result of `ForEachB`. Next time I'll first try to do some basic debugging, before diving straight into IL. Lesson learned.
 
 [1]: https://blogs.msdn.microsoft.com/charlie/2007/12/10/linq-and-deferred-execution/
 [2]: https://msdn.microsoft.com/en-us/library/bb669162.aspx

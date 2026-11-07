@@ -6,13 +6,13 @@ tags:
   - .NET
   - Books
 ---
-Nevíte? Nic si z toho nedělejte, ja to taky nevěděl. Vezmu to trochu obšírněji. Během svého záchvatu po koupi knihy a sebevzdělávání jsem zakoupil knihu _C# - programování databází (Jason Price)_ (a asi 5 týdnů ležela na stole). K této knize napíšu jen několik slov, neb více si nezaslouží.
+Nevíte? Nic si z toho nedělejte, ja to taky nevěděl. Vezmu to trochu obšírněji. Během svého záchvatu po koupi knihy a sebevzdělávání jsem zakoupil knihu *C# - programování databází (Jason Price)* (a asi 5 týdnů ležela na stole). K této knize napíšu jen několik slov, neb více si nezaslouží.
 
 Za prvné, ja strašná. Hromada "vaty", nepřesností a celkove hrozný překlad.
 
 Jak asi tušíte (nebo ne) "vytvářeč" je prostě a jednoduše konstruktor. Nechápu, přoč tak zběhlý pojem se někdo snažil ohnout do češtiny.
 
-Když už jsem knihu koupil, tak ji přelouskám, ale nemyslím, že to byla dobrá investice (například _Jeffrey Richter - .NET framework programování aplikací_, to je jiná liga). Rozhodně ji nikomu _nedoporučuji_.
+Když už jsem knihu koupil, tak ji přelouskám, ale nemyslím, že to byla dobrá investice (například *Jeffrey Richter - .NET framework programování aplikací*, to je jiná liga). Rozhodně ji nikomu *nedoporučuji*.
 
 A teď je pár slov k chybám. Překladu jsme se už zasmáli, takže:
 

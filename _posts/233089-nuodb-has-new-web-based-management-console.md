@@ -38,7 +38,7 @@ You know I said I'm considering it being admin panel for database. Plain simple 
 
 I like the new console. With the old one I was more happy with the command line and doing everything manually. With the new one I'm doing more and more stuff in it, especially if trying something.
 
-_I know I promised blog post about using NuoDB in cloud (Amazon EC2/Amazon S3), but still busy to prepare it completely. :/_
+*I know I promised blog post about using NuoDB in cloud (Amazon EC2/Amazon S3), but still busy to prepare it completely. :/*
 
 [1]: http://www.nuodb.com
 [2]: {{ include "post_link" 232901 }}

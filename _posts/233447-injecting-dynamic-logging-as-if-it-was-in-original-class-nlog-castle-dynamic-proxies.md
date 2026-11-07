@@ -32,7 +32,7 @@ public abstract class LoggingAspectBase : IInterceptor
 }
 ```
 
-Then I created two _aspects_ <small>([aspect-oriented programming][4])</small> - one for logging before the invocation happens and one after. Because of my skeleton code and naming the method name was enough for me. But you can also dump out arguments etc.
+Then I created two *aspects* <small>([aspect-oriented programming][4])</small> - one for logging before the invocation happens and one after. Because of my skeleton code and naming the method name was enough for me. But you can also dump out arguments etc.
 
 ```csharp
 public class BeforeInvocationLoggingAspect : LoggingAspectBase

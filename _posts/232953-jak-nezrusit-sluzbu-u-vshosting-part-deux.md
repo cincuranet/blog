@@ -11,6 +11,6 @@ Poté co jsem výše odkazovaný příspěvek publikoval jsem odkaz zaslal i do 
 
 Musím přiznat, že tento obrat je skvělý a sám bych jej nevymyslel. Míč se přesunul na mojí stranu a finito - "mohlo to jít, ale posral sis to" jinak vzato "dohodnout jsme se stejně nechtěli, ale teď to krásně přehrajeme na tebe a jsme z toho venku". Brilantní.
 
-_Pokud máte nějakou aplikaci, která by jeden menší server (1CPU, 1GB RAM, 30GB HDD) potřebovala, dejte mi klidně vědět._
+*Pokud máte nějakou aplikaci, která by jeden menší server (1CPU, 1GB RAM, 30GB HDD) potřebovala, dejte mi klidně vědět.*
 
 [1]: {{ include "post_link" 232935 }}

@@ -18,7 +18,7 @@ New version 7.1.0.0 of [ADO.NET provider for Firebird][1] is ready for download.
 
 <!-- excerpt -->
 
-There are two main changes around performance - one visible, the other is not. The not visible is, as you'd expect, internals refactoring that saves copying of data hence making all operations faster and requiring less memory (sometimes orders of magnitude less). The other, visible, is replacement of old `TraceSource` type logging, which was very slow (and inconvenient in .NET Core), with custom one using `FbLogManager`, which can be easily plugged into _NLog_, _log4net_, etc. For convenience sake implementation using `Console` is provided out of the box. Eventually I'd like to switch to `Microsoft.Extensions.Logging.Abstractions`, but the wlrd is not there yet.
+There are two main changes around performance - one visible, the other is not. The not visible is, as you'd expect, internals refactoring that saves copying of data hence making all operations faster and requiring less memory (sometimes orders of magnitude less). The other, visible, is replacement of old `TraceSource` type logging, which was very slow (and inconvenient in .NET Core), with custom one using `FbLogManager`, which can be easily plugged into *NLog*, *log4net*, etc. For convenience sake implementation using `Console` is provided out of the box. Eventually I'd like to switch to `Microsoft.Extensions.Logging.Abstractions`, but the wlrd is not there yet.
 
 Overview of all the changes can be found in [tracker][5].
 

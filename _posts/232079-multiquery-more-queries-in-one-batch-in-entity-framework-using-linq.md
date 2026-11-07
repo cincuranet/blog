@@ -125,7 +125,7 @@ static class MultiQueryExt
 
 I'm here fully utilizing new [Translate method][7] in Entity Framework 4 (for v1 similar method is available in [EFExtensions][8]). The rest is done using pure [ADO.NET][9]. It's worth noting, that this code, same as in NHibernate, works only if the database and the underlying provider supports processing more queries in one command (i.e. [Microsoft SQL Server][10] does, but [Firebird][11] does not).
 
-Also small notice to parameters. I'm doing simple replace and that's dumb. It may fail and produce wrong results, but in very rare cases. So you should test thoroughly. The case when it produces wrong results is, when you write query in where you use _directly_ (not as a variable etc.) string that is same as parameter name (i.e. `p__linq__<number>` for [SqlClient][12] or `p<number>` for [FirebirdClient][13]). As you are in control of these strings you can change the code to use a variable, for instance.
+Also small notice to parameters. I'm doing simple replace and that's dumb. It may fail and produce wrong results, but in very rare cases. So you should test thoroughly. The case when it produces wrong results is, when you write query in where you use *directly* (not as a variable etc.) string that is same as parameter name (i.e. `p__linq__<number>` for [SqlClient][12] or `p<number>` for [FirebirdClient][13]). As you are in control of these strings you can change the code to use a variable, for instance.
 
 A lot of "fetching" methods in Entity Framework supports also [MergeOption][14]. Adding overload for `Execute` I'm leaving as exercise for readers. Likewise for the [Entity SQL][15] queries.
 

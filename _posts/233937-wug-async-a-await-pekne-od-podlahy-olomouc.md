@@ -5,7 +5,7 @@ date: 2024-04-30T07:23:00Z
 tags:
   - Presentations & Speaking
 ---
-2.5.2024 od 17:00 na [WUGu v Olomouci][1] si popovídáme o _async_ a _await_. Přednáška _Async a await pěkně od podlahy_ má v mém reportoáru už asi 30 podob. Pokaždé když ji dělám řeknu něco jinak, někdo se zeptá na něco zajímavého atp. a ani tady to nebude jinak. Tak se přijďte podívat a udělat se mnou další podobu.
+2.5.2024 od 17:00 na [WUGu v Olomouci][1] si popovídáme o *async* a *await*. Přednáška *Async a await pěkně od podlahy* má v mém reportoáru už asi 30 podob. Pokaždé když ji dělám řeknu něco jinak, někdo se zeptá na něco zajímavého atp. a ani tady to nebude jinak. Tak se přijďte podívat a udělat se mnou další podobu.
 
 <!-- excerpt -->
 

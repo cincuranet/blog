@@ -107,7 +107,7 @@ G_M000_IG06:
 
 And as you can see, this results in the same instructions being emitted.
 
-How does that compare to using _list patterns_?
+How does that compare to using *list patterns*?
 
 ```csharp
 public static int NewList(string s)

@@ -7,7 +7,7 @@ tags:
   - Firebird
   - MS SQL Server
 ---
-There's a lot of content for latest CTP, CTP4, for Entity Framework "new features". It's mainly focused on Code First stuff, that fills the triad with Database First and Model First. I like Code First but what I also like is maintainable code. Hence I was more trying not to use [convention-over-configuration][1], in opinion good for only small projects, and focus on specifying everything the way _I_ want it to be, especially with my database structure (yes, I'm data consistency and storage freak).
+There's a lot of content for latest CTP, CTP4, for Entity Framework "new features". It's mainly focused on Code First stuff, that fills the triad with Database First and Model First. I like Code First but what I also like is maintainable code. Hence I was more trying not to use [convention-over-configuration][1], in opinion good for only small projects, and focus on specifying everything the way *I* want it to be, especially with my database structure (yes, I'm data consistency and storage freak).
 
 Let's model some kind of simple library and try to use there couple of Entity Framework's features. And to make things worse, try to do it with [ADO.NET provider for Firebird][2].
 
@@ -161,7 +161,7 @@ public class DoNothingWithMyDatabase<TContext> : IDatabaseInitializer<TContext>
 
 Pretty simple, isn't it. I'm using new stripped down objects DbContext (← [ObjectContext][10]) and IDbSet/DbSet (← [IObjectSet][11]/[ObjectSet][12]).
 
-You may also notice, I've created object which implements `IDatabaseInitializer`. That's because, by default, Entity Framework will try to create database for you and check whether your database matches model (`CreateDatabaseOnlyIfNotExists`). _I_'m controlling my database. You have to add somewhere into your application before doing anything with the context call to `SetInitializer`:
+You may also notice, I've created object which implements `IDatabaseInitializer`. That's because, by default, Entity Framework will try to create database for you and check whether your database matches model (`CreateDatabaseOnlyIfNotExists`). *I*'m controlling my database. You have to add somewhere into your application before doing anything with the context call to `SetInitializer`:
 
 ```csharp
 Database.SetInitializer(new DoNothingWithMyDatabase<LibraryContext>());

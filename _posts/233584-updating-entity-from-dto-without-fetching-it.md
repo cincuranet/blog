@@ -32,7 +32,7 @@ public static void ApplySelectedValues<TEntity>(this DbContext context, TEntity 
 }
 ```
 
-As I said I, it's just a regular use of change tracker. To _attach_ the entity I set the `State` to `Unchanged`, thus I don't have to fiddle with `Attach` method. Then it's just simple loop over properties the caller declared to be modified and telling that to Entity Framework.
+As I said I, it's just a regular use of change tracker. To *attach* the entity I set the `State` to `Unchanged`, thus I don't have to fiddle with `Attach` method. Then it's just simple loop over properties the caller declared to be modified and telling that to Entity Framework.
 
 With this I can write code like this.
 

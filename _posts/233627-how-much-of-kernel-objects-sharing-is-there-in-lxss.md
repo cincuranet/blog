@@ -40,7 +40,7 @@ This run is nothing special in respect to LXSS. It's an expected result of first
 
 #### Both application instances in LXSS
 
-This execution is slightly more interesting. The first run returns `True` in both instances, as expected. The other run returns `False` for _global_ and `True` for _local_ prefix. It means from outside view that every "Bash window" acts like a separate session and only if you use the `Global\` prefix you can see across sessions.
+This execution is slightly more interesting. The first run returns `True` in both instances, as expected. The other run returns `False` for *global* and `True` for *local* prefix. It means from outside view that every "Bash window" acts like a separate session and only if you use the `Global\` prefix you can see across sessions.
 
 #### First instance in LXSS, other in Windows session
 

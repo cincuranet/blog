@@ -9,7 +9,7 @@ I'm very excited to be speaking at the [Adriatics Tech Summit 2026][1] in about 
 
 <!-- excerpt -->
 
-[My session][2], _Starting with Microsoft.Extensions.VectorData and RAG_, may sound like it's all about AI, but I'll be focusing specifically on Retrieval-Augmented Generation (RAG) - what it is and how to implement it in .NET.
+[My session][2], *Starting with Microsoft.Extensions.VectorData and RAG*, may sound like it's all about AI, but I'll be focusing specifically on Retrieval-Augmented Generation (RAG) - what it is and how to implement it in .NET.
 
 > LLMs are everywhere, but what if you don't want to build just a plain smart chat, but you want to infuse it with your internal data? And what if the data is changing fast? Microsoft.Extensions.VectorData and RAG might be the correct and easy path for you to solve this.
 

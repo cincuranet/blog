@@ -12,6 +12,6 @@ Few days ago I bought [Amazon Kindle][1], the international version, as I'm not 
 
 That's a really nice gesture! Kudos to Amazon.
 
-_I'll post my first experience tomorrow, when it will be finally delivered._
+*I'll post my first experience tomorrow, when it will be finally delivered.*
 
 [1]: http://www.amazon.com/dp/B0015T963C

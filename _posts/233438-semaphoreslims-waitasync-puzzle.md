@@ -146,6 +146,6 @@ static void Main(string[] args)
 }
 ```
 
-_So how you scored?_
+*So how you scored?*
 
 [1]: http://msdn.microsoft.com/en-us/library/system.threading.tasks.task.yield(v=vs.110).aspx

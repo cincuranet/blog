@@ -5,7 +5,7 @@ date: 2023-01-17T12:36:00Z
 tags:
   - C#
 ---
-As promised in [previous blog post][1]. Let's implement that _sum_ function using [_generic math_ from C# 11][2]. 
+As promised in [previous blog post][1]. Let's implement that *sum* function using [*generic math* from C# 11][2]. 
 
 <!-- excerpt -->
 

@@ -6,13 +6,13 @@ tags:
   - C#
   - Roslyn
 ---
-The feature I'm most excited from freshly released C# 11 is _raw string literals_. You can read about the feature more [here][1]. In this blog post I'm going to try some limits. For fun. And learning.
+The feature I'm most excited from freshly released C# 11 is *raw string literals*. You can read about the feature more [here][1]. In this blog post I'm going to try some limits. For fun. And learning.
 
 <!-- excerpt -->
 
 If you think the same way I do, the obvious first question to ask is whether there's some limit of number of double quotes at the beginning and end one can use... Let's try that.
 
-I created a console app to help me quickly generate the file (note the usage of another nifty feature, _UTF-8 literals_).
+I created a console app to help me quickly generate the file (note the usage of another nifty feature, *UTF-8 literals*).
 
 ```csharp
 var prefix = """

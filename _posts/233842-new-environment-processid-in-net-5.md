@@ -9,9 +9,9 @@ While reading some code in .NET runtime, I found `Environment.ProcessId` propert
 
 <!-- excerpt -->
 
-If you wanted to get _process id_ of current process, the easiest way, same way all the way back to stone age days of .NET, was `Process.GetCurrentProcess().Id`. And there's nothing wrong with it, but creating a whole `Process` class instance to get just the _process id_ is little bit overkill. 
+If you wanted to get *process id* of current process, the easiest way, same way all the way back to stone age days of .NET, was `Process.GetCurrentProcess().Id`. And there's nothing wrong with it, but creating a whole `Process` class instance to get just the *process id* is little bit overkill. 
 
-With .NET 5 you can use the new [`Environment.ProcessId`][2], which in turn uses interop call into OS and caches the value. Because as long as the process is running the _process id_ is set, so why not, right? Not creating the instance wastefully and also caching the value is great performance benefit.
+With .NET 5 you can use the new [`Environment.ProcessId`][2], which in turn uses interop call into OS and caches the value. Because as long as the process is running the *process id* is set, so why not, right? Not creating the instance wastefully and also caching the value is great performance benefit.
 
 Added to, even if you use the `GetCurrentProcess`, you'll get the benefit of caching, because the ` Environment.ProcessId` is used there.
 

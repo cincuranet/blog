@@ -10,7 +10,7 @@ With the 20 years of .NET that's happening now and also the [Celebrating 20 Year
 
 <!-- excerpt -->
 
-You might remember that Firebird's code, and _FirebirdClient_ was no exception, was hosted on SourceForge in CVS originally. When _FirebirdClient_ moved to SVN (another part of history), it was simply imported as a "current state", without any history. Later another move to Git was done, this time with complete history. Hence the [history starts][2] with import to SVN basically.
+You might remember that Firebird's code, and *FirebirdClient* was no exception, was hosted on SourceForge in CVS originally. When *FirebirdClient* moved to SVN (another part of history), it was simply imported as a "current state", without any history. Later another move to Git was done, this time with complete history. Hence the [history starts][2] with import to SVN basically.
 
 But some months ago, I decided, before CVS on SourceForge is completely lost, to at least dump the CVS history of `NETProvider`. To preserve it for future generations. :) 
 

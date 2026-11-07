@@ -11,13 +11,13 @@ We're close to that time of year - time of [.NET DeveloperDays][1] in Warsaw. I'
 
 I prepared a workshop and quite a few sessions.
 
-Workshop is _Build your AI application(s) with .NET_.
+Workshop is *Build your AI application(s) with .NET*.
 
 > This workshop is aimed to get you started with all the things AI and .NET. We'll cover classification, summarization, data extraction/cleaning, anomaly detection, translation, sentiment detection, semantic search, Q&A chatbots, voice assistants, and more.
 
 > You don't need prior knowledge of AI technology. We'll focus on the usage of AI services, including LLMs and embeddings, to implement app features such as those listed above. This includes understanding capabilities, limitations, problems, and risks. We'll focus a lot on optimizing for reliability.
 
-Sessions are _Optimize your EF Core update actions_, _SynchronizationContext and ConfigureAwait - more than you need to know_, _~~The rabbit hole of building a GPS-synchronized time server~~_.
+Sessions are *Optimize your EF Core update actions*, *SynchronizationContext and ConfigureAwait - more than you need to know*, *~~The rabbit hole of building a GPS-synchronized time server~~*.
 
 > Everybody optimizes queries. Boring. But there's a big chunk of applications where updates (inserts, deletes) are as common as queries and need to perform well. This session will show you what you can (and shouldn't) do to make it happen.
 

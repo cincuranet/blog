@@ -5,7 +5,7 @@ date: 2020-09-13T15:32:00Z
 tags:
   - Presentations & Speaking
 ---
-The DotFest conference, part of HardFest conferences, is going to happen 16-17 October online (which is little bit sad, because I'd like to visit Novosibirsk, from where the conference will be streamed) and I'll be [talking about _Using Roslyn to improve your codebase_][1]. Basically taking advantage of Roslyn's open design where you can use various pieces of the whole compiler platform and create your own tools with the full power of "compiler" i.e. sematic analysis. 
+The DotFest conference, part of HardFest conferences, is going to happen 16-17 October online (which is little bit sad, because I'd like to visit Novosibirsk, from where the conference will be streamed) and I'll be [talking about *Using Roslyn to improve your codebase*][1]. Basically taking advantage of Roslyn's open design where you can use various pieces of the whole compiler platform and create your own tools with the full power of "compiler" i.e. sematic analysis. 
 
 <!-- excerpt -->
 

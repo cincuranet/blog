@@ -5,7 +5,7 @@ date: 2022-09-06T06:40:00Z
 tags:
   - Presentations & Speaking
 ---
-After the [Belgium version][1] Techorama is going to Netherlands, in October 10-12. I was lucky [one of my session was selected][2] - _C# Source Generators - let the machine do the programming_. 
+After the [Belgium version][1] Techorama is going to Netherlands, in October 10-12. I was lucky [one of my session was selected][2] - *C# Source Generators - let the machine do the programming*. 
 
 <!-- excerpt -->
 

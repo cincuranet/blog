@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-Today I'm releasing first small update to the [_FbNetExternalEngine_][1]. The focus is just on performance. No new features were added.
+Today I'm releasing first small update to the [*FbNetExternalEngine*][1]. The focus is just on performance. No new features were added.
 
 <!-- excerpt -->
 

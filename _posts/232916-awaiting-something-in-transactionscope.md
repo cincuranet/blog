@@ -75,7 +75,7 @@ After
 Dispose
 ```
 
-But considering, that the _Other stuff_ **might** have some dependency in data being done in that transaction you **might** get wrong result.
+But considering, that the *Other stuff* **might** have some dependency in data being done in that transaction you **might** get wrong result.
 
 So it's not always wrong, nor some gotcha in compiler. But think it through before using this construct.
 

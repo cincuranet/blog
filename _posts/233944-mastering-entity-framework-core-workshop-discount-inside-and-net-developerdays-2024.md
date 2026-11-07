@@ -5,7 +5,7 @@ date: 2024-09-13T08:09:00Z
 tags:
   - Presentations & Speaking
 ---
-We are couple of weeks from [.NET DeveloperDays 2024][1]. Really excited to be there. My main "show" there is going to be [_Mastering Entity Framework Core_ workshop][2].
+We are couple of weeks from [.NET DeveloperDays 2024][1]. Really excited to be there. My main "show" there is going to be [*Mastering Entity Framework Core* workshop][2].
 
 <!-- excerpt -->
 

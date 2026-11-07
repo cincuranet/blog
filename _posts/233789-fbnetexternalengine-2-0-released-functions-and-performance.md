@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-It has been few exciting weeks and days lately and today I'm happy to introduce you to [_FbNetExternalEngine_][1] version 2.0. This version adds support for functions and also improves performance (on top of [previous improvements][2]).
+It has been few exciting weeks and days lately and today I'm happy to introduce you to [*FbNetExternalEngine*][1] version 2.0. This version adds support for functions and also improves performance (on top of [previous improvements][2]).
 
 <!-- excerpt -->
 

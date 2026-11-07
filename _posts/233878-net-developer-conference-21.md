@@ -5,7 +5,7 @@ date: 2021-12-01T11:17:00Z
 tags:
   - Presentations & Speaking
 ---
-Few moments ago I finished my session on .NET Developer Conference '21 (yeah, I forgot to make the post sooner). My session was _C# Source Generators – let the machine do the programming_. It was recorded and demos are attached below.
+Few moments ago I finished my session on .NET Developer Conference '21 (yeah, I forgot to make the post sooner). My session was *C# Source Generators – let the machine do the programming*. It was recorded and demos are attached below.
 
 <!-- excerpt -->
 

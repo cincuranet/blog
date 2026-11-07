@@ -13,7 +13,7 @@ Mentioning the buttons, previous and next page buttons to be precise. As I wrote
 
 After two weeks of usage I don't have enough samples to judge the battery life. But from the way the battery icon looses it's fill I'm sure it's not worse than the previous one. My guess is, with 3G and/or WiFi turned on and occasionally using these plus heavily using the device for reading, it would take roughly two weeks to get fully out of juice. With all networks turned off (and using it of course ;)), probably about a month, similarly to previous model (which I can confirm). From my experience with previous model these numbers are more than good to forgot to charge it before you leave for business trip (and of course forgetting cable). :) Good enough for me.
 
-The new Kindle still outruns the old one very. So far I didn't find any problem that would make me regretting the buy. I would still recommend it to anyone who loves to read. And a recently discovered [way to get documents into it for free without having to plug it in using cable][3], it's my primary device for _all_ content I read that takes more than minute or two to read.
+The new Kindle still outruns the old one very. So far I didn't find any problem that would make me regretting the buy. I would still recommend it to anyone who loves to read. And a recently discovered [way to get documents into it for free without having to plug it in using cable][3], it's my primary device for *all* content I read that takes more than minute or two to read.
 
 [1]: {{ include "post_link" 231960 }}
 [2]: http://www.amazon.com/Kindle-Wireless-Reading-Display-Globally/dp/B003FSUDM4/

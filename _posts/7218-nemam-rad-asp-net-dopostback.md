@@ -9,4 +9,4 @@ Jako programátor trávím část času vyhledáváním potřebných (ale i nepo
 
 Nemám to rád a strašně mě to štve. Nechápu jak toto mohl někdo vymyslet. No aspoň jsem si ulevil.
 
-_Otázka do davu: "Jak to řešíte, vadí vám to?"_
+*Otázka do davu: "Jak to řešíte, vadí vám to?"*

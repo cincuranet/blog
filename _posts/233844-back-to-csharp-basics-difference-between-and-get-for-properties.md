@@ -19,7 +19,7 @@ public class C
 }
 ```
 
-Is it the same or is it not? The answer is, it's not the same. The `A` property is property with _getter_ only (aka read only or immutable property). When `C` instance is created a new instance of `Foo` is assigned to the property and will be returned from now on. The `B` property defines also only _getter_, but this time the _getter_ contains the `new Foo();` as it's body, aka returning new instance of `Foo` every time you access `B`.
+Is it the same or is it not? The answer is, it's not the same. The `A` property is property with *getter* only (aka read only or immutable property). When `C` instance is created a new instance of `Foo` is assigned to the property and will be returned from now on. The `B` property defines also only *getter*, but this time the *getter* contains the `new Foo();` as it's body, aka returning new instance of `Foo` every time you access `B`.
 
 Putting it into barebone C#, it would look like this.
 

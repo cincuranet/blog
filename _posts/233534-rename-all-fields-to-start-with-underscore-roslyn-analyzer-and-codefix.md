@@ -12,7 +12,7 @@ The task was pretty simple. I had a solution with a lot of objects and the namin
 
 <!-- excerpt -->
 
-The problem with code is that you need to have at least minimal context information else the automation will just break - although very quickly - a lot of stuff. Clearly the regex will not cut it. Luckily with Visual Studio 2015 and Roslyn I can use compiler-as-a-service and write so called _analyzer_ and _codefix_. I [have written][1] few already so I knew this path was a good path.
+The problem with code is that you need to have at least minimal context information else the automation will just break - although very quickly - a lot of stuff. Clearly the regex will not cut it. Luckily with Visual Studio 2015 and Roslyn I can use compiler-as-a-service and write so called *analyzer* and *codefix*. I [have written][1] few already so I knew this path was a good path.
 
 So basically I want every (private) field of an object to start with an underscore and then the original name (some people also use `m_Whatever`) aka the `string name;` becomes `string _name;`. In whole solution. Of course all the uses are renamed as well. Nothing else. Well, I'm skipping `static` fields and `struct`s. For obvious reasons.
 
@@ -84,7 +84,7 @@ public class UnderscoreForPrivateFieldCodeFixProvider : CodeFixProvider
 }
 ```
 
-It's pretty raw and simple. Doing only what _I_ needed. No tests 8-).
+It's pretty raw and simple. Doing only what *I* needed. No tests 8-).
 
 Anyway if you're interested improving it or integrating it into some of these big refactoring packages, be my guest. Just please keep the credits.
 

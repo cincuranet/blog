@@ -9,7 +9,7 @@ tags:
   - Firebird
   - SQL
 ---
-Because I can load any .NET code in [_FbNetExternalEngine_][1] I had and idea, probably since November last year, to try to load Firebird Embedded inside it all that in server (I know completely useless). So I did it.
+Because I can load any .NET code in [*FbNetExternalEngine*][1] I had and idea, probably since November last year, to try to load Firebird Embedded inside it all that in server (I know completely useless). So I did it.
 
 <!-- excerpt -->
 
@@ -161,7 +161,7 @@ Rows as expected. This I think is very useful scenario. One can easily load or d
 
 #### Closing
 
-What I like is that with the _FbNetExternalEngine_ you have a lot of options, whole .NET Framework ecosystem is available with little effort directly from SQL. Looking forward to see what people will do (and what crazy idea I'll get).
+What I like is that with the *FbNetExternalEngine* you have a lot of options, whole .NET Framework ecosystem is available with little effort directly from SQL. Looking forward to see what people will do (and what crazy idea I'll get).
 
 
 > [Related post.][5]

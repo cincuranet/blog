@@ -5,7 +5,7 @@ date: 2022-11-28T07:00:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be speaking on [MS Tech Summit 2022][1] (online) this Friday. I'll present two sessions: _What's new in C# 11_ and _Azure Spot instances as your secret weapon_. 
+I'll be speaking on [MS Tech Summit 2022][1] (online) this Friday. I'll present two sessions: *What's new in C# 11* and *Azure Spot instances as your secret weapon*. 
 
 <!-- excerpt -->
 

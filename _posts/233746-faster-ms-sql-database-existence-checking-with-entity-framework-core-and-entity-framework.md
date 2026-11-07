@@ -12,9 +12,9 @@ Bit out of frustration when demoing features newest versions of Entity Framework
 
 <!-- excerpt -->
 
-What I'm talking about is [_Idle Connection Resiliency_ feature][1] (oddly I've found only PHP version). For our discussion the important part is that `SqlClient` performs retry with a small delay when opening the connection fails. This is usually good. But there are at least two places, when using Entity Framework Core or Entity Framework, where this is not desired.
+What I'm talking about is [*Idle Connection Resiliency* feature][1] (oddly I've found only PHP version). For our discussion the important part is that `SqlClient` performs retry with a small delay when opening the connection fails. This is usually good. But there are at least two places, when using Entity Framework Core or Entity Framework, where this is not desired.
 
-One is when executing _Migrations_ and not having a database at all. The other is when using `EnsureDeleted` and `EnsureCreated` combination, like when executing (integration) tests. Luckily the solution is pretty easy. Simply add `ConnectRetryCount=0` to the connection string and you're good to go. This will turn off the _Idle Connection Resiliency_ feature, thus it's not without, maybe, undesired side-effect.
+One is when executing *Migrations* and not having a database at all. The other is when using `EnsureDeleted` and `EnsureCreated` combination, like when executing (integration) tests. Luckily the solution is pretty easy. Simply add `ConnectRetryCount=0` to the connection string and you're good to go. This will turn off the *Idle Connection Resiliency* feature, thus it's not without, maybe, undesired side-effect.
 
 Let's see this in action. Below is simple code that uses `EnsureDeleted` and `EnsureCreated` (the `ElapsedRestart`, as the name suggests, returns elapsed time and restarts the stopwatch).
 

@@ -12,9 +12,9 @@ Last few weeks, on and off, I was reviving, finishing and improving a library, o
 
 <!-- excerpt -->
 
-As you might know the Firebird's trace output is a text output from Firebird about what's happening inside the engine. The idea about tracing is great. Sadly, the implementation _completely_ missed the target, because the output is text output _without any structure_. And although one can develop its own plugin for tracing, in real world most people will use the implementation that's in-the-box.
+As you might know the Firebird's trace output is a text output from Firebird about what's happening inside the engine. The idea about tracing is great. Sadly, the implementation *completely* missed the target, because the output is text output *without any structure*. And although one can develop its own plugin for tracing, in real world most people will use the implementation that's in-the-box.
 
-The [_FirebirdMonitorTool_ library][1] takes the output and tries to parse it into objects. If you're a developer and you need to automatically monitor and evaluate your Firebird server and applications, such code will give you a good head start. 
+The [*FirebirdMonitorTool* library][1] takes the output and tries to parse it into objects. If you're a developer and you need to automatically monitor and evaluate your Firebird server and applications, such code will give you a good head start. 
 
 But I also went a little further and added what I call "profiler". It is in its early stages currently and I'm learning what information and the representation would be valuable. Hence also your ideas and feedback are appreciated. It allows you to get complete tree view of what happened in the database. The root of the tree is currently a connection. Here's few examples.
 
@@ -70,6 +70,6 @@ Attachment 85502: E:\www\example.com\
 └ Transaction 76919 End (21 ms): COMMIT_TRANSACTION
 ```
 
-If you'd like to know more, technical details, etc. check the [_FirebirdMonitorTool_ page][1]. Download links are also there.
+If you'd like to know more, technical details, etc. check the [*FirebirdMonitorTool* page][1]. Download links are also there.
 
 [1]: /tools/firebird-monitor-tool

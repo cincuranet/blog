@@ -29,7 +29,7 @@ begin
 end
 ```
 
-As a modification you can also instead of running _n_ queries create one big string with `union all`-ing all queries and run just this one. You should compare execution plans and speed to see which one performs better. Then you would use [`for execute statement ... do`][5] do process results.
+As a modification you can also instead of running *n* queries create one big string with `union all`-ing all queries and run just this one. You should compare execution plans and speed to see which one performs better. Then you would use [`for execute statement ... do`][5] do process results.
 
 [1]: http://www.firebirdsql.org
 [2]: http://www.firebirdsql.org/file/documentation/reference_manuals/reference_material/html/langrefupd25-execblock.html

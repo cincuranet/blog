@@ -9,7 +9,7 @@ tags:
 ---
 I'm getting such question fairly often when [teaching my "parallel/async/threading" course][3]. It's always about a collection of URLs and downloading these efficiently. Everybody needs that.
 
-Of course _efficiently_ means different thing in different scenarios. In the following text I'm considering efficient as "in parallel" and "with intelligent use of resources used for the IO" (except memory used for storing the results as I'm going to return the result as a whole). Also I'm focusing on straightforward, readable code (not every byte or millisecond saved). Your needs may vary.
+Of course *efficiently* means different thing in different scenarios. In the following text I'm considering efficient as "in parallel" and "with intelligent use of resources used for the IO" (except memory used for storing the results as I'm going to return the result as a whole). Also I'm focusing on straightforward, readable code (not every byte or millisecond saved). Your needs may vary.
 
 <!-- excerpt -->
 

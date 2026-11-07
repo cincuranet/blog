@@ -6,7 +6,7 @@ tags:
   - .NET
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
-One thing remaining from [last week's exploration of named locks][1] is performance. My personal preference was and still is `ConcurrentDictionary<TKey, TValue>`, but what if the _string interning_ is 10 times faster? That would convince me to thing about it for usage.
+One thing remaining from [last week's exploration of named locks][1] is performance. My personal preference was and still is `ConcurrentDictionary<TKey, TValue>`, but what if the *string interning* is 10 times faster? That would convince me to thing about it for usage.
 
 <!-- excerpt -->
 

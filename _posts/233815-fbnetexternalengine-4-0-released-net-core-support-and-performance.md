@@ -6,7 +6,7 @@ tags:
   - Firebird
   - .NET
 ---
-[_FbNetExternalEngine_][1] version 4.0 is finally here. This version contains one significant feature and that's migration to .NET Core.
+[*FbNetExternalEngine*][1] version 4.0 is finally here. This version contains one significant feature and that's migration to .NET Core.
 
 <!-- excerpt -->
 

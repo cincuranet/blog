@@ -15,6 +15,6 @@ public static void AssociateForFolder(string menuName, string exeName)
 }
 ```
 
-Pozn.: V ostrém nasazení _doporučuji_ ošetřit vyjímky. :-)
+Pozn.: V ostrém nasazení *doporučuji* ošetřit vyjímky. :-)
 
 [1]: https://en.wikipedia.org/wiki/Delphi_(programming_language)

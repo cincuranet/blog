@@ -90,9 +90,9 @@ static void ReflectionEmit()
 
 Maybe if I create the assembly using some non-.NET-provided library (where the limitations are probably aligned), I might get lucky...
 
-#### Manual assembly creation using _Mono.Cecil_
+#### Manual assembly creation using *Mono.Cecil*
 
-I took the trusty [_Mono.Cecil_][1] library and started generating. Here's the important part.
+I took the trusty [*Mono.Cecil*][1] library and started generating. Here's the important part.
 
 ```csharp
 var typeDefinition = new Mono.Cecil.TypeDefinition("ConsoleApp1", "RealGenericClass", Mono.Cecil.TypeAttributes.Class, baseType);
@@ -116,7 +116,7 @@ static IEnumerable<long> Range(long start, long end)
 
 Sadly, although I was able to create type with more than `65535` generic parameters, runtime refuses to load it with known `Internal limitation: Too many generic arguments.`. Fair enough, I think.
 
-Surprisingly _ildasm_ shows the type. And _ILSpy_ wraps over the `2^16` and shows just two generic arguments for my type with 65538 of these.
+Surprisingly *ildasm* shows the type. And *ILSpy* wraps over the `2^16` and shows just two generic arguments for my type with 65538 of these.
 
 ![Type with 65538 generic arguments in ildasm]({{ include "post_ilink" page "65538_generics.png" }})
 

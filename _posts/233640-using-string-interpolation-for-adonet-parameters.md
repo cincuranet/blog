@@ -63,7 +63,7 @@ using (var conn = new FbConnection("database=localhost:test.fdb;user=sysdba;pass
 }
 ```
 
-This can be extended to almost make a raw SQL a first-ish class citizen in C# I think. While I was thinking about pursuing it a little bit more, maybe like a super thin wrapper-type ORM, I stopped for a while and did some research, because I'm surely not the first one to have this idea. And I've found [_FormattableSql_][3] project, that looks 95%-like I imagined where I'd like to end up.
+This can be extended to almost make a raw SQL a first-ish class citizen in C# I think. While I was thinking about pursuing it a little bit more, maybe like a super thin wrapper-type ORM, I stopped for a while and did some research, because I'm surely not the first one to have this idea. And I've found [*FormattableSql*][3] project, that looks 95%-like I imagined where I'd like to end up.
 
 [1]: https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0/
 [2]: https://msdn.microsoft.com/en-us/library/system.formattablestring(v=vs.110).aspx

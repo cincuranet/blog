@@ -13,12 +13,12 @@ Yesterday I found out that one of my [NodOn Soft Remote][1]s was dead as a doorn
 
 With bit of hacking, obviously. Although having sleeping dead node in the network isn't probably as problematic as having dead beaming node, it still sucks (using ID at least).
 
-The steps I did are bit fuzzy, because I had to repeat some steps to make OpenZWave cooperate, but it worked at the end. Here's what _I_ did, your mileage may vary...
+The steps I did are bit fuzzy, because I had to repeat some steps to make OpenZWave cooperate, but it worked at the end. Here's what *I* did, your mileage may vary...
 
 I'm using [OpenZWave][2] with [Domoticz][3] and [Aeotec Z-Stick][4] as a controller. Also, backup is always a good idea.
 
 * Stop any OpenZWave (or rather application using OZW) instance. In the `zwcfg_xxx.xml` file locate the dead node (i.e. by ID) and remove the whole `CommandClass` for `COMMAND_CLASS_WAKE_UP`. Restart the application.
-* Wait for full network initialization. The node should be marked as dead now. In OpenZWave control panel execute the _Remove Failed Node_ command. Either this removes the node more or less immediately or not (waiting couple of minutes didn't seem to do anything for me).
+* Wait for full network initialization. The node should be marked as dead now. In OpenZWave control panel execute the *Remove Failed Node* command. Either this removes the node more or less immediately or not (waiting couple of minutes didn't seem to do anything for me).
 * If not, stop the application, re-check the `zwcfg_xxx.xml` file and reboot the machine (maybe removing and pluging the controller/Z-Stick back in is enough, for me reboot was easier). Repeat previous step.
 
 With steps above I was able to "fix" two nodes (while trying to exclude the NodOn Soft Remote different node got somewhat excluded and it popped up after reboot, but I already re-included (with new ID) :S) in the Z-Wave network.

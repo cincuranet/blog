@@ -14,7 +14,7 @@ tags:
   - Visual Studio
   - Entity Framework Core
 ---
-New version 8.5.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This release contains, among other small improvements and fixes, support for _Srp256_ (and quite a few related changes, like support for _SPB version 3_) and fix for performance regression for synchronous code paths introduced in 8.0.0.0.
+New version 8.5.0.0 of [ADO.NET provider for Firebird][1] is ready for download. This release contains, among other small improvements and fixes, support for *Srp256* (and quite a few related changes, like support for *SPB version 3*) and fix for performance regression for synchronous code paths introduced in 8.0.0.0.
 
 <!-- excerpt -->
 

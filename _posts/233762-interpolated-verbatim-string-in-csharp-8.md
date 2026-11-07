@@ -9,7 +9,7 @@ As I was talking [yesterday about new big features in C# 8][1], I learned about 
 
 <!-- excerpt -->
 
-Today, if you want to use interpolated verbatim string, you have to place the `$` and `@` in proper order. So, this `$@"test {DateTime.UnixEpoch}"` works, while `@$"test {DateTime.UnixEpoch}"` doesn't (Wondering about `DateTime.UnixEpoch`? Look [here][3].). I was always kind of OK with it. In my mind I explained to myself that the `@` defines how the content inside double quotes behaves, it's a modifier of the double quotes and hence needs to in front of the opening one. While the `$` is like `new FormattableString` (I know it's an _abstract_ class, but there's a `FormattableStringFactory` if you'd really like to create it manually), which obviously needs to be first.
+Today, if you want to use interpolated verbatim string, you have to place the `$` and `@` in proper order. So, this `$@"test {DateTime.UnixEpoch}"` works, while `@$"test {DateTime.UnixEpoch}"` doesn't (Wondering about `DateTime.UnixEpoch`? Look [here][3].). I was always kind of OK with it. In my mind I explained to myself that the `@` defines how the content inside double quotes behaves, it's a modifier of the double quotes and hence needs to in front of the opening one. While the `$` is like `new FormattableString` (I know it's an *abstract* class, but there's a `FormattableStringFactory` if you'd really like to create it manually), which obviously needs to be first.
 
 But having to type it in correct order was apparently pain in the ass and so in C# 8 the order will not matter. You can try that in i.e. preview of VS 2019 or [here][2].
 

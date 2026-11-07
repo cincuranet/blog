@@ -6,7 +6,7 @@ tags:
   - Roslyn
   - C#
 ---
-It's probably bit overdue, but I finally implemented checking for `ConfigureAwait(false)` in my [_ConfigureAwaitChecker_][5] for `await using` and `await foreach`. Why now? I simply (finally) needed it. So, what's new?
+It's probably bit overdue, but I finally implemented checking for `ConfigureAwait(false)` in my [*ConfigureAwaitChecker*][5] for `await using` and `await foreach`. Why now? I simply (finally) needed it. So, what's new?
 
 <!-- excerpt -->
 
@@ -16,7 +16,7 @@ It's pretty straightforward. If you have an object implementing `IAsyncDisposabl
 
 ![Await foreach with ConfigureAwaitChecker]({{ include "post_ilink" page "await_foreach.gif" }})
 
-One remaining piece missing (tracked [here][2]) is properly extracting variable out of `await using` when applying the _code fix_, because the datatype is different after adding `ConfigureAwait(false)` and probably the insides of the `using` block will not work. I originally blogged about it [here][4]. This will be in next update.
+One remaining piece missing (tracked [here][2]) is properly extracting variable out of `await using` when applying the *code fix*, because the datatype is different after adding `ConfigureAwait(false)` and probably the insides of the `using` block will not work. I originally blogged about it [here][4]. This will be in next update.
 
 Also, with this release I'm releasing the ConfigureAwaitChecker library that the analyzer is using as a NuGet package. In case you'd like to build some awesome stuff on top of it.
 

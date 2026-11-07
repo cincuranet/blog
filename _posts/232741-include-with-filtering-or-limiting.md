@@ -59,7 +59,7 @@ public static IEnumerable<TMain> Include2<TMain, TOther>(this IQueryable<TMain> 
 
 The method is doing little bit of magic with expressions and anonymous type to do what you would normally write by hand. It returns [`IEnumerable<T>`][6] because the object needs to be unwrapped locally so you can't add additional pieces into query. I'm using `ParameterRebinder` from [Colin Meek's post][7] to properly rewire parameters. Same functionality can be also found in [Mono.Linq.Expressions][8].
 
-From input parameters types (yeah, _the power of static typing [[Anders Hejlsberg][9]]_) you can see how to use it:
+From input parameters types (yeah, *the power of static typing [[Anders Hejlsberg][9]]*) you can see how to use it:
 
 ```csharp
 context.EntitySet

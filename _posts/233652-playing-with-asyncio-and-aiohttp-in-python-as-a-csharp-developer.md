@@ -6,7 +6,7 @@ tags:
   - Python
   - Multithreading/Parallelism/Asynchronous/Concurrency
 ---
-Few months back I decided to play a little with [_asyncio_ in Python][1]. Explore a little bit how "they did it" and align that in my mind with what I know about the implementation in .NET. Because at that time I needed some HTTP probing I decided to test the async IO together with regular HTTP (aka network) requests. And I used [_aiohttp_][2]. Not that I did some big research. I did quick search and looked at some demos to see whether I like how it's structured or not. And _aiohttp_ felt fine.
+Few months back I decided to play a little with [*asyncio* in Python][1]. Explore a little bit how "they did it" and align that in my mind with what I know about the implementation in .NET. Because at that time I needed some HTTP probing I decided to test the async IO together with regular HTTP (aka network) requests. And I used [*aiohttp*][2]. Not that I did some big research. I did quick search and looked at some demos to see whether I like how it's structured or not. And *aiohttp* felt fine.
 
 <!-- excerpt -->
 
@@ -58,11 +58,11 @@ One thing to notice is the `async with` statement. The context manager needs to 
 
 The plumbing is done with `asyncio`, i.e. in C# we have [`Task.WhenAll`][3] and here it is [`asyncio.gather`][4] (although there's also [`asyncio.wait`][5] with bunch of options).
 
-What's most interesting is the need to use _event loop_. In C# if you're writing i.e. _WinForms_ the concept of event loop (or _message pumping_ in more low-level terms) is well known. But it's not explicit and for example console applications don't have such thing (even the abstraction - the [`SynchronizationContext`][6] - is `null` in console applications). Here, though my script is basically a console application, I had to specify it and specify it explicitly.
+What's most interesting is the need to use *event loop*. In C# if you're writing i.e. *WinForms* the concept of event loop (or *message pumping* in more low-level terms) is well known. But it's not explicit and for example console applications don't have such thing (even the abstraction - the [`SynchronizationContext`][6] - is `null` in console applications). Here, though my script is basically a console application, I had to specify it and specify it explicitly.
 
-From what I understood the _event loop_ is where the calls and most importantly callbacks (and hence resumes) happen. I think about it as a _scheduler_ and _IO completion ports_ (in Windows terms). My understanding is, I'm sure, clear on high level, but the rubber meets the road when you dive deep.
+From what I understood the *event loop* is where the calls and most importantly callbacks (and hence resumes) happen. I think about it as a *scheduler* and *IO completion ports* (in Windows terms). My understanding is, I'm sure, clear on high level, but the rubber meets the road when you dive deep.
 
-Although this was just a one or two afternoons playing with _asyncio_ I enjoyed learning new stuff and applying it to what I already know. I wish I had more time to do this.
+Although this was just a one or two afternoons playing with *asyncio* I enjoyed learning new stuff and applying it to what I already know. I wish I had more time to do this.
 
 [1]: https://docs.python.org/3/library/asyncio.html
 [2]: http://aiohttp.readthedocs.io/en/stable/

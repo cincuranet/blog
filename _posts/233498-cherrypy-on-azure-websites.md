@@ -16,7 +16,7 @@ After some playing locally and on my Raspberry Pi I wanted to do some "real" (do
 
 Again some research and learning (I love how steep the learning curve is for something completely new for me). Going through documentation on Azure I spotted something I knew I saw in CherryPy's documentation - WSGI. Apparently you can [create WSGI compatible application from CherryPy application][5] in just single line of code. Awesome. Azure seemes to be [doing something with it][6] as well so let's jump in.
 
-To make the story short (longer version below) _it works_. And it _works nicely_, _without any hacks_. Go to my [`CherryPy_Azure` repository][7] and check the code. The result runs at [cherrypy.azurewebsites.net][8].
+To make the story short (longer version below) *it works*. And it *works nicely*, *without any hacks*. Go to my [`CherryPy_Azure` repository][7] and check the code. The result runs at [cherrypy.azurewebsites.net][8].
 
 So what do you need. First you need [`ptvs_virtualenv_proxy.py`][9] and [`web.config`][10] files. Both can be copy-pasted from documentation, without thinking. Then you need to tell Azure what runtime you want. That's done using [`runtime.txt`][11] file. In my case the content is `python-3.4` because I don't bother with 2.x Python versions. The deployment script collects by default static files for Django. Unless you want to rewrite the deployment script completely (by creating `.deployment` and `deploy.cmd`), just create empty `.skipDjango` file in root of your repository and you're done. It probably doesn't matter for CherryPy application anyway, but why do something more. Finally because the application uses CherryPy we add it as requirement. Putting `cherrypy` (the `pip` name) into [`requirements.txt`][12].
 

@@ -122,7 +122,7 @@ sum :: [Int] -> Int
 sum (x:xs) = x + Main.sum xs
 sum _ = 0
 ```
-This feels more like Haskell I remember. It's also _very_ pleasant to read, don't you think?
+This feels more like Haskell I remember. It's also *very* pleasant to read, don't you think?
 
 I want to spend more time in this language. And quick googling shows [it might be possible to even interact with .NET][3].
 

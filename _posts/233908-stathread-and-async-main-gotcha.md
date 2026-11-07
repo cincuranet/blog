@@ -38,7 +38,7 @@ And suddenly everything started to fell apart. I.e: `System.Threading.ThreadStat
 
 As I mentioned at the beginning, I immediately jumped into conclusion, that I'm doing something wrong regarding my threading and synchronization context. But as I was digging into it, everything seemed correct. But I kept digging. Oh, boy. Luckily, I realized what the issue was.
 
-The _async Main_ is no magic. In fact [I blogged about it][1] roughly 5 years ago. The end code is more or less this.
+The *async Main* is no magic. In fact [I blogged about it][1] roughly 5 years ago. The end code is more or less this.
 
 ```csharp
 static void Main() => OldMain().GetAwaiter().GetResult();

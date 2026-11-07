@@ -19,7 +19,7 @@ I could write more and more about the .NET provider and new version. True to be 
 
 Congratulation to us, the [Firebird Project][9], especially the [core team][10]. And also to you, users, I hope you'll enjoy and like the [new Firebird 2.5 version][11] as we (I) do.
 
-Note: _The MindTheBird campaign team will run a webinar today at 13:00 GMT in anticipation of the launch of Firebird 2.5 Final Release. [See the details][12]._
+Note: *The MindTheBird campaign team will run a webinar today at 13:00 GMT in anticipation of the launch of Firebird 2.5 Final Release. [See the details][12].*
 
 [1]: http://www.firebirdsql.org/index.php?op=devel&sub=engine&id=fb25_release
 [2]: http://www.firebirdsql.org/pop/pop_pressRelease25.html

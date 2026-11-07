@@ -21,7 +21,7 @@ Using `querySelectorAll` or `querySelector` was as easy as with jQuery (with som
 
 Refreshing from something I still had mental picture of from Internet Explorer 6 and MooTools days. Yes, I know, I'm late to the party and I should have checked the JavaScript world around me at least once in five years.
 
-What took perhaps most of the time was finding a new lightbox for images, etc., because the one I was using was using jQuery. After scouting about 10 and trying roughly 5, I ended up using [_simpleLightbox_][2]. Works for what I need and is not bloated with stuff I don't use.
+What took perhaps most of the time was finding a new lightbox for images, etc., because the one I was using was using jQuery. After scouting about 10 and trying roughly 5, I ended up using [*simpleLightbox*][2]. Works for what I need and is not bloated with stuff I don't use.
 
 The complete change with previous and new code side-by-side is [here][3]. One thing I didn't do, but wanted to, was wrapping the code into `class`. I can't comprehend why I need to use `this` when calling instance method from another instance method. 
 

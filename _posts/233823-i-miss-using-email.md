@@ -26,7 +26,7 @@ And finally, nowadays it's Teams, Slack, etc. And I don't like the current state
 
 I'm not saying all these platforms are bad or that email would work fine in all these cases. But even a quick look into my phone I see Facebook Messenger, Skype, Teams and WhatsApp to be able to reach people I care about. My usage is different, I don't work for a single company, on a company laptop, etc. I often use just instant messaging and calls on all these platforms, because for the rest it sucks if you're not 100% in.
 
-I wish people used email more. It's not bad or anything. It works - everywhere, always - and works fine for half of the stuff that the above-mentioned platforms are trying to force on us at least in technical rings, where I'm mostly. Especially if you want to have stuff neatly organized, organized _your way_. I miss email.
+I wish people used email more. It's not bad or anything. It works - everywhere, always - and works fine for half of the stuff that the above-mentioned platforms are trying to force on us at least in technical rings, where I'm mostly. Especially if you want to have stuff neatly organized, organized *your way*. I miss email.
 
 Do you agree? Send me an [email][2]. Additionally, if you want great email provider, I can't recommend enough [FastMail][1] (link with 10% discount).
 

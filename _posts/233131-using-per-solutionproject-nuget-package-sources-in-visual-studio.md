@@ -21,6 +21,6 @@ In this file you can add few elements and have another package source added.
 	</activePackageSource>
 ```
 
-And it works with everything in Visual Studio. Not only in _Package Manager Console_. The VS settings contains the new feed, the _Manage NuGet Packages_ works with it too.
+And it works with everything in Visual Studio. Not only in *Package Manager Console*. The VS settings contains the new feed, the *Manage NuGet Packages* works with it too.
 
 Sweet. Well designed, NuGet.

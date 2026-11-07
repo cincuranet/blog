@@ -48,7 +48,7 @@ static class Test
 }
 ```
 
-The code is pretty straightforward. Separate thread is started executing `Worker` method where the `while` loop spins until the `stop` variable is set. This variable is set after 5 seconds in the main thread. Thus, one might expect the code to stop after 5 seconds. Surprisingly if you run this code with full optimizations (_Release_ build) and without debugger attached the loop in `Worker` method never stops. How is it possible? As I said above, the problem is the optimizations.
+The code is pretty straightforward. Separate thread is started executing `Worker` method where the `while` loop spins until the `stop` variable is set. This variable is set after 5 seconds in the main thread. Thus, one might expect the code to stop after 5 seconds. Surprisingly if you run this code with full optimizations (*Release* build) and without debugger attached the loop in `Worker` method never stops. How is it possible? As I said above, the problem is the optimizations.
 
 Let's have a look at what's actually being executed. The code differs slightly - although the end behavior is the same - whether it's running in 64bit or 32bit.
 
@@ -83,7 +83,7 @@ It's also worth mentioning the `x` increment was optimized out, because it's not
 
 Although the assembly is slightly different now (the `x` variable is held in `ESI` register), the optimization is still there.
 
-#### .NET Framework 4.0.30319.42000 in 64bit (_RyuJIT_)
+#### .NET Framework 4.0.30319.42000 in 64bit (*RyuJIT*)
 
 ```asm
 			; var x = 0;
@@ -119,7 +119,7 @@ Using the `x` makes the code basically the same as in 32bit.
 
 The `ECX` register is no longer used and `ESI` is used instead, because the message will use `x`.
 
-#### .NET Core 4.6.25211.01 on 64bit (_RyuJIT_)
+#### .NET Core 4.6.25211.01 on 64bit (*RyuJIT*)
 
 ```asm
 		; var x = 0;
@@ -144,7 +144,7 @@ You might also notice the `mov`-`mov`-`call` sequence there and wonder: Why it's
 
 #### Conclusion
 
-Optimizations are great. The compiler or JIT or ... can make the code run much faster. But with a great tool comes also great change of injuring self. That's why it's so important to understand _memory barriers_ and _volatile_ and _locking_ and proactively looking for places where these need to be.
+Optimizations are great. The compiler or JIT or ... can make the code run much faster. But with a great tool comes also great change of injuring self. That's why it's so important to understand *memory barriers* and *volatile* and *locking* and proactively looking for places where these need to be.
 
 In this example, no matter .NET Framework or .NET Core or JIT the unexpected behavior happens. And even if it didn't in one case, one shouldn't rely on that and rather have the code correct.
 

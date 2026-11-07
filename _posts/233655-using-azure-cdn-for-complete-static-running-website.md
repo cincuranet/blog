@@ -29,7 +29,7 @@ This might look weird, because a lot of tutorials etc. will tell you to use the 
 
 #### Step 3
 
-Set the custom domain for the endpoint to be `www.example.com`. This is where the _Step 1_ comes handy because you're not ready to change the DNS for the domain itself. Depending on state of DNS propagation you might wait few minutes or hours before completing this step.
+Set the custom domain for the endpoint to be `www.example.com`. This is where the *Step 1* comes handy because you're not ready to change the DNS for the domain itself. Depending on state of DNS propagation you might wait few minutes or hours before completing this step.
 
 #### Step 4
 

@@ -9,11 +9,11 @@ tags:
   - NoSQL
   - NuoDB
 ---
-In [previous post][1] I introduced you [NuoDB][2], the so-called _NewSQL_ database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)
+In [previous post][1] I introduced you [NuoDB][2], the so-called *NewSQL* database. On this foundation we'll build today. Simple .NET/C# application to access the data, because if I can't program it why bother with it, right? :)
 
 NuoDB has currently JDBC and [ODBC][3] drivers in the box. [Other drivers are created by community][4]. There's also [.NET driver][5] being created but it's based on C++ API implementation not a fully managed implementation.
 
-OK, so for now we'll try the ODBC as it's in the box. If you installed NuoDB, the driver was installed to your system already. If you're going to deploy your application you should install it yourself. Whole ODBC is based on `DSN`s. You create one in advance and application the uses this one, with minimal knowledge advance how to connect to data source etc. Go to Control Panel > Administrative Tools > Data Sources (ODBC) and you can create DSN there. In [.NET][6] world we're used to use _connection strings_ to describe our data source, so instead of creating DSN manually, I'll [create it in application][7], just for my comfort.
+OK, so for now we'll try the ODBC as it's in the box. If you installed NuoDB, the driver was installed to your system already. If you're going to deploy your application you should install it yourself. Whole ODBC is based on `DSN`s. You create one in advance and application the uses this one, with minimal knowledge advance how to connect to data source etc. Go to Control Panel > Administrative Tools > Data Sources (ODBC) and you can create DSN there. In [.NET][6] world we're used to use *connection strings* to describe our data source, so instead of creating DSN manually, I'll [create it in application][7], just for my comfort.
 
 The application is pretty simple, just to try something. Because NuoDB supports standard SQL, you can use constructs you're familiar with, like `CREATE TABLE` etc.
 

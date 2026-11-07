@@ -15,7 +15,7 @@ While I was working on the [SingleExecutable][1] project one of the last steps w
 
 What I forgot about is the fact - funny, because it's not new to me - that the **whole** method needs to be JITed before it's executed. It's not JITed line by line or anything like that. That means if the static constructor I injected myself into was working with some types from dependencies the JITing would fail.
 
-The solution is really not difficult. I can inject my code higher in the chain to be sure it's executed before. In IL I can use _module initializers_ (not available from C#). I decided not to go this way, because what would happen if some other tool would already have code there and the code was calling something from dependency? Although very improbable, still the same problem.
+The solution is really not difficult. I can inject my code higher in the chain to be sure it's executed before. In IL I can use *module initializers* (not available from C#). I decided not to go this way, because what would happen if some other tool would already have code there and the code was calling something from dependency? Although very improbable, still the same problem.
 
 So I rather decided to do it properly. Generate fresh new static constructor for the entry point's class. There calling my code and then calling newly generated method created from the original code.
 

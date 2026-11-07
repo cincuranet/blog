@@ -8,7 +8,7 @@ tags:
   - C#
   - Roslyn
 ---
-I've had some spare time in between working on other items yesterday and I decided to explore how the [_FbNetExternalEngine_ plugin][3] would feel with new [tuples support in C# 7][2]. As it happens the sailing was not smooth and I was bitten by the magic the compiler does for us.
+I've had some spare time in between working on other items yesterday and I decided to explore how the [*FbNetExternalEngine* plugin][3] would feel with new [tuples support in C# 7][2]. As it happens the sailing was not smooth and I was bitten by the magic the compiler does for us.
 
 <!-- excerpt -->
 
@@ -16,7 +16,7 @@ I'll not explain the tuples feature, it's described well in the above linked pos
 
 ![Tuples in C# 7]({{ include "post_ilink" page "value_tuple.png" }})
 
-Ignore the red squiggles for a minute and focus in the code instead. I created simple `OhMy` method that returns the tuple. Of course, using the new syntax. The syntax is something compiler brings, but the types behind are from a [_System.ValueTuple_][1] NuGet package with identically named types (thus you can use it in C# 6, minus the fancy syntax). The tuples can (and should) have named fields, however I'm not using it in this piece of code. I'm just accessing the `ItemX` fields directly. The `Item10` in the example.
+Ignore the red squiggles for a minute and focus in the code instead. I created simple `OhMy` method that returns the tuple. Of course, using the new syntax. The syntax is something compiler brings, but the types behind are from a [*System.ValueTuple*][1] NuGet package with identically named types (thus you can use it in C# 6, minus the fancy syntax). The tuples can (and should) have named fields, however I'm not using it in this piece of code. I'm just accessing the `ItemX` fields directly. The `Item10` in the example.
 
 If you're like me, you're thinking: "Wow, interesting.". The compiler is probably generating some types in background, because clearly there's only finite set of `ValueTuple<T1..Tn>` you can have in the referenced assembly. Right? Then, obviously, the question is, why is there the referenced assembly in the first place? Compiler might generate even the most common ones...
 
@@ -26,7 +26,7 @@ Nope. The compiler is not generating anything in this case. It's doing the same 
 
 Looking at the IL code it's clearly visible. It's accessing the `Rest` and then `Item3`. Because the `ValueTuple` goes only to 8 generic items. That also explains the weird error messages about ``System.ValueType`3`` and ``System.ValueType`8`` on the first picture.
 
-Why does this even matter? In my case in _FbNetExternalEngine_ I'm fetching the values the callee returned using reflection (currently). Although in the code I can use the `Item10` (for example) and it looks like a regular field, the reflection code will not be able to find such field.
+Why does this even matter? In my case in *FbNetExternalEngine* I'm fetching the values the callee returned using reflection (currently). Although in the code I can use the `Item10` (for example) and it looks like a regular field, the reflection code will not be able to find such field.
 
 It makes perfect sense, given the behavior I described above. It's just something that looks like it's straightforward, but it isn't. It makes me kind of sad. Or maybe it is because last two days I spent beating my head with race conditions and isolation levels in databases, and my brain is beaten and I just wanted something straightforward. Anyway, good to know.
 

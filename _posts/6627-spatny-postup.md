@@ -11,4 +11,4 @@ Hned další problém který jsem viděl bylo prapodivné organizování soubor�
 
 Poté co jsem několik těchto "drobností" a pár dalších (např. výsledky kompilace a soubory které u toho vznikají se cpaly do stejného adr., který se synchronizoval přes SVN) napsal vedoucímu projektu (lze-li to tak řící), jsem byl odpálen tím, že je to prostě jedno a hlavně že to jde přeložit u něj a že nemá čas ani chuť to nějak řešit. Pak mi bylo vysvětleno, že program se dělá tak, že "se sedí půl dne se zákazníkem a pak se na to vlítne". Tohle mě totálně dorazilo. Neudělat si i pro střední (klidně i menší) projekt analýzu a nějaké návrhy, to je síla (podle mého názoru). Šel jsem tedy "domu".
 
-_Co myslíte Vy? Děláte u projektů analýzy? Udržujete "morálku" kódu? Šli byste do podobných věcí?_
+*Co myslíte Vy? Děláte u projektů analýzy? Udržujete "morálku" kódu? Šli byste do podobných věcí?*

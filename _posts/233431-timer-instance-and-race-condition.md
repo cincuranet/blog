@@ -23,7 +23,7 @@ timer = new Timer(_ =>
 }, null, TimeSpan.FromSeconds(10), Timeout.InfiniteTimeSpan);
 ```
 
-Looks good, right? Compiles. Runs fine. Or ... You probably know there's a catch. Else the blog post would not mention race condition. It runs fine in 99,99999% cases (100% for me so far ;)). The problem is, that the `timer.Change` call could happen _before_ the assignment on `L2`. Who would have thought that. :)
+Looks good, right? Compiles. Runs fine. Or ... You probably know there's a catch. Else the blog post would not mention race condition. It runs fine in 99,99999% cases (100% for me so far ;)). The problem is, that the `timer.Change` call could happen *before* the assignment on `L2`. Who would have thought that. :)
 
 When I first saw it on Jeffrey Richter's screen it was so clear to me. So easy. But honestly, I never thought about it.
 

@@ -14,7 +14,7 @@ Po [Praze][2] se na zoubek analyzátorům podíváme i ve Zlíně - 16.2.2016 od
 
 ##### Update (Feb 2016)
 
-Protože mám rád věci více interaktivní, tak zvláště na komunitní akce nedělám předpřipravená dema. Lépe se to pak přizpůsobí aktuálnímu stavu. No a včera jsem zaboha nemohl ukázat, jak (ne)použití `WithAdditionalAnnotations(Formatter.Annotation)` změní výsledek. Asi málokdy člověk chce, aby to _nebylo_ zformátované. Ale já to v tu chvíli chtěl. No a kde byl háček? Když člověk neposkládá celý kód sám, ale použije metody, kde může některé "nezajímavé" parametry vypustit (jako třeba jasně očekávané závorky u bloku), odekorují se elementy implicitně. Protože proč jinak, že? Stačí porovnat otevírací a zavírací závorku v tomto případě (zkuste odkomentovat i `WithAdditionalAnnotations`).
+Protože mám rád věci více interaktivní, tak zvláště na komunitní akce nedělám předpřipravená dema. Lépe se to pak přizpůsobí aktuálnímu stavu. No a včera jsem zaboha nemohl ukázat, jak (ne)použití `WithAdditionalAnnotations(Formatter.Annotation)` změní výsledek. Asi málokdy člověk chce, aby to *nebylo* zformátované. Ale já to v tu chvíli chtěl. No a kde byl háček? Když člověk neposkládá celý kód sám, ale použije metody, kde může některé "nezajímavé" parametry vypustit (jako třeba jasně očekávané závorky u bloku), odekorují se elementy implicitně. Protože proč jinak, že? Stačí porovnat otevírací a zavírací závorku v tomto případě (zkuste odkomentovat i `WithAdditionalAnnotations`).
 
 ```csharp
 SyntaxFactory.Block()

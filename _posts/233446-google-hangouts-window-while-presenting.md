@@ -12,7 +12,7 @@ Few weeks ago I stoped using Miranda, which I used for years, and installed [Han
 
 No matter how I clicked the icon the window was not opening. First I thought it's something with focus and browser window I restarted it, few times. Nothing. That was frustrating. But after next assignment I decided to take out big guns. Once I clicked the icon I looked at all the handles and windows being currently present and the Hangouts' window was there. But not visible. Weird.
 
-Then I realized I was in "presentation mode". Turned it off and sure I was able to open the window and type. I don't know any other applications other than Microsoft's that take this "state" into account. Although muting all the IM messages is a great small smart touch, when _I_ open the window I want it to do what _I_ want :).
+Then I realized I was in "presentation mode". Turned it off and sure I was able to open the window and type. I don't know any other applications other than Microsoft's that take this "state" into account. Although muting all the IM messages is a great small smart touch, when *I* open the window I want it to do what *I* want :).
 
 Hope it helps somebody while hunting for Hangouts' window while in "presentation mode", as I did.
 

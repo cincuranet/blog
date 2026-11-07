@@ -17,7 +17,7 @@ The move is considered mostly because the VMs can be placed closer to the custom
 
 The measurement was done using [CrystalDiskMark][2] version 7.0.0 x64 running as an Administrator. `Default` profile was used with this test: `4 GiB (x5) [Interval: 5 sec] <DefaultAffinity=DISABLED>`. CrystalDiskMark was selected because on-prem machines had it already installed.
 
-I tested _Standard D8s v3 (8 vcpus, 32 GiB memory)_, _Standard L8s_v2 (8 vcpus, 64 GiB memory)_ and _Standard L8s (8 vcpus, 64 GiB memory)_ all running Windows Server 2019 Datacenter from the default image in Azure with Premium SSDs (always fresh VM). P20 (D8sv3 only), P30, P40 (D8sv3 only), OS disk (because why not), Temp disk and NVMe disk (only available in L8sv2) were tested. No further VM modification was done except for attaching disks and turning on read caching where possible.
+I tested *Standard D8s v3 (8 vcpus, 32 GiB memory)*, *Standard L8s_v2 (8 vcpus, 64 GiB memory)* and *Standard L8s (8 vcpus, 64 GiB memory)* all running Windows Server 2019 Datacenter from the default image in Azure with Premium SSDs (always fresh VM). P20 (D8sv3 only), P30, P40 (D8sv3 only), OS disk (because why not), Temp disk and NVMe disk (only available in L8sv2) were tested. No further VM modification was done except for attaching disks and turning on read caching where possible.
 
 #### Read
 
@@ -115,7 +115,7 @@ As expected, the NVMe disk is a clear winner with impressive numbers. Disks P20,
 | L8sv2 - Temp disk             |                   97673.81 |                   12279.27 |                122200.62 |                 242.85 |
 | D8sv3 - Temp disk             |                   61271.61 |                    7692.77 |                 30760.47 |                 148.73 |
 
-Same story, first place for NVMe. Who would have thought, right? :) Now at least for the _Random 4KiB (Q=32, T=16)_ (which matches the best the workload the machines are doing now) workload the P20, P30 and P40 in D8sv3 show different performance and match the expectation of P20 < P30 < P40.
+Same story, first place for NVMe. Who would have thought, right? :) Now at least for the *Random 4KiB (Q=32, T=16)* (which matches the best the workload the machines are doing now) workload the P20, P30 and P40 in D8sv3 show different performance and match the expectation of P20 < P30 < P40.
 
 #### Summary
 

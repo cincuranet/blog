@@ -5,7 +5,7 @@ date: 2020-11-18T07:49:00Z
 tags:
   - Presentations & Speaking
 ---
-Next week the .NET Developer Conference is happening. As an online event obviously. And I'll deliver half-day workshop there. The topic is _Tasks and async/await from the ground up_.
+Next week the .NET Developer Conference is happening. As an online event obviously. And I'll deliver half-day workshop there. The topic is *Tasks and async/await from the ground up*.
 
 <!-- excerpt -->
 

@@ -5,7 +5,7 @@ date: 2026-04-24T08:53:00Z
 tags:
   - Presentations & Speaking
 ---
-Příští týden ve čtvrtek, 30. dubna, se koná [GitHub Copilot Dev Days 2026][1] v Praze. I já přispěju trochu do mlýna s tématem _Jak jsme začali používat Copilot v dotnet/runtime_.
+Příští týden ve čtvrtek, 30. dubna, se koná [GitHub Copilot Dev Days 2026][1] v Praze. I já přispěju trochu do mlýna s tématem *Jak jsme začali používat Copilot v dotnet/runtime*.
 
 <!-- excerpt -->
 

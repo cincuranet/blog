@@ -5,7 +5,7 @@ date: 2023-03-30T10:20:00Z
 tags:
   - Presentations & Speaking
 ---
-This Saturday I'll be speaking at [Warsaw IT Days 2023][1]. One sessions _What's new in C# 11_ will be in-person in Warsaw, while other _C# Source Generators – let the machine do the programming_ is VoD.
+This Saturday I'll be speaking at [Warsaw IT Days 2023][1]. One sessions *What's new in C# 11* will be in-person in Warsaw, while other *C# Source Generators – let the machine do the programming* is VoD.
 
 <!-- excerpt -->
 
@@ -17,6 +17,6 @@ This Saturday I'll be speaking at [Warsaw IT Days 2023][1]. One sessions _What's
 
 ![C# Source Generators – let the machine do the programming banner]({{ include "post_ilink" page "source-generators.png" }})
 
-**Errata:** During my _What's new in C# 11_ session I incorrectly answered question, that `required` modifier can be applied to `private` properties. It _can't_. It doesn't make sense, `private` properties can't be set by caller.  
+**Errata:** During my *What's new in C# 11* session I incorrectly answered question, that `required` modifier can be applied to `private` properties. It *can't*. It doesn't make sense, `private` properties can't be set by caller.  
 
 [1]: https://warszawskiedniinformatyki.pl/en/

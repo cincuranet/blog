@@ -5,7 +5,7 @@ date: 2023-07-24T09:12:00Z
 tags:
   - Presentations & Speaking
 ---
-I'll be at this year's [WeAreDevelopers World Congress][1]. I'm running a workshop _Writing and measuring high performance code with latest .NET and C# features_.
+I'll be at this year's [WeAreDevelopers World Congress][1]. I'm running a workshop *Writing and measuring high performance code with latest .NET and C# features*.
 
 <!-- excerpt -->
 

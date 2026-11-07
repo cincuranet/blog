@@ -9,9 +9,9 @@ I was reading Stephen Cleary's [A New Pattern for Exception Logging][1] blogpost
 
 <!-- excerpt -->
 
-By "oneliner" I mean method that's using _expression body_. If you're looking for answer to "Why?", I don't have it. So, let's consider it a quick exercise in C#.
+By "oneliner" I mean method that's using *expression body*. If you're looking for answer to "Why?", I don't have it. So, let's consider it a quick exercise in C#.
 
-The _expression body_ as the name implies, has to be expression and not bunch of statements in a block. I need to call an `Action` and return `bool`. Which is actually `Func<bool>`. Having that it's easy to do so.
+The *expression body* as the name implies, has to be expression and not bunch of statements in a block. I need to call an `Action` and return `bool`. Which is actually `Func<bool>`. Having that it's easy to do so.
 
 ```csharp
 public static bool False(Action action) => new Func<bool>(() => { action(); return false; })();

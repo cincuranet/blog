@@ -17,9 +17,9 @@ The first one is that I have to add `System.Diagnostics` into `using`s and also 
 
 And the second is that I have to distinguish between the `Launch` and `Break`. And at the beginning I often don't have clear picture of what I'm doing and hence I don't know what path the code will go through.
 
-These two little niggles (and some other small ones) made me create _D.ebug_. It's a extremely simple static class (`D`) with a single method (`ebug`) in a global namespace. It allows me to use anywhere without messing up with `using`s or writing long names. It also uses [`IsAttached` property][6] to decide whether to `Break` or `Lanuch`. Adn that's what I often want. Stop at "this" line - either really just stopping the debugger or offering me to attach it if it's not already attached. To make the stopping bit more smooth it also uses `DebuggerHidden` attribute.
+These two little niggles (and some other small ones) made me create *D.ebug*. It's a extremely simple static class (`D`) with a single method (`ebug`) in a global namespace. It allows me to use anywhere without messing up with `using`s or writing long names. It also uses [`IsAttached` property][6] to decide whether to `Break` or `Lanuch`. Adn that's what I often want. Stop at "this" line - either really just stopping the debugger or offering me to attach it if it's not already attached. To make the stopping bit more smooth it also uses `DebuggerHidden` attribute.
 
-It's built for `net40`, `netstandard1.0` and `netstandard2.0` and available on NuGet as, wait for it, [_D.ebug_][1].
+It's built for `net40`, `netstandard1.0` and `netstandard2.0` and available on NuGet as, wait for it, [*D.ebug*][1].
 
 Hope you'll find it useful and feel free to [bring][2] your ideas.
 
