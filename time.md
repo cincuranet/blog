@@ -28,6 +28,7 @@ Last 48 hours at 5-minute resolution, updated <span id="statistics-last-updated"
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_skew.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_status.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_satellites.svg"></object>
+<object type="image/svg+xml" data="https://time.cincura.net/api/time_history_prres.svg"></object>
 <object type="image/svg+xml" data="https://time.cincura.net/api/time_history_cno.svg"></object>
 
 #### Snapshot
