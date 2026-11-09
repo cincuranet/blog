@@ -38,7 +38,7 @@ Then I created `.xinitrc`, which tells X to run nothing but Chromium in kiosk mo
 ```bash
 #!/bin/sh
 
-exec /usr/lib/chromium/chromium --kiosk --user-data-dir=/tmp/chromium --window-position=0,0 --window-size=1920,1080 <URL>
+exec /usr/lib/chromium/chromium --kiosk --user-data-dir=/tmp/chromium --window-position=0,0 --window-size=1920,1080 --disable-component-update --disable-background-networking <URL>
 ```
 
 Chromium keeps its profile in `/tmp`, which lives in RAM (tmpfs). So every start is a clean one, and it isn't constantly writing to (and wearing out) the SD card.
