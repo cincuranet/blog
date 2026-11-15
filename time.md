@@ -113,7 +113,7 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 <script type="module">
 	const problem = 'n/a';
-	const data = await blog.fetchData('https://time.cincura.net/api/stats.json');
+	const data = await blog.fetchData('https://time.cincura.net/api/time_history_stats.json');
 
 	document.getElementById('snapshot-last-updated').textContent = data?.generated ?? problem;
 	document.getElementById('statistics-last-updated').textContent = data?.generated ?? problem;
