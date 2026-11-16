@@ -6,7 +6,7 @@ layout: page
 
 `time.cincura.net` is a public **Stratum 1** time server available for anyone to use. It supports NTP and NTS. Time is sourced from GNSS (GPS + Galileo + BeiDou) with PPS. The server is physically located in the Czech Republic, Europe.
 
-My goal with this server is to achieve the best possible accuracy (within reasonable budget) and learn something along the way. I'm committed to running it "forever".
+My goal with this server is to achieve the best possible accuracy (within a reasonable budget) and learn something along the way. I'm committed to running it "forever".
 
 It's also part of the [NTP Pool Project][6], with public status pages for [IPv4][3] and [IPv6][4] and [IPv6][5].
 
@@ -135,21 +135,21 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 ##### Sources
 
-Time server uses multiple sources simultaneously. GPS is used from L1 and L5 signal. Galileo is used from E1 and E5 signal; OSNMA is enabled. BeiDou is used from B1 and B2 signal.
+The server tracks multiple constellations simultaneously: GPS from L1 and L5 signal; Galileo from E1 and E5a signal, with OSNMA; BeiDou from B1C and B2a signal.
 
-QZSS and NAVIC are not used due to poor coverage in Europe (Czech Republic).
+QZSS and NavIC are not used, as they're regional systems with no useful coverage in central Europe.
 
 ##### Module and antenna
 
-The setup uses [u-blox NEO-F10T][1] together with a [u-blox ANN-MB1][2] antenna. The NEO-F10T supports nanosecond-level accuracy and includes TCXO.
+The setup uses [u-blox NEO-F10T][1] together with a [u-blox ANN-MB1][2] antenna. The NEO-F10T supports nanosecond-level accuracy and includes a TCXO.
 
-The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. A 10 m MRC-240 extension connects the antenna to the module. ~20 cm brass ground plane is used.
+The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. A 10 m MRC-240 extension connects the antenna to the module. A ~20 cm brass ground plane is used.
 
 ##### Configuration
 
 * The NEO-F10T is connected using UART (57600/8/1/n) directly to Raspberry Pi Compute Module 4 with 2 GB RAM.
-* All CPUs are pinned to 1.5 GHz (`force_turbo` boot config/`performance` scaling governor)
-* PPS is connected to GPIO pin.
+* All CPUs are pinned to 1.5 GHz (`force_turbo` boot config/`performance` scaling governor).
+* PPS is connected to a GPIO 18 pin.
 * Antenna delay is set to 70 ns:
     * ANN-MB1 has 5 m RG-174 (VF 0.66) → ~25.3 ns.
     * Extension is 10 m MRC-240 (VF 0.84) → ~41.7 ns.
@@ -158,7 +158,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 * The module is in *timing* mode, with fixed (stationary) position.
     * The position was determined using Survey-In with < 50 cm accuracy (1 m ≈ 3.3 ns).
 * Chrony handles clock disciplining, NTP and NTS.
-* GPSd handles communication with the module.
+* `gpsd` handles communication with the module.
 * OS is Raspberry Pi OS Lite 64-bit.
 * SBAS is enabled.
 * Galileo OSNMA is enabled (without trusted time enforcement).
@@ -166,7 +166,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 
 #### Bonus
 
-Yes, the IPv6 has `71be` and `c10c` in it - a totally intentional (and slightly tortured) attempt to spell *time* and *clock* in hex. Squint hard enough, believe in magic, and it's there.
+Yes, the IPv6 address has `71be` and `c10c` in it - a totally intentional (and slightly tortured) attempt to spell *time* and *clock* in hex. Squint hard enough, believe in magic, and it's there.
 
 #### Blog posts
 
