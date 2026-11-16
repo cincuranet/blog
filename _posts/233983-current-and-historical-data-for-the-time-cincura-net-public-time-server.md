@@ -24,9 +24,8 @@ The GNSS charts are just as interesting. The receiver typically uses about 9 GPS
 
 Behind the scenes, there's nothing fancy. A Python script runs every five minutes, collects the data, parses it and stores it in a SQLite database (sorry Firebird, SQLite is enough here). Because everything is stored, 48 hours is just an arbitrary number. I'm not sure I'll ever need all of that data, but you know - data hoarder.
 
-If you've ever looked at the [`time.cincura.net`][1] page and weren't sure whether the server is worth using, I hope this data helps you decide. By the way, the *NTP Pool Project* also monitors my server ([IPv4][2] and [IPv6][3] and [IPv6][4]), in case you'd like to cross-check it against independent data.
+If you've ever looked at the [`time.cincura.net`][1] page and weren't sure whether the server is worth using, I hope this data helps you decide. By the way, the *NTP Pool Project* also monitors my server ([IPv4][2] and [IPv6][3]), in case you'd like to cross-check it against independent data.
 
 [1]: https://time.cincura.net
 [2]: https://www.ntppool.org/scores/85.163.168.227
 [3]: https://www.ntppool.org/scores/2001:67c:d74:71be::c10c
-[4]: https://www.ntppool.org/scores/2001:67c:d74:66::71be

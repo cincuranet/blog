@@ -8,7 +8,7 @@ layout: page
 
 My goal with this server is to achieve the best possible accuracy (within a reasonable budget) and learn something along the way. I'm committed to running it "forever".
 
-It's also part of the [NTP Pool Project][6], with public status pages for [IPv4][3] and [IPv6][4] and [IPv6][5].
+It's also part of the [NTP Pool Project][6], with public status pages for [IPv4][3] and [IPv6][4].
 
 #### On this page
 
@@ -172,12 +172,13 @@ Yes, the IPv6 address has `71be` and `c10c` in it - a totally intentional (and s
 
 * [{{ include "post_title" 233951 }}][blog1]
 * [{{ include "post_title" 233969 }}][blog2]
+* [{{ include "post_title" 233983 }}][blog3]
 
 [1]: https://www.u-blox.com/en/product/neo-f10t-module
 [2]: https://www.u-blox.com/en/product/ann-mb1-antenna
 [3]: https://www.ntppool.org/scores/85.163.168.227
 [4]: https://www.ntppool.org/scores/2001:67c:d74:71be::c10c
-[5]: https://www.ntppool.org/scores/2001:67c:d74:66::71be
 [6]: https://www.ntppool.org/
 [blog1]: {{ include "post_link" 233951 }}
 [blog2]: {{ include "post_link" 233969 }}
+[blog3]: {{ include "post_link" 233983 }}
