@@ -166,7 +166,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
 
 #### Bonus
 
-Yes, the IPv6 address ends in `::71be` — a totally intentional (and slightly tortured) attempt to spell "time" in hex. Squint hard enough, believe in magic, and it's there.
+Yes, the IPv6 has `71be` and `c10c` in it - a totally intentional (and slightly tortured) attempt to spell *time* and *clock* in hex. Squint hard enough, believe in magic, and it's there.
 
 #### Blog posts
 
