@@ -77,10 +77,13 @@ let blog = (function() {
 	function initExpand() {
 		for (const e of document.querySelectorAll('[data-expand]')) {
 			let target = document.querySelector('#' + e.getAttribute('data-expand'));
+			e.setAttribute('aria-controls', target.id);
+			e.setAttribute('aria-expanded', !target.classList.contains('hidden'));
 			e.addEventListener('click', event => {
 				event.preventDefault();
 				event.stopPropagation();
-				target.classList.toggle("hidden");
+				let hidden = target.classList.toggle("hidden");
+				e.setAttribute('aria-expanded', !hidden);
 			});
 		}
 	}
