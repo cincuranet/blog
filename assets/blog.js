@@ -1,9 +1,9 @@
 ---
 ---
-let blog = (function() {
+const blog = (function() {
 	function initLinks() {
 		for (const e of document.querySelectorAll('a')) {
-			let href = e.href;
+			const href = e.href;
 			if (isLocalLink(href))
 				continue;
 			e.setAttribute('target', '_blank');
@@ -11,14 +11,14 @@ let blog = (function() {
 		}
 
 		for (const e of document.querySelectorAll('article a')) {
-			let href = e.href;
+			const href = e.href;
 			if (isLocalLink(href))
 				continue;
 			e.insertAdjacentHTML('beforeend', '<span class="fa-solid fa-arrow-up-right-from-square external-link-icon" aria-hidden="true"></span>');
 		}
 
 		for (const e of document.querySelectorAll('a[rel~="bookmark"]')) {
-			let href = e.href;
+			const href = e.href;
 			e.addEventListener('click', async event => {
 				event.preventDefault();
 				event.stopPropagation();
@@ -27,7 +27,7 @@ let blog = (function() {
 		}
 
 		for (const e of document.querySelectorAll('h3[data-title]')) {
-			let text = e.innerText.trim();
+			const text = e.innerText.trim();
 			e.addEventListener('click', async event => {
 				event.preventDefault();
 				event.stopPropagation();
@@ -38,28 +38,28 @@ let blog = (function() {
 
 	function initImageTitles() {
 		for (const e of document.querySelectorAll('article img[alt]')) {
-			let alt = e.getAttribute('alt');
+			const alt = e.getAttribute('alt');
 			e.setAttribute('title', alt);
 		}
 	}
 
 	function initImageBox() {
-		let items = [];
+		const items = [];
 		for (const e of document.querySelectorAll('article a')) {
-			let img = e.querySelector('img');
+			const img = e.querySelector('img');
 			if (img === null)
 				continue;
-			let href = e.href;
+			const href = e.href;
 			if (getLinkFileExtensions(href).match(/(jpg|jpeg|gif|png|svg)/) === null)
 				continue;
-			let title = img.getAttribute('title');
+			const title = img.getAttribute('title');
 			e.setAttribute('title', title);
 			e.setAttribute('data-gallery', '');
 			items.push(e);
 		}
 
 		if (items.length > 0) {
-			let cssSimpleBox = document.createElement('link');
+			const cssSimpleBox = document.createElement('link');
 			cssSimpleBox.rel = 'stylesheet';
 			cssSimpleBox.href = '/assets/lightbox/lightbox.v__{{ blog.file_hash "/assets/lightbox/lightbox.css" }}.css';
 			cssSimpleBox.media = 'screen';
@@ -76,13 +76,13 @@ let blog = (function() {
 
 	function initExpand() {
 		for (const e of document.querySelectorAll('[data-expand]')) {
-			let target = document.querySelector('#' + e.getAttribute('data-expand'));
+			const target = document.querySelector('#' + e.getAttribute('data-expand'));
 			e.setAttribute('aria-controls', target.id);
 			e.setAttribute('aria-expanded', !target.classList.contains('hidden'));
 			e.addEventListener('click', event => {
 				event.preventDefault();
 				event.stopPropagation();
-				let hidden = target.classList.toggle("hidden");
+				const hidden = target.classList.toggle("hidden");
 				e.setAttribute('aria-expanded', !hidden);
 			});
 		}
@@ -90,7 +90,7 @@ let blog = (function() {
 
 	function showArticleNicely() {
 		if (document.referrer !== '' && isLocalLink(document.referrer)) {
-			let article = document.querySelector('article');
+			const article = document.querySelector('article');
 			article.scrollIntoView();
 		}
 	}
@@ -106,8 +106,8 @@ let blog = (function() {
 	}
 
 	function getLinkFileExtensions(link) {
-		let part = link.split(/(\?|#)/)[0];
-		let split = part.split('.');
+		const part = link.split(/(\?|#)/)[0];
+		const split = part.split('.');
 		return split.length !== 1
 			? split[split.length - 1]
 			: '';
