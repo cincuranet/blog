@@ -7,11 +7,7 @@ let blog = (function() {
 			if (isLocalLink(href))
 				continue;
 			e.setAttribute('target', '_blank');
-			let rel = e.getAttribute('rel');
-			rel = rel !== null
-				? rel + ' ' + 'noopener'
-				: 'noopener'
-			e.setAttribute('rel', rel);
+			e.relList.add('noopener');
 		}
 
 		for (const e of document.querySelectorAll('article a')) {
@@ -48,7 +44,7 @@ let blog = (function() {
 	}
 
 	function initImageBox() {
-		let items = new Array();
+		let items = [];
 		for (const e of document.querySelectorAll('article a')) {
 			let img = e.querySelector('img');
 			if (img === null)
