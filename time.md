@@ -156,7 +156,7 @@ The antenna is mounted ~50 cm above the roof with a full 360° view of the sky. 
     * Added 3 ns for active antenna characteristics.
 * PPS is 1 Hz, rising edge, 10000 µs pulse (4 mA), with 0 user delay.
 * The module is in *timing* mode, with fixed (stationary) position.
-    * The position was determined using Survey-In with < 50 cm accuracy (1 m ≈ 3.3 ns).
+    * The position was determined using Survey-In with < 50 cm accuracy.
 * Chrony handles clock disciplining, NTP and NTS.
 * `gpsd` handles communication with the module.
 * OS is Raspberry Pi OS Lite 64-bit.
