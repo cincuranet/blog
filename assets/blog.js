@@ -88,6 +88,26 @@ const blog = (function() {
 		}
 	}
 
+	function initTabs() {
+		for (const group of document.querySelectorAll('[data-tabs]')) {
+			const tabs = group.querySelectorAll('[data-tab]');
+			for (const tab of tabs) {
+				tab.setAttribute('aria-controls', tab.getAttribute('data-tab'));
+				tab.setAttribute('aria-selected', tab.classList.contains('active'));
+				tab.addEventListener('click', event => {
+					event.preventDefault();
+					event.stopPropagation();
+					for (const t of tabs) {
+						const active = t === tab;
+						t.classList.toggle('active', active);
+						t.setAttribute('aria-selected', active);
+						document.getElementById(t.getAttribute('data-tab')).classList.toggle('hidden', !active);
+					}
+				});
+			}
+		}
+	}
+
 	function showArticleNicely() {
 		if (document.referrer !== '' && isLocalLink(document.referrer)) {
 			const article = document.querySelector('article');
@@ -122,6 +142,7 @@ const blog = (function() {
 			}
 			else {
 				initExpand();
+				initTabs();
 			}
 			initImageBox();
 		},

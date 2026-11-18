@@ -390,6 +390,35 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 	padding-right: 0;
 }
 
+/* tabs */
+
+[data-tabs] {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+}
+
+[data-tabs] > a[data-tab] {
+	padding: .5rem 1rem;
+	text-decoration: none;
+	border-bottom: 1px solid #222;
+	color: #666;
+}
+
+[data-tabs] > a[data-tab]:hover {
+	color: #0f83db;
+}
+
+[data-tabs] > a[data-tab].active {
+	color: #222;
+	border-bottom-width: 3px;
+}
+
+[data-tabs] > div {
+	flex-basis: 100%;
+	padding-top: 1rem;
+}
+
 /* comments */
 
 #comments {
