@@ -1646,7 +1646,7 @@ articles:
 #### Professional career - Ongoing:
 
 * 09/2022 - present: senior software engineer for Microsoft
-	* Entity Framework Core Team, .NET Performance Team
+	* .NET team
 	* Developer Division
 * 09/2009 - present: external trainer for Gopas, a.s.
 	* advanced trainings about Entity Framework
