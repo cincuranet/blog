@@ -1633,7 +1633,7 @@ articles:
 * certified electrician (LV (≤1000 V AC / ≤1500 V DC), non-hazardous areas)
 * Microsoft Certified Professional
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
-* Meteorology course "Weather Under Control" (ČHMÚ)
+* meteorology course "Weather Under Control" (ČHMÚ)
 * Red Cross - first aid certification
 * H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
