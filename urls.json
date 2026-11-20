@@ -1,0 +1,51 @@
+---
+---
+[
+{{~ for doc in site.posts ~}}
+	{
+		"url": "{{ doc.url }}",
+		"serve": "{{ doc.url }}.html"
+	},
+	{
+		"url": "{{ doc.url }}/",
+		"redirect": 301,
+		"to": "{{ doc.url }}"
+	},
+	{{~ capture permalink ~}}{{ include "post_permalink" doc }}{{~ end ~}}
+	{
+		"url": "{{ permalink }}",
+		"redirect": 302,
+		"to": "{{ doc.url }}"
+	},
+	{
+		"url": "{{ permalink }}/",
+		"redirect": 301,
+		"to": "{{ permalink }}"
+	},
+{{~ end ~}}
+{{~ for doc in site.html_pages ~}}
+	{{~ if doc.url == "/404" ~}}
+		{{~ continue ~}}
+	{{~ end ~}}
+	{{~ if doc.url == "/" ~}}
+	{
+		"url": "{{ doc.url }}",
+		"serve": "/index.html"
+	},
+		{{~ continue ~}}
+	{{~ end ~}}
+	{
+		"url": "{{ doc.url }}",
+		"serve": "{{ doc.url }}.html"
+	},
+	{
+		"url": "{{ doc.url }}/",
+		"redirect": 301,
+		"to": "{{ doc.url }}"
+	},
+{{~ end ~}}
+	{
+		"url": "/favicon.ico",
+		"serve": "/assets/favicon.ico"
+	}
+]
