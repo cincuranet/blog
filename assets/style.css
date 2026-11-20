@@ -1,9 +1,7 @@
----
----
 @font-face {
   font-family: 'Cascadia Mono';
   src: local('Cascadia Mono'),
-       url(data:font/woff2;base64,{{ blog.file_base64 "/assets/fonts/CascadiaMono.woff2" }}) format('woff2');
+       url('/assets/fonts/CascadiaMono.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -13,7 +11,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url(data:font/woff2;base64,{{ blog.file_base64 "/assets/fonts/open-sans-v18-latin-ext_latin-regular.woff2" }}) format('woff2');
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-regular.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -23,7 +21,7 @@
   font-style: italic;
   font-weight: 400;
   src: local('Open Sans Italic'), local('OpenSans-Italic'),
-       url(data:font/woff2;base64,{{ blog.file_base64 "/assets/fonts/open-sans-v18-latin-ext_latin-italic.woff2" }}) format('woff2');
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-italic.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -33,7 +31,7 @@
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url(data:font/woff2;base64,{{ blog.file_base64 "/assets/fonts/open-sans-v18-latin-ext_latin-700.woff2" }}) format('woff2');
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -43,7 +41,7 @@
   font-style: italic;
   font-weight: 700;
   src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
-       url(data:font/woff2;base64,{{ blog.file_base64 "/assets/fonts/open-sans-v18-latin-ext_latin-700italic.woff2" }}) format('woff2');
+       url('/assets/fonts/open-sans-v18-latin-ext_latin-700italic.woff2') format('woff2');
   font-display: swap;
 }
 

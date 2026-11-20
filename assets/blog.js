@@ -159,10 +159,3 @@ const blog = (function() {
 		}
 	};
 })();
-
-/* --- */
-
-window.FontAwesomeConfig = {
-  keepOriginalSource: false
-};
-{{ include "/assets/fa/js/all.min.js" }}
