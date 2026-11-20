@@ -5,7 +5,7 @@ date: 2026-11-12T13:20:00Z
 tags:
   - Presentations & Speaking
 ---
-[Loni][2] jsem byl poprvné na CODECON #Žilina a strašně se mi to líbilo. Především to, kolik různých témat jsem si tam poslechl. A i tento rok jsem měl štěstí a moje přednáška *0xDEADBEEF: Prečo je pamäť tvojho počítača plná vtipov (a ako ti pomôžu debugovať)* byla vybrána. Takže rychle na web [CODECON #Žilina][1], zaregistrovat a uvidíme se tam. 
+[Loni][2] jsem byl poprvé na CODECON #Žilina a strašně se mi to líbilo. Především to, kolik různých témat jsem si tam poslechl. A i tento rok jsem měl štěstí a moje přednáška *0xDEADBEEF: Prečo je pamäť tvojho počítača plná vtipov (a ako ti pomôžu debugovať)* byla vybrána. Takže rychle na web [CODECON #Žilina][1], zaregistrovat a uvidíme se tam. 
 
   
 <!-- excerpt -->
