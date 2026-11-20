@@ -2,6 +2,10 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: .NET Conf 2026
+    date: November 10-13, 2026
+    sessions:
+      - "EF Core 11: Vector Search, Smarter LINQ, and a Friendlier dotnet ef"
   - title: Techorama (NL)
     date: October 27-28, 2026
     sessions:
