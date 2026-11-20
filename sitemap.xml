@@ -15,4 +15,4 @@
 		<loc>https://{{ site.address }}{{ doc.url }}</loc>
 	</url>
 	{{~ end ~}}
-</urlset> 
+</urlset>
