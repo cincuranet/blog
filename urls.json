@@ -11,6 +11,11 @@
 		"redirect": 301,
 		"to": "{{ doc.url }}"
 	},
+	{
+		"url": "{{ doc.url }}.html",
+		"redirect": 301,
+		"to": "{{ doc.url }}"
+	},
 	{{~ capture permalink ~}}{{ include "post_permalink" doc }}{{~ end ~}}
 	{
 		"url": "{{ permalink }}",
@@ -40,6 +45,11 @@
 	},
 	{
 		"url": "{{ doc.url }}/",
+		"redirect": 301,
+		"to": "{{ doc.url }}"
+	},
+	{
+		"url": "{{ doc.url }}.html",
 		"redirect": 301,
 		"to": "{{ doc.url }}"
 	},
