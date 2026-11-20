@@ -174,19 +174,6 @@ Yes, the IPv6 address has `71be` and `c10c` in it - a totally intentional (and s
 * [{{ include "post_title" 233969 }}][blog2]
 * [{{ include "post_title" 233983 }}][blog3]
 
-<!--
-<div data-tabs>
-	<a href="#" data-tab="tab-a" class="active">a</a>
-	<a href="#" data-tab="tab-b">b</a>
-	<div id="tab-a">
-		aaa
-	</div>
-	<div id="tab-b" class="hidden">
-		bbb
-	</div>
-</div>
--->
-
 [1]: https://www.u-blox.com/en/product/neo-f10t-module
 [2]: https://www.u-blox.com/en/product/ann-mb1-antenna
 [3]: https://www.ntppool.org/scores/85.163.168.227
