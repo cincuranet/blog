@@ -12,8 +12,10 @@
 	<meta property="og:url" content="https://{{ site.address }}{{ page.url }}" />
 	<meta property="og:image" content="https://{{ site.address }}/assets/og_image.jpg" />
 	{{~ if page.is_post ~}}
+	{{~ capture description ~}}{{ page.excerpt | html.strip | string.replace "\"" "&quot;" }}{{~ end ~}}
+	<meta name="description" content="{{ description }}" />
 	<meta property="og:type" content="article" />
-	<meta property="og:description" content="{{ page.excerpt | html.strip | string.replace "\"" "&quot;" }}" />
+	<meta property="og:description" content="{{ description }}" />
 	<meta property="article:published_time" content="{{ page.date | blog.dt_string "yyyy-MM-ddTHH:mm:ssZ" }}" />
 	<meta property="article:author" content="https://{{ site.address }}/about" />
 	{{~ for tag in page.tags ~}}
@@ -48,8 +50,8 @@
 	</nav>
 
 	<header>
-		{{- capture heading1_accent -}}<span class="accent">{{ site.heading1_accent }}</span>{{ end }}
-		{{- capture heading2_accent -}}<span class="accent">{{ site.heading2_accent }}</span>{{ end }}
+		{{~ capture heading1_accent ~}}<span class="accent">{{ site.heading1_accent }}</span>{{~ end ~}}
+		{{~ capture heading2_accent ~}}<span class="accent">{{ site.heading2_accent }}</span>{{~ end ~}}
 		<h1><a href="/">{{ site.heading1 | string.replace site.heading1_accent heading1_accent }}</a></h1>
 		<h2><span class="accent">by</span> {{ site.heading2 | string.replace site.heading2_accent heading2_accent }}</h2>
 	</header>
