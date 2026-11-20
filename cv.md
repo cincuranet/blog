@@ -2,6 +2,66 @@
 title: Curriculum Vitae - Mgr. Jiří Činčura
 layout: page
 conferences:
+  - title: Techorama (NL)
+    date: October 27-28, 2026
+    sessions:
+      - Azure Spot instances as your secret weapon
+      - Weird C# features you (don’t) need to know about
+  - title: .NET DeveloperDays 2026
+    date: October 20-21, 2026
+    sessions:
+      - Starting with Microsoft.Extensions.VectorData and RAG
+      - Weird C# features you (don’t) need to know about
+  - title: SQL Server Bootcamp 2026
+    date: September 4, 2026
+    sessions:
+      - A file or a Mmtadata entry? Two views on what a database is. (with Vladimir Muzny)
+  - title: WUG Days 2026
+    date: September 2-3, 2026
+    sessions:
+      - How we started using Copilot in dotnet/runtime
+      - "0xDEADBEEF: Why Your Computer's Memory Is Full of Jokes"
+      - Weird C# features you (don't) need to know about
+  - title: OSSConf Žilina
+    date: July 1-3, 2026
+    sessions:
+      - How vector databases work and what is it good for?
+      - The rabbit hole of building a GPS-synchronized time server
+  - title: GitHub Copilot Dev Days 2026 (Zlín)
+    date: May 26, 2026
+    sessions:
+      - How we started using Copilot in dotnet/runtime
+  - title: Gopas TechEd 2026
+    date: May 19-21, 2026
+    sessions:
+      - dotnet run Program.cs – what a crazy world
+      - What's new in EF Core 10
+      - Building a GPS-synchronized time server
+  - title: Techorama (BE)
+    date: May 12-13, 2026
+    sessions:
+      - Azure Spot instances as your secret weapon
+      - Lessons learned from translating parameterized collections in EF Core
+  - title: PV178 @ Faculty of Informatics Masaryk University
+    date: April 30, 2025
+    sessions:
+      - Performance in .NET
+  - title: PV260 @ Faculty of Informatics Masaryk University
+    date: April 15, 2025
+    sessions:
+      - Performance in .NET
+  - title: GitHub Copilot Dev Days 2026
+    date: April 30, 2026
+    sessions:
+      - How we started using Copilot in dotnet/runtime
+  - title: Global Azure 2026
+    date: April 17, 2026
+    sessions:
+      - Cloud design patterns for better architecture (even without cloud)
+  - title: Adriatics Tech Summit 2026
+    date: March 31, 2026
+    sessions:
+      - Starting with Microsoft.Extensions.VectorData and RAG
   - title: WUG Dev Day 2026
     date: January 26, 2026
     sessions:
@@ -1566,8 +1626,10 @@ articles:
 * 2017 - 2023: Microsoft Most Valuable Professional
 * 2021 - 2025: Microsoft Certified Trainer
 * driving licence A, B
+* certified electrician (LV (≤1000 V AC / ≤1500 V DC), non-hazardous areas)
 * Microsoft Certified Professional
 * 2006 - 2008: Microsoft Student Consultant/Microsoft Student Partner
+* Meteorology course "Weather Under Control" (ČHMÚ)
 * Red Cross - first aid certification
 * H.E.A.T Program Instructor level 4
 * H.E.A.T Spoteee Presenter
@@ -1576,13 +1638,6 @@ articles:
 * high level experiences from line of (mechanical) engineering/locksmithery
 * photography (2004 - 2005) (2004: base class; 2005: photography on Faculty of Fine Arts VUT Brno)
 * Fitbox Instructor Advanced
-
-#### Skills:
-
-* Actively using:
-	* .NET Framework/.NET Core/C#, cloud (Microsoft Azure, AWS), databases (relational (Firebird, MS SQL, Oracle, MySQL), newSQL (NuoDB)), PowerShell, Python, Lua, unit testing/TDD, Continuous Integration, Continuous Delivery, Win32 API, Windows (client) administration, UNIX/Linux usage & shell scripting, source control (SVN, Git)
-* Passively using:
-	* PHP, Java, C, C++, Delphi/Object Pascal/Pascal, x86 assembly, XML/XSLT, (X)HTML/CSS, JavaScript, Windows Server administration
 
 #### Professional career - Ongoing:
 
