@@ -23,12 +23,12 @@ To support my work, including this blog and my open-source efforts, [Github Spon
 <h4 id="bio">Bio</h4>
 
 <div data-tabs>
-	<a href="#" data-tab="tab-en" class="active">EN</a>
-	<a href="#" data-tab="tab-cz">CZ</a>
-	<div id="tab-en">
+	<a href="#" class="active">EN</a>
+	<a href="#">CZ</a>
+	<div>
 		{{ include "bio_en" }}
 	</div>
-	<div id="tab-cz" class="hidden">
+	<div class="hidden">
 		{{ include "bio_cz" }}
 	</div>
 </div>

@@ -89,19 +89,22 @@ const blog = (function() {
 	}
 
 	function initTabs() {
+		let id = 0;
 		for (const group of document.querySelectorAll('[data-tabs]')) {
-			const tabs = group.querySelectorAll('[data-tab]');
-			for (const tab of tabs) {
-				tab.setAttribute('aria-controls', tab.getAttribute('data-tab'));
+			const tabs = [...group.querySelectorAll(':scope > a')];
+			const panels = [...group.querySelectorAll(':scope > div')];
+			for (const [i, tab] of tabs.entries()) {
+				panels[i].id ||= `tab-panel-${id++}`;
+				tab.setAttribute('aria-controls', panels[i].id);
 				tab.setAttribute('aria-selected', tab.classList.contains('active'));
 				tab.addEventListener('click', event => {
 					event.preventDefault();
 					event.stopPropagation();
-					for (const t of tabs) {
+					for (const [j, t] of tabs.entries()) {
 						const active = t === tab;
 						t.classList.toggle('active', active);
 						t.setAttribute('aria-selected', active);
-						document.getElementById(t.getAttribute('data-tab')).classList.toggle('hidden', !active);
+						panels[j].classList.toggle('hidden', !active);
 					}
 				});
 			}

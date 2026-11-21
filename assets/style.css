@@ -396,18 +396,18 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 	margin: 1rem 0;
 }
 
-[data-tabs] > a[data-tab] {
+[data-tabs] > a {
 	padding: .5rem 1rem;
 	text-decoration: none;
 	border-bottom: 1px solid #222;
 	color: #666;
 }
 
-[data-tabs] > a[data-tab]:hover {
+[data-tabs] > a:hover {
 	color: #0f83db;
 }
 
-[data-tabs] > a[data-tab].active {
+[data-tabs] > a.active {
 	color: #222;
 	border-bottom-width: 3px;
 }
