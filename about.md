@@ -25,10 +25,10 @@ To support my work, including this blog and my open-source efforts, [Github Spon
 <div data-tabs>
 	<a href="#" data-tab="tab-en" class="active">EN</a>
 	<a href="#" data-tab="tab-cz">CZ</a>
-	<div id="tab-a">
+	<div id="tab-en">
 		{{ include "bio_en" }}
 	</div>
-	<div id="tab-b" class="hidden">
+	<div id="tab-cz" class="hidden">
 		{{ include "bio_cz" }}
 	</div>
 </div>
