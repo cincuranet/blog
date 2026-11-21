@@ -37,78 +37,81 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 
 ##### Chrony
 
-* <a href="#" data-expand="chronyc-tracking-data">`chronyc tracking`</a>
-
-<div id="chronyc-tracking-data" class="hidden">
-
-```text
-```
-
-</div>
-
-* <a href="#" data-expand="chronyc-sources-data">`chronyc sources`</a>
-
-<div id="chronyc-sources-data" class="hidden">
+<div data-tabs>
+	<a href="#" class="active">Tracking</a>
+	<a href="#">Sources</a>
+	<a href="#">NTS</a>
+	<div>
+<div id="chrony-tracking-data">
 
 ```text
 ```
 
 </div>
-
-* <a href="#" data-expand="chronyc-sourcestats-data">`chronyc sourcestats`</a>
-
-<div id="chronyc-sourcestats-data" class="hidden">
-
-```text
-```
-
-</div>
-
-* <a href="#" data-expand="chronyc-authdata-data">`chronyc authdata`</a>
-
-<div id="chronyc-authdata-data" class="hidden">
+	</div>
+	<div class="hidden">
+<div id="chrony-sources-data">
 
 ```text
 ```
 
 </div>
-
-##### UBX
-
-* <a href="#" data-expand="ubx-nav-pvt-data">`UBX-NAV-PVT`</a>
-
-<div id="ubx-nav-pvt-data" class="hidden">
+<div id="chrony-sourcestats-data">
 
 ```text
 ```
 
 </div>
-
-* <a href="#" data-expand="ubx-nav-timeutc-data">`UBX-NAV-TIMEUTC`</a>
-
-<div id="ubx-nav-timeutc-data" class="hidden">
-
-```text
-```
-
-</div>
-
-* <a href="#" data-expand="ubx-nav-clock-data">`UBX-NAV-CLOCK`</a>
-
-<div id="ubx-nav-clock-data" class="hidden">
+	</div>
+	<div class="hidden">
+<div id="chrony-authdata-data">
 
 ```text
 ```
 
 </div>
+	</div>
+</div>
 
-* <a href="#" data-expand="ubx-nav-sig-data">`UBX-NAV-SIG`</a>
+##### GNSS receiver
 
-<div id="ubx-nav-sig-data" class="hidden">
+<div data-tabs>
+	<a href="#" class="active">NAV-TIMEUTC</a>
+	<a href="#">NAV-CLOCK</a>
+	<a href="#">NAV-PVT</a>
+	<a href="#">NAV-SIG</a>
+	<div>
+<div id="ubx-nav-timeutc-data">
 
 ```text
 ```
 
+</div>
+	</div>
+	<div class="hidden">
+<div id="ubx-nav-clock-data">
+
+```text
+```
+
+</div>
+	</div>
+	<div class="hidden">
+<div id="ubx-nav-pvt-data">
+
+```text
+```
+
+</div>
+	</div>
+	<div class="hidden">
+<div id="ubx-nav-sig-data">
+
+```text
+```
+
+</div>
+	</div>
 </div>
 
 <script type="module">
@@ -118,10 +121,10 @@ Current state of Chrony and the GNSS receiver, captured <span id="snapshot-last-
 	document.getElementById('snapshot-last-updated').textContent = data?.generated ?? problem;
 	document.getElementById('statistics-last-updated').textContent = data?.generated ?? problem;
 
-	document.querySelector('#chronyc-tracking-data pre code').textContent = data?.chrony?.tracking ?? problem;
-	document.querySelector('#chronyc-sources-data pre code').textContent = data?.chrony?.sources ?? problem;
-	document.querySelector('#chronyc-sourcestats-data pre code').textContent = data?.chrony?.sourcestats ?? problem;
-	document.querySelector('#chronyc-authdata-data pre code').textContent = data?.chrony?.authdata ?? problem;
+	document.querySelector('#chrony-tracking-data pre code').textContent = data?.chrony?.tracking ?? problem;
+	document.querySelector('#chrony-sources-data pre code').textContent = data?.chrony?.sources ?? problem;
+	document.querySelector('#chrony-sourcestats-data pre code').textContent = data?.chrony?.sourcestats ?? problem;
+	document.querySelector('#chrony-authdata-data pre code').textContent = data?.chrony?.authdata ?? problem;
 
 	document.querySelector('#ubx-nav-pvt-data pre code').textContent = data?.ubx?.['NAV-PVT'] ?? problem;
 	document.querySelector('#ubx-nav-timeutc-data pre code').textContent = data?.ubx?.['NAV-TIMEUTC'] ?? problem;
