@@ -414,6 +414,7 @@ article table.layout td:last-of-type, article table.layout th:last-of-type {
 
 [data-tabs] > div {
 	flex-basis: 100%;
+	min-width: 0;
 	padding-top: 1rem;
 }
 
