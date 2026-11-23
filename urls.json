@@ -37,6 +37,11 @@
 		"url": "{{ doc.url }}",
 		"serve": "/index.html"
 	},
+	{
+		"url": "{{ doc.url }}.html",
+		"redirect": 301,
+		"to": "{{ doc.url }}"
+	},
 		{{~ continue ~}}
 	{{~ end ~}}
 	{
